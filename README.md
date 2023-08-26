@@ -18,7 +18,6 @@ unlike most other game hosting websites, seraph supports and encourages hosting,
 
 seraph was made as a fun side project in order to alleviate everything i've felt was always annoying to use about online game websites. i hope you find your use of this project as i certainly am :)
 
-
 ## update log
 version 1
 - 20 games
@@ -26,6 +25,12 @@ version 1
 - mainpage
 - hosting page
 (this changelog isn't big due to it being the initial launch of the project
+
+## host lists
+all verified seraph hosting links for you to try out:
+- [OFFICIAL] https://seraph.reveriestudios.online/ (v1.0.0)
+- https://amongusacker243.github.io/coolgamewebsite.github.io/ (v1.0.0)
+- https://synth0.github.io/real.github.io (v1.0.0)
 
 ## contact
 if you have any questions about the project feel free to start a post in the issues tab!
