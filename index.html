@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+        <title>Home | Seraph</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Ubuntu', sans-serif;
+                display: flex;
+                height: 100vh;
+                background-color: black;
+            }
+
+            .image-side {
+                width: 60%;
+                background-image: url('seraph.png');
+                background-size: cover;
+                background-position: center;
+                background-color: black;
+                animation: mainHeaderAnimation 4s forwards;
+            }
+
+            .content-side {
+                width: 40%;
+                background-color: #000000;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                animation: mainHeaderAnimation 2s forwards;
+            }
+
+            h1 {
+                font-size: 96px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 2px;
+                padding-left: 10%;
+                padding-right: 10%;
+                text-align: center;
+            }
+
+            .button {
+                background-color: #000000;
+                color: white;
+                border: 3px solid white;
+                border-radius: 4px;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .button:hover {
+                background-color: #ffffff;
+                color:black;
+            }
+
+            @keyframes mainHeaderAnimation {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+  </head>
+  <body>
+      <div class="image-side"></div>
+      <div class="content-side">
+          <h1>seraph</h1>
+          <a class="button" href="games/index.html">Games</a>
+          <a class="button">Download (WIP)</a>
+          <a class="button" href="https://github.com/a456pur/seraph">GitHub</a>
+          <p> all games playable on this website are copyright/property of their respective owners </p>
+          <p> // developed by @a456pur | release build v1 \\ </p>
+      </div>
+  </body>
+</html>
