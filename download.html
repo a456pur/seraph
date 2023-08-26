@@ -1,0 +1,96 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+        <title>Download | Seraph</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Ubuntu', sans-serif;
+                display: flex;
+                height: 100vh;
+                background-color: black;
+            }
+
+            .image-side {
+                width: 60%;
+                background-image: url('seraph.png');
+                background-size: cover;
+                background-position: center;
+                background-color: black;
+                animation: mainHeaderAnimation 4s forwards;
+            }
+
+            .content-side {
+                width: 40%;
+                background-color: #000000;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                animation: mainHeaderAnimation 2s forwards;
+            }
+
+            h1 {
+                font-size: 96px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                margin-bottom: 2px;
+                padding-left: 10%;
+                padding-right: 10%;
+                text-align: center;
+            }
+
+            .button {
+                background-color: #000000;
+                color: white;
+                border: 3px solid white;
+                border-radius: 4px;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .button:hover {
+                background-color: #ffffff;
+                color:black;
+            }
+
+            @keyframes mainHeaderAnimation {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+  </head>
+  <body>
+      <div class="image-side"></div>
+      <div class="content-side">
+          <h1>download</h1>
+          <p> there are many ways you can download this project, however hosting off github pages is the best method due to ease of access, saving data and one-time setup.</p>
+          <p> to deploy to github pages, follow this youtube tutorial below (if you can't access at school you may need to do this either at home or on another device) </p>
+          <br>
+          <a class="button" target="__blank" href="games/index.html">YouTube Tutorial</a>
+          <a class="button" target="__blank" href="https://github.com/a456pur/seraph">GitHub Link</a>
+
+          <p> // developed by @a456pur | release build v1 \\ </p>
+      </div>
+  </body>
+</html>
