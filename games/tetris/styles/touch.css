@@ -1,0 +1,135 @@
+#touchControlContainer {
+	width: 100vw;
+	height: 200px;
+	padding-top: 1em;
+	display: none;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.controlBlock {
+	padding: 5px;
+	display: grid;
+	height: 180px;
+	max-width: 180px;
+	width: 45%;
+	background-color: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.controlContainerLeft {
+	grid-template-areas:
+		'. upArrow .'
+		'leftArrow middlePad rightArrow'
+		'. downArrow .';
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-left: none;
+}
+
+.controlContainerRight {
+	grid-template-areas:
+		'rotLeft rotRight'
+		'save .';
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-right: none;
+}
+
+.controlButton {
+	margin: 0em;
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	transition: all 0.1s ease-in-out;
+	outline: none;
+}
+
+.controlButton:active {
+	transform: translateY(3px);
+}
+
+.controlButtonContainer {
+	margin: 0em;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controlArrowContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controlUp {
+	grid-area: upArrow;
+}
+
+#controlUp {
+	background-image: url('../img/icons/up-arrow-button.svg');
+}
+
+.controlLeft {
+	grid-area: leftArrow;
+}
+
+#controlLeft {
+	background-image: url('../img/icons/left-arrow-button.svg');
+}
+
+.controlRight {
+	grid-area: rightArrow;
+}
+
+#controlRight {
+	background-image: url('../img/icons/right-arrow-button.svg');
+}
+
+.controlDown {
+	grid-area: downArrow;
+}
+
+#controlDown {
+	background-image: url('../img/icons/down-arrow-button.svg');
+}
+
+.controlMiddle {
+	grid-area: middlePad;
+	background-color: #1414142a;
+	border-radius: 20%;
+	margin: 15px;
+}
+
+.controlRotLeft {
+	grid-area: rotLeft;
+}
+
+#controlRotLeft {
+	background-image: url('../img/icons/undo-arrow.svg');
+}
+
+.controlRotRight {
+	grid-area: rotRight;
+}
+
+#controlRotRight {
+	background-image: url('../img/icons/redo-arrow.svg');
+}
+
+.controlSave {
+	grid-area: save;
+}
+
+#controlSave {
+	background-image: url('../img/icons/save.svg');
+}

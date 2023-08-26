@@ -1,0 +1,123 @@
+.sidePanel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0.8em;
+	border-radius: 10px;
+	background-color: rgb(20, 20, 20);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	flex-direction: column;
+}
+
+.sidePanelContainer {
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.spRight {
+	margin-left: 0.8em;
+}
+
+.spLeft {
+	margin-right: 0.8em;
+}
+
+.sideBox {
+	position: relative;
+	width: calc(4 * var(--block-width));
+	height: calc(4 * var(--block-width));
+	/* border: 3px solid white; */
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background-color: #003063;
+	background-image: url('../img/tile.png');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: content-box;
+	flex-shrink: 0;
+	transition: background-color 0.2s;
+	transition: border 0.2s;
+}
+
+.sideBox h3 {
+	margin: 0;
+}
+
+.score {
+	margin-top: 1em;
+	height: calc(2 * var(--block-width));
+}
+
+.speed {
+	height: calc(2 * var(--block-width));
+	margin-top: 1em;
+}
+
+.littleBoxTitle {
+	margin-top: 0;
+	width: 100%;
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 0.2em;
+}
+
+.instructionBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #0d3165;
+	margin-top: 1em;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.instructionBox h3 {
+	color: white;
+	font-size: 1em;
+	padding: 0.4em 0;
+	margin: 0;
+	margin-bottom: 0.5em;
+	width: 100%;
+	border-bottom: 1px solid #0d3165;
+	text-align: center;
+}
+
+.instructionBoxText {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.8em;
+}
+
+.instructionBox p {
+	padding: 2px;
+	margin-bottom: 4px;
+	width: 50%;
+	font-size: 0.6rem;
+}
+
+.textRight {
+	text-align: right;
+	color: rgb(170, 170, 170);
+}
+
+.textLeft {
+	text-align: left;
+	color: white;
+	font-weight: bold;
+}
+
+.big {
+	font-size: 2em;
+	margin: 0;
+}

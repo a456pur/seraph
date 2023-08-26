@@ -1,0 +1,233 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../ico.ico" type="image/x-icon">
+        <title>Games | Seraph</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+            @import url('https://fonts.cdnfonts.com/css/youtube-sans');
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Ubuntu', sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: black;
+                background-image: url('../seraphg.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: mainHeaderAnimation 1s forwards;
+                color: white;
+            }
+
+            h1, h2 {
+                font-family: 'YouTube Sans', 'Ubuntu', sans-serif;
+            }
+
+            .button {
+                background-color: #000000;
+                color: white;
+                border: 3px solid white;
+                border-radius: 4px;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 5px;
+
+                width: calc(50% - 10px); /* Adjust the width to fit two buttons in a row with some spacing */
+                max-width: 500px;
+                box-sizing: border-box;
+                
+                border: 3px solid transparent;
+                border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+                border-image-slice: 1;
+                border-radius: 4px;
+                animation: borderAnimation 1s infinite alternate;
+                animation-delay: calc(var(--delay) * 1ms);
+
+            }
+
+            .button:hover {
+                background-color: #181717;
+            }
+
+            .button-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            @keyframes borderAnimation {
+                0% {
+                    border-image-source: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+                }
+                100% {
+                    border-image-source: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
+                }
+            }
+
+            @keyframes mainHeaderAnimation {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+  </head>
+  <body>
+        <h1>games</h1>
+
+        <div class="button-container">
+            <div class="button">
+                <h2>slope</h2>
+                <p>slope is a game challenging reflexes as players navigate a twisting, high-speed course, testing their agility and precision</p>
+                <a href="slope/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+
+            <div class="button">
+                <h2>subway surfers</h2>
+                <p>an endless runner game in which players dodge obstacles, collecting coins and power-ups while escaping the pursuing inspector and his dog</p>
+                <a href="subwaysurfers/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <div class="button">
+                <h2>flappy bird</h2>
+                <p>control a bird's flight path throughout pipes - testing your coordination and patience along the way.</p>
+                <a href="flappy/index.html" style="text-decoration: underline; color:white;">play</a>
+                </div>
+        
+            <div class="button">
+                <h2>papa's pizzaria</h2>
+                <p>manage a virtual pizzeria, taking orders, crafting pizzas and satisfying customers in this simulation game</p>
+                <a href="papaspizzaria/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="button">
+                <h2>papa's burgeria</h2>
+                <p>manage a virtual burger place, taking orders, crafting burgers and satisfying customers in this simulation game</p>
+                <a href="papasburgeria/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+    
+            <div class="button">
+                <h2>super mario 64</h2>
+                <p>a classic 3d platformer in which you guide mario through diverse worlds - collecting power stars to stop bowser's plans</p>
+                <a href="sm64/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="button">
+                <h2>run 3</h2>
+                <p>sprint through gravity-defying tunnels and platforms in an endless runner, testing your reflexes and agility</p>
+                <a href="run3/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+    
+            <div class="button">
+                <h2>bitlife</h2>
+                <p>a life simulation game which enables choices from birth to death, influencing a character's destiny throughout various decisions</p>
+                <a href="bitlife/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="button">
+                <h2>crossy road</h2>
+                <p>an endless arcade game which has you guide across obstacles, aiming for high scores and avoiding any possible hazards along the way</p>
+                <a href="crossy/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+
+            <div class="button">
+                <h2>minecraft [v1.5.2]</h2>
+                <p>an open-world sandbox game offering limitless creativity, enabling players to build, explore and survive in procedurally generated landscapes</p>
+                <a href="mc/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <div class="button">
+                <h2>cookie clicker</h2>
+                <p>click to bake cookies, upgrade and expand your cookie empire in this addictive incremental game</p>
+                <a href="cookieclicker/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+
+            <div class="button">
+                <h2>temple run 2</h2>
+                <p>navigate perilous terrain, dodge obstacles, and collect artifacts in this thrilling endless running adventure</p>
+                <a href="templerun2/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="button">
+                <h2>duck life 4</h2>
+                <p>train a duckling in various skills, customize it, and compete in races and challenges</p>
+                <a href="ducklife4/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+
+            <div class="button">
+                <h2>chrome dinosaur game</h2>
+                <p>jump over cacti and get a high score as a pixelated T-Rex in this timeless Chrome browser game</p>
+                <a href="dinogame/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="button">
+                <h2>jetpack joyride</h2>
+                <p>strap on a jetpack, dodge obstacles and missiles, collect coins, and go the distance.</p>
+                <a href="jetpackjoyride/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+
+            <div class="button">
+                <h2>retro bowl</h2>
+                <p>manage a football team, call plays, and lead them to victory in this retro sports simulation</p>
+                <a href="retrobowl/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="button">
+                <h2>fruit ninja</h2>
+                <p>swipe and slice flying fruits while avoiding bombs in this juicy, finger-frenzy arcade</p>
+                <a href="fruitninja/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+
+            <div class="button">
+                <h2>bloons tower defence 2</h2>
+                <p>strategically place monkey towers to pop waves of balloons in this colorful tower defense</p>
+                <a href="bloonstd2/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+       
+        <div class="button-container">
+            <div class="button">
+                <h2>2048</h2>
+                <p>slide and combine matching numbered tiles to reach the coveted 2048 tile in this puzzle game</p>
+                <a href="2048/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+
+            <div class="button">
+                <h2>tetris</h2>
+                <p>arrange falling blocks to complete lines and clear the board in this iconic puzzle classic</p>
+                <a href="tetris/index.html" style="text-decoration: underline; color:white;">play</a>
+            </div>
+        </div>
+
+        <p> // website by @a456pur \\ </p>
+
+  </body>
+</html>

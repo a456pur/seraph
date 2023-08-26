@@ -1,0 +1,94 @@
+.playgroundContainer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	border-radius: 10px;
+	background-color: rgb(20, 20, 20);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	flex-shrink: 0;
+}
+
+.grid {
+	margin: 0.8em;
+	width: calc(var(--columns) * var(--block-width));
+	height: calc(var(--rows) * var(--block-width));
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: content-box;
+	flex-shrink: 0;
+	transition: background-color 0.2s;
+	transition: border 0.2s;
+}
+
+.playgroundBlock {
+	width: var(--block-width);
+	height: var(--block-width);
+	border: var(--border-width) solid rgba(128, 128, 128, 0.3);
+	background-color: rgb(255, 255, 255);
+	color: antiquewhite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.erasing {
+	animation: colorFlick 0.2s 2;
+}
+
+.specialErasing {
+	animation: tetrisFlick 0.15s 3;
+}
+
+.playgroundButton {
+	background-color: #0f2348;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid rgba(255, 255, 255, 0.212);
+	transition: all ease-in-out 0.2s;
+	padding: 0.5em 0;
+}
+
+.playgroundButton:hover {
+	background-color: #0f4845;
+	border-radius: 5px;
+	border: 2px solid rgba(255, 255, 255, 0.212);
+}
+
+.buttonPulse {
+	animation: pulse infinite 1.5s ease-in-out;
+}
+
+@keyframes pulse {
+	0% {
+		border: 2px solid rgba(255, 255, 255, 0.212);
+	}
+	50% {
+		border: 2px solid greenyellow;
+	}
+}
+
+@keyframes colorFlick {
+	0% {
+		background-color: white;
+	}
+	50% {
+		background-color: black;
+	}
+}
+
+@keyframes tetrisFlick {
+	0% {
+		background-color: rgb(196, 235, 27);
+	}
+	50% {
+		background-color: rgb(0, 255, 255);
+	}
+	100% {
+		background-color: coral;
+	}
+}
+
+.playgroundBottom {
+	width: var(--block-width);
+}

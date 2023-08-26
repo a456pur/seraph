@@ -1,0 +1,58 @@
+.mainMenu {
+	background-color: #092347;
+	width: 80%;
+	padding: 2em;
+	margin-top: 10em;
+	border-radius: 1em;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.gameMode {
+	position: relative;
+	overflow: hidden;
+	font-size: 2em;
+	margin: 0;
+	flex-shrink: 0;
+	border-radius: 20px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border: none;
+}
+
+.gameMode::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -30%;
+	height: 300%;
+	width: 50%;
+	transform: rotate(45deg);
+	background-color: coral;
+	transition: all 0.11s ease-in-out;
+}
+
+.gameMode:hover::before {
+	left: -10%;
+}
+
+.menuButtonContainer {
+	margin: 1em 0;
+	width: 100%;
+	display: flex;
+	align-content: stretch;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+.menuButtonDescription {
+	flex-grow: 1;
+	display: flex;
+	padding: 0.8em;
+	justify-content: center;
+	align-items: center;
+	background-color: #444;
+	flex-shrink: 0;
+	text-align: center;
+}

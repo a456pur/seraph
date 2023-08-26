@@ -1,0 +1,152 @@
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="./main.js" defer></script>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+		<link rel="icon" href="favico.ico" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Tetris | Seraph</title>
+		<link rel="shortcut icon" href="../../ico.ico" type="image/x-icon">
+	</head>
+	<body>
+		<div id="musicBox">
+			<div id="musicBoxContainer">
+				<label id="labelSwitch" for="music">🎵</label>
+				<input type="checkbox" name="music" id="musicSwitch" checked />
+			</div>
+		</div>
+		<div class="titleImage"><img src="./img/logo2.png" alt="tetris_logo" /></div>
+		<!-- <h1>TETRIS</h1> -->
+		<div class="mainContainer">
+			<div id="mainMenu" class="mainMenu">
+				<div class="menuButtonContainer">
+					<button id="enduranceMode" class="gameMode">Enduro</button>
+					<div class="menuButtonDescription"><p>No time limit, do your best!</p></div>
+				</div>
+				<div class="menuButtonContainer">
+					<button id="rushMode" class="gameMode">Rush</button>
+					<div class="menuButtonDescription"><p>60s rush to get points.</p></div>
+				</div>
+
+				<div class="menuButtonContainer">
+					<button id="sprintMode" class="gameMode">Sprint</button>
+					<div class="menuButtonDescription"><p>Make 20 lines... Quickly!</p></div>
+				</div>
+
+				<!-- <div class="menuButtonContainer">
+          <button class="gameMode" disabled>Leaderboard</button>
+        </div> -->
+			</div>
+			<div id="sidePanelLeft" class="sidePanel spLeft hide">
+				<div class="sidePanelContainer">
+					<div id="savedTetrominoBox" class="sideBox"></div>
+					<h4 class="littleBoxTitle">SAVED</h4>
+					<div id="scoreBox" class="sideBox score">
+						<h3><span id="score">0</span></h3>
+					</div>
+					<h4 id="scoreTitle" class="littleBoxTitle">SCORE</h4>
+					<div id="timerBox" class="sideBox score">
+						<h3 class="big"><span id="timer">0</span></h3>
+					</div>
+					<h4 id="timerTitle" class="littleBoxTitle">TIMER</h4>
+					<div class="instructionBox">
+						<h3>Controls</h3>
+						<div class="instructionBoxText">
+							<p class="textRight">Move</p>
+							<p class="textleft">🡄 🡇 🡆</p>
+						</div>
+						<div class="instructionBoxText">
+							<p class="textRight">Smash</p>
+							<p class="textleft">🡅</p>
+						</div>
+						<div class="instructionBoxText">
+							<p class="textRight">↶</p>
+							<p class="textleft">A</p>
+						</div>
+						<div class="instructionBoxText">
+							<p class="textRight">↷</p>
+							<p class="textleft">Z</p>
+						</div>
+						<div class="instructionBoxText">
+							<p class="textRight">Save</p>
+							<p class="textleft">E</p>
+						</div>
+					</div>
+				</div>
+				<div class="sidePanelContainer">
+					<button id="backMenu" class="playgroundButton">Menu</button>
+				</div>
+			</div>
+			<div id="playgroundContainer" class="playgroundContainer hide">
+				<div id="gamePaused"><h2>GAME PAUSED</h2></div>
+				<div id="endGame">
+					<div class="innerContainer">
+						<h2 id="endGameTitle">GAME OVER</h2>
+						<h3><span id="finalScore"></span> <span id="scoreUnit"></span></h3>
+					</div>
+				</div>
+				<div id="playground" class="grid"></div>
+			</div>
+			<div id="sidePanelRight" class="sidePanel spRight hide">
+				<div class="sidePanelContainer">
+					<div id="nextTetrominoBox" class="sideBox"></div>
+					<h4 class="littleBoxTitle">NEXT</h4>
+					<div id="speedBox" class="sideBox speed">
+						<h3 class="big"><span id="speed">0</span></h3>
+					</div>
+					<h4 class="littleBoxTitle">SPEED</h4>
+					<div class="sideBox score">
+						<h3><span id="lines">0</span></h3>
+					</div>
+					<h4 class="littleBoxTitle">LINES</h4>
+				</div>
+
+				<div class="sidePanelContainer">
+					<button id="startButton" class="playgroundButton buttonPulse">Start</button>
+					<button id="resetButton" class="playgroundButton">Reset</button>
+				</div>
+			</div>
+		</div>
+		<div id="touchControlContainer">
+			<div class="controlBlock controlContainerLeft">
+				<div class="controlUp controlArrowContainer">
+					<button id="controlUp" class="controlButton"></button>
+				</div>
+				<div class="controlLeft controlArrowContainer">
+					<button id="controlLeft" class="controlButton"></button>
+				</div>
+				<div class="controlMiddle controlArrowContainer">
+					<div class="controlButton"></div>
+				</div>
+				<div class="controlRight controlArrowContainer">
+					<button id="controlRight" class="controlButton"></button>
+				</div>
+				<div class="controlDown controlArrowContainer">
+					<button id="controlDown" class="controlButton"></button>
+				</div>
+			</div>
+			<div class="controlBlock controlContainerRight">
+				<div class="controlRotLeft controlButtonContainer">
+					<button id="controlRotLeft" class="controlButton"></button>
+				</div>
+				<div class="controlRotRight controlButtonContainer">
+					<button id="controlRotRight" class="controlButton"></button>
+				</div>
+				<div class="controlSave controlButtonContainer">
+					<button id="controlSave" class="controlButton"></button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>
+				A game by Nintendo ® - Developed by
+				<a href="https://github.com/larprad" target="blank">Larprad</a>
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+.tetromino {
+	background-color: salmon;
+}
+
+.colorT0 {
+	background-color: #51f0f1;
+}
+
+.colorT1 {
+	background-color: #362cec;
+}
+
+.colorT2 {
+	background-color: #f58000;
+}
+
+.colorT3 {
+	background-color: #fac800;
+}
+
+.colorT4 {
+	background-color: #6ad72d;
+}
+
+.colorT5 {
+	background-color: #ee013e;
+}
+
+.colorT6 {
+	background-color: #f630ff;
+}

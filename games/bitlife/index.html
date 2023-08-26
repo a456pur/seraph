@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+  
+    <title>BitLife | Seraph</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../../ico.ico" type="image/x-icon">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+    </style>
+	<script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script type="application/javascript" src="/js/main.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("gameContainer", "Build/BitLife.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+  <div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 100%;"></div>
+    </div>
+  </body>
+</html>

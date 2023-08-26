@@ -1,0 +1,124 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#382C2A">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <title>Papa Burgeria | Seraph</title>
+    <link rel="shortcut icon" href="../../ico.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript" src="./js/PapasBurgeria.js"></script><script src="./poki-sdk-core.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/loader.js"></script>
+    <script src="/js/main.js"></script>
+
+</style><script>(function a(){try{(function b(){debugger;b()})()}catch(e){setTimeout(a,5e3)}})()</script></head>
+<body>
+<div id="splash__image" style="background-image: url(&quot;assets/todo.png&quot;); background-repeat:repeat; visibility: hidden; width: 546px; height: 409px; left: 0px; top: 129px; opacity: 0;">
+    <div id="progress__root" style="background: rgb(255, 255, 255); left: 10%; top: 70%; width: 80%; height: 2.5%;">
+        <div id="progress__line" style="background: rgb(138, 100, 71); height: 100%; width: 80%;"></div>
+    </div>
+</div>
+<script>
+    window.addEventListener("load", () => {
+
+        PokiSDK.init().then(
+            () => {
+                // successfully initialized
+                onPokiInitComplete(false);
+            }
+        ).catch(
+            () => {
+                // successfully initialized but the user has adblock
+                onPokiInitComplete(true);
+            }
+        );
+
+        let config;
+
+        config = {
+            "key": "papa_burgeria",
+            "title": "Papa Burgeria",
+            "filename": "papa_burgeria_sdk",
+            "pokiSDK": true,
+            "debugPoki": false,
+            "showFPS": false,
+            "debug": false,
+            "splash": "assets/todo.jpg",
+            "start": null,
+            "width": 500,
+            "height": 374,
+            "x": 0,
+            "y": 0,
+            "w": "100%",
+            "h": "100%",
+            "stageScaleMode": null,
+            "stageAlign": null,
+            "progressParserWeigth": 1,
+            "progress": {
+                "direction": "lr",
+                "back": "#fff",
+                "line": "#8a6447",
+                "rect": [
+                    0.1,
+                    0.7,
+                    0.8,
+                    0.025
+                ]
+            },
+            "skipFramesOfScene": null,
+            "buttonPokiSDKActions": null,
+            "retryButtonIDS": null,
+            "retryButtonAction": null,
+            "actionOnStop": null,
+            "actionWhenRetryButtonEncountered": null,
+            "binary": [
+                {
+                    "name": "fonts.swf",
+                    "path": "assets/fonts.swf",
+                    "size": 30506
+                },
+                {
+                    "name": "papa_burgeria_sdk",
+                    "path": "assets/papa_burgeria_sdk.swf",
+                    "size": 4365180,
+                    "resourceType": "GAME"
+                }
+            ],
+            "runtime": "js/PapaSeries.js"
+        };
+
+        PokiSDK.setDebug(config.debugPoki);
+
+        Loader.init(config);
+
+        let onPokiInitComplete = (adBlocked) => {
+
+            PokiSDK.adBlocked = adBlocked;
+            PokiSDK.gameLoadingStart();
+
+            Loader.runGame((fill) => {
+                PokiSDK.gameLoadingProgress({
+                    percentageDone: fill,
+                    kbLoaded: 0,
+                    kbTotal: 0,
+                    fileNameLoaded: "",
+                    filesLoaded: 0,
+                    filesTotal: 0
+                });
+            }, (instance) => {
+                PokiSDK.gameLoadingFinished();
+            })
+        }
+    })
+</script>
+
+</body></html>
