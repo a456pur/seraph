@@ -31,6 +31,7 @@ all verified seraph hosting links for you to try out:
 - [OFFICIAL] https://seraph.reveriestudios.online/ (v1.0.0)
 - https://amongusacker243.github.io/coolgamewebsite.github.io/ (v1.0.0)
 - https://synth0.github.io/real.github.io (v1.0.0)
+- https://ninjanick56.github.io/amogus/ (v1.0.0)
 
 ## contact
 if you have any questions about the project feel free to start a post in the issues tab!
