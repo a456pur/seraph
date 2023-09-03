@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+	<title>Papa Hotdoggeria | Games</title>
+
+	<script src="poki-sdk.js"></script>
+	<script type="text/javascript" src="./js/loader.js"></script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		canvas {
+			outline: none
+		}
+
+		html,
+		body,
+		#container {
+			margin: 0;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+		}
+
+		#splash {
+			position: absolute;
+			visibility: hidden;
+			z-index: 10;
+		}
+
+		#splash__image {
+			position: absolute;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url("assets/papa_hotdoggeria_splashscreen.jpg");
+			visibility: visible;
+			transition: all 0.5s;
+			z-index: 10;
+		}
+
+		#progress__root {
+			position: absolute;
+		}
+
+		#progress__line {
+			width: 0;
+			height: 100%;
+			transition: all 0.5s;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="splash__image">
+		<div id="progress__root">
+			<div id="progress__line"></div>
+		</div>
+	</div>
+
+	<script>
+
+		window.addEventListener("load", () => {
+
+
+
+			PokiSDK.init().then(
+				() => {
+					// successfully initialized
+					onPokiInitComplete(false);
+				}
+			).catch(
+				() => {
+					// successfully initialized but the user has adblock
+					onPokiInitComplete(true);
+				}
+			);
+
+			let config;
+
+			
+config = {
+    "key": "papa_hotdoggeria",
+    "title": "Papa Hotdoggeria",
+    "filename": "papa_hotdoggeria_sdk",
+    "splash": "assets/papa_hotdoggeria_splashscreen.jpg",
+    "pokiSDK": true,
+    "debugPoki": false,
+    "showFPS": false,
+    "debug": false,
+    "start": null,
+    "width": 500,
+    "height": 374,
+    "x": 0,
+    "y": 0,
+    "w": "100%",
+    "h": "100%",
+    "stageScaleMode": null,
+    "stageAlign": null,
+    "progressParserWeigth": 1,
+    "progress": {
+        "direction": "lr",
+        "back": "#fff",
+        "line": "#a24f17",
+        "rect": [
+            0.1,
+            0.85,
+            0.8,
+            0.025
+        ]
+    },
+    "skipFramesOfScene": null,
+    "buttonPokiSDKActions": null,
+    "retryButtonIDS": null,
+    "retryButtonAction": null,
+    "actionOnStop": null,
+    "actionWhenRetryButtonEncountered": null,
+    "filenameNoSdk": "papa_hotdoggeria",
+    "binary": [
+        {
+            "name": "fonts.swf",
+            "path": "assets/fonts.swf",
+            "size": 30506
+        },
+        {
+            "name": "papa_hotdoggeria_sdk",
+            "path": "assets/papa_hotdoggeria_sdk.swf",
+            "size": 8544913,
+            "resourceType": "GAME"
+        }
+    ],
+    "runtime": "js/PapaSeries.js"
+};
+
+			
+			PokiSDK.setDebug(config.debugPoki);
+
+			Loader.init(config);
+
+			let onPokiInitComplete = (adBlocked) => {
+
+				PokiSDK.adBlocked = adBlocked;
+				PokiSDK.gameLoadingStart();
+
+				Loader.runGame((fill) => {
+					PokiSDK.gameLoadingProgress({
+						percentageDone: fill,
+						kbLoaded: 0,
+						kbTotal: 0,
+						fileNameLoaded: "",
+						filesLoaded: 0,
+						filesTotal: 0
+					});
+				}, (instance) => {
+					PokiSDK.gameLoadingFinished();
+				})
+			}
+		})
+
+	</script>
+</body>
+
+</html>

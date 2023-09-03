@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.cdnfonts.com/css/youtube-sans');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    background-image: url('../../images/seraphgamesbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: mainHeaderAnimation 0.75s ease-in-out forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'YouTube Sans', 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.button {
+    background-color: #000000;
+    color: white;
+    border: 3px solid white;
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+
+    width: calc(50% - 10px); 
+    max-width: 480px;
+    width: 480px;
+    max-height: 100px;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    border-image-slice: 1;
+    border-radius: 4px;
+    animation: borderAnimation 1s infinite alternate;
+    animation-delay: calc(var(--delay) * 1ms);
+
+}
+
+.button:hover {
+    background-color: #181717;
+    animation: borderAnimationHover 0.5s alternate infinite forwards;
+}
+
+.button h2 {
+    font-size: 32px;
+    text-align: center;
+    
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
+    }
+}
+
+@keyframes borderAnimationHover {
+    0% {
+        border-image-source: linear-gradient(45deg, rgb(231, 61, 200), rgb(105, 41, 143));
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, rgb(105, 41, 143), rgb(231, 61, 200));
+    }
+}
+
+@keyframes mainHeaderAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

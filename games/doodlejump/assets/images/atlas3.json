@@ -1,0 +1,27 @@
+{"frames":{
+
+"pauseCover":
+{
+	"frame":{"x":0,"y":0,"w":640,"h":1148},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":640,"y":1148},
+	"sourceSize":{"w":640,"h":1148}
+},
+"bgMenu":
+{
+	"frame":{"x":641,"y":0,"w":640,"h":960},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":640,"y":960},
+	"sourceSize":{"w":640,"h":960}
+},
+"scores":
+{
+	"frame":{"x":1282,"y":0,"w":640,"h":960},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":640,"y":960},
+	"sourceSize":{"w":640,"h":960}
+}
+}}

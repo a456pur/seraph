@@ -1,0 +1,14 @@
+{
+
+   "stats":[
+   ["total games played",0],["high score",0],["last score",0],["average score",0],["total play time",0],["longest play time",0],["last play time",0],["",""],["monsters shot",0],["monsters jumped on",0],["UFOs shot",0],
+   ["UFOs jumped on",0],["",""],["total jumps",0],["max jumps",0],["last game jumps",0],["average jumps",0],["",""],["jetpack flights",0],["propellerhat flights",0],["rocket flights",0],["",""],
+   ["HOW YOU ENDED",""],["missed a platform",0],["jumped into a monster",0],["abducted by UFO",0],["black hole",0]
+   ],
+   
+    "achievements":[
+   ["serial springer","jump on 3 springs in a row",0,0],["super serial springer","jump on 5 springs in a row",0,0],["monster bouncer","jump on 10 monsters in one game",0,0],["super monster bouncer","jump on 30 monsters in one game",0,0],["conflict avoider","jump past 10 monsters in one game",0,0],["super conflict avoider","jump past 30 monsters in one game",0,0],["sharp shooter","shoot 5 monsters in a row without missing",0,0],["super sharp shooter","shoot 10 monsters in a row without missing",0,0],["propellerhead","fly 3 propellerhats in one game",0,0],["jetpack rider","fly 3 jetpacks in one game",0,0],["old-fashioned jumper","jump past 3 jetpacks without picking them",0,0],
+   ["UFO abduction survivor","survive UFO abduction",0,0],["endurance jumper","jump 200 times on a static platform",0,0],["focused endurance jumper","jump 100 times on a moving platform",0,0],["epic fail","breake 50 platforms in one game",0,0],["epic fail FTW","break a total of 1000 platforms",0,0],["monster chopper","fly into a monster with a propellerhat",0,0],["UFO bouncer","jump on a UFO",0,0],["100,000","jump to over 100,000",0,0]
+   ]
+   
+}

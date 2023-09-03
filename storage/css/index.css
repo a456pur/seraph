@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    animation: mainHeaderAnimation 2s forwards;
+}
+
+.content-side {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: mainHeaderAnimation 1s ease-in-out forwards;
+    background-image: url('../../images/seraphbackground.png');
+
+}
+
+h1 {
+    font-size: 96px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    animation: paragraphTween 1.2s ease-in-out forwards;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: underline; 
+    color: white;
+}
+
+.gamesbutton {
+    background-color: #000000;
+    color: white;
+    width: 50%;
+    max-width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    border-image-slice: 1;
+    border-radius: 4px;
+    animation: borderAnimation 1s infinite alternate;
+    animation-delay: calc(var(--delay) * 1ms);
+}
+
+.gamesbutton:hover {
+    background-color: #151414;
+}
+
+@keyframes mainHeaderAnimation {
+    0% {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateY(-20%);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0%);
+    }
+}
+
+@keyframes paragraphTween {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
+    }
+}

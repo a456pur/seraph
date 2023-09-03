@@ -1,0 +1,163 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
+        <title>Update Log | Seraph</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Ubuntu', sans-serif;
+                display: flex;
+                height: 100vh;
+                background-color: black;
+            }
+
+            .content-side {
+                width: 100%;
+                background-color: #000000;
+                background-image: url('images/seraphupdatebackground.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                opacity: 0;
+                animation: mainHeaderAnimation 0.75s forwards;
+            }
+
+            h1 {
+                font-size: 96px;
+                margin-bottom: 20px;  
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 1px;
+                text-align: center;
+            }
+
+            .button {
+                background-color: #000000;
+                color: white;
+                border: 3px solid white;
+                border-radius: 4px;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .button:hover {
+                background-color: #ffffff;
+                color:black;
+            }
+            
+            .typewriter {
+                overflow: hidden; 
+                white-space: nowrap; 
+                margin: 0 auto; 
+            }
+
+            @keyframes blink-caret {
+                from, to {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes mainHeaderAnimation {
+                0% {
+                    opacity: 0;
+                    filter: blur(8px);
+                    transform: translateY(5%);
+                }
+
+                100% {
+                    opacity: 1;
+                    filter: blur(0px);
+                    transform: translateX(0%);
+                }
+            }
+
+        </style>
+  </head>
+  <body>
+      <div class="content-side">
+        <h1 class="typewriter"><span id="cursor"></span></h1>
+        <h3>version 2</h3>
+        <ul>
+            <li>Added twenty-one brand new games</li>
+            <ul>
+                <li>Flash Games: Fancy Pants Adventure, The Binding of Isaac, Happy Wheels, Theme Hotel, Escaping the Prison, Stealing the Diamond, Infiltrating the Airship, Fleeing the Complex, The Impossible Quiz, Solitaire</li>
+                <li>Unity: SUPERHOT, Tunnel Rush, Drift Hunters</li>
+                <li>Other: Papa's Hotdoggeria, Townscaper, PaperIO2, Doodle Jump, Vex 6, Among Us (fangame), Edge Surf, MotoX3M</li>
+            </ul>
+            <br>
+
+            <li>Completely revamped the games page</li>
+            <ul>
+                <li>Buttons no longer have descriptions</li>
+                <li>Instead of clicking play, you can now click the whole button</li>
+                <li>Brand new hover effect</li>
+                <li>Buttons all have thumbnails</li>
+                <li>Buttons are smaller in width by 20px</li>
+            </ul>
+            <br>
+            
+            <li>Completely revamped the games page</li>
+            <ul>
+                <li>Buttons no longer have descriptions</li>
+                <li>Instead of clicking play, you can now click the whole button</li>
+                <li>Brand new hover effect</li>
+                <li>Buttons all have thumbnails</li>
+                <li>Buttons are smaller in width by 20px</li>
+            </ul>
+            <br>
+
+            <li>Added an update log page for full changelogs of what has been modified in updates</li>
+            <li>Reorganised folder layout for website</li>
+            <li>Miscellaneous optimisations / head tag optimisations</li>
+            <li>GitHub clean up</li>
+        </ul>
+
+        <a href="index.html" style="text-decoration: underline; color: white;">Go to homepage</a>
+        <a href="https://github.com/a456pur/seraph" target="_blank" style="text-decoration: underline; color: white;">View GitHub</a>
+      </div>
+
+
+      <script>
+        const text = "update log";
+        const typingDelay = 150; 
+        const initialDelay = 10; 
+        const cursor = document.getElementById("cursor");
+        const h1 = document.querySelector(".typewriter");
+
+        function type() {
+        setTimeout(() => {
+            for (let i = 0; i < text.length; i++) {
+            setTimeout(() => {
+                h1.textContent += text[i];
+                if (i === text.length - 1) {
+                cursor.style.display = "none"; 
+                }
+            }, i * typingDelay);
+            }
+        }, initialDelay);
+        }
+
+        type();
+      </script>
+  </body>
+</html>

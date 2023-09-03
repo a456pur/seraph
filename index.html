@@ -2,124 +2,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/ico.ico" type="image/x-icon">
+        <link rel="stylesheet" href="storage/css/index.css">
         <title>Home | Seraph</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: 'Ubuntu', sans-serif;
-                display: flex;
-                height: 100vh;
-                background-color: black;
-            }
-
-            .image-side {
-                width: 60%;
-                background-image: url('seraph.png');
-                background-size: cover;
-                background-position: center;
-                background-color: black;
-                animation: mainHeaderAnimation 4s forwards;
-            }
-
-            .content-side {
-                width: 40%;
-                background-color: #000000;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                animation: mainHeaderAnimation 1s forwards;
-            }
-
-            h1 {
-                font-size: 96px;
-                margin-bottom: 20px;
-            }
-
-            p {
-                font-size: 16px;
-                margin-bottom: 2px;
-                padding-left: 10%;
-                padding-right: 10%;
-                text-align: center;
-            }
-
-            .button {
-                background-color: #000000;
-                color: white;
-                border: 3px solid white;
-                border-radius: 4px;
-                padding: 10px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 20px;
-                margin: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-            }
-
-            .button:hover {
-                background-color: #ffffff;
-                color:black;
-            }
-            
-            .typewriter {
-                overflow: hidden; 
-                white-space: nowrap; 
-                margin: 0 auto; 
-                letter-spacing: 0.15em; 
-            }
-
-            #cursor {
-                display: inline-block;
-                width: 0.1em;
-                background-color: #333;
-                animation: blink-caret 0.75s step-end infinite;
-            }
-
-            @keyframes blink-caret {
-                from, to {
-                    opacity: 0;
-                }
-                50% {
-                    opacity: 1;
-                }
-            }
-
-            @keyframes mainHeaderAnimation {
-                0% {
-                    opacity: 0;
-                }
-
-                100% {
-                    opacity: 1;
-                }
-            }
-
-        </style>
   </head>
   <body>
-      <div class="image-side"></div>
       <div class="content-side">
           <h1 class="typewriter"><span id="cursor"></span></h1>
+          <h2>version 2 (release build)</h2>
           <br>
-          <a class="button" href="games/index.html">Games</a>
-          <a class="button" href="host.html">Host</a>
-          <a class="button" href="https://github.com/a456pur/seraph" target="__blank" >GitHub</a>
-          <p> all games playable on this website are copyright/property of their respective owners </p>
-          <p> // developed by @a456pur | release build v1 \\ </p>
+          <a class="gamesbutton" href="games/index.html">View Games</a>
+          <br>
+          <a href="host.html">Host</a>
+          <a href="https://github.com/a456pur/seraph" target="_blank">GitHub</a>
+          <a href="updatelog.html">Update Log</a>
+          <br>
+          <p> all games that are hosted and playable on this website are complete copyright and property of the respective owners. </p>
+          <p> // website created/developed by @a456pur \\ </p>
       </div>
 
       <script>
         const text = "seraph";
-        const typingDelay = 200; 
-        const initialDelay = 600; 
+        const typingDelay = 400; 
+        const initialDelay = 500; 
         const cursor = document.getElementById("cursor");
         const h1 = document.querySelector(".typewriter");
 

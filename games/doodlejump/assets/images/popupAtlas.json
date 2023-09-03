@@ -1,0 +1,43 @@
+{"frames":{
+
+"blank":
+{
+	"frame":{"x":0,"y":0,"w":471,"h":479},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":471,"y":479},
+	"sourceSize":{"w":471,"h":479}
+},
+"playNow":
+{
+	"frame":{"x":472,"y":0,"w":222,"h":80},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":222,"y":80},
+	"sourceSize":{"w":222,"h":80}
+},
+"close":
+{
+	"frame":{"x":472,"y":81,"w":156,"h":56},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":156,"y":56},
+	"sourceSize":{"w":156,"h":56}
+},
+"appstore":
+{
+	"frame":{"x":472,"y":138,"w":129,"h":39},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":129,"y":39},
+	"sourceSize":{"w":129,"h":39}
+},
+"googleplay":
+{
+	"frame":{"x":472,"y":178,"w":129,"h":39},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":129,"y":39},
+	"sourceSize":{"w":129,"h":39}
+}
+}}
