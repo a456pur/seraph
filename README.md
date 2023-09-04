@@ -19,8 +19,8 @@ unlike most other game hosting websites, seraph supports and encourages hosting,
 seraph was made as a fun side project in order to alleviate everything i've felt was always annoying to use about online game websites. i hope you find your use of this project as i certainly am :)
 
 
-## host lists
-all verified seraph hosting links for you to try out:
+## host list
+below are the sites that seraph is hosted on. offical/trusted sites are maintained by myself, while community hosted sites are hosted by other people. community hosted sights have been verified initally before putting these sites on the host list
 
 offical/trusted sites
 - https://seraph.reveriestudios.online/ (v2.0, main server)
