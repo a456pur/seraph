@@ -47,7 +47,7 @@ current patch notes for the most recent version as of publish (v3.0.0):
 </ul>
 
 ## host list
-below are the sites that seraph is hosted on. offical/trusted sites are maintained by myself, while community hosted sites are hosted by other people. community hosted sights have been verified initally before putting these sites on the host list
+below are the sites that seraph is hosted on. offical/trusted sites are maintained by myself, while community hosted sites are hosted by other people. community hosted sights have been verified initally before putting these sites on the host list.
 
 offical/trusted sites
 - https://seraph.reveriestudios.online/ (v3.0, main server)
