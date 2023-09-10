@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="94.12169885635376" height="27.654701709747314" viewBox="0.32089948654174805 0.2445995807647705 94.12169885635376 27.654701709747314">
+  <defs>
+    <linearGradient id="grad_1" x2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <path id="ID0.22234355565160513" fill="none" stroke="url(#grad_1)" stroke-width="2.4582009315490723" d="M 1.6455 1.4737 L 93.2135 1.4737 L 93.2135 26.6702 L 1.6455 26.6702 L 1.6455 1.4737 Z "/>
+  <image id="ID0.21651871502399445" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFklEQVR42mNhYGCwZ8ADWBgIgOGhAABTlABgHCv+sQAAAC10RVh0U29mdHdhcmUAYnkuYmxvb2RkeS5jcnlwdG8uaW1hZ2UuUE5HMjRFbmNvZGVyqAZ/7gAAAABJRU5ErkJggg==" transform="matrix(11.407588958740234,0,0,3.0749785900115967,1.55,1.75)" stroke-width="1" style="image-rendering: optimizespeed; image-rendering: pixelated;"/>
+  <text id="ID0.10862213745713234" fill="#000000" text-anchor="start" font-family="Sans Serif" font-size="22" transform="matrix(0.63906 0 0 0.632402 6.77812 2.85279)" stroke-width="1" alignment-baseline="text-before-edge" xml:space="preserve"><tspan x="0" style="white-space: pre" dy="1.13em">MUTE CALL</tspan></text>
+</svg>

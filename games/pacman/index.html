@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html>
+
+<head>            
+    <title>Pacman | Seraph</title>
+    <meta name="keywords" content="pacman, pac-man">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Allow page to be saved as web app on iOS. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Hide status bar -->
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+        }
+
+        #canvas {
+            min-height: 70vh;
+            max-width: 100%;
+            background-size: 50%;
+            background-position-x: 55%;
+        }
+
+        @media (min-width:801px) {
+            #canvas {
+                background-position-x: 50%;
+                background-size: 20%;
+                min-height: 100vh;
+            }
+        }
+		
+		.splitter {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        @font-face {
+            font-family: 'ArcadeR';
+            src: url('font/ARCADE_R.TTF');
+            /*
+            src: url('font/PressStart2P.ttf');
+            */
+        }
+
+        #canvas-warning {
+            color: #FF0;
+            font-size: 1.5em;
+        }
+
+        #about-game{
+			display: block;
+			margin-right: 23.9294px;
+            color: white;
+            font-family: ArcadeR;
+            font-size: 1em;
+            text-align: center;
+        }
+    </style>
+	<script type="text/javascript">
+		window.addEventListener("keydown", function(e) {
+			// space and arrow keys
+			if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+				e.preventDefault();
+			}
+		}, false);
+	</script>
+    <script src="pacman.js"></script>
+    <link rel="shortcut icon" href="../../images/ico.ico"
+</head>
+<body>
+	<div id="canvas-wrapper" style="margin-left: 57.9294px;">
+		<div id="about-game" style="">
+			<h1 style="font-size: 0.9em;">PAC-MAN HTML5 GAME</h1>
+		</div>
+		
+		<canvas id='canvas'>
+			<div id="canvas-warning">Your browser does not support HTML Canvas. Please upgrade!</div>
+		</canvas>
+		<canvas id='atlas' style="display:none"></canvas>
+	</div>
+</body>
+</html>

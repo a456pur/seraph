@@ -5,11 +5,17 @@
         <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
         <title>Hosting | Seraph</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+            @font-face {
+                font-family: 'Main';
+                src: url('storage/fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+                    url('storage/fonts/ubuntu/Ubuntu.woff') format('woff'),
+                    url('storage/fonts/ubuntu/Ubuntu.ttf') format('ttf'),
+                    url('storage/fonts/ubuntu/Ubuntu.otf') format('otf');
+            }
             body {
                 margin: 0;
                 padding: 0;
-                font-family: 'Ubuntu', sans-serif;
+                font-family: 'Main', sans-serif;
                 display: flex;
                 height: 100vh;
                 background-color: black;
@@ -78,9 +84,23 @@
                     opacity: 1;
                 }
             }
+
+            .cursor {
+                width: 7px;
+                height: 7px;
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                pointer-events: none;
+                opacity: 0.85;
+                z-index: 10000;
+                transition: transform 1s ease;
+            }
         </style>
   </head>
   <body>
+    <div class="cursor"></div>
       <div class="image-side"></div>
       <div class="content-side">
           <h1>host</h1>
@@ -92,5 +112,6 @@
 
           <p> // developed by @a456pur | release build v2 \\ </p>
       </div>
+      <script src="storage/js/cursor.js"></script>
   </body>
 </html>

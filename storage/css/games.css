@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.cdnfonts.com/css/youtube-sans');
+@font-face {
+    font-family: 'Main';
+    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+         url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
+         url('../fonts/ubuntu/Ubuntu.ttf') format('ttf'),
+         url('../fonts/ubuntu/Ubuntu.otf') format('otf');
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Main', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,10 +23,12 @@ body {
     animation-delay: 0.1s;
     opacity: 0;
     color: white;
+    cursor: none;
+
 }
 
 h1, h2 {
-    font-family: 'YouTube Sans', 'Ubuntu', sans-serif;
+    font-family: 'Main', sans-serif;
 }
 
 h1 {
@@ -32,7 +39,7 @@ h1 {
     background-color: #000000;
     color: white;
     border: 3px solid white;
-    border-radius: 16px;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -41,6 +48,7 @@ h1 {
 
     width: calc(50% - 10px); 
     max-width: 480px;
+
     width: 480px;
     max-height: 100px;
     box-sizing: border-box;
@@ -51,48 +59,30 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 
-    border: 3px solid transparent;
-    border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
-    border-image-slice: 1;
-    border-radius: 4px;
-    animation: borderAnimation 1s infinite alternate;
-    animation-delay: calc(var(--delay) * 1ms);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 
+    border: 3.2px solid rgb(109, 107, 107);
+    border-radius: 16px;
+
+    transition: border 0.04s ease-in;
+    cursor: none;
 }
 
 .button:hover {
-    background-color: #181717;
-    animation: borderAnimationHover 0.5s alternate infinite forwards;
+    background-color: #252323;
+    border: 3.2px solid rgb(255,255,255)
 }
 
 .button h2 {
     font-size: 32px;
     text-align: center;
-    
 }
 
 .button-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-@keyframes borderAnimation {
-    0% {
-        border-image-source: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
-    }
-    100% {
-        border-image-source: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
-    }
-}
-
-@keyframes borderAnimationHover {
-    0% {
-        border-image-source: linear-gradient(45deg, rgb(231, 61, 200), rgb(105, 41, 143));
-    }
-    100% {
-        border-image-source: linear-gradient(45deg, rgb(105, 41, 143), rgb(231, 61, 200));
-    }
 }
 
 @keyframes mainHeaderAnimation {
@@ -110,4 +100,18 @@ h1 {
 a {
     text-decoration: none;
     color: white;
+    cursor: none;
+}
+
+.cursor {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: 10000;
+    transition: transform 1s ease;
 }

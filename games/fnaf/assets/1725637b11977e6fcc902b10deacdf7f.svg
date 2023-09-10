@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="155.59894331123934" height="54.37115629341707" viewBox="0.6973712055558671 -1.381714740527202 155.59894331123934 54.37115629341707">
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <text id="ID0.7125138863921165" fill="#FFFFFF" text-anchor="start" font-family="Sans Serif" font-size="22" transform="matrix(0.766643 0 0 0.766643 2.53329 -1.44993)" stroke-width="1" alignment-baseline="text-before-edge" xml:space="preserve"><tspan x="0" style="white-space: pre" dy="1.13em">Power Left:</tspan></text>
+  <text id="ID0.7125138863921165" fill="#FFFFFF" text-anchor="start" font-family="Sans Serif" font-size="22" transform="matrix(0.766643 0 0 0.766643 1.68329 27.9501)" stroke-width="1" alignment-baseline="text-before-edge" xml:space="preserve"><tspan x="0" style="white-space: pre" dy="1.13em">Usage:</tspan></text>
+  <path id="ID0.15770667884498835" fill="#00FF55" stroke="#00CC44" stroke-width="1.971837598348715" d="M 63.4811 27.351 L 78.0604 27.351 L 78.0604 49.092 L 63.4811 49.092 L 63.4811 27.351 Z "/>
+  <path id="ID0.15770667884498835" fill="#00FF55" stroke="#00CC44" stroke-width="1.971837598348715" d="M 82.7811 27.351 L 97.3604 27.351 L 97.3604 49.092 L 82.7811 49.092 L 82.7811 27.351 Z "/>
+  <path id="ID0.15770667884498835" fill="#FFFF00" stroke="#CCCC00" stroke-width="1.971837598348715" d="M 102.0811 27.351 L 116.6604 27.351 L 116.6604 49.092 L 102.0811 49.092 L 102.0811 27.351 Z "/>
+  <path id="ID0.15770667884498835" fill="#FF0000" stroke="#CC0000" stroke-width="1.971837598348715" d="M 121.3811 27.351 L 135.9604 27.351 L 135.9604 49.092 L 121.3811 49.092 L 121.3811 27.351 Z "/>
+  <path id="ID0.15770667884498835" fill="#FF0000" stroke="#CC0000" stroke-width="1.971837598348715" d="M 140.7311 27.351 L 155.3104 27.351 L 155.3104 49.092 L 140.7311 49.092 L 140.7311 27.351 Z "/>
+</svg>

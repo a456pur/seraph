@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Main';
+    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+         url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
+         url('../fonts/ubuntu/Ubuntu.ttf') format('ttf'),
+         url('../fonts/ubuntu/Ubuntu.otf') format('otf');
+}
+
+body {
+    background-color: #000000;
+    background-image: url('../../images/seraphupdatebackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    font-family: 'Main', sans-serif;
+    animation: mainHeaderAnimation 1.25s ease-in-out;
+    color: white;
+    cursor: none;
+}
+
+h1 {
+    font-size: 96px;
+    margin-bottom: 10px;  
+    text-align: center;
+}
+
+a {
+    text-align: center;
+    cursor: none;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+
+.button {
+    background-color: #2b2b2b;
+    color: white;
+    border: 3px solid white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color:black;
+}
+
+.typewriter {
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+}
+
+@keyframes blink-caret {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes mainHeaderAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.cursor {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.85;
+    z-index: 10000;
+    transition: transform 1s ease;
+}
+
+.center a {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+  

@@ -4,143 +4,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
         <title>Update Log | Seraph</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: 'Ubuntu', sans-serif;
-                display: flex;
-                height: 100vh;
-                background-color: black;
-            }
-
-            .content-side {
-                width: 100%;
-                background-color: #000000;
-                background-image: url('images/seraphupdatebackground.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                opacity: 0;
-                animation: mainHeaderAnimation 0.75s forwards;
-            }
-
-            h1 {
-                font-size: 96px;
-                margin-bottom: 20px;  
-            }
-
-            p {
-                font-size: 16px;
-                margin-bottom: 1px;
-                text-align: center;
-            }
-
-            .button {
-                background-color: #000000;
-                color: white;
-                border: 3px solid white;
-                border-radius: 4px;
-                padding: 10px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 20px;
-                margin: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-            }
-
-            .button:hover {
-                background-color: #ffffff;
-                color:black;
-            }
-            
-            .typewriter {
-                overflow: hidden; 
-                white-space: nowrap; 
-                margin: 0 auto; 
-            }
-
-            @keyframes blink-caret {
-                from, to {
-                    opacity: 0;
-                }
-                50% {
-                    opacity: 1;
-                }
-            }
-
-            @keyframes mainHeaderAnimation {
-                0% {
-                    opacity: 0;
-                    filter: blur(8px);
-                    transform: translateY(5%);
-                }
-
-                100% {
-                    opacity: 1;
-                    filter: blur(0px);
-                    transform: translateX(0%);
-                }
-            }
-
-        </style>
+        <link rel="stylesheet" href="storage/css/update.css">
   </head>
   <body>
+      <div class="cursor"></div>
       <div class="content-side">
         <h1 class="typewriter"><span id="cursor"></span></h1>
-        <h3>version 2</h3>
+        <h3 style="text-align: center;">version 3</h3>
+        <div id="center">
+            <a href="index.html" style="text-decoration: underline; color: white; text-align: center;">Go to homepage</a>
+            <a href="https://github.com/a456pur/seraph" target="_blank" style="text-decoration: underline; color: white; text-align: center;">View GitHub</a>
+        </div>
+        
+        <br>
         <ul>
-            <li>Added twenty-one brand new games</li>
+            <li>Added sixteen brand new games</li>
             <ul>
-                <li>Flash Games: Fancy Pants Adventure, The Binding of Isaac, Happy Wheels, Theme Hotel, Escaping the Prison, Stealing the Diamond, Infiltrating the Airship, Fleeing the Complex, The Impossible Quiz, Solitaire</li>
-                <li>Unity: SUPERHOT, Tunnel Rush, Drift Hunters</li>
-                <li>Other: Papa's Hotdoggeria, Townscaper, PaperIO2, Doodle Jump, Vex 6, Among Us (fangame), Edge Surf, MotoX3M</li>
+                <li>FNAF: Five Nights at Freddy's 1, Five Nights at Freddy's 2, Five Nights at Freddy's 3, Five Nights at Freddy's 4</li>
+                <li>Riddle School: Riddle School, Riddle School 2, Riddle School 3, Riddle School 4, Riddle School 5, Riddle Transfer, Riddle Transfer 2</li>
+                <li>Drift Boss, Friday Night Funkin, Papa's Pancakeria, Pacman, Rooftop Snipers</li>
             </ul>
             <br>
 
-            <li>Completely revamped the games page</li>
+            <li>Updated games page</li>
             <ul>
-                <li>Buttons no longer have descriptions</li>
-                <li>Instead of clicking play, you can now click the whole button</li>
-                <li>Brand new hover effect</li>
-                <li>Buttons all have thumbnails</li>
-                <li>Buttons are smaller in width by 20px</li>
-            </ul>
-            <br>
-            
-            <li>Completely revamped the games page</li>
-            <ul>
-                <li>Buttons no longer have descriptions</li>
-                <li>Instead of clicking play, you can now click the whole button</li>
-                <li>Brand new hover effect</li>
-                <li>Buttons all have thumbnails</li>
-                <li>Buttons are smaller in width by 20px</li>
+                <li>Added a custom cursor</li>
+                <li>Resized buttons to be semi-responsive</li>
+                <li>Games now open in a new tab</li>
+                <li>Border effect removed for more optimisation</li>
+                <li>Changed font to match more with the website</li>
             </ul>
             <br>
 
-            <li>Added an update log page for full changelogs of what has been modified in updates</li>
-            <li>Reorganised folder layout for website</li>
-            <li>Miscellaneous optimisations / head tag optimisations</li>
-            <li>GitHub clean up</li>
+            <li>Added custom cursor around the whole website</li>
+            <li>Changed homepage styling to be more accessible</li>
+            <li>Fixed resizing issues related to update log page</li>
+            <li>Fonts no longer rely on Google Fonts and are stored locally</li>
+            <li>Attempted to fix tanking Happy Wheels performance</li>
+            <li>Major GitHub README overhaul</li>
         </ul>
-
-        <a href="index.html" style="text-decoration: underline; color: white;">Go to homepage</a>
-        <a href="https://github.com/a456pur/seraph" target="_blank" style="text-decoration: underline; color: white;">View GitHub</a>
       </div>
 
 
       <script>
         const text = "update log";
-        const typingDelay = 150; 
-        const initialDelay = 10; 
+        const typingDelay = 400; 
+        const initialDelay = 30; 
         const cursor = document.getElementById("cursor");
         const h1 = document.querySelector(".typewriter");
 
@@ -159,5 +68,7 @@
 
         type();
       </script>
+
+<script src="storage/js/cursor.js"></script>
   </body>
 </html>

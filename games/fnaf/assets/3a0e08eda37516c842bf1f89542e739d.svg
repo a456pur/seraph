@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="274.04251551138674" height="41.570812935703145" viewBox="0.42974412685973284 -0.09095585101502301 274.04251551138674 41.570812935703145">
+  <defs>
+    <linearGradient id="grad_1" x2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <g id="ID0.12415832839906216">
+    <path id="ID0.09596798243001103" fill="none" stroke="url(#grad_1)" stroke-width="2.5523116539648605" stroke-linecap="round" d="M 1.7059 40.2037 L 273.1961 40.2037 L 273.1961 1.1852 L 1.7059 1.1852 L 1.7059 40.2037 Z "/>
+    <image id="ID0.21651871502399445" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFklEQVR42mNhYGCwZ8ADWBgIgOGhAABTlABgHCv+sQAAAC10RVh0U29mdHdhcmUAYnkuYmxvb2RkeS5jcnlwdG8uaW1hZ2UuUE5HMjRFbmNvZGVyqAZ/7gAAAABJRU5ErkJggg==" transform="matrix(33.6875,0,0,-4.65625,2.5,40)" stroke-width="1" style="image-rendering: optimizespeed; image-rendering: pixelated;"/>
+    <g id="ID0.12208981579169631">
+      <path id="ID0.5701058250851929" fill="none" stroke="#000000" stroke-width="2.1137861609458923" stroke-linecap="round" d="M 149.4412 28.6696 L 137.8154 21.518 L 126.1543 28.8105 "/>
+      <path id="ID0.5701058250851929" fill="none" stroke="#000000" stroke-width="2.1137861609458923" stroke-linecap="round" d="M 149.6264 18.1378 L 137.9301 11.268 L 126.4452 18.3139 "/>
+    </g>
+  </g>
+</svg>

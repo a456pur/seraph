@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="114.8499984741211" height="43" viewBox="0.15000009536743164 0.5 114.8499984741211 43">
+  <defs>
+    <linearGradient id="grad_1" x2="1">
+      <stop offset="0" stop-color="#000000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <g id="ID0.22695775935426354">
+    <path id="ID0.5112039977684617" fill="none" stroke="url(#grad_1)" stroke-width="3" d="M 2 2 L 113.5 2 L 113.5 42 L 2 42 L 2 2 Z "/>
+    <image id="ID0.21651871502399445" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFklEQVR42mNhYGCwZ8ADWBgIgOGhAABTlABgHCv+sQAAAC10RVh0U29mdHdhcmUAYnkuYmxvb2RkeS5jcnlwdG8uaW1hZ2UuUE5HMjRFbmNvZGVyqAZ/7gAAAABJRU5ErkJggg==" transform="matrix(13.876628875732422,0,0,4.937465667724609,1.6500000000000004,2.1500000000000004)" stroke-width="1" style="image-rendering: optimizespeed; image-rendering: pixelated;"/>
+    <text id="ID0.10862213745713234" fill="#000000" text-anchor="start" font-family="Sans Serif" font-size="22" transform="matrix(0.63906 0 0 0.632402 6.77812 2.85279)" stroke-width="1" alignment-baseline="text-before-edge" xml:space="preserve"><tspan x="0" style="white-space: pre" dy="1.13em">JUMPSCARES:</tspan><tspan x="0" style="white-space: pre" dy="1.13em">activated</tspan></text>
+  </g>
+</svg>

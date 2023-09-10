@@ -1,0 +1,32 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Riddle Transfer 2 | Seraph</title>
+    <link rel="shortcut icon" href="../../../images/ico.ico" type="image/x-icon">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="/js/main.js"></script>
+    <div id="ruffle" width="100%" height="100%"></div>
+    <script src="../../../storage/ruffle/ruffle.js"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle");
+        player.id = "player";
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("riddle-transfer-2.swf");
+      });
+    </script>
+  </body>
+</html>
