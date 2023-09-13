@@ -6,7 +6,7 @@
     <br/>
     <a href="https://seraph.reveriestudios.online/">go to seraph</a>
     ·
-    <a href="https://github.com/a456pur/seraph/issues">report issue / request feature</a>
+    <a href="https://github.com/a456pur/seraph/issues/new/choose">report issue / request feature</a>
   </p>
 
 ## about
