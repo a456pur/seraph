@@ -1,11 +1,13 @@
 ---
-name: "\U0001F41E website bug"
-about: if your experiencing a bug with the website, use this template
-title: "[Bug] "
-labels: website bug
+name: "⌨ game bug"
+about: if your experiencing a bug with a game on the website, use this template
+title: "[Game Bug]"
+labels: game-specific bug
 assignees: a456pur
 
 ---
+
+**game name:** [game name here]
 
 **what is the bug**
 a description of the bug you are facing
