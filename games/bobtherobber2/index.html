@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, shrink-to-fit=no" />
+    <title>Bob The Robber 2 | Seraph</title>
+    <link rel="icon" href="./splash.jpeg" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+  </head>
+
+  <body>
+    <div id="content"></div>
+    <div id="orientation"></div>
+    <div id="loader">Loading ...</div>
+
+    <script type="text/javascript">
+      var gameName = "bob-the-robber-2.min.f.js";
+
+      //This all here is for cache busting;
+      function addScript(src, buster, callback) {
+        var s = document.createElement("script");
+        s.setAttribute("src", src + "?v=" + buster);
+        if (typeof callback === "function") {
+          s.onload = callback;
+        }
+        document.body.appendChild(s);
+      }
+
+      window.addEventListener(
+        "touchmove",
+        function (event) {
+          event.preventDefault();
+        },
+        false
+      );
+      if (typeof window.devicePixelRatio != "undefined" && window.devicePixelRatio > 2) {
+        var meta = document.getElementById("viewport");
+        meta.setAttribute("content", "width=device-width, initial-scale=" + 2 / window.devicePixelRatio + ", user-scalable=no");
+      }
+
+      addScript("version.js", Date.now(), function () {
+        addScript(gameName, version, function () {
+          var game = new Game();
+        });
+      });
+    </script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Baldi's Basics | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico" />
+    <script type="text/javascript" src="/js/main.js"></script>
+
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="baldi.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "baldi.json", {
+        onProgress: UnityProgress,
+        Module: {
+          onRuntimeInitialized: function () {
+            UnityProgress(gameInstance, "complete");
+          },
+        },
+      });
+    </script>
+  </head>
+  <body style="margin: 0;">
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);">
+        <div id="gameContainer" style="width: 800px; height: 560px; margin: auto;"></div>
+      </div>
+      <script src="firebase-app.js"></script>
+    </div>
+  </body>
+</html>
