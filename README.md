@@ -19,31 +19,29 @@ in addition to this, seraph supports and encourages full hosting support. with t
 i hope you find some use out of this project :)
 
 ## patch notes
-current patch notes for the most recent version as of publish (v3.0.0):
+current patch notes for the most recent version as of publish (v4.0.0):
 <ul>
-    <li>Added sixteen brand new games</li>
+    <li>Added ten brand new games</li>
     <ul>
-        <li>FNAF: Five Nights at Freddy's 1, Five Nights at Freddy's 2, Five Nights at Freddy's 3, Five Nights at Freddy's 4</li>
-        <li>Riddle School: Riddle School, Riddle School 2, Riddle School 3, Riddle School 4, Riddle School 5, Riddle Transfer, Riddle Transfer 2</li>
-        <li>Drift Boss, Friday Night Funkin, Papa's Pancakeria, Pacman, Rooftop Snipers</li>
-    </ul>
-    <br>
-    <li>Updated games page</li>
-    <ul>
-        <li>Added a custom cursor</li>
-        <li>Resized buttons to be semi-responsive</li>
-        <li>Games now open in a new tab</li>
-        <li>Border effect removed for more optimisation</li>
-        <li>Changed font to match more with the website</li>
+        <li>Baldi's Basics</li>
+        <li>Bob the Robber 2</li>
+        <li>Minesweeper</li>
+        <li>Pokemon Fire Red</li>
+        <li>Pokemon Emerald</li>
+        <li>Super Mario Bros</li>
+        <li>Super Mario Kart</li>
+        <li>Super Mario World</li>
+        <li>There Is No Game</li>
+        <li>World's Hardest Game</li>
     </ul>
 
-  <br>
-  <li>Added custom cursor around the whole website</li>
-    <li>Changed homepage styling to be more accessible</li>
-    <li>Fixed resizing issues related to update log page</li>
-    <li>Fonts no longer rely on Google Fonts and are stored locally</li>
-    <li>Attempted to fix tanking Happy Wheels performance</li>
-    <li>Major GitHub README overhaul</li>
+<br>
+  <li>Added announcement banner showcasing that ten games will be added every week for the next five weeks</li>
+              <li>Tweaked update log layout to centre links</li>
+            <li>Created new background picture for hosting page</li>
+            <li>Adjusted width of game page buttons</li>
+            <li>Game page buttons can now display three on one row if screen size is capable</li>
+            <li>Added Google meta tags</li>
 </ul>
 
 ## host list
