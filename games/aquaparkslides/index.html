@@ -1,0 +1,38 @@
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Aquapark Slides | Seraph</title>
+    <link href="shared/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="TemplateData56/style.css" />
+    <script src="TemplateData56/UnityProgress.js"></script>
+    <link rel="icon" href="../../images/ico.ico" />
+
+    <link rel="shortcut icon" href="../../images/ico.ico" />
+    <script src="Build/UnityLoader.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      window.origBlob = window.Blob;
+      window.Blob = function (array, options) {
+        if (array[1] instanceof Uint8Array) {
+          array[1] = new TextDecoder("utf-8").decode(array[1]).replace(/window\.top\.location\.href|window\.location\.href|document\.referrer|document\.URL/g, '"https://storage.y8.com/"');
+        }
+        return new window.origBlob(array, options);
+      };
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WaterParkSlides3Dx2.json", {
+        onProgress: UnityProgress,
+        Module: {
+          onRuntimeInitialized: function () {
+            UnityProgress(gameInstance, "complete");
+          },
+        },
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 100vw; height: 100vh;"></div>
+    </div>
+  </body>
+</html>

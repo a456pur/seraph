@@ -19,44 +19,55 @@ in addition to this, seraph supports and encourages full hosting support. with t
 i hope you find some use out of this project :)
 
 ## patch notes
-current patch notes for the most recent version as of publish (v3.0.0):
+current patch notes for the most recent version as of publish (v4.0.0):
 <ul>
-    <li>Added sixteen brand new games</li>
-    <ul>
-        <li>FNAF: Five Nights at Freddy's 1, Five Nights at Freddy's 2, Five Nights at Freddy's 3, Five Nights at Freddy's 4</li>
-        <li>Riddle School: Riddle School, Riddle School 2, Riddle School 3, Riddle School 4, Riddle School 5, Riddle Transfer, Riddle Transfer 2</li>
-        <li>Drift Boss, Friday Night Funkin, Papa's Pancakeria, Pacman, Rooftop Snipers</li>
-    </ul>
-    <br>
-    <li>Updated games page</li>
-    <ul>
-        <li>Added a custom cursor</li>
-        <li>Resized buttons to be semi-responsive</li>
-        <li>Games now open in a new tab</li>
-        <li>Border effect removed for more optimisation</li>
-        <li>Changed font to match more with the website</li>
-    </ul>
-
-  <br>
-  <li>Added custom cursor around the whole website</li>
-    <li>Changed homepage styling to be more accessible</li>
-    <li>Fixed resizing issues related to update log page</li>
-    <li>Fonts no longer rely on Google Fonts and are stored locally</li>
-    <li>Attempted to fix tanking Happy Wheels performance</li>
-    <li>Major GitHub README overhaul</li>
+            <li>Added fifteen brand new games</li>
+            <ul>
+                <li>Game Boy Advance: Castlevania, Donkey Kong, Dr Mario, Metroid, Super Mario Bros 2 (Advance ver), Super Mario Bros 3 (Advance ver), The Legend of Zelda, WarioWare, Yoshi's Island (Advance ver)</li>
+                <li>Game Boy: Super Mario Land, Kirby's Dream Land, Donkey Kong Land</li>
+                <li>Other: Doge Miner, Tanuki Sunset, Aquapark Slides</li>
+            </ul>
+            <li>Reworked games page</li>
+            <ul>
+                  <li>Added a search bar at the top of the page</li>
+                  <li>Adjusted front size and width of buttons</li>
+                  <li>Added homepage and GitHub button at the top of the page</li>
+                  <li>Added copyrifght statement / credit for website at the top of the page</li>
+                  <li>Changed background to darken the image and add various shapes</li>
+                  <li>Background now repeats across the screen instead of stretching</li>
+                  <li>Buttons no longer need to have the text clicked</li>
+            </ul>
+            <li>Completely revamped the hosting page</li>
+            <li>Tweaked the background of the hosting page</li>
+            <li>Added more optimisations for low-end devices</li>
+            <li>Added some mobile support for pages across the site</li>
+            <li>Changed update log animation</li>
+            <li>Increased font size for update log + added padding</li>
+            <li>Added a neon glow to the homepage header</li>
 </ul>
 
 ## host list
-below are the sites that seraph is hosted on. offical/trusted sites are maintained by myself, while community hosted sites are hosted by other people. community hosted sights have been verified initally before putting these sites on the host list.
+below are the sites that seraph is hosted on. offical/trusted sites are maintained by myself, while community hosted sites are hosted by other people. community hosted sites have been verified initally before putting these sites on the host list.
 
 offical/trusted sites
-- https://seraph.reveriestudios.online/ (v3.0, main server)
-- https://a456pur.github.io/seraph/ (v3.0, secondary server)
+- https://seraph.reveriestudios.online/ (v5.0, main server)
+- https://a456pur.github.io/seraph/ (v5.0, secondary server)
 
 community hosted sites
 - https://amongusacker243.github.io/coolgamewebsite.github.io/ (v1.0)
 - https://synth0.github.io/real.github.io (v1.0)
 - https://ninjanick56.github.io/amogus/ (v1.0)
+
+## credits
+these are some people/projects i wanted to mention that have contributed to seraph:
+
+projects
+- ruffle: allows flash games to be run on the website without any prior installation
+- emulatorjs: allows nes, snes, game boy, game boy advance & more system games to be run on the website without any prior installation
+
+people
+- tommiecc, synth_0, zunlex & ninja_nick56: game suggestions & general support towards the project
+- nate-games: suggestion for faster hosting
 
 ## contact
 if you have any questions about the project feel free to start a post in the issues tab!

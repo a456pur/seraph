@@ -1,0 +1,12 @@
+{
+  "companyName": "Water Park Slides 3D",
+  "productName": "Water Park Slides 3D",
+  "dataUrl": "WaterParkSlides3Dx2.data.unityweb",
+  "wasmCodeUrl": "WaterParkSlides3Dx2.wasm.code.unityweb",
+  "wasmFrameworkUrl": "WaterParkSlides3Dx2.wasm.framework.unityweb",
+  "TOTAL_MEMORY": 268435456,
+  "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+  "webglContextAttributes": {"preserveDrawingBuffer": false},
+  "splashScreenStyle": "Dark",
+  "backgroundColor": "#231F20"
+  }
