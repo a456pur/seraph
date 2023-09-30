@@ -19,7 +19,7 @@ in addition to this, seraph supports and encourages full hosting support. with t
 i hope you find some use out of this project :)
 
 ## patch notes
-current patch notes for the most recent version as of publish (v4.0.0):
+current patch notes for the most recent version as of publish (v5.0.0):
 <ul>
             <li>Added fifteen brand new games</li>
             <ul>
