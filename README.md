@@ -16,7 +16,7 @@ there's always been a problem with me with unblocked games websites, but more sp
 
 in addition to this, seraph supports and encourages full hosting support. with the tutorial provided, you can instantly set up a seraph webpage using github pages in under 2 minutes, without any cost or prior knowledge of coding.
 
-i hope you find some use out of this project :)
+i hope you find some use out of this project as i have :)
 
 ## patch notes
 current patch notes for the most recent version as of publish (v5.1.0):
