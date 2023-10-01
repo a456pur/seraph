@@ -10,13 +10,21 @@ body {
     background-color: #000000;
     background-image: url('../../images/backgrounds/updatelogbg.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     text-align: left;
     font-family: 'Main', sans-serif;
     animation: mainHeaderAnimation 1s ease-in-out;
     color: white;
     cursor: none;
+    height: 100vh;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
 }
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
 
 h1 {
     font-size: 96px;

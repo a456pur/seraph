@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sort the Court | Seraph</title>
+    <link rel="icon" type="image/x-icon" href="../../images/ico.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/ico.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <link rel="shortcut icon" href="../../images/ico.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
+  </head>
+  <body class="template">
+    <div id="container">
+      <div class="template-wrap clear">
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="540px" width="960px"></canvas>
+        <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      </div>
+    </div>
+    
+    <script type="text/javascript">
+      var Module = {
+        TOTAL_MEMORY: 268435456,
+        errorhandler: null, // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+        compatibilitycheck: null,
+        dataUrl: "Release/WebGL.data",
+        codeUrl: "Release/WebGL.js",
+        memUrl: "Release/WebGL.mem",
+      };
+    </script>
+    <script src="Release/UnityLoader.js"></script>
+    <script type="application/javascript" src="/js/main.js"></script>
+  </body>
+</html>

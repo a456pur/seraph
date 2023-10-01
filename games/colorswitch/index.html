@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <script src="/js/all.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Color Switch | Seraph</title>
+  <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: black;
+    }
+
+    canvas.emscripten {
+      border: 0px none;
+      height: 100%;
+    }
+
+    canvas.emscripten.visible {
+      opacity: 1;
+      transition: opacity 0.5s ease-in;
+      transition-delay: 1s;
+    }
+
+    .canvas-container {
+      position: relative;
+      max-height: 0%;
+      background-color: black;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 0px auto;
+      text-align: center;
+
+    }
+
+    .canvas-container:after {
+      padding-top: 133.3333%;
+      /* 16:9 ratio */
+      display: block;
+      content: '';
+    }
+
+    .progress {
+      position: absolute;
+      top: 84%;
+      left: 0;
+      right: 0;
+      width: 90%;
+      height: 28px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+      overflow: hidden;
+      border-radius: 2px;
+      background-color: #F7F7F7;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .progress-bar {
+      float: left;
+      width: 0;
+      min-width: 2%;
+      height: 100%;
+      font-size: 20px;
+      font-family: monospace;
+      line-height: 28px;
+      color: #AAA;
+      text-align: center;
+      transition: width .1s ease;
+      background-color: #292929;
+    }
+
+    .touchLayer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="canvas-container">
+    <!-- onclick="void(0)" -->
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <div id="progress" class="progress">
+      <div id="progress-bar" class="progress-bar" style="width: 0%">0%</div>
+    </div>
+
+    <a id="link_android" target="__blank"
+      href="https://play.google.com/store/apps/details?id=com.fortafygames.colorswitch"
+      style="position: absolute; display: none;"></a>
+    <a id="link_ios" target="__blank" href="https://itunes.apple.com/app/id1053533457"
+      style="position: absolute; display: none;"></a>
+    <a id="link_fb" target="__blank" href="https://www.facebook.com/fortafygames"
+      style="position: absolute; display: none;"></a>
+    <a id="link_poki" target="__blank" href="http://poki.com/" style="position: absolute; display: none;"></a>
+
+    <!--<div id="touch" class="touchLayer">
+        </div>-->
+    <div id="poki-sdk-container" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </div>
+  </div>
+  <script type='text/javascript'>
+
+    // connect to canvas
+    var Module = {
+      preRun: [],
+      postRun: [],
+      print: function () {
+        console.log(Array.prototype.slice.call(arguments).join(" "));
+      },
+      printErr: function () {
+        console.warn(Array.prototype.slice.call(arguments).join(" "));
+      },
+      canvas: document.getElementById('canvas'),
+      totalDependencies: 0,
+      monitorRunDependencies: function (left) {
+        this.totalDependencies = Math.max(this.totalDependencies, left);
+        //console.log('Downloading...', (100*(this.totalDependencies-left)/this.totalDependencies) + '%');
+        //console.log(Module);
+        // console.log('monitorRunDependencies', left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+      }
+    }
+
+
+    window.addEventListener("keydown", function (e) {
+      // space and arrow keys
+      if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+      }
+    }, false);
+
+    function addEvent(elementId, evnt, funct) {
+      var element = document.getElementById(elementId);
+      if (element.attachEvent)
+        return element.attachEvent('on' + evnt, funct);
+      else
+        return element.addEventListener(evnt, funct, false);
+    }
+
+
+    function setupCanvasTouchEvents() {
+      var canvas = document.getElementById("canvas");
+      var el = document.getElementById("canvas"); // "touch"
+      function adjustX(x) {
+        return x * canvas.width / parseInt(getComputedStyle(el).width, 10);
+      }
+      function adjustY(y) {
+        return y * canvas.height / parseInt(getComputedStyle(el).height, 10);
+      }
+
+      el.addEventListener("touchstart", function (evt) {
+        evt.preventDefault();
+        var touches = evt.changedTouches;
+        for (var i = 0; i < touches.length; i++) {
+          var touch = touches[i];
+          //console.log('_pInput_TouchStart', _pInput_TouchStart);
+          _pInput_TouchStart(touch.identifier % 10, adjustX(touch.clientX), adjustY(touch.clientY));
+        }
+      }, false);
+      el.addEventListener("touchend", function (evt) {
+        evt.preventDefault();
+        var touches = evt.changedTouches;
+        for (var i = 0; i < touches.length; i++) {
+          var touch = touches[i];
+          _pInput_TouchEnd(touch.identifier % 10);
+        }
+      }, false);
+      el.addEventListener("touchmove", function (evt) {
+        evt.preventDefault();
+        var touches = evt.changedTouches;
+        for (var i = 0; i < touches.length; i++) {
+          var touch = touches[i];
+          _pInput_TouchMove(touch.identifier % 10, adjustX(touch.clientX), adjustY(touch.clientY));
+        }
+      }, false);
+    }
+
+    var progressBar = document.getElementById("progress-bar");
+    var interval = setInterval(function () {
+      if (Module.dataFileDownloads && Module.dataFileDownloads["game.data"]) {
+        var data = Module.dataFileDownloads["game.data"];
+        //console.log(data.loaded, '/', data.total)
+        var percent = Math.round(data.loaded * 100 / data.total);
+        progressBar.style.width = percent + '%';
+        progressBar.innerHTML = percent + '%';
+        if (data.loaded >= data.total) {
+          document.getElementById("progress").style.display = "none";
+          document.getElementById("canvas").className += " visible";
+          setupCanvasTouchEvents();
+          clearInterval(interval);
+        }
+      }
+    }, 100);
+
+  </script>
+  <script async type="text/javascript" src="game.js"></script>
+
+</body>
+
+</html>

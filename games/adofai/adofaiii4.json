@@ -1,0 +1,13 @@
+{
+    "companyName": "fizzd",
+    "productName": "A Dance of Fire And Ice",
+    "dataUrl": "adofaiii4.data.unityweb",
+    "wasmCodeUrl": "adofaiii4.wasm.code.unityweb",
+    "wasmFrameworkUrl": "adofaiii4.wasm.framework.unityweb",
+    "wasmSymbolsUrl": "adofaiii4.wasm.symbols.unityweb",
+    "TOTAL_MEMORY": 268435456,
+    "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+    "webglContextAttributes": {"preserveDrawingBuffer": false},
+    "splashScreenStyle": "Dark",
+    "backgroundColor": "#231F20"
+    }

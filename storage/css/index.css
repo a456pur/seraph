@@ -15,8 +15,13 @@ body {
     background-color: black;
     animation: mainHeaderAnimation 2s forwards;
     cursor: none;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
 }
 
+body::-webkit-scrollbar {
+    width: 0;
+}
 
 .content-side {
     width: 100%;

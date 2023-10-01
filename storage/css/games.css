@@ -19,6 +19,7 @@ body {
     justify-content: center;
     text-align: center;
     background-color: black;
+    overflow-x: hidden;
 
     opacity: 1;
     animation: fadein 0.75s forwards ease-in-out;

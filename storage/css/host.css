@@ -13,6 +13,13 @@ body {
     height: 100vh;
     background-color: black;
     cursor: none;
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
 }
 
 .content-side {
