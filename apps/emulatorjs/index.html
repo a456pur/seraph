@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>EmulatorJS | Seraph</title>
+        <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+        <script src="../../storage/js/cloak.js"></script>
+        
+        <style>
+            @font-face {
+                font-family: 'Main';
+                src: url('../../storage/fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+                    url('../../storage/fonts/ubuntu//Ubuntu.woff') format('woff'),
+                    url('../../storage/fonts/ubuntu/Ubuntu.ttf') format('ttf'),
+                    url('../../storage/fonts/ubuntu/Ubuntu.otf') format('otf');
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                color: white;
+                background-image: url('emulatorjs.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+
+            input {
+                background-color: black;
+                color: white;
+                font-family: 'Main', sans-serif;
+            }
+
+            button {
+                color: white;
+                font-family: 'Main', sans-serif;
+                background-color: black;
+                border: 2px solid white;
+                border-radius: 16px;
+            }
+
+            .box {
+                font-family: 'Main';
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="box" style="text-align: center; padding-top: 20px;">
+            <h1 style="font-family: 'Main';">emulatorjs upload</h1>
+            <p style="font-family: 'Main';">upload game roms here and run them using emulatorjs!</p>
+            <input type="file" id="input">
+        </div>
+
+        <script>
+            input.onchange = async () => {
+                const url = new Blob([input.files[0]])
+                const parts = input.files[0].name.split(".")
+
+                const core = await (async (ext) => {
+                    if (["fds", "nes", "unif", "unf"].includes(ext))
+                        return "nes"
+
+                    if (["smc", "fig", "sfc", "gd3", "gd7", "dx2", "bsx", "swc"].includes(ext))
+                        return "snes"
+
+                    if (["z64", "n64"].includes(ext))
+                        return "n64"
+
+                    if (["pce"].includes(ext))
+                        return "pce"
+
+                    if (["ngp", "ngc"].includes(ext))
+                        return "ngp"
+
+                    if (["ws", "wsc"].includes(ext))
+                        return "ws"
+
+                    if (["col", "cv"].includes(ext))
+                        return "coleco"
+
+                    if (["nds", "gba", "gb", "z64", "n64"].includes(ext))
+                        return ext
+
+                    return await new Promise(resolve => {
+                        const cores = {
+                            "Nintendo 64": "n64",
+                            "Nintendo Game Boy": "gb",
+                            "Nintendo Game Boy Advance": "gba",
+                            "Nintendo DS": "nds",
+                            "Nintendo Entertainment System": "nes",
+                            "Super Nintendo Entertainment System": "snes",
+                            "PlayStation": "psx",
+                            "Virtual Boy": "vb",
+                            "Sega Mega Drive": "segaMD",
+                            "Sega Master System": "segaMS",
+                            "Sega CD": "segaCD",
+                            "Atari Lynx": "lynx",
+                            "Sega 32X": "sega32x",
+                            "Atari Jaguar": "jaguar",
+                            "Sega Game Gear": "segaGG",
+                            "Sega Saturn": "segaSaturn",
+                            "Atari 7800": "atari7800",
+                            "Atari 2600": "atari2600",
+                            "NEC TurboGrafx-16/SuperGrafx/PC Engine": "pce",
+                            "NEC PC-FX": "pcfx",
+                            "SNK NeoGeo Pocket (Color)": "ngp",
+                            "Bandai WonderSwan (Color)": "ws",
+                            "ColecoVision": "coleco"
+                        }
+
+                        const button = document.createElement("button");
+                        button.classList.add("emu-button");
+
+                        const select = document.createElement("select");
+                        select.classList.add("emu-select");
+
+
+                        for (const type in cores) {
+                            const option = document.createElement("option")
+
+                            option.value = cores[type]
+                            option.textContent = type
+                            select.appendChild(option)
+                        }
+
+                        button.onclick = () => resolve(select[select.selectedIndex].value)
+                        button.textContent = "Load game"
+                        box.innerHTML = ""
+
+                        box.appendChild(select)
+                        box.appendChild(button)
+                    })
+                })(parts.pop())
+
+                const div = document.createElement("div")
+                const sub = document.createElement("div")
+                const script = document.createElement("script")
+
+                sub.id = "game"
+                div.id = "display"
+
+                box.remove()
+                div.appendChild(sub)
+                document.body.appendChild(div)
+
+                window.EJS_player = "#game";
+                window.EJS_gameName = parts.shift();
+                window.EJS_biosUrl = "";
+                window.EJS_gameUrl = url;
+                window.EJS_core = core;
+                window.EJS_pathtodata = "../../storage/emulatorjs/data";
+                window.EJS_startOnLoaded = true;
+
+                script.src = "../../storage/emulatorjs/data/loader.js";
+                document.body.appendChild(script);
+            }
+            function detectAdBlock(url) {
+                let adBlockEnabled = false;
+                try {
+                    window.EJS_AdUrl = document.querySelector('iframe[src="' + window.EJS_AdUrl + '"]').src;
+                } catch (e) {
+                    adBlockEnabled = true;
+                }
+                if (adBlockEnabled) {
+                    window.EJS_adBlocked(url);
+                }
+            }
+            box.ondragover = () => box.setAttribute("drag", true);
+            box.ondragleave = () => box.removeAttribute("drag");
+        </script>
+    </body>
+</html>

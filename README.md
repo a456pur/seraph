@@ -2,7 +2,7 @@
 <img src="images/seraphbanner.png">
 
   <p align="center">
-    seraph; an open source game website that hosts 60+ games with full downloading support, a clean and centralised user interface and no iframe embedding
+    seraph; an open source game website that hosts 100+ games with full downloading support, a clean and centralised user interface and no iframe embedding
     <br/>
     <a href="https://seraph.reveriestudios.online/">go to seraph</a>
     ·
@@ -19,25 +19,49 @@ in addition to this, seraph supports and encourages full hosting support. with t
 i hope you find some use out of this project as i have :)
 
 ## patch notes
-current patch notes for the most recent version as of publish (v5.1.0):
+current patch notes for the most recent version as of publish (v6.0.0):
 <ul>
-  <li>Added twenty-one brand new games</li>
-  <ul>
-    <li>Game Boy Advance: Bomberman, Fire Emblem, Ice Climber, Mario Kart Super Circuit, Pokemon Leaf Green, Pokemon Ruby, Pokemon Sapphire</li>
-    <li>Flash: Papa's Freezeria, Bloons Tower Defence, Bloons Tower Defence 2, Bloons Tower Defence 3, Bloons Tower Defence 4, Super Smash Flash, Super Meat Boy, This Is The Only Level</li>
-    <li>Other: Color Switch, A Dance of Fire and Ice (ADOFAI), Stickman Hook, Defend the Tank, Sort the Court</li>
-  </ul>
-
-  <li>Added new placeholder image for games which do not have a thumbnail</li>
-  <li>Fixed cursor bug making horizontal scrollbars appear</li>
+  <li>
+    Added eighteen brand new games
+    <ul>
+      <li>Flash: Run, Run 2, Battleships, Breaking the Bank, Duck Life, Duck Life 2, Duck Life 3, Line Rider, Mario Combat, Raft Wars 2, Space Invaders, Gun Mayhem, Learn to Fly</li>
+      <li>Nintendo DS: Animal Crossing: Wild World, Mario Kart DS, New Super Mario Bros, Nintendogs: Best Friends, Super Mario 64 DS</li>
+    </ul>
+  </li>
+  <li>
+    Added a brand new apps section, hosting fun utilities and demos of projects
+    <ul>
+      <li>Ruffle App: Allows users to run thousands of Flash files (.swf) using Ruffle</li>
+      <li>EmulatorJS App: Allows users to run game ROMs using EmulatorJS</li>
+      <li>WebGL Fluids: A full fluid simulation ran entirely in WebGL</li>
+    </ul>
+  </li>
+  <li>
+    Added tab cloaking
+    <ul>
+      <li>Select a preset cloak from the cloaking page, navigable from the homepage</li>
+      <li>Five preset cloaks are preset currently, with more to come</li>
+      <li>Refresh to see your tab disguised in plain sight!</li>
+      <li>Every page on the website has been altered to support this new feature</li>
+    </ul>
+  </li>
+  <li>Site now prefers to use official ruffle CDN instead of hosting locally to save bandwidth</li>
+  <li>New Vercel domain that auto-syncs with any changes made in GitHub</li>
+  <li>New background images created for relevant pages</li>
+  <li>Added neon glow to every h1 element in the site</li>
+  <li>Removed incorrect branding around the site</li>
+  <li>Minor optimizations around pages</li>
+  <li>Added more brief mobile support to pages around the site</li>
+  <li>Wording rephrasing has been made to better clarify information</li>
 </ul>
 
 ## host list
 below are the sites that seraph is hosted on. offical/trusted sites are maintained by myself, while community hosted sites are hosted by other people. community hosted sites have been verified initally before putting these sites on the host list.
 
 offical/trusted sites
-- https://seraph.reveriestudios.online/ (v5.1, main server)
-- https://a456pur.github.io/seraph/ (v5.1, secondary server)
+- https://seraph.reveriestudios.online/ (v6, main server)
+- https://a456pur.github.io/seraph/ (v6, secondary server)
+- https://seraph-snowy.vercel.app/ (v6, third server)
 
 community hosted sites
 - https://amongusacker243.github.io/coolgamewebsite.github.io/ (v1.0)

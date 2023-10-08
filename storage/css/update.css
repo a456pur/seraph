@@ -30,6 +30,15 @@ h1 {
     font-size: 96px;
     margin-bottom: 10px;  
     text-align: center;
+
+    text-shadow: 0 0 10px #FFF, 
+    0 0 10px #000000, 
+    0 0 30px #000000, 
+    0 0 40px #FFF, 
+    0 0 50px #000000, 
+    0 0 60px #FFF,
+    0 0 70px #000000, 
+    0 0 80px #000000; 
 }
 
 a {

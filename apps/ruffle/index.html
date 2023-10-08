@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ruffle | Seraph</title>
+        <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+        <script src="../../storage/js/cloak.js"></script>
+        
+        <style>
+            @font-face {
+                font-family: 'Main';
+                src: url('../../storage/fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+                    url('../../storage/fonts/ubuntu//Ubuntu.woff') format('woff'),
+                    url('../../storage/fonts/ubuntu/Ubuntu.ttf') format('ttf'),
+                    url('../../storage/fonts/ubuntu/Ubuntu.otf') format('otf');
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                color: white;
+                background-image: url('ruffle.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .upload {
+                font-family: 'Main', sans-serif;
+                text-align: center;
+                padding: 20px;
+            }
+
+            input {
+                background-color: black;
+                color: white;
+                font-family: 'Main', sans-serif;
+            }
+
+            button {
+                color: white;
+                font-family: 'Main', sans-serif;
+                background-color: black;
+                border: 2px solid white;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <script>
+            function loadLocalRuffle() {
+                var script = document.createElement('script');
+                script.src = '../../storage/ruffle/ruffle.js';
+                document.body.appendChild(script);
+            }
+
+            var cdnScript = document.createElement('script');
+            cdnScript.src = 'https://unpkg.com/@ruffle-rs/ruffle';
+            cdnScript.onerror = loadLocalRuffle;
+            document.body.appendChild(cdnScript);
+        </script>
+
+        <div class="upload">
+            <h1>ruffle emulator</h1>
+            <p>upload a swf file to here and then run it using ruffle!</p>
+            <br>
+            <form id="upload-form">
+                <input type="file" id="swf-upload" accept=".swf">
+                <button type="submit">run flash file</button>
+            </form>
+            <br>
+            <p>// tool developed by @a456pur, <a href="https://github.com/ruffle-rs/ruffle/graphs/contributors" target="_blank" style="text-decoration: underline; color: white;">ruffle project credits here</a> \\ </p>
+        </div>
+
+        <div id="ruffle-container"></div>
+
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+
+            function loadSWF(filename) {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("ruffle-container");
+                player.id = "player";
+                player.style.width = "100vw";
+                player.style.height = "100vh";
+                container.innerHTML = "";
+                container.appendChild(player);
+                player.load(filename);
+
+                const uploadForm = document.getElementById("upload-form");
+                uploadForm.style.display = "none";
+
+                const uploadDiv = document.querySelector(".upload");
+                uploadDiv.style.display = "none";
+            }
+
+            window.addEventListener("load", (event) => {
+                const uploadForm = document.getElementById("upload-form");
+                const swfUpload = document.getElementById("swf-upload");
+
+                uploadForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    if (swfUpload.files.length === 0) {
+                        return;
+                    }
+
+                    const file = swfUpload.files[0];
+                    loadSWF(URL.createObjectURL(file));
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -10,11 +10,23 @@
         background-color: black;
       }
     </style>
+            <script src="../../../storage/js/cloak.js"></script>
   </head>
   <body>
     <script src="/js/main.js"></script>
     <div id="ruffle" width="100%" height="100%"></div>
-    <script src="../../../storage/ruffle/ruffle.js"></script>
+    <script>
+      function loadLocalRuffle() {
+          var script = document.createElement('script');
+          script.src = '../../../storage/ruffle/ruffle.js';
+          document.body.appendChild(script);
+      }
+
+      var cdnScript = document.createElement('script');
+      cdnScript.src = 'https://unpkg.com/@ruffle-rs/ruffle';
+      cdnScript.onerror = loadLocalRuffle;
+      document.body.appendChild(cdnScript);
+    </script>
     <script>
       window.RufflePlayer = window.RufflePlayer || {};
       window.addEventListener("load", (event) => {

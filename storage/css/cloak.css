@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Main';
+    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+        url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
+        url('../fonts/ubuntu/Ubuntu.ttf') format('ttf'),
+        url('../fonts/ubuntu/Ubuntu.otf') format('otf');
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Main', sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    cursor: none;
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.content-side {
+    width: 100%;
+    background-color: #000000;
+    background-image: url('../../images/backgrounds/cloakbg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: mainHeaderAnimation 2s forwards;
+}
+
+h1 {
+    font-size: 96px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #FFF, 
+    0 0 10px #000000, 
+    0 0 30px #000000, 
+    0 0 40px #FFF, 
+    0 0 50px #000000, 
+    0 0 60px #FFF,
+    0 0 70px #000000, 
+    0 0 80px #000000; 
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    width: 50%;
+    max-width: 200px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: 'Main', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px;
+    cursor: none;
+    transition: background-color 0.15s ease-in-out;
+
+    border: 2px solid white;
+    border-radius: 32px;
+}
+
+select {
+    background-color: #000000;
+    color: white;
+    width: 50%;
+    max-width: 400px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    border: 3px solid white;
+    border-radius: 32px;
+    padding-left: 10px;
+    cursor: none;
+    padding-right: 10px;
+    font-family: 'Main', sans-serif;
+}
+
+button:hover {
+    background-color: #1a1818;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+
+@keyframes mainHeaderAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
+    }
+}
+
+
+.cursor {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.85;
+    z-index: 10000;
+    transition: transform 1s ease;
+}

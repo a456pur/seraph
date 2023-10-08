@@ -1,0 +1,119 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
+        <link rel="stylesheet" href="storage/css/cloak.css">
+        <title>Cloaking | Seraph</title>
+
+        <meta name="description" content="seraph; an open source unblocked games website hosting 100+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
+        <meta property="og:site_name" content="seraph">
+        <meta property="og:title" content="seraph">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="seraph; an open source unblocked games website hosting 100+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
+
+        
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="content-side">
+        <h1>cloak</h1>
+        <a href="index.html" style="font-size: 18px;">go to homepage</a>
+        <p> mask seraph with these cloaking presets! choose one, click select and your tab will be disguised. </p>
+        <br>
+
+        <select id="presetSelect">
+            <option value="google">google</option>
+            <option value="bing">bing</option>
+            <option value="gmail">gmail</option>
+            <option value="desmos">desmos</option>
+            <option value="googleclassroom">google classroom</option>
+            <option value="wikipedia">wikipedia</option>
+        </select>
+        <br>
+        <button id="saveButton">select</button>
+        <br>
+        <button id="resetButton">reset</button>
+        <p id="success" style="display: none;">amongus!</p>
+
+        <script src="storage/js/cursor.js"></script>
+
+        <script src="storage/js/cloak.js"></script>
+
+        <script>
+            function setCookie(name, value, options) {
+                options = options || {};
+
+                let expires = options.expires;
+
+                if (typeof expires == "number" && expires) {
+                    const d = new Date();
+                    d.setTime(d.getTime() + expires * 24 * 60 * 60 * 1000);
+                    expires = options.expires = d;
+                }
+
+                if (expires && expires.toUTCString) {
+                    options.expires = expires.toUTCString();
+                }
+
+                value = encodeURIComponent(value);
+
+                let updatedCookie = name + "=" + value;
+
+                for (const propName in options) {
+                    updatedCookie += "; " + propName;
+                    const propValue = options[propName];
+                    if (propValue !== true) {
+                        updatedCookie += "=" + propValue;
+                    }
+                }
+
+                document.cookie = updatedCookie;
+            }
+
+            function getCookie(name) {
+                const matches = document.cookie.match(new RegExp(
+                    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                ));
+                return matches ? decodeURIComponent(matches[1]) : undefined;
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                const presetSelect = document.getElementById("presetSelect");
+                const saveButton = document.getElementById("saveButton");
+                const resetButton = document.getElementById("resetButton");
+                const successMessage = document.getElementById("success");
+
+                const selectedPreset = getCookie("tabCloakPreset");
+                if (selectedPreset) {
+                    presetSelect.value = selectedPreset;
+                }
+
+                saveButton.addEventListener("click", function() {
+                    const selectedValue = presetSelect.value;
+                    successMessage.textContent = "preferences saved! refresh the page to see changes";
+                    setCookie("tabCloakPreset", selectedValue, { expires: 365 });
+
+                    successMessage.style.display = "block";
+                    setTimeout(function() {
+                        successMessage.style.display = "none";
+                    }, 3000);
+                });
+
+                resetButton.addEventListener("click", function() {
+                    deleteCookie("tabCloakPreset");
+                    presetSelect.selectedIndex = 0;
+                    successMessage.textContent = "preferences reset! refresh the page to see changes";
+                    successMessage.style.display = "block";
+                    setTimeout(function() {
+                        successMessage.style.display = "none";
+                    }, 3000);
+                });
+
+                function deleteCookie(name) {
+                    document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                }
+            });
+        </script>
+  </body>
+</html>

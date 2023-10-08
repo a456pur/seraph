@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Main';
+    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+         url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
+         url('../fonts/ubuntu/Ubuntu.ttf') format('ttf'),
+         url('../fonts/ubuntu/Ubuntu.otf') format('otf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Main', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    overflow-x: hidden;
+
+    opacity: 1;
+    animation: fadein 0.75s forwards ease-in-out;
+
+    background-image: url('../../images/backgrounds/appsbg.png');
+    background-repeat: repeat;
+
+    color: white;
+    cursor: none;
+}
+
+h1, h2 {
+    font-family: 'Main', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    text-shadow: 0 0 10px #FFF, 
+    0 0 10px #000000, 
+    0 0 30px #000000, 
+    0 0 40px #FFF, 
+    0 0 50px #000000, 
+    0 0 60px #FFF,
+    0 0 70px #000000, 
+    0 0 80px #000000; 
+}
+
+.button {
+    background-color: #000000;
+    color: white;
+    border: 3px solid white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+
+    max-width: 480px;
+
+    width: 480px;
+    height: 250px;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 3.2px solid rgb(118, 118, 118);
+    border-radius: 16px;
+
+    transition: border 0.04s ease-in;
+    cursor: none;
+}
+
+.button:hover {
+    background-color: #252323;
+    border: 3.2px solid rgb(255,255,255)
+}
+
+.button h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+input {
+    background-color: black;
+    color: white;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 16px;
+    width: 0%;
+    max-width: 450px;
+    font-size: 20px;
+    font-family: 'Main', sans-serif;
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    opacity: 0;
+    animation: searchTween 2.5s ease-in-out forwards;
+    animation-delay: 0s;
+
+    cursor: none;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes searchTween {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 70%;
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: none;
+}
+
+.cursor {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 1;
+    z-index: 10000;
+    transition: transform 1s ease;
+}
+
+.linkp a {
+    font-size: 17px;
+    text-decoration: underline;
+    text-align: center;
+    border: 3px solid transparent;
+    transition: 0.15s ease-in-out;
+
+    opacity: 0;
+    animation: fadein 1s forwards ease-in-out;
+    animation-delay: 0.25s;
+}
+
+p {
+    padding-left: 20%;
+    padding-right: 20%;
+}
