@@ -37,6 +37,7 @@ h1, h2 {
 
 h1 {
     font-size: 48px;
+    padding-bottom: 0px;
     text-shadow: 0 0 10px #FFF, 
     0 0 10px #000000, 
     0 0 30px #000000, 
@@ -71,14 +72,11 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 
-    border: 3.2px solid rgb(118, 118, 118);
+    border: 3.2px solid rgb(152, 152, 152);
     border-radius: 16px;
 
     transition: border 0.04s ease-in;
     cursor: none;
-
-
-
 }
 
 .button:hover {
@@ -90,6 +88,26 @@ h1 {
     font-size: 32px;
     text-align: center;
 }
+
+select {
+    background-color: #000000;
+    color: white;
+    cursor: none;
+    width: 0%;
+    max-width: 200px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    border: 2px solid white;
+    border-radius: 32px;
+    padding-left: 10px;
+    cursor: none;
+    padding-right: 10px;
+    font-family: 'Main', sans-serif;
+    text-align: center;
+    animation: searchTween 3.5s ease-in-out forwards;
+}
+
 
 input {
     background-color: black;

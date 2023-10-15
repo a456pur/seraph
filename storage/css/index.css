@@ -11,7 +11,6 @@ body {
     padding: 0;
     font-family: 'Main', sans-serif;
     display: flex;
-    height: 100vh;
     background-color: black;
     animation: mainHeaderAnimation 2s forwards;
     cursor: none;
@@ -33,7 +32,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     animation: mainHeaderAnimation 1s ease-in-out forwards;
     background-image: url('../../images/backgrounds/homebg.png');
-
+    background-size: cover;
 }
 
 h1 {

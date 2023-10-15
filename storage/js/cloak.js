@@ -62,6 +62,10 @@ document.addEventListener("DOMContentLoaded", function() {
         wikipedia: {
             favicon: "../../images/icons/wikipedia.ico",
             title: "Wikipedia"
+        },
+        chrometab: {
+            favicon: "../../images/icons/chromenewtab.ico",
+            title: "New Tab"
         }
     };
 

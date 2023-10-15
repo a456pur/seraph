@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="/js/all.js"></script>
+        <title>Thirty Dollar Website | Seraph</title>
+        <script src="../../storage/js/cloak.js"></script>
+        <link rel="stylesheet" href="🎨.css?v=5a" charset="UTF-8" />
+        <link rel="icon" href="../../images/ico.ico"></link>
+        <link rel="shortcut icon" href="../../images/ico.ico">
+        <script src="../../storage/js/cloak.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=820">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    </head>
+
+    <body style="text-align: center">
+
+        <div id="everything">
+        
+        <h1 class="title" id="caption">DON'T YOU LECTURE ME WITH YOUR THIRTY DOLLAR WEBSITE</h1>
+
+        <div id="main" style="width: 1140px;">
+
+            <div class="sideboxes">
+                <div class="innersidebox" id="icons_container" style="width: 824px">
+                    <div class="infobox">
+                        <h1 id="soundText">Sounds</h1>
+                        <h1 id="soundInfo" style="display: none; color: var(--greenfont); white-space: nowrap;">
+                            <soundinfo id="soundName"></soundinfo>
+                            <soundinfo id="soundOrigin" style="margin-left: 5px; font-size: 20px; opacity: 50%;"></soundinfo>
+                        </h1>
+                        <span><p mobile="Tap to add sound">Left click to add sound</p><p mobile="Hold to preview">Right click to preview</p></span>
+                    </div>
+                    <div class="iconbox loadingIcons" id="icons" style="height: 467px">
+                        <div id="iconboxLoading" style="width: 100%; opacity: 33%">
+                            <h1 id="loadingText">Loading...</h1>
+                            <p id="errorInfo" style="font-weight: normal; padding-bottom: 10px"><p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innersidebox" style="width: 284px;">
+                    <div class="infobox">
+                        <h1 id="actionText">Actions</h1>
+                        <h1 id="actionInfo" style="display: none; color: var(--bluefont)">
+                            <actioninfo id="actionName"></actioninfo>
+                            <actioninfo id="actionKey" style="margin-left: 5px; font-size: 20px; opacity: 50%;"></actioninfo>
+                        </h1>
+                        <span class="mobileOnly"><p mobile="Tap to add action">Left click to add action</p></span>
+                    </div>
+                    <div class="iconbox" id="actions"></div>
+
+                    <div class="playbuttons">
+                        <p id="bpmInfo" class="stopInfo" style="display: none;"><span id="BPM"></span> BPM &nbsp;&nbsp;•&nbsp;&nbsp; <span id="volume"></span>% Volume</p>
+                        <div id="stopBtn" class="stopInfo" style="background-color: var(--emojiyellow); display: none;" onclick="cancel({ stopSounds: true })" oncontextmenu="return false">
+                            <img src="assets/stop.png">
+                            <h1>Stop</h1>
+                        </div>
+
+                        <p class="playInfo" mobile="Hold to skip intro">Right click to skip intro</p>
+                        <div id="playBtn" class="playInfo" style="background-color: var(--emojigreen)" onclick="startSequence()" oncontextmenu="startSequence(true); return false">
+                            <img src="assets/play.png">
+                            <h1>Play</h1>
+                        </div>
+
+                        <div id="resetBtn" style="background-color: var(--emojired)" onclick="if (!active && $('#sequence').children().length) { shiftHeld ? $('#clearsounds').click() : $('#clearAll').css('display', 'flex') }" oncontextmenu="return false">
+                            <img src="assets/reset.png">
+                            <h1>Clear</h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 0px">
+                <div class="infobox">
+                    <h1>Sequence</h1>
+                    <span>
+                        <p mobile="Tap to remove">Left click to remove</p>
+                        <p class="nomobile">Right click to preview</p>
+                        <p class="nomobile">Shift click to clone</p>
+                        <p mobile="Swipe to change pitch">Scroll to change pitch</p>
+                        <p class="nomobile">Ctrl+scroll to change volume</p>
+                        <!-- <p mobile="Drag to rearrange">Drag to rearrange</p> -->
+                    </span>
+                </div>
+                <div class="iconbox" id="sequence"></div>
+            </div>
+
+            <div style="display: none;" id="sectionSettings">
+                <div class="infobox" style="flex-direction:column; align-items: flex-start">
+                    <h1 style="margin-bottom: 12px" class="noPin">Selected section: <b id="selectedSection">None</b></h1>
+                    <div class="sectionControls">
+                        <img onclick="changeSection(-1)" class="imgButton" src="./assets/section_previous.png" title="Previous section">
+                        <img onclick="changeSection(1)" class="imgButton" src="./assets/section_next.png" title="Next section">
+                        <img class="requiresSelected imgButton cantSelect" id="hideSection" onclick="toggleSectionVisibility()" src="./assets/section_hide.png" title="Hide section">
+                        <img class="requiresSelected imgButton cantSelect" id="showSection" onclick="toggleSectionVisibility()" src="./assets/section_show.png" title="Show section" style="display: none">
+                        <img class="requiresSelected imgButton cantSelect" onclick="deselectSection()" src="./assets/section_deselect.png" id="Deselect section">
+                    </div>
+                    <span class="noPin" style="margin-top: 12px">
+                        <p>Ctrl+Click to select a section</p>
+                        <p>Ctrl+Up/Down to change section</p>
+                        <p>Ctrl+D to deselect</p>
+                    </span>
+                    <p class="noPin multiline" style="text-align: left; margin-top: 0px">Sounds will be added to the end of the selected section, and playback will begin from the beginning of it.<br>You can pin these section controls from the settings.</p>
+                </div>
+            </div>
+
+            <input type="file" id="loadFile" style="display: none;" accept=".🗿,.moai,.txt,">
+
+            <div class="playbuttons saveButtons" id="saveOptions" style="display: none; margin-top: 30px; flex-direction: row; justify-content: center;";>
+
+                <div id="saveBtn" onclick="quickSave()" style="position: relative" oncontextmenu="return false">
+                    <img src="assets/save.svg">
+                    <h1>Save</h1>
+                </div>
+
+                <div id="downloadBtn" oncontextmenu="return false">
+                    <img src="assets/download.svg">
+                    <h1 id="saveAsText">Save As</h1>
+                </div>
+
+                <div id="loadBtn" onclick="$('#loadFile').click()" oncontextmenu="return false">
+                    <img src="assets/load.svg">
+                    <h1>Load</h1>
+                </div>
+
+            </div>
+
+            <div style="display: flex; justify-content: center; align-items: center; margin: 7px 0px 16px 0px;">
+                <input id="saveName" placeholder="sequence" type="text" style="height: 32px; width: 200px; background-color: rgba(0, 0, 0, 0.25);">
+                <p style="margin: 0px 0px 0px 6px; padding: 0px 0px; font-size: 20px;">.🗿</p>
+            </div>
+
+            <div class="socialLinks" style="margin-bottom: 10px; padding-top: 25px">
+                <p style="font-size: 20px; margin: 0px 10px 0px 0px">#thirtydollarwebsite creations on:</p>
+                <div class="socialTag"><a target="_blank" href="https://youtube.com/results?search_query=%23thirtydollarwebsite"><img src="./assets/social_youtube.svg"> <p>YouTube</p></a></div>
+                <div class="socialTag"><a target="_blank" href="https://tiktok.com/search?q=%23thirtydollarwebsite"><img src="./assets/social_tiktok.svg"> <p>TikTok</p></a></div>
+                <div class="socialTag"><a target="_blank" href="https://twitter.com/search?q=%23thirtydollarwebsite&src=typed_query&f=top"><img src="./assets/social_twitter.svg"> <p>Twitter</p></a></div>
+            </div>
+
+            <div>           
+                <p class="multiline" style="margin-bottom: 16px">
+                    <b>NEW: </b> 12 new sounds for all your particle accelerator needs
+                <p>Check out my other silly projects over at <a style="color: white !important" target="_blank" href="https://gdcolon.com?f=30">gdcolon.com</a></p>
+            </div>
+
+            <div class="credits" style="margin-bottom: 8px">
+                <p>Created by <a target="_blank" href="https://twitter.com/TheRealGDColon">Colon</a> :</p>
+                <p title="no copyright intended">I own pretty much nothing on this site please don't kill me</p>
+            </div>
+
+            <div style="padding: 10px 0px 10px 0px">
+                <button style="width: 150px; background: var(--emojiblue)" onclick="$('#settingsMenu').show()"><b>Settings</b></button>
+                <button class="nomobile" style="margin-left: 20px; width: 150px; background: var(--emojiblue)" onclick="$('#shortcutMenu').show()"><b>Shortcuts</b></button>
+            </div>
+
+            <div style="display: flex; justify-content: center; padding: 10px 0px 30px 0px">
+                <div class="extraSetting">
+                    <input class="settingBox" id="toggleProMode" type="checkbox" setting="proMode">
+                    <p style="font-weight: bold; font-size: 20px">PRO MODE</p>
+                </div>
+            </div>
+
+            <div id="extraPadding" style="display: none; height: 200px"></div>
+
+        </div>
+
+        <div id="proHotbar" style="display: none">
+            <div class="hotbarTabs">
+                <div class="hotbarTab" tab="all" desc="Sounds">
+                    <img src="./assets/tab_all.svg">
+                </div>
+                <div class="hotbarTab" tab="actions" desc="Actions">
+                    <img src="./assets/tab_actions.svg">
+                </div>
+                <div class="hotbarTab" tab="recent" desc="Recent">
+                    <img src="./assets/tab_recent.svg">
+                </div>
+                <!-- <div class="hotbarTab" tab="favorite" desc="Favorites">
+                    <img src="./assets/tab_favorites.svg">
+                </div> -->
+                <div class="hotbarTab" tab="notes" desc="Notes">
+                    <img src="./assets/tab_notes.svg">
+                </div>
+                <div class="hotbarTab" tab="percussion" desc="Percussion">
+                    <img src="./assets/tab_percussion.svg">
+                </div>
+                <div id="hotbarHovertext" style="display: flex; justify-content: flex-start; align-items: center">
+                    <h1 class="hotbarLabel" id="hotbarText" style="white-space: nowrap;"></h1>
+                    <h1 class="hotbarLabel" id="hotbarContext" style="white-space: nowrap; margin-left: 10px; margin-top: 16px; font-size: 20px; opacity: 50%"></h1>
+                </div>  
+            </div>
+            <div class="hotbar fancyScroll" id="hotbarNotes">
+                
+            </div>
+        </div>
+        
+        <div class="popup" id="action_speed" style="display: none">
+            <div class="popupbox">
+                <h1>Set tempo</h1>
+                <p class="popupdesc">Sets the rate at which sounds are played.<br>Default is 300 sounds per minute.</p>
+                <p class="skippableAction"></p>
+                <div class="popupinput"> <input id="bpmAmount" value="300" type="number"><p> BPM</p> </div>
+                <div style="margin-top: 25px">
+                    <button onclick="addAction('speed', '#bpmAmount', 'add')" style="background: var(--emojigreen)">Add</button>
+                    <button onclick="addAction('speed', '#bpmAmount', 'set')" style="font-weight: bold; background: var(--emojiblue)" actionConfirm="true">Set to</button>
+                    <button onclick="addAction('speed', '#bpmAmount', 'multiply')" style="background: var(--emojigreen)">Multiply</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="action_volume" style="display: none">
+            <div class="popupbox">
+                <h1>Set volume</h1>
+                <p class="popupdesc">Sets the volume of all subsequent sounds.<br>Default is 100%, max is 600%.</p>
+                <p class="skippableAction"></p>
+                <div class="popupinput"> <input id="volumeAmount" value="100" type="number"><p>%</p> </div>
+                <div style="margin-top: 25px">
+                    <button onclick="addAction('volume', '#volumeAmount', 'add')" style="background: var(--emojigreen)">Add</button>
+                    <button onclick="addAction('volume', '#volumeAmount', 'set')" style="font-weight: bold; background: var(--emojiblue)" actionConfirm="true">Set to</button>
+                    <button onclick="addAction('volume', '#volumeAmount', 'multiply')" style="background: var(--emojigreen)">Multiply</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="action_stop" style="display: none">
+            <div class="popupbox">
+                <h1>Pause</h1>
+                <p class="popupdesc">Pauses for a specified duration.</p>
+                <p class="skippableAction"></p>
+                <div class="popupinput"> <input id="pauseAmount" value="4" type="number"><p> beats</p> </div>
+                <div style="margin-top: 25px">
+                    <button onclick="addAction('stop', '#pauseAmount')" style="font-weight: bold; background: var(--emojiblue)" actionConfirm="true">OK</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup" id="action_loopmany" style="display: none">
+            <div class="popupbox">
+                <h1>Loop</h1>
+                <p class="popupdesc">Loop for a specified number of times.<br>Returns to the start if no start point (◇) is set</p>
+                <p class="skippableAction"></p>
+                <div class="popupinput"> <input id="loopAmount" value="4" type="number"><p> loops</p> </div>
+                <div style="margin-top: 25px">
+                    <button onclick="addAction('loopmany', '#loopAmount')" style="font-weight: bold; background: var(--emojiblue)" actionConfirm="true">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="action_transpose" style="display: none">
+            <div class="popupbox">
+                <h1>Transpose</h1>
+                <p class="popupdesc">Increases or decreases the pitch of all subsequent sounds.</p>
+                <p class="skippableAction"></p>
+                <div class="popupinput"> <input id="transposeAmount" value="1" type="number"><p> semitones</p> </div>
+                <div style="margin-top: 25px">
+                    <button onclick="addAction('transpose', '#transposeAmount', 'set')" style="font-weight: bold; background: var(--emojiblue)" actionConfirm="true">Set to</button>
+                    <button onclick="addAction('transpose', '#transposeAmount', 'add')" style="background: var(--emojigreen)">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="action_pulse" style="display: none">
+            <div class="popupbox">
+                <h1>Pulse</h1>
+                <p class="popupdesc">Pulses the screen a certain amount of times.<br>Only one pulse action can be active at a time.<br>Ignores tempo changes.</p>
+                <p class="skippableAction"></p>
+                <div class="popupinput"> <p style="width: 100px; text-align: right; margin-right: 15px">Pulses:</p> <input id="pulseAmount" value="1" type="number"> <p>(total amount)</p> </div>
+                <div class="popupinput"> <p style="width: 100px; text-align: right; margin-right: 15px">Frequency:</p> <input id="pulseInterval" value="2" type="number"> <p>(every X beats)</p> </div>
+                <div style="margin-top: 25px">
+                    <button onclick="addAdvancedAction('pulse', [$('#pulseAmount').val(), $('#pulseInterval').val()])" style="background: var(--emojigreen)" actionConfirm="true">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="action_bg" style="display: none">
+            <div class="popupbox">
+                <h1>Background Color</h1>
+                <p class="popupdesc">Sets the page's background color.</p>
+                <div class="popupinput">
+                    <p style="margin-right: 6px">#</p>
+                    <input style="width: 90px; text-transform: uppercase;" class="colorTextbox" maxlength="6" colorgroup="bgColor" value="36393c">
+                    <div class="colorPreview" colorgroup="bgColor" style="background-color: #36393c"></div>
+                    <input type="color" id="bgColor" class="colorSelector" colorgroup="bgColor" value="#36393c">
+                </div>
+                <div class="popupinput"> <p style="width: 100px; text-align: right; margin-right: 15px">Fade time:</p> <input id="bgFadetime" value="0.5" type="number"> <p>secs</p> </div>
+                <div style="margin-top: 25px">
+                    <button onclick="$('#bgColor').val(defaultBG).trigger('input')" style="background: var(--emojired)">Reset</button>
+                    <button onclick="addAdvancedAction('bg', [$('#bgColor').val(), $('#bgFadetime').val()])" style="background: var(--emojigreen)" actionConfirm="true">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="clearAll" style="display: none">
+            <div class="popupbox">
+                <h1>Clear all sounds?</h1>
+                <p class="popupdesc">Surprisingly, this can't be undone.<span class="nomobile"><br>(hold shift to skip this popup)</span></p>
+                <div style="margin-top: 25px">
+                    <button onclick="$('.popup').hide()" style="width: 120px; font-weight: bold; background: #777777; margin-right: 12px">Back</button>
+                    <button id="clearsounds" style="width: 120px; font-weight: bold; background: var(--emojired)">Clear!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="settingsMenu" style="display: none">
+            <div class="popupbox">
+                <h1>Settings</h1>
+                <p id="settingHelp" style="height: 36px; opacity: 50%" mobile="(tap on a setting for information)">(hover over a setting for information)</p>
+                <p id="settingInfo" style="height: 36px; display: none; padding: 0px 30px"></p>
+                <div class="settingList">
+                    <div class="extraSetting nomobile" title="Enables placing actions using single-key shortcuts"><input class="settingBox" inverted="true" type="checkbox" setting="noActionShortcuts"><p>Action shortcuts</p></div>
+                    <div class="extraSetting" title="Disables most animations on the page (bouncing, pulsing, flashing, etc). Enable if playback is lagging"><input class="settingBox" type="checkbox" setting="noAnimations"><p>Disable Animations</p></div>
+                    <div class="extraSetting" title="Automatically scrolls the screen during playback"><input class="settingBox" type="checkbox" setting="autoScroll"><p>Auto-scroll</p></div>
+                    <div class="extraSetting" title="Pins the section buttons to the bottom of the screen"><input class="settingBox" type="checkbox" setting="pinSectionButtons"><p>Pin section controls</p></div>
+                    <div class="extraSetting" title="Attemps to display a warning message when exiting the page without saving"><input class="settingBox" type="checkbox" setting="exitConfirmation"><p>Exit confirmation</p></div>
+                    <div class="extraSetting requiresNewSaving" style="display: none" title="Reverts to the older saving system where pressing save simply downloads the file"><input class="settingBox" type="checkbox" setting="oldSaving"><p>Old save system</p></div>
+                </div>
+                <div style="margin-top: 25px">
+                    <button style="background: var(--emojiblue)" onclick="$('.popup').hide()">Done</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="shortcutMenu" style="display: none">
+            <div class="popupbox" style="width: 800px; overflow: auto;">
+                <h1 style="margin-bottom: 25px">Keyboard Shortcuts</h1>
+                <div class="shortcutList fancyScroll">
+                    <div class="shortcutSection">
+                        <p class="groupName"><b>Sound list</b></p>
+                        <p><b>Left click:</b> Place sound</p>
+                        <p><b>Shift + left click:</b> Place sound at start</p>
+                        <p><b>Right click:</b> Preview sound</p>
+                    </div>
+
+                    <div class="shortcutSection">
+                        <p class="groupName"><b>Action list</b></p>
+                        <p><b>Left click:</b> Place action</p>
+                        <p><b>Right click:</b> Edit action</p>
+                        <p><b>Shift + left click:</b> Place action at start</p>
+                        <p><b>Right click:</b> Place action, skip popups</p>
+                    </div>
+
+                    <div class="shortcutSection">
+                        <p class="groupName"><b>Sequence</b></p>
+                        <p><b>Left click:</b> Remove icon</p>
+                        <p><b>Right click:</b> Preview sound</p>
+                        <p><b>Drag:</b> Move icon</p>
+
+                        <p><b>Shift + left click:</b> Duplicate (directly after)</p>
+                        <p><b>Shift (or alt) + right click:</b> Duplicate (end of sequence)</p>
+                        <p><b>Shift + drag:</b> Duplicate to position</p>
+
+                        <p><b>Scroll:</b> Adjust pitch or action</p>
+                        <p><b>Ctrl + scroll:</b> Adjust volume</p>
+                        <p><b>Shift + scroll:</b> Larger adjust</p>
+                        <p><b>Alt + scroll:</b> Smaller adjust</p>
+                        <p><b>Up/down:</b> Same as scrolling</p>
+                    </div>
+
+                    <div>
+                        <div class="shortcutSection">
+                            <p class="groupName"><b>Divider sections</b></p>
+                            <p><b>Ctrl + click:</b> Select/deselect section</p>
+                            <p><b>Ctrl + up/down:</b> Next/previous section</p>
+                            <p><b>Ctrl + right click:</b> Show/hide section</p>
+                            <p><b>Ctrl + D:</b> Deselect section</p>
+                        </div>
+    
+                        <div class="shortcutSection" style="margin-top: 40px">
+                            <p class="groupName"><b>Global</b></p>
+                            <p><b>Space/enter:</b> Play/stop</p>
+                            <p><b>Esc:</b> Close popup</p>
+                            <p><b>Ctrl + S:</b> Save</p>
+                            <p><b>Ctrl + Shift + S:</b> Save as</p>
+                            <p><b>Ctrl + Alt + S:</b> View sequence data</p>
+                            <p><b>Ctrl + O:</b> Load</p>
+                            <p><b>Ctrl + P:</b> Toggle pro mode</p>
+                            <p><b>Shift + /:</b> Settings</p>
+                            <p><b>Ctrl + /:</b> Shortcuts</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="margin-top: 25px">
+                    <button style="background: var(--emojiblue)" onclick="$('.popup').hide()">Done</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </body>
+    
+    <script type="text/javascript" src="🗿.js?v=5a" charset="UTF-8"></script>
+    <script type="text/javascript" src="▶.js?v=5a" charset="UTF-8"></script>
+    <script type="text/javascript" src="💾.js?v=5a" charset="UTF-8"></script>
+</html>

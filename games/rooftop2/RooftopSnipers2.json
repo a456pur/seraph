@@ -1,0 +1,16 @@
+{
+"companyName": "New Eich Games",
+"productName": "Rooftop Snipers 2",
+"productVersion": "0.1",
+"dataUrl": "RooftopSnipers2.data.unityweb",
+"wasmCodeUrl": "RooftopSnipers2.wasm.code.unityweb",
+"wasmFrameworkUrl": "RooftopSnipers2.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#556890",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.1.5f1"
+}

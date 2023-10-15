@@ -16,736 +16,929 @@
   <body>
         <div class="cursor"></div>
         <h1 class="typewriter"><span id="cursor"></span></h1>
-        <p> // all games playable on this website are complete copyright & property of their respective owners \\</p>
+        <p class="linkp"><a href="../index.html">homepage</a> •  <a href="https://github.com/a456pur/seraph" target="_blank">github</a> •  <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a></p>
         <input type="text" id="search" placeholder="⌕ search" autocomplete="off">
         <br>
-        <p class="linkp"><a href="../index.html">homepage</a> •  <a href="https://github.com/a456pur/seraph" target="_blank">github</a> •  <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a></p>
-
-
+        <select id="genreDropdown">
+            <option value="all">all</option>
+            <option value="adventure">adventure</option>
+            <option value="arcade">arcade</option>
+            <option value="platformer">platformer</option>
+            <option value="puzzle">puzzle</option>
+            <option value="simulation">simulation</option>
+        </select>
+        
+        <br>
 
         <div class="button-container">
             <a target="_blank" href="slope/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/slope.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/slope.jpg');" data-genre="platformer">
                     <h2>slope</h2>
                 </div>
             </a>           
 
             <a target="_blank" href="subwaysurfers/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/subwaysurfers.jpeg');">
+                <div class="button" style="background-image: url('../images/thumbnails/subwaysurfers.jpeg');" data-genre="platformer"> 
                     <h2>subway surfers</h2>
                 </div>
             </a>
             
             <a target="_blank" href="flappy/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/flappybird.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/flappybird.jpg');" data-genre="arcade">
                     <h2>flappy bird</h2>
                 </div>
             </a>
         
             <a target="_blank" href="papaspizzaria/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/papaspizzeria.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/papaspizzeria.jpg');" data-genre="simulation">
                     <h2>papa's pizzaria</h2>
                 </div>
             </a>
 
             <a target="_blank" href="papasburgeria/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/papasburgeria.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/papasburgeria.jpg');" data-genre="simulation">
                     <h2>papa's burgeria</h2>
                 </div>
             </a>
 
             <a target="_blank" href="sm64/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/sm64.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/sm64.jpg');" data-genre="platformer">
                     <h2>super mario 64</h2>
                 </div>
             </a>
 
             <a target="_blank" href="run3/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/run3.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/run3.jpg');" data-genre="platformer">
                     <h2>run 3</h2>
                 </div>
             </a>
 
             <a target="_blank" href="bitlife/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/bitlife.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/bitlife.jpg');" data-genre="simulator">
                     <h2>bitlife</h2>
                 </div>
             </a>
 
             <a target="_blank" href="crossy/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/crossyroad.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/crossyroad.jpg');" data-genre="arcade">
                     <h2>crossy road</h2>
                 </div>
             </a>
             
             <a target="_blank" href="mc/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/mc.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/mc.jpg');" data-genre="minecraft">
                     <h2>minecraft [v1.5.2]</h2>
                 </div>
             </a>
             
             <a target="_blank" href="cookieclicker/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/cookieclick.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/cookieclick.jpg');" data-genre="arcade"> 
                     <h2>cookie clicker</h2>
                 </div>
             </a>
             
             <a target="_blank" href="templerun2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/templerun2.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/templerun2.jpg');" data-genre="platformer">
                     <h2>temple run 2</h2>
                 </div>
             </a>
             
             <a target="_blank" href="ducklife4/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/ducklife4.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/ducklife4.jpg');" data-genre="simulation">
                     <h2>duck life 4</h2>
                 </div>
             </a>
             
             <a target="_blank" href="dinogame/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/chromedino.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/chromedino.jpg');" data-genre="arcade">
                     <h2>chrome dino game</h2>
                 </div>
             </a>
             
             <a target="_blank" href="jetpackjoyride/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/jetpackjoyride.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/jetpackjoyride.jpg');" data-genre="arcade">
                     <h2>jetpack joyride</h2>
                 </div>
             </a>
             
             <a target="_blank" href="retrobowl/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/retrobowl.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/retrobowl.jpg');" data-genre="arcade">
                     <h2>retro bowl</h2>
                 </div>
             </a>
             
             <a target="_blank" href="fruitninja/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fruitninja.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/fruitninja.jpg');" data-genre="arcade"> 
                     <h2>fruit ninja</h2>
                 </div>
             </a>
             
             <a target="_blank" href="doodlejump/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/doodlejump.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/doodlejump.jpg');" data-genre="platformer">
                     <h2>doodle jump</h2>
                 </div>
             </a>            
 
             <a target="_blank" href="2048/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/2048.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/2048.jpg');" data-genre="puzzle"> 
                     <h2>2048</h2>
                 </div>
             </a>
             
             <a target="_blank" href="tetris/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/tetris.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/tetris.jpg');" data-genre="tetris">
                     <h2>tetris</h2>
                 </div>
             </a>
             
             <a target="_blank" href="fancypantsadventure/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fancypantsadventure.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/fancypantsadventure.jpg');" data-genre="platformer">
                     <h2>fancy pants adventure</h2>
                 </div>
             </a>
             
             <a target="_blank" href="happywheels/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/happywheels.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/happywheels.jpg');" data-genre="arcade">
                     <h2>happy wheels</h2>
                 </div>
             </a>
             
             <a target="_blank" href="papashotdoggeria/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/papashotdoggeria.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/papashotdoggeria.jpg');" data-genre="simulation">
                     <h2>papa's hotdoggeria</h2>
                 </div>
             </a>
             
             <a target="_blank" href="paperio2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/paperio2.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/paperio2.jpg');" data-genre="arcade">
                     <h2>paperio2</h2>
                 </div>
             </a>
             
             <a target="_blank" href="superhot/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/superhot.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/superhot.jpg');" data-genre="adventure">
                     <h2>super hot</h2>
                 </div>
             </a>
             
             <a target="_blank" href="thebindingofisaac/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/thebindingofisaac.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/thebindingofisaac.jpg');" data-genre="adventure">
                     <h2>the binding of isaac</h2>
                 </div>
             </a>
             
             <a target="_blank" href="townscaper/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/townscaper.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/townscaper.jpg');" data-genre="simulator">
                     <h2>townscaper</h2>
                 </div>
             </a>
             
             <a target="_blank" href="tunnelrush/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/tunnelrush.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/tunnelrush.jpg');" data-genre="arcade">
                     <h2>tunnel rush</h2>
                 </div>
             </a>            
 
             <a target="_blank" href="themehotel/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/themehotel.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/themehotel.jpg');" data-genre="simulation">
                     <h2>theme hotel</h2>
                 </div>
             </a>
             
             <a target="_blank" href="escapingtheprison/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/escapingtheprison.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/escapingtheprison.jpg');" data-genre="adventure">
                     <h2>escaping the prison</h2>
                 </div>
             </a>
             
             <a target="_blank" href="stealingthediamond/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/stealingthediamond.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/stealingthediamond.jpg');" data-genre="adventure">
                     <h2>stealing the diamond</h2>
                 </div>
             </a>
             
             <a target="_blank" href="infiltratingtheairship/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/infiltratingtheairship.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/infiltratingtheairship.jpg');" data-genre="adventure">
                     <h2>infiltrating the airship</h2>
                 </div>
             </a>
             
             <a target="_blank" href="fleeingthecomplex/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fleeingthecomplex.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/fleeingthecomplex.jpg');" data-genre="adventure">
                     <h2>fleeing the complex</h2>
                 </div>
             </a>
             
             <a target="_blank" href="theimpossiblequiz/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/theimpossiblequiz.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/theimpossiblequiz.jpg');" data-genre="arcade">
                     <h2>the impossible quiz</h2>
                 </div>
             </a>
             
             <a target="_blank" href="solitaire/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/solitaire.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/solitaire.jpg');" data-genre="puzzle">
                     <h2>solitaire</h2>
                 </div>
             </a>
             
             <a target="_blank" href="drifthunters/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/drifthunters.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/drifthunters.jpg');" data-genre="adventure">
                     <h2>drift hunters</h2>
                 </div>
             </a>
             
             <a target="_blank" href="vex6/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/vex6.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/vex6.jpg');" data-genre="platformer">
                     <h2>vex 6</h2>
                 </div>
             </a>
             
             <a target="_blank" href="amongus/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/amongus.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/amongus.jpg');" data-genre="arcade">
                     <h2>among us fangame</h2>
                 </div>
             </a>            
 
             <a target="_blank" href="surf/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/surf.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/surf.jpg');" data-genre="arcade">
                     <h2>edge surf</h2>
                 </div>
             </a>
             
             <a target="_blank" href="motox3m/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/motox3m.jpeg');">
+                <div class="button" style="background-image: url('../images/thumbnails/motox3m.jpeg');" data-genre="platformer">
                     <h2>motox3m</h2>
                 </div>
             </a>
             
             <a target="_blank" href="fnaf/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fnaf.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/fnaf.jpg');" data-genre="adventure">
                     <h2>fnaf 1</h2>
                 </div>
             </a>
             
             <a target="_blank" href="fnaf-2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fnaf2.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/fnaf2.jpg');" data-genre="adventure">
                     <h2>fnaf 2</h2>
                 </div>
             </a>
             
             <a target="_blank" href="fnaf-3/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fnaf3.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/fnaf3.jpg');" data-genre="adventure">
                     <h2>fnaf 3</h2>
                 </div>
             </a>
             
             <a target="_blank" href="fnaf-4/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fnaf4.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/fnaf4.jpg');" data-genre="adventure">
                     <h2>fnaf 4</h2>
                 </div>
             </a>
             
             <a target="_blank" href="riddleschool/riddleschool1/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/riddleschool.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/riddleschool.jpg');" data-genre="puzzle"> 
                     <h2>riddle school</h2>
                 </div>
             </a>
             
             <a target="_blank" href="riddleschool/riddleschool2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/riddleschool2.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/riddleschool2.jpg');" data-genre="puzzle">
                     <h2>riddle school 2</h2>
                 </div>
             </a>
             
             <a target="_blank" href="riddleschool/riddleschool3/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/riddleschool3.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/riddleschool3.jpg');" data-genre="puzzle">
                     <h2>riddle school 3</h2>
                 </div>
             </a>
             
             <a target="_blank" href="riddleschool/riddleschool4/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/riddleschool4.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/riddleschool4.jpg');" data-genre="puzzle">
                     <h2>riddle school 4</h2>
                 </div>
             </a>            
 
             <a target="_blank" href="riddleschool/riddleschool5/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/riddleschool5.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/riddleschool5.jpg');" data-genre="puzzle">
                     <h2>riddle school 5</h2>
                 </div>
             </a>
             
             <a target="_blank" href="riddleschool/riddletransfer/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/riddletransfer.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/riddletransfer.jpg');" data-genre="puzzle">
                     <h2>riddle transfer</h2>
                 </div>
             </a>
             
             <a target="_blank" href="riddleschool/riddletransfer2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/riddletransfer2.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/riddletransfer2.jpg');" data-genre="puzzle">
                     <h2>riddle transfer 2</h2>
                 </div>
             </a>
             
             <a target="_blank" href="driftboss/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/driftboss.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/driftboss.jpg');" data-genre="arcade">
                     <h2>drift boss</h2>
                 </div>
             </a>
             
             <a target="_blank" href="fnf/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fnf.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/fnf.jpg');" data-genre="arcade">
                     <h2>friday night funkin</h2>
                 </div>
             </a>
             
             <a target="_blank" href="pacman/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/pacman.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/pacman.jpg');" data-genre="arcade">
                     <h2>pacman</h2>
                 </div>
             </a>
             
             <a target="_blank" href="papaspancakeria/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/papaspancakeria.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/papaspancakeria.jpg');" data-genre="simulation">
                     <h2>papa's pancakeria</h2>
                 </div>
             </a>
             
             <a target="_blank" href="rooftop/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/rooftopsnipers.jpg');">
+                <div class="button" style="background-image: url('../images/thumbnails/rooftopsnipers.jpg');" data-genre="arcade">
                     <h2>rooftop snipers</h2>
                 </div>
             </a>
             
             <a target="_blank" href="baldisbasics/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/baldisbasics.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/baldisbasics.png');" data-genre="adventure">
                     <h2>baldi's basics</h2>
                 </div>
             </a>
             
             <a target="_blank" href="bobtherobber2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/bobtherobber2.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/bobtherobber2.png');" data-genre="adventure">
                     <h2>bob the robber 2</h2>
                 </div>
             </a>            
 
             <a target="_blank" href="minesweeper/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/minesweeper.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/minesweeper.png');" data-genre="puzzle">
                     <h2>minesweeper</h2>
                 </div>
             </a>
             
             <a target="_blank" href="pokemonemerald/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/pokemonemerald.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/pokemonemerald.png');" data-genre="adventure">
                     <h2>pokemon emerald</h2>
                 </div>
             </a>
             
             <a target="_blank" href="pokemonfirered/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/pokemonfirered.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/pokemonfirered.png');" data-genre="adventure">
                     <h2>pokemon fire red</h2>
                 </div>
             </a>
             
             <a target="_blank" href="supermariobros/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/supermariobros.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/supermariobros.png');" data-genre="platformer">
                     <h2>super mario bros</h2>
                 </div>
             </a>
             
             <a target="_blank" href="supermariokart/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/supermariokart.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/supermariokart.png');" data-genre="arcade">
                     <h2>super mario kart</h2>
                 </div>
             </a>
             
             <a target="_blank" href="supermarioworld/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/supermarioworld.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/supermarioworld.png');" data-genre="platformer">
                     <h2>super mario world</h2>
                 </div>
             </a>
             
             <a target="_blank" href="thereisnogame/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/thereisnogame.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/thereisnogame.png');" data-genre="adventure">
                     <h2>there is no game</h2>
                 </div>
             </a>
             
             <a target="_blank" href="worldshardestgame/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/worldshardestgame.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/worldshardestgame.png');" data-genre="puzzle">
                     <h2>world's hardest game</h2>
                 </div>
             </a>
 
             <a target="_blank" href="castlevania/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/castlevania.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/castlevania.png');" data-genre="adventure">
                     <h2>castlevania</h2>
                 </div>
             </a>
 
             <a target="_blank" href="donkeykong/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/donkeykong.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/donkeykong.png');" data-genre="arcade">
                     <h2>donkey kong</h2>
                 </div>
             </a>
 
             <a target="_blank" href="drmario/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/drmario.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/drmario.png');" data-genre="puzzle">
                     <h2>dr mario</h2>
                 </div>
             </a>
 
             <a target="_blank" href="metroid/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/metroid.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/metroid.png');" data-genre="adventure">
                     <h2>metroid</h2>
                 </div>
             </a>
 
             <a target="_blank" href="supermariobros2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/supermariobros2.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/supermariobros2.png');" data-genre="platformer">
                     <h2>super mario bros 2</h2>
                 </div>
             </a>
 
             <a target="_blank" href="supermariobros3/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/supermariobros3.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/supermariobros3.png');" data-genre="platformer">
                     <h2>super mario bros 3</h2>
                 </div>
             </a>
 
             <a target="_blank" href="thelegendofzelda/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/thelegendofzelda.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/thelegendofzelda.png');" data-genre="adventure">
                     <h2>the legend of zelda</h2>
                 </div>
             </a>
 
             <a target="_blank" href="warioware/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/warioware.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/warioware.png');" data-genre="arcade">
                     <h2>warioware</h2>
                 </div>
             </a>
 
             <a target="_blank" href="yoshisisland/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/yoshisisland.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/yoshisisland.png');" data-genre="platformer">
                     <h2>yoshi's island</h2>
                 </div>
             </a>
 
             <a target="_blank" href="donkeykongland/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/donkeykongland.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/donkeykongland.png');" data-genre="platformer">
                     <h2>donkey kong land</h2>
                 </div>
             </a>
 
             <a target="_blank" href="kirbysdreamland/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/kirbysdreamland.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/kirbysdreamland.png');" data-genre="platformer">
                     <h2>kirby's dream land</h2>
                 </div>
             </a>
 
             <a target="_blank" href="supermarioland/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/supermarioland.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/supermarioland.png');" data-genre="platformer">
                     <h2>super mario land</h2>
                 </div>
             </a>
 
             <a target="_blank" href="dogeminer/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/dogeminer.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/dogeminer.png');" data-genre="simulator">
                     <h2>doge miner</h2>
                 </div>
             </a>
 
             <a target="_blank" href="tanukisunset/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/tanukisunset.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/tanukisunset.png');" data-genre="arcade">
                     <h2>tanuki sunset</h2>
                 </div>
             </a>
 
             <a target="_blank" href="aquaparkslides/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/aquaparkslides.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/aquaparkslides.png');" data-genre="arcade">
                     <h2>aquapark slides</h2>
                 </div>
             </a>
 
             <a target="_blank" href="colorswitch/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/colorswitch.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/colorswitch.png');" data-genre="arcade">
                     <h2>color switch</h2>
                 </div>
             </a>
 
             <a target="_blank" href="papasfreezeria/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/papasfreezeria.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/papasfreezeria.png');" data-genre="simulation">
                     <h2>papa's freezeria</h2>
                 </div>
             </a>
 
             <a target="_blank" href="btd/btd/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/btd.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/btd.png');" data-genre="arcade">
                     <h2>btd</h2>
                 </div>
             </a>
 
             <a target="_blank" href="btd/btd2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/btd2.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/btd2.png');" data-genre="arcade">
                     <h2>btd 2</h2>
                 </div>
             </a>
 
             <a target="_blank" href="btd/btd3/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/btd3.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/btd3.png');" data-genre="arcade">
                     <h2>btd 3</h2>
                 </div>
             </a>
 
             <a target="_blank" href="btd/btd4/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/btd4.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/btd4.png');" data-genre="arcade">
                     <h2>btd 4</h2>
                 </div>
             </a>
 
             <a target="_blank" href="bomberman/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/bomberman.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/bomberman.png');" data-genre="arcade">
                     <h2>bomberman</h2>
                 </div>
             </a>
 
             <a target="_blank" href="fireemblem/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/fireemblem.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/fireemblem.png');" data-genre="adventure">
                     <h2>fire emblem</h2>
                 </div>
             </a>
 
             <a target="_blank" href="iceclimber/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/iceclimber.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/iceclimber.png');" data-genre="arcade">
                     <h2>ice climber</h2>
                 </div>
             </a>
 
             <a target="_blank" href="mariokartsupercircuit/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/mariokartsupercircuit.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/mariokartsupercircuit.png');" data-genre="arcade">
                     <h2>mario kart super circuit</h2>
                 </div>
             </a>
 
             <a target="_blank" href="pokemonleafgreen/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/pokemonleafgreen.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/pokemonleafgreen.png');" data-genre="adventure">
                     <h2>pokemon leaf green</h2>
                 </div>
             </a>
 
             <a target="_blank" href="pokemonruby/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/pokemonruby.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/pokemonruby.png');" data-genre="adventure">
                     <h2>pokemon ruby</h2>
                 </div>
             </a>
 
             <a target="_blank" href="pokemonsapphire/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/pokemonsapphire.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/pokemonsapphire.png');" data-genre="adventure">
                     <h2>pokemon sapphire</h2>
                 </div>
             </a>
 
             <a target="_blank" href="superstarsaga/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/superstarsaga.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/superstarsaga.png');" data-genre="platformer">
                     <h2>superstar saga</h2>
                 </div>
             </a>
 
             
             <a target="_blank" href="adofai/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/adofai.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/adofai.png');" data-genre="arcade">
                     <h2>adofai</h2>
                 </div>
             </a>
 
             <a target="_blank" href="supersmashflash/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/supersmashflash.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/supersmashflash.png');" data-genre="arcade">
                     <h2>super smash flash</h2>
                 </div>
             </a>
 
             <a target="_blank" href="supermeatboy/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/supermeatboy.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/supermeatboy.png');" data-genre="platformer">
                     <h2>super meat boy</h2>
                 </div>
             </a>
 
             <a target="_blank" href="stickmanhook/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/stickmanhook.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/stickmanhook.png');" data-genre="platformer">
                     <h2>stickman hook</h2>
                 </div>
             </a>
 
             <a target="_blank" href="defendthetank/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/defendthetank.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/defendthetank.png');" data-genre="arcade">
                     <h2>defend the tank</h2>
                 </div>
             </a>
 
             <a target="_blank" href="sortthecourt/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/sortthecourt.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/sortthecourt.png');" data-genre="simulation">
                     <h2>sort the court</h2>
                 </div>
             </a>
 
             <a target="_blank" href="thisistheonlylevel/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/thisistheonlylevel.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/thisistheonlylevel.png');" data-genre="platformer">
                     <h2>this is the only level</h2>
                 </div>
             </a>
 
             <a target="_blank" href="run/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/run.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/run.png');" data-genre="platformer">
                     <h2>run</h2>
                 </div>
             </a>
 
             <a target="_blank" href="run2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/run2.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/run2.png');" data-genre="platformer">
                     <h2>run 2</h2>
                 </div>
             </a>
 
             <a target="_blank" href="battleships/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/battleships.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/battleships.png');" data-genre="arcade">
                     <h2>battleships</h2>
                 </div>
             </a>
 
             <a target="_blank" href="breakingthebank/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/breakingthebank.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/breakingthebank.png');" data-genre="adventure">
                     <h2>breaking the bank</h2>
                 </div>
             </a>
 
             <a target="_blank" href="ducklife/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/ducklife.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/ducklife.png');" data-genre="simulation">
                     <h2>duck life</h2>
                 </div>
             </a>
 
             <a target="_blank" href="ducklife2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/ducklife2.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/ducklife2.png');" data-genre="simulation">
                     <h2>duck life 2</h2>
                 </div>
             </a>
 
             <a target="_blank" href="ducklife3/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/ducklife3.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/ducklife3.png');" data-genre="simulation">
                     <h2>duck life 3</h2>
                 </div>
             </a>
 
             <a target="_blank" href="linerider/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/linerider.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/linerider.png');" data-genre="platformer">
                     <h2>line rider</h2>
                 </div>
             </a>
 
             <a target="_blank" href="mariocombat/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/mariocombat.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/mariocombat.png');" data-genre="platformer">
                     <h2>mario combat</h2>
                 </div>
             </a>
 
             <a target="_blank" href="raftwars2/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/raftwars2.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/raftwars2.png');" data-genre="arcade">
                     <h2>raft wars 2</h2>
                 </div>
             </a>
 
             <a target="_blank" href="spaceinvaders/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/spaceinvaders.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/spaceinvaders.png');" data-genre="arcade">
                     <h2>space invaders</h2>
                 </div>
             </a>
 
             <a target="_blank" href="animalcrossingwildworld/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/animalcrossingwildworld.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/animalcrossingwildworld.png');" data-genre="simulation">
                     <h2>animal crossing</h2>
                 </div>
             </a>
 
             <a target="_blank" href="mariokartds/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/mariokartds.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/mariokartds.png');" data-genre="arcade">
                     <h2>mario kart ds</h2>
                 </div>
             </a>
 
             <a target="_blank" href="newsupermariobros/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/newsupermariobros.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/newsupermariobros.png');" data-genre="platformer">
                     <h2>new super mario bros</h2>
                 </div>
             </a>
 
             <a target="_blank" href="nintendogs/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/nintendogs.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/nintendogs.png');" data-genre="simulation">
                     <h2>nintendogs</h2>
                 </div>
             </a>
 
             <a target="_blank" href="sm64ds/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/sm64ds.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/sm64ds.png');" data-genre="platformer">
                     <h2>super mario 64 ds</h2>
                 </div>
             </a>
 
             <a target="_blank" href="gunmayhem/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/gunmayhem.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/gunmayhem.png');" data-genre="arcade">
                     <h2>gun mayhem</h2>
                 </div>
             </a>
 
             <a target="_blank" href="learntofly/index.html">
-                <div class="button" style="background-image: url('../images/thumbnails/learntofly.png');">
+                <div class="button" style="background-image: url('../images/thumbnails/learntofly.png');" data-genre="arcade">
                     <h2>learn to fly</h2>
                 </div>
             </a>
+
+            <a target="_blank" href="rooftop2/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/rooftopsnipers2.png');" data-genre="arcade">
+                    <h2>rooftop snipers 2</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="fireboywatergirl/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/fireboyandwatergirl.png');" data-genre="platformer">
+                    <h2>fireboy and watergirl</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="chibiknight/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/chibiknight.png');" data-genre="adventure">
+                    <h2>chibi knight</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="clusterrush/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/clusterrush.png');" data-genre="platformer">
+                    <h2>cluster rush</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="doodledefender/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/doodledefender.png');" data-genre="arcade">
+                    <h2>doodle defender</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="learntofly2/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/learntofly2.png');" data-genre="adventure">
+                    <h2>learn to fly 2</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="papasscooperia/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/papasscooperia.png');" data-genre="simulation">
+                    <h2>papa's scooperia</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="papassushiria/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/papassushiria.png');" data-genre="simulation">
+                    <h2>papa's sushiria</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="papaswingeria/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/papaswingeria.png');" data-genre="simulation">
+                    <h2>papa's wingeria</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="raftwars/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/raftwars.png');" data-genre="arcade">
+                    <h2>raft wars</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="unfairmario/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/unfairmario.png');" data-genre="platformer">
+                    <h2>unfair mario</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="boxingphysics2/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/boxingphysics2.png');" data-genre="arcade">
+                    <h2>boxing physics 2</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="aceattorney/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/aceattorney.png');" data-genre="adventure">
+                    <h2>ace attorney</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="metalgearsolid/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/metalgearsolid.png');" data-genre="adventure">
+                    <h2>metal gear solid</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="mother3/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/mother3.png');" data-genre="adventure">
+                    <h2>mother 3</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="pokemondiamond/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/pokemondiamond.png');" data-genre="adventure">
+                    <h2>pokemon diamond</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="pokemonplatinum/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/pokemonplatinum.png');" data-genre="adventure">
+                    <h2>pokemon platinum</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="pokemonsoulsilver/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/pokemonsoulsilver.png');" data-genre="adventure">
+                    <h2>pokemon soulsilver</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="advancewars/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/advancewars.png');" data-genre="adventure">
+                    <h2>advance wars</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="banjopilot/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/banjopilot.png');" data-genre="arcade">
+                    <h2>banjo pilot</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="supermonkeyballjr/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/supermonkeyballjr.png');" data-genre="arcade">
+                    <h2>super monkey ball jr</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="theimpossiblequiz2/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/theimpossiblequiz2.png');" data-genre="puzzle">
+                    <h2>the impossible quiz 2</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="papasdonuteria/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/papasdonuteria.png');" data-genre="simulation">
+                    <h2>papa's donuteria</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="fancypantsadventure2/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/fancypantsadventure2.png');" data-genre="adventure">
+                    <h2>fancy pants adventure 2</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="tinyfishing/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/tinyfishing.png');" data-genre="arcade">
+                    <h2>tiny fishing</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="bigredbutton/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/bigredbutton.png');" data-genre="puzzle">
+                    <h2>big red button</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="achievementunlocked/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/achievementunlocked.png');" data-genre="puzzle">
+                    <h2>achievement unlocked</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="kirbymassattack/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/kirbymassattack.png');" data-genre="adventure">
+                    <h2>kirby mass attack</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="sonicadvance/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/sonicadvance.png');" data-genre="platformer">
+                    <h2>sonic advance</h2>
+                </div>
+            </a>
+
+            <a target="_blank" href="wormsworldparty/index.html">
+                <div class="button" style="background-image: url('../images/thumbnails/wormsworldparty.png');" data-genre="adventure">
+                    <h2>worms world party</h2>
+                </div>
+            </a>
+            
+            <br>
+            <br>
+            <br>
+
             
         </div>
+        <p> // all games playable on this website are complete copyright & property of their respective owners \\</p>
 
         <br>
         <script src="../storage/js/cursor.js"></script>
@@ -769,6 +962,27 @@
             }
 
             document.getElementById('search').addEventListener('input', filterGames);
+        </script>
+
+        <script>
+            const genreDropdown = document.getElementById('genreDropdown');
+
+            genreDropdown.addEventListener('change', () => {
+                const selectedGenre = genreDropdown.value;
+                const buttons = document.querySelectorAll('.button');
+                
+                buttons.forEach(button => {
+                    const dataGenre = button.getAttribute('data-genre');
+                    
+                    if (selectedGenre === 'all' || selectedGenre === dataGenre) {
+                        button.style.display = 'block';
+                    } else {
+                        button.style.display = 'none';
+                    }
+                });
+            });
+
+            genreDropdown.value = 'all';
         </script>
 
         <script>
