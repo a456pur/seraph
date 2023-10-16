@@ -44,7 +44,7 @@
 - synth_0: game suggestions, website suggestions
 - ninjanick56: game suggestions
 - skysthelimitt: bug reporting
-- zunlex: game suggestions
+- zunlex / eshan: game suggestions, general support
 
 ## contributing
 you can contribute to seraph in multiple ways by [raising issues on the github](https://github.com/a456pur/seraph/issues/new/choose), which can include:
