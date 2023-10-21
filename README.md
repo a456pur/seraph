@@ -52,4 +52,6 @@ you can contribute to seraph in multiple ways by [raising issues on the github](
 - **website suggestions:** suggest features to be added to the website to make the overall experience better!
 - **bug reporting:** flag bugs you've found with the website
 
+thank you for reading this! hope you enjoy seraph :)
+
 
