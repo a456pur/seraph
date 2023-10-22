@@ -135,5 +135,5 @@ a {
     pointer-events: none;
     opacity: 0.85;
     z-index: 10000;
-    transition: transform 1s ease;
+    
 }

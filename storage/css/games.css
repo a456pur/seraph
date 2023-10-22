@@ -181,7 +181,7 @@ a {
     pointer-events: none;
     opacity: 1;
     z-index: 10000;
-    transition: transform 1s ease;
+    
 }
 
 .linkp a {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" value="notranslate">
+    <meta name="description" content="TurboWarp is a Scratch mod with a compiler to run projects faster, dark mode for your eyes, a bunch of addons to improve the editor, and more." />
+    <title>TurboWarp - Run Scratch projects faster</title>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+      <link rel="manifest" href="manifest.webmanifest">
+    
+    <style>
+      #splash {
+        position: absolute; width: 100%; height: 100%; top: 0; left: 0;
+        display: flex; align-items: center; justify-content: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #ff4c4c;
+      }
+      .tw-loaded #splash, #splash-content { display: none; }
+      #splash[splash-theme="dark"] { background-color: #333; color: #fff; }
+      #splash-spinner:after {
+        content: " "; display: block; width: 64px; height: 64px;
+        border-radius: 50%; border: 6px solid; border-color: currentColor transparent currentColor transparent;
+        animation: splash-spinner 1.2s linear infinite;
+      }
+      @keyframes splash-spinner {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="splash" aria-hidden="true">
+      <noscript>
+        <h1>Enable JavaScript</h1>
+      </noscript>
+      <div id="splash-content">
+        <div id="splash-spinner"></div>
+     </div>
+    </div>
+    <script>
+      (function() {
+        document.querySelector('#splash-content').style.display = 'block';
+        
+        try {var localTheme = localStorage.getItem('tw:theme');} catch (e) {}
+        if (localTheme ? localTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.querySelector('#splash').setAttribute('splash-theme', 'dark');
+        
+      })();
+    </script>
+    <div id="app"></div>
+  <script src="js/vendors~addon-settings~credits~editor~embed~fullscreen~player.js"></script><script src="js/vendors~editor~embed~fullscreen~player.js"></script><script src="js/addon-settings~addons~editor~fullscreen~player.js"></script><script src="js/editor~embed~fullscreen~player.js"></script><script src="js/fullscreen.js"></script></body>
+</html>
