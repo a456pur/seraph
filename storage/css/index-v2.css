@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+         url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
+         url('../fonts/ubuntu/Ubuntu.ttf') format('truetype'),
+         url('../fonts/ubuntu/Ubuntu.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('../fonts/pixelifysans/pixelifysans.woff2') format('woff2'),
+         url('../fonts/pixelifysans/pixelifysans.woff') format('woff'),
+         url('../fonts/pixelifysans/pixelifysans.ttf') format('truetype'),
+         url('../fonts/pixelifysans/pixelifysans.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../fonts/inconsolata/Inconsolata.woff2') format('woff2'),
+         url('../fonts/inconsolata/Inconsolata.woff') format('woff'),
+         url('../fonts/inconsolata/Inconsolata.ttf') format('truetype'),
+         url('../fonts/inconsolata/Inconsolata.otf') format('otf');
+}
+
+:root {
+    --background-image: url('../../images/backgrounds/seraph/homebg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #fff;
+    --background-color: black;
+    --border-color1: #000000;
+    --border-color2: #ffffff;
+    --hover-color: #1a1818;
+    --text-glow: #000000
+}
+
+:root.theme-azurite {
+    --background-image: url('../../images/backgrounds/azure/homebg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #c8d9e9; 
+    --border-color1: #2d6cc4;
+    --border-color2: #111633;
+    --background-color: #495092;
+    --hover-color: #373e7d;
+    --text-glow: #4e5bd0;
+}
+
+:root.theme-retro {
+    --background-image: url('../../images/backgrounds/retro/homebg.png');
+    --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
+    --text-color: #ffffff; 
+    --border-color1: #2fce56;
+    --border-color2: #375945;
+    --background-color: #2f8154;
+    --hover-color: #258a79;
+    --text-glow: #4ed089;
+}
+
+:root.theme-cosmic {
+    --background-image: url('../../images/backgrounds/cosmic/homebg.png');
+    --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
+    --text-color: #ffffff; 
+    --border-color1: #1e1d1f;
+    --border-color2: #322c2c;
+    --background-color: #121212;
+    --hover-color: #181a1a;
+    --text-glow: #d6c9c9;
+}
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    display: flex;
+    background-color: var(--background-color); 
+    animation: mainHeaderAnimation 2s forwards;
+    cursor: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+  
+body::-webkit-scrollbar {
+    width: 0;
+}
+  
+.content-side {
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: mainHeaderAnimation 1s ease-in-out forwards;
+    background-image: var(--background-image);
+    background-size: cover;
+}
+  
+h1 {
+    font-size: 96px;
+    font-family: var(--font-family);
+    text-shadow: 0 0 10px var(--text-color),
+                 0 0 10px var(--text-glow),
+                 0 0 30px var(--text-glow),
+                 0 0 40px var(--text-color),
+                 0 0 50px var(--text-glow),
+                 0 0 60px var(--text-color),
+                 0 0 70px var(--text-glow),
+                 0 0 80px #000000;
+    margin-bottom: 0px;
+}
+  
+h2 {
+    font-size: 20px;
+}
+  
+p {
+    font-size: 18px;
+    margin-bottom: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    text-shadow: 5px 5px 5px var(--text-glow);
+    animation: paragraphTween 1.2s ease-in-out forwards;
+}
+  
+.linkp a {
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid transparent;
+    transition: 0.15s ease-in-out;
+    text-shadow: 5px 5px 5px var(--text-glow);
+}
+  
+.linkp a:hover {
+    color: rgb(199, 192, 192);
+}
+  
+a {
+    font-size: 18px;
+    text-decoration: underline;
+    color: var(--text-color);
+    cursor: none;
+    text-shadow: 5px 5px 5px var(--text-glow);
+}
+  
+.gamesbutton {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 50%;
+    max-width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: 0px;
+    cursor: none;
+    transition: background-color 0.15s ease-in-out;
+  
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    border-image-slice: 1;
+    border-radius: 4px;
+    animation: borderAnimation 1s infinite alternate;
+    animation-delay: calc(var(--delay) * 1ms);
+}
+  
+.gamesbutton:hover {
+    background-color: var(--hover-color);
+}
+  
+.cursor {
+    width: 7px;
+    height: 7px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: 10000;
+}
+  
+@keyframes mainHeaderAnimation {
+    0% {
+        opacity: 0;
+        filter: blur(0px);
+        transform: translateY(-30%);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0%);
+    }
+}
+  
+@keyframes paragraphTween {
+    0% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+  
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, var(--border-color1), var(--border-color2));
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, var(--border-color2), var(--border-color1));
+    }
+}
+  

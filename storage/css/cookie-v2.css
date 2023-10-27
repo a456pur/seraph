@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+         url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
+         url('../fonts/ubuntu/Ubuntu.ttf') format('truetype'),
+         url('../fonts/ubuntu/Ubuntu.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('../fonts/pixelifysans/pixelifysans.woff2') format('woff2'),
+         url('../fonts/pixelifysans/pixelifysans.woff') format('woff'),
+         url('../fonts/pixelifysans/pixelifysans.ttf') format('truetype'),
+         url('../fonts/pixelifysans/pixelifysans.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../fonts/inconsolata/Inconsolata.woff2') format('woff2'),
+         url('../fonts/inconsolata/Inconsolata.woff') format('woff'),
+         url('../fonts/inconsolata/Inconsolata.ttf') format('truetype'),
+         url('../fonts/inconsolata/Inconsolata.otf') format('otf');
+}
+
+:root {
+    --background-image: url('../../images/backgrounds/seraph/cookiesbg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #fff;
+    --background-color: black;
+    --border-color1: #000000;
+    --border-color2: #ffffff;
+    --hover-color: #1a1818;
+    --text-glow: #000000
+}
+
+:root.theme-azurite {
+    --background-image: url('../../images/backgrounds/azure/cookiesbg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #c8d9e9; 
+    --border-color1: #2d6cc4;
+    --border-color2: #111633;
+    --background-color: #495092;
+    --hover-color: #373e7d;
+    --text-glow: #4e5bd0;
+}
+
+:root.theme-retro {
+    --background-image: url('../../images/backgrounds/retro/cookiesbg.png');
+    --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
+    --text-color: #ffffff; 
+    --border-color1: #2fce56;
+    --border-color2: #375945;
+    --background-color: #2f8154;
+    --hover-color: #258a79;
+    --text-glow: #4ed089;
+}
+
+:root.theme-cosmic {
+    --background-image: url('../../images/backgrounds/cosmic/cookiesbg.png');
+    --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
+    --text-color: #ffffff; 
+    --border-color1: #1e1d1f;
+    --border-color2: #322c2c;
+    --background-color: #121212;
+    --hover-color: #181a1a;
+    --text-glow: #d6c9c9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    display: flex;
+    height: 100vh;
+    background-color: var(--background-color);
+    cursor: none;
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.content-side {
+    width: 100%;
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: mainHeaderAnimation 2s forwards;
+}
+
+h1 {
+    font-size: 96px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px var(--text-color),
+                 0 0 10px var(--text-glow),
+                 0 0 30px var(--text-glow),
+                 0 0 40px var(--text-color),
+                 0 0 50px var(--text-glow),
+                 0 0 60px var(--text-color),
+                 0 0 70px var(--text-glow),
+                 0 0 80px #000000;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 50%;
+    max-width: 200px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: var(--font-family);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px;
+    cursor: none;
+    transition: background-color 0.15s ease-in-out;
+
+    border: 2px solid var(--border-color2);
+    border-radius: 32px;
+}
+
+button:hover {
+    background-color: var(--border-color1);
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+
+@keyframes mainHeaderAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
+    }
+}
+
+
+.cursor {
+    width: 7px;
+    height: 7px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.85;
+    z-index: 10000;
+    
+}
