@@ -3,8 +3,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
-        <link rel="stylesheet" href="storage/css/cloak.css">
-        <title>Cloaking | Seraph</title>
+        <link rel="stylesheet" href="storage/css/settings-v2.css">
+        <title>Settings | Seraph</title>
 
         <meta name="description" content="seraph; an open source unblocked games website hosting 100+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
         <meta property="og:site_name" content="seraph">
@@ -12,16 +12,23 @@
         <meta property="og:type" content="website">
         <meta property="og:description" content="seraph; an open source unblocked games website hosting 100+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
 
+        <style>
+            button {
+                margin: 2px;
+            }
+        </style>
         
   </head>
   <body>
     <div class="cursor"></div>
     <div class="content-side">
-        <h1>cloak</h1>
+        <h1>settings</h1>
         <a href="index.html" style="font-size: 18px;">go to homepage</a>
-        <p> mask seraph with these cloaking presets! choose one, click select and your tab will be disguised. </p>
+        
         <br>
-
+        <h2 style="margin: 0;">cloak</h2>
+        <p> mask seraph with a tab cloak! </p>
+        <br>
         <select id="presetSelect">
             <option value="google">google</option>
             <option value="bing">bing</option>
@@ -31,15 +38,51 @@
             <option value="wikipedia">wikipedia</option>
             <option value="chrometab">chrome new tab</option>
         </select>
+
+        <button id="saveButton">select preset cloak</button>
+        <button id="resetButton">reset cloak</button>
+        <p id="success" style="display: none;">success message here</p>
+
         <br>
-        <button id="saveButton">select</button>
+        <h2 style="margin: 0;">themes</h2>
+        <p> change the theme of the website here! </p>
         <br>
-        <button id="resetButton">reset</button>
-        <p id="success" style="display: none;">amongus!</p>
+        <select id="theme-select">
+            <option value="seraph">seraph</option>
+            <option value="azurite">azurite</option>
+            <option value="retro">retro</option>
+            <option value="cosmic">cosmic</option>
+        </select>
+
+        <button id="apply-theme">apply theme</button>
 
         <script src="storage/js/cursor.js"></script>
-
         <script src="storage/js/cloak.js"></script>
+
+        <script>
+            function applyTheme() {
+                const selectedTheme = document.getElementById('theme-select');
+                if (selectedTheme) {
+                    const themeValue = selectedTheme.value;
+                    document.documentElement.className = `theme-${themeValue}`;
+                    localStorage.setItem('selectedTheme', themeValue);
+                }
+            }
+
+            const storedTheme = localStorage.getItem('selectedTheme');
+            if (storedTheme) {
+                const selectElement = document.getElementById('theme-select');
+                if (selectElement) {
+                    selectElement.value = storedTheme;
+                    applyTheme();
+                }
+            }
+
+            const applyButton = document.getElementById('apply-theme');
+            if (applyButton) {
+                applyButton.addEventListener('click', applyTheme);
+            }
+        </script>
 
         <script>
             function setCookie(name, value, options) {
@@ -92,7 +135,7 @@
 
                 saveButton.addEventListener("click", function() {
                     const selectedValue = presetSelect.value;
-                    successMessage.textContent = "preferences saved! refresh the page to see changes";
+                    successMessage.textContent = "preset chosen! refresh the page to see changes";
                     setCookie("tabCloakPreset", selectedValue, { expires: 365 });
 
                     successMessage.style.display = "block";
@@ -104,7 +147,7 @@
                 resetButton.addEventListener("click", function() {
                     deleteCookie("tabCloakPreset");
                     presetSelect.selectedIndex = 0;
-                    successMessage.textContent = "preferences reset! refresh the page to see changes";
+                    successMessage.textContent = "cloaking reset, refresh the page to see changes";
                     successMessage.style.display = "block";
                     setTimeout(function() {
                         successMessage.style.display = "none";

@@ -3,7 +3,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/images/ico.ico" type="image/x-icon">
-        <link rel="stylesheet" href="storage/css/404.css">
         <title>404 | Seraph</title>
 
         <meta name="description" content="seraph; an open source unblocked games website hosting 100+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
@@ -11,6 +10,191 @@
         <meta property="og:title" content="seraph">
         <meta property="og:type" content="website">
         <meta property="og:description" content="seraph; an open source unblocked games website hosting 100+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
+
+        <style>
+            @font-face {
+                font-family: 'Ubuntu';
+                src: url('storage/fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+                    url('storage/fonts/ubuntu/Ubuntu.woff') format('woff'),
+                    url('storage/fonts/ubuntu/Ubuntu.ttf') format('truetype'),
+                    url('storage/fonts/ubuntu/Ubuntu.otf') format('otf');
+            }
+
+            @font-face {
+                font-family: 'PixelifySans';
+                src: url('storage/fonts/pixelifysans/pixelifysans.woff2') format('woff2'),
+                    url('storage/fonts/pixelifysans/pixelifysans.woff') format('woff'),
+                    url('storage/fonts/pixelifysans/pixelifysans.ttf') format('truetype'),
+                    url('storage/fonts/pixelifysans/pixelifysans.otf') format('otf');
+            }
+
+            @font-face {
+                font-family: 'Inconsolata';
+                src: url('storage/fonts/inconsolata/Inconsolata.woff2') format('woff2'),
+                    url('storage/fonts/inconsolata/Inconsolata.woff') format('woff'),
+                    url('storage/fonts/inconsolata/Inconsolata.ttf') format('truetype'),
+                    url('storage/fonts/inconsolata/Inconsolata.otf') format('otf');
+            }
+
+            :root {
+                --background-image: url('images/backgrounds/seraph/404bg.png');
+                --font-family: 'Ubuntu', sans-serif;
+                --text-color: #fff;
+                --background-color: black;
+                --border-color1: #ffffff;
+                --border-color2: #c1bcbc;
+                --hover-color: #1a1818;
+                --text-glow: #000000
+            }
+
+            :root.theme-azurite {
+                --background-image: url('images/backgrounds/azure/404bg.png');
+                --font-family: 'Ubuntu', sans-serif;
+                --text-color: #c8d9e9; 
+                --border-color1: #2d6cc4;
+                --border-color2: #111633;
+                --background-color: #495092;
+                --hover-color: #373e7d;
+                --text-glow: #4e5bd0;
+            }
+
+            :root.theme-retro {
+                --background-image: url('images/backgrounds/retro/404bg.png');
+                --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
+                --text-color: #ffffff; 
+                --border-color1: #2fce56;
+                --border-color2: #375945;
+                --background-color: #2f8154;
+                --hover-color: #258a79;
+                --text-glow: #4ed089;
+            }
+
+            :root.theme-cosmic {
+                --background-image: url('images/backgrounds/cosmic/404bg.png');
+                --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
+                --text-color: #ffffff; 
+                --border-color1: #d9d9d9;
+                --border-color2: #3e3d3d;
+                --background-color: #121212;
+                --hover-color: #181a1a;
+                --text-glow: #d6c9c9;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: var(--font-family);
+                display: flex;
+                background-color: var(--background-color);
+                animation: mainHeaderAnimation 2s forwards;
+                cursor: none;
+                scrollbar-width: none; 
+                -ms-overflow-style: none;
+            }
+
+            body::-webkit-scrollbar {
+                width: 0;
+            }
+
+            .content-side {
+                width: 100%;
+                background-color: var(--background-color);
+                color: var(--text-color);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                animation: mainHeaderAnimation 1s ease-in-out forwards;
+                background-image: var(--background-image);
+                background-size: cover;
+            }
+
+            h1 {
+                font-size: 96px;
+                font-family: var(--font-family);
+                text-shadow: 0 0 10px var(--text-color),
+                 0 0 10px var(--text-glow),
+                 0 0 30px var(--text-glow),
+                 0 0 40px var(--text-color),
+                 0 0 50px var(--text-glow),
+                 0 0 60px var(--text-color),
+                 0 0 70px var(--text-glow),
+                 0 0 80px #000000;
+                margin-bottom: 0px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 2px;
+                padding-left: 10%;
+                padding-right: 10%;
+                text-align: center;
+                text-shadow: 5px 5px 5px var(--text-glow);
+                animation: paragraphTween 1.2s ease-in-out forwards;
+            }
+
+            .linkp a {
+                font-size: 20px;
+                text-align: center;
+                border: 3px solid transparent;
+                transition: 0.15s ease-in-out;
+                text-shadow: 1px 1px 2px var(--text-glow);
+            }
+
+            .linkp a:hover {
+                color: var(--hover-color);
+            }
+
+            a {
+                font-size: 18px;
+                text-decoration: underline; 
+                color: var(--text-color);
+                cursor: none;
+            }
+
+            .cursor {
+                width: 7px;
+                height: 7px;
+                background-color: var(--text-color);
+                border-radius: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                pointer-events: none;
+                opacity: 0.8;
+                z-index: 10000;
+                
+            }
+
+
+            @keyframes mainHeaderAnimation {
+                0% {
+                    opacity: 0;
+                    filter: blur(0px);
+                    transform: translateY(-30%);
+                }
+
+                100% {
+                    opacity: 1;
+                    filter: blur(0px);
+                    transform: translateY(0%);
+                }
+            }
+
+            @keyframes paragraphTween {
+                0% {
+                    transform: translateX(-5%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+
+        </style>
   </head>
   <body>
       <div class="cursor"></div>
@@ -26,5 +210,6 @@
 
       <script src="storage/js/cursor.js"></script>
       <script src="storage/js/cloak.js"></script>
+      <script src="storage/js/themes.js"></script>
   </body>
 </html>
