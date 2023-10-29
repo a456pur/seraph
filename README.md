@@ -1,7 +1,7 @@
 <h1 align="center">seraph</h1>
 <img src="images/seraphbanner.png">
   <p align="center">
-    seraph; an open source game website that hosts 180+ games with full downloading support, a clean and centralised user interface and no iframe embedding
+    seraph; an open source game website that hosts 210+ games with full downloading support, a clean and centralised user interface and no iframe embedding
     <br/>
     <a href="https://seraph.reveriestudios.online/">go to seraph</a>
     ·
@@ -16,7 +16,7 @@
 
 
 ## features
-- 180+ games! no embedding from other sites, no hacky workarounds needed to get in, all locally hosted on the website
+- 210+ games! no embedding from other sites, no hacky workarounds needed to get in, all locally hosted on the website
 - a brand new apps catalogue hosting useful tools and utilities, as well as fun little showcases
 - a cloak tab menu allowing you to disguise your tab in plain sight, syncing with all pages on the site
 - a host project page with a detailed video showcasing how to rehost seraph
