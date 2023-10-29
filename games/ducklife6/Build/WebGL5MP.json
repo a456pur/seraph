@@ -1,0 +1,14 @@
+{
+    "companyName": "Mofunzone",
+    "productName": "Duck Life: Space",
+    "dataUrl": "https://raw.githubusercontent.com/Edward358-AI/HTML5-games/3c35856e44aea5d93ebe781cb1af84570dd8512c/html5/ducklife5/play/Build/WebGL5MP-DATA.unityweb",
+    "asmCodeUrl": "WebGL5MP-CODE.unityweb",
+    "asmMemoryUrl": "WebGL5MP-MEMORY.unityweb",
+    "asmFrameworkUrl": "WebGL5MP-FRAMEWORK.unityweb",
+    "TOTAL_MEMORY": 536870912,
+    "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+    "webglContextAttributes": {"preserveDrawingBuffer": false},
+    "splashScreenStyle": "Dark",
+    "backgroundColor": "#231F20",
+    "cacheControl": {"dataUrl": "must-revalidate"}
+    }

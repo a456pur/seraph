@@ -1,0 +1,45 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learn to Fly 3 | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function loadLocalRuffle() {
+          var script = document.createElement('script');
+          script.src = '../../storage/ruffle/ruffle.js';
+          document.body.appendChild(script);
+      }
+
+      var cdnScript = document.createElement('script');
+      cdnScript.src = 'https://unpkg.com/@ruffle-rs/ruffle';
+      cdnScript.onerror = loadLocalRuffle;
+      document.body.appendChild(cdnScript);
+    </script>
+
+    <div id="ruffle" width="100%" height="100%"></div>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle");
+        player.id = "player";
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("learn-to-fly-3.swf");
+      });
+    </script>
+  </body>
+</html>

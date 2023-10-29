@@ -1,0 +1,10 @@
+{
+	"name": "Boxing Random",
+	"short_name": "Boxing Random",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#000000",
+	"icons": []
+}

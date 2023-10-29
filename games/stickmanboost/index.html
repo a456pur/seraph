@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Stickman Boost | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico">
+    <script src="../../storage/js/cloak.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+        touch-action: none;
+        -ms-touch-action: none;
+      }
+      canvas {
+        touch-action-delay: none;
+        touch-action: none;
+        -ms-touch-action: none;
+      }
+    </style>
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="hmmg_layoutTransition.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="c2canvasdiv">
+      <canvas id="c2canvas" width="800" height="576"> </canvas>
+    </div>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="c2runtime.js"></script>
+    <script>
+      // Start the Construct 2 project running on window load.
+      jQuery(document).ready(function () {
+        // Create new runtime using the c2canvas
+        cr_createRuntime("c2canvas");
+      });
+
+      // Pause and resume on page becoming visible/invisible
+      function onVisibilityChanged() {
+        if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden) cr_setSuspended(true);
+        else cr_setSuspended(false);
+      }
+      document.addEventListener("visibilitychange", onVisibilityChanged, false);
+      document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+      document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+      document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+    </script>
+  </body>
+</html>
