@@ -66,6 +66,17 @@
     --text-glow: #d6c9c9;
 }
 
+:root.theme-molten {
+    --background-image: url('../../images/backgrounds/molten/updatebg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #f58484; 
+    --border-color1: #e70e0e;
+    --border-color2: #742e2e;
+    --background-color: #892525;
+    --hover-color: #9b2121;
+    --text-glow: #dc1010;
+}
+
 body {
     background-color: var(--background-color);
     background-image: var(--background-image);
@@ -187,6 +198,7 @@ li {
     display: inline-block;
     position: relative;
     top: 50%;
+    color: var(--text-color);
     transform: translateY(-50%);
 }
   

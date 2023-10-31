@@ -66,6 +66,17 @@
     --text-glow: #d6c9c9;
 }
 
+:root.theme-molten {
+    --background-image: url('../../images/backgrounds/molten/hostbg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #f58484; 
+    --border-color1: #e70e0e;
+    --border-color2: #742e2e;
+    --background-color: #892525;
+    --hover-color: #9b2121;
+    --text-glow: #dc1010;
+}
+
 body {
     margin: 0;
     padding: 0;
