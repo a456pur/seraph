@@ -36,11 +36,12 @@
 - emulatorjs: allows nes, snes, game boy, game boy advance & more system games to be run on the website without any prior installation
 
 **people:** people who have contributed to the project by raising issues / given general support to the project
+- lifesaskit: background contributor
 - tommiecc: game suggestions, bug reporting
 - synth_0: game suggestions, website suggestions
 - ninjanick56: game suggestions
 - skysthelimitt: bug reporting
-- heheheha12345678: game suggestions, bug reporting
+- heheheha12345678: game suggestions, bug reporting, website suggestions
 - zunlex/eshan: game suggestions, bug reporting
 
 ## contributing

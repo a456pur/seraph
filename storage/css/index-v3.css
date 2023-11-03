@@ -22,6 +22,14 @@
          url('../fonts/inconsolata/Inconsolata.otf') format('otf');
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway/raleway.woff2') format('woff2'),
+        url('../fonts/raleway/raleway.woff') format('woff'),
+        url('../fonts/raleway/raleway.ttf') format('truetype'),
+        url('../fonts/raleway/raleway.otf') format('otf');
+}
+
 :root {
     --background-image: url('../../images/backgrounds/seraph/homebg.png');
     --font-family: 'Ubuntu', sans-serif;
@@ -76,6 +84,17 @@
     --background-color: #892525;
     --hover-color: #9b2121;
     --text-glow: #dc1010;
+}
+
+:root.theme-amethyst {
+    --background-image: url('../../images/backgrounds/amethyst/homebg.png');
+    --font-family: 'Raleway', sans-serif;
+    --text-color: #c284f5; 
+    --border-color1: #6c0ee7;
+    --border-color2: #4c1587;
+    --background-color: #502589;
+    --hover-color: #5f24ae;
+    --text-glow: #662589;
 }
   
 body {
