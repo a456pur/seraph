@@ -1,0 +1,2386 @@
+<html>
+    <head>
+        <title>Offline Paradise | Seraph</title>
+<link rel="shortcut icon" href="../../images/ico.ico">
+<script src="../../storage/js/cloak.js"></script>
+    </head>
+    <body style="-webkit-user-select: none; user-select: none; overscroll: none; overflow: hidden; border: none; margin: none; padding: none;">
+        <meta charset="utf-8" />
+        <style>
+            body {
+                position: fixed;
+                background: #222;
+                -webkit-user-select: none;
+                user-select: none;
+                overscroll: none;
+                overflow: hidden;
+                border: none;
+                margin: none;
+                padding: none;
+            }
+            .overlay,
+            body {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+                color: #eee;
+                background: #222;
+                font-family: sans-serif;
+            }
+            .overlay {
+                position: fixed;
+                display: none;
+            }
+            body.loading .overlay {
+                display: flex;
+            }
+            canvas {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        </style>
+        <canvas width="1920" height="1080" style="-webkit-user-select: none; user-select: none; overscroll: none; overflow: hidden; border: none; margin: none; padding: none;"></canvas>
+        <div class="overlay">Generating assets...</div>
+        <script>
+            "use strict";
+            let g = 1 / 60,
+                h,
+                k,
+                l,
+                m;
+            var n = null,
+                aa = null,
+                ba = null,
+                q = null;
+            let ca = 0;
+            function da(a) {
+                a = (240 + 70 * a) % 360;
+                n = `hsl(${a}, ${0}%, ${93}%)`;
+                a += 20;
+                aa = `hsl(${a}, ${1}%, ${70}%)`;
+                a += 20;
+                ba = `hsl(${a}, ${5}%, ${49}%)`;
+                q = `hsl(${a + 20}, ${21}%, ${17}%)`;
+            }
+            var t = {},
+                u = {};
+            function fa() {
+                [1, 4, 2, 8, 16, 32].forEach((a) => {
+                    u[a] = t[a];
+                });
+            }
+            let ha = { 37: 1, 39: 4, 38: 2, 40: 8, 16: 16, 90: 32, 32: 32 };
+            document.addEventListener(
+                "keydown",
+                ({ keyCode: a }) => {
+                    if ((a = ha[a])) (u[a] = t[a]), (t[a] = !0);
+                },
+                !1
+            );
+            document.addEventListener(
+                "keyup",
+                ({ keyCode: a }) => {
+                    if ((a = ha[a])) (u[a] = t[a]), (t[a] = !1);
+                },
+                !1
+            );
+            var ia = {
+                    ma:
+                        "data:image/gif;base64,R0lGODlhLAAcAKIAAOA1/2wx8juz/znnWv+zO////9PT0////yH5BAEAAAcALAAAAAAsABwAAAP/eLrQ+3DIQQh8pdzb3J5TNWxHlpFMB1wgJY6XeW5doEbgK22yZj4qWyOwaFFAi55SlqoBbMVcS7GsEJTObIDYIkypPWulFxQ+t1zj7mEIi68n1fB5Tk9QB4PeJCbL6WhEeCQyYz0HQzaKaCx3KEuHiHOBjV8xkAV6EJQfajxMepqDnZ4QbRkGo6NSSKaieAKxg6xrqhCxsnhdXjBgPyi4ubo5Ir6/JMEBuKshFoiRG8qx0sK2Ch2YBSsHAsrU1ShfDdnaW9PJy5XifmSBuObpD7QYfnJo3fjBAjgSvLUlWOzd+xbvQLNWVLBlAKDthjtv0nDo6HXtT8MOCx4WNOgCDyEQB3+2PeD0gZc1OQsSAAA7",
+                    Y: [
+                        { x: 0, y: 0, i: 13, h: 13, j: 11, l: 11 },
+                        { x: 14, y: 0, i: 13, h: 9, j: 7, l: 1 },
+                        { x: 28, y: 0, i: 16, h: 15, j: 9, l: 8 },
+                        { x: 17, y: 10, i: 11, h: 9, j: 10, l: 8 },
+                        { x: 0, y: 15, i: 16, h: 13, j: 6, l: 12 },
+                        { x: 16, y: 20, i: 12, h: 8, j: 2, l: 7 },
+                        { x: 29, y: 16, i: 15, h: 12, j: 8, l: 6 },
+                    ],
+                },
+                ja = {
+                    ma:
+                        "data:image/gif;base64,R0lGODlhswAFAIAAAAAAAP///yH5BAEAAAEALAAAAACzAAUAAAKRDB52kIrL3IOJRlNRfo3d2mGgs11L2Z2QF5oi5sZU1tR2qcGtHfN+7Rr5IkSe5wjqJXfLW1C3ZEGfL8Xt+lodNZ8sadOanITAb1XHSoe5a1PO20TD4+cuFjiG6oXSUDn+pFT0N9XXl8RBNhckpbb3YecEGSkzZmFpIZkokmfZZgjnabS5BYlnyhSYIor3YxVQAAA7",
+                },
+                ka = {
+                    ma: "data:image/gif;base64,R0lGODlhGwADAIAAABgQK////yH5BAEAAAEALAAAAAAbAAMAAAIQjA+RaLkK25lsvUufjC6iAgA7",
+                    Y: [
+                        { x: 0, y: 0, i: 3, h: 3, j: 1, l: 1 },
+                        { x: 4, y: 0, i: 3, h: 3, j: 1, l: 1 },
+                        { x: 8, y: 0, i: 3, h: 3, j: 1, l: 1 },
+                        { x: 12, y: 0, i: 3, h: 3, j: 1, l: 1 },
+                        { x: 16, y: 0, i: 3, h: 3, j: 1, l: 1 },
+                        { x: 20, y: 0, i: 3, h: 3, j: 1, l: 1 },
+                        { x: 24, y: 0, i: 3, h: 3, j: 1, l: 1 },
+                    ],
+                },
+                la = {
+                    ma:
+                        "data:image/gif;base64,R0lGODlhRgANAJEAAP/yqtSGIf///wAAACH5BAEAAAIALAAAAABGAA0AAAKnlBV5y53RomRvxgAydIpmsFHdUpFfSI5GAqLrKbYpppn1warvjdAgJ8P5XL3gCjNi8YTGR4nJcz57w2OVKk3BEJ8ttuTzIrO0LLf7szp33U349v4p0fP2GS3Hu/XsbXyvF5eHN2h358fX5/IGUSf315h4iBJGaUhFp2izVLmZdhh1CZrGiCNa+pLDphQy9jmEZMoqG1uUmVpbdtba8lpTy6VKS3qiWwAAOw==",
+                    Y: [
+                        { x: 1, y: 0, i: 8, h: 13, j: 4, l: 13 },
+                        { x: 10, y: 0, i: 9, h: 13, j: 5, l: 13 },
+                        { x: 21, y: 0, i: 8, h: 13, j: 4, l: 13 },
+                        { x: 30, y: 0, i: 10, h: 13, j: 5, l: 13 },
+                        { x: 40, y: 0, i: 10, h: 13, j: 5, l: 13 },
+                        { x: 50, y: 0, i: 10, h: 13, j: 5, l: 13 },
+                        { x: 60, y: 0, i: 10, h: 13, j: 5, l: 13 },
+                    ],
+                },
+                ma = { ma: "data:image/gif;base64,R0lGODlhCQAIAJEAAJeXl////wAAAAAAACH5BAEAAAIALAAAAAAJAAgAAAIUhG8CwR3G0FNtTRqvslps5oWeUQAAOw==", Y: [{ x: 0, y: 0, i: 9, h: 8, j: 10, l: 8 }] };
+            let v = new AudioContext(),
+                w = v.createDynamicsCompressor();
+            w.knee.setValueAtTime(40, 0);
+            w.threshold.setValueAtTime(-12, 0);
+            w.connect(v.destination);
+            let x;
+            function y(a) {
+                return Math.sin(2 * Math.PI * a);
+            }
+            function z() {
+                return 2 * Math.random() - 1;
+            }
+            function A(a, b) {
+                for (let c = 0; c < b.length - 1; c++) {
+                    let [d, e, f = 1] = b[c],
+                        [p, r] = b[c + 1];
+                    if (d <= a && a < p) return (a = (a - d) / (p - d)), (a = 1 < f ? Math.pow(a, f) : 1 - Math.pow(1 - a, 1 / f)), e + a * (r - e);
+                }
+                return b[b.length - 1][1];
+            }
+            function B(a) {
+                return "number" === typeof a
+                    ? [
+                          [0, a],
+                          [1, a],
+                      ]
+                    : a;
+            }
+            function na(a, b) {
+                a = Math.tan((Math.PI * a) / v.sampleRate);
+                let c = a * a;
+                b = 1 / b;
+                let d = 1 / (1 + b * a + c);
+                return [d / 1, -2 * d, d / 1, 2 * d * (c - 1), d * (1 - b * a + c)];
+            }
+            function oa(a, b) {
+                a = 1 / Math.tan((Math.PI * a) / v.sampleRate);
+                let c = a * a;
+                b = 1 / b;
+                let d = 1 / (1 + b * a + c);
+                return [d / 1, 2 * d, d / 1, 2 * d * (1 - c), d * (1 - b * a + c)];
+            }
+            function pa(a, b) {
+                a = 1 / Math.tan((Math.PI * a) / v.sampleRate);
+                let c = a * a;
+                b = 1 / b;
+                let d = 1 / (1 + b * a + c);
+                return [d * a * b, 0, -d * a * b, 2 * d * (1 - c), d * (1 - b * a + c)];
+            }
+            function qa(a, b, c, d) {
+                let e = 0,
+                    f = 0;
+                for (let p = 0; p < a.length; ++p) {
+                    let r = b(A(p / (a.length - 1), c), A(p / (a.length - 1), d)),
+                        O = a[p],
+                        ea = O * r[0] + e;
+                    a[p] = ea;
+                    e = O * r[1] - ea * r[3] + f;
+                    f = O * r[2] - ea * r[4];
+                }
+                return a;
+            }
+            function ra(a, b) {
+                return qa(a, oa, B(b), B(Math.SQRT1_2));
+            }
+            function sa(a, b) {
+                return qa(a, na, B(b), B(Math.SQRT1_2));
+            }
+            function ta(a, b, c = Math.SQRT1_2) {
+                return qa(a, pa, B(b), B(c));
+            }
+            function ua(a) {
+                for (let b = 0; b < a.length; b++) (a[b] *= 3), (a[b] = -1 > a[b] ? -1 : 1 < a[b] ? 1 : Math.sin((a[b] * Math.PI) / 2)), (a[b] /= 3);
+                return a;
+            }
+            function va(a, b) {
+                let c = 0;
+                a.forEach((a) => {
+                    c = Math.max(c, a.length);
+                });
+                let d = new Float32Array(c);
+                a.forEach((c, f) => {
+                    for (let e = 0; e < c.length; e++) b(d, f, c, e, a.length);
+                });
+                return d;
+            }
+            function wa(a) {
+                return va(a, (a, c, d, e, f) => {
+                    a[e] += d[e] / f;
+                });
+            }
+            function xa(a) {
+                return va(a, (a, c, d, e, f) => {
+                    0 === c && (a[e] = 1);
+                    a[e] *= d[e] / f;
+                });
+            }
+            function C(a, b) {
+                a = new Float32Array(a * v.sampleRate);
+                for (let c = 0; c < a.length; c++) a[c] = b(c / a.length, c / v.sampleRate);
+                return a;
+            }
+            function D(a, b) {
+                for (let c = 0; c < a.length; c++) a[c] *= A(c / a.length, b);
+                return a;
+            }
+            function ya() {
+                let a = [
+                        [0, 0.01, 2],
+                        [1, 0],
+                    ],
+                    b = z();
+                return D(
+                    wa([
+                        sa(
+                            C(0.3, function () {
+                                Math.random() < 5e3 / v.sampleRate && (b = z());
+                                return b;
+                            }),
+                            900
+                        ),
+                        ta(
+                            C(0.3, function (c) {
+                                Math.random() < A(c, a) && (b = z());
+                                return b;
+                            }),
+                            100
+                        ),
+                    ]),
+                    [
+                        [0, 0],
+                        [0.1, 1, 0.8],
+                        [0.2, 0.3, 0.9],
+                        [1, 0],
+                    ]
+                );
+            }
+            function za() {
+                let a = 0,
+                    b = [
+                        [0, 40, 0.2],
+                        [1, 20],
+                    ],
+                    c = z();
+                return xa([
+                    C(0.2, function (c) {
+                        a += A(c, b) / v.sampleRate;
+                        return 40 * (2 * Math.abs((a % 1) * 2 - 1) - 1);
+                    }),
+                    D(
+                        ua(
+                            C(0.2, function () {
+                                Math.random() < 500 / v.sampleRate && (c = z());
+                                return c;
+                            })
+                        ),
+                        [
+                            [0, 1, 0.5],
+                            [1, 0],
+                        ]
+                    ),
+                ]);
+            }
+            function Aa() {
+                return ta(
+                    D(C(0.2, z), [
+                        [0, 0, 0.5],
+                        [0.1, 0.5, 0.2],
+                        [1, 0],
+                    ]),
+                    2e3
+                );
+            }
+            function Ba() {
+                let a = z(),
+                    b = 0,
+                    c = [
+                        [0, 2e3, 0.2],
+                        [1, 200],
+                    ];
+                return D(
+                    C(0.3, function (d) {
+                        1 <= b && ((a = z()), --b);
+                        b += A(d, c) / v.sampleRate;
+                        return a;
+                    }),
+                    [
+                        [0, 0.5, 0.5],
+                        [1, 0],
+                    ]
+                );
+            }
+            function Ca() {
+                let a = 0,
+                    b = [
+                        [0, 440, 0.2],
+                        [1, 2200],
+                    ];
+                return D(
+                    C(0.5, function (c) {
+                        a += A(c, b) / v.sampleRate;
+                        return (2 * Math.abs((a % 1) * 2 - 1) - 1 + ((a % 1) * 2 - 1)) / 2;
+                    }),
+                    [
+                        [0, 0, 0.5],
+                        [0.1, 1, 0.5],
+                        [1, 0],
+                    ]
+                );
+            }
+            function Da() {
+                function a(a) {
+                    let b = 0,
+                        c = [];
+                    do c.push([b, a ? 1 : 0.45]), (a = !a), (b += 0.1875), c.push([b - 1e-7, 0]);
+                    while (1 >= b);
+                    return c;
+                }
+                let b = a(!0),
+                    c = a(!1),
+                    d = [
+                        [0, 0, 0.5],
+                        [0.05, 1, 0.5],
+                        [1, 0],
+                    ];
+                return [D(D(C(4, z), b), d), D(D(C(4, z), c), d)];
+            }
+            let E = (a) => (0 < a ? 1 : 0 > a ? -1 : 0),
+                F = (a, b, c) => (a > b ? Math.max(a - c, b) : Math.min(a + c, b));
+            function G(a, b) {
+                return a.x + a.width > b.x && a.x < b.x + b.width && a.y + a.height > b.y && a.y < b.y + b.height;
+            }
+            function H(a) {
+                return Math.floor(a * Math.random());
+            }
+            let I = (a, b, c, d, e) => {
+                for (; b <= d; b++) for (let d = a; d <= c; d++) e(d, b);
+            };
+            async function J(a, b, c) {
+                let d = document.createElement("canvas");
+                d.width = a;
+                d.height = b;
+                await c(d.getContext("2d"));
+                let e = await new Promise((a) => d.toBlob(a));
+                return new Promise((a) => {
+                    let b = new Image();
+                    b.onload = () => a(b);
+                    b.src = URL.createObjectURL(e);
+                });
+            }
+            function Ea(a, b) {
+                let [, c, d] = /^(\w+)\((.*)\)$/.exec(a);
+                return `${c}(${d},${b})`;
+            }
+            async function K() {
+                await new Promise((a) => requestAnimationFrame(a));
+            }
+            function L(a, b, c, d) {
+                let e = {};
+                a.forEach((a) => {
+                    var f = a.slice(1).join("|");
+                    e[f] || (e[f] = c(440 * Math.pow(2, a[1] / 12), ...a.slice(2)));
+                    f = e[f];
+                    var r = b;
+                    a = Math.round((v.sampleRate * a[0] * 60) / d);
+                    Array.isArray(f) || (f = [f]);
+                    Array.isArray(r) || (r = [r]);
+                    for (let b = 0; b < r.length; b++) {
+                        let c = f[b % f.length],
+                            d = r[b % r.length],
+                            e = Math.min(a + c.length, d.length);
+                        for (let b = a; b < e; b++) d[b] += c[b - a];
+                    }
+                });
+            }
+            function M(a, b, c) {
+                let d = [];
+                for (let e = 0; e < c; e++)
+                    a.forEach(([a, ...c]) => {
+                        d.push([a + b * e, ...c]);
+                    });
+                return d;
+            }
+            function N(a, b) {
+                return a.map((a, d) => [a, b[d]]);
+            }
+            function P(a, b) {
+                a.forEach((a) => {
+                    a[0] += b;
+                });
+                return a;
+            }
+            async function Fa(a, b) {
+                let c = v.createBufferSource();
+                c.loop = !0;
+                b = v.createBuffer(1, b, v.sampleRate);
+                a(b.getChannelData(0), 120);
+                c.buffer = b;
+                await K();
+                return c;
+            }
+            class Ga {
+                constructor(a) {
+                    let b = v.createGain();
+                    this.Pb = a.map((a) => {
+                        let c = a.source,
+                            e = v.createGain();
+                        e.gain.value = a.volume;
+                        c.connect(e);
+                        e.connect(b);
+                        if (a.W) {
+                            let b = v.createGain();
+                            b.gain.value = a.W;
+                            e.connect(b);
+                            b.connect(x);
+                        }
+                        return { source: c, Ac: e.gain };
+                    });
+                    b.connect(w);
+                }
+                play() {
+                    this.Pb.forEach((a) => {
+                        a.source.start();
+                    });
+                }
+            }
+            function Ha(a) {
+                let b = a / v.sampleRate,
+                    c = 0,
+                    d = 0,
+                    e;
+                return D(
+                    C(3, function () {
+                        e = Math.round(((1 * y(c) + 1 * y(c / 2) + 0.1 * y(2 * c) + 0.001 * y(3 * c) + 1e-4 * y(4 * c)) / 2.111) * 5) / 5;
+                        c += b;
+                        d += 1 / v.sampleRate;
+                        1.25e-4 <= d && ((c += z() * b * 0.6), (d -= 1.25e-4));
+                        return e;
+                    }),
+                    [
+                        [0, 0, 0.5],
+                        [0.001, 1, 0.1],
+                        [1, 0],
+                    ]
+                );
+            }
+            function Ia(a, b) {
+                var c = new Float32Array((32 / b) * 60 * v.sampleRate);
+                var d = [0, 0.75, 1.5, 2, 2.75, 3.5, 4, 4.75, 5.5, 6, 6.75, 7.5];
+                d = [
+                    ...N(d, [4, 7, 11, 4, 7, 11, 12, 11, 4, 12, 11, 4]),
+                    ...P(N(d, [4, 7, 11, 4, 7, 11, 12, 11, 4, 12, 11, 4]), 8),
+                    ...P(N(d, [4, 5, 12, 4, 5, 12, 12, 11, 4, 12, 11, 4]), 16),
+                    ...P(N(d, [2, 7, 11, 2, 7, 11, 12, 11, 2, 12, 11, 2]), 24),
+                ];
+                d.push([30.5, 14]);
+                L(d, c, Ha, b);
+                a.set(c, 0);
+                a.set(c, c.length);
+                a.set(c, 2 * c.length);
+                a.set(c, 3 * c.length);
+                c = [
+                    [0, 16],
+                    [4, 17],
+                    [6, 19],
+                    [8, 21],
+                    [16, 24],
+                    [20, 23],
+                    [22, 24],
+                    [24, 19],
+                ];
+                for (let a = 0, b = c.length; a < b; a++) {
+                    var [e, f, ...p] = c[a];
+                    c.push([e, f + 12, ...p]);
+                }
+                c = P(c, 32);
+                L(c, a, Ha, b);
+            }
+            function Ja(a, b) {
+                {
+                    let a = new Float32Array((32 / b) * 60 * v.sampleRate);
+                    var c = [0.5, 1.25],
+                        d = N(c, [-12, -12]);
+                    let f = N(c, [-15, -15]),
+                        p = N(c, [-19, -19]);
+                    c = N(c, [-17, -17]);
+                    d = [...M(d, 2, 4), ...P(M(f, 2, 4), 8), ...P(M(p, 2, 4), 16), ...P(M(c, 2, 4), 24)];
+                    L(d, a, Ha, b);
+                    b = a;
+                }
+                a.set(b, 0);
+                a.set(b, b.length);
+                a.set(b, 2 * b.length);
+                a.set(b, 3 * b.length);
+            }
+            function Ka(a, b) {
+                b += 0.2;
+                let c = a / v.sampleRate,
+                    d = [
+                        [0, -0.5, 2],
+                        [0.1, 1, 2],
+                        [1, -1],
+                    ],
+                    e = 0,
+                    f = 1 / 1.01;
+                a = [
+                    [0, 0],
+                    [0.1 / b, 1],
+                    [(b - 0.2) / b, 0.5],
+                    [1, 0],
+                ];
+                let p = [
+                    [0, 200, 0.5],
+                    [0.1 / b, 2e3, 0.5],
+                    [(b - 0.2) / b, 1e3, 0.5],
+                    [1, 200],
+                ];
+                return ra(
+                    D(
+                        C(b, function () {
+                            let a = A(e % 1, d) / 2;
+                            a += A((1.01 * e) % 1, d) / 3;
+                            a += A((e * f) % 1, d) / 6;
+                            e += c;
+                            return a;
+                        }),
+                        a
+                    ),
+                    p
+                );
+            }
+            function La(a, b) {
+                var c = 60 / b;
+                c = P(
+                    [
+                        [0, -8, 4 * c],
+                        [4, -7, 2 * c],
+                        [6, -5, 2 * c],
+                        [8, -3, 4 * c],
+                        [12, -1, 2 * c],
+                        [14, 0, 2 * c],
+                        [16, 0, 4 * c],
+                        [20, -1, 2 * c],
+                        [22, 0, 2 * c],
+                        [24, 2, 3 * c],
+                        [27, 0, 1 * c],
+                        [28, -1, 4 * c],
+                    ],
+                    64
+                ).concat(
+                    P(
+                        [
+                            [0, 0, 4 * c],
+                            [0, 4, 4 * c],
+                            [4, -1, 2 * c],
+                            [4, 2, 2 * c],
+                            [6, -3, 2 * c],
+                            [6, 0, 2 * c],
+                            [8, -3, 4 * c],
+                            [8, 0, 4 * c],
+                            [12, -3, 2 * c],
+                            [12, 0, 2 * c],
+                            [14, -5, 2 * c],
+                            [14, -1, 2 * c],
+                            [16, -7, 4 * c],
+                            [16, -3, 4 * c],
+                            [20, -5, 2 * c],
+                            [20, -1, 2 * c],
+                            [22, -3, 2 * c],
+                            [22, 0, 2 * c],
+                            [24, -5, 4 * c],
+                            [24, 0, 4 * c],
+                            [28, -5, 4 * c],
+                            [28, -1, 4 * c],
+                        ],
+                        96
+                    )
+                );
+                L(c, a, Ka, b);
+            }
+            function Ma() {
+                let a = [
+                        [0, 400, 0.07],
+                        [1, 80],
+                    ],
+                    b = 0,
+                    c,
+                    d = C(0.4, function (d) {
+                        c = y(b);
+                        b += A(d, a) / v.sampleRate;
+                        return c;
+                    }),
+                    e = ta(C(0.4, z), 3e3, 1);
+                return sa(
+                    D(wa([d, e]), [
+                        [0, 1, 0.2],
+                        [1, 0],
+                    ]),
+                    400
+                );
+            }
+            function Na(a, b) {
+                let c = P(M([[1], [3], [5], [7], [7.75]], 8, 8), 64);
+                L(c, a, Ma, b);
+            }
+            function Oa() {
+                let a = [
+                        [0, 380, 0.1],
+                        [0.8, 30],
+                    ],
+                    b = 0,
+                    c;
+                return D(
+                    C(0.4, function (d) {
+                        c = (y(b) + (2 * Math.abs((b % 1) * 2 - 1) - 1)) / 2;
+                        b += A(d, a) / v.sampleRate;
+                        return c;
+                    }),
+                    [
+                        [0, 0],
+                        [0.01, 1, 0.2],
+                        [1, 0],
+                    ]
+                );
+            }
+            function Pa(a, b) {
+                let c = P(M([[0], [2.5], [4], [5.5], [6.5]], 8, 8), 64);
+                L(c, a, Oa, b);
+            }
+            function Qa(a, b) {
+                a = [
+                    [0, b, 0.2],
+                    [1, 0],
+                ];
+                return D(sa(C(0.4, z), 3e3), a);
+            }
+            function Ra(a, b) {
+                let c = P(
+                    M(
+                        [
+                            [0, 0, 0.25],
+                            [0.5, 0, 1],
+                        ],
+                        1,
+                        64
+                    ),
+                    64
+                );
+                c = [
+                    ...c,
+                    ...P(
+                        M(
+                            [
+                                [14.25, 0, 0.5],
+                                [15.25, 0, 0.5],
+                            ],
+                            16,
+                            4
+                        ),
+                        64
+                    ),
+                ];
+                L(c, a, Qa, b);
+            }
+            function Q(a) {
+                return Math.pow(10, a / 20);
+            }
+            async function Sa() {
+                let a = (7680 * v.sampleRate) / 120,
+                    [b, c, d, e, f, p] = await Promise.all([Ia, Ja, La, Na, Pa, Ra].map((b) => Fa(b, a)));
+                return new Ga([
+                    { source: b, volume: Q(-14), W: 1 },
+                    { source: c, volume: Q(-14), W: 1 },
+                    { source: d, volume: Q(-14), W: 1 },
+                    { source: e, volume: Q(-7.1), W: Q(-6) },
+                    { source: f, volume: Q(-4.9), W: 0 },
+                    { source: p, volume: Q(-23), W: 0 },
+                ]);
+            }
+            let Ta, Ua, Va, Wa, Xa, Ya, Za, $a, ab, bb, cb;
+            async function db(a) {
+                a = a();
+                let b = v.createBuffer(1, a.length, v.sampleRate);
+                b.getChannelData(0).set(a);
+                await K();
+                return b;
+            }
+            async function eb() {
+                let a = v.createConvolver(),
+                    b = Da(),
+                    c = v.createBuffer(2, b[0].length, v.sampleRate);
+                c.getChannelData(0).set(b[0]);
+                c.getChannelData(1).set(b[1]);
+                a.buffer = c;
+                x = a;
+                x.connect(w);
+                await K();
+            }
+            function fb(a) {
+                return new Promise((b) => {
+                    let c = new Image();
+                    c.onload = () => {
+                        a.C = c;
+                        b(a);
+                    };
+                    c.src = a.ma;
+                });
+            }
+            async function gb() {
+                [Ta, Ua, Va, Wa, Xa] = await Promise.all([ia, ja, ka, la, ma].map(fb));
+                await K();
+                [Ya, Za, $a, ab, bb] = await Promise.all([ya, za, Aa, Ba, Ca].map(db));
+                eb();
+                cb = await Sa();
+                document.body.classList.remove("loading");
+            }
+            let R = document.querySelector("canvas"),
+                S = R.getContext("2d");
+            S.imageSmoothingEnabled = !1;
+            var T = [1, 0, 0, 1, 0, 0];
+            function U(a) {
+                a = (100 * m.scale) / a;
+                T[0] = a;
+                T[3] = a;
+                T[4] = R.width / 2 - m.x * a;
+                T[5] = R.height / 2 - m.y * a;
+                S.setTransform(...T);
+            }
+            function V() {
+                S.globalAlpha = 1;
+            }
+            function W(...a) {
+                S.drawImage(...a);
+            }
+            function X(a, b, c, d, e) {
+                S.fillStyle = a;
+                S.fillRect(b, c, d, e);
+            }
+            function hb(a, b, c, d, e) {
+                S.beginPath();
+                S.arc(c, d, e, 0, 2 * Math.PI);
+                a && ((S.fillStyle = a), S.fill());
+                b && ((S.strokeStyle = b), S.stroke());
+            }
+            function ib(a, b, c, d = 0, e = 1, f = 1, p = 0) {
+                jb(b, c, () => {
+                    S.rotate(p);
+                    S.scale(e, f);
+                    let b = a.Y[d];
+                    W(a.C, b.x, b.y, b.i, b.h, -b.j, -b.l, b.i, b.h);
+                });
+            }
+            function jb(a, b, c) {
+                S.save();
+                S.translate(a, b);
+                c();
+                S.restore();
+            }
+            class kb {
+                constructor(a, b) {
+                    this.B = a;
+                    this.w = b;
+                }
+                s(a, ...b) {
+                    this.B[this.w].vb && this.B[this.w].vb(this);
+                    this.w = a;
+                    this.B[this.w].N && this.B[this.w].N(...b);
+                }
+                f() {
+                    this.B[this.w].A && this.B[this.w].A(this);
+                }
+            }
+            class lb extends kb {
+                constructor(a) {
+                    super(
+                        {
+                            [0]: {
+                                A: () => {
+                                    this.alpha = 0;
+                                },
+                            },
+                            [1]: {
+                                N: (b) => {
+                                    this.g = 0;
+                                    let c = -0.5 + Math.random() + (1 === b.I ? Math.PI : 0);
+                                    a.x = a.Kb = b.x + 20 * Math.cos(c);
+                                    a.y = a.Lb = b.y + 20 * Math.sin(c);
+                                    a.rotation = 0;
+                                    a.M = b;
+                                },
+                                A: () => {
+                                    this.g += g;
+                                    let b = 0.1 + 3 * g,
+                                        c = this.g / b;
+                                    c *= 2 - c;
+                                    let d = a.M.y + a.Ga;
+                                    a.x = a.Kb + (a.M.x + a.hb - a.Kb) * c;
+                                    a.y = a.Lb + (d - a.Lb) * c;
+                                    a.alpha = c;
+                                    this.g >= b && this.s(2);
+                                },
+                            },
+                            [2]: {
+                                A: () => {
+                                    a.x = a.M.x + a.hb;
+                                    a.y = a.M.y + a.Ga;
+                                    a.rotation = 0;
+                                },
+                            },
+                            [3]: {
+                                N: () => {
+                                    this.g = 20;
+                                    a.rotation = Math.PI / 2;
+                                },
+                                A: () => {
+                                    a.x = a.M.x + a.hb;
+                                    a.y = a.M.y + a.Ga;
+                                    let b = this.g / 20;
+                                    a.rotation = ((-E(a.I) * Math.PI) / 2) * b * b;
+                                    this.g--;
+                                    0 == this.g && this.s(2);
+                                },
+                            },
+                            [4]: {
+                                N: (b, c) => {
+                                    a.M = null;
+                                    this.a = b;
+                                    this.b = c;
+                                    this.mc = 4 * Math.random() - 2;
+                                },
+                                A: () => {
+                                    a.x += this.a * g;
+                                    a.y += this.b * g;
+                                    a.rotation += this.mc * g;
+                                    a.alpha = F(a.alpha, 0, 2 * g);
+                                    0 >= a.alpha && this.s(0);
+                                },
+                            },
+                        },
+                        0
+                    );
+                }
+            }
+            class mb {
+                constructor(a) {
+                    this.y = this.x = 0;
+                    this.I = this.X = a;
+                    this.rotation = 0;
+                    this.hb = -2 * a;
+                    this.Ga = -6;
+                    this.alpha = 0;
+                    this.B = new lb(this);
+                }
+                Ma(a) {
+                    this.M !== a && this.B.s(1, a);
+                }
+                Ha(a, b) {
+                    0 !== this.B.w && this.B.s(4, a, b);
+                }
+                f() {
+                    this.I += (this.X - this.I) / 5;
+                    this.B.f();
+                }
+                bb(a) {
+                    this.M && (this.Ga = a);
+                }
+                Ta() {
+                    this.B.s(3);
+                }
+                c() {
+                    0 >= this.alpha || ((S.globalAlpha = this.alpha), ib(Xa, this.x, this.y, 0, this.I, 1, this.rotation), V());
+                }
+            }
+            class nb {
+                constructor() {
+                    this.m = [new mb(-1), new mb(1)];
+                    this.Ba = [0, 1];
+                }
+                Ma(a) {
+                    for (let b of this.m) b.Ma(a);
+                }
+                Ha(a, b) {
+                    for (let c of this.m) c.Ha(a, b);
+                }
+                Ta() {
+                    for (let a of this.m) a.Ta();
+                }
+                f() {
+                    for (let a of this.m) a.f();
+                }
+                bb(a) {
+                    for (let b of this.m) b.bb(a);
+                }
+                nc(a) {
+                    switch (a) {
+                        case 0:
+                            this.Ba = [0, 1];
+                            this.m[0].X = -1;
+                            this.m[1].X = 1;
+                            break;
+                        case -1:
+                            this.Ba = [1, 0];
+                            this.m[0].X = -1;
+                            this.m[1].X = -1;
+                            break;
+                        case 1:
+                            (this.Ba = [0, 1]), (this.m[0].X = 1), (this.m[1].X = 1);
+                    }
+                }
+                c() {
+                    this.Ba.forEach((a) => this.m[a].c());
+                }
+            }
+            function Y(a, b = 1, c = !1) {
+                let d = v.createBufferSource();
+                d.buffer = a;
+                c && ((a = v.createGain()), (a.gain.value = 2 * b), d.connect(a), a.connect(x));
+                if (1 !== b) {
+                    let a = v.createGain();
+                    a.gain.setValueAtTime(b, 0);
+                    d.connect(a);
+                    d.onended = () => a.disconnect(w);
+                    a.connect(w);
+                } else d.connect(w);
+                d.start();
+            }
+            class ob {
+                constructor(a, b, c) {
+                    this.color = a;
+                    a = Math.random() * Math.PI * 2;
+                    this.x = Math.cos(a) * c;
+                    this.y = Math.sin(a) * c;
+                    this.Aa = b;
+                    this.alpha = 0;
+                    this.Nb = 1 / b;
+                }
+                c() {
+                    this.Aa--;
+                    this.alpha += this.Nb;
+                    0 >= this.Aa || (hb(this.color, null, this.x, this.y, this.Aa), (S.globalAlpha = this.alpha), hb("#888", null, this.x, this.y, this.Aa), V());
+                }
+            }
+            class pb {
+                constructor(a, b) {
+                    this.x = a;
+                    this.y = b;
+                    this.g = 0;
+                    this.Qb = [
+                        { ua: new ob("#d48621", 18, 0), Fa: 0 },
+                        { ua: new ob("#fff2aa", 9, 8), Fa: 0.1 },
+                        { ua: new ob("#d48621", 9, 7), Fa: 0.2 },
+                        { ua: new ob("#fff2aa", 9, 6), Fa: 0.3 },
+                    ];
+                    m.Ja(1);
+                    Y(ab);
+                    k.Sa = 2;
+                }
+                f() {
+                    this.g += g;
+                    1 <= this.g && k.jc();
+                }
+                c() {
+                    jb(this.x, this.y, () => {
+                        this.Qb.forEach((a) => {
+                            this.g < a.Fa || a.ua.c();
+                        });
+                    });
+                }
+            }
+            class qb {
+                constructor(a, b) {
+                    this.x = a;
+                    this.y = b;
+                    this.K = H(Va.Y.length);
+                    this.g = 1;
+                }
+                f() {
+                    this.g -= g;
+                    0 >= this.g && k.gc(this);
+                }
+                c() {
+                    S.globalAlpha = 0.5 * this.g;
+                    ib(Va, this.x, this.y, this.K);
+                    V();
+                }
+            }
+            class rb {
+                constructor(a, b) {
+                    this.color = a;
+                    this.alpha = b;
+                    this.uc = 1 - b;
+                }
+                f() {
+                    this.alpha = F(this.alpha, this.uc, g);
+                }
+                c() {
+                    S.globalAlpha = this.alpha;
+                    X(this.color, 0, 0, R.width, R.height);
+                    V();
+                }
+            }
+            let sb = 0;
+            class tb {
+                constructor(a, b) {
+                    this.x = a;
+                    this.y = b;
+                    this.alpha = 0;
+                    this.index = sb++ % Ta.Y.length;
+                }
+                c() {
+                    S.globalAlpha = this.alpha;
+                    this.alpha += 0.1;
+                    ib(Ta, this.x, this.y, this.index);
+                }
+            }
+            let ub = [1, 2, 3, 5, 8];
+            class vb {
+                constructor(a) {
+                    this.$b = a;
+                    this.ta = l.x;
+                    this.aa = l.y - 6;
+                    this.g = 0;
+                    this.nb = [];
+                    this.Bb = [];
+                    for (a = 0; 5 > a; a++) this.Bb.push({ r: 0, ra: 0 });
+                }
+                f() {
+                    this.g++;
+                    this.$b || (60 == this.g && k.Ia(new rb("#fff", 0)), 120 == this.g && h.ac());
+                    if (10 < this.g && 240 > this.g)
+                        for (let b = 0; 5 > b; b++) {
+                            var a = this.Bb[b];
+                            a.r += 2;
+                            a.ra += ub[b] * (1 - this.g / 240);
+                            let c = l.x + Math.cos(a.ra) * a.r;
+                            a = l.y + Math.sin(a.ra) * a.r;
+                            k.F(c - 1, a - 1, 2, 2) && this.nb.push(new tb(c, a));
+                        }
+                }
+                c() {
+                    this.nb.forEach((a) => a.c());
+                    V();
+                    S.lineWidth = 1;
+                    hb(null, "#fff", this.ta, this.aa, Math.pow(this.g, 1.125));
+                    hb(null, "#fff", this.ta, this.aa, Math.pow(this.g, 1.25));
+                }
+            }
+            let wb = S.createRadialGradient(R.width / 2, R.height / 2, 200, R.width / 2, R.height / 2, 1e3);
+            wb.addColorStop(0, "#eeeeee00");
+            wb.addColorStop(1, "#eeeeee53");
+            class xb {
+                constructor() {
+                    this.alpha = 1;
+                }
+                f() {
+                    this.alpha -= 2 * g;
+                    0 > this.alpha && k.hc(this);
+                }
+                c() {
+                    S.globalAlpha = this.alpha;
+                    X(wb, 0, 0, R.width, R.height);
+                    V();
+                }
+            }
+            class Z {
+                constructor(a, b, c = 1, d = 1) {
+                    this.x = 8 * a;
+                    this.y = 8 * b;
+                    this.width = 8 * c;
+                    this.height = 8 * d;
+                }
+                get lb() {
+                    return this.x / 8;
+                }
+                get Pa() {
+                    return this.y / 8;
+                }
+                f() {}
+                c() {}
+            }
+            class yb {
+                constructor() {}
+                start(a) {
+                    this.active = !0;
+                    this.g = a;
+                }
+                stop() {
+                    this.g = 0;
+                    this.active = !1;
+                }
+                f() {
+                    this.active && (this.g--, 0 >= this.g && (this.active = !1));
+                }
+            }
+            class zb extends kb {
+                constructor(a) {
+                    super(
+                        {
+                            [0]: {
+                                N: () => {
+                                    a.va();
+                                },
+                                A: () => {
+                                    a.J && this.s(1);
+                                },
+                            },
+                            [1]: {
+                                N: () => {
+                                    a.va();
+                                },
+                                A: () => {
+                                    t[16] && this.s(2);
+                                },
+                            },
+                            [2]: {
+                                N: () => {
+                                    this.Qa = 0.1;
+                                    a.Ob();
+                                },
+                                A: () => {
+                                    t[16] ? ((this.Qa -= g), 0 >= this.Qa && this.s(3)) : this.s(1);
+                                },
+                            },
+                            [3]: {
+                                A: () => {
+                                    t[16] || 4 === a.ea.w || this.s(1);
+                                },
+                            },
+                        },
+                        0
+                    );
+                }
+                Tb() {
+                    this.s(0);
+                }
+            }
+            class Ab extends kb {
+                constructor(a) {
+                    super(
+                        {
+                            [5]: {
+                                A: () => {
+                                    a.J && ((this.La = 0), a.ic());
+                                    a.Na ? this.sb(a) || a.Va() : a.Va();
+                                },
+                            },
+                            [4]: {
+                                N: (b) => {
+                                    a.Sb(b);
+                                    this.la = 0.25;
+                                    -240 == a.b && (this.la -= 0.06);
+                                    a.xa.active ? a.m.Ta() : (this.La++, a.bc());
+                                    k.Ia(new xb());
+                                },
+                                A: () => {
+                                    this.la -= g;
+                                    0 >= this.la ? this.s(6) : 0 === ca % 2 && k.L(new qb(a.v.x + Math.random() * a.$, a.v.y + Math.random() * a.ha));
+                                },
+                            },
+                            [6]: {
+                                N: () => {
+                                    this.Ua = 0.08;
+                                    a.qc();
+                                },
+                                A: () => {
+                                    (a.Na && 0 === this.La && this.sb(a)) || (a.Va(), (this.Ua -= g), 0 >= this.Ua && this.s(5));
+                                },
+                                vb: () => {
+                                    8 !== a.ka && a.tc();
+                                },
+                            },
+                        },
+                        5
+                    );
+                }
+                sb(a) {
+                    if (!a.da.active || (!a.J && 0 < this.La)) return !1;
+                    let b = (1 * !!t[1]) | (2 * !!t[2]) | (4 * !!t[4]) | (8 * !!t[8]) || 2;
+                    var c = !a.F(a.x - 1, a.y),
+                        d = !a.F(a.x, a.y - 1),
+                        e = !a.F(a.x + 1, a.y);
+                    b &= (1 * c) | (2 * d) | (4 * e) | (8 * !a.J);
+                    return 0 !== b && 5 !== b && 10 !== b && 15 !== b ? (this.s(4, b), !0) : !1;
+                }
+                kb(a, b) {
+                    4 === this.w && ((a.ka &= ~b), 0 === a.ka && this.s(6));
+                }
+            }
+            class Bb extends Z {
+                constructor(a, b) {
+                    super(a, b);
+                    this.eb = a;
+                    this.fb = b;
+                    this.x += 4;
+                    this.y += 8;
+                    this.Z = 3;
+                    this.sa = 8;
+                    this.$ = 6;
+                    this.ha = 8;
+                    this.I = 1;
+                    this.V = this.b = this.a = 0;
+                    this.na = !0;
+                    this.cb = 0.5;
+                    this.ka = this.H = this.G = 0;
+                    this.O = this.Ra = 720;
+                    this.cc = 320;
+                    this.da = new yb();
+                    this.xa = new yb();
+                    this.m = new nb();
+                    this.K = this.gb = 0;
+                    this.ab = this.Ab = 1;
+                    this.Oa = new zb(this);
+                    this.ea = new Ab(this);
+                }
+                f() {
+                    if (this.na)
+                        if (this.wa) {
+                            this.m.f();
+                            this.cb = F(this.cb, g, g);
+                            let a = g * this.cb;
+                            this.move(this.a * a, this.b * a);
+                        } else
+                            this.y > k.height + 100
+                                ? this.ba()
+                                : ((this.J = this.F(this.x, this.y + 1) && !this.ja(this.x, this.y + 1, { qa: 2 })) && this.xa.start(4),
+                                  t[32] && !u[32] && this.da.start(4),
+                                  t[32] || this.da.stop(),
+                                  this.Oa.f(),
+                                  this.ea.f(),
+                                  0 !== this.a && (this.I = E(this.a)),
+                                  this.move(this.a * g, this.b * g),
+                                  this.da.f(),
+                                  this.xa.f(),
+                                  this.xc(),
+                                  this.m.f());
+                    else this.mb.f(), this.m.f();
+                }
+                xc() {
+                    this.K = 0;
+                    this.m.nc(E(this.a));
+                    4 === this.ea.w
+                        ? (this.K = 0 === this.a ? 0 : 3)
+                        : this.J
+                        ? 100 < Math.abs(this.a) && ((this.K = (Math.floor(this.gb) % 2) + 1), (this.gb += 0.1))
+                        : 100 < Math.abs(this.a)
+                        ? ((this.K = 1), 100 < this.b && (this.K = 4))
+                        : (this.K = 100 < this.b ? 5 : 0);
+                    let a = 0 > this.b ? Math.min(0.1, -this.b / 100) : 0;
+                    this.Ab = 1 - a;
+                    this.ab = 1 + 2 * a;
+                    this.m.bb([-8, -7, -8, -7, -7, -8, -7][this.K]) * this.ab;
+                }
+                Ob() {
+                    this.m.Ma(this);
+                }
+                va() {
+                    this.m.Ha(-(Math.max(10, Math.abs(this.a / 8)) * E(this.a || this.I)), -this.b / 8);
+                }
+                bc() {
+                    this.va();
+                    this.Oa.Tb();
+                }
+                Sb(a) {
+                    this.ka = a;
+                    this.b = this.a = 0;
+                    a & 1 && this.a--;
+                    a & 2 && this.b--;
+                    a & 4 && this.a++;
+                    a & 8 && this.b++;
+                    0 !== this.a && 0 !== this.b ? ((this.a *= 170), (this.b *= 170)) : ((this.a *= 240), (this.b *= 240));
+                    240 == this.b && (this.b = 320);
+                    Y(Ya);
+                }
+                Va() {
+                    let a = 160 * (-!!t[1] + !!t[4]),
+                        b = this.J ? 1 : 0.5;
+                    0 === a
+                        ? (this.a = F(this.a, a, 800 * b * g))
+                        : 0 === this.a
+                        ? (this.a = this.J ? 0.1 * a : F(this.a, a, 800 * b * g))
+                        : (0 < a ? 1 : 0 > a ? -1 : 0) === E(this.a)
+                        ? (this.a = F(this.a, a, 800 * b * g))
+                        : (0 < a ? 1 : 0 > a ? -1 : 0) !== E(this.a) && (this.a = F(this.a, a, 3200 * b * g));
+                    !this.Na && this.xa.active && this.da.active && ((this.b = -128), (this.V = 0.4), this.da.stop(), Y($a));
+                    if (!this.J)
+                        if (((this.V -= g), 0 < this.V && t[32])) this.b += 160 * g;
+                        else if (0 >= this.V || !t[32]) (this.b = F(this.b, this.cc, this.O * g)), (this.V = 0);
+                }
+                move(a, b) {
+                    let c = (b) => {
+                            b.qa & 2 && 0.5 <= Math.abs(a) ? this.ba() : this.ec(b.a);
+                        },
+                        d = (a) => {
+                            a.qa & 2 ? this.ba() : this.fc(a.b);
+                        };
+                    Math.abs(a) > Math.abs(b) ? (this.Ya(a, c), this.Za(b, d)) : (this.Za(b, d), this.Ya(a, c));
+                }
+                ec(a = 0) {
+                    a = (0 < a ? 1 : 0 > a ? -1 : 0) === E(this.a) ? a : 0;
+                    let b = Math.abs(a - Math.abs(this.a));
+                    this.a = a;
+                    200 <= b && (this.Eb(), this.ea.kb(this, 5));
+                }
+                fc(a = 0) {
+                    a = (0 < a ? 1 : 0 > a ? -1 : 0) === E(this.b) ? a : 0;
+                    if (230 <= Math.abs(a - Math.abs(this.b)) || -200 > this.b) {
+                        this.Eb();
+                        for (let a = -2; 2 >= a; a++) k.L(new qb(this.x + 4 * a, this.y - 1 - 2 * Math.random()));
+                        k.Sa = 320 == Math.abs(this.b) ? 2 : 1;
+                        this.V = 0;
+                        this.ea.kb(this, 10);
+                    }
+                    this.b = a;
+                }
+                Eb() {
+                    m.Ja(0.4);
+                    Y(Za, 0.2);
+                }
+                ic() {
+                    this.O = this.Ra;
+                }
+                qc() {
+                    this.O = 0;
+                }
+                tc() {
+                    this.O = this.Ra;
+                }
+                Ya(a, b) {
+                    this.G += a;
+                    a = Math.round(this.G);
+                    if (0 !== a) {
+                        this.G -= a;
+                        let c = 0 < a ? 1 : 0 > a ? -1 : 0;
+                        for (; 0 !== a; ) {
+                            let d = this.F(this.x + c, this.y);
+                            if (d) {
+                                b && b(d);
+                                break;
+                            } else (this.x += c), (a -= c);
+                        }
+                    }
+                }
+                Za(a, b) {
+                    this.H += a;
+                    a = Math.round(this.H);
+                    if (0 !== a) {
+                        this.H -= a;
+                        let c = 0 < a ? 1 : 0 > a ? -1 : 0;
+                        for (; 0 !== a; ) {
+                            let d = this.F(this.x, this.y + c);
+                            if (d) {
+                                b && b(d);
+                                break;
+                            } else (this.y += c), (a -= c);
+                        }
+                    }
+                }
+                ja(a, b, c) {
+                    return k.ja(a - this.Z, b - this.sa, this.$, this.ha, c);
+                }
+                F(a, b) {
+                    return k.F(a - this.Z, b - this.sa, this.$, this.ha);
+                }
+                get v() {
+                    return { x: this.x - this.Z, y: this.y - this.sa, width: this.$, height: this.ha, ta: this.x - this.Z + this.$ / 2, aa: this.y - this.sa + this.ha / 2 };
+                }
+                get Na() {
+                    return 3 === this.Oa.w;
+                }
+                get tb() {
+                    return 4 === this.ea.w;
+                }
+                ub(a) {
+                    return a.y === this.y && this.x - this.Z + this.$ > a.x && this.x - this.Z < a.x + a.width;
+                }
+                c() {
+                    this.m.c();
+                    this.na ? ib(Wa, this.x, this.y, this.K, this.I * this.Ab, this.ab) : this.mb.c();
+                }
+                ba() {
+                    this.na && ((this.na = !1), (this.mb = new pb(this.x, this.v.aa)), this.va());
+                }
+                oc() {
+                    this.wa || ((this.wa = !0), (this.Ub = new vb()), k.L(this.Ub), m.Ja(1), Y(bb, 0.2, !0));
+                }
+            }
+            class Cb {
+                constructor() {
+                    this.o = {};
+                }
+                Ka(a) {
+                    this.o[a.x + ";" + a.y] = a;
+                }
+                u(a, b, c = 0) {
+                    return (a = this.o[a + ";" + b]) ? (c ? (a.qa & c ? a : null) : a) : null;
+                }
+                ob(a) {
+                    for (let b in this.o) a(this.o[b]);
+                }
+            }
+            class Db {
+                constructor(a) {
+                    this.ia = {};
+                    this.o = a;
+                }
+                async pa() {
+                    this.o.ob((a) => {
+                        let b = Math.floor(a.x / 60),
+                            c = Math.floor(a.y / 60),
+                            d = b + ";" + c;
+                        this.ia[d] = this.ia[d] || { x: b, y: c, o: [] };
+                        this.ia[d].o.push(a);
+                    });
+                    await Promise.all(Object.values(this.ia).map((a) => this.dc(a)));
+                }
+                async dc(a) {
+                    a.C = await J(480, 480, (b) => {
+                        b.translate(480 * -a.x, 480 * -a.y);
+                        a.o.forEach((a) => a.c(this.o, b));
+                    });
+                }
+                c() {
+                    I(Math.floor(m.Ib(0) / 8 / 60), Math.floor(m.Jb(0) / 8 / 60), Math.floor(m.Ib(R.width - 1) / 8 / 60), Math.floor(m.Jb(R.height - 1) / 8 / 60), (a, b) => {
+                        let c = this.ia[`${a};${b}`];
+                        c && W(c.C, 480 * a, 480 * b);
+                    });
+                }
+            }
+            class Eb {
+                constructor(a, b) {
+                    this.z = a;
+                    this.color = b;
+                    a = S.createRadialGradient(R.width / 2, R.height / 2, 400, R.width / 2, R.height / 2, 1100);
+                    a.addColorStop(0, Ea(b, 0));
+                    a.addColorStop(1, b);
+                    this.Xb = a;
+                }
+                async pa() {
+                    this.C = await J(80, 80, (a) => {
+                        a.fillStyle = this.color;
+                        a.beginPath();
+                        for (let b = 0; 80 > b; b++) {
+                            let b = 1 + H(8),
+                                d = 1 + H(8);
+                            a.rect(H(80 - b), H(80 - d), b, d);
+                        }
+                        a.fill();
+                    });
+                }
+                c() {
+                    let { z: a, C: b, Xb: c } = this;
+                    U(a);
+                    let d = (a / 15) * 80;
+                    I(Math.floor(-T[4] / T[0] / d), Math.floor(-T[5] / T[3] / d), Math.floor((R.width / T[0] - T[4] / T[0]) / d), Math.floor((R.height / T[3] - T[5] / T[3]) / d), (a, c) => {
+                        W(b, a * d, c * d, d, d);
+                    });
+                    S.setTransform(1, 0, 0, 1, 0, 0);
+                    X(c, 0, 0, R.width, R.height);
+                }
+            }
+            class Fb {
+                async pa() {
+                    this.P = [new Eb(900, aa), new Eb(300, ba)];
+                    await Promise.all(this.P.map((a) => a.pa()));
+                }
+                c() {
+                    X(n, 0, 0, R.width, R.height);
+                    this.P.forEach((a) => a.c());
+                }
+            }
+            class Gb {
+                constructor() {
+                    this.o = new Cb();
+                    this.Fb = new Set();
+                    this.P = { [120]: new Set(), [100]: new Set(), [50]: new Set() };
+                    this.ya = new Set();
+                    this.D = new Set();
+                    this.Hb = new Db(this.o);
+                    this.jb = new Fb();
+                    this.Ia(new rb("#fff", 1));
+                }
+                async Zb() {
+                    await this.jb.pa();
+                    await this.Hb.pa();
+                    for (let a of this.D) a.U && (await a.U());
+                }
+                vc() {
+                    this.height = this.width = 0;
+                    this.o.ob((a) => {
+                        this.width = Math.max(this.width, 8 * a.x);
+                        this.height = Math.max(this.height, 8 * a.y);
+                    });
+                }
+                pc(a) {
+                    l = a;
+                    this.xb = a.eb;
+                    this.yb = a.fb;
+                }
+                jc() {
+                    for (let a of this.D) a.reset && a.reset();
+                    l = new Bb(this.xb, this.yb);
+                }
+                L(a, b = 100) {
+                    this.P[b].add(a);
+                    this.D.add(a);
+                    a.Mb = b;
+                }
+                gc(a) {
+                    this.D.delete(a);
+                    this.P[a.Mb].delete(a);
+                }
+                ib(a) {
+                    this.Fb.add(a);
+                    this.L(a);
+                }
+                Ka(a) {
+                    this.o.Ka(a);
+                }
+                Ia(a) {
+                    this.ya.add(a);
+                }
+                hc(a) {
+                    this.ya.delete(a);
+                }
+                ja(a, b, c, d, { qa: e = 7, Wa: f = null } = {}) {
+                    if (e & 1 && (f = this.F(a, b, c, d, { Wa: f }))) return f;
+                    var p = Math.floor(a / 8);
+                    f = Math.floor(b / 8);
+                    a = Math.floor((a + c - 1) / 8);
+                    b = Math.floor((b + d - 1) / 8);
+                    for (d = p; d <= a; d++) for (c = f; c <= b; c++) if ((p = this.o.u(d, c, e))) return p;
+                    return null;
+                }
+                F(a, b, c, d, { Wa: e = null } = {}) {
+                    var f = Math.floor(a / 8);
+                    let p = Math.floor(b / 8),
+                        r = Math.floor((a + c - 1) / 8),
+                        O = Math.floor((b + d - 1) / 8);
+                    for (; f <= r; f++)
+                        for (let a = p; a <= O; a++) {
+                            let b = this.o.u(f, a, 1);
+                            if (b) return b;
+                        }
+                    for (let f of this.Fb) if (f !== e && f.T && G({ x: a, y: b, width: c, height: d }, f)) return f;
+                    return null;
+                }
+                f() {
+                    if (this.Sa) this.Sa--;
+                    else {
+                        for (let a of this.D) a.f();
+                        l && l.f();
+                        for (let a of this.ya) a.f();
+                        m.f();
+                    }
+                }
+                c() {
+                    S.setTransform(1, 0, 0, 1, 0, 0);
+                    this.jb.c();
+                    U(120);
+                    for (let a of this.P[120]) a.c();
+                    U(100);
+                    this.Hb.c();
+                    for (let a of this.P[100]) a.c();
+                    l && l.c();
+                    U(50);
+                    for (let a of this.P[50]) a.c();
+                    S.setTransform(1, 0, 0, 1, 0, 0);
+                    for (let a of this.ya) a.c();
+                }
+            }
+            class Hb {
+                constructor() {
+                    this.fa = this.Ca = this.Db = this.Cb = this.Ea = this.Da = this.R = this.Gb = this.y = this.x = 0;
+                    this.scale = 2;
+                    this.ca = 1;
+                }
+                f() {
+                    this.zc();
+                    this.yc();
+                    this.wc();
+                    this.x = this.Gb + this.Da;
+                    this.y = this.R + this.Ea;
+                }
+                wc() {
+                    let a = Math.min(6, 8 * this.fa * this.fa),
+                        b = 2 * Math.random() * Math.PI;
+                    this.Ca && ((this.Cb = a * Math.cos(b)), (this.Db = a * Math.sin(b)));
+                    this.Ca = !this.Ca;
+                    this.Da += 0.75 * (this.Cb - this.Da);
+                    this.Ea += 0.75 * (this.Db - this.Ea);
+                    this.fa = F(this.fa, 0, g);
+                }
+                yc() {
+                    let a = l.v.aa,
+                        b = this.pb() / 10,
+                        c = this.pb() / 6,
+                        d = (b) => {
+                            this.R += (a + b - this.R) / 8;
+                        };
+                    l.J ? d(0) : a < this.y - c ? (this.R = a + c) : a > this.y + c ? (this.R = a - c) : a < this.y - b ? d(b) : a > this.y + b && d(-b);
+                    this.R = Math.max(0, Math.min(this.R, k.height));
+                    this.Gb = Math.max(0, Math.min(l.x, k.width));
+                }
+                zc() {
+                    this.ca = F(this.ca, 0, g / 4);
+                    this.scale = 4 - 2 * this.ca * this.ca;
+                }
+                Ja(a) {
+                    this.fa = Math.min(1, this.fa + a);
+                    this.Ca = !0;
+                }
+                pb() {
+                    return R.height / this.scale;
+                }
+                Ib(a) {
+                    return (a - R.width / 2) / this.scale + this.x;
+                }
+                Jb(a) {
+                    return (a - R.height / 2) / this.scale + this.y;
+                }
+            }
+            class Ib {
+                async load() {
+                    k = new Gb();
+                    m = new Hb();
+                    this.Vb();
+                    await k.Zb();
+                }
+            }
+            class Jb {
+                constructor(a, b, c) {
+                    this.x = a;
+                    this.y = b;
+                    this.qa = c;
+                }
+            }
+            class Kb extends Jb {
+                constructor(a, b) {
+                    super(a, b, 1);
+                }
+                c(a, b) {
+                    a = (((this.x % 24) + 24) % 24) / 24;
+                    let c = (((this.y % 24) + 24) % 24) / 24;
+                    b.globalAlpha = 1 - a * (1 - a) * c * (1 - c) - 0.01 + 0.02 * Math.random();
+                    b.fillStyle = q;
+                    b.fillRect(8 * this.x, 8 * this.y, 8, 8);
+                }
+            }
+            class Lb extends Jb {
+                constructor(a, b) {
+                    super(a, b, 3);
+                }
+                Wb(a) {
+                    let b = this.x,
+                        c = this.y,
+                        d = a.u(b, c - 1, 2) || a.u(b, c + 1, 2),
+                        e = a.u(b - 1, c, 2) || a.u(b + 1, c, 2);
+                    return a.u(b - 1, c, 1) && d ? 3 : a.u(b + 1, c, 1) && d ? 1 : a.u(b, c - 1, 1) && e ? 0 : a.u(b, c + 1, 1) && e ? 2 : a.u(b - 1, c, 1) ? 3 : a.u(b + 1, c, 1) ? 1 : a.u(b, c - 1, 1) ? 0 : a.u(b, c + 1, 1) ? 2 : 0;
+                }
+                c(a, b) {
+                    b.fillStyle = q;
+                    let c = 8 * this.x,
+                        d = 8 * this.y;
+                    a = this.Wb(a);
+                    switch (a) {
+                        case 0:
+                        case 2:
+                            for (var e = 0; 8 > e; e += 2) {
+                                var f = (e / 2) % 2;
+                                b.fillRect(c + e, d + (2 === a ? f : 0), 1, 8 - f);
+                            }
+                            break;
+                        case 1:
+                        case 3:
+                            for (e = 0; 8 > e; e += 2) (f = (e / 2) % 2), b.fillRect(c + (1 === a ? f : 0), d + e, 8 - f, 1);
+                    }
+                    b.stroke();
+                }
+            }
+            class Mb extends Z {
+                constructor(a, b, c, d, e, f) {
+                    super(a, b, c, d);
+                    this.eb = this.x;
+                    this.fb = this.y;
+                    this.rc = e;
+                    this.sc = f;
+                    this.reset();
+                    this.T = !0;
+                }
+                reset() {
+                    this.x = this.eb;
+                    this.y = this.fb;
+                    this.a = this.rc;
+                    this.b = this.sc;
+                    this.H = this.G = 0;
+                    this.T = !0;
+                }
+                async U() {
+                    this.C = await J(this.width, this.height, (a) => {
+                        I(0, 0, this.width / 8 - 1, this.height / 8 - 1, (b, c) => {
+                            a.fillStyle = Ea(q, 0.94 - 0.01 + 0.02 * Math.random());
+                            a.fillRect(8 * b, 8 * c, 8, 8);
+                        });
+                    });
+                }
+                f() {
+                    this.T = !1;
+                    this.G += this.a * g;
+                    this.H += this.b * g;
+                    let a = Math.round(this.G),
+                        b = Math.round(this.H);
+                    this.G -= a;
+                    this.H -= b;
+                    var c = this.ja(this.x + a, this.y + b);
+                    if (c) {
+                        if ((this.a && E(c.a) === -E(this.a)) || (this.b && E(c.b) === -E(this.b))) (c.a *= -1), (c.b *= -1);
+                        0 < this.a ? (a -= ((this.x + a) % 8) * 2) : 0 > this.a ? (a -= 2 * (((this.x + a) % 8) - 8)) : (b = 0 < this.b ? b - ((this.y + b) % 8) * 2 : b - 2 * (((this.y + b) % 8) - 8));
+                        this.a *= -1;
+                        this.b *= -1;
+                    }
+                    c = l.ub(this);
+                    this.x += a;
+                    this.y += b;
+                    l.na &&
+                        (c
+                            ? l.move(a, 0 > b || !l.tb ? b : 0)
+                            : G(l.v, this) &&
+                              (a
+                                  ? l.Ya(0 < a ? this.x + this.width - l.v.x : this.x - l.v.x - l.v.width, () => {
+                                        l.ba();
+                                    })
+                                  : b &&
+                                    l.Za(0 < b ? this.y + this.height - l.v.y : this.y - l.v.y - l.v.height, () => {
+                                        l.ba();
+                                    })));
+                    this.T = !0;
+                }
+                ja(a, b) {
+                    return k.F(a, b, this.width, this.height, { Wa: this });
+                }
+                c() {
+                    W(this.C, this.x, this.y);
+                }
+            }
+            let Nb = 0,
+                Ob = "#f00 #fff #0f0 #00f #0ff #ff0 #f0f".split(" ");
+            class Pb {
+                constructor(a, b) {
+                    this.qb = a;
+                    this.rb = b;
+                    a = 5 + 10 * Math.random();
+                    b = 2 * Math.random() * Math.PI;
+                    this.x = this.qb + Math.cos(b) * a;
+                    this.y = this.rb + Math.sin(b) * a;
+                    this.a = 10 * Math.sin(b);
+                    this.b = 10 * -Math.cos(b);
+                    this.O = 500;
+                    this.color = Ob[Nb++ % Ob.length];
+                }
+                f() {
+                    this.x += this.a * g;
+                    this.y += this.b * g;
+                    this.Yb(this.O, this.qb, this.rb);
+                    l.wa && (this.O = F(this.O, 100, 100));
+                }
+                Yb(a, b, c) {
+                    b = this.x - b;
+                    c = this.y - c;
+                    let d = Math.max(1, b * b + c * c);
+                    this.a += ((-a * b) / d) * g;
+                    this.b += ((-a * c) / d) * g;
+                }
+            }
+            class Qb extends Z {
+                constructor(a, b) {
+                    super(a, b);
+                    this.zb = [];
+                    for (a = 0; 20 > a; a++) this.zb.push(new Pb(this.x + 4, this.y + 4));
+                    this.alpha = 1;
+                }
+                f() {
+                    var a = l.v;
+                    var b = Math.abs(this.x + 4 - a.ta);
+                    a = Math.abs(this.y + 4 - a.aa);
+                    b = b * b + a * a;
+                    256 > b && (l.tb || 260 <= l.b) && l.oc();
+                    l.wa && (this.alpha = F(this.alpha, 0, g));
+                }
+                c() {
+                    S.globalAlpha = this.alpha;
+                    for (let a = 0; 20 > a; a++) {
+                        let b = this.zb[a],
+                            c = Math.round(Math.random() * Math.random() * 8);
+                        for (let a = 0; a < c; a++) b.f();
+                        X(b.color, b.x - 1, b.y - 1, 2, 2);
+                    }
+                    V();
+                }
+            }
+            function Rb(a) {
+                let b = 0,
+                    c = 0,
+                    d = 0,
+                    e = 0;
+                for (let f = 0; f < a.length; f++) " " === a[f] ? (d += 6) : a[f].match(/\n|#/) ? ((d = 0), (e += 6)) : ((d += 6), (b = Math.max(d, b)), (c = Math.max(e + 6, c)));
+                return { width: b, height: c };
+            }
+            function Sb(a) {
+                let { width: b, height: c } = Rb(a);
+                return J(b + 1, c + 1, (d) => {
+                    d.fillStyle = n;
+                    d.fillRect(0, 0, b + 1, c + 1);
+                    {
+                        let b = 1,
+                            c = 1;
+                        for (let e = 0; e < a.length; e++) " " === a[e] ? (b += 6) : a[e].match(/\n|#/) ? ((b = 1), (c += 6)) : (d.drawImage(Ua.C, 6 * (a.charCodeAt(e) - 65), 0, 5, 5, b, c, 5, 5), (b += 6));
+                    }
+                });
+            }
+            class Tb extends Z {
+                constructor(a, b, c) {
+                    super(a, b);
+                    this.text = c;
+                }
+                async U() {
+                    this.C = await Sb(this.text);
+                }
+                c() {
+                    W(this.C, this.x, this.y);
+                }
+            }
+            var Ub = [
+                {
+                    ga: {
+                        1: [
+                            [0, 0, 56, 50],
+                            [126, 56, 23, 34],
+                            [149, 56, 25, 22],
+                            [149, 63, 33, 15],
+                            [182, 63, 16, 11],
+                            [198, 60, 8, 14],
+                            [206, 57, 11, 17],
+                            [217, 62, 13, 12],
+                            [222, 74, 28, 24],
+                            [250, 66, 9, 32],
+                            [270, 74, 16, 16],
+                            [286, 82, 16, 8],
+                            [294, 90, 48, 8],
+                            [30, 50, 96, 10],
+                            [301, 15, 25, 43],
+                            [318, 58, 8, 28],
+                            [318, 74, 16, 12],
+                            [334, 63, 8, 7],
+                            [340, 15, 12, 46],
+                            [340, 15, 32, 40],
+                            [342, 64, 8, 6],
+                            [350, 63, 11, 7],
+                            [361, 58, 23, 12],
+                            [374, 67, 66, 31],
+                            [440, 67, 22, 7],
+                            [446, 15, 48, 33],
+                            [462, 58, 8, 16],
+                            [55, 45, 27, 25],
+                            [92, 60, 34, 4],
+                        ],
+                        2: [
+                            [230, 73, 20, 1],
+                            [342, 63, 8, 1],
+                            [352, 55, 20, 1],
+                            [384, 66, 30, 1],
+                        ],
+                    },
+                    D: [
+                        [3, 59, 44],
+                        [4, 246, 66, 4, 4, -60, 0],
+                        [5, 466, 53],
+                        [6, 157, 46, "WHAT IS THE CAUSE OF THIS^"],
+                        [6, 180, 59, "PRESS SPACE TO JUMP"],
+                        [6, 233, 50, "AND WHERE DID THESE OBSTACLES COME FROM^"],
+                        [6, 295, 78, "HOLD SHIFT TO SUMMON WINGS"],
+                        [6, 344, 82, "USING YOUR WINGS] PRESS#SPACE TO DASH"],
+                        [6, 451, 57, "LOOK AT THAT["],
+                        [6, 470, 54, "DASH THROUGH IT TO RELEASE#THE ESSENCE OF THIS PARADISE["],
+                        [6, 86, 40, "PARADISE HAS BEEN TURNED OFFLINE\\\\\\"],
+                        [7, 225, 61],
+                        [7, 337, 62],
+                        [7, 337, 89],
+                        [8, 334, 74, 8, 5],
+                    ],
+                },
+                {
+                    ga: {
+                        1: [
+                            [0, 0, 54, 50],
+                            [106, 49, 6, 52],
+                            [112, 0, 22, 46],
+                            [118, 49, 6, 52],
+                            [130, 59, 38, 42],
+                            [136, 50, 8, 51],
+                            [149, 45, 13, 4],
+                            [153, 0, 38, 37],
+                            [153, 0, 42, 34],
+                            [168, 45, 11, 56],
+                            [179, 42, 3, 25],
+                            [179, 79, 13, 22],
+                            [182, 45, 14, 22],
+                            [196, 39, 3, 28],
+                            [199, 36, 6, 31],
+                            [205, 47, 14, 20],
+                            [212, 67, 7, 14],
+                            [213, 0, 11, 38],
+                            [216, 42, 27, 10],
+                            [219, 75, 7, 15],
+                            [226, 63, 6, 6],
+                            [226, 80, 6, 6],
+                            [226, 95, 6, 6],
+                            [232, 69, 7, 6],
+                            [232, 87, 7, 3],
+                            [239, 58, 34, 22],
+                            [273, 0, 17, 80],
+                            [37, 50, 17, 16],
+                            [54, 42, 10, 24],
+                            [60, 0, 74, 24],
+                            [64, 47, 16, 19],
+                            [80, 34, 8, 67],
+                            [88, 24, 24, 6],
+                            [88, 55, 42, 46],
+                            [88, 95, 124, 6],
+                            [94, 38, 7, 7],
+                        ],
+                        2: [
+                            [101, 38, 1, 7],
+                            [111, 30, 1, 16],
+                            [112, 46, 22, 1],
+                            [112, 54, 6, 1],
+                            [124, 54, 6, 1],
+                            [130, 58, 6, 1],
+                            [144, 58, 24, 1],
+                            [148, 45, 1, 4],
+                            [149, 44, 13, 1],
+                            [149, 49, 13, 1],
+                            [153, 37, 38, 1],
+                            [162, 45, 1, 4],
+                            [178, 42, 1, 3],
+                            [179, 41, 3, 1],
+                            [182, 42, 1, 3],
+                            [191, 34, 1, 3],
+                            [191, 34, 4, 1],
+                            [192, 67, 20, 1],
+                            [192, 79, 1, 16],
+                            [195, 39, 1, 6],
+                            [196, 38, 3, 1],
+                            [205, 46, 11, 1],
+                            [213, 38, 11, 1],
+                            [219, 52, 24, 1],
+                            [219, 74, 7, 1],
+                            [219, 90, 7, 1],
+                            [224, 0, 1, 38],
+                            [232, 68, 7, 1],
+                            [232, 86, 7, 1],
+                            [232, 90, 7, 1],
+                            [239, 57, 33, 1],
+                            [272, 0, 1, 58],
+                            [60, 24, 28, 1],
+                            [64, 46, 16, 1],
+                            [88, 30, 24, 1],
+                            [88, 54, 18, 1],
+                            [93, 38, 1, 7],
+                            [94, 37, 7, 1],
+                            [94, 45, 7, 1],
+                        ],
+                    },
+                    D: [
+                        [3, 56, 41],
+                        [5, 182, 75],
+                        [7, 139, 49],
+                        [7, 234, 41],
+                        [8, 243, 38, 29, 8],
+                    ],
+                },
+                {
+                    ga: {
+                        1: [
+                            [0, 1, 50, 50],
+                            [112, 1, 8, 43],
+                            [112, 57, 8, 31],
+                            [120, 66, 10, 22],
+                            [130, 75, 62, 13],
+                            [134, 1, 71, 58],
+                            [192, 66, 21, 22],
+                            [205, 88, 8, 9],
+                            [213, 70, 13, 27],
+                            [226, 77, 93, 20],
+                            [237, 64, 5, 2],
+                            [257, 1, 4, 65],
+                            [286, 54, 13, 12],
+                            [309, 1, 6, 61],
+                            [319, 61, 9, 5],
+                            [319, 71, 9, 26],
+                            [328, 92, 23, 5],
+                            [337, 1, 14, 86],
+                            [337, 1, 52, 85],
+                            [344, 97, 7, 21],
+                            [351, 106, 47, 12],
+                            [365, 1, 3, 91],
+                            [389, 1, 12, 15],
+                            [395, 64, 15, 22],
+                            [398, 92, 6, 26],
+                            [404, 105, 19, 13],
+                            [408, 1, 41, 15],
+                            [408, 23, 41, 4],
+                            [415, 57, 34, 20],
+                            [423, 27, 2, 91],
+                            [425, 1, 24, 117],
+                            [50, 44, 8, 35],
+                            [56, 1, 32, 32],
+                            [58, 50, 9, 29],
+                            [67, 59, 13, 20],
+                            [73, 33, 7, 16],
+                            [80, 1, 8, 53],
+                            [80, 60, 8, 19],
+                            [88, 67, 24, 12],
+                        ],
+                        2: [
+                            [112, 56, 8, 1],
+                            [226, 76, 93, 1],
+                            [237, 63, 5, 1],
+                            [286, 53, 13, 1],
+                            [319, 60, 9, 1],
+                            [319, 70, 9, 1],
+                            [328, 61, 1, 5],
+                            [328, 71, 1, 21],
+                            [336, 1, 1, 86],
+                            [337, 0, 64, 1],
+                            [351, 105, 47, 1],
+                            [351, 86, 14, 1],
+                            [368, 86, 21, 1],
+                            [389, 16, 12, 1],
+                            [395, 63, 15, 1],
+                            [395, 86, 15, 1],
+                            [398, 91, 6, 1],
+                            [408, 0, 41, 1],
+                            [408, 16, 8, 1],
+                            [408, 22, 8, 1],
+                            [408, 27, 15, 1],
+                            [58, 49, 9, 1],
+                            [72, 33, 1, 16],
+                            [80, 59, 8, 1],
+                            [88, 66, 24, 1],
+                        ],
+                    },
+                    D: [
+                        [3, 52, 43],
+                        [4, 112, 49, 8, 3, 0, 100],
+                        [4, 139, 65, 5, 7, 0, 120],
+                        [4, 144, 64, 5, 7, 0, 120],
+                        [4, 149, 63, 5, 7, 0, 120],
+                        [4, 154, 62, 5, 7, 0, 120],
+                        [4, 159, 61, 5, 7, 0, 120],
+                        [4, 164, 60, 5, 7, 0, 120],
+                        [4, 175, 64, 14, 10, 0, 100],
+                        [4, 215, 66, 4, 4, 100, 0],
+                        [4, 351, 92, 14, 5, 0, 100],
+                        [4, 368, 92, 30, 5, 0, 100],
+                        [4, 400, 55, 5, 6, 0, -200],
+                        [4, 404, 92, 19, 5, 0, 100],
+                        [4, 419, 77, 4, 4, -120, 0],
+                        [4, 58, 44, 5, 5, 60, 0],
+                        [4, 72, 49, 5, 5, 60, 0],
+                        [4, 89, 60, 7, 3, 60, 0],
+                        [5, 421, 19],
+                        [7, 123, 65],
+                        [7, 208, 65],
+                        [7, 339, 91],
+                        [8, 222, 66, 4, 4],
+                    ],
+                },
+                {
+                    ga: {
+                        1: [
+                            [0, 0, 26, 105],
+                            [0, 0, 41, 67],
+                            [110, 44, 16, 17],
+                            [134, 0, 95, 56],
+                            [134, 56, 15, 7],
+                            [134, 70, 8, 19],
+                            [142, 81, 43, 8],
+                            [149, 0, 26, 66],
+                            [185, 70, 17, 19],
+                            [208, 0, 8, 70],
+                            [216, 0, 13, 59],
+                            [224, 69, 5, 6],
+                            [239, 61, 5, 7],
+                            [257, 61, 13, 7],
+                            [283, 69, 5, 6],
+                            [294, 0, 8, 72],
+                            [308, 70, 18, 4],
+                            [31, 79, 15, 4],
+                            [31, 88, 7, 17],
+                            [38, 73, 24, 5],
+                            [38, 78, 8, 5],
+                            [38, 97, 32, 8],
+                            [41, 61, 6, 6],
+                            [47, 0, 33, 43],
+                            [47, 43, 15, 12],
+                            [54, 55, 8, 23],
+                            [54, 84, 4, 6],
+                            [69, 60, 5, 11],
+                            [69, 76, 12, 12],
+                        ],
+                        2: [
+                            [134, 63, 15, 1],
+                            [134, 69, 8, 1],
+                            [142, 80, 43, 1],
+                            [185, 69, 9, 1],
+                            [223, 69, 1, 6],
+                            [224, 68, 5, 1],
+                            [224, 75, 5, 1],
+                            [229, 69, 1, 6],
+                            [238, 61, 1, 7],
+                            [239, 60, 5, 1],
+                            [239, 68, 5, 1],
+                            [244, 61, 1, 7],
+                            [256, 61, 1, 7],
+                            [257, 60, 13, 1],
+                            [257, 68, 13, 1],
+                            [26, 67, 1, 38],
+                            [27, 67, 20, 1],
+                            [270, 61, 1, 7],
+                            [282, 69, 1, 6],
+                            [283, 68, 5, 1],
+                            [283, 75, 5, 1],
+                            [288, 69, 1, 6],
+                            [31, 78, 7, 1],
+                            [31, 83, 15, 1],
+                            [38, 72, 16, 1],
+                            [46, 96, 24, 1],
+                            [47, 55, 7, 1],
+                            [53, 84, 1, 6],
+                            [54, 83, 4, 1],
+                            [54, 90, 4, 1],
+                            [58, 84, 1, 6],
+                            [62, 43, 18, 1],
+                            [68, 76, 1, 12],
+                            [69, 59, 5, 1],
+                            [69, 71, 5, 1],
+                            [69, 75, 12, 1],
+                            [69, 88, 12, 1],
+                            [81, 76, 1, 12],
+                        ],
+                    },
+                    D: [
+                        [3, 43, 60],
+                        [4, 149, 66, 3, 4, 60, 0],
+                        [4, 172, 66, 3, 4, 60, 0],
+                        [4, 255, 69, 7, 4, -80, 0],
+                        [5, 322, 67],
+                        [7, 112, 43],
+                        [7, 197, 69],
+                        [7, 41, 96],
+                        [8, 126, 57, 8, 4],
+                        [8, 142, 70, 3, 3],
+                        [8, 152, 70, 3, 3],
+                        [8, 162, 70, 3, 3],
+                        [8, 172, 70, 3, 3],
+                        [8, 182, 70, 3, 3],
+                        [8, 202, 76, 100, 4],
+                        [8, 31, 73, 7, 5],
+                        [8, 47, 61, 7, 3],
+                        [8, 47, 92, 3, 3],
+                        [8, 62, 89, 3, 3],
+                        [8, 64, 58, 3, 3],
+                        [8, 77, 47, 3, 3],
+                        [8, 77, 68, 3, 3],
+                        [8, 78, 96, 3, 3],
+                        [8, 88, 83, 3, 3],
+                        [8, 94, 42, 3, 3],
+                    ],
+                },
+                {
+                    ga: {
+                        1: [
+                            [0, 0, 46, 45],
+                            [103, 65, 14, 10],
+                            [118, 52, 10, 8],
+                            [128, 44, 11, 16],
+                            [131, 57, 20, 12],
+                            [46, 31, 19, 14],
+                            [47, 69, 14, 11],
+                            [61, 61, 20, 12],
+                            [70, 71, 34, 15],
+                            [93, 49, 14, 9],
+                        ],
+                        2: [],
+                    },
+                    D: [
+                        [3, 90, 70],
+                        [6, 84, 64, "THANKS FOR PLAYING["],
+                    ],
+                },
+            ];
+            class Vb {
+                constructor() {
+                    this.text = new Tb(0, 0, "OFFLINE PARADISE");
+                }
+                U() {
+                    this.text.x = l.x - 48;
+                    this.text.y = l.y - 30;
+                    return this.text.U();
+                }
+                f() {}
+                c() {
+                    S.globalAlpha = 1 - (1 - m.ca) * (1 - m.ca);
+                    X(n, m.x - 300, m.y - 300, 600, 600);
+                    this.text.c();
+                    V();
+                }
+            }
+            let Wb;
+            class Xb extends Z {
+                U() {
+                    this.kc = this.lb;
+                    this.lc = this.Pa;
+                    let a = this.lb,
+                        b = this.Pa,
+                        c = this.Pa;
+                    for (; -10 <= b && !k.o.u(a, b - 1); ) b--;
+                    this.y = 8 * b;
+                    this.height = 8 * (c - b + 1);
+                }
+                f() {
+                    Wb !== this && G(this, l.v) && ((Wb = this), (k.xb = this.kc), (k.yb = this.lc));
+                }
+            }
+            class Yb extends Z {
+                constructor(a, b, c, d) {
+                    super(a, b, c, d);
+                    this.reset();
+                }
+                reset() {
+                    this.T = !0;
+                    this.$a = !1;
+                    this.S = 0;
+                }
+                async U() {
+                    this.C = await J(this.width, this.height, (a) => {
+                        I(0, 0, this.width / 8 - 1, this.height / 8 - 1, (b, c) => {
+                            a.fillStyle = Ea(q, 0.94 - 0.01 + 0.02 * Math.random());
+                            a.fillRect(8 * b, 8 * c, 8, 8);
+                        });
+                        let b = a.getImageData(0, 0, this.width, this.height);
+                        for (var c = 2; c < this.width - 2; c++) (b.data[4 * (c + 1 * this.width) + 3] = 0), (b.data[4 * (c + (this.height - 2) * this.width) + 3] = 0);
+                        for (c = 2; c < this.height - 2; c++) (b.data[4 * (1 + c * this.width) + 3] = 0), (b.data[4 * (this.width - 2 + c * this.width) + 3] = 0);
+                        a.putImageData(b, 0, 0);
+                    });
+                }
+                f() {
+                    if (!this.T)
+                        if (((this.S += g), 15 <= this.S)) this.reset();
+                        else return;
+                    if (G(this, l.v)) l.ba();
+                    else {
+                        var a = l.ub(this);
+                        a && !this.$a ? (this.$a = !0) : !a && this.$a && (this.T = !1);
+                    }
+                }
+                c() {
+                    let a;
+                    if (0.2 > this.S) a = 1 - this.S / 0.2;
+                    else if (14.8 < this.S) a = 1 - (15 - this.S) / 0.2;
+                    else return;
+                    let b = 1 * this.width,
+                        c = this.height * a,
+                        d = this.x + (this.width - b) / 2,
+                        e = this.y + (this.height - c) / 2;
+                    S.globalAlpha = (a + 1) / 2;
+                    W(this.C, d, e, b, c);
+                    V();
+                }
+            }
+            class Zb extends Ib {
+                constructor(a) {
+                    super();
+                    this.oa = a;
+                }
+                Vb() {
+                    let { ga: a, D: b } = Ub[this.oa];
+                    da(this.oa);
+                    for (let b in a) {
+                        let c = { [1]: Kb, [2]: Lb }[b];
+                        a[b].forEach(([a, b, d, r]) => {
+                            I(a, b, a + d - 1, b + r - 1, (a, b) => k.Ka(new c(a, b)));
+                        });
+                    }
+                    b.forEach((a) => {
+                        let b = a.slice(1);
+                        switch (a[0]) {
+                            case 3:
+                                k.pc(new Bb(...b));
+                                break;
+                            case 4:
+                                k.ib(new Mb(...b));
+                                break;
+                            case 8:
+                                k.ib(new Yb(...b));
+                                break;
+                            case 5:
+                                k.L(new Qb(...b));
+                                break;
+                            case 6:
+                                k.L(new Tb(...b), 120);
+                                break;
+                            case 7:
+                                k.L(new Xb(...b));
+                        }
+                    });
+                    0 === this.oa && k.L(new Vb(), 50);
+                    this.oa === Ub.length - 1 && k.L(new vb(!0));
+                    k.vc();
+                }
+            }
+            class $b {
+                constructor() {}
+                f() {
+                    this.za && ((this.Xa = !0), this.wb(this.za), (this.za = null));
+                    return this.Xa;
+                }
+                ac() {
+                    this.za || (this.za = new Zb(this.Rb.oa + 1));
+                }
+                async wb(a) {
+                    this.Rb = a;
+                    this.Xa = !0;
+                    await a.load();
+                    this.Xa = !1;
+                }
+            }
+            function ac() {
+                requestAnimationFrame(ac);
+                h.f() || (k.f(), ca++, fa(), k.c());
+            }
+            (async function (a) {
+                await gb();
+                h = new $b();
+                await a();
+                ac();
+            })(async () => {
+                cb.play();
+                await h.wb(new Zb(0));
+            });
+        </script>
+    </body>
+</html>
+
