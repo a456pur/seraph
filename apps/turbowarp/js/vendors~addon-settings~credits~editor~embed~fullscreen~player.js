@@ -18935,7 +18935,16 @@ module.exports = function(list, options) {
 	// tags it will allow on a page
 	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
 
-	// By default, add <style> tags to the <head> element
+	// By default, add <style> tags to the <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7FN7LEVWXD');
+        </script>
+ element
         if (!options.insertInto) options.insertInto = "head";
 
 	// By default, add <style> tags to the bottom of the target

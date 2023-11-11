@@ -2520,7 +2520,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "create", function() { return create; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateAll", function() { return updateAll; });
 // Stylesheets are added at the end of <body> so that they have higher precedence
-// than those in <head> and above dark mode which is appended at the start of <body>
+// than those in <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7FN7LEVWXD');
+        </script>
+ and above dark mode which is appended at the start of <body>
 const stylesheetContainer = document.createElement('div');
 stylesheetContainer.style.display = 'none';
 document.body.appendChild(stylesheetContainer);

@@ -6,7 +6,16 @@
 * Copyright © 2012 Oak Studios LLC
 *
 * Upload this file to your web server
-* and place this within your <head> tags.
+* and place this within your <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7FN7LEVWXD');
+        </script>
+ tags.
 * <link href="webfonts/ss-social.css" rel="stylesheet" />
 */
 
