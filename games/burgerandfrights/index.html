@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+
+    <title>Burger and Frights | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico">
+    <script src="../../storage/js/cloak.js"></script>
+    
+
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Native">
+<meta name="apple-mobile-web-app-title" content="Native">
+<meta name="theme-color" content="#0275d8">
+<meta name="msapplication-navbutton-color" content="#0275d8">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" type="image/png" sizes="195x253" href="images/native.png">
+<link rel="apple-touch-icon" type="image/png" sizes="195x253" href="images/native.png">
+
+ 
+    <meta charset="utf-8" />
+ 
+    <meta content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no" name="viewport" />
+ 
+    <link href="images/favicon.png" rel="shortcut icon" type="image/ico" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+ 
+    <script type="module">
+        import './js/entities/arms.class.js';
+        import './js/entities/car.class.js';
+        import './js/entities/director.class.js';
+        import './js/entities/environment.class.js';
+        import './js/entities/ghost.class.js';
+        import './js/entities/manyfaces.class.js';
+        import './js/entities/overlay.class.js';
+        import './js/entities/player.class.js';
+        import './js/entities/road.class.js';
+        import './js/entities/scarecrow.class.js';
+        import './js/entities/spirits.class.js';
+        import './js/entities/tuoni.class.js';
+        import './js/entities/train.class.js';
+ 
+        import './js/game/app.class.js';
+    </script>
+</head>
+ 
+<body>
+    <canvas>
+        Canvas is not supported
+    </canvas>
+ 
+    <div class="loading">
+        <div class="text">
+            LOADING
+        </div>
+ 
+        <div class="dash">
+        </div>
+        <div class="dash" style="animation-delay:-2s;">
+        </div>
+        <div class="dash" style="animation-delay:-4s;">
+        </div>
+    </div>
+ 
+    <a class="show-credits" href="#">SHOW CREDITS</a>
+ 
+    <div class="credits">
+        <div class="credits-left">
+            <img src="./images/title.png" alt="logo" />
+ 
+            <br />
+ 
+            <h3>Developed by <a href="https://donitz.itch.io/" target="_blank">Donitz</a></h3>
+ 
+            <br />
+ 
+            <h3>Powered by <a href="https://threejs.org/" target="_blank">Three.js</a></h3>
+ 
+            <br />
+ 
+            <h3>Faces created using <a href="http://www.makehumancommunity.org/" target="_blank">MakeHuman</a></h3>
+ 
+            <br />
+            <br />
+ 
+            <h3>Models - <small>All ingame models are remixed</small>:</h3>
+            <ul>
+                <li>
+                    <h3>The following models are licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0</a>:</h3>
+                </li>
+                <li>
+                    <a href="https://blendswap.com/blend/6383" target="_blank">"Skeleton Unrigged"</a>
+                    by knight725
+                </li>
+                <li>
+                    <br />
+                    <h3>The following models are licensed under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>:</h3>
+                </li>
+                <li>
+                    <a href="https://blendswap.com/blend/6737" target="_blank">"Very Low Poly Human Basemesh"</a>
+                    by tweedie
+                </li>
+                <li>
+                    <br />
+                    <h3>The following models are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>:</h3>
+                </li>
+                <li>
+                    <a href="https://sketchfab.com/3d-models/low-poly-car-2a87573599624b86a84ad86df05502f9" target="_blank">"Low-Poly Car"</a>
+                    by poopoodufu
+                </li>
+                <li>
+                    <a href="https://sketchfab.com/3d-models/low-poly-girl-3e79fef9da5f4db7b6a46f3e0ff89328" target="_blank">"Low-poly Girl"</a>
+                    by SingleWay - Razvan Savescu
+                </li>
+                <li>
+                    <a href="https://sketchfab.com/3d-models/low-poly-bicycles-c256e970e2874ad0ac04dcef730863af" target="_blank">"Low Poly Bicycles"</a>
+                    by EdwinRC
+                </li>
+            </ul>
+ 
+            <h3>Textures - <small>All ingame textures are remixed</small>:</h3>
+            <ul>
+                <li>
+                    <h3>The following textures are licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0</a>:</h3>
+                </li>
+                <li>
+                    <a href="https://www.cgbookcase.com/textures/two-lane-road-clean-01/" target="_blank">"Two Lane Road Clean 01"</a>
+                    by <a href="https://www.cgbookcase.com/" target="_blank">cgbookcase.com</a>
+                </li>
+                <li>
+                    "Moss001", "Moss004", "Ground023", "Metal038",<br /> "Wood062", "Bricks046", "Concrete030", "Concrete034"
+                    by <a href="https://ambientcg.com/" target="_blank">ambientCG</a>
+                </li>
+                <li>
+                    <br />
+                    <h3>The following textures are licensed under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>:</h3>
+                </li>
+                <li>
+                    <a href="https://opengameart.org/content/ulukais-space-skyboxes" target="_blank">"Ulukai's space skyboxes"</a>
+                    by Calinou
+                </li>
+                <li>
+                    <br />
+                    <h3>Red skybox created using <a href="https://wwwtyro.github.io/space-3d/" target="_blank">space-3d</a></h3>
+                </li>
+            </ul>
+        </div>
+ 
+        <div class="credits-right">
+            <br />
+            <h3>Sounds effects from <a href="https://freesound.org/" target="_blank">freesound.org</a> - <small>Most sound effects are remixed and resampled</small>:</h3>
+            <ul>
+                <li>
+                    <h3>The following sounds are licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0</a>:</h3>
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/ShortRecord/sounds/521232/" target="_blank">"horror ambient factory #3.mp3"</a>
+                    by ShortRecord
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/ShortRecord/sounds/540634/" target="_blank">"Horror ambient.mp3"</a>
+                    by ShortRecord
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/vykroft/sounds/369978/" target="_blank">"deep_growl_2.wav"</a>
+                    by vykroft
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Nox_Sound/sounds/530908/" target="_blank">"Ambiance_Wind_Forest_Trees_Loop_01.wav"</a>
+                    by Nox_Sound
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Nox_Sound/sounds/522222/" target="_blank">"Car_Passby_Exterior.wav"</a>
+                    by Nox_Sound
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Litruv/sounds/175944/" target="_blank">"Ghost Whispers"</a>
+                    by Litruv
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/lennyboy/sounds/244417/" target="_blank">"ScaryViolins.ogg"</a>
+                    by lennyboy
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Fasolt/sounds/113175/" target="_blank">"wind_howling_03.wav"</a>
+                    by Fasolt
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Magmi.Soundtracks/sounds/425409/" target="_blank">"Indrustial horror music 01"</a>
+                    by Magmi.Soundtracks
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Jasonthedemon/sounds/187736/" target="_blank">"crazy laugh echo.mp3"</a>
+                    by Jasonthedemon
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/edtijo/sounds/241071/" target="_blank">"Ambient Guitar Sounds"</a>
+                    by edtijo
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Nadia4Sound/sounds/432446/" target="_blank">"sad piano piece .wav"</a>
+                    by Nadia4Sound
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/1sticky8/sounds/78483/" target="_blank">"Bike_Wreck.wav"</a>
+                    by 1sticky8
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/qubodup/sounds/168709/" target="_blank">"Bell Ring"</a>
+                    by qubodup
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/14FPanskaBubik_Lukas/sounds/418531/" target="_blank">"Cycling.WAV"</a>
+                    by 14FPanskaBubik_Lukas
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/dangthaiduy007/sounds/341668/" target="_blank">"Jump scare sound"</a>
+                    by dangthaiduy007
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/bigmanjoe/sounds/405612/" target="_blank">"Celliliililililili.wav"</a>
+                    by bigmanjoe
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/MadamVicious/sounds/218172/" target="_blank">"Woman Evil Laughing.wav"</a>
+                    by MadamVicious
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/nick121087/sounds/333832/" target="_blank">"Demonic Woman Scream.wav"</a>
+                    by nick121087
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/NachtmahrTV/sounds/556701/" target="_blank">"Ghost Monster Scream"</a>
+                    by NachtmahrTV
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/cylon8472/sounds/366672/" target="_blank">"Monster Growl_with Reverb.wav"</a>
+                    by cylon8472
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/ldezem/sounds/386174/" target="_blank">"Chain pulley 750kg - Chain pull"</a>
+                    by ldezem
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Halgrimm/sounds/169867/" target="_blank">"swoosh"</a>
+                    by Halgrimm
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Kievinay/sounds/512389/" target="_blank">"Bass Impact - Ki_01.mp3"</a>
+                    by Kievinay
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Heigh-hoo/sounds/81208/" target="_blank">"not_in_service.aif"</a>
+                    by Heigh-hoo
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Cman634/sounds/235284/" target="_blank">"Buildup/Jumpscare/Vanish sound"</a>
+                    by Cman634
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/magnuswaker/sounds/530919/" target="_blank">"Gut Rip (Unbladed)"</a>
+                    by magnuswaker
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Thanra/sounds/178313/" target="_blank">"Male Death Scream"</a>
+                    by Thanra
+                </li>
+                <li>
+                    <br />
+                    <h3>The following sounds are licensed under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>:</h3>
+                </li>
+                <li>
+                    <a href="https://freesound.org/people/Jackie4Ever/sounds/83095/" target="_blank">"tense_shepard_moment_B1.flac"</a>
+                    by Jackie4Ever
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+ 
+</html>

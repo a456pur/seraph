@@ -1,0 +1,394 @@
+{
+    "c2array": true,
+    "size": [
+        12,
+        10,
+        1
+    ],
+    "data": [
+        [
+            [
+                "o1+Standard coin"
+            ],
+            [
+                "o2+Goal Orb"
+            ],
+            [
+                "o46+Axe"
+            ],
+            [
+                "o44+Boss Bridge"
+            ],
+            [
+                "o8,2+Red Springboard (unholdable)"
+            ],
+            [
+                "o29+Snowball"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o8+Springboard"
+            ],
+            [
+                "o23,0+Clock (10 sec)"
+            ],
+            [
+                "o47+Boss Gate (V)"
+            ],
+            [
+                "o45+Bridge Chain"
+            ],
+            [
+                "o8,3+Red Sideways Springboard"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o8,1+Sideways Springboard"
+            ],
+            [
+                "o23,1+Clock (100 sec)"
+            ],
+            [
+                "o47,1+Boss Gate (H)"
+            ],
+            [
+                "o45,1+Bridge Chain"
+            ],
+            [
+                "o8,4+Yellow Springboard (zero gravity)"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o9,1+P-Switch"
+            ],
+            [
+                "o35,1+Brown P-Switch"
+            ],
+            [
+                ""
+            ],
+            [
+                "o33+Red Coin Ring"
+            ],
+            [
+                "o8,5+Yellow Sideways Springboard (zero gravity)"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o10+P-Coin"
+            ],
+            [
+                "o36+Brown Coin"
+            ],
+            [
+                "o34+Red Coin"
+            ],
+            [
+                ""
+            ],
+            [
+                "o51+Dragon Coin"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                "o67,0,32+Sign"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o27+P-Block"
+            ],
+            [
+                "o26+Grab & Ice Block"
+            ],
+            [
+                "o70+Light Block"
+            ],
+            [
+                "o28+Gift Box"
+            ],
+            [
+                "o40,0,16,16+Bubble"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o12+Key"
+            ],
+            [
+                "o14+Parachute"
+            ],
+            [
+                "o48+Baddie Box"
+            ],
+            [
+                "o68+Item Chest"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                "o17+Toad (NPC)"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o13+Key Hole"
+            ],
+            [
+                "o14,1+Chasing Parachute"
+            ],
+            [
+                "o37+Palace Switch"
+            ],
+            [
+                ""
+            ],
+            [
+                "o60,4,20,20+Arrow Cloud"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                "o31+Snowpeep (NPC)"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o32,2+Standard Donut Block"
+            ],
+            [
+                "o14,2+Ghost Parachute"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                "o39+Dolphin"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o22,1+Skull Raft"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o25,0+Blue POW-Block"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                "o7+Goal Tape"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "o25,1+Red POW-Block (activates blocks)"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ]
+    ]
+}

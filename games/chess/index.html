@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+
+    <title>Chess | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <div id="container">
+        <div id="header"><img src="./img/chesspieces/chess.png" alt=""></div>
+        <div id="board" class="board"></div>
+        <div class="info">
+            <p>Search depth:
+                <select id="search-depth">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+            <br>
+            <div class="subsection">
+                <span>Positions evaluated: <span id="position-count"></span></span>
+            </div>
+            <br>
+            <div class="subsection">
+                <span>Time: <span id="time"></span></span>
+            </div>
+            <br>
+            <div class="subsection">
+                <span>Positions/s: <span id="positions-per-s"></span> </span>
+            </div>
+            <br>
+            <br>
+            <div id="move-history" class="move-history">
+            </div>
+        </div>
+    </div>
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/chessboardjs/js/chess.js"></script>
+    <script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+	"name": "HeroClicker",
+	"short_name": "HeroClicker",
+	"description": "Hero Clicker-Frank",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}

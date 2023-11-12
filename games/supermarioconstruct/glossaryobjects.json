@@ -1,0 +1,150 @@
+{
+    "c2array": true,
+    "size": [
+        10,
+        4,
+        1
+    ],
+    "data": [
+        [
+            [
+                "o1"
+            ],
+            [
+                "Coin"
+            ],
+            [
+                "+1 Coin on pickup"
+            ],
+            [
+                "Coins are a fundamental part of any level. Whether it be just to guide the player, to mark where the player has already been, or most importantly, just to be a fun collectable!"
+            ]
+        ],
+        [
+            [
+                "o2"
+            ],
+            [
+                "Goal Orb"
+            ],
+            [
+                "Finishes the level"
+            ],
+            [
+                "The Goal Orb, upon touched, will clear the level. It is droppable by bosses, but can be placed seperately as well."
+            ]
+        ],
+        [
+            [
+                "o3"
+            ],
+            [
+                "Item Block"
+            ],
+            [
+                "Contains item"
+            ],
+            [
+                "Item Block always have an item to give to the player! Sometimes it's just a coin, sometimes a power-up, sometimes an extra life. You can set what's inside it!"
+            ]
+        ],
+        [
+            [
+                "o4"
+            ],
+            [
+                "Brick Block"
+            ],
+            [
+                "Can be destroyed"
+            ],
+            [
+                "Empty Brick Blocks can be destroyed by big Mario by jumping into it from below. If it contains an item, it will behave the same way as an Item Block."
+            ]
+        ],
+        [
+            [
+                "o5"
+            ],
+            [
+                "Flip Block"
+            ],
+            [
+                "Flips on hit"
+            ],
+            [
+                "The Flip Block or Turn Block will flip over once hit, allowing the player (and other objects) to pass, jump or fall through it!"
+            ]
+        ],
+        [
+            [
+                "o6"
+            ],
+            [
+                "Note Block"
+            ],
+            [
+                "Is bouncy"
+            ],
+            [
+                "The player can bounce from a Note Block to reach higher areas, much like the Springboard. If it contains an item, it will be released from below."
+            ]
+        ],
+        [
+            [
+                "o8"
+            ],
+            [
+                "Springboard"
+            ],
+            [
+                "Bounces the player up"
+            ],
+            [
+                "Boing! Green Springboards can be carried around and bring the player to higher-up areas of the level. Yellow Springboards do not have any gravity."
+            ]
+        ],
+        [
+            [
+                "o9"
+            ],
+            [
+                "P-Switch"
+            ],
+            [
+                "Various effects"
+            ],
+            [
+                "Upon pressed, the P-Switch will: turn coins into empty Brick Blocks, empty Brick Blocks into coins, spawn P-Tiles, and make P-Doors appear! Oh, and you can carry it!"
+            ]
+        ],
+        [
+            [
+                "o11"
+            ],
+            [
+                "Text Box"
+            ],
+            [
+                "Shows information to player"
+            ],
+            [
+                "Hello? Who's there? Ah, time to give the player some handy information about this level! That is what this handy block allows you to do."
+            ]
+        ],
+        [
+            [
+                "o12"
+            ],
+            [
+                "Key"
+            ],
+            [
+                "Unlocks doors"
+            ],
+            [
+                "Keys can be carried and used to unlock locked doors. When inserted into a single keyhole, they can end the level as well."
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,234 @@
+{
+    "c2array": true,
+    "size": [
+        28,
+        2,
+        1
+    ],
+    "data": [
+        [
+            [
+                "m25"
+            ],
+            [
+                "[color=#B00000]MARIO[/color] will fall through [color=#A8D0D0]GLASS BLOCKS[/color], however, they are semi-solids for all other objects!"
+            ]
+        ],
+        [
+            [
+                "m30"
+            ],
+            [
+                "The [color=#B00000]BARRIER BLOCK[/color] is an invisible solid block, it can only be seen in the editor."
+            ]
+        ],
+        [
+            [
+                "m44"
+            ],
+            [
+                "The [color=#F80080]ARROW[/color] can be customized to point at any direction."
+            ]
+        ],
+        [
+            [
+                "en"
+            ],
+            [
+                "This is the entrance you can link an exit to warp to."
+            ]
+        ],
+        [
+            [
+                "ex"
+            ],
+            [
+                "When the player enters this warp, it will teleport them to an entrance that shares this exit's ID."
+            ]
+        ],
+        [
+            [
+                "ec"
+            ],
+            [
+                "When the player loses a life, they will respawn at the entrance this checkpoint is set to."
+            ]
+        ],
+        [
+            [
+                "o1"
+            ],
+            [
+                "[color=#F8D820]COINS[/color] are one of the most fundamental objects to include in a Mario level! Coins usually come in small groups, and can also be used to indicate a path.\n[color=#D8A038]SHIFT: [/color] Change coin mode (still/left/right/outlined)"
+            ]
+        ],
+        [
+            [
+                "o3"
+            ],
+            [
+                "Shift-click on a placed Item Block to set its item!\n[color=#A8D0D0]CTRL: [/color] Change block mode\n[color=#B00000]PROGRESSIVE (Mushroom):[/color] Give a mushroom when Mario's small, otherwise spawn the set power-up.\n[color=#F8D820]STARCHAIN (Star):[/color] Give a Star while Mario still has Starman power-ups, otherwise spawn the set power-up."
+            ]
+        ],
+        [
+            [
+                "o8"
+            ],
+            [
+                "Springboards can bounce objects upwards or sideways. Press [color=#A8D0D0]CTRL[/color] to swap springboards.\n[color=#B00000]RED[/color] springs can not be picked up, and [color=#F8D820]YELLOW[/color] springs do not have any gravity."
+            ]
+        ],
+        [
+            [
+                "o9"
+            ],
+            [
+                "P-SWITCHES will transform [color=#F8D820]COINS[/color] into [color=#D8A038]BRICK BLOCKS[/color] and vice versa. They also reveal P-DOORS, P-BLOCKS and P-COINS.[color=#A8D0D0]\n\nCTRL:[/color] Toggle infinite usage on/off"
+            ]
+        ],
+        [
+            [
+                "o14"
+            ],
+            [
+                "PARACHUTES are capable of carrying many sprites. Simply place one on top of an enemy/object!\n\n[color=#A8D0D0]CTRL: [/color] Change parachute type\n\n[color=#8888F8]BLUE: [/color] Default parachute[color=#F88000]\nRED: [/color] Chasing parachute[color=#E0E0E0]\nGHOST: [/color] Chasing, goes through walls"
+            ]
+        ],
+        [
+            [
+                "o17"
+            ],
+            [
+                "[color=#F88000]Toad[/color] is an NPC that can give the player extra information such as tips, storyline or jokes... whatever you want Him to say! There are colored variants, as well as a [color=#FF006A]TOADETTE[/color] and [color=#FDDB5F]TOADSWORTH[/color] sprite. He is also capable of pressing [color=#7E7EF7]P-SWITCHES[/COLOR]."
+            ]
+        ],
+        [
+            [
+                "o21"
+            ],
+            [
+                "The [color=#F80080]TRIANGULAR BLOCK[/color] allows the player to walk on walls and ceilings! When with [color=#00F800]Yoshi[/color], it will bounce them super high."
+            ]
+        ],
+        [
+            [
+                "o22"
+            ],
+            [
+                "The SKULL RAFT will move over liquids once activated. [color=#70B0D0]BLUE[/COLOR] ones are slower, [color=#FF0000]RED[/color] ones are very fast."
+            ]
+        ],
+        [
+            [
+                "o25"
+            ],
+            [
+                "The [color=#4040D8]BLUE POW[/color] has a large range, but is weaker than the shorter-ranged [color=#8C0000]RED POW[/color], that can activate other blocks, including other POWs for chain reactions!\n\n[color=#A8D0D0]CTRL: [/color] Toggle Blue/Red POW"
+            ]
+        ],
+        [
+            [
+                "o26"
+            ],
+            [
+                "The [color=#D2F3FF]ICE BLOCK[/color] variant is the same as the [color=#52529F]GRAB BLOCK[/color], but can't be spinjumped on.\n[color=#A8D0D0]CTRL: [/color] Toggle grab/ice-block"
+            ]
+        ],
+        [
+            [
+                "o28"
+            ],
+            [
+                "[color=#D8A038]PRESENTS[/color] can contain many items and can be opened with a SPINJUMP or throwing it against a wall."
+            ]
+        ],
+        [
+            [
+                "o32"
+            ],
+            [
+                "DONUT BLOCKS fall shortly after Mario stands on them for too long.\n\n[color=#A8D0D0]CTRL: [/color] Change Donut Block type\n\n[color=#F8D820]YELLOW: [/color] Default fall timer, respawns[color=#C89858]\nWOODEN: [/color] Default fall timer, no respawn\n[color=#979797]STONE: [/color] Falls instantly, no respawn"
+            ]
+        ],
+        [
+            [
+                "o33"
+            ],
+            [
+                "The [color=#BD0000]RED COIN RING[/color] activates all [color=#BD0000]RED COINS[/color] when triggered, typically 8, but there can be as many [color=#BD0000]RED COINS[/color] as you want. When they're all collected, it will reward you the [color=#D8A038]POWER-UP[/color]!"
+            ]
+        ],
+        [
+            [
+                "o35"
+            ],
+            [
+                "The [color=#C5751E]BROWN P-SWITCH[/color] transforms [color=#C5751E]BROWN BLOCKS[/color] into [color=#C5751E]BROWN COINS[/color] and vice versa.\n\n\n[color=#A8D0D0]CTRL:[/color] Toggle infinite usage on/off"
+            ]
+        ],
+        [
+            [
+                "o37"
+            ],
+            [
+                "SWITCH PALACE SWITCHES will transform same colored ○ blocks to ◙. Switch Palace states are a rare exception to the map-reset rule."
+            ]
+        ],
+        [
+            [
+                "o40"
+            ],
+            [
+                "BUBBLES can contain enemies and objects. To get one inside, place a BUBBLE in the opposite layer of the sprite, or right next to it."
+            ]
+        ],
+        [
+            [
+                "o43"
+            ],
+            [
+                "[color=#C0C0C0]GRAY BLOCKS[/color] simply defeat or hit an enemy/object on top of it. This is an useful block for contraptions!"
+            ]
+        ],
+        [
+            [
+                "o46"
+            ],
+            [
+                "The AXE will destroy Bowser's Bridges once hit."
+            ]
+        ],
+        [
+            [
+                "o47"
+            ],
+            [
+                "[color=#B80050]BOSS GATES[/color] are invisible at first, but activate when a boss fight starts. They are destroyed when all active bosses are defeated."
+            ]
+        ],
+        [
+            [
+                "o48"
+            ],
+            [
+                "[color=#FF0000]BADDIE[/color] [color=#007848]BOXES[/color] will spawn almost any object that is put on top of it. You can customize how much objects it spawns, the delay between spawn, and lots more!"
+            ]
+        ],
+        [
+            [
+                "o49"
+            ],
+            [
+                "This block is only solid for Mario."
+            ]
+        ],
+        [
+            [
+                "o51"
+            ],
+            [
+                "[color=#F8D000]DRAGON COINS[/color] are a collectable and can be a good way to make your level more fun. You can set how many need to be collected for the fanfare in the level settings."
+            ]
+        ]
+    ]
+}

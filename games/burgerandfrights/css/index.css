@@ -1,0 +1,132 @@
+html,
+body {
+    background-color:#000;
+    height:100%;
+}
+
+body {
+    font-family:Verdana,Geneva,sans-serif;
+    margin:0;
+    overflow:hidden;
+}
+
+a {
+    color:#f88 !important;
+    text-decoration:none;
+}
+
+.loading {
+    border:5px solid #fff;
+    border-left:0;
+    border-right:0;
+    height:300px;
+    left:0;
+    padding-top:30px;
+    position:absolute;
+    right:0;
+    text-align:center;
+    top:50px;
+    user-select:none;
+}
+
+    .loading .text {
+        animation:loading-text 6s infinite;
+        color:#fff;
+        font-size:60px;
+        position:relative;
+    }
+
+    @keyframes loading-text {
+        0% {
+            top:160px;
+        }
+        20% {
+            top:200px;
+        }
+        40% {
+            top:170px;
+        }
+        60% {
+            top:190px;
+        }
+        100% {
+            top:160px;
+        }
+    }
+
+    .loading .dash {
+        animation:loading-dash 6s infinite;
+        animation-timing-function:linear;
+        background-color:#fff;
+        display:block;
+        height:25px;
+        position:absolute;
+        top:150px;
+        width:15%;
+    }
+
+    @keyframes loading-dash {
+        0% {
+            left:100%;
+        }
+        100% {
+            left:-30%;
+        }
+    }
+
+.show-credits {
+    bottom:6px;
+    font-size:30px;
+    font-weight:bold;
+    position:absolute;
+    right:50px;
+    visibility:hidden;
+    z-index:2;
+}
+
+.credits {
+    background-color:#000c;
+    bottom:0;
+    color:#fff;
+    font-size:15px;
+    left:0;
+    overflow-y:scroll;
+    position:absolute;
+    right:0;
+    top:0;
+    visibility:hidden;
+    z-index:1;
+}
+
+    .credits img {
+        height:250px;
+        margin:10px;
+    }
+
+    .credits-right {
+        bottom:0;
+        left:50%;
+        position:absolute;
+        right:20px;
+        top:20px;
+    }
+
+    .credits-left {
+        bottom:0;
+        left:20px;
+        position:absolute;
+        right:50%;
+        top:20px;
+    }
+
+    .credits h3 {
+        display:inline;
+    }
+
+    .credits small {
+        font-size:80%;
+    }
+
+    .credits ul {
+        list-style-type:none;
+    }

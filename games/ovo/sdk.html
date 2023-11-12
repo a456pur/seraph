@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from dedragames.com/games/ovo/1.4.4/sdk.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Feb 2022 19:00:28 GMT -->
+<head>
+    <title>Crazy Games</title>
+    <script src="../../../../gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var slugify = (text) => {
+        return (text || "")
+          .replace(/&/g, " and ")
+          .replace(/[^a-zA-Z0-9]/g, " ")
+          .trim()
+          .replace(/\s+/g, "-")
+          .toLowerCase();
+      };
+      var options = {
+        author: "JS Developer",
+        gameName: "Game Name",
+        gameSlug: slugify("Game Name"),
+        gameLink: "https://www.crazygames.com/game/game-name",
+        thumbnail: "https://images.crazygames.com/upcoming.png",
+        allowFullscreen: true,
+        locale: "en_US",
+        loader: "iframe",
+        loaderOptions: {
+          url: "http://localhost:50000/",
+        },
+        category: "HTML5 SDK",
+        categoryLink: "https://www.crazygames.com",
+        gameStatus: "published",
+        forceTestAds: true,
+        dollarRate: 1,
+      };
+      // document.referrer must be set, reloading it forces your browser to set it
+      if (!document.referrer) {
+        location.reload();
+      }
+      Crazygames.load(options);
+    </script>
+  </body>
+
+<!-- Mirrored from dedragames.com/games/ovo/1.4.4/sdk.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Feb 2022 19:00:29 GMT -->
+</html>

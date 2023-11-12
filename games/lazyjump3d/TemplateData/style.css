@@ -1,0 +1,156 @@
+html,
+body {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+div#gameContainer {
+    background: transparent !important;
+    position: absolute;
+}
+
+div#gameContainer canvas {
+    position: absolute;
+}
+
+div#gameContainer canvas[data-pixel-art="true"] {
+    position: absolute;
+    image-rendering: optimizeSpeed;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+#unity-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#unity-container.unity-desktop {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#unity-container.unity-mobile {
+    width: 100%;
+    height: 100%
+}
+
+#unity-canvas {
+    background: #231F20
+}
+
+.unity-mobile #unity-canvas {
+    width: 100%;
+    height: 100%
+}
+
+#unity-loading-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+#unity-logo {
+    width: 143px;
+    height: 143px;
+    background: url('logo.png') no-repeat center
+}
+
+#unity-progress-bar-empty {
+    width: 141px;
+    height: 18px;
+    margin-top: 10px;
+    background: url('progress-bar-empty-dark.png') no-repeat center
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 18px;
+    margin-top: 10px;
+    background: url('progress-bar-full-dark.png') no-repeat center
+}
+
+#unity-footer {
+    position: relative
+}
+
+.unity-mobile #unity-footer {
+    display: none
+}
+
+#unity-webgl-logo {
+    float: left;
+    width: 204px;
+    height: 38px;
+    background: url('logo.png') no-repeat center
+}
+
+#unity-build-title {
+    float: right;
+    margin-right: 10px;
+    line-height: 38px;
+    font-family: arial;
+    font-size: 18px
+}
+
+#unity-fullscreen-button {
+    float: right;
+    width: 38px;
+    height: 38px;
+    background: url('fullscreen-button.png') no-repeat center
+}
+
+#unity-warning {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    background: white;
+    padding: 10px;
+    display: none
+}
+
+#unity-canvas {
+    background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    ;
+}
+
+@media(max-width: 991px) {
+    #unity-canvas,
+    #gameContainer {
+        width: 100%;
+        height: 100%;
+    }
+}

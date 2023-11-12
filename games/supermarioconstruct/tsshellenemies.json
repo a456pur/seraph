@@ -1,0 +1,514 @@
+{
+    "c2array": true,
+    "size": [
+        12,
+        10,
+        2
+    ],
+    "data": [
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                "e111+Bombshell Beach Koopa"
+            ],
+            [
+                "e4+Green Beach Koopa",
+                "e110,3+Moving Bombshell Shell (Exploding)"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e6+Red Beach Koopa",
+                "e11+Buzzy Beetle"
+            ],
+            [
+                "",
+                "e112+Gray Buzzy Beetle"
+            ],
+            [
+                "e70+Blue Beach Koopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e72+Yellow Beach Koopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e3+Green Koopa Troopa",
+                "e110+Bombshell Koopa Troopa"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e5+Red Koopa Troopa",
+                "e11,1+Buzzy Beetle Shell"
+            ],
+            [
+                "",
+                "e112,1+Gray Buzzy Beetle Shell"
+            ],
+            [
+                "e69+Blue Koopa Troopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e71+Yellow Koopa Troopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "e3,1+Green Koopa Shell",
+                "e110,1+Bombshell Shell"
+            ],
+            [
+                "e3,2+Moving Green Koopa Shell",
+                "e110,2+Moving Bombshell Shell"
+            ],
+            [
+                "e5,1+Red Koopa Shell",
+                ""
+            ],
+            [
+                "e5,2+Moving Red Koopa Shell",
+                "e11,3+Moving Buzzy Beetle Shell"
+            ],
+            [
+                "e69,1+Blue Koopa Shell",
+                "e112,3+Gray Moving Buzzy Beetle Shell"
+            ],
+            [
+                "e69,2+Moving Blue Koopa Shell",
+                ""
+            ],
+            [
+                "e71,1+Yellow Koopa Shell",
+                ""
+            ],
+            [
+                "e71,2+Moving Yellow Koopa Shell",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                "e11,2+Buzzy Beetle (Upside-down)"
+            ],
+            [
+                "",
+                "e112,2+Gray Buzzy Beetle (Upside-down)"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e73+Kamikaze Shell",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e3,3+Green Jumping Paratroopa",
+                "e110,4+Jumping Bombshell Koopa"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e5,3+Red Jumping Paratroopa",
+                "e11,4+Moving Buzzy Beetle Shell (Upside-down)"
+            ],
+            [
+                "",
+                "e112,4+Gray Moving Buzzy Beetle Shell (Upside-down)"
+            ],
+            [
+                "e69,3+Blue Jumping Paratroopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e71,3+Yellow Jumping Paratroopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e3,4+Green High Jumping Paratroopa",
+                "e110,5+High Jumping Bombshell Koopa"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e5,4+Red High Jumping Paratroopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e69,4+Blue High Jumping Paratroopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e71,4+Yellow High Jumping Paratroopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e3,5+Green Paratroopa",
+                "e110,6+Flying Bombshell Paratroopa"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e5,5+Red Horizontal Paratroopa",
+                "e2+Spiny"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e69,5+Blue Chasing Paratroopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e71,5+Yellow Chasing Paratroopa",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e3,6+Green Paratroopa",
+                "e110,7+Flying Bombshell Paratroopa"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e5,6+Red Diagonal Paratroopa",
+                "e2,1+Spiny Shell"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e3,7+Green Paratroopa",
+                "e110,8+Flying Bombshell Paratroopa"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e5,7+Red Vertical Paratroopa",
+                "e2,3+Moving Spiny Shell"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e3,8+Green Paratroopa",
+                "e110,9+Flying Bombshell Paratroopa"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e5,8+Red Diagonal Paratroopa",
+                "e2,2+Spiny (Upside-down)"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ],
+        [
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e3,10+Green Stationary Paratroopa",
+                "e110,11+Flying Bombshell Paratroopa"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "e5,9+Red Stationary Paratroopa",
+                "e2,4+Moving Spiny Shell (Upside-down)"
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ],
+            [
+                "",
+                ""
+            ]
+        ]
+    ]
+}

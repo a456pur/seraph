@@ -1,0 +1,528 @@
+{
+    "c2array": true,
+    "size": [
+        37,
+        4,
+        1
+    ],
+    "data": [
+        [
+            [
+                "e9"
+            ],
+            [
+                "Goomba"
+            ],
+            [
+                "Red one walks faster"
+            ],
+            [
+                "Goombas are simple mushroom-like enemies that can be defeated with a stomp. Altho easy to overcome, the first Goomba of SMB1 1-1 might be the most deadly enemy in the history of Mario!"
+            ]
+        ],
+        [
+            [
+                "e1"
+            ],
+            [
+                "Galoomba"
+            ],
+            [
+                "Knocked over when stomped"
+            ],
+            [
+                "Galoombas are chestnut-like creatures first appearing in Super Mario World (1990). When stomped, they flip over, allowing them to be carried and thrown by the player."
+            ]
+        ],
+        [
+            [
+                "e2"
+            ],
+            [
+                "Spiny"
+            ],
+            [
+                "Can't be stomped on"
+            ],
+            [
+                "Spinies are your worst enemy on a bad day. Already lost your Fire Flower? You'll have to jump over 'em to pass."
+            ]
+        ],
+        [
+            [
+                "e3"
+            ],
+            [
+                "Koopa Troopa"
+            ],
+            [
+                "Jumps out of shell when stomped"
+            ],
+            [
+                "Koopa Troopas are more complicated then you think! They come in 4 colors. Red and Blue don't fall of cliffs, but Yellow will try to hunt Mario down, and so will Blue Parakoopa."
+            ]
+        ],
+        [
+            [
+                "e4"
+            ],
+            [
+                "Beach Koopa"
+            ],
+            [
+                "Blue: Kick Shell"
+            ],
+            [
+                "Beach Koopas are Koopas without their shell. Unlike their name applies, they are not always at the beach. Blue Beach Koopas will kick any shell it comes across."
+            ]
+        ],
+        [
+            [
+                "e11"
+            ],
+            [
+                "Buzzy Beetle"
+            ],
+            [
+                "Immune to fire"
+            ],
+            [
+                "Buzzy Beetles love to hang around in caves most of the time. Literally, as they are capable of walking on ceilings! Unlike their turtle brothers, they are immune to fire, but will instead retreat in its shell when stomped."
+            ]
+        ],
+        [
+            [
+                "e62"
+            ],
+            [
+                "Spike Top"
+            ],
+            [
+                "Walks on walls & ceilings"
+            ],
+            [
+                "Spike Tops don't care if there is a wall ahead. They will simply climb it like it's nothing. Oh, and fireballs. Same thing. They're tough guys, as made clear with that massive spike on their head!"
+            ]
+        ],
+        [
+            [
+                "e7"
+            ],
+            [
+                "Rex"
+            ],
+            [
+                "Squashed when stomped"
+            ],
+            [
+                "Rexes are dinosaurs that take 2 stomps to be defeated! After 1 stomp however, Rexes will be squashed and start running faster. How much pain they experience in this phase is yet unknown..."
+            ]
+        ],
+        [
+            [
+                "e8"
+            ],
+            [
+                "Muncher"
+            ],
+            [
+                "Attachable to walls"
+            ],
+            [
+                "Munchers are cute little creatures, but they can deal big damage if they try to take a bite out of you! Munchers are affected by gravity, unless attached to walls."
+            ]
+        ],
+        [
+            [
+                "e12"
+            ],
+            [
+                "Ninji"
+            ],
+            [
+                "Jumps in place"
+            ],
+            [
+                "Ninjis are ninjas that... just jump. That's it. They claim to be coming out of highly-skilled Ninji training, but we all know they don't. Oh well, we love them just as much!"
+            ]
+        ],
+        [
+            [
+                "e14"
+            ],
+            [
+                "Dry Bones"
+            ],
+            [
+                "Can throw bones"
+            ],
+            [
+                "Dry Bones are skeleton versions of Koopa Troopas. The ones with a blue shoe are capable of throwing bones as well!"
+            ]
+        ],
+        [
+            [
+                "e13"
+            ],
+            [
+                "Bone"
+            ],
+            [
+                "Can go up or down"
+            ],
+            [
+                "It's the Bone thrown by Dry Bones. What? Did you expect anything complex here?"
+            ]
+        ],
+        [
+            [
+                "e15"
+            ],
+            [
+                "Thwomp"
+            ],
+            [
+                "Falls once nearby"
+            ],
+            [
+                "Grrnrnrn... RRRR.... Mario is nearby... and... FALL! That's the daily routine of Thwomp, and its big brother, that can break stonebricks!"
+            ]
+        ],
+        [
+            [
+                "e17"
+            ],
+            [
+                "Podoboo"
+            ],
+            [
+                "Jumps out of lava"
+            ],
+            [
+                "Podoboos, also known as Lava Bubbles, date back all the way to the castles in SMB1. They now have eyes, and a wide range of customisation options! They jump out of lava and fall back in, repeatedly."
+            ]
+        ],
+        [
+            [
+                "e19"
+            ],
+            [
+                "Goombrat"
+            ],
+            [
+                "Doesn't fall of cliffs"
+            ],
+            [
+                "Goombrat is too much of a brat to just fall of cliffs like that. \"I'll leave that up to my other Goomba brothers to do such mundane tasks\", he says."
+            ]
+        ],
+        [
+            [
+                "e28"
+            ],
+            [
+                "Goombud"
+            ],
+            [
+                "Doesn't fall of cliffs"
+            ],
+            [
+                "Goombuds are Galoombas that don't fall of cliffs. \"Why do they even do that?\", he says. It's a good question..."
+            ]
+        ],
+        [
+            [
+                "e10"
+            ],
+            [
+                "Piranha Plant"
+            ],
+            [
+                "Moves out of pipes repeatedly"
+            ],
+            [
+                "Piranha Plants are often hidden in pipes and will come out to bite the player, or just to take a bit of fresh air."
+            ]
+        ],
+        [
+            [
+                "e20"
+            ],
+            [
+                "Spike"
+            ],
+            [
+                "Throws Spikeballs"
+            ],
+            [
+                "Spikes are capable of throwing Spikeballs toward the player. He can create these on his own, somehow."
+            ]
+        ],
+        [
+            [
+                "e22"
+            ],
+            [
+                "Grinder"
+            ],
+            [
+                "Rolls around"
+            ],
+            [
+                "Grinders can be placed stationary or moving around. They can be safely spinjumped from. But still, be careful!"
+            ]
+        ],
+        [
+            [
+                "e24"
+            ],
+            [
+                "Falling Spike"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e25"
+            ],
+            [
+                "Bullet Bill"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e26"
+            ],
+            [
+                "Hammer Bro"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e29"
+            ],
+            [
+                "Poison Mushroom"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e30"
+            ],
+            [
+                "Thwimp"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e31"
+            ],
+            [
+                "Buster Beetle"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e33"
+            ],
+            [
+                "Bowser Flame"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e37"
+            ],
+            [
+                "Bob-omb"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e39"
+            ],
+            [
+                "Volcano Lotus"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e40"
+            ],
+            [
+                "Cheep Cheep"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e41"
+            ],
+            [
+                "Blurp"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e42"
+            ],
+            [
+                "Rip Van Fish"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e43"
+            ],
+            [
+                "Spiny Cheep Cheep"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e44"
+            ],
+            [
+                "Porcupuffer"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                "e45"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ]
+    ]
+}

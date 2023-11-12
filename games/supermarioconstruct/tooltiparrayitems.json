@@ -1,0 +1,138 @@
+{
+    "c2array": true,
+    "size": [
+        16,
+        2,
+        1
+    ],
+    "data": [
+        [
+            [
+                "i1"
+            ],
+            [
+                "The [color=#FF0000]SUPER MUSHROOM[/color] turns small Mario into Super Mario. This grants him 1 extra hit. When hitting progressive ?-Blocks, Mario needs to be in his Super form to get the selected power-up.\n\nSuper Mario can break empty BRICK BLOCKS from below and, with a spinjump, empty FLIP BLOCKS from above."
+            ]
+        ],
+        [
+            [
+                "i2"
+            ],
+            [
+                "The [color=#00F800]ONE-UP MUSHROOM[/color] adds 1 extra life to the life counter."
+            ]
+        ],
+        [
+            [
+                "i3"
+            ],
+            [
+                "The [color=#F8D820]THREE-UP MOON[/color] adds 3 extra lives to the life counter."
+            ]
+        ],
+        [
+            [
+                "i4"
+            ],
+            [
+                "The [color=#FF8A00]FIRE FLOWER[/color] turns Mario into Fire Mario. In this form, Mario can shoot fireballs, which is an useful attack against many enemies!\n\nThe fireballs can also melt ice blocks and provide extra light in the dark."
+            ]
+        ],
+        [
+            [
+                "i5"
+            ],
+            [
+                "The [color=#D8A038]SUPER LEAF[/color] turns Mario into Raccoon Mario. With his new tail, he can slowly hover down, tail-swing nearby enemies and blocks, and even fly for a brief period of time when the P-Meter has filled up!"
+            ]
+        ],
+        [
+            [
+                "i6"
+            ],
+            [
+                "The [color=#D8A038]HAMMER FLOWER[/color] turns Mario into Hammer Mario. 3 hammers can be thrown at once, and using Mario's speed and the looking-up key, the hammer speed can be controlled.\n\nMario can also duck to hide in his shell. This protects him from Hammer Bro projectiles and many other enemy attacks! He can however, not move left or right in this state."
+            ]
+        ],
+        [
+            [
+                "i7"
+            ],
+            [
+                "The [color=#FFFF00]SUPER STAR[/color] temporarily turns Mario into Invincible Mario. During the power-up's duration, Mario becomes invulnerable to enemy attacks, and will defeat almost any enemy he collides with!"
+            ]
+        ],
+        [
+            [
+                "i8"
+            ],
+            [
+                "The [color=#97C2F7]CLOUD FLOWER[/color] turns Mario into Cloud Mario. He gains the ability to spawn clouds in the air, tho 3 can be active at a time, and Mario has to reach ground for the clouds to re-fill.\n\nClouds are affected by wind and when stood on, will prevent Mario from being affected."
+            ]
+        ],
+        [
+            [
+                "i9"
+            ],
+            [
+                "The [color=#97C2F7]ICE FLOWER[/color] turns Mario into Ice Mario. This is similar to the Fire Flower, but iceballs freeze enemies into ice cubes instead, which can be used for various purposes."
+            ]
+        ],
+        [
+            [
+                "i10"
+            ],
+            [
+                "The [color=#70B0D0]PENGUIN SUIT[/color] turns Mario into Penguin Mario. This is a very powerful power-up, so use with care!\n\nWhile in this penguin form, Mario can shoot iceballs similarly to the Ice Flower, but on top of that, he is not affected by ice physics, can slide on land and even longer on ice, slide on water, and lastly, swim faster and smoothly underwater!"
+            ]
+        ],
+        [
+            [
+                "i11"
+            ],
+            [
+                "The [color=#80D8C8]BLUE SHELL[/color] turns Mario into Shell Mario. This can be a very powerful power-up, as it allows Mario to spindash at P-Speed, moving like a spinning Koopa through the level at a very high speed.\n\nWhile in his shell, he is safe from many enemy attacks, and if moving, can defeat other enemies, activate blocks by running into them from the sides, and even move over water!"
+            ]
+        ],
+        [
+            [
+                "i12"
+            ],
+            [
+                "The [color=#FF8000]CARROT[/color] turns Mario into Bunny Mario. As a bunny, Mario can use his ears to very slowly descent, much slower than the Raccoon & Tanooki. However, he can not fly or spinjump in this form as a trade-off!"
+            ]
+        ],
+        [
+            [
+                "i13"
+            ],
+            [
+                "The [color=#84989F]METAL PINECONE[/color] will temporarily transform Mario into Metal Mario. In this form, he is not able to get hurt by enemies, however, it won't defeat enemies either. They will turn around when they collide with Metal Mario.\n\nMetal Mario can also go through lava, sink way faster in water, knock-out enemies with its ground stomp or smash on top of blocks to activate them! He can also destroy Brick & Flip Blocks even as small Mario."
+            ]
+        ],
+        [
+            [
+                "i14"
+            ],
+            [
+                "The [color=#D69D36]TANOOKI SUIT[/color] turns Mario into Tanooki Mario. This form has all the abilities the Raccoon form has (hover, tailswing, flying), but this also includes a powerful statue attack!\n\nUsing the power-up button while holding the duck key, Mario will become a statue. As a statue, Mario will become a background object, and therefore cannot be hurt by enemies. He can also Goomba-stomp on some enemies he normally couldn't (Koopas, Spinies, Chain Chomps), sink faster underwater, destroy or trigger blocks by landing on them, destroy Baddie Boxes & Chain Chomp posts, and is immune to the strongest of storms. This form lasts 4 seconds, but you can end it early by releasing the duck key. "
+            ]
+        ],
+        [
+            [
+                "i15"
+            ],
+            [
+                "The [color=#70B0E0]SUPERBALL FLOWER[/color] transforms Mario into Superball Mario. Superballs can damage enemies, pick up coins (including advance coins!) and activate blocks it collides with. It has unique physics, as it will ricochet off walls. It will be bouncing around up to 4 seconds."
+            ]
+        ],
+        [
+            [
+                "i16"
+            ],
+            [
+                "The [color=#90D810]FROG SUIT[/color] turns Mario into Frog Mario. This will make Mario leap over the ground, which is slow, but he can jump like no other power-up can! Additionally, Mario has more control over his swimming underwater, much like the [color=#70B0D0]Penguin Suit[/color]. He is also immune to currents underwater."
+            ]
+        ]
+    ]
+}

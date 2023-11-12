@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+
+    <title>Go Ball | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+        touch-action: none;
+        -ms-touch-action: none;
+      }
+      canvas {
+        touch-action-delay: none;
+        touch-action: none;
+        -ms-touch-action: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="c2canvasdiv">
+      <canvas id="c2canvas" width="720" height="1280"> </canvas>
+    </div>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="c2runtime.js"></script>
+    <script type="application/javascript" src="/js/main.js"></script>
+    <script>
+      jQuery(window).resize(function () {
+        cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+      });
+      jQuery(document).ready(function () {
+        cr_createRuntime("c2canvas");
+      });
+
+      // Pause and resume on page becoming visible/invisible
+      function onVisibilityChanged() {
+        if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden) cr_setSuspended(true);
+        else cr_setSuspended(false);
+      }
+
+      document.addEventListener("visibilitychange", onVisibilityChanged, false);
+      document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+      document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+      document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+    </script>
+  </body>
+</html>

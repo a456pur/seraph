@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<TextureAtlas imagePath="bfPortrait.png">
+    <sprite name="bfPortEnter0000" x="0" y="0" width="418" height="256"/>
+    <sprite name="bfPortHappy0000" x="0" y="256" width="420" height="256"/>
+    <sprite name="bfPortSad0000" x="0" y="512" width="391" height="283"/>
+</TextureAtlas>
