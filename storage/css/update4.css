@@ -31,18 +31,18 @@
 }
 
 :root {
-    --background-image: url('../../images/backgrounds/seraph/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/seraph/updatelogbg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #fff;
     --background-color: black;
-    --border-color1: #000000;
-    --border-color2: #ffffff;
+    --border-color1: #ffffff;
+    --border-color2: #c1bcbc;
     --hover-color: #1a1818;
     --text-glow: #000000
 }
 
 :root.theme-azurite {
-    --background-image: url('../../images/backgrounds/azure/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/azure/updatebg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #c8d9e9; 
     --border-color1: #2d6cc4;
@@ -53,7 +53,7 @@
 }
 
 :root.theme-retro {
-    --background-image: url('../../images/backgrounds/retro/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/retro/updatebg.png');
     --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #2fce56;
@@ -64,18 +64,18 @@
 }
 
 :root.theme-cosmic {
-    --background-image: url('../../images/backgrounds/cosmic/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/cosmic/updatebg.png');
     --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
-    --border-color1: #1e1d1f;
-    --border-color2: #322c2c;
+    --border-color1: #d9d9d9;
+    --border-color2: #3e3d3d;
     --background-color: #121212;
     --hover-color: #181a1a;
     --text-glow: #d6c9c9;
 }
 
 :root.theme-molten {
-    --background-image: url('../../images/backgrounds/molten/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/molten/updatebg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #f58484; 
     --border-color1: #e70e0e;
@@ -86,7 +86,7 @@
 }
 
 :root.theme-amethyst {
-    --background-image: url('../../images/backgrounds/amethyst/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/amethyst/updatebg.png');
     --font-family: 'Raleway', sans-serif;
     --text-color: #c284f5; 
     --border-color1: #6c0ee7;
@@ -96,15 +96,28 @@
     --text-glow: #662589;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-family);
-    display: flex;
-    height: 100vh;
-    background-color: var(--background-color);
-    cursor: none;
+:root.theme-ethereal {
+    --background-image: url('../../images/backgrounds/ethereal/updatebg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #84f5ac; 
+    --border-color1: #00fb82;
+    --border-color2: #bbe9c3;
+    --background-color: #258969;
+    --hover-color: #219b48;
+    --text-glow: #6c957b;
+}
 
+body {
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: left;
+    font-family: var(--font-family);
+    animation: mainHeaderAnimation 1s ease-in-out;
+    color: var(--text-color);
+    cursor: none;
+    height: 100vh;
     scrollbar-width: none; 
     -ms-overflow-style: none;
 }
@@ -113,24 +126,12 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
-.content-side {
-    width: 100%;
-    background-color: var(--background-color);
-    background-image: var(--background-image);
-    background-size: cover;
-    background-position: center;
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    animation: mainHeaderAnimation 2s forwards;
-}
 
 h1 {
     font-size: 96px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;  
+    text-align: center;
+
     text-shadow: 0 0 10px var(--text-color),
                  0 0 10px var(--text-glow),
                  0 0 30px var(--text-glow),
@@ -141,64 +142,74 @@ h1 {
                  0 0 80px #000000;
 }
 
-p {
-    font-size: 20px;
-    margin-bottom: 2px;
-    padding-left: 10%;
-    padding-right: 10%;
+a {
     text-align: center;
+    cursor: none;
 }
 
-button {
+p {
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+
+ul {
+    border-radius: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+li {
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.button {
     background-color: var(--background-color);
     color: var(--text-color);
-    width: 50%;
-    max-width: 200px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-family: var(--font-family);
+    border: 3px solid var(--border-color2);
+    border-radius: 4px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 0px;
-    cursor: none;
-    transition: background-color 0.15s ease-in-out;
-
-    border: 2px solid var(--border-color2);
-    border-radius: 32px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: var(--border-color1);
+.button:hover {
+    background-color: var(--hover-color);
+    color:var(--text-color);
 }
 
-a {
-    text-decoration: underline;
-    color: white;
+.typewriter {
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
 }
 
-
-@keyframes mainHeaderAnimation {
-    0% {
+@keyframes blink-caret {
+    from, to {
         opacity: 0;
     }
-
-    100% {
+    50% {
         opacity: 1;
     }
 }
 
-
-@keyframes borderAnimation {
+@keyframes mainHeaderAnimation {
     0% {
-        border-image-source: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
+        opacity: 0;
+        transform: translateX(-10%);
     }
+
     100% {
-        border-image-source: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
-
 
 .cursor {
     width: 7px;
@@ -212,3 +223,13 @@ a {
     z-index: 10000;
     
 }
+
+.center a {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    color: var(--text-color);
+    transform: translateY(-50%);
+}
+  
+  

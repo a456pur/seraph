@@ -31,7 +31,7 @@
 }
 
 :root {
-    --background-image: url('../../images/backgrounds/seraph/settingsbg.png');
+    --background-image: url('../../images/backgrounds/seraph/hostbg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #fff;
     --background-color: black;
@@ -42,7 +42,7 @@
 }
 
 :root.theme-azurite {
-    --background-image: url('../../images/backgrounds/azure/settingsbg.png');
+    --background-image: url('../../images/backgrounds/azure/hostbg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #c8d9e9; 
     --border-color1: #2d6cc4;
@@ -53,7 +53,7 @@
 }
 
 :root.theme-retro {
-    --background-image: url('../../images/backgrounds/retro/settingsbg.png');
+    --background-image: url('../../images/backgrounds/retro/hostbg.png');
     --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #2fce56;
@@ -64,7 +64,7 @@
 }
 
 :root.theme-cosmic {
-    --background-image: url('../../images/backgrounds/cosmic/settingsbg.png');
+    --background-image: url('../../images/backgrounds/cosmic/hostbg.png');
     --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #1e1d1f;
@@ -75,7 +75,7 @@
 }
 
 :root.theme-molten {
-    --background-image: url('../../images/backgrounds/molten/settingsbg.png');
+    --background-image: url('../../images/backgrounds/molten/hostbg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #f58484; 
     --border-color1: #e70e0e;
@@ -86,7 +86,7 @@
 }
 
 :root.theme-amethyst {
-    --background-image: url('../../images/backgrounds/amethyst/settingsbg.png');
+    --background-image: url('../../images/backgrounds/amethyst/hostbg.png');
     --font-family: 'Raleway', sans-serif;
     --text-color: #c284f5; 
     --border-color1: #6c0ee7;
@@ -94,6 +94,17 @@
     --background-color: #502589;
     --hover-color: #5f24ae;
     --text-glow: #662589;
+}
+
+:root.theme-ethereal {
+    --background-image: url('../../images/backgrounds/ethereal/hostbg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #84f5ac; 
+    --border-color1: #00fb82;
+    --border-color2: #bbe9c3;
+    --background-color: #258969;
+    --hover-color: #219b48;
+    --text-glow: #6c957b;
 }
 
 body {
@@ -149,45 +160,27 @@ p {
     text-align: center;
 }
 
-button {
+.button {
     background-color: var(--background-color);
     color: var(--text-color);
     width: 50%;
-    max-width: 200px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-family: var(--font-family);
+    max-width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    margin: 2px;
+    font-size: 28px;
+    margin: 0px;
     cursor: none;
     transition: background-color 0.15s ease-in-out;
 
-    border: 2px solid var(--border-color2);
-    border-radius: 32px;
-}
-
-select {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    width: 50%;
-    max-width: 400px;
-    padding-top: 5px;
-    font-size: 20px;
-    padding-bottom: 5px;
-    border: 3px solid var(--border-color2);
-    margin: 2px;
-    border-radius: 32px;
-    padding-left: 10px;
-    cursor: none;
-    padding-right: 10px;
-    font-family: var(--font-family);
-}
-
-button:hover {
-    background-color: var(--hover-color);
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, var(--border-color1), var(--border-color2));
+    border-image-slice: 1;
+    border-radius: 4px;
+    animation: borderAnimation 1s infinite alternate;
+    animation-delay: calc(var(--delay) * 1ms);
 }
 
 a {
@@ -195,6 +188,9 @@ a {
     color: var(--text-color);
 }
 
+.button:hover {
+    background-color: var(--hover-color);
+}
 
 @keyframes mainHeaderAnimation {
     0% {

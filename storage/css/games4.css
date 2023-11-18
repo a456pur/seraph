@@ -96,6 +96,17 @@
     --text-glow: #662589;
 }
 
+:root.theme-ethereal {
+    --background-image: url('../../images/backgrounds/ethereal/gamesbg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #84f5ac; 
+    --border-color1: #00fb82;
+    --border-color2: #bbe9c3;
+    --background-color: #258969;
+    --hover-color: #219b48;
+    --text-glow: #6c957b;
+}
+  
 html {
     scroll-behavior: smooth;
 }

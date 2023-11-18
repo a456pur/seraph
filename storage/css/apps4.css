@@ -31,7 +31,7 @@
 }
 
 :root {
-    --background-image: url('../../images/backgrounds/seraph/homebg.png');
+    --background-image: url('../../images/backgrounds/seraph/appsbg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #fff;
     --background-color: black;
@@ -42,7 +42,7 @@
 }
 
 :root.theme-azurite {
-    --background-image: url('../../images/backgrounds/azure/homebg.png');
+    --background-image: url('../../images/backgrounds/azure/appsbg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #c8d9e9; 
     --border-color1: #2d6cc4;
@@ -53,7 +53,7 @@
 }
 
 :root.theme-retro {
-    --background-image: url('../../images/backgrounds/retro/homebg.png');
+    --background-image: url('../../images/backgrounds/retro/appsbg.png');
     --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #2fce56;
@@ -64,7 +64,7 @@
 }
 
 :root.theme-cosmic {
-    --background-image: url('../../images/backgrounds/cosmic/homebg.png');
+    --background-image: url('../../images/backgrounds/cosmic/appsbg.png');
     --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #1e1d1f;
@@ -73,10 +73,9 @@
     --hover-color: #181a1a;
     --text-glow: #d6c9c9;
 }
-  
 
 :root.theme-molten {
-    --background-image: url('../../images/backgrounds/molten/homebg.png');
+    --background-image: url('../../images/backgrounds/molten/appsbg.png');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #f58484; 
     --border-color1: #e70e0e;
@@ -87,7 +86,7 @@
 }
 
 :root.theme-amethyst {
-    --background-image: url('../../images/backgrounds/amethyst/homebg.png');
+    --background-image: url('../../images/backgrounds/amethyst/appsbg.png');
     --font-family: 'Raleway', sans-serif;
     --text-color: #c284f5; 
     --border-color1: #6c0ee7;
@@ -96,39 +95,49 @@
     --hover-color: #5f24ae;
     --text-glow: #662589;
 }
-  
+
+:root.theme-ethereal {
+    --background-image: url('../../images/backgrounds/ethereal/appsbg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #84f5ac; 
+    --border-color1: #00fb82;
+    --border-color2: #bbe9c3;
+    --background-color: #258969;
+    --hover-color: #219b48;
+    --text-glow: #6c957b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
     display: flex;
-    background-color: var(--background-color); 
-    animation: mainHeaderAnimation 2s forwards;
-    cursor: none;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-  
-body::-webkit-scrollbar {
-    width: 0;
-}
-  
-.content-side {
-    width: 100%;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: mainHeaderAnimation 1s ease-in-out forwards;
+    text-align: center;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+
+    opacity: 1;
+    animation: fadein 0.75s forwards ease-in-out;
+
     background-image: var(--background-image);
-    background-size: cover;
+
+    color: var(--text-color);
+    cursor: none;
 }
-  
+
+h1, h2 {
+    font-family: var(--font-family); 
+}
+
 h1 {
-    font-size: 96px;
-    font-family: var(--font-family);
+    font-size: 48px;
     text-shadow: 0 0 10px var(--text-color),
                  0 0 10px var(--text-glow),
                  0 0 30px var(--text-glow),
@@ -137,70 +146,110 @@ h1 {
                  0 0 60px var(--text-color),
                  0 0 70px var(--text-glow),
                  0 0 80px #000000;
-    margin-bottom: 0px;
 }
-  
-h2 {
-    font-size: 20px;
-}
-  
-p {
-    font-size: 18px;
-    margin-bottom: 2px;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    text-shadow: 5px 5px 5px var(--text-glow);
-    animation: paragraphTween 1.2s ease-in-out forwards;
-}
-  
-.linkp a {
-    font-size: 20px;
-    text-align: center;
-    border: 3px solid transparent;
-    transition: 0.15s ease-in-out;
-    text-shadow: 5px 5px 5px var(--text-glow);
-}
-  
-.linkp a:hover {
-    color: rgb(199, 192, 192);
-}
-  
-a {
-    font-size: 18px;
-    text-decoration: underline;
-    color: var(--text-color);
-    cursor: none;
-    text-shadow: 5px 5px 5px var(--text-glow);
-}
-  
-.gamesbutton {
+
+.button {
     background-color: var(--background-color);
     color: var(--text-color);
-    width: 50%;
-    max-width: 250px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border: 3px solid var(--border-color2);
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 28px;
-    margin: 0px;
+    font-size: 16px;
+    margin: 5px;
+
+    max-width: 480px;
+
+    width: 480px;
+    height: 250px;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 3.2px solid var(--border-color2);
+    border-radius: 16px;
+
+    transition: border 0.04s ease-in;
     cursor: none;
-    transition: background-color 0.15s ease-in-out;
-  
-    border: 3px solid transparent;
-    border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
-    border-image-slice: 1;
-    border-radius: 4px;
-    animation: borderAnimation 1s infinite alternate;
-    animation-delay: calc(var(--delay) * 1ms);
 }
-  
-.gamesbutton:hover {
-    background-color: var(--hover-color);
+
+.button:hover {
+    background-color: var(--background-color);
+    border: 3.2px solid var(--hover-color);
 }
-  
+
+.button h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+input {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2px;
+    border: 2px solid var(--border-color2);
+    border-radius: 16px;
+    width: 0%;
+    max-width: 450px;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    opacity: 0;
+    animation: searchTween 2.5s ease-in-out forwards;
+    animation-delay: 0s;
+
+    cursor: none;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes searchTween {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 70%;
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: none;
+}
+
 .cursor {
     width: 7px;
     height: 7px;
@@ -209,36 +258,24 @@ a {
     position: absolute;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 10000;
+    
 }
-  
-@keyframes mainHeaderAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(-25%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
+
+.linkp a {
+    font-size: 17px;
+    text-decoration: underline;
+    text-align: center;
+    border: 3px solid transparent;
+    transition: 0.15s ease-in-out;
+
+    opacity: 0;
+    animation: fadein 1s forwards ease-in-out;
+    animation-delay: 0.25s;
 }
-  
-@keyframes paragraphTween {
-    0% {
-        transform: translateX(-4%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+
+p {
+    padding-left: 20%;
+    padding-right: 20%;
 }
-  
-@keyframes borderAnimation {
-    0% {
-        border-image-source: linear-gradient(45deg, var(--border-color1), var(--border-color2));
-    }
-    100% {
-        border-image-source: linear-gradient(45deg, var(--border-color2), var(--border-color1));
-    }
-}
-  
