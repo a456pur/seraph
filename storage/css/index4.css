@@ -189,28 +189,59 @@ a {
     background-color: var(--background-color);
     color: var(--text-color);
     width: 50%;
-    max-width: 250px;
+    max-width: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 28px;
-    margin: 0px;
+    font-size: 14px;
+    height: 90px;
+    margin: 0 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     cursor: none;
     transition: background-color 0.15s ease-in-out;
-  
     border: 3px solid transparent;
     border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
     border-image-slice: 1;
     border-radius: 4px;
     animation: borderAnimation 1s infinite alternate;
     animation-delay: calc(var(--delay) * 1ms);
+    position: relative;
 }
   
-.gamesbutton:hover {
-    background-color: var(--hover-color);
+.gamesbutton img {
+    width: calc(100% - 24px);
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
+
+.gamesbutton-link {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.gamesbutton:hover {
+    background-color: var(--hover-color); 
+    transition: background-color 0.3s ease-in-out; 
+}
+  
+.button-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center; 
+}
+
+.button-container {
+    display: flex;
+    text-align: center; 
+}
+  
   
 .cursor {
     width: 7px;
