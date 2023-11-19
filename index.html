@@ -65,16 +65,16 @@
         const h1 = document.querySelector(".typewriter");
 
         function type() {
-        setTimeout(() => {
-            for (let i = 0; i < text.length; i++) {
             setTimeout(() => {
-                h1.textContent += text[i];
-                if (i === text.length - 1) {
-                cursor.style.display = "none"; 
+                for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                    h1.textContent += text[i];
+                    if (i === text.length - 1) {
+                    cursor.style.display = "none"; 
+                    }
+                }, i * typingDelay);
                 }
-            }, i * typingDelay);
-            }
-        }, initialDelay);
+            }, initialDelay);
         }
 
         type();
