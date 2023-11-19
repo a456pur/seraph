@@ -136,7 +136,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    animation: mainHeaderAnimation 2s forwards;
+    animation: mainHeaderAnimation 3s forwards;
 }
 
 h1 {
@@ -150,6 +150,7 @@ h1 {
                  0 0 60px var(--text-color),
                  0 0 70px var(--text-glow),
                  0 0 80px #000000;
+    animation: searchTween 1s ease-in-out forwards;
 }
 
 p {
@@ -158,6 +159,11 @@ p {
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
+    animation: searchTween 2s ease-in-out forwards;
+}
+
+h2 {
+    animation: searchTween 1.75s ease-in-out forwards;
 }
 
 button {
@@ -178,6 +184,7 @@ button {
 
     border: 2px solid var(--border-color2);
     border-radius: 32px;
+    animation: searchTween 1.5s ease-in-out forwards;
 }
 
 select {
@@ -195,6 +202,7 @@ select {
     cursor: none;
     padding-right: 10px;
     font-family: var(--font-family);
+    animation: searchTween 1.5s ease-in-out forwards;
 }
 
 button:hover {
@@ -204,6 +212,7 @@ button:hover {
 a {
     text-decoration: underline;
     color: var(--text-color);
+    animation: searchTween 2.5s ease-in-out forwards;
 }
 
 
@@ -218,12 +227,13 @@ a {
 }
 
 
-@keyframes borderAnimation {
+@keyframes searchTween {
     0% {
-        border-image-source: linear-gradient(45deg, var(--border-color1), var(--border-color2));
+        opacity: 0;
     }
+
     100% {
-        border-image-source: linear-gradient(45deg, var(--border-color2), var(--border-color1));
+        opacity: 1;
     }
 }
 

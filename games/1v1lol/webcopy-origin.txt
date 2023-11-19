@@ -1,0 +1,100 @@
+Uri: https://1v1.lol/
+File Name: C:\Downloaded Web Sites\1v1.lol\index.htm
+Content Type: text/html
+
+Uri: https://1v1.lol/favicon.png?v2
+File Name: C:\Downloaded Web Sites\1v1.lol\favicon.png
+Content Type: image/png
+
+Uri: https://1v1.lol/css/style.css
+File Name: C:\Downloaded Web Sites\1v1.lol\css\style.css
+Content Type: text/css
+
+Uri: https://www.googletagmanager.com/gtag/js?id=UA-118283086-6
+File Name: C:\Downloaded Web Sites\1v1.lol\gtag\js.js
+Content Type: application/javascript
+
+Uri: https://1v1.lol/js/googleAnalytics.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\googleAnalytics.js
+Content Type: text/javascript
+
+Uri: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+File Name: C:\Downloaded Web Sites\1v1.lol\ajax\libs\jquery\3.5.1\jquery.min.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/IronSourceRV.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\IronSourceRV.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/mobileRedirect.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\mobileRedirect.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/fullscreen.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\fullscreen.js
+Content Type: text/javascript
+
+Uri: https://imasdk.googleapis.com/js/sdkloader/ima3.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\sdkloader\ima3.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/cpmstar.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\cpmstar.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/logo.png
+File Name: C:\Downloaded Web Sites\1v1.lol\logo.png
+Content Type: image/png
+
+Uri: https://justbuild.nyc3.cdn.digitaloceanspaces.com/CI/1v1/Prod/162/UnityLoader.js
+File Name: C:\Downloaded Web Sites\1v1.lol\CI\1v1\Prod\162\UnityLoader.js
+Content Type: application/x-javascript
+
+Uri: https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js
+File Name: C:\Downloaded Web Sites\1v1.lol\firebasejs\7.2.1\firebase-app.js
+Content Type: text/javascript
+
+Uri: https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js
+File Name: C:\Downloaded Web Sites\1v1.lol\firebasejs\7.2.1\firebase-analytics.js
+Content Type: text/javascript
+
+Uri: https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js
+File Name: C:\Downloaded Web Sites\1v1.lol\firebasejs\7.2.1\firebase-auth.js
+Content Type: text/javascript
+
+Uri: https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js
+File Name: C:\Downloaded Web Sites\1v1.lol\firebasejs\7.2.1\firebase-firestore.js
+Content Type: text/javascript
+
+Uri: https://www.gstatic.com/firebasejs/7.2.1/firebase-remote-config.js
+File Name: C:\Downloaded Web Sites\1v1.lol\firebasejs\7.2.1\firebase-remote-config.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/firebase.js?v=147
+File Name: C:\Downloaded Web Sites\1v1.lol\js\firebase.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/login.js?v=147
+File Name: C:\Downloaded Web Sites\1v1.lol\js\login.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/firebase-config.js?v=147
+File Name: C:\Downloaded Web Sites\1v1.lol\js\firebase-config.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/windowResize.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\windowResize.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/adblockManager.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\adblockManager.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/macUserAgent.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\macUserAgent.js
+Content Type: text/javascript
+
+Uri: https://1v1.lol/js/visibilityChangeListener.js
+File Name: C:\Downloaded Web Sites\1v1.lol\js\visibilityChangeListener.js
+Content Type: text/javascript
+

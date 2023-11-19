@@ -40,10 +40,9 @@
   <body>
         <div class="cursor"></div>
         <h1 class="typewriter"><span id="cursor"></span></h1>
-        <p class="linkp"><a href="../index.html">homepage</a> •  <a href="https://github.com/a456pur/seraph" target="_blank">github</a> •  <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a></p>
+
         <input type="text" id="search" placeholder="⌕ search" autocomplete="off">
-        <br>
-        <select id="genreDropdown">
+        <select id="genreDropdown" style="margin-top: 5px; margin-left: 5px;">
             <option value="all">all</option>
             <option value="adventure">adventure</option>
             <option value="arcade">arcade</option>
@@ -52,13 +51,15 @@
             <option value="simulation">simulation</option>
         </select>
         
+        <p class="linkp"><a href="../index.html">homepage</a> •  <a href="https://github.com/a456pur/seraph" target="_blank">github</a> •  <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a></p>
+        
         <br>
         <h2 class="pinned-header">starred games</h2>
         <div class="pinned-container">
 
         </div>
 
-        <h2 class="allgames-header">all games</h2>
+        <h2 class="allgames-header"></h2>
         <div class="button-container">
             <a target="_blank" href="slope/index.html">
                 <div class="button" style="background-image: url('../images/thumbnails/slope.jpg');" data-genre="platformer">

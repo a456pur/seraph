@@ -1,0 +1,12 @@
+BetterTT is a slightly modified version of territorial.io by David Tschacher.
+All content and socket traffic is owned by the original author.
+BetterTT is not affiliated with the original author in any way.
+
+The original version of territorial.io is available at: http://territorial.io/
+
+BetterTT does not collect any additional data nor affect traffic in any way.
+Some additional cookies are used to store the users settings
+
+Original privacy policy and cookie policy apply:
+- http://territorial.io/privacy-policy/
+- http://territorial.io/cookie-policy/
