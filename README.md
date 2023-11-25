@@ -32,16 +32,17 @@
 - ruffle: allows flash games to be run on the website without any prior installation necessary
 - emulatorjs: enables our collection of game boy color, game boy advance, nintendo ds, snes, nes and sega mega drive to run on the website 
 
-**contributors**
+**credits**
 - lifesaskit: background assistance for multiple themes
 
-**github issue contributors**
+**contributions**
 - heheheha12345678: game suggestions, bug reporting, website suggestions
 - synth_0: game suggestions, website suggestions
 - tommiecc: game suggestions, bug reporting
 - skysthelimitt: bug reporting
 - zunlex/eshan: game suggestions, bug reporting
 - ninjanick56: game suggestions
+- geotobogaming: general support
 
 ## contributing
 you can contribute to seraph in multiple ways by [raising issues on the github](https://github.com/a456pur/seraph/issues/new/choose), which can include:

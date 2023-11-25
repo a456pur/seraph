@@ -30,6 +30,15 @@
         url('../fonts/raleway/raleway.otf') format('otf');
 }
 
+@font-face {
+    font-family: 'Impact';
+    src: url('../fonts/impact/impact.woff2') format('woff2'),
+        url('../fonts/impact/impact.woff') format('woff'),
+        url('../fonts/impact/impact.ttf') format('truetype'),
+        url('../fonts/impact/impact.otf') format('otf');
+}
+
+
 :root {
     --background-image: url('../../images/backgrounds/seraph/cookiesbg.png');
     --font-family: 'Ubuntu', sans-serif;
@@ -105,6 +114,17 @@
     --background-color: #258969;
     --hover-color: #219b48;
     --text-glow: #6c957b;
+}
+
+:root.theme-misinformation {
+    --background-image: url('../../images/backgrounds/misinformation/cookiesbg.gif');
+    --font-family: 'Impact', sans-serif;
+    --text-color: #d94cd0;
+    --background-color: rgb(87, 40, 169);
+    --border-color1: #ff0000;
+    --border-color2: #00ff0d;
+    --hover-color: rgb(220, 78, 78);
+    --text-glow: #000000
 }
 
 body {

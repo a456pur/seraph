@@ -76,6 +76,54 @@
         <script src="storage/js/cloak.js"></script>
 
         <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                if (hasOptionBeenAdded()) {
+                    addOption();
+                }
+
+                document.body.addEventListener('keyup', function (event) {
+                    var typedLetter = event.key.toLowerCase();
+
+                    if (typedLetter === expectedSequence[typedSequence.length]) {
+                        typedSequence += typedLetter;
+                        if (typedSequence === expectedSequence) {
+                            addOption();
+                            setOptionAddedFlag();
+                        }
+                        clearTimeout(timeout);
+                        timeout = setTimeout(function () {
+                            typedSequence = '';
+                        }, 1000);
+                    } else {
+                        typedSequence = '';
+                    }
+                });
+            });
+
+            var expectedSequence = 'amongus';
+            var typedSequence = '';
+            var timeout;
+            function hasOptionBeenAdded() {
+                return localStorage.getItem('misinformationAdded') === 'true';
+            }
+            function setOptionAddedFlag() {
+                localStorage.setItem('misinformationAdded', 'true');
+            }
+
+            function addOption() {
+                var selectElement = document.getElementById('theme-select');
+                var existingOption = selectElement.querySelector('option[value="misinformation"]');
+                
+                if (!existingOption) {
+                    var newOption = document.createElement('option');
+                    newOption.value = 'misinformation';
+                    newOption.textContent = 'misinformation';
+                    selectElement.appendChild(newOption);
+                }
+            }
+        </script>
+
+        <script>
             function applyTheme() {
                 const selectedTheme = document.getElementById('theme-select');
                 if (selectedTheme) {
