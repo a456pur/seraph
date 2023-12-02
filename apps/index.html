@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="../storage/css/apps4.css">
         <title>Apps | Seraph</title>
 
-        <meta name="description" content="seraph; an open source unblocked games website hosting 100+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
+        <meta name="description" content="seraph; an open source unblocked games website hosting 300+ games with rehosting support, custom themes, cloaking, apps + more!">
         <meta property="og:site_name" content="seraph">
         <meta property="og:title" content="seraph">
         <meta property="og:type" content="website">
@@ -25,7 +25,7 @@
     <body>
         <div class="cursor"></div>
         <h1>apps</h1>
-        <p> all apps on this website are complete copyright & property of their respective owners • website created/developed by @a456pur</p>
+        <input type="text" id="search" placeholder="⌕ search" autocomplete="off">
         <p class="linkp"><a href="../index.html">homepage</a> •  <a href="https://github.com/a456pur/seraph" target="_blank">github</a> •  <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a></p>
 
         <div class="button-container">
@@ -84,6 +84,29 @@
                 </div>
             </a> 
         </div>
+
+        <p> // all apps hosted on this website are complete copyright & property of their respective owners \\</p>
+
+        <script>
+            function filterGames() {
+                const searchInput = document.getElementById('search').value.toLowerCase();
+                const buttons = document.querySelectorAll('.button h2');
+
+                buttons.forEach(button => {
+                    const gameName = button.textContent.toLowerCase();
+                    const buttonContainer = button.parentElement.parentElement;
+
+                    if (gameName.includes(searchInput)) {
+                        buttonContainer.style.display = 'block'; 
+                    } else {
+                        buttonContainer.style.display = 'none';
+                    }
+                });
+            }
+
+            document.getElementById('search').addEventListener('input', filterGames);
+        </script>
+
         <script src="../storage/js/cursor.js"></script>
         <script src="../storage/js/cloak.js"></script>
         <script src="../storage/js/themes.js"></script>

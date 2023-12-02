@@ -231,6 +231,7 @@ button:hover {
 a {
     text-decoration: underline;
     color: var(--text-color);
+    cursor: none;
     animation: searchTween 2.5s ease-in-out forwards;
 }
 

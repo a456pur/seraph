@@ -161,6 +161,13 @@ h1 {
                  0 0 80px #000000;
 }
 
+h2 {
+    font-size: 50px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 10px;  
+}
+
 a {
     text-align: center;
     cursor: none;

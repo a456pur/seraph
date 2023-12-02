@@ -254,8 +254,8 @@ input {
         opacity: 0;
     }
 
-    75% {
-        opacity: 1;
+    55% {
+        opacity: 0.9;
     }
 
     100% {
