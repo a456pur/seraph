@@ -23,10 +23,6 @@
 - a full update log page detailing every change made to the website
 - content updates every week with new games and website enhancements
 
-## seraph links
-- https://seraph.reveriestudios.online/ 
-**most seraph links are currently down!** we'll be back with more soon :)
-
 ## credits
 **resources used**
 - ruffle: allows flash games to be run on the website without any prior installation necessary
@@ -34,6 +30,11 @@
 
 **credits**
 - lifesaskit: background assistance for multiple themes
+
+**game assets**
+- 3kh0: [game asset repository](https://github.com/3kh0/3kh0-Assets)
+- nate-games: [nate-games repository](https://github.com/nate-games/nate-games.xyz)
+- selenite: [selenite repository](https://github.com/selenite-cc/selenite)
 
 **contributions**
 - heheheha12345678: game suggestions, bug reporting, website suggestions
