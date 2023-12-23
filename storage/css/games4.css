@@ -146,7 +146,10 @@ body {
     animation: fadein 0.75s forwards ease-in-out;
 
     background-image: var(--background-image);
-    background-repeat: repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
     color: var(--text-color);
     cursor: none;

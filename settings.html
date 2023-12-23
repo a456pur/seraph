@@ -68,68 +68,153 @@
             <option value="molten">molten</option>
             <option value="amethyst">amethyst</option>
             <option value="ethereal">ethereal</option>
+            <option value="custom">custom</option>
         </select>
 
         <button id="apply-theme">apply theme</button>
+
+        <div id="custom-theme-settings" style="display: none;">
+            <div class="theme-property">
+                <label for="background-image">background image url:</label>
+                <input type="text" id="background-image">
+            </div>
+    
+            <div class="theme-property">
+                <label for="font-family">font family:</label>
+                <input type="text" id="font-family">
+            </div>
+    
+            <div class="theme-property">
+                <label for="text-color">text colour:</label>
+                <input type="color" id="text-color">
+            </div>
+    
+            <div class="theme-property">
+                <label for="background-color">background colour:</label>
+                <input type="color" id="background-color">
+            </div>
+    
+            <div class="theme-property">
+                <label for="border-color1">border colour:</label>
+                <input type="color" id="border-color1">
+            </div>
+    
+            <div class="theme-property">
+                <label for="border-color2">secondary border colour:</label>
+                <input type="color" id="border-color2">
+            </div>
+    
+            <div class="theme-property">
+                <label for="hover-color">hover colour:</label>
+                <input type="color" id="hover-color">
+            </div>
+    
+            <div class="theme-property">
+                <label for="text-glow">text glow colour:</label>
+                <input type="color" id="text-glow">
+            </div>
+    
+            <button id="apply-custom-theme" style="font-size: 11px;">apply custom theme</button>
+        </div>
 
         <script src="storage/js/cursor.js"></script>
         <script src="storage/js/cloak.js"></script>
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                if (hasOptionBeenAdded()) {
-                    addOption();
-                }
-
-                document.body.addEventListener('keyup', function (event) {
-                    var typedLetter = event.key.toLowerCase();
-
-                    if (typedLetter === expectedSequence[typedSequence.length]) {
-                        typedSequence += typedLetter;
-                        if (typedSequence === expectedSequence) {
-                            addOption();
-                            setOptionAddedFlag();
-                        }
-                        clearTimeout(timeout);
-                        timeout = setTimeout(function () {
-                            typedSequence = '';
-                        }, 1000);
-                    } else {
-                        typedSequence = '';
-                    }
-                });
+                applyStoredTheme();
+                populateCustomThemeSettings();
             });
+    
+            function applyStoredTheme() {
+                const storedTheme = localStorage.getItem('selectedTheme');
 
-            var expectedSequence = 'amongus';
-            var typedSequence = '';
-            var timeout;
-            function hasOptionBeenAdded() {
-                return localStorage.getItem('misinformationAdded') === 'true';
+                hideCustomThemeSettings();
+                if (storedTheme === 'custom') {
+                    showCustomThemeSettings();
+                    applyCustomThemeStyles();
+                }
+                applyTheme();
             }
-            function setOptionAddedFlag() {
-                localStorage.setItem('misinformationAdded', 'true');
-            }
-
-            function addOption() {
-                var selectElement = document.getElementById('theme-select');
-                var existingOption = selectElement.querySelector('option[value="misinformation"]');
-                
-                if (!existingOption) {
-                    var newOption = document.createElement('option');
-                    newOption.value = 'misinformation';
-                    newOption.textContent = 'misinformation';
-                    selectElement.appendChild(newOption);
+    
+            function hideCustomThemeSettings() {
+                const customThemeSettings = document.getElementById('custom-theme-settings');
+                if (customThemeSettings) {
+                    customThemeSettings.style.display = 'none';
                 }
             }
-        </script>
+    
+            function showCustomThemeSettings() {
+                const customThemeSettings = document.getElementById('custom-theme-settings');
+                if (customThemeSettings) {
+                    customThemeSettings.style.display = 'block';
+                }
+            }
+    
+            function populateCustomThemeSettings() {
+                const customTheme = JSON.parse(localStorage.getItem('customTheme')) || {};
+                document.getElementById('background-image').value = customTheme['background-image'] || '';
+                document.getElementById('font-family').value = customTheme['font-family'] || '';
+                document.getElementById('text-color').value = customTheme['text-color'] || '#fff';
+                document.getElementById('background-color').value = customTheme['background-color'] || 'black';
+                document.getElementById('border-color1').value = customTheme['border-color1'] || '#aaaaaa';
+                document.getElementById('border-color2').value = customTheme['border-color2'] || '#ffffff';
+                document.getElementById('hover-color').value = customTheme['hover-color'] || '#1a1818';
+                document.getElementById('text-glow').value = customTheme['text-glow'] || '#000000';
+            }
+    
+            function applyCustomThemeStyles() {
+                const customTheme = JSON.parse(localStorage.getItem('customTheme')) || {};
+                const root = document.documentElement;
 
-        <script>
+                const customStyleTag = document.getElementById('custom-theme-style');
+                if (!customStyleTag) {
+                    const styleTag = document.createElement('style');
+                    styleTag.id = 'custom-theme-style';
+                    styleTag.textContent = `
+                        :root {
+                            --background-image: url('${customTheme['background-image'] || ''}');
+                            --font-family: '${customTheme['font-family'] || ''}', sans-serif;
+                            --text-color: ${customTheme['text-color'] || '#fff'};
+                            --background-color: ${customTheme['background-color'] || 'black'};
+                            --border-color1: ${customTheme['border-color1'] || '#aaaaaa'};
+                            --border-color2: ${customTheme['border-color2'] || '#ffffff'};
+                            --hover-color: ${customTheme['hover-color'] || '#1a1818'};
+                            --text-glow: ${customTheme['text-glow'] || '#000000'};
+                        }
+                    `;
+                    document.head.appendChild(styleTag);
+                }
+            }
+
+            function removeCustomThemeStyles() {
+                const customStyleTag = document.getElementById('custom-theme-style');
+                if (customStyleTag) {
+                    customStyleTag.parentNode.removeChild(customStyleTag);
+                }
+            }
+    
             function applyTheme() {
                 const selectedTheme = document.getElementById('theme-select');
                 if (selectedTheme) {
                     const themeValue = selectedTheme.value;
                     document.documentElement.className = `theme-${themeValue}`;
                     localStorage.setItem('selectedTheme', themeValue);
+
+                    if (themeValue === 'custom') {
+                        applyCustomThemeStyles();
+                        showCustomThemeSettings();
+                    } else {
+                        hideCustomThemeSettings();
+                        removeCustomThemeStyle();
+                    }
+                }
+            }
+
+            function removeCustomThemeStyle() {
+                const customThemeStyle = document.getElementById('custom-theme-style');
+                if (customThemeStyle) {
+                    customThemeStyle.parentNode.removeChild(customThemeStyle);
                 }
             }
 
@@ -138,7 +223,7 @@
                 const selectElement = document.getElementById('theme-select');
                 if (selectElement) {
                     selectElement.value = storedTheme;
-                    applyTheme();
+                    applyStoredTheme();
                 }
             }
 
@@ -146,7 +231,32 @@
             if (applyButton) {
                 applyButton.addEventListener('click', applyTheme);
             }
+            
+            const applyCustomButton = document.getElementById('apply-custom-theme');
+            if (applyCustomButton) {
+                applyCustomButton.addEventListener('click', function () {
+                    const customTheme = {
+                        'background-image': document.getElementById('background-image').value,
+                        'font-family': document.getElementById('font-family').value,
+                        'text-color': document.getElementById('text-color').value,
+                        'background-color': document.getElementById('background-color').value,
+                        'border-color1': document.getElementById('border-color1').value,
+                        'border-color2': document.getElementById('border-color2').value,
+                        'hover-color': document.getElementById('hover-color').value,
+                        'text-glow': document.getElementById('text-glow').value,
+                    };
+
+                    localStorage.setItem('customTheme', JSON.stringify(customTheme));
+                    applyCustomThemeStyles();
+
+                    const selectedTheme = document.getElementById('theme-select');
+                    if (selectedTheme.value !== 'custom') {
+                        removeCustomThemeStyles();
+                    }
+                });
+            }
         </script>
+        
 
         <script>
             function setCookie(name, value, options) {
