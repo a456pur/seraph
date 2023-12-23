@@ -130,32 +130,61 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
-    display: flex;
-    height: 100vh;
-    background-color: var(--background-color);
-    cursor: none;
-
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-    width: 0;
-}
-
-.content-side {
-    width: 100%;
-    background-color: var(--background-color);
-    background-image: var(--background-image);
-    background-size: cover;
-    background-position: center;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    cursor: none;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
     animation: mainHeaderAnimation 3s forwards;
+}
+
+
+#custom-theme-settings {
+    background-color: var(--background-color);
+    border: 3px solid var(--border-color2);
+    border-radius: 32px;
+    width: 50%;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 8px;
+    padding-bottom: 16px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+#custom-theme-settings label {
+    font-size: 18px;
+    padding-left: 4px;
+    text-align: center;
+}
+
+#custom-theme-settings input {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2px;
+    border: 2px solid var(--border-color2);
+    font-family: var(--font-family);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.theme-property {
+    margin-bottom: 2px;
 }
 
 h1 {

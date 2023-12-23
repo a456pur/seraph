@@ -30,92 +30,92 @@
   </head>
   <body>
     <div class="cursor"></div>
-    <div class="content-side">
-        <h1>settings</h1>
-        <a href="index.html" style="font-size: 18px;">go to homepage</a>
-        
-        <br>
-        <h2 style="margin: 0;">cloak</h2>
-        <p> mask seraph with a tab cloak! </p>
-        <br>
-        <select id="presetSelect">
-            <option value="google">google</option>
-            <option value="googleclassroom">google classroom</option>
-            <option value="googledrive">google drive</option>
-            <option value="chrometab">chrome new tab</option>
-            <option value="gmail">gmail</option>
+    <h1>settings</h1>
+    <a href="index.html" style="font-size: 18px;">go to homepage</a>
+    
+    <br>
+    <h2 style="margin: 0;">tab cloak</h2>
+    <p> disguise seraph in plain sight with a tab cloak! </p>
+    <br>
+    <select id="presetSelect">
+        <option value="google">google</option>
+        <option value="googleclassroom">google classroom</option>
+        <option value="googledrive">google drive</option>
+        <option value="chrometab">chrome new tab</option>
+        <option value="gmail">gmail</option>
 
-            <option value="bing">bing</option>
-            <option value="desmos">desmos calculator</option>
-            <option value="wikipedia">wikipedia</option>
+        <option value="bing">bing</option>
+        <option value="desmos">desmos calculator</option>
+        <option value="wikipedia">wikipedia</option>
 
 
-        </select>
+    </select>
 
-        <button id="saveButton">select preset cloak</button>
-        <button id="resetButton">reset cloak</button>
-        <p id="success" style="display: none;">success message here</p>
+    <button id="saveButton">select preset cloak</button>
+    <button id="resetButton">reset cloak</button>
+    <p id="success" style="display: none;">success message here</p>
 
-        <br>
-        <h2 style="margin: 0;">themes</h2>
-        <p> change the theme of the website here! </p>
-        <br>
-        <select id="theme-select">
-            <option value="seraph">seraph</option>
-            <option value="azurite">azurite</option>
-            <option value="retro">retro</option>
-            <option value="cosmic">cosmic</option>
-            <option value="molten">molten</option>
-            <option value="amethyst">amethyst</option>
-            <option value="ethereal">ethereal</option>
-            <option value="custom">custom</option>
-        </select>
+    <br>
+    <h2 style="margin: 0;">theme selection</h2>
+    <p> change the overall appearance of the website here! </p>
+    <br>
+    <select id="theme-select">
+        <option value="seraph">seraph</option>
+        <option value="azurite">azurite</option>
+        <option value="retro">retro</option>
+        <option value="cosmic">cosmic</option>
+        <option value="molten">molten</option>
+        <option value="amethyst">amethyst</option>
+        <option value="ethereal">ethereal</option>
+        <option value="custom">custom</option>
+    </select>
 
-        <button id="apply-theme">apply theme</button>
+    <button id="apply-theme">apply theme</button>
 
-        <div id="custom-theme-settings" style="display: none;">
-            <div class="theme-property">
-                <label for="background-image">background image url:</label>
-                <input type="text" id="background-image">
-            </div>
-    
-            <div class="theme-property">
-                <label for="font-family">font family:</label>
-                <input type="text" id="font-family">
-            </div>
-    
-            <div class="theme-property">
-                <label for="text-color">text colour:</label>
-                <input type="color" id="text-color">
-            </div>
-    
-            <div class="theme-property">
-                <label for="background-color">background colour:</label>
-                <input type="color" id="background-color">
-            </div>
-    
-            <div class="theme-property">
-                <label for="border-color1">border colour:</label>
-                <input type="color" id="border-color1">
-            </div>
-    
-            <div class="theme-property">
-                <label for="border-color2">secondary border colour:</label>
-                <input type="color" id="border-color2">
-            </div>
-    
-            <div class="theme-property">
-                <label for="hover-color">hover colour:</label>
-                <input type="color" id="hover-color">
-            </div>
-    
-            <div class="theme-property">
-                <label for="text-glow">text glow colour:</label>
-                <input type="color" id="text-glow">
-            </div>
-    
-            <button id="apply-custom-theme" style="font-size: 11px;">apply custom theme</button>
+    <div id="custom-theme-settings" style="display: none;">
+        <h2>custom theme settings</h2>
+        <div class="theme-property">
+            <label for="background-image">background image url:</label>
+            <input type="text" id="background-image" value="https://raw.githubusercontent.com/a456pur/seraph/main/images/backgrounds/seraph/homebg.png">
         </div>
+
+        <div class="theme-property">
+            <label for="font-family">font family:</label>
+            <input type="text" id="font-family" value="Ubuntu">
+        </div>
+
+        <div class="theme-property">
+            <label for="text-color">text colour:</label>
+            <input type="color" id="text-color" value="#000000">
+        </div>
+
+        <div class="theme-property">
+            <label for="background-color">background colour:</label>
+            <input type="color" id="background-color">
+        </div>
+
+        <div class="theme-property">
+            <label for="border-color1">border colour:</label>
+            <input type="color" id="border-color1">
+        </div>
+
+        <div class="theme-property">
+            <label for="border-color2">secondary border colour:</label>
+            <input type="color" id="border-color2">
+        </div>
+
+        <div class="theme-property">
+            <label for="hover-color">hover colour:</label>
+            <input type="color" id="hover-color">
+        </div>
+
+        <div class="theme-property">
+            <label for="text-glow">text glow colour:</label>
+            <input type="color" id="text-glow">
+        </div>
+
+        <p style="font-size: 16px;">refresh the page after applying to see changes</p>
+        <button id="apply-custom-theme" style="font-size: 18px;">apply custom theme</button>
 
         <script src="storage/js/cursor.js"></script>
         <script src="storage/js/cloak.js"></script>
@@ -153,12 +153,12 @@
     
             function populateCustomThemeSettings() {
                 const customTheme = JSON.parse(localStorage.getItem('customTheme')) || {};
-                document.getElementById('background-image').value = customTheme['background-image'] || '';
-                document.getElementById('font-family').value = customTheme['font-family'] || '';
-                document.getElementById('text-color').value = customTheme['text-color'] || '#fff';
+                document.getElementById('background-image').value = customTheme['background-image'] || 'https://raw.githubusercontent.com/a456pur/seraph/main/images/backgrounds/seraph/homebg.png';
+                document.getElementById('font-family').value = customTheme['font-family'] || 'Ubuntu';
+                document.getElementById('text-color').value = customTheme['text-color'] || '#FFFFFF';
                 document.getElementById('background-color').value = customTheme['background-color'] || 'black';
-                document.getElementById('border-color1').value = customTheme['border-color1'] || '#aaaaaa';
-                document.getElementById('border-color2').value = customTheme['border-color2'] || '#ffffff';
+                document.getElementById('border-color1').value = customTheme['border-color1'] || '#000000';
+                document.getElementById('border-color2').value = customTheme['border-color2'] || '#FFFFFF';
                 document.getElementById('hover-color').value = customTheme['hover-color'] || '#1a1818';
                 document.getElementById('text-glow').value = customTheme['text-glow'] || '#000000';
             }
