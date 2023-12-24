@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="79.07489815167511" height="25.568302540102852" viewBox="0.6216483572526518 0.16084842477279337 79.07489815167511 25.568302540102852">
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <path id="ID0.9166544596664608" fill="#003FFF" stroke="#99B2FF" stroke-width="1.8215030711087101" d="M 1.5324 1.0716 L 78.7858 1.0716 L 78.7858 24.8184 L 1.5324 24.8184 L 1.5324 1.0716 Z "/>
+  <text id="ID0.6175163025036454" fill="#FFFFFF" text-anchor="start" font-family="Sans Serif" font-size="22" transform="matrix(0.641026,0,0,0.641026,4.68205,1.57692)" stroke-width="1" alignment-baseline="text-before-edge" xml:space="preserve"><tspan x="0" style="white-space: pre" dy="1.13em">Show FPS</tspan></text>
+</svg>

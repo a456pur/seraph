@@ -1,0 +1,12 @@
+{
+"companyName": "Destruction Crew",
+"productName": "Rocket Soccer",
+"dataUrl": "RSD%201.1.0rc4.data.unityweb?v=1676589996006",
+"wasmCodeUrl": "RSD%201.1.0rc4.wasm.code.unityweb?v=1676589961332",
+"wasmFrameworkUrl": "RSD%201.1.0rc4.wasm.framework.unityweb?v=1676589935084",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

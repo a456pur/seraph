@@ -1,0 +1,13 @@
+0,CombatZoneResize,133,251,508,391,TLResume,,
+0,HeartTeleport,320,376,,,,,
+0,HeartMode,1,,,,,,
+0,TLPause,,,,,,,
+0,Platform,15,346,61,0,120,,
+0.4,BoneVRepeat,133,356,40,0,120,41,15
+1.2,Platform,-61,346,61,0,150,,
+1.7,Platform,-61,346,61,0,180,,
+1,BoneV,133,257,45,0,210,,
+0,BoneV,119,257,45,0,210,,
+0,BoneV,105,257,45,0,210,,
+2.3,BoneV,133,257,95,0,270,,
+1.7,EndAttack,,,,,,,
