@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+	
+			gtag('config', 'G-7FN7LEVWXD');
+		</script>
+	
+		<meta charset="utf-8">
+		<title>Snow Rider 3D | Seraph</title>
+		<link href="../../images/ico.ico" rel="shortcut icon">
+		<script src="../../storage/js/cloak.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="themes.css" />
+		<script src="UnityProgress.js"></script>
+		<script src="UnityLoader.js"></script>
+		<script>
+			var gameInstance = UnityLoader.instantiate("gameContainer", "SnowRider3D-gd-1.json", {
+				onProgress: UnityProgress,
+				Module: {
+					onRuntimeInitialized: function () {
+						UnityProgress(gameInstance, "complete");
+					},
+				},
+			});
+		</script>
+	</head>
+	<body>
+		<div class="webgl-content"><div id="gameContainer" style="width: 100%; height: 100%; margin: auto"></div></div>
+    </body>
+</html>

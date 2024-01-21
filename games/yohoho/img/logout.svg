@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0 0 24 24"
+   fill="white"
+   id="svg6"
+   sodipodi:docname="logout.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="1002"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="-8"
+     inkscape:window-y="48"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <g
+     fill="none"
+     fill-rule="evenodd"
+     id="miu"
+     stroke="none"
+     stroke-width="1"
+ style="fill:#ffffff">
+    <g
+       id="Artboard-1"
+       transform="translate(-395.000000, -407.000000)"
+       style="fill:#ffffff">
+      <g
+         id="slice"
+         transform="translate(215.000000, 119.000000)"
+         style="fill:#ffffff" />
+      <path
+         d="M396,408 L396,430 L411,430 L411,424 L409,424 L409,428 L398,428 L398,410 L409,410 L409,414 L411,414 L411,408 L396,408 Z M411.636039,415.464466 L413.050253,414.050253 L418,419 L413.050253,423.949747 L411.636039,422.535534 L414.170485,420.001088 L403.000499,420.001088 L403.000499,418.00265 L414.174223,418.00265 L411.636039,415.464466 Z"
+         fill="#000000"
+         id="common-logout-signout-exit-glyph"
+         style="fill:#ffffff" />
+    </g>
+  </g>
+</svg>
