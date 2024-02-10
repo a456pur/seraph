@@ -164,7 +164,6 @@ body {
     background-attachment: fixed;
     
     color: var(--text-color);
-    cursor: none;
 }
 
 h1, h2 {
@@ -210,7 +209,6 @@ h1 {
     border-radius: 16px;
 
     transition: border 0.04s ease-in;
-    cursor: none;
 }
 
 .button:hover {
@@ -241,8 +239,6 @@ input {
     opacity: 0;
     animation: searchTween 2.5s ease-in-out forwards;
     animation-delay: 0s;
-
-    cursor: none;
 }
 
 .button-container {
@@ -282,21 +278,8 @@ input {
 a {
     text-decoration: none;
     color: var(--text-color);
-    cursor: none;
 }
 
-.cursor {
-    width: 7px;
-    height: 7px;
-    background-color: var(--text-color);
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    opacity: 1;
-    z-index: 10000;
-    
-}
 
 .linkp a {
     font-size: 17px;

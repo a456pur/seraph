@@ -164,7 +164,7 @@ body {
     background-attachment: fixed;
 
     color: var(--text-color);
-    cursor: none;
+    
 }
 
 h1, h2 {
@@ -210,7 +210,7 @@ h1 {
     border: 3.2px solid var(--border-color2);
     border-radius: 16px;
 
-    cursor: none;
+    
     position: relative;
 }
 
@@ -229,14 +229,14 @@ h1 {
     position: absolute;
     top: 5px;
     right: 5px; 
-    cursor: none;
+    
     z-index: 2; 
 }
 
 select {
     background-color: var(--background-color);
     color: var(--text-color);
-    cursor: none;
+    
     width: 0%;
     max-width: 200px;
     padding-top: 5px;
@@ -245,7 +245,7 @@ select {
     border: 2px solid var(--border-color1);
     border-radius: 32px;
     padding-left: 10px;
-    cursor: none;
+    
     padding-right: 10px;
     font-family: var(--font-family);
     text-align: center;
@@ -272,7 +272,7 @@ input {
     animation: searchTween 2.5s ease-in-out forwards;
     animation-delay: 0s;
 
-    cursor: none;
+    
 }
 
 input::placeholder {
@@ -322,7 +322,7 @@ input::placeholder {
 a {
     text-decoration: none;
     color: white;
-    cursor: none;
+    
 }
 
 .cursor {

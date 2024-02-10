@@ -145,7 +145,7 @@ body {
     display: flex;
     height: 100vh;
     background-color: var(--background-color);
-    cursor: none;
+    
 
     scrollbar-width: none; 
     -ms-overflow-style: none;
@@ -204,7 +204,7 @@ button {
     display: inline-block;
     font-size: 20px;
     margin: 0px;
-    cursor: none;
+    
     transition: background-color 0.15s ease-in-out;
 
     border: 2px solid var(--border-color2);

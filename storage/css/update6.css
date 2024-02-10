@@ -144,7 +144,7 @@ body {
     font-family: var(--font-family);
     animation: mainHeaderAnimation 1s ease-in-out;
     color: var(--text-color);
-    cursor: none;
+    
     height: 100vh;
     scrollbar-width: none; 
     -ms-overflow-style: none;
@@ -184,7 +184,7 @@ h2 {
 
 a {
     text-align: center;
-    cursor: none;
+    
 }
 
 p {
