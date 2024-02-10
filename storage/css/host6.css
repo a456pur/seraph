@@ -137,6 +137,17 @@
     --text-glow: rgb(34, 13, 110);
 }
 
+:root.theme-metro {
+    --background-image: url('../../images/backgrounds/metro/hostbg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: rgb(228, 215, 171); 
+    --border-color1: rgb(183, 133, 91);
+    --border-color2: rgb(169, 98, 39);
+    --background-color: rgb(134, 71, 19);
+    --hover-color: rgb(159, 85, 24);
+    --text-glow: rgb(110, 84, 13);
+}
+
 body {
     margin: 0;
     padding: 0;
