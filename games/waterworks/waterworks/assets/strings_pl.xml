@@ -1,0 +1,1681 @@
+<?xml version="1.0"?>
+<strings>
+
+    <!-- WORKERS -->
+            <!-- REGULAR -->
+    <card id="water_carrier">
+        <name>Nosiwoda</name>
+        <desc>Patrolowana parcela +2$
+Przyl. parcele +1$</desc>
+        <desc2>"Silne plecy to podstawa w tej robocie."</desc2>
+    </card>
+    <card id="water_cart">
+        <name>Woziwoda</name>
+        <desc>Patrolowana parcela +3$
+Przyl. parcele +2$</desc>
+    <desc2>"Woda, świeża woda!"</desc2>
+    </card>
+    <card id="water_wagon">
+        <name>Beczkowóz</name>
+        <desc>Patrolowana parcela +8$
+Przyl. parcele +6$</desc>
+    <desc2>"Wiśta wio!"</desc2>
+    </card>
+
+    <card id="foreman">
+        <name>Mistrz</name>
+        <desc>Mistrz budowlany nadzoruje pracowników.
+Używany przy konstrukcjach.</desc>
+        <desc2>"Ktoś musi pilnować tych leniwych obiboków!"</desc2>
+    </card>
+    <card id="worker">
+        <name>Budowniczy</name>
+        <desc>Twoja siła robocza.
+Używany przy konstrukcjach.</desc>
+        <desc2>"Więcej pracy?"</desc2>
+    </card>
+    <card id="scribe">
+        <name>Skryba</name>
+        <desc>Umie pisać i czytać.
+Używany przy konstrukcjach.</desc>
+        <desc2>"Zechciałby pan tu podpisać?"</desc2>
+    </card>
+    <card id="craftsman">
+        <name>Rzemieślnik</name>
+        <desc>Zna się na swoim rzemiośle jak nikt inny.
+Używany przy konstrukcjach.</desc>
+        <desc2>"To trudniejsze niż może ci się wydawać."</desc2>
+    </card>
+         <!-- SPECIAL -->
+    <card id="trained_personnel">
+        <name>Zespół inżynierów</name>
+        <desc>Grupa zarządzająca sys. wodno-kan.
+Używane przy konstrukcjach.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Przyszłość jest nasza!"</desc2>
+    </card>
+
+    <!-- COMPONENTS -->
+        <!-- REGULAR -->
+    <card id="pipe">
+        <name>Rura</name>
+        <desc>Układaj rury wzdłuż ulic, by rozprowadzać wodę po mieście.</desc>
+        <desc2>"Bierzesz prosty pień drzewa i drążysz go wzdłuż."</desc2>
+    </card>
+    <card id="well">
+        <name>Studnia czerpalna</name>
+        <desc>Przyległe parcele +2$</desc>
+        <desc2>"Raz jeszcze powtórzę, NIE wrzucaj tu żadnych monet."</desc2>
+    </card>
+    <card id="sump">
+        <name>Rząp</name>
+        <desc>Wymaga przył. do rurociągu.
+Zapewnia $  x przyległym parcelom. x*zal. od odległości i poziomu kunsztu.</desc>
+        <desc2>"Beczka która sama się napełnia!"</desc2>
+    </card>
+
+    <card id="building_materials">
+        <name>Materiały budowlane</name>
+        <desc>Używane przy konstrukcjach.</desc>
+        <desc2>"To się ładnie nada."</desc2>
+    </card>
+     <!-- SPECIAL -->
+    <card id="orders_sigil">
+        <name>Pieczęć zakonu</name>
+        <desc>Pieczęć zakonu krzyżackiego.
+Używana przy konstrukcjach.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"W imię Pana!"</desc2>
+    </card>
+    <card id="nobles_sigil">
+        <name>Pieczęć miasta</name>
+        <desc>Pieczęć miasta Grudziądz.
+Używana przy konstrukcjach.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Ta pieczęć otwiera wiele drzwi."</desc2>
+    </card>
+    <card id="royal_sigil">
+        <name>Pieczęć królewska</name>
+        <desc>Pieczęć królewska.
+Używana przy konstrukcjach.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Jego Wysokość osobiście rozkazał!"</desc2>
+    </card>
+    <card id="bucket_wheel">
+        <name>Koło czerpakowe</name>
+        <desc>Koło z czerpakami na wodę.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"To co się wzniesie, musi też spaść!"</desc2>
+    </card>
+    <card id="water_wheel">
+        <name>Koło wodne</name>
+        <desc>Napęd maszynerii.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Ponoć wymyślili to już w starożytności."</desc2>
+    </card>
+    <card id="digging_supplies">
+        <name>Narz. do kopania</name>
+        <desc>Zestaw narzędzi do kopania.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Kto pod kim dołki kopie..."</desc2>
+    </card>
+    <card id="water_pumps">
+        <name>Pompy wodne</name>
+        <desc>Pompy ssąco-tłokowe.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Cud techniki."</desc2>
+    </card>
+    <card id="water_pumps2">
+        <name>Ulepszone pompy</name>
+        <desc>Ulepszone pompy ssąco-tłokowe.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Lepszy projekt to lepsza wydajność."</desc2>
+    </card>
+    <card id="overshot_wheel">
+        <name>Koło nasiębierne</name>
+        <desc>O wiele bardziej wydajne.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Fortuna się kołem toczy."</desc2>
+    </card>
+    <card id="chain_lift">
+        <name>Czerp.}na}łańcuchach</name>
+        <desc>Czerpaki}umieszczone na łańcuchach.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Wyżej niż koło!"</desc2>
+    </card>
+    <card id="water_tower">
+        <name>Wieża wodociągowa</name>
+        <desc>Zapewni ciśnienie w rurach.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Nie mylić z wieżą wodną."</desc2>
+    </card>
+    <card id="metal_pipes">
+        <name>Studnia głębinowa</name>
+        <desc>Zaawansowana studnia głębinowa.
+Używane przy konstrukcji.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Czegoś takiego jeszcze}nie}widziałeś."</desc2>
+    </card>
+    
+    
+    <!-- DOCUMENTS -->
+        <!-- REGULAR -->
+    <card id="permit">
+        <name>Pozwolenie</name>
+        <desc>Pozwolenie na budowę.
+Używane przy konstrukcjach.</desc>
+        <desc2>"Zezwala się niniejszym na wzniesienie tego budynku."</desc2>
+    </card>
+    <card id="small_gift">
+        <name>Skromny upominek</name>
+        <desc>Lśniący złoty pierścień. Możesz wysłać go władcy miasta i otrzymać #10.</desc>
+        <desc2>"Ładna błyskotka!"</desc2>
+    </card>
+    <card id="medium_gift">
+        <name>Przeciętny upominek</name>
+        <desc>Piękny naszyjnik. Możesz wysłać go władcy miasta i otrzymać #20.</desc>
+        <desc2>"Najnowszy szyk mody!"</desc2>
+    </card>
+    <card id="big_gift">
+        <name>Szczodry upominek</name>
+        <desc>Błyszcząca bransoleta Możesz wysłać ją władcy miasta i otrzymać #40.</desc>
+        <desc2>"Nie wszystko złoto co się świeci. Są też klejnoty."</desc2>
+    </card>
+    <card id="small_donation">
+        <name>Skromna darowizna</name>
+        <desc>Zagranie tego dokumentu zapewni ci @10.</desc>
+        <desc2>"Dzięki za wsparcie!"</desc2>
+    </card>
+    <card id="medium_donation">
+        <name>Przeciętna darowizna</name>
+        <desc>Zagranie tego dokumentu zapewni ci @20.</desc>
+        <desc2>"To się przysłuży nam wszystkim!"</desc2>
+    </card>
+    <card id="big_donation">
+        <name>Szczodra darowizna</name>
+        <desc>Zagranie tego dokumentu zapewni ci @40.</desc>
+        <desc2>"Woda musi płynąć!"</desc2>
+    </card>
+        <!-- SPECIAL -->
+    <card id="maps">
+        <name>Mapy</name>
+        <desc>Szczegółowe mapy okolic miasta.
+Używane przy konstrukcjach.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Z mapą zawsze łatwiej."</desc2>
+    </card>
+    <card id="irrigation_plans">
+        <name>Plany irygacyjne</name>
+        <desc>Szczegółowe plany irygacyjne.
+Używane przy konstrukcjach.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Trochę lanie wody, ale o to chodzi."</desc2>
+    </card>
+    <card id="sewers_layout">
+        <name>Plany ścieków</name>
+        <desc>Plany kanałów pod miastem.
+Używane przy konstrukcjach.
+Karta usuwana z gry po użyciu.</desc>
+        <desc2>"Żółwie? Jakie żółwie?"</desc2>
+    </card>
+    <card id="funding_increase">
+        <name>Dofinansowanie</name>
+        <desc>+1 @ na turę.
+Ta karta jest usuwana z gry po zagraniu.</desc>
+        <desc2>"Tak trzymać!"</desc2>
+    </card>
+
+
+
+    <!-- construction cards -->
+
+
+
+    <card id="water_source">
+        <name>Punkt czerp. wody</name>
+        <desc>Podstawowe źródło wody, pomost na rzece.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="upgraded_water_source">
+        <name>P. czerp. wody II</name>
+        <desc>Ulepszony punkt czerpania wody - miasto rośnie, jeden pomost to za mało.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="quarters">
+        <name>Kwatery</name>
+        <desc>Umożliwia przechowywanie kart _ pracowników na później.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="archive">
+        <name>Archiwum</name>
+        <desc>Umożliwia przechowywanie kart \ dokumentów na później.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="warehouse">
+        <name>Magazyn</name>
+        <desc>Umożliwia przechowywanie kart ~ zasobów na później.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="quarters2">
+        <name>Kwatery II</name>
+        <desc>Zwiększa liczbę slotów na karty _ pracowników w Kwaterach.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="archive2">
+        <name>Archiwum II</name>
+        <desc>Zwiększa liczbę slotów na karty \ dokumentów w Archiwum.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="warehouse2">
+        <name>Magazyn II</name>
+        <desc>Zwiększa liczbę slotów na karty ~ zasobów w Magazynie.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="quarters3">
+        <name>Kwatery III</name>
+        <desc>Maks. zwiększa liczbę slotów na karty _ pracowników.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="archive3">
+        <name>Archiwum III</name>
+        <desc>Maks. zwiększa liczbę slotów na karty \ dokumentów.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="warehouse3">
+        <name>Magazyn III</name>
+        <desc>Maks. zwiększa liczbę slotów na karty ~ zasobów.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="office">
+        <name>Gildia kupiecka</name>
+        <desc>Pieniądze mogą kupić prestiż... i na odwrót.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="stable">
+        <name>Stajnia</name>
+        <desc>Umożliwi ci używanie beczkowozów.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="stable2">
+        <name>Stajnia II</name>
+        <desc>Dodaje jeszcze jeden beczkowóz.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="carts">
+        <name>Wózki</name>
+        <desc>Zamieni wszystkich Nosiwodów w Woziwodów.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="hermans_ditch">
+        <name>Rów Hermana</name>
+        <desc>Otwiera*nową*epokę.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="wells">
+        <name>Studnie czerpalne</name>
+        <desc>Opracuj sposób na kopanie studni czerpalnych.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="cartography">
+        <name>Kartografia</name>
+        <desc>Pomiary okolicy pozwolą nakreślić dokładne mapy.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_crafts_guild">
+        <name>Cech rzemieślniczy</name>
+        <desc>Specjaliści pomogą opracować nowe technologie.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="bucket_wheel_plans">
+        <name>Koło czerpakowe</name>
+        <desc>Część kunsztu wodnego.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_wheel_plans">
+        <name>Koło wodne</name>
+        <desc>Część kunsztu wodnego.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks">
+        <name>Kunszt wodny</name>
+        <desc> </desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks2">
+        <name>Kunszt wodny II</name>
+        <desc> </desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks3">
+        <name>Kunszt wodny III</name>
+        <desc> </desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks4">
+        <name>Kunszt wodny IV</name>
+        <desc> </desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks5">
+        <name>Kunszt wodny V</name>
+        <desc> </desc>
+        <desc2> </desc2>
+    </card>
+    <card id="workshop">
+        <name>Warsztat</name>
+        <desc>Naprawia i tworzy się tu narzędzia.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="workshop2">
+        <name>Ulepsz. warsztat</name>
+        <desc>Lepszy warsztat to lepsze narzędzia.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_pumps_plans">
+        <name>Pompy wodne</name>
+        <desc>Projekt pomp ssąco-tłoczących.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_pumps2_plans">
+        <name>Ulepszone pompy</name>
+        <desc>Bardziej zaawansowane pompy.</desc>
+        <desc2> </desc2>
+    </card>   
+    <card id="metal_pipes_plans">
+        <name>Studnia głębinowa</name>
+        <desc>Technologia jutra!</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="training_course">
+        <name>Kurs treningowy</name>
+        <desc>Pozwala wyszkolić inżynierów.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="sewers_plans">
+        <name>Plany ścieków</name>
+        <desc>Trzeba wykonać plany kanalizacji.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="overshot_wheel_plans">
+        <name>Koło nasiębierne</name>
+        <desc>Sposób na zwiększenie wydajności koła wodnego.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="chain_lift_plans">
+        <name>Czerp.}na}łańcuchach</name>
+        <desc>Pomysł}aby}zastąpić koło systemem łańcuchów.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="trynka_channel">
+        <name>Kanał Trynki</name>
+        <desc>Otwiera}nową}epokę.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="adv_sumps">
+        <name>Ulepsz. rząpie</name>
+        <desc>Projekt ulepszonych rząpi.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="adv_pipes">
+        <name>Tunel rurociągowy</name>
+        <desc>Ulepszenie rur wodociągowych.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_tower_plans">
+        <name>Wieża wodociągowa</name>
+        <desc>Zapewni wodzie niezbędne ciśnienie.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="heated_water_tower">
+        <name>Ogrzewana wieża wodna</name>
+        <desc>Woda nie będzie zamarzać zimą.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="wass">
+        <name>System wodno-kan.</name>
+        <desc> </desc>
+        <desc2> </desc2>
+    </card>
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <construction id="water_source">
+        <name>Punkt czerpania wody</name>
+        <desc>Podstawowe źródło wody. Pomost nad rzeką, gdzie ludzie napełniają wiadra. Będziesz musiał zatrudnić nosiwodów, aby roznosili w ten sposób wodę.</desc>
+        <complete>Pomost gotowy. Teraz pozostaje zatrudnić kilku nosiwodów, którzy właśnie trafili do talii.</complete>
+    </construction>
+    <construction id="upgraded_water_source">
+        <name>Rozbudowany punkt czerpania wody</name>
+        <desc>Zapotrzebowanie na wodę wzrasta i jeden pomost już nie wystarcza. To ulepszenie pozwoli czerpać więcej wody i umożliwi zatrudnienie dodatkowych nosiwodów.</desc>
+    <complete>Dobudowałeś kolejny pomost. Dzięki temu możesz uzupełniać wodę w wiadrach większej ilości nosiwodów. Powinno to zaspokoić potrzeby miasta na jakiś czas, ale nie jest to przyszłościowe rozwiązanie.
+Będziesz musiał opracować lepsze metody rozprowadzania wody po mieście.</complete>
+    </construction>
+    <construction id="warehouse">
+        <name>Magazyn</name>
+        <desc>Magazyn umożliwi ci przechowywanie kart ~ zasobów (takich jak materiały budowlane czy rury) na podobnej zasadzie co kwatery.
+Poza tym otrzymasz materiały budowlane do wznoszenia konstrukcji oraz plany ulepszenia źródła czerpania wody.</desc>
+        <complete>Magazyn gotowy. Możesz teraz przechowywać maksymalnie 4 karty ~ zasobów jednocześnie, jeśli nie możesz lub nie chcesz ich zagrywać, ale też nie chcesz ich odrzucać.
+Nie ponosisz żadnych kosztów przechowywanej karty dopóki nie zdecydujesz się jej zagrać. Możesz też ją w każdej chwili odrzucić albo cofnąć do ręki (jeśli jest miejsce).
+
+WSKAZÓWKA: Możesz klikać prawym przyciskiem myszy, aby szybko przerzucać karty ~ zasobów pomiędzy magazynem a ręką.</complete>
+    </construction>
+    <construction id="warehouse2">
+        <name>Magazyn II</name>
+        <desc>Rozbudowanie Magazynu zwiększy liczbę slotów na karty ~ zasobów o 4 miejsca.
+Odblokowuje też nowe technologie (patrz niżej - lista kart).</desc>
+        <complete>Magazyn rozrasta się. Możesz teraz przechowywać w nim do 8 kart ~ zasobów!
+Ponadto do twojej talii trafiły ciekawe karty... Koło wodne, koło czerpakowe - to chyba komponenty jakiejś większej budowli. Narzędzia do kopania - mogą się przydać, gdy je znajdziesz warto przechować je na później. Od tego masz magazyn!</complete>
+    </construction>
+    <construction id="warehouse3">
+        <name>Magazyn III</name>
+        <desc>Maksymalne rozbudowanie Magazynu zwiększy liczbę slotów na karty ~ zasobów o kolejne 4 miejsca.
+Odblokowuje też nowe technologie (patrz niżej - lista kart).</desc>
+        <complete>Magazyn osiągnął maksymalny poziom. Możesz teraz przechowywać w nim aż 12 kart ~ zasobów!
+Oprócz tego masz nowe karty w talii. Plany budowy wieży wodociągowej i pomp tłoczących mogą zwiastować całkiem nowe podejście do zasady działania kunsztu wodnego.</complete>
+    </construction>
+    <construction id="quarters">
+        <name>Kwatery</name>
+        <desc>Kwatery umożliwią ci przechowywanie kart _ pracowników na później. Jeśli nie potrzebujesz karty pracownika w danej chwili, (albo cię na nią nie stać), ale nie chcesz jej odrzucać, będziesz mógł zamiast tego umieścić ją tutaj za darmo i mieć pod ręką w chwili, gdy będzie potrzebna.
+Wybudowanie kwater ściągnie także do miasta dodatkowych pracowników i umożliwi wznoszenie nowych konstrukcji.</desc>
+        <complete>Kwatery gotowe. Możesz teraz przechowywać maksymalnie 4 karty _ pracowników jednocześnie, jeśli nie możesz lub nie chcesz ich zagrywać, ale też nie chcesz ich odrzucać.
+Nie ponosisz żadnych kosztów przechowywanej karty dopóki nie zdecydujesz się jej zagrać. Możesz też ją w każdej chwili odrzucić albo cofnąć do ręki (jeśli jest miejsce).
+
+WSKAZÓWKA: Możesz klikać prawym przyciskiem myszy, aby szybko przerzucać karty _ pracowników pomiędzy kwaterami a ręką.</complete>
+    </construction>
+    <construction id="quarters2">
+        <name>Kwatery II</name>
+        <desc>Zwiększa liczbę slotów na karty _ pracowników w kwaterach.
+Konstrukcja ta sprawi też, że do miasta przybędą dodatkowi pracownicy.</desc>
+        <complete>Kwatery powiększyły się. Możesz teraz przechowywać w nim do 8 kart _ pracowników!
+Rozbudowanie kwater sprawiło też, że do miasta przybędzie więcej rzemieślników, skrybów, mistrzów budowalnych i budowniczych - ich karty będą do twojej dyspozycji w talii.</complete>
+    </construction>
+    <construction id="quarters3">
+        <name>Kwatery III</name>
+        <desc>Maksymalnie zwiększa liczbę slotów na karty _ pracowników w kwaterach.
+Konstrukcja ta sprawi też, że do miasta przybędą dodatkowi pracownicy.</desc>
+        <complete>Kwatery powiększyły się, osiągając maksymalny poziom. Możesz teraz przechowywać w nim do 12 kart _ pracowników!
+Rozbudowanie kwater sprawiło też, że do miasta przybędzie jeszcze więcej rzemieślników, mustrzów budowalnych i budowniczych - ich karty będą do twojej dyspozycji w talii.
+Ach, jest jeszcze ta ciekawa książka, to chyba jakiś kurs szkoleniowy. Skąd się tu wzięła? Odłóż ją do archiwum, dobrze?</complete>
+    </construction>
+    <construction id="archive">
+        <name>Archiwum</name>
+        <desc>Archiwum umożliwi ci przechowywanie kart \ dokumentów (takich jak plany konstrukcji czy pozwolenia na budowę) na podobnej zasadzie co kwatery.
+Otrzymasz też dostęp do gildii kupieckiej.</desc>
+        <complete>Archiwum gotowe. Możesz teraz przechowywać maksymalnie 4 karty \ dokumentów jednocześnie, jeśli nie możesz lub nie chcesz ich zagrywać, ale też nie chcesz ich odrzucać.
+Nie ponosisz żadnych kosztów przechowywanej karty dopóki nie zdecydujesz się jej zagrać. Możesz też ją w każdej chwili odrzucić albo cofnąć do ręki (jeśli jest miejsce).
+
+WSKAZÓWKA: Możesz klikać prawym przyciskiem myszy, aby szybko przerzucać karty \ dokumentów pomiędzy archiwum a ręką.</complete>
+    </construction>
+    <construction id="archive2">
+        <name>Archiwum II</name>
+        <desc>Zwiększa liczbę slotów na karty \ dokumentów w archiwum.
+Konstrukcja ta zapewni ci nowe dotacje i upominki.
+Otrzymasz też dostęp do planów kunsztu wodnego oraz plany irygacyjne.</desc>
+        <complete>Archiwum powiększyło się. Możesz teraz przechowywać w nim do 8 kart \ dokumentów!
+Rozbudowanie archiwum dało ci też - poza dostępem do nowych dotacji i upominków - kartę planów kunsztu wodnego oraz plany irygacyjne.</complete>
+    </construction>
+    <construction id="archive3">
+        <name>Archiwum III</name>
+        <desc>Maksymalnie zwiększa liczbę slotów na karty \ dokumentów w archiwum.
+Konstrukcja ta zapewni ci nowe dotacje i upominki.</desc>
+        <complete>Archiwum powiększyło się, osiągając maksymalny poziom. Możesz teraz przechowywać w nim do 12 kart \ dokumentów!
+Rozbudowanie archiwum sprawiło, że zyskałeś też nowe potencjalne dotacje i upominki. Jest też wstępny szkic stworzenia planów sieci kanalizacyjnej, warto o nim pamiętać w przyszłości.</complete>
+    </construction>
+    <construction id="office">
+        <name>Gildia kupiecka</name>
+        <desc>Pieniądze mogą kupić prestiż... i na odwrót. Twoje zadanie często wymagać będzie zjednywania sobie nieprzychylnych ci ludzi, a nasi przyjaciele z gildi kupieckiej mają w tym nieliche doświadczenie. Wiedzą też jak zabiegać o dodatkowe środki finansowe, co może być bardzo przydatną umiejętnością do twej dyspozycji.</desc>
+        <complete>Masz teraz dostęp do nowych kart. Darowizny dadzą ci @ monety w zamian za
+# wpływy. Dzięki upominkom możesz zaś zdobywać # wpływy, ale wpierw musisz kupić je za @ monety.
+Kupcy oferują też przywiezione z daleka plany, dzięki którym będzie można wykonać pomiary katrograficzne okolicy.</complete>
+    </construction>
+
+    <construction id="stable">
+        <name>Stajnia</name>
+        <desc>Wybudowanie stajni umożliwi ci używanie beczkowozów. Zaprzężone w konie, te powozy są w stanie rozwozić bardzo duże ilości wody.
+
+Beczkowóz
+Patrolowana parcela +8$
+Przyl. parcele +6$</desc>
+        <complete>Stajnia ukończona - masz teraz dostęp do beczkowozów. Ich ilość jest wprawdzie mocno ograniczona, a cena niemała, ale dzięki nim będziesz mógł dostarczyć wodę najbardziej potrzebującym.</complete>
+    </construction>
+
+    <construction id="stable2">
+        <name>Stajnia II</name>
+        <desc>Powiększenie stajni da ci dostęp do jednego beczkowozu więcej.</desc>
+        <complete>Stajnia powiększona. Możesz teraz wykupić dodatkowy beczkowóz.</complete>
+    </construction>
+
+    <construction id="carts">
+        <name>Wózki</name>
+        <desc>Opracowanie i zbudowanie wózków do przewozu wody znacznie ułatwi zadanie roznoszenia wody.
+Wszystkie karty Nosiwodów (zagrane i niezagrane) zostaną zastąpione przez karty Woziwodów.
+
+Nosiwoda &gt; Woziwoda
+Patrolowana parcela +2$  &gt; +3$
+Przyl. parcele +1$  &gt; +2$</desc>
+        <complete>Wózki gotowe! Każdy nosiwoda dostał swój wózek do rozwożenia wody. Mamy też wózek dla każdego nowego pracownika.
+Wszystkie karty Nosiwodów (zagrane i niezagrane) zostały zastąpione przez karty Woziwodów.</complete>
+    </construction>
+
+    <construction id="water_crafts_guild">
+        <name>Cech rzemieślniczy</name>
+        <desc>Stworzenie cechu rzemieślniczego da ci dostęp do rzemieślników.
+Dzięki ich pracy, będziesz mógł opracować takie konstrukcje jak studnie czerpalne, a także Rów Hermana - wielki projekt, który otworzy drogę do nowej ery rozwoju miasta.</desc>
+        <complete>Cech przyciągnął do miasta rzemieślników. Ich talent umożliwi ci opracowanie studni głębinowych i rozpoczęcie prac nad największym z dotychczasowych projektów hydrotechnicznych.</complete>
+    </construction>
+
+    <construction id="hermans_ditch">
+        <name>Rów Hermana</name>
+        <desc>"Rów Hermana" to sztucznie przekopany kanał o długości blisko 3 km, który umożliwi doprowadzenie znacznie większej ilości wody ze źródeł oddalonych od miasta. Ta kosztowna, lecz niezbędna inwestycja z pewnością będzie miała znaczący wpływ na rozwój i rozbudowę miasta.</desc>
+        <complete>W 1386 r. mieszkańcy Grudziądza otrzymali zgodę od władz zakonu krzyżackiego na wybudowanie kanału, który łączyłby się z naturalną strugą wypływającą w nieodległej miejscowości Węgrowo a następnie doprowadzał wodę w pobliże miasta. Wykopany kanał miał długość blisko 3 km i znacznie poprawił sytuacje mieszkańców miasta. Była to pierwsza, tak ogromna i znacząca, inwestycja hydrotechniczna w Grudziądzu. Dzisiejsza nazwa "Rów Hermana" pochodzi prawdopodobnie z XIX w., po tym jak kanał został przebudowany.</complete>
+    </construction>
+
+    <construction id="wells">
+        <name>Studnie Czerpalne</name>
+        <desc>Głęboka na kilkanaście lub kilkadziesiąt metrów studnia czerpalna o drewnianej lub murowanej konstrukcji. Zadaszenie oraz filtry ułożone na dnie nie dopuszczą do zanieczyszczenia wody, a zamontowany kołowrót znacznie ułatwi jej wydobywanie przy użyciu wiader.
+
+Studnia
+Przyległe parcele +2$</desc>
+        <complete>Pobieranie wody bezpośrednio z kanału a następnie transportowanie jej do miasta było z pewnością rozwiązaniem mało efektywnym i niepraktycznym, a w przypadku oblężenia lub mrozu odcinało miasto od bieżącego dostępu do wody pitnej. Z tych to powodów w Grudziądzu już w średniowieczu istniały prawdopodobnie studnie czerpalne, które można było budować wewnątrz murów miejskich, i które miały tę zaletę, że woda w nich nie zamarzała. Niestety dotychczasowe badania nie dostarczyły żadnych informacji na temat studni czerpalnych (jedyna, wciąż istniejąca, znajduje się na zamku). Ze względu na wyżynne położenie miasta kopanie tradycyjnych studni musiało być zadaniem niełatwym, czasochłonnym i kosztownym.</complete>
+    </construction>
+
+    <construction id="cartography">
+        <name>Kartografia</name>
+        <desc>Opracowanie tej technologii da ci dostęp do dokładnej mapy okolic miasta. Z pewnością przyda się ona w przyszłości.</desc>
+        <complete>Badania kartograficzne zakończone. Dzięki temu w talii pojawiła się karta mapy. Z pewnością się do czegoś przyda.</complete>
+    </construction>
+
+    <construction id="workshop">
+        <name>Warsztat</name>
+        <desc>Izba z narzędziami naprawczymi przyda się z całą pewnością.
+Ukończenie tej konstrukcji da ci dostęp do większej ilości rur i rząpi, umożliwi też udoskonalenie kunsztu wodnego.</desc>
+        <complete>Do twojej talii trafiły karty rur, rząpi, a także projekt nowego koła wodnego...</complete>
+    </construction>
+
+    <construction id="workshop2">
+        <name>Warsztat II</name>
+        <desc>W budynku kunsztu obok pompy urządzimy niewielki warsztat naprawczy. System pasów transmisyjnych i przekładni zębatych będzie doprowadzać napęd od koła wodnego do znajdujących się w warsztacie urządzeń.
+Ta konstrukcja zapewni nam jeszcze więcej rur i rząpi oraz plany nowych rozwiązań technologicznych, które z pewnością się przydadzą.</desc>
+        <complete>Napędzanie urządzeń w warsztacie siłą koła wodnego to bardzo skuteczne rozwiązanie! Możemy dzięki temu stworzyć więcej rur i rząpi. Opracowane także zostaną nowe technologie.
+Ciekawostka: prócz warsztatu, na drewnianym pomoście osadzonym na palach bezpośrednio nad kanałem znajdowało się pomieszczenie, które prawdopodobnie służyło do kąpieli!</complete>
+    </construction>
+
+    <construction id="waterworks">
+        <name>Kunszt wodny</name>
+        <desc>Kunszt wodny to urządzenie, którego zadaniem jest podniesienie wody na wysokość umożliwiającą grawitacyjne zasilenie sieci wodociągowej w mieście. Woda podnoszona jest do zbiornika rozdzielczego położonego na szczycie wysokiego budynku, skąd następnie jest rozprowadzana drewnianymi (sosnowymi) rurami do miejskich studni wodociągowych (tzw. rząpi). Rząpie najczęściej budowane są na głównych ulicach i miejskich placach.</desc>
+        <complete>Pozwolenie na budowę pierwszego kunsztu wodnego w Grudziądzu wydał wielki mistrz zakonu krzyżackiego Michel Kochmeister w 1415 r. W zezwoleniu zakon wyraził zgodę na wybudowanie specjalnego budynku wraz z urządzeniem wyposażonym w koło wodne, którego zadaniem było czerpanie wody z kanału płynącego przy mieście (Rowu Młyńskiego), a następnie podnoszenie jej na odpowiednią wysokość, aby móc ją rozprowadzać rurociągami po mieście. Jeżeli kunszt wodny w Grudziądzu w rzeczywistości został wybudowany w XV w. (jest to bardzo prawdopodobne! - na pewno istniał już na początku XVI w.) byłoby to najstarsze tego rodzaju urządzenie w państwie krzyżackim, a po 1466 r. jedno z najstarszych w Królestwie Polskim.</complete>
+    </construction>
+
+    <construction id="waterworks2">
+        <name>Kunszt wodny z kołem nasiębiernym</name>
+        <desc>Przebudowa kunsztu będzie wymagać sporo pracy, przede wszystkim budowy sztucznych spiętrzeń, jazów, stawów, a także rynien doprowadzających wodę nad koło. Dzięki temu koło wodne zyska sporo wydajności, a w wodociągu znajdzie się więcej wody.</desc>
+        <complete>Rozbudowa kunsztu wodnego sprawiła, że woda w rurach ma większe ciśnienie i sięga dalej niż poprzednio. Dzięki temu ludzie będą mogli czerpać więcej wody z już istniejących rząpi, nie wspominając już o tych które dopiero zbudujesz.</complete>
+    </construction>
+
+    <construction id="waterworks3">
+        <name>Kunszt}wodny}z}czerpakami}na}łańcuchach</name>
+        <desc>Zastąpimy koło czerpakowe nowo-skonstruowanym łańcuchem z czerpakami.
+Koło wodne, napędzane nurtem wody płynącej w kanale, wprawia w ruch łańcuch z czerpakami, który podnosi wodę z kanału do zbiornika rozdzielczego na szczycie budynku.</desc>
+        <complete>Rozbudowa kunsztu wodnego ponownie sprawiła, że woda w rurach ma większe ciśnienie i sięga dalej niż poprzednio. Dzięki temu ludzie będą mogli czerpać więcej wody z już istniejących rząpi, a także z tych które dopiero zbudujesz.</complete>
+    </construction>
+
+    <construction id="waterworks4">
+        <name>Kunszt wodny z pompami</name>
+        <desc>Konstrukcja składać się będzie z trzech części:
+- podłużnego, parterowego budynku położonego na drewnianym pomoście osadzonym na palach bezpośrednio nad kanałem. Pod tym budynkiem woda płynąca w kanale poruszać będzie podsiębiernym kołem wodnym;
+- budynku położonego na brzegu kanału z pompami tłokowymi w studni pod budynkiem, napędzanymi kołem wodnym;
+- wieży wodociągowej znajdującej się przy drugiej linii murów miejskich, wewnątrz której umieścimy pionowo rozprowadzone rurociągi oraz zbiornik rozdzielczy.</desc>
+        <complete>Wybudowanie kunsztu wodnego z pompami znacznie usprawniło wydajność systemu wodociągowego, a co za tym idzie, dostęp do wody dla wszystkich mieszkańców miasta stał się o wiele łatwiejszy.</complete>
+    </construction>
+
+    <construction id="waterworks5">
+        <name>Kunszt wodny z ulepszonymi pompami</name>
+        <desc>Zainstalowanie ulepszonych pomp sprawi, że wydajność kunsztu wodnego podniesie się jeszcze bardziej.</desc>
+        <complete>Kunszt wodny w obecnej formie osiągnął swoją maksymalną sprawność.</complete>
+    </construction>
+
+    <construction id="bucket_wheel_plans">
+        <name>Koło z czerpakami</name>
+        <desc>Koło, na którego całym obwodzie przymocowane są drewniane czerpaki. Koło to może być napędzane przez koło wodne przy pomocy przekładni. Wprawione w ruch czerpaki pobierają wodę z kanału i podnoszą ją na odpowiednią wysokość, do znajdującego się na szczycie budynku zbiornika rozdzielczego.</desc>
+        <complete>Posiadasz teraz wybudowane koło z czerpakami. Jest ono jednak bezużyteczne bez napędzającego je koła wodnego...</complete>
+    </construction>
+
+    <construction id="water_wheel_plans">
+        <name>Koło wodne</name>
+        <desc>Koło wodne to zasadniczy element napędowy kunsztu wodnego. Koło podsiębierne napędzane jest wodą płynącą bezpośrednio pod kołem. Może być połączone, przy pomocy przekładni, z innym mechanizmem np. kołem czerpakowym.</desc>
+        <complete>Masz teraz koło wodne, które może coś napędzać. Pytanie tylko: co?</complete>
+    </construction>
+
+    <construction id="overshot_wheel_plans">
+        <name>Koło wodne nasiębierne</name>
+        <desc>Koło nasiębierne zasilane jest wodą, która spada na nie z odpowiedniej wysokości, napełnia znajdujące się na jego obwodzie korytka i w ten sposób napędza koło. Jest trzy razy bardziej wydajne niż koło podsiębierne. Zastosowanie koła nasiębiernego wymaga wykonania dodatkowych prac inżynieryjnych: budowy sztucznych spiętrzeń, jazów, stawów, a także rynien doprowadzających wodę nad koło.</desc>
+        <complete>Koło nasiębierne jest gotowe. Teraz możesz zacząć przygotowania do modernizacji kunsztu wodnego.</complete>
+    </construction>
+
+    <construction id="chain_lift_plans">
+        <name>Czerpaki na łańcuchach</name>
+        <desc>Specjalny, bardziej wydajny i wytrzymalszy mechanizm z dwoma mniejszymi kołami (dolnym i górnym) złączonymi łańcuchem, do którego przymocowane są czerpaki.</desc>
+        <complete>Posiadasz teraz czerpaki na łańcuchach - możesz przygotować się do kolejnej modernizacji kunsztu wodnego!</complete>
+    </construction>
+
+    <construction id="trynka_channel">
+        <name>Kanał Trunki</name>
+        <desc>Trynka to sztucznie przekopany kanał o długości blisko 8 km i szerokości nawet do 10 m, którego zadaniem będzie dostarczenie znaczącej ilości wody z rzeki oddalonej od miasta. Kanał pozwoli nie tylko zaspokoić rosnące potrzeby mieszkańców miasta, ale także zwiększy możliwości rozwoju technicznego kunsztu wodnego i wodociągów.</desc>
+        <complete>Kanał Trynka został wybudowany w 1552 r, za zgodą króla Polski Zygmunta II Augusta. Jego nazwa pochodziła od niemieckiego słowa "trinken", czyli "pić", co podkreślało jego najważniejszą funkcję, jaką było dostarczanie wody pitnej do Grudziądza. Łączna długość kanału wynosiła aż 8 km, a jego szerokość sięgała nawet do 10 m. Kanał Trynka zaczynał swój bieg w rzece Osie w miejscowości Kłódka, dalej kierował się do jeziora Tarpieńskiego, a następnie łączył się z kanałem młyńskim w pobliżu miasta i uchodził do Wisły. Na całej długości kanału wybudowano system jazów, który umożliwiał wysuszenie jego koryta i wykonanie niezbędnych prac hydrotechnicznych oraz konserwacyjnych. Budowa Trynki umożliwiła dostarczenie w pobliże miasta ogromnych zasobów wody, która dodatkowo napędzała koła młynów oraz kunsztu wodnego. Była to na ówczesne czasy najważniejsza i największa inwestycja hydrotechniczna zrealizowana w Grudziądzu.</complete>
+    </construction>
+
+    <construction id="adv_sumps">
+        <name>Ulepszenie rząpi</name>
+        <desc>Dawne, drewniane studnie wodociągowe (rząpie) zostaną zastąpione przez znacznie wytrzymalsze i szczelniejsze studnie murowane.
+Sprawi to, że zwiększy się efektywność sieci wodociągowej w całym mieście.</desc>
+        <complete>Studnie wodociągowe, zwane rząpiami, miały z reguły postać beczki bez pokrywy, która była umieszczona w drewnianej, wkopanej w grunt skrzyni i obsypana piaskiem w celu ustabilizowania. Piasek znajdujący się między beczką a skrzynią pełnił ponadto rolę filtrującą, ograniczającą przedostawanie się do studni zewnętrznych zanieczyszczeń. Do beczki doprowadzane były przewody wodociągowe. Z zewnątrz rząpie bardzo przypominały klasyczne, drewniane studnie czerpalne. Z czasem drewniana "beczka" została zastąpiona murowaną cembrowiną, która była znacznie szczelniejsza i wytrzymalsza.</complete>
+    </construction>
+
+    <construction id="adv_pipes">
+        <name>Tunel wodociągowy</name>
+        <desc>Murowany tunel wodociągowy, który, za pomocą umieszczonych wewnątrz rurociągów, rozprowadzi wodę do miejskich studni wodociągowych (rząpi). Wymiary tunelu pozwolą na przemieszczanie się w jego wnętrzu oraz na prowadzenie prac konserwacyjnych oraz naprawczych.
+Sprawi to, że zwiększy się efektywność sieci wodociągowej w całym mieście.</desc>
+        <complete>W czasach współczesnych w miejscu wieży wodociągowej, na samym jej dnie, znajduje się częściowo zasypany, umocniony i sklepiony otwór pod murami miejskimi. Być może jest to początek podziemnego tunelu wodociągowego, którym woda była rozprowadzana po mieście?</complete>
+    </construction>
+
+    <construction id="water_tower_plans">
+        <name>Wieża wodociągowa</name>
+        <desc>Wysoka wieża wodociągowa przylegać będzie do południowej linii murów miejskich. W jej wnętrzu znajdą się rurociągi, którymi woda będzie pompowana na szczyt wieży do zbiornika rozdzielczego. Stąd woda będzie rozprowadzana grawitacyjnie rurami po miejskich studniach wodociągowych (rząpiach). Wieża zapewni stałe i wysokie ciśnienie w sieci wodociągowej, dzięki czemu woda będzie docierać do dalszych części miasta.</desc>
+        <complete>Trudno jednoznacznie wskazać, kiedy dokładnie została zbudowana wysoka wieża wodociągowa w Grudziądzu. Mogło to nastąpić najwcześniej pod koniec XV lub na początku XVI w., kiedy rozpowszechnił się w Europie wynalazek pomp ssąco-tłokowych, które umożliwiały podniesienie wody na szczyt wysokiej budowli. W ten sposób wyraźnie rozdzielono funkcje kunsztu wodnego (niskiego parterowego budynku wyposażonego w pompy) i wieży wodociągowej (wysokiego budynku, na którego szczycie znajdował się zbiornik rozdzielczy). Pierwszy jednoznaczny dowód źródłowy wskazujący na istnienie wieży wodociągowej pochodzi z 1772 r.</complete>
+    </construction>
+
+    <construction id="heated_water_tower">
+        <name>Podgrzewana wieża wodociągowa</name>
+        <desc>Zmodyfikujemy wieżę wodociągową tak, żeby można było rozpalać ogien na różnych jej wysokościach. Dzięki temu zimą woda w rurach nie będzie zamarzać.
+Sprawi to, że zwiększy się efektywność sieci wodociągowej w całym mieście.</desc>
+        <complete>Wnętrze wieży wodociągowej było tak urządzone, że na różnych wysokościach mógł być rozpalany ogień tak by uniemożliwić zamarzanie rur i zbiornika rozdzielczego wewnątrz budynku.</complete>
+    </construction>
+
+    <construction id="wass">
+        <name>System wodno-kanalizacyjny</name>
+        <desc>Nowoczesne rozwiązanie hydrotechniczne polegające na powiązaniu układów doprowadzających wodę i odprowadzających ścieki w jeden, scentralizowany system wodociągowo-kanalizacyjny. Ta ogromna inwestycja wymaga zatrudnienia wykwalifikowanych inżynierów i przewiduje budowę studni głębinowej z pompami napędzanymi silnikiem parowym, rozbudowaną sieć rurociągów oraz oczyszczalnie ścieków.</desc>
+        <complete>Pod koniec XIX w. władze miejskie zleciły przeprowadzenie badań mających na celu wskazanie miejsca poboru i określenie zasobności podziemnych wód w Grudziądzu. W wyniku podjętych prac odkryto bogate zasoby wody pitnej w południowej części miasta, w okolicach lasu miejskiego i dzisiejszej ul. gen. J. Hallera, które pozwoliły na budowę nowoczesnych, miejskich wodociągów. Zostały one uruchomione 23 grudnia 1899 r., a już na początku XX w. zostały rozbudowane o sieć kanalizacyjną oraz oczyszczalnie ścieków. W 1905 r. niefunkcjonujący już kunszt wodny został odkupiony od władz miejskich przez właściciela Dolnego i Górnego Młyna za cenę 5000 marek.</complete>
+    </construction>
+
+    <construction id="water_pumps_plans">
+        <name>Pompy wodne</name>
+        <desc>Mechanizm dwóch pomp ssąco-tłoczących do umieszczenia w studni wykopanej obok kanału. Pompy napędzane będą kołem wodnym poprzez wał korbowy, zasysać będą wodę ze studni i pompować ją w górę wieży wodociągowej, na której szczycie znajduje się zbiornik rozdzielczy. Urządzenie to jest znacznie bardziej efektywne od koła czerpakowego, czy czerpaków na łańcuchach.</desc>
+        <complete>W pierwszej połowie XVI w. w kunsztach wodnych na terenie Europy zamiast czerpaków zaczęto stosować pompy ssąco-tłoczące, tzw. pompy tłokowe. Były one napędzane kołem wodnym poprzez wał korbowy, który zamieniał ruch obrotowy koła na ruch posuwisto-zwrotny, poruszając tłokami znajdującymi się w cylindrach. Pompa taka mogła zarówno zasysać wodę ze studni, jak i tłoczyć ją na pewną wysokość. Wysokość tłoczenia wody zależała wyłącznie od konstrukcji i energii dostarczanej do pompy. Urządzenie to umożliwiało przeniesienie większej ilości wody na większą wysokość, a zatem było znacznie bardziej efektywne od koła czerpakowego. Najstarsza informacja o pompie w kunszcie w Grudziądzu pochodzi z połowy XVII w., ale prawdopodobnie takie urządzenie funkcjonowało tam wcześniej.</complete>
+    </construction>
+
+
+    <construction id="water_pumps2_plans">
+        <name>Ulepszone pompy wodne</name>
+        <desc>Każde urządzenie można ulepszyć i sprawić, że będzie wydajniejsze. To samo tyczy się twoich pomp wodnych.</desc>
+        <complete>Do talii trafiły </complete>
+    </construction>
+
+
+    <construction id="sewers_plans">
+        <name>Plany ścieków</name>
+        <desc>Opracowanie planów sieci kanalizacyjnej to jeden z kroków niezbędnych do stworzenia współczesnego systemu dostarczającego i odprowadzającego wodę.</desc>
+        <complete>Przygotowanie projektu sieci kanalizacyjnej rozpoczęto wraz z budową nowoczesnych wodociągów w 1899 r. W 1905-1907, na podstawie przygotowanej dokumentacji technicznej, wybudowano kanalizacje miejską o łącznej długości 56 km, a także oczyszczalnie ścieków.</complete>
+    </construction>
+
+
+
+    <construction id="metal_pipes_plans">
+        <name>Studnia głębinowa</name>
+        <desc>Budowa studni głębinowej to jeden z kroków niezbędnych do stworzenia współczesnego systemu wodno-kanalizacyjnego.</desc>
+        <complete>Budowę nowoczesnego zakładu wodociągowego zlokalizowanego przy ul. Hallera rozpoczęto 1 czerwca 1899 r., a prace budowlane trwały pół roku (do 23 grudnia). W tym zupełnie nowym systemie wodociągowym dwie pompy ssące, napędzane silnikami parowymi, dostarczały wodę ze studni głębinowych do stacji uzdatniania (filtrowni). Stąd pompy wysokociśnieniowe tłoczyły wodę do sieci wodociągowej, a także do zbiornika wyrównawczego oraz wieży ciśnień.</complete>
+    </construction>
+
+
+    <construction id="training_course">
+        <name>Zespół inżynierów</name>
+        <desc>Wyszkolenie zespołu inżynierów to jeden z kroków niezbędnych do stworzenia współczesnego systemu wodno-kanalizacyjnego.</desc>
+        <complete>Budowę grudziądzkiego zakładu wodociągowego zlecono pod koniec XIX w. inżynierowi Heinrichowi Schevenowi z Bochum (Niemcy), natomiast sieć kanalizacji oraz oczyszczalnie ścieków wykonała w latach 1905-1907 firma Windschild &amp; Langelott z Bydgoszczy.</complete>
+    </construction>
+
+
+
+
+
+
+
+
+
+
+
+    <construction id="war">
+        <name>WOJNA</name>
+        <desc>Wybuchła wojna! Część ludności musi się zaciągnąć - włączając w to twoich pracowników.
+W wyznaczonym czasie wypełnił wszystkie puste miejsca kartami _ pracowników (dowolnego rodzaju), lub spotka cię kara.
+Pracownicy którzy są już rozmieszczeni w mieście nie mogą być tu przeciągnięci - musisz najpierw użyć opcji sprzedawania.</desc>
+        <complete>Wysłałeś część swoich ludzi na wojnę, życząc im szczęścia.
+Robiąc to zapewniłeś sobie uznanie u wysoko postawionych mieszkańców.</complete>
+    </construction>
+
+
+
+    <construction id="wrong_shipment">
+        <name>ZAGINIONA PRZESYŁKA</name>
+        <desc>Skontaktował się z tobą ktoś z zamku - najwyraźniej miała miejsce pomyłka przy transporcie towarów i teraz brakuje czegoś w ich magazynie. Czego dokładnie? Nieistotne, wystarczy że zgadzałyby się cyferki w rejestrze. Wysłanie im czegokolwiek powinno być łatwiejsze niż próba odkręcenia tego zamieszania.
+Jest jeden haczyk - musisz samemu opłacić transport. Jeśli zaniedbasz ten temat, ktoś w końcu pociągnie cię do odpowiedzialności i będziesz musiał zapłacić prawdziwy koszt brakujących towarów.</desc>
+        <complete>Załatwione. Cokolwiek brakowało, teraz cyferki w rejestrze się zgadzają.
+Dostawca dziękuje ci za pomoc i obiecuje mówić o tobie wszystkim w samych superlatywach.</complete>
+    </construction>
+
+
+    <construction id="papers_please">
+        <name>DOKUMENTY DO KONTROLI!</name>
+        <desc>Jeden z lokalnych magnatów zakwestionował legalność twoich działań. Prawo leży po twojej stronie, o ile masz dokumenty żeby to udowodnić.
+Jeśli nie dostarczysz papierów na czas... cóż, prawo nadal jest po twojej stronie, ale wyjaśnienie wszystkiego będzie kosztować sporo wysiłku (i pieniędzy).</desc>
+        <complete>Magnat był zakłopotany, wygląda na to, że się mylił, a racja była po twojej stronie. Ludzie to zapamiętają!</complete>
+    </construction>
+
+    <construction id="small_gift">
+        <name>PREZENT</name>
+        <desc>Jeden z bogatych szlachciców Grudziądza się żeni. Wysłanie mu prezentu wyglądałoby dobrze w oczach lokalnych możnowładców.
+Jeśli nie znajdziesz odpowiedniego podarku do wesela, twoja reputacja na tym ucierpi.</desc>
+        <complete>Cóż to było za wesele! Twój upominek został zauważony i doceniony przez parę młodą.</complete>
+    </construction>
+
+
+    <construction id="castle">
+        <name>ROZBUDOWA ZAMKU</name>
+        <desc>Nasz władca zdecydował, że zamek wymaga rozbudowy. Twoim zadaniem będzie dostarczenie materiałów budowlanych.
+Zrób to w wyznaczonym czasie, albo poniesiesz konsekwencje.</desc>
+        <complete>Zamek jest w o wiele lepszym stanie dzięki twym staraniom. Nasz władca ci tego nie zapomni.</complete>
+    </construction>
+
+    <construction id="progress_report">
+        <name>RAPORT O POSTĘPACH</name>
+        <desc>Przedstawiciele władz miasta chcieliby wiedzieć na co wydajesz pieniądze ze swojego budżetu. Musisz oddelegować dwóch skrybów aby zajęli się robotą papierkową i przygotowali pełen raport. Inaczej twoja reputacja ucierpi.</desc>
+        <complete>Wszystko wydaje się być tak jak trzeba. Raport o wydatkach nie pozostawia cienia wątpliwości, że robisz to co do ciebie należy.</complete>
+    </construction>
+
+
+    <construction id="taxes">
+        <name>PODATKI</name>
+        <desc>Musisz zapłacić podatki. Musisz też wyznaczyć skrybę do wykonania odpowiednich dokumentów.
+Jeśli ci się nie uda, ucierpi twoja reputacja.</desc>
+        <complete>Podatki zapłacone, nic dodać nic ująć. Wzorowy z ciebie mieszkaniec.</complete>
+    </construction>
+
+    <construction id="wishing_well">
+        <name>ŻYCZYMY SOBIE STUDNI</name>
+        <desc>Siostry z Zakonu Świętego Benedykta poprosiły cię o studnie do ich klasztornego ogrodu.
+Ich zakon jest bardzo wpływowy... Lepiej nie ignorować tego życzenia.!
+
+WSKAZÓWKA: Jeśli umieściłeś już wszystkie dostępne studnie w mieście, musisz sprzedać jedną z nich aby wykonać to zadanie.</desc>
+        <complete>Siostry z Zakonu Świętego Benedykta bardzo dziękują ci za studnię.</complete>
+    </construction>
+
+
+
+    <construction id="summer">
+        <name>ODCHWASZCZANIE</name>
+        <desc>Kanał zarasta roślinnością której trzeba się pozbyć. Musisz wyznaczyć do tego celu grupę ludzi.
+Jeśli nie uporasz się z tym na czas, koszta będą o wiele większe.</desc>
+        <complete>Dzikie chaszcze usunięte, kanał udrożniony. Dobra robota!</complete>
+    </construction>
+
+
+    <construction id="winter">
+        <name>NASZA ZIMA ZŁA</name>
+        <desc>Zimą niektóre z rur zamarzają i blokują przepływ wody. Musisz wysłać pracowników aby zajęli się tą sprawą.
+Jeśli zaniedbasz ten obowiązek, uszkodzenia będą bardzo drogie w naprawie.</desc>
+        <complete>Pomimo zimowej aury rury zostały udrożnione, dobra robota.</complete>
+    </construction>
+
+
+    <construction id="medium_gift">
+        <name>SREBRO ALBO OŁÓW</name>
+        <desc>Właściciel pobliskiego młyna, pan Bagniewski, uważa, że kanał Trynki przebiega przez jego teren, zaczął budować jazy i niszczyć groblę.
+Musimy w jakiś sposób dojść z nim do porozumienia. Może wysłanie mu prezentu w geście dobrej woli będzie dobrze odebrane?</desc>
+        <complete>Pan Bagniewski nie stanowi już problemu. Nie musisz wiedzieć nic więcej.</complete>
+    </construction>
+
+
+    <construction id="medium_donation">
+        <name>ŁAŹNIA</name>
+        <desc>Król w zamian za poparcie mieszczan grudziądzkich w prowadzonej wojnie da miastu prawa do korzystania z dawnej łaźni zamkowej oraz zwolni miasto z obowiązku płacenia czynszów z tytułu jej użytkowania.
+To doskonała okazja, żeby zyskać sobie przychylność mieszkańców. Wesprzyjmy starania króla stosowną dotacją.</desc>
+        <complete>Mieszczanie mają teraz dostęp do zamkowej łaźni, a to częściowo dzięki tobie.</complete>
+    </construction>
+
+    <construction id="law_change">
+        <name>CZYSTA WODA</name>
+        <desc>Rzemieślnicy i hodowcy zanieczyszczają kanał doprowadzający wodę w pobliże miasta i konieczna jest zmiana w prawie, która nie spodoba się wszystkim. Należy wprowadzić zakaz zmiękczania i garbowania skór, a także budowy obór oraz chlewów przy Kanale Trynka.
+Konieczne będą odpowiednie dokumenty oraz skrybi, którzy zajmą się szczegółami.</desc>
+        <complete>Jakość wody w kanale znacznie się polepszyła, co zdecydowanie wszystkim wyjdzie na dobre - a tobie da dodatkowych zwolenników.</complete>
+    </construction>
+
+    <construction id="unpopular">
+        <name>NIEPOPULARNA DECYZJA</name>
+        <desc>W związku z niedoborem wody konieczne jest wprowadzenie ograniczeń i dodatkowych opłat. Nikt nie będzie mógł pobierać wody do produkcji piwa bez zapłacenia opłaty studziennej.
+Przyniesie to trochę dodatkowych pieniędzy, ale nie spodoba się ludziom.
+Skryba wyposażony w kilka dokumentów powinien załatwić sprawę.</desc>
+        <complete>Ludzie nie są zadowoleni z nowych opłat, ale być może wyjdą one jeszcze wszystkim na dobre.</complete>
+    </construction>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <gui id="diff_header">
+        <string>Wybierz poziom trudności:</string>
+    </gui>
+
+    <gui id="diff_easy">
+        <string>Łatwy</string>
+    </gui>
+
+    <gui id="diff_normal">
+        <string>Normalny</string>
+    </gui>
+
+    <gui id="diff_hard">
+        <string>Trudny</string>
+    </gui>
+
+    <gui id="diff_hard2">
+        <string>Niemożliwy</string>
+    </gui>
+
+    <gui id="diff_back">
+        <string>Wtecz</string>
+    </gui>
+
+    <gui id="construction_complete">
+        <string>- konstrukcja ukończona!</string>
+    </gui>
+
+
+    <gui id="conditions_not_met">
+        <string>Nie wszystkie warunki zostały spełnione!</string>
+    </gui>
+
+    <gui id="turn">
+        <string>Tura</string>
+    </gui>
+
+    <gui id="not_enough_money">
+        <string>Za mało @ monet!</string>
+    </gui>
+    <gui id="not_enough_infl">
+        <string>Za mało # wpływów!</string>
+    </gui>
+    <gui id="discarded">
+        <string>Odrzucone</string>
+    </gui>
+    <gui id="deck">
+        <string>Talia</string>
+    </gui>
+    <gui id="cards">
+        <string>kart</string>
+    </gui>
+    <gui id="refund">
+        <string>odzyskasz</string>
+    </gui>
+    <gui id="new cards">
+        <string>Odblokowuje karty</string>
+    </gui>   
+    <gui id="failure penalty">
+        <string>Kara za porażkę</string>
+    </gui>
+    <gui id="completion reward">
+        <string>Nagroda za ukończenie</string>
+    </gui>
+    <gui id="time limit">
+        <string>Limit}czasu</string>
+    </gui>
+    <gui id="turns">
+        <string>tur</string>
+    </gui>
+    <gui id="finalisation cost">
+        <string>Koszt finalizacji</string>
+    </gui>
+    <gui id="construction_card_reqs">
+        <desc2>Wymaga:</desc2>
+    </gui>
+    <gui id="drawer_name_worker">
+        <header>Kwatery</header>
+    </gui>
+    <gui id="drawer_name_component">
+        <header>Magazyn</header>
+    </gui>
+    <gui id="drawer_name_document">
+        <header>Archiwum</header>
+    </gui>
+    <gui id="options_sound">
+        <string>DŹWIĘK</string>
+    </gui>
+    <gui id="options_music">
+        <string>MUZYKA</string>
+    </gui>
+    <gui id="options_fullscreen">
+        <string>PEŁNY EKRAN</string>
+    </gui>
+    <gui id="options_clickmode">
+        <string>PRZESUWANIE KART POPRZEZ...</string>
+    </gui>
+    <gui id="options_language">
+        <string>JĘZYK</string>
+    </gui>
+    <gui id="options_language_pl">
+        <string>Polski</string>
+    </gui>
+    <gui id="options_language_en">
+        <string>English</string>
+    </gui>
+    <gui id="options_tutorials">
+        <string>INSTRUKCJE</string>
+    </gui>
+    <gui id="options_quit">
+        <string>MENU GŁÓWNE</string>
+    </gui>
+    <gui id="options_restart">
+        <string>ZACZNIJ GRĘ OD NOWA</string>
+    </gui>
+    <gui id="options_load">
+        <string>COFNIJ TURĘ</string>
+    </gui>
+    <gui id="options_continue">
+        <string>KONTYNUUJ</string>
+    </gui>
+    <gui id="options_on">
+        <string>Wł.</string>
+    </gui>
+    <gui id="options_off">
+        <string>Wył.</string>
+    </gui>
+    <gui id="options_clicking">
+        <string>Klikanie</string>
+    </gui>
+    <gui id="options_dragging">
+        <string>Przeciąganie</string>
+    </gui>
+    <gui id="options_close">
+        <string>ZAMKNIJ</string>
+    </gui>
+
+    
+    <gui id="main_new_game">
+        <string>NOWA GRA</string>
+    </gui>
+    
+    <gui id="main_continue">
+        <string>KONTYNUUJ GRĘ</string>
+    </gui>
+    
+    <gui id="main_options">
+        <string>OPCJE</string>
+    </gui>
+    
+    <gui id="main_credits">
+        <string>AUTORZY</string>
+    </gui>
+    
+    
+    <gui id="game_over">
+        <string>KONIEC GRY
+
+Zawiodłeś.
+Może robiłeś co mogłeś, ale po prostu miałeś pecha - koniec końców liczy się efekt. Twoja reputacja była już nie do odratowania, ludzie przestali wierzyć w twoje umiejętności.
+Zostałeś zastąpiony przez kogoś innego, kto miałby pomóc stworzyć wodociągi w Grudziądzu...</string>
+    </gui>
+    
+    
+    <gui id="victory">
+        <string>UDAŁO SIĘ!
+
+W dzisiejszych czasach dostęp do wody jest dla nas czymś oczywistym. Nie zastanawiamy się zwykle jak to było kiedyś, nie myślimy o tym jak natychmiastowy i powszechny dostęp do wody nie zawsze był czymś tak normalnym.
+Dzięki Twoim staraniom Grudziądz był wystarczająco dobrze zaopatrzony w wodę by móc się rozwijać.
+
+Zaczęto wdrażać współczesny system wodno-kanalizacyjny, a to wszystko dzięki tobie!
+
+Ludzie zapamiętają cię jako prawdziwego bohatera!
+</string>
+    <string2>Liczba tur:</string2>
+    </gui>
+    
+    <gui id="population_increase_warning">
+    <string>UWAGA
+Ta konstrukcja zwiększy
+przyrost populacji o ` +1</string>
+    </gui>
+
+<gui id ="achiev_hermans">
+<string>RÓW HERMANA
+Zbuduj Rów Hermana</string>
+</gui>
+<gui id ="achiev_trynka">
+<string>Kanał Trynki
+Zbuduj Kanał Trynki</string>
+</gui>
+<gui id ="achiev_s1">
+<string>JESTEŚ ZWYCIĘZCĄ
+Ukończ grę na poziomie Normalnym.</string>
+</gui>
+<gui id ="achiev_s2">
+<string>RURMISTRZ
+Ukończ grę na poziomie Trudnym.</string>
+</gui>
+<gui id ="achiev_s3">
+<string>NIC NIE JEST NIEMOŻLIWE
+Ukończ grę na poziomie Niemożliwym.</string>
+</gui>
+<gui id ="achiev_coins">
+<string>NIE WSZYSTKO ZŁOTO
+Zdobądź w sumie 5000 monet.
+Można wykonać poprzez wiele rozgrywek.</string>
+</gui>
+<gui id ="achiev_fortune">
+<string>KOŁO FORTUNY
+Utrzymaj wysokie zadowolenie we wszystkich parcelach
+w mieście przez 3 kolejne tury.</string>
+</gui>
+<gui id ="achiev_requests">
+<string>JEŚLI NIE CHCESZ MOJEJ ZGUBY
+Wykonaj w sumie 20 zadań.
+Można wykonać poprzez wiele rozgrywek.</string>
+</gui>
+<gui id ="achiev_time">
+<string>ANI CHWILI NUDY
+Ukończ grę w 130 tur lub mniej.</string>
+</gui>
+<gui id ="achiev_well">
+<string>KTO POD KIM DOŁKI KOPIE
+Nie wykop ani jednej studni podczas gry.
+(Rząpie są OK, a ukończenie pewnego zadania
+ze studnią nie zniweczy postępu.)</string>
+</gui>
+<gui id ="achiev_progress">
+<string>Postęp</string>
+</gui>
+<gui id ="privacy_policy">
+<string>Polityka prywatności</string>
+</gui>
+    <popup id="victory">
+        <header>BUDOWA UKOŃCZONA!</header>
+        <string>Powstanie systemu wodno-kanalizacyjny kończy erę działania kunsztu wodnego i otwiera przed Grudziądzem nowy rozdział w historii!
+Gratulacje!</string>
+    </popup>
+
+
+    <popup id="sell_6th">
+        <header>RĘKA JEST PEŁNA!</header>
+        <string>Próbujesz sprzedać kartę, ale masz komplet pięciu kart na ręce.
+Nadal możesz sprzedać wybraną kartę, ale zamiast trafić z powrotem do ręki, wyląduje ona na stosie kart odrzuconych.
+
+Kontynuować?</string>
+    </popup>
+
+    <popup id="fire_started">
+        <header>PALI SIĘ!</header>
+        <string>Gdzieś w mieście wybuchł pożar!
+Musisz wytypować któregoś ze swoich pracowników roznoszących wodę (dowolnego rodzaju), aby ugasił ogień.
+Jednostki przypisane do pożaru będą usunięte z miasta, a ich karty zostaną odrzucone (na stos kart odrzuconych - nie zostaną usunięte z gry)
+Lepiej się pospiesz, gdyż szalejący pożar kosztować cię będzie dużo # wpływów co każdą turę!</string>
+    </popup>
+
+    <popup id="fire_spreads">
+        <header>OGIEŃ SZALEJE!</header>
+        <string>Pożar nadal trawi miasto.
+Płomienie rosną w siłę i jeśli się rozprzestrzenią, będzie potrzeba więcej niż tylko jednego pracownika, żeby je ugasić!
+Jednostki przypisane do pożaru będą usunięte z miasta, a ich karty zostaną odrzucone (na stos kart odrzuconych - nie zostaną usunięte z gry)
+Lepiej się pospiesz, gdyż szalejący pożar kosztować cię będzie dużo # wpływów co każdą turę!</string>
+    </popup>
+
+    <popup id="construction_already_open">
+        <header>Masz już rozpoczętą konstrukcję</header>
+        <string>Możesz mieć aktywną tylko jedną konstrukcję na raz.
+Ukończ lub anuluj aktualną konstrukcję, zanim zagrasz kartę kolejnej.</string>
+    </popup>
+    <popup id="construction_build_block">
+        <header>Nie masz wymaganych kart!</header>
+        <string>Miej oko na symbol { na kartach konstrukcji. Oznacza on, że nie posiadasz wszystkich wymaganych komponentów. Nie posiadasz, to znaczy nie masz ich nie tylko na ręce ani w żadnym ze schowków, ale też w stosie kart odrzuconych ani w talii.
+
+Oznacza to po prostu, że brakująca karta jeszcze nie weszła do gry, a ty nie byłbyś w stanie ukończyć bez niej tej budowli. Musisz najpierw uzyskać brakującą kartę - pewnie z jakiejś innej konstrukcji.</string>
+    </popup>
+
+    <popup id="construction_cancel">
+        <header>Czy na pewno?</header>
+        <string>Czy jesteś pewien, że chcesz anulować tą konstrukcję?
+Karta konstrukcji zostanie zwrócona na stos kart odrzuconych. Wszystkie zagrane w konstrukcji karty także zostaną zwrócone na stos kart odrzuconych. Otrzymasz rekompensatę w postaci zwrotu połowy kosztu każdej z zagranych kart. Koszt samej konstrukcji nie jest zwracany.</string>
+    </popup>
+    <popup id="consumable_card_blocked">
+        <header>Nie możesz tu tego użyć</header>
+        <string>Ta karta jest jednorazowa i zostanie usunięta z gry po użyciu.
+
+Wykorzystanie jej tutaj prawdopodobnie nie jest najlepszym pomysłem...</string>
+    </popup>
+
+    <popup id="request_complete">
+        <header>zadanie wykonane!</header>
+    </popup>
+
+    <popup id="request_failed">
+        <header>Zadanie - porażka!</header>
+        <string>Nie udało ci się wykonać zadania, czas minął...
+Musisz ponieść konsekwencje porażki.</string>
+    </popup>
+
+    <popup id="inf_help">
+        <header>To bardzo niepokojące!</header>
+        <string>Twoje # wpływy spadły poniżej 0.
+Nie możesz efektywnie zarządzać zaopatrzeniem miasta w wodę jeśli nikt nie ma ochoty wykonywać twoich poleceń.
+
+Ponieważ twoje zadanie jest bardzo ważne, władze miasta zgodziły się dać ci jeszcze jedną szansę. 
+Oto otrzymujesz #50 - ale nikt nigdy więcej nie pomoże ci w ten sposób.
+Jeśli twoje # wpływy spadną do -100, będziesz musiał szukać pracy w innym zawodzie...</string>
+    </popup>
+
+    <popup id="tutorial_disable">
+        <header>Wyłączyć instrukcje?</header>
+        <string>Gdy wyłączysz instrukcje tutorialowe, będzie można włączyć je ponownie dopiero zaczynając nową grę. Czy chcesz je wyłączyć?</string>
+    </popup>
+    <popup id="tutorial_enable">
+        <header>Instrukcje włączone!</header>
+        <string>Instrukcje tutorialowe zaczną pokazywać się gdy rozpoczniesz nową grę.</string>
+    </popup>
+
+    <popup id="tutorial_hello">
+        <header>Witamy w Grudziądzu!</header>
+        <string>Miasto Grudziądz zostało założone przez zakon krzyżacki w 1291 r. w północnej części dzisiejszej Polski nad rzeką Wisłą w otoczeniu mokradeł. Wysokie położenie na skarpie nadwiślanej sprawiło, że od początków swojego istnienia miasto zmagało się z trudnościami w dostępie do czystej wody pitnej. Wraz z rosnącą liczbą mieszkańców problem niedostatku wody stał się argumentem do zastosowania w Grudziądzu licznych, nowatorskich na skalę europejską rozwiązań technicznych...</string>
+    </popup>
+
+    <popup id="tutorial_3">
+        <header>Konstrukcja zakończona!</header>
+        <string>Karty użyte w konstrukcji zostały umieszczone na stosie kart odrzuconych - otrzymasz je ponownie, gdy skończą się karty w talii.
+
+Tymczasem zyskałeś tam kilka nowych kart!
+
+Możesz sprawdzić jakie karty znajdują się w talii (oraz na stosie kart odrzuconych) przez najechanie na nie kursorem.</string>
+    </popup>
+
+    <popup id="tutorial_7">
+        <header>Koniec tury</header>
+        <string>Gdy zakończysz turę, najpierw otrzymasz @ 5 monet. Patrz jak lecą!</string>
+    </popup>
+
+    <popup id="tutorial_14">
+        <header>Sprzedawanie</header>
+        <string>Może się zdarzyć, że będziesz pilnie potrzebować kilku @ monet - w takim przypadku użyj tego przycisku, aby wejść w tryb sprzedawania i pozbądź się czegoś z miasta za co już zapłaciłeś (jak na przykład nasz nosiwoda). Sprzedana karta wróci na rękę, chyba że jest ona pełna - wtedy trafi ona na stos kart odrzuconych.
+
+Prawdopodobnie nie chcesz teraz nic sprzedawać, ale ta informacja może ci się przydać.</string>
+    </popup>
+
+    <popup id="tutorial_16">
+        <header>Co dalej?</header>
+        <string>Znasz już podstawy.
+Utrzymuj poziomy $  powyżej `  i próbuj opracowywać nowe technologie poprzez wykonywanie konstrukcji.
+
+Pamiętaj też, że życie często potrafi nas zaskakiwać w niespodziewany sposób...</string>
+    </popup>
+    <popup id="tutorial_drawer">
+        <header>Wolne miejsce w przechowalni!</header>
+        <string>Zwróć uwagę, że masz przynajmniej jedno wolne miejsce w przechowalni (Kwatery/Magazyn/Archiwum) i przynajmniej jedną pasującą do nich kartę.
+
+Może jest coś co chcesz tam przechować na później?
+Chomikowanie kart nic nie kosztuje i możesz w dowolnej chwili zagrać lub odrzucić przechowywaną kartę.</string>
+    </popup>
+    <popup id="tutorial_drawer_construction">
+        <header>Dostępna konstrukcja w Archiwum!</header>
+        <string>Nie masz obecnie rozpoczętej żadnej konstrukcji, a w Archiwum leży co najmniej jeden dokument z planami konstrukcji.
+
+Nie, żebyś o nim zapomniał, prawda?</string>
+    </popup>
+    <popup id="restart_game">
+        <header>Zacząć grę od nowa?</header>
+        <string>W ten sposób zaczniesz całą grę od początku.
+
+STRACISZ CAŁY SWÓJ DOTYCHCZASOWY POSTĘP!
+Czy jesteś pewien?</string>
+    </popup>
+    <popup id="load_game">
+        <header>Zacząć turę od nowa?</header>
+        <string>Cofniesz się do początku tury.
+Kontynuować?</string>
+    </popup>
+    <popup id="inf_over_100">
+        <header>Wpływy osiągnęły wartość 100</header>
+        <string>Twoje # wpływy nie mogą przekroczyć wartości 100.
+
+Za każde #2 powyżej 100, otrzymasz @1.
+</string>
+    </popup>
+    <popup id="exit_main">
+        <header>Wyjść z gry?</header>
+        <string>Postęp od początku tej tury będzie utracony. Czy na pewno chcesz wyjść do menu głównego?</string>
+    </popup>
+    <popup id="tutorial_influence">
+        <header>Wpływy</header>
+        <string>Teraz będziesz zyskiwać (lub tracić) # wpływy.
+# Wpływy pokazują jaki masz posłuch wśród ludzi i jak oceniają oni twoje zdolności zarządzania.
+Na razie nic nie zyskasz ani nic nie stracisz. Ten kredyt zaufania mieszkańców nie potrwa wiecznie, więc uważaj.
+</string>
+    </popup>
+
+    <popup id="population_increase">
+        <header>Wzrost populacji</header>
+        <string>Populacja miasta będzie rosnąć wraz z upływem czasu, a wraz z nią będzie zwiększać się także `  zapotrzebowanie na wodę.
+
+Patrz uważnie, gdzie populacja się za chwilę zwiększy...
+</string>
+    </popup>
+    <popup id="no_cookies">
+        <header>Funkcja zapisu niedostępna</header>
+        <string>Gra nie może uzyskać dostępu do local storage - prawdopodobnie w przeglądarce są wyłączone ciasteczka.
+Możesz grać, ale:
+- Nie będziesz mógł wznowić gry gdy zamkniesz stronę;
+- Nie będziesz mógł zapisać ustawień
+(język, głośność);
+- Nie będziesz mógł zapisać odblokowanych osiągnięć;
+Zaleca się włączenie ciasteczek.</string>
+    </popup>
+
+
+
+
+
+
+
+    <tutorial id="0">
+        <string>Zacznijmy od zbudowania podstawowego źródła wody. Aby zagrać kartę konstrukcji "Punkt czerpania wody", umieść ją bezpośrednio nad miastem.</string>
+    </tutorial>
+
+    <tutorial id="1">
+        <string>To jest ekran konstrukcji. Musisz wypełnić wszystkie puste miejsca, zagrywając odpowiednie karty.</string>
+    </tutorial>
+    <tutorial id="2">
+        <string>Teraz zakończ konstrukcję naciskając świecący przycisk!</string>
+    </tutorial>
+    <tutorial id="4">
+        <string>Masz już źródło wody, ale w zasadzie ile jej potrzebują mieszkańcy? Możesz to sprawdzić, włączając widok ZAPOTRZEBOWANIA I ZAOPATRZENIA.</string>
+    </tutorial>
+    <tutorial id="5">
+        <string>$  pokazuje aktualne ZAOPATRZENIE każdej parceli w wodę.
+Chwilowo wszędzie są zera, bo jeszcze nie dostarczasz żadnej wody.
+`  oznacza ZAPOTRZEBOWANIE.
+Ludzie mogą znosić niewielką różnicę między ` a $ , ale jeśli zaniedbasz ich rosnące potrzeby, sprowadzi to na ciebie kłopoty.</string>
+    </tutorial>
+    <tutorial id="6">
+        <string>$  pokazuje aktualne ZAOPATRZENIE każdej parceli w wodę.
+Chwilowo wszędzie są zera, bo jeszcze nie dostarczasz żadnej wody.
+`  oznacza ZAPOTRZEBOWANIE.
+Ludzie mogą znosić niewielką różnicę między ` a $ , ale jeśli zaniedbasz ich rosnące potrzeby, sprowadzi to na ciebie kłopoty.
+Naciśnij jeszcze raz wskazany przycisk, zaby wyłączyć widok ZAPOTRZEBOWANIA I ZAOPATRZENIA.</string>
+    </tutorial>
+    <tutorial id="7">
+        <string>Nic tylko kończyć turę.
+Dostaniesz kilka monet i nowe karty do ręki.</string>
+    </tutorial>
+    <tutorial id="11">
+        <string>Czas zatrudnić pierwszego nosiwodę. Umieść go na jednej z parceli i zobacz jak $  zaopatrzenie się zwiększa.</string>
+    </tutorial>
+    <tutorial id="12">
+        <string>Gdy pracownik jest przydzielony do parceli, będzie ją w kółko patrolować.
+Możesz w dowolnej chwili przenieść go do innej parceli.
+
+Spróbuj przenieść go teraz.</string>
+    </tutorial>
+    <tutorial id="18">
+        <string>Wybudowałeś kunszt wodny. To początek działania zaopatrzenia w wodę bazującego na rurociągach. Musisz kłaść rury wzdłuż ulic i budować studnie wodociągowe (rząpie) tam gdzie chcesz zwiększyć $  zaopatrzenie. Naciśnij przycisk z symbolem rury, aby pokazać RURY ORAZ WYDAJNOŚĆ KUNSZTU.</string>
+    </tutorial>
+
+    <tutorial id="19">
+        <string>Chwilowo nie masz żadnych rur, ale widzisz już punkt startowy wodociągu.
+Zwróć uwagę na kolory i liczby na ziemi - im dalej od źródła, tym mniej efektywny jest twój system.
+$ 1 $ 2 $ 3 $ 4 - to aktualna wydajność poszczególnych stref.
+Naciśnij przycisk z rurą jeszcze raz, aby ukryć ten widok.</string>
+    </tutorial>
+
+
+    <tooltip id="constructions_list">
+        <string>Ukończone konstrukcje:</string>
+    </tooltip>
+    <tooltip id="constructions_none">
+        <string>BRAK</string>
+    </tooltip>
+
+    <tooltip id="card_resource">
+        <string>Puste miejsce na kartę ~ zasobów.</string>
+    </tooltip>
+    <tooltip id="card_document">
+        <string>Puste miejsce na kartę \ dokumentu.</string>
+    </tooltip>
+    <tooltip id="card_worker">
+        <string>Puste miejsce na kartę _ pracownika.</string>
+    </tooltip>
+    <tooltip id="end_turn">
+        <string>Koniec tury</string>
+    </tooltip>
+    <tooltip id="finish_construction">
+        <string>Zakończ konstrukcję. Musisz opłacić koszt finalizacji budowy.</string>
+    </tooltip>
+    <tooltip id="finish_request">
+        <string>Zakończ żądanie. Musisz opłacić koszt finalizacji żądania (jeśli jakiś istnieje).</string>
+    </tooltip>
+    <tooltip id="cancel_construction_tutorial">
+        <string>Anuluj konstrukcję. Otrzymasz zwrot 50% kosztu każdej z zagranych kart.
+        
+Nie możesz anulować konstrukcji na tym etapie szkolenia.</string>
+    </tooltip>
+    <tooltip id="cancel_construction">
+        <string>Anuluj konstrukcję. Otrzymasz zwrot 50% kosztu każdej z zagranych kart.</string>
+    </tooltip>
+    <tooltip id="open_close_construction">
+        <string>Otwórz/zamknij widok konstrukcji.</string>
+    </tooltip>
+    <tooltip id="open_close_request">
+        <string>Otwórz/zamknij widok żądania.</string>
+    </tooltip>
+    <tooltip id="close">
+        <string>Zamknij</string>
+    </tooltip>
+    <tooltip id="sort">
+        <string>Sortuj - rozmieść karty według typów</string>
+    </tooltip>
+    <tooltip id="sell">
+        <string>Sprzedaj - możesz cofnąć kartę do ręki (lub na stos kart odrzuconych) i otrzymać zwrot 50% kosztów zagrania karty.</string>
+    </tooltip>
+    <tooltip id="show_pipes">
+        <string>Pokaż/ukryj RURY ORAZ WYDAJNOŚĆ KUNSZTU</string>
+    </tooltip>
+    <tooltip id="show_supply">
+        <string>Pokaż/ukryj ZAPOTRZEBOWANIE I ZAOPATRZENIE</string>
+    </tooltip>
+    <tooltip id="drawer_scroll">
+        <string>Archiwum 
+(przechowalnia kart \ dokumentów)</string>
+    </tooltip>
+    <tooltip id="drawer_res">
+        <string>Magazyn 
+(przechowalnia kart ~ zasobów)</string>
+    </tooltip>
+    <tooltip id="drawer_humans">
+        <string>Kwatery
+(przechowalnia kart _ pracowników)</string>
+    </tooltip>
+    <tooltip id="drawer_recycle">
+        <string>Odrzuć kartę</string>
+    </tooltip>
+    <tooltip id="options">
+        <string>Opcje gry</string>
+    </tooltip>
+    <tooltip id="volume_up">
+        <string>Głośniej</string>
+    </tooltip>
+    <tooltip id="volume_down">
+        <string>Ciszej</string>
+    </tooltip>
+    <tooltip id="music_off">
+        <string>Wyłącz muzykę</string>
+    </tooltip>
+    <tooltip id="music_on">
+        <string>Włącz muzykę</string>
+    </tooltip>
+    <tooltip id="language_en">
+        <string>English</string>
+    </tooltip>
+    <tooltip id="language_pl">
+        <string>Polski</string>
+    </tooltip>
+    <tooltip id="tutorials_off">
+        <string>Wyłącz instrukcje (tutoriale)</string>
+    </tooltip>
+    <tooltip id="tutorials_on">
+        <string>Włącz instrukcje (tutoriale)</string>
+    </tooltip>
+    <tooltip id="fullscreen_on">
+        <string>Włącz pełny ekran</string>
+    </tooltip>
+    <tooltip id="fullscreen_off">
+        <string>Wyłącz pełny ekran</string>
+    </tooltip>
+    <tooltip id="clickmode_on">
+        <string>-</string>
+    </tooltip>
+    <tooltip id="clickmode_off">
+        <string>-</string>
+    </tooltip>
+    <tooltip id="btn_quit">
+        <string>Wyjdź do menu głównego. Postęp od początku obecnej tury zostanie utracony.</string>
+    </tooltip>
+    <tooltip id="btn_restart">
+        <string>Zacznij od nowa. Nadpisze to twój obecny postęp w grze.</string>
+    </tooltip>
+    <tooltip id="btn_load">
+        <string>Cofnij do początku obecnej tury. Utracisz postęp od początku tej tury - dobry sposób aby naprawić wszelkie pomyłki!</string>
+    </tooltip>
+    <tooltip id="btn_continue">
+        <string>Graj dalej!</string>
+    </tooltip>
+    <tooltip id="btn_close_options">
+        <string>Zamknij opcje</string>
+    </tooltip>
+    <tooltip id="btn_new_game">
+        <string>Zacznij nową grę!</string>
+    </tooltip>
+    <tooltip id="btn_main_continue">
+        <string>Kontynuuj poprzednio zaczętą grę.</string>
+    </tooltip>
+        <tooltip id="btn_achievements">
+        <string>Potrafisz odblokować wszystkie?</string>
+    </tooltip>
+    <tooltip id="btn_credits">
+        <string>Kto zrobił tę grę?</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_easy">
+        <string>Relaks bez stresu.
+
+- Ceny -20%
+- Startowe wpływy +20
+- Wolniejszy przyrost populacji
+
+Uwaga: Ten poziom trudności NIE zezwala na zdobywanie osiągnięć.</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_normal">
+        <string>Normalny poziom trudności. Zalecany dla większości graczy.</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_hard">
+        <string>Dla lubiących wyzwania...
+
+- Ceny +5%
+- Ciągnij tylko 4 karty na turę
+
+Uwaga: instrukcje tutorialowe zostaną automatycznie wyłączone.</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_hard2">
+        <string>Tylko dla weteranów.
+
+- Ceny +10%
+- Ciągnij tylko 3 karty na turę
+- Na początku gry 2 losowe parcele w mieście mają wyższe zapotrzebowanie na wodę
+
+Uwaga: instrukcje tutorialowe zostaną automatycznie wyłączone.</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_back">
+        <string>Powrót do menu głównego</string>
+    </tooltip>
+    <tooltip id="diff_hard_locked">
+        <string>[NIEDOSTĘPNE]
+Ukończ grę na poziomie Normalnym, aby odblokować ten poziom trudności.</string>
+    </tooltip>
+    <tooltip id="diff_hard2_locked">
+        <string>[NIEDOSTĘPNE]
+Ukończ grę na poziomie Trudnym, aby odblokować ten poziom trudności.</string>
+    </tooltip>
+    <tooltip id="diff_level">
+        <string>Poziom trudności:</string>
+    </tooltip>
+
+    <tooltip id="sell_what">
+        <string>Sprzedaj:</string>
+    </tooltip>
+
+    <tooltip id="sell_for">
+        <string>za @</string>
+    </tooltip>
+    <tooltip id="popul_info1">
+        <string>Na początku każdej tury populacja miasta
+wzrośnie o `</string>
+    </tooltip>
+    <tooltip id="popul_info2">
+        <string>
+Nowe zapotrzebowanie zostanie dodane
+do przypadkowych parceli.</string>
+    </tooltip>
+    <tooltip id="round_info1">
+        <string>Minęło już</string>
+    </tooltip>
+    <tooltip id="round_info2">
+        <string>tur od początku gry.</string>
+    </tooltip>
+    <tooltip id="money_info1">
+        <string>Monety
+
+Masz @</string>
+    </tooltip>
+    <tooltip id="money_info2">
+        <string> monet.
+
+Na początku każdej tury dostaniesz @</string>
+    </tooltip>
+    <tooltip id="money_info3">
+        <string> monet.</string>
+    </tooltip>
+    <tooltip id="infl_info1">
+        <string>Wpływy
+
+Masz #</string>
+    </tooltip>
+    <tooltip id="infl_info2">
+        <string> wpływów.
+
+W obecnych warunkach na początku każdej tury ta wartość zmieni się o #</string>
+    </tooltip>
+    <tooltip id="infl_info3">
+        <string>.
+
+Połowa wszystkich # wpływów powyżej 100 jest zamieniana na @monety.
+
+Jeśli spadniesz do #-100 przegrasz grę!</string>
+    </tooltip>
+    <tooltip id="back_btn_main">
+        <string>Powrót do menu głównego</string>
+    </tooltip>
+    <tooltip id="no_water">
+        <string>Uwaga! Nie ma dostępu do wody! Sprawdź połączenie rur.</string>
+    </tooltip>
+
+
+
+
+
+
+
+<credits id="credits_1">
+<string>AUTOR GRY
+Mateusz "scriptwelder" Sokalszczuk</string>
+</credits>
+
+<credits id="credits_2">
+<string>MUZYKA
+Chris Carlone</string>
+</credits>
+
+<credits id="credits_3">
+<string>Gra na podstawie wyników badań naukowych realizowanych przez Wacława Kulczykowskiego na Wydziale Historycznym Uniwersytetu Gdańskiego</string>
+</credits>
+
+<credits id="credits_4">
+<string>FINANSOWANIE GRY
+"Nowoczesne metody upowszechniania wyników
+badań historycznych: gra komputerowa" - zadanie
+finansowane w ramach umowy 521/P-DUN/2019
+ze środków Ministerstwa Nauki i Szkolnictwa
+Wyższego przeznaczonych na Działalność
+Upowszechniającą Naukę.
+Kierownik zadania: Wacław Kulczykowski.
+</string>
+</credits>
+
+<credits id="credits_5">
+<string>FINANSOWANIE BADAŃ
+"Budowa średniowiecznych systemów zaopatrzenia w wodę ośrodków osadniczych w dolinie rzeki Osy na terenie ziemi chełmińskiej" - projekt finansowany ze środków Narodowego Centrum Nauki w ramach konkursu PRELUDIUM 12 (nr projektu badawczego: 2016/23/N/HS3/03168).
+Kierownik projektu: Wacław Kulczykowski.</string>
+</credits>
+
+<credits id="credits_6">
+<string>
+Archeologia Live &amp; Online (archeonline.pl)
+Uniwersytet Gdański (ug.edu.pl)
+Wydział Historyczny UG (historia.ug.edu.pl)</string>
+</credits>
+
+<credits id="credits_7">
+<string>PATRONAT
+Prezydent Grudziądza
+Muzeum im. ks. dr. Władysława Łęgi w Grudziądzu
+Miejskie Wodociągi i Oczyszczalnia sp.}z}o.o.}w}Grudziądzu
+
+KOREKTA TEKSTU (ANGIELSKI) I TESTOWANIE
+Anton Svensson</string>
+</credits>
+
+<privacy_policy id="splash">
+<string>POLSKI
+Gra Waterworks! może zbierać dane analityczne i marketingowe.
+Przed pierwszym uruchomieniem gry musisz zaakceptować
+politykę prywatności.
+
+Kontynuując akceptujesz te warunki.
+Jeśli masz mniej niż 16 lat, zgodę musi wyrazić twój prawny opiekun.
+
+
+
+ENGLISH
+Waterworks! may collect analytical
+and marketing data.
+Before starting the game for the first time, you must accept the privacy policy.
+
+By}continuing,}you}accept}these}terms.
+If you are less than}16}years old, consent must be given by your legal guardian.</string>
+<accept>AKCEPTUJĘ
+ACCEPT</accept>
+</privacy_policy>
+
+    
+</strings>

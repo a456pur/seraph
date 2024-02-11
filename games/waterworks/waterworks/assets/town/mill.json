@@ -1,0 +1,278 @@
+{ "frames": {
+   "mill0": {
+    "frame": { "x": 0, "y": 0, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill1": {
+    "frame": { "x": 59, "y": 0, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill2": {
+    "frame": { "x": 118, "y": 0, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill3": {
+    "frame": { "x": 0, "y": 44, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill4": {
+    "frame": { "x": 59, "y": 44, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill5": {
+    "frame": { "x": 118, "y": 44, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill6": {
+    "frame": { "x": 0, "y": 88, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill7": {
+    "frame": { "x": 59, "y": 88, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill8": {
+    "frame": { "x": 118, "y": 88, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill9": {
+    "frame": { "x": 0, "y": 132, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill10": {
+    "frame": { "x": 59, "y": 132, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill11": {
+    "frame": { "x": 118, "y": 132, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill12": {
+    "frame": { "x": 0, "y": 176, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill13": {
+    "frame": { "x": 59, "y": 176, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill14": {
+    "frame": { "x": 118, "y": 176, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill15": {
+    "frame": { "x": 0, "y": 220, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill16": {
+    "frame": { "x": 59, "y": 220, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill17": {
+    "frame": { "x": 118, "y": 220, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill18": {
+    "frame": { "x": 0, "y": 264, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill19": {
+    "frame": { "x": 59, "y": 264, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill20": {
+    "frame": { "x": 118, "y": 264, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill21": {
+    "frame": { "x": 0, "y": 308, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill22": {
+    "frame": { "x": 59, "y": 308, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill23": {
+    "frame": { "x": 118, "y": 308, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill24": {
+    "frame": { "x": 0, "y": 352, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill25": {
+    "frame": { "x": 59, "y": 352, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill26": {
+    "frame": { "x": 118, "y": 352, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill27": {
+    "frame": { "x": 0, "y": 396, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill28": {
+    "frame": { "x": 59, "y": 396, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill29": {
+    "frame": { "x": 118, "y": 396, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill30": {
+    "frame": { "x": 0, "y": 440, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "mill31": {
+    "frame": { "x": 59, "y": 440, "w": 59, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 580, "y": 211, "w": 59, "h": 44 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://wwwprite.org/",
+  "version": "1.2.16.3-x64",
+  "image": "mill.png",
+  "format": "RGBA8888",
+  "size": { "w": 177, "h": 484 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer 1", "opacity": 128, "blendMode": "normal" },
+   { "name": "Layer 2", "opacity": 128, "blendMode": "normal" },
+   { "name": "Layer 4", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 3", "opacity": 160, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

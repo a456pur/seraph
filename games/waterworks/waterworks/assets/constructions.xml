@@ -1,0 +1,922 @@
+<?xml version="1.0"?>
+<constructions>
+    <construction id="water_source" image="carrier">
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="permit" type="document"/>
+        <sparks x ="604" y="260" />
+
+        <!--<add_cards id="worker" amount="2"/>-->
+        <add_cards id="water_carrier" amount="3"/>
+        <add_cards id="quarters" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>
+        <!--<remove_cards id="" amount="1"/>-->
+        <!--<replace_cards old_id="" new_id="" include_played="true"/>-->
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+    <construction id="upgraded_water_source" image="source2" population="1">
+        <cost money="10" infl="10"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="permit" type="document"/>
+        <sparks x ="604" y="260" />
+
+        <add_cards id="water_carrier" amount="2"/>
+        <add_cards id="carts" amount="1"/>
+        <add_cards id="water_crafts_guild" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+    <construction id="quarters" image="quarters1">
+        <cost money="5" infl="10"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="permit" type="document"/>
+        <sparks x ="116" y="10" />
+
+        <unlock id="quarters"/>
+        <add_cards id="water_carrier" amount="2"/>
+        <add_cards id="foreman" amount="1"/>
+        <add_cards id="worker" amount="3"/>        
+        <add_cards id="scribe" amount="3"/>
+        <add_cards id="warehouse" amount="1"/>
+        <add_cards id="archive" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+    <construction id="quarters2" image="quarters2">
+        <cost money="10" infl="10"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="orders_sigil" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="116" y="10" />
+
+        <unlock id="quarters"/>
+        <add_cards id="foreman" amount="1"/>
+        <add_cards id="worker" amount="3"/>        
+        <add_cards id="scribe" amount="1"/>
+        <add_cards id="craftsman" amount="1"/>
+        <add_cards id="quarters3" amount="1"/>
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+    <construction id="quarters3" image="quarters3">
+        <cost money="15" infl="10"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="nobles_sigil" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="116" y="10" />
+
+        <unlock id="quarters"/>
+        <add_cards id="foreman" amount="1"/>
+        <add_cards id="worker" amount="2"/>        
+        <!--<add_cards id="scribe" amount="1"/>-->
+        <add_cards id="craftsman" amount="1"/>
+        <add_cards id="training_course" amount="1"/>
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+    <construction id="warehouse" image="warehouse1">
+        <cost money="5" infl="10"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="permit" type="document"/>
+        <sparks x ="168" y="10" />
+
+        <unlock id="warehouse"/>
+        <add_cards id="building_materials" amount="3"/>
+        <add_cards id="upgraded_water_source" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>        
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+    <construction id="warehouse2" image="warehouse2">
+        <cost money="10" infl="10"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="orders_sigil" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="168" y="10" />
+
+        <unlock id="warehouse"/>
+        <add_cards id="building_materials" amount="2"/>
+        <add_cards id="digging_supplies" amount="1"/>
+        <add_cards id="warehouse3" amount="1"/>
+        <add_cards id="water_wheel_plans" amount="1"/>        
+        <add_cards id="bucket_wheel_plans" amount="1"/>        
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+    <construction id="warehouse3" image="warehouse3">
+        <cost money="15" infl="10"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="nobles_sigil" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="168" y="10" />
+
+        <unlock id="warehouse"/>
+        <add_cards id="water_pumps_plans" amount="1"/>
+        <add_cards id="metal_pipes_plans" amount="1"/>        
+        <add_cards id="water_tower_plans" amount="1"/>
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+    <construction id="archive" image="archive1">
+        <cost money="5" infl="10"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="permit" type="document"/>
+        <sparks x ="224" y="10" />
+
+        <unlock id="archive"/>
+        <add_cards id="permit" amount="3"/>
+        <add_cards id="office" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>        
+        <gain money="0" infl="0"/>
+    </construction>
+
+    
+
+
+
+    <construction id="archive2" image="archive2">
+        <cost money="10" infl="10"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="orders_sigil" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="224" y="10" />
+
+        <unlock id="archive"/>
+        <add_cards id="small_gift" amount="2"/>
+        <add_cards id="small_donation" amount="2"/>
+        <add_cards id="medium_gift" amount="1"/>
+        <add_cards id="medium_donation" amount="1"/>
+        <add_cards id="irrigation_plans" amount="1"/>
+        <add_cards id="archive3" amount="1"/>
+        <add_cards id="waterworks" amount="1"/>
+        <gain money="0" infl="0"/>
+    </construction>
+    
+
+
+
+
+    <construction id="archive3" image="archive3">
+        <cost money="15" infl="10"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="nobles_sigil" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="224" y="10" />
+
+        <unlock id="archive"/>        
+        <add_cards id="medium_gift" amount="1"/>
+        <add_cards id="medium_donation" amount="1"/>        
+        <add_cards id="big_gift" amount="1"/>
+        <add_cards id="big_donation" amount="1"/>
+        <add_cards id="sewers_plans" amount="1"/>
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+
+    <construction id="office" image="merchants" >
+        <cost money="10" infl="5"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="permit" type="document"/>
+        <sparks x ="-111" y="-111" />
+
+        <add_cards id="small_gift" amount="1"/>
+        <add_cards id="small_donation" amount="1"/>
+        <add_cards id="permit" amount="1"/>
+        <add_cards id="archive2" amount="1"/>
+        <add_cards id="cartography" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>
+        
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+
+
+    <construction id="stable" image="stable">
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="water_wagon" amount="2"/>
+        <add_cards id="stable2" amount="1"/>
+    </construction>
+
+
+    <construction id="stable2" image="stable2">
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="nobles_sigil" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="water_wagon" amount="1"/>
+    </construction>
+
+
+
+
+    <construction id="carts" image="carts">
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>        
+        <card id="worker" type="worker"/>        
+        <card id="worker" type="worker"/>        
+        <card id="building_materials" type="component"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <!--<add_cards id="water_cart" amount="5"/>-->
+        <replace_cards old_id="water_carrier" new_id="water_cart" include_played="true"/>
+    </construction>
+
+
+
+
+
+    <construction id="water_crafts_guild" image="craftsman">
+        <cost money="15" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <!--<add_cards id="water_carrier" amount="2"/>-->
+        <add_cards id="craftsman" amount="3"/>
+        <add_cards id="wells" amount="1"/>
+        <add_cards id="hermans_ditch" amount="1"/>
+    </construction>
+
+
+
+    <construction id="hermans_ditch" image="herman">
+        <cost money="30" infl="30"/>
+        <card id="foreman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="maps" type="document"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="orders_sigil" amount="3"/>
+        <add_cards id="warehouse2" amount="1"/>
+        <add_cards id="quarters2" amount="1"/>
+        <add_cards id="stable" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>
+    </construction>
+
+
+    <construction id="wells" image="wells">
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <sparks x ="-111" y="-111" />
+        <gain money="0" infl="0"/>
+        <add_cards id="well" amount="3"/>
+    </construction>
+
+
+    <construction id="cartography" image="maps">
+        <cost money="12" infl="10"/>
+        <card id="craftsman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <sparks x ="-111" y="-111" />
+        <gain money="0" infl="0"/>
+        <add_cards id="maps" amount="1"/>
+    </construction>
+
+
+
+
+    <construction id="bucket_wheel_plans" image="buckets">
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="bucket_wheel" amount="1"/>
+    </construction>
+
+
+
+
+    <construction id="water_wheel_plans" image="waterwheel">
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="water_wheel" amount="1"/>
+    </construction>
+
+
+
+
+
+
+
+    <construction id="waterworks" image="waterworks1" population="1">
+        <cost money="15" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="bucket_wheel" type="component"/>
+        <card id="water_wheel" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="pipe" amount="5"/>
+        <add_cards id="sump" amount="4"/>
+        <add_cards id="workshop" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>
+    </construction>
+
+
+
+    <construction id="waterworks2" image="waterworks2" population="2">
+        <cost money="20" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="overshot_wheel" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="pipe" amount="4"/>
+        <add_cards id="sump" amount="3"/>
+        <add_cards id="chain_lift_plans" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>
+    </construction>
+
+
+
+    <construction id="waterworks3" image="waterworks3" population="1">
+        <cost money="20" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="chain_lift" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="pipe" amount="3"/>
+        <add_cards id="sump" amount="2"/>
+        <add_cards id="trynka_channel" amount="1"/>
+        <add_cards id="funding_increase" amount="1"/>
+    </construction>
+
+
+
+    <construction id="waterworks4" image="waterworks4" population="2">
+        <cost money="30" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="water_pumps" type="component"/>
+        <card id="water_tower" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="pipe" amount="2"/>
+        <add_cards id="sump" amount="1"/>
+        <add_cards id="workshop2" amount="1"/>
+    </construction>
+
+
+
+    <construction id="waterworks5" image="waterworks_pumps" population="1">
+        <cost money="30" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="water_pumps2" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="royal_sigil" amount="3"/>
+        <add_cards id="wass" amount="1"/>
+    </construction>
+
+
+
+
+
+
+
+    <construction id="workshop" image="workshop1" >
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="pipe" amount="3"/>
+        <add_cards id="sump" amount="2"/>
+        <add_cards id="overshot_wheel_plans" amount="1"/>
+    </construction>
+
+
+
+    <construction id="workshop2" image="workshop2" >
+        <cost money="10" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="pipe" amount="2"/>
+        <add_cards id="sump" amount="1"/>
+        <add_cards id="adv_sumps" amount="1"/>
+        <add_cards id="adv_pipes" amount="1"/>
+        <add_cards id="water_pumps2_plans" amount="1"/>
+        <add_cards id="heated_water_tower" amount="1"/>
+    </construction>
+
+
+
+
+
+
+    <construction id="water_pumps_plans" image="pumps">
+        <cost money="10" infl="0"/>
+        <card id="craftsman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="water_pumps" amount="1"/>
+    </construction>
+
+
+
+    <construction id="water_pumps2_plans" image="pumps">
+        <cost money="10" infl="0"/>
+        <card id="craftsman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="water_pumps2" amount="1"/>
+        <add_cards id="waterworks5" amount="1"/>
+    </construction>
+
+
+
+
+    <construction id="metal_pipes_plans" image="metalpipes">
+        <cost money="20" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="royal_sigil" type="component"/>
+        <card id="building_materials" type="component"/>        
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="metal_pipes" amount="1"/>
+    </construction>
+
+
+
+
+
+    <construction id="training_course" image="staff">
+        <cost money="20" infl="0"/>
+        <card id="royal_sigil" type="component"/>
+        <card id="craftsman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>        
+        <add_cards id="trained_personnel" amount="1"/>
+    </construction>
+
+
+
+
+
+
+    <construction id="sewers_plans" image="sewers">
+        <cost money="20" infl="0"/>
+        <card id="royal_sigil" type="component"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="sewers_layout" amount="1"/>
+    </construction>
+
+
+
+
+
+
+
+
+    <construction id="overshot_wheel_plans" image="overshot">
+        <cost money="15" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>   
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="overshot_wheel" amount="1"/>
+        <add_cards id="waterworks2" amount="1"/>
+    </construction>
+
+
+
+
+    <construction id="water_tower_plans" image="tower">
+        <cost money="15" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>   
+        <card id="building_materials" type="component"/>   
+        <card id="building_materials" type="component"/>   
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="water_tower" amount="1"/>
+    </construction>
+
+
+
+
+
+
+
+    <construction id="chain_lift_plans" image="chains">
+        <cost money="15" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>   
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="chain_lift" amount="1"/>
+        <add_cards id="waterworks3" amount="1"/>
+    </construction>
+
+
+
+
+
+    <construction id="trynka_channel" image="trynka">
+        <cost money="40" infl="30"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="digging_supplies" type="component"/>
+        <card id="irrigation_plans" type="document"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+        <add_cards id="waterworks4" amount="1"/>
+        <add_cards id="nobles_sigil" amount="4"/>
+        <add_cards id="funding_increase" amount="1"/>
+    </construction>
+
+
+
+
+
+
+
+
+
+
+
+
+    <construction id="adv_sumps" image="waterworks_sumps">
+        <cost money="20" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+    <construction id="adv_pipes" image="waterworks_pipes">
+        <cost money="20" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+    <construction id="heated_water_tower" image="waterworks_tower">
+        <cost money="20" infl="0"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>
+    </construction>
+
+
+
+
+    <construction id="wass" image="victory">
+        <cost money="100" infl="50"/>
+        <card id="foreman" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="craftsman" type="worker"/>
+        <card id="trained_personnel" type="worker"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <card id="metal_pipes" type="component"/>
+        <card id="sewers_layout" type="document"/>
+        <card id="permit" type="document"/>
+        <sparks x ="540" y="256" />
+        <gain money="0" infl="0"/>        
+    </construction>
+
+
+
+
+
+
+
+
+
+
+    <!-- REQUESTS -->
+
+    <construction id="war" request="true" time="3" timespan="5" level="1">
+        <cost money="0" infl="0"/>
+        <card id="" type="worker"/>
+        <card id="" type="worker"/>
+        <card id="" type="worker"/>
+        <card id="" type="worker"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="20" infl="10"/>
+        <lose money="-20" infl="-10"/>        
+    </construction>
+
+
+    <construction id="castle" request="true" time="5" timespan="3"  level="1">
+        <cost money="0" infl="0"/>
+        <card id="building_materials" type="component"/>
+        <card id="building_materials" type="component"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="25" infl="10"/>
+        <lose money="-25" infl="-10"/>        
+    </construction>
+
+
+    <construction id="small_gift" request="true" time="5" timespan="5"  level="1">
+        <cost money="0" infl="0"/>
+        <card id="small_gift" type="component"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="20"/>
+        <lose money="0" infl="-20"/>        
+    </construction>
+
+
+    <construction id="papers_please" request="true" time="5" timespan="5"  level="1">
+        <cost money="0" infl="0"/>
+        <card id="permit" type="document"/>
+        <card id="permit" type="document"/>
+        <card id="permit" type="document"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="20"/>
+        <lose money="-20" infl="0"/>        
+    </construction>
+
+    <construction id="wrong_shipment" request="true" time="5" timespan="5"  level="2">
+        <cost money="0" infl="0"/>
+        <card id="" type="component"/>
+        <card id="" type="component"/>
+        <card id="" type="component"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="0"/>
+        <lose money="-30" infl="-10"/>        
+    </construction>
+
+    <construction id="progress_report" request="true" time="3" timespan="5"  level="1">
+        <cost money="0" infl="0"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="20"/>
+        <lose money="0" infl="-30"/>        
+    </construction>
+
+    <construction id="taxes" request="true" time="3" timespan="5"  level="1">
+        <cost money="20" infl="0"/>
+        <card id="scribe" type="worker"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="20"/>
+        <lose money="0" infl="-30"/>        
+    </construction>
+
+
+    <construction id="wishing_well" request="true" time="5" timespan="3" level="2">
+        <cost money="0" infl="0"/>
+        <card id="well" type="component"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="50" infl="30"/>
+        <lose money="0" infl="-30"/>        
+    </construction>
+
+    <construction id="winter" request="true" time="6" timespan="3" level="2">
+        <cost money="0" infl="0"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <card id="worker" type="worker"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="20"/>
+        <lose money="-30" infl="-10"/>        
+    </construction>
+
+    <construction id="summer" request="true" time="7" timespan="3" level="2">
+        <cost money="0" infl="0"/>
+        <card id="" type="worker"/>
+        <card id="" type="worker"/>
+        <card id="" type="worker"/>
+        <card id="" type="worker"/>
+        <card id="" type="worker"/>
+        <card id="" type="worker"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="20"/>
+        <lose money="-30" infl="-10"/>        
+    </construction>
+
+    <construction id="medium_gift" request="true" time="5" timespan="5"  level="2">
+        <cost money="0" infl="0"/>
+        <card id="medium_gift" type="component"/>
+        <card id="worker" type="worker"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="30"/>
+        <lose money="-12" infl="-10"/>
+    </construction>
+    
+    <construction id="unpopular" request="true" time="5" timespan="3"  level="2">
+        <cost money="0" infl="0"/>
+        <card id="scribe" type="worker"/>
+        <card id="permit" type="document"/>
+        <card id="permit" type="document"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="20" infl="-10"/>
+        <lose money="-10" infl="20"/>        
+    </construction>
+
+    <construction id="medium_donation" request="true" time="5" timespan="5"  level="2">
+        <cost money="0" infl="0"/>
+        <card id="medium_donation" type="document"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="0" infl="25"/>
+        <lose money="0" infl="-10"/>
+    </construction>
+
+    <construction id="law_change" request="true" time="6" timespan="5"  level="2">
+        <cost money="0" infl="0"/>
+        <card id="scribe" type="worker"/>
+        <card id="scribe" type="worker"/>
+        <card id="" type="document"/>
+        <card id="" type="document"/>
+        <card id="" type="document"/>
+        <sparks x ="-111" y="-111" />
+
+        <gain money="20" infl="20"/>
+        <lose money="0" infl="-30"/>        
+    </construction>
+
+
+
+</constructions>

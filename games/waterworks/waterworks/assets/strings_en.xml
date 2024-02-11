@@ -1,0 +1,1706 @@
+<?xml version="1.0"?>
+<strings>
+
+    <!-- WORKERS -->
+            <!-- REGULAR -->
+    <card id="water_carrier">
+        <name>Water carrier</name>
+        <desc>Patrolled block +2$
+Adj. blocks +1$</desc>
+        <desc2>"A strong back is crucial for this job."</desc2>
+    </card>
+    <card id="water_cart">
+        <name>Water cart</name>
+        <desc>Patrolled block +3$
+Adj. blocks +2$</desc>
+    <desc2>"Water, fresh water!"</desc2>
+    </card>
+    <card id="water_wagon">
+        <name>Water wagon</name>
+        <desc>Patrolled block +8$
+Adj. blocks +6$</desc>
+    <desc2>"Giddy-up!"</desc2>
+    </card>
+
+    <card id="foreman">
+        <name>Foreman</name>
+        <desc>Supervises workers.
+Used}in}constructions.</desc>
+        <desc2>"Someone has to keep an eye on all those slackers."</desc2>
+    </card>
+    <card id="worker">
+        <name>Builder</name>
+        <desc>Your labor force.
+Used}in}constructions.</desc>
+        <desc2>"More work?"</desc2>
+    </card>
+    <card id="scribe">
+        <name>Scribe</name>
+        <desc>He can read and write.
+Used}in}constructions.</desc>
+        <desc2>"Could you sign here?"</desc2>
+    </card>
+    <card id="craftsman">
+        <name>Craftsman</name>
+        <desc>He knows his craft.
+Used}in}constructions.</desc>
+        <desc2>"It's harder than it looks."</desc2>
+    </card>
+         <!-- SPECIAL --> 
+    <card id="trained_personnel">
+        <name>Engineers</name>
+        <desc>A group trained to run the water/sewage sys.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"The future is ours!"</desc2>
+    </card>
+
+    <!-- COMPONENTS -->
+        <!-- REGULAR -->
+    <card id="pipe">
+        <name>Pipe</name>
+        <desc>Connect pipes to run water around the town.</desc>
+        <desc2>"You take a tree trunk and drill through it lengthwise!"</desc2>
+    </card>
+    <card id="well">
+        <name>Well</name>
+        <desc>Adj. blocks +2$</desc>
+        <desc2>"Once again, do NOT toss coins in here."</desc2>
+    </card>
+    <card id="sump">
+        <name>Sump</name>
+        <desc>Needs pipe connection.
+Provides $  x to adjacent blocks. x*depends on distance and the water-work level.</desc>
+        <desc2>"Self-refilling*barrel!"</desc2>
+    </card>
+
+    <card id="building_materials">
+        <name>Building materials</name>
+        <desc>Used}in}constructions.</desc>
+        <desc2>"This will do nicely."</desc2>
+    </card>
+     <!-- SPECIAL -->
+    <card id="orders_sigil">
+        <name>Order's sigil</name>
+        <desc>Teutonic Order's Sigil.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"In the name of the Lord!"</desc2>
+    </card>
+    <card id="nobles_sigil">
+        <name>Town's sigil</name>
+        <desc>A sigil of the town of Grudziądz.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"This sigil opens many doors..."</desc2>
+    </card>
+    <card id="royal_sigil">
+        <name>Royal sigil</name>
+        <desc>A royal sigil.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"His Grace has ordered this himself!"</desc2>
+    </card>
+    <card id="bucket_wheel">
+        <name>Buckets wheel</name>
+        <desc>A wheel with water buckets.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"What goes up, must come down!"</desc2>
+    </card>
+    <card id="water_wheel">
+        <name>Water wheel</name>
+        <desc>Powers machinery.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"Ancients came up with this idea."</desc2>
+    </card>
+    <card id="digging_supplies">
+        <name>Digging tools</name>
+        <desc>A set of digging tools.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"I'm digging it."</desc2>
+    </card>
+    <card id="water_pumps">
+        <name>Water pumps</name>
+        <desc>A set of suction-piston pumps.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"A true technical wonder!"</desc2>
+    </card>
+    <card id="water_pumps2">
+        <name>Improved Pumps</name>
+        <desc>A set of improved suction-piston pumps.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"A modernized project means better efficiency!"</desc2>
+    </card>
+    <card id="overshot_wheel">
+        <name>Overshot wheel</name>
+        <desc>Much more efficient.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"A true wheel of fortune, if you ask me."</desc2>
+    </card>
+    <card id="chain_lift">
+        <name>Chain-lift</name>
+        <desc>Water buckets lifted by chains.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"Goes higher than a water wheel."</desc2>
+    </card>
+    <card id="water_tower">
+        <name>Water tower</name>
+        <desc>A tall building providing water-pressure.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"Not for storing water, but for transporting it."</desc2>
+    </card>
+    <card id="metal_pipes">
+        <name>Drilled well</name>
+        <desc>Advanced drilled well.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"You}haven't}seen anything}like}this}yet."</desc2>
+    </card>
+    
+    
+    <!-- DOCUMENTS -->
+        <!-- REGULAR -->
+    <card id="permit">
+        <name>Permit</name>
+        <desc>A building permit.
+Used}in}constructions.</desc>
+        <desc2>"You're hereby granted permission to construct this building."</desc2>
+    </card>
+    <card id="small_gift">
+        <name>A small gift</name>
+        <desc>A shiny golden ring. You can send this gift to the town's ruler to earn #10.</desc>
+        <desc2>"Shiny!"</desc2>
+    </card>
+    <card id="medium_gift">
+        <name>A common gift</name>
+        <desc>A beautiful necklace. You can send this gift to the town's ruler to earn #20.</desc>
+        <desc2>"Latest fashion trend!"</desc2>
+    </card>
+    <card id="big_gift">
+        <name>A generous gift</name>
+        <desc>This bracelet is so shiny! You can send this gift to the town's ruler to earn #40.</desc>
+        <desc2>"All that glitters is not gold. There are also gemstones."</desc2>
+    </card>
+    <card id="small_donation">
+        <name>A small donation</name>
+        <desc>This document grants you @10 when played.</desc>
+        <desc2>"Thanks for the donation!"</desc2>
+    </card>
+    <card id="medium_donation">
+        <name>A common donation</name>
+        <desc>This document grants you @20 when played.</desc>
+        <desc2>"This will benefit us all!"</desc2>
+    </card>
+    <card id="big_donation">
+        <name>A generous donation</name>
+        <desc>This document grants you @40 when played.</desc>
+        <desc2>"The water must flow!"</desc2>
+    </card>
+        <!-- SPECIAL -->
+    <card id="maps">
+        <name>Maps</name>
+        <desc>Detailed}maps}of}the lands around the town.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"It helps to have a map."</desc2>
+    </card>
+    <card id="irrigation_plans">
+        <name>Irrigation plans</name>
+        <desc>Detailed irrigation plans.
+Used}in}constructions.
+Removed from the game after use.</desc>
+        <desc2>"The water will go this way!"</desc2>
+    </card>
+    <card id="sewers_layout">
+        <name>Sewers layout</name>
+        <desc>A layout of sewers beneath the town.</desc>
+        <desc2>"Alligators? Are you out of your mind?"</desc2>
+    </card>
+    <card id="funding_increase">
+        <name>Increase in funding</name>
+        <desc>+1 @ per turn.
+Removed from the game after use.</desc>
+        <desc2>"Keep up the good work!"</desc2>
+    </card>
+
+
+
+    <!-- construction cards -->
+
+
+
+    <card id="water_source">
+        <name>Water source</name>
+        <desc>The basic source of water, a pier by the river.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="upgraded_water_source">
+        <name>Upgr. water source</name>
+        <desc>As the town grows, one pier is not enough.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="quarters">
+        <name>Quarters</name>
+        <desc>Allows storing _ worker cards for later use.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="archive">
+        <name>Archive</name>
+        <desc>Allows storing \ document cards for later use.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="warehouse">
+        <name>Warehouse</name>
+        <desc>Allows storing ~ resource cards for later use.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="quarters2">
+        <name>Quarters II</name>
+        <desc>Increases the amount of _ worker card slots in the Quarters.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="archive2">
+        <name>Archive II</name>
+        <desc>Increases the amount of \ document card slots in the Archive.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="warehouse2">
+        <name>Warehouse II</name>
+        <desc>Increases the amount of ~ resource card slots in the Warehouse.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="quarters3">
+        <name>Quarters III</name>
+        <desc>Maxes out the amount of _ worker card slots in the Quarters.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="archive3">
+        <name>Archive III</name>
+        <desc>Maxes out the amount of \ document card slots in the Archive.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="warehouse3">
+        <name>Warehouse III</name>
+        <desc>Maxes out the amount of ~ resource card slots in the Warehouse.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="office">
+        <name>Merchants' guild</name>
+        <desc>Money can buy prestige... and vice versa.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="stable">
+        <name>Stables</name>
+        <desc>The stables let you use water wagons.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="stable2">
+        <name>Stables II</name>
+        <desc>The stables let you buy one more water wagon.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="carts">
+        <name>Carts</name>
+        <desc>This invention will upgrade all water carriers into water carts.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="hermans_ditch">
+        <name>Herman's Ditch</name>
+        <desc>Advance*to*a*new*era.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="wells">
+        <name>Wells</name>
+        <desc>Develop the means to dig regular wells in town.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="cartography">
+        <name>Cartography</name>
+        <desc>Scout the area and create maps.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_crafts_guild">
+        <name>Craft guild</name>
+        <desc>Specialists that will help develop new technologies.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="bucket_wheel_plans">
+        <name>Bucket-wheel</name>
+        <desc>A part of a water-work.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_wheel_plans">
+        <name>Water wheel</name>
+        <desc>A part of a water-work.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks">
+        <name>Water-work</name>
+        <desc>Pipe-water supply.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks2">
+        <name>Water-work II</name>
+        <desc>Increase efficiency.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks3">
+        <name>Water-work III</name>
+        <desc>Upgrade the water-work.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks4">
+        <name>Water-work IV</name>
+        <desc>Install}water}pumps.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="waterworks5">
+        <name>Water-work V</name>
+        <desc>More efficiency!</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="workshop">
+        <name>Workshop</name>
+        <desc>A water-powered workshop for crafting tools.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="workshop2">
+        <name>Improved Workshop</name>
+        <desc>A more advanced workshop for more advanced tools.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_pumps_plans">
+        <name>Water pumps</name>
+        <desc>A sophisticated design of water pumps.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_pumps2_plans">
+        <name>Improved pumps</name>
+        <desc>A design of more efficient water pumps.</desc>
+        <desc2> </desc2>
+    </card>   
+    <card id="metal_pipes_plans">
+        <name>Drilled well</name>
+        <desc>Technology of the future!</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="training_course">
+        <name>Training course</name>
+        <desc>Allows the training of engineers.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="sewers_plans">
+        <name>Sewers layout plans</name>
+        <desc>Required to build sewers.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="overshot_wheel_plans">
+        <name>Overshot wheel</name>
+        <desc>An idea to increase the water wheel's efficiency.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="chain_lift_plans">
+        <name>Chain-lift</name>
+        <desc>Plans to replace the bucket wheel with a chain-lift.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="trynka_channel">
+        <name>Trynka-channel</name>
+        <desc>Advance}to}a}new}era.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="adv_sumps">
+        <name>Advanced Sumps</name>
+        <desc>A design of upgraded water sumps.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="adv_pipes">
+        <name>Underground tunnels</name>
+        <desc>Improvements for water pipes.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="water_tower_plans">
+        <name>Water tower</name>
+        <desc>Will provide required pressure.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="heated_water_tower">
+        <name>Heated water tower</name>
+        <desc>Heating during winter will increase the efficiency.</desc>
+        <desc2> </desc2>
+    </card>
+    <card id="wass">
+        <name>Water-sewage}sys.</name>
+        <desc> </desc>
+        <desc2> </desc2>
+    </card>
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <construction id="water_source">
+        <name>Water Source</name>
+        <desc>The most basic source of water for the town, a pier by the river, where people will fill up buckets for later distribution. You will still have to hire water carriers for it to have any effect...</desc>
+        <complete>The pier is complete. Now you have to hire a couple of water carriers - their cards have been added to your deck.</complete>
+    </construction>
+    <construction id="upgraded_water_source">
+        <name>Upgraded Water Source</name>
+        <desc>The need for water increases and one pier on the river is not enough anymore. This upgrade will let you draw more water and hire additional water carriers.</desc>        
+        <complete>You've constructed an additional pier. Thanks to that you can refill more buckets and supply more water carriers with water. This should be enough to meet the city's needs for now, but it's not a longsighted solution.</complete>
+    </construction>
+    <construction id="warehouse">
+        <name>Warehouse</name>
+        <desc>The warehouse will let you store ~ resource cards (like building materials or pipes) in a way similar to the quarters.
+You will also receive building materials to erect buildings with, and an upgraded water source construction plans.</desc>
+        <complete>The warehouse is ready. You can store up to 4 ~ resource cards at once, if you don't want to discard them.
+You won't have to pay card's costs until you actually play it and you can discard it at any time, or move it back to your hand (if your hand is not full).
+
+HINT: Right-click on a ~ resource card to quickly move it between the warehouse and your hand.</complete>
+    </construction>
+    <construction id="warehouse2">
+        <name>Warehouse II</name>
+        <desc>Expanding the warehouse will increase the number of ~ resource cards slots by 4. It will also unlock new technologies (see the list of cards below).</desc>
+        <complete>The warehouse is expanding! You can now store up to 8 ~ resource cards in it.
+Additionally, new interesting cards have been added to your deck. Water wheel, bucket wheel - they must be components for some bigger constructions. Digging tools - they can be useful, when you find them it's worth holding on to them for later. That's what the warehouse is for, after all!</complete>
+    </construction>
+    <construction id="warehouse3">
+        <name>Warehouse III</name>        
+        <desc>The final expansion of the warehouse will increase the number of ~ resource cards slots by additional 4 slots. It will also unlock new technologies (see the list of cards below).</desc>
+        <complete>The warehouse is at its maximum capacity! You can now store up to 12 ~ resource cards here.
+Additionally, you have new cards in your deck. The water tower and water pump plans might foreshadow a completely new approach to how the water-work will operate.</complete>
+    </construction>
+    <construction id="quarters">
+        <name>Quarters</name>        
+        <desc>This construction will allow you to store _ worker cards from your hand for later use. If you don't need a card at the moment, or you can't afford it, but you don't want to discard it then you can store it here.
+You won't have to pay the cost of the stored card until you actually play it.
+Building quarters will also bring new workers to town and let you build new constructions.</desc>
+        <complete>The quarters are ready. You can store up to 4 _ worker cards at once, if you can't play them but you don't want to discard them.
+You won't have to pay the card's costs until you actually play it and you can discard it at any time, or move it back to your hand (if your hand is not full).
+
+HINT: Right-click on a _ worker card to quickly move it between the warehouse and your hand. </complete>
+    </construction>
+    <construction id="quarters2">
+        <name>Quarters II</name>
+        <desc>Expanding the quarters will increase the number of _ worker cards slots by 4.
+This construction will cause more workers to arrive to town.</desc>
+        <complete>The quarters expansion is complete. You can now store up to 8 _ worker cards.
+This construction also caused new craftsmen, scribes, foremen and builders to arrive - their cards have been added to the deck.</complete>
+    </construction>
+    <construction id="quarters3">
+        <name>Quarters III</name>
+        <desc>The final expansion of the quarters that will increase the number of _ worker cards slots by an additional 4 slots.        
+This construction will cause more workers to arrive to town.</desc>
+        <complete>The quarters final expansion is complete. You can now store up to 12 _ worker cards.
+This construction also caused new craftsmen, foremen and builders to arrive - their cards have been added to the deck. There's also a new interesting book, it looks like a training course. How did it get here? Put it in the archives, will you?</complete>
+    </construction>
+    <construction id="archive">
+        <name>Archives</name>        
+        <desc>The archives will let you store \ document cards (like construction plans or building permits) in a similar way to the quarters.
+You'll also get access to the merchants' guild.</desc>        
+        <complete>The archives are ready. You can store up to 4 \ document cards at once, if you can't play them but you don't want to discard them.        
+You won't have to pay the card's costs until you actually play it and you can discard it at any time, or move it back to your hand (if your hand is not full).
+
+HINT: Right-click on a \ document card to quickly move it between the archives and your hand.</complete>
+    </construction>
+    <construction id="archive2">
+        <name>Archives II</name>
+        <desc>Expanding the archives will increase the number of \ document cards slots by 4.
+This construction grants you new donations and gifts.
+You'll also get access to a water-work structure construction plans and irrigation plans.</desc>        
+        <complete>The archives expansion is complete. You can now store up to 8 \ document cards.
+This construction also granted you, aside from new donations and gifts, access to construction plans of a water-work structure and irrigation plans.</complete>
+    </construction>
+    <construction id="archive3">
+        <name>Archives III</name>
+        <desc>The final expansion of archives will increase the number of \ document cards slots by an additional 4 slots.
+This construction grants you new donations and gifts.</desc>
+        <complete>The archives final expansion is complete. You can now store up to 12 \ document cards.
+You've also gained access to new donations and gifts. Also, you found an early sketch of a sewage system... Don't lose it, it can be useful in the future.</complete>
+    </construction>
+    <construction id="office">
+        <name>Merchants' guild</name>
+        <desc>Money can buy prestige... and vice versa. Your task will often require you to win people's hearts, and our friends at the merchants' guild have a lot of experience with that. They also know how to secure extra funds, a skill which could be very useful to have at your disposal.</desc>                
+        <complete>You now have access to new cards. Donations will give you @ coins in exchange for # influence. Gifts will let you gain # influence, but you'll have to buy them for @ coins first.
+Merchants also offer you plans that they brought from afar, that will allow you to perform cartographic measurements of the area surrounding the town.</complete>
+    </construction>
+
+    <construction id="stable">
+        <name>Stables</name>
+        <desc>Building the stables will let you use water wagons. Those horse-drawn carriages are capable of delivering large amounts of water.
+
+Water wagon
+Patrolled block +8$
+Adj. blocks +6$</desc>
+        <complete>The stables are complete - you now have access to water wagons. Their numbers are very limited and they are expensive, but thanks to them you will be able to deliver water to those that need it the most.</complete>
+    </construction>
+
+    <construction id="stable2">
+        <name>Stables II</name>
+        <desc>Building bigger stables will allow you to get one additional water wagon.</desc>
+        <complete>The stables have been expanded. You can now use one more water wagon.</complete>
+    </construction>
+
+    <construction id="carts">
+        <name>Water carts</name>
+        <desc>Developing and building carts for transporting water will greatly improve the water carrying system.
+All Water carrier cards (in game and not in game) will be replaced with Water cart cards.
+
+Water carrier &gt; Water cart
+Patrolled block +2$  &gt; +3$
+Adjacent blocks +1$  &gt; +2$</desc>
+        <complete>The carts are completed! Every water carrier has received one. We also have water carts for people that you intend to hire in the future.
+All Water carrier cards (in game and not in game) have been replaced with Water cart cards.</complete>
+    </construction>
+
+    <construction id="water_crafts_guild">
+        <name>Craft guild</name>
+        <desc>Constructing a craft guild will grant you access to craftsmen.
+Thanks to their work you'll be able to develop new constructions such as wells and Herman's Ditch - a huge investment that will open the door towards a new era of the town's growth.</desc>
+        <complete>The craft guild has attracted craftsmen to town. Their skill will let you design well-digging measures and later on - start the biggest of the hydrotechnical enterprises Grudziądz has seen so far.</complete>
+    </construction>
+
+    <construction id="hermans_ditch">
+        <name>Herman's Ditch</name>
+        <desc>"Herman's Ditch" is an artificial channel with a length of nearly 3 km, which will allow you to supply much more water from distant sources. This expensive but necessary investment will certainly have a significant impact on the development and expansion of the city.</desc>
+        <complete>In 1386, the inhabitants of Grudziądz received permission from the authorities of the Teutonic Order to build a channel that would connect with the natural stream flowing in the nearby town of Węgrowo and bring water to the city. The dug channel was nearly 3 km long and significantly improved the situation of the city's inhabitants. It was the first hydrotechnical investment in Grudziądz of this scale and significance. The current name "Herman's Ditch" probably came from the 19th century after the channel was rebuilt.</complete>
+    </construction>
+
+    <construction id="wells">
+        <name>Wells</name>
+        <desc>A well with a wooden or brick structure, several to several dozen meters deep. The roof and filters placed on the bottom prevents water pollution, and the installed winch will significantly facilitate water extraction using buckets.
+
+Well
+Adjacent blocks +2$</desc>        
+        <complete>Taking water directly from the channel and then transporting it to the city was certainly an inefficient and impractical solution, and in the event of a siege or frost all the town's access to drinking water would be cut off. For these reasons, in Grudziądz, there were probably some wells already in place during the Middle Ages, which could be built within the city walls. Another advantage was that the water in those wells did not freeze. Unfortunately, current studies have not confirmed any major information about the wells (the only one still existing is within the castle). Due to the high-ground location of the city, digging traditional wells had to be a difficult, time-consuming and costly task.</complete>        
+    </construction>
+
+    <construction id="cartography">
+        <name>Cartography</name>
+        <desc>Researching this will grant you access to a detailed map of the area surrounding the town. It will surely be useful in the future.</desc>
+        <complete>Cartographic research complete. Thanks to this, there is now a map card present in your deck. It will surely be useful for something.</complete>
+    </construction>
+
+    <construction id="workshop">
+        <name>Workshop</name>
+        <desc>A room filled with tools and repair equipment will surely be useful.
+Finishing this construction will give you access to a larger amount of pipes and sumps, it will also allow you to upgrade your water-work.</desc>
+        <complete>New cards have been placed in your deck: pipes, sumps and plans of a new water wheel.</complete>
+    </construction>
+
+    <construction id="workshop2">
+        <name>Workshop II</name>
+        <desc>We will put a small workshop in the water-work building, next to the pump. A system of transmission belts and gears will supply the drive from the water wheel to the devices in the workshop.
+This construction will let you create more pipes and sumps and develop plans of new technological advancements.</desc>
+        <complete>Powering the devices in the workshop using a water wheel proved to be a very effective solution! You'll be able to place more pipes and sumps. This will also lead to the development of new technologies!
+Fun fact: On a wooden platform mounted on stilts directly above the canal there was a room that probably served for bathing.</complete>
+    </construction>
+
+    <construction id="waterworks">
+        <name>Water-work</name>
+        <desc>Water-work is a device that raises the water to a certain height, enabling gravitational supply to the water pipe network in the city. The water is lifted to a distribution tank located on the top of a tall building, from there it is then distributed by wooden pipes to municipal water wells (so-called sumps). Sumps are most often built on main streets and city squares.</desc>
+        <complete>The permission for the construction of the first water-work in Grudziądz was issued by the Grand Master of the Teutonic Order, Michel Kochmeister in 1415. In the permit, the order approved the constructing of a special building that had a device equipped with a water wheel, which would draw water from the channel by the city and then lift it to an sufficient height in order to distribute it through pipelines around the city. If the water-work in Grudziądz was actually built in the 15th century (which is very likely! - it definitely already existed at the beginning of the 16th century) then it would be the oldest device of this type in the Teutonic state, and after 1466 one of the oldest in the Polish Kingdom.</complete>
+    </construction>
+
+    <construction id="waterworks2">
+        <name>Water-work with an overshot wheel</name>
+        <desc>Upgrading the water-work will require a lot of things, including the construction of artificial barriers, weirs, ponds, as well as gutters supplying water over the wheel. Thanks to this the water wheel will become much more efficient and a lot more water can be delivered.</desc>
+        <complete>The upgraded water-work added greater pressure to the water pipes, allowing the water to reach further than before. Thanks to this, people will be able to draw more water from the existing sumps as well as any future sumps that you're going to build.</complete>
+    </construction>
+
+    <construction id="waterworks3">
+        <name>Water-work with a chain lift</name>
+        <desc>We will replace the bucket wheel with a newly-constructed chain bucket lift. The water wheel, powered by water in the canal, will drive the chains with buckets that carry the water up into the distribution tank on top of the building.</desc>        
+        <complete>Another upgrade of water-work added even greater pressure to the water pipes, allowing the water to reach even further than before. Thanks to this, people will be able to draw more water from the existing sumps as well as any future sumps that you're going to build.</complete>
+    </construction>
+
+    <construction id="waterworks4">
+        <name>Water-work with pumps</name>
+        <desc>Grudziądz's water-work with pumps will consist of three components:
+- an oblong, one-story building located on a wooden bridge mounted on stilts directly above the canal. The water flowing beneath this building will be moving the water wheel;
+- a building located on the bank of the canal with piston pumps inside of a well underneath the building, powered by a water wheel;
+- a water tower located at the second line of the city walls with pipelines and a distribution tank.</desc>
+        <complete>The completion of the water-work with pumps has greatly improved the water supply efficiency and in turn, the whole town got much easier access to water.</complete>        
+    </construction>
+
+    <construction id="waterworks5">
+        <name>Water-work with improved pumps</name>
+        <desc>The installation of the improved pumps will make the water-work's efficiency improve even further.</desc>        
+        <complete>With the upgraded water pumps, the water-work in its current form has achieved its peak efficiency.</complete>
+    </construction>
+
+    <construction id="bucket_wheel_plans">
+        <name>Bucket wheel</name>        
+        <desc>A wheel with wooden buckets attached to it. This wheel can be powered by a water wheel with a gear. The buckets set in motion bring water from the canal and carry it up to the distribution tank on the top of the building.</desc>        
+        <complete>You have now constructed a bucket wheel. However, it is useless without any water wheel powering it...</complete>
+    </construction>
+
+    <construction id="water_wheel_plans">
+        <name>Water wheel</name>        
+        <desc>The water wheel is the main driving element of the water-work. The undershot wheel is powered by water flowing directly under the wheel. It can be connected, using a gear, to another mechanism, e.g. a bucket wheel.</desc>
+        <complete>You now have a water wheel that can propel something. The only question is: what would that be?</complete>
+    </construction>
+
+    <construction id="overshot_wheel_plans">
+        <name>Overshot water wheel</name>        
+        <desc>The overshot water wheel is powered by water falling on it from a suitable height, filling the troughs located on its peripheries and thus rotating the wheel. It is three times more efficient than the undershot wheel that we currently use. The use of an overshot wheel requires additional engineering work: construction of artificial barriers, weirs, ponds, as well as gutters supplying water over the wheel.</desc>        
+        <complete>The overshot water wheel has been completed. Now you may begin preparations to modernize your water-work.</complete>
+    </construction>
+
+    <construction id="chain_lift_plans">
+        <name>Chain bucket lift</name>
+        <desc>A special, more efficient and durable mechanism with two smaller wheels (lower and upper) connected by a chain to which the buckets are attached.</desc>        
+        <complete>You now have chain buckets - you can prepare for the next modernization of the water-work system!</complete>
+    </construction>
+
+    <construction id="trynka_channel">
+        <name>Trynka Canal</name>        
+        <desc>Trynka Canal is going to have the length of almost 8 km and a width of up to 10 m. Its task will be to provide a significant amount of water to the city from a distant river. It will not only help meet the growing needs of the city's inhabitants, but also increase the possibilities of technical development of the water-work and water supply.</desc>        
+        <complete>The Trynka Canal was built in 1552, with permission from King Sigismund II Augustus of Poland. Its name came from the German word "trinken" ("to drink") which emphasized its most important function, which was to provide Grudziądz with drinking water. The total length of the canal was up to 8 km, and its width reached up to 10 m. The Trynka Canal began its course at the Osie River in Kłódka, then headed to Lake Tarpieński, then connected to the mill channel near the city and flowed into the Vistula. A weir system was built along the entire length of the canal, which allowed it to be segmentally dried for carrying out necessary hydrotechnical maintenance works. The construction of Trynka made it possible to supply huge amounts of water to the city, which additionally propelled the wheels of the mills and water-work. At the time, it was the most important and largest hydrotechnical investment carried out in Grudziądz.</complete>
+    </construction>
+
+    <construction id="adv_sumps">
+        <name>Advanced sumps</name>
+        <desc>The old, wooden wells of water supply (sumps) will be replaced by much stronger and tighter brick wells.
+Thanks to this, the efficiency of the whole water network will improve across the city.</desc>        
+        <complete>Water-work wells, called sumps, usually looked like a barrel without a lid, placed in a wooden crate dug into the ground and had sand strewn in to stabilize it. The sand between the barrel and the crate also played a filtering role, limiting the penetration of external dirt in the well. Water pipes were connected to the barrel. From the outside, the sumps resembled classic, wooden wells. Over time, the wooden "barrel" was replaced with brick wall, which was much tighter and more durable.</complete>
+    </construction>
+
+    <construction id="adv_pipes">
+        <name>Water supply tunnel</name>
+        <desc>A bricked water supply tunnel with pipelines placed inside, will distribute water to municipal water wells (sumps). The dimensions of the tunnel will allow people to move inside and carry out maintenance and repair works.
+Thanks to this, the efficiency of the whole water network will improve across the city.</desc>
+        <complete>In present day, in the place of the water tower, at its very bottom there is a partly buried, fortified and vaulted hole under the city walls. Perhaps this was the beginning of an underground water tunnel through which water was distributed around the city?</complete>
+    </construction>
+
+    <construction id="water_tower_plans">
+        <name>Water tower</name>
+        <desc>A high water tower will be adjacent to the southern line of the city walls. Inside it there will be pipelines through which water will be pumped to the top of the tower to the distribution tank. From here, water will be distributed gravitationally through pipes to municipal water wells (sumps). The tower will provide constant and high pressure in the water supply network, thanks to which water will reach further parts of the city.</desc>        
+        <complete>It is difficult to say when exactly the water tower was built in Grudziądz. The earliest possible time must have been at the end of the 15th or at the beginning of the 16th century, when the invention of suction-piston pumps became widespread in Europe, which allowed the transportation of water up to the top of a tall building. This way, the functions of the water-work (low one-story building equipped with pumps) and the water tower (tall building with a distribution tank on top) were clearly separated. The first unambiguous source of evidence indicating the existence of a water tower dates back to 1772.</complete>
+    </construction>
+
+    <construction id="heated_water_tower">
+        <name>Heated water tower</name>        
+        <desc>A modification to the existing water tower that will allow us to keep fires lit at its different heights to prevent pipes from freezing during winter.
+Thanks to this, the efficiency of the whole water network will improve across the city.</desc>        
+        <complete>The interior of the water tower was designed so that fires could be lit at different heights to prevent pipes and the distribution tank from freezing inside of the building.</complete>        
+    </construction>
+
+    <construction id="wass">
+        <name>Water and sewage system</name>        
+        <desc>A modern hydrotechnical solution involving the connecting of water supply and sewage disposal systems into one. This huge investment requires the employment of qualified engineers and the construction of a deep well with steam-driven pumps, an extensive pipeline network and sewage treatment plants.</desc>        
+        <complete>At the end of the 19th century, the city authorities commissioned a research to pinpoint the best place in Grudziądz to drain the groundwater from and determine how vast the reserves were. As a result of the undertaken research, rich drinking water sources were found in the southern part of the city, near the city forest and today's General J. Haller's Street, which allowed the construction of a modern municipal water supply. They were launched on December 23, 1899, and at the beginning of the 20th century they were expanded to include a sewage network and sewage treatment plants. In 1905, the decommissioned water-work was bought back from the city authorities by the owners of Lower and Upper Mill for 5,000 marks.</complete>
+    </construction>
+
+    <construction id="water_pumps_plans">
+        <name>Water pumps</name> 
+        <desc>The mechanism of two suction-pressure pumps to be placed in a well which was dug next to the channel. The pumps will be powered by a water wheel through a crankshaft, they will suck up the water from the well and pump it up to the top of the water tower where the distribution tank is located. This device is much more efficient than a bucket wheel or buckets on chains.</desc>
+        <complete>In the first half of the 16th century, instead of buckets, water-work in Europe began to use suction and pressure pumps, so-called piston pumps. They were driven by a water wheel through a crankshaft, which exchanged the rotary movement of the wheel for reciprocating movements created by the pistons located in the cylinders. Such a pump could both suck in water from the well and pump it to a certain height. The amount of water pumped depended solely on the design and energy supplied to the pump. This device allowed the transfer of more water to a greater height, and therefore was much more effective than the bucket wheel. The oldest information about the pump in the Grudziądz water-work comes from the mid-seventeenth century, but such a device probably existed there even before that.</complete>
+    </construction>
+
+
+    <construction id="water_pumps2_plans">
+        <name>Improved water pumps</name>        
+        <desc>Every device can be improved and made more efficient. The same goes for your water pumps.</desc>
+        <complete>You now have improved water pumps in your deck.</complete>
+    </construction>
+
+
+    <construction id="sewers_plans">
+        <name>Sewage plans</name>
+        <desc>Developing plans for a sewer network is one of the steps needed to create a modern water-sewage system.</desc>
+        <complete>The preparation of the sewer network project began with the construction of the modern water supply systems in 1899. In 1905-1907, based on the technical documentations prepared, municipal sewage systems with a total length of 56 km were built, as well as sewage treatment plants.</complete>
+    </construction>
+
+
+
+    <construction id="metal_pipes_plans">
+        <name>Drilled well</name>        
+        <desc>Constructing a drilled well is one of the steps needed to create a modern water-sewage system.</desc>
+        <complete>The constructing of a modern water supply plant located at the Haller Street began on June 1st, 1899, and the construction work took six months. This completely new water supply system with two suction pumps, powered by steam engines, supplied water from deep wells to the treatment plant (filtering plant). From there, high-pressure pumps pushed water to the water supply network, as well as the expansion tank and the new water tower.</complete>
+    </construction>
+
+
+    <construction id="training_course">
+        <name>Trained engineers</name>
+        <desc>Training a team of engineers is one of the steps needed to create a modern water-sewage system.</desc>
+        <complete>The construction of the Grudziądz waterworks was commissioned at the end of the 19th century by the engineer Heinrich Scheven from Bochum (Germany), while the sewage system and sewage treatment plants were created in 1905-1907 by a company Windschild &amp; Langelott from Bydgoszcz.</complete>
+    </construction>
+
+
+
+
+
+
+
+
+
+
+
+    <construction id="war">
+        <name>WAR</name>
+        <desc>A war has broken out! Part of the population must be enlisted - including your workers.              
+Fill all the empty slots with _ worker cards (of any kind)
+to complete this request within the time limit, or face the consequences.
+Workers who are already in town can't be used here, you'd have to use the selling mode first.</desc>
+        <complete>You've sent some of your people to war, wishing them luck and hoping they return safely.
+By doing so you've earned trust among high-ranking citizens.</complete>
+    </construction>
+
+
+
+    <construction id="wrong_shipment">
+        <name>MISPLACED SHIPMENT</name>
+        <desc>You've been contacted by someone from the castle - apparently there's been a mix-up in shipments, as some items are missing from the castle's storage. What items, you ask? It doesn't matter, as long as the numbers look right in their register. Sending them anything will probably do better than trying to find an explanation.
+There's one catch, you'll have to pay for the delivery. If you fail, someone will probably charge you with the real cost of the missing items.</desc>
+        <complete>It's done. Whatever was missing has been replaced, now the numbers in their register check out.
+The man responsible for shipments thanks you and promises to speak nothing but highly of you!</complete>
+    </construction>
+
+
+    <construction id="papers_please">
+        <name>PAPERS, PLEASE!</name>
+        <desc>One of the local aristocrats has questioned the legality of your actions. The law is on your side, as long as you can provide the aristocrat with some documents to support it.
+If you can't do this within the given time... Well, the law is still on your side, but it will cause a lot of hassle (and cost money) to set things straight.</desc>
+        <complete>The aristocrat is a bit confused, it looks like he was wrong and you were right. People will remember this!</complete>
+    </construction>
+
+    <construction id="small_gift">
+        <name>A GIFT</name>
+        <desc>One of the richest aristocrats of Grudziądz is getting married. Sending him a gift would boost your position in the eyes of the local lords.
+If you don't manage to find the right gift before the wedding, your reputation will suffer.</desc>
+        <complete>What a wedding that was! Your gift was received and appreciated by the married couple.</complete>
+    </construction>
+
+
+    <construction id="castle">
+        <name>CASTLE EXPANSION</name>
+        <desc>Our ruler has decided that Grudziądz's castle requires some renovations. You must provide his grace with the required building materials.
+Complete this request within the time limit or face the consequences.</desc>
+        <complete>The castle is in much better condition thanks to your supplies. The ruler will make sure that your services are not forgotten.</complete>
+    </construction>
+
+    <construction id="progress_report">
+        <name>PROGRESS REPORT</name>
+        <desc>The town's officials want to know how are you handling the budget. Send two scribes to handle the paperwork and prepare a full report, otherwise your reputation might suffer.</desc>
+        <complete>Everything seems to be in order. The report covers the entire budget spendings and leaves no room for doubt that you're doing a fine job.</complete>
+    </construction>
+
+
+    <construction id="taxes">
+        <name>TAXES</name>
+        <desc>You need to pay taxes. You'll need a scribe to do the paperwork for you.
+If you fail to do this, your reputation will suffer.</desc>
+        <complete>The taxes are paid, what else is there to say? You're an exemplary citizen.</complete>
+    </construction>
+
+    <construction id="wishing_well">
+        <name>WISHING FOR A WELL</name>
+        <desc>The sisters of the Order of Saint Benedict requested a well for their order's garden.
+Their order is very powerful and influential... You'd better not ignore this request!
+
+HINT: If you've already placed all wells in the town then you can sell one of them to fulfil this request.</desc>
+        <complete>The sisters of the Order of Saint Benedict thank you kindly for the well, and they wish you, hmm, well.</complete>
+    </construction>
+
+
+
+    <construction id="summer">
+        <name>WEEDING</name>
+        <desc>There's nothing funny about it. The channel is overgrowing with plants and you have to send people to clear it.
+If you don't deal with it in time, the costs will be enormous.</desc>
+        <complete>Good job! The channel is clear and the water can now flow freely.</complete>
+    </construction>
+
+
+    <construction id="winter">
+        <name>WINTER IS HERE</name>
+        <desc>During the winter some of the pipes freeze up and block the water flow. You have to send some workers to fix the issue.
+If you neglect this duty, the damage will be very costly to repair.</desc>
+        <complete>Good job! Despite the harsh conditions, water can now flow freely through the pipes.</complete>
+    </construction>
+
+
+    <construction id="medium_gift">
+        <name>SILVER OR LEAD</name>
+        <desc>The owner of a nearby mill, mr. Bagniewski, declared that the Trynka Canal passes through his land. He began building weirs and destroying the causeway.
+We need to come to an agreement with him. Perhaps sending him a gift as a gesture of good will can strike up a good conversation?</desc>
+        <complete>Mr. Bagniewski will no longer cause us trouble. You don't have to know anything else.</complete>
+    </construction>
+
+
+    <construction id="medium_donation">
+        <name>BATHHOUSE</name>
+        <desc>The king has offered people rights to use the old castle bathhouse in exchange for their support in a war.
+It's a perfect oportunity to gain some favor with the residents. Let's support the king with an appropriate donation. </desc>
+        <complete>Citizens now have access to the castle's bathhouse and that's partly thanks to you!</complete>
+    </construction>
+
+    <construction id="law_change">
+        <name>CLEAN WATER</name>
+        <desc>Craftsmen and farmers are contaminating the water supply channel and a change in the law is needed, but it will not be appealing to everyone. It is necessary to introduce a ban on softening and tanning leather, as well as the construction of barns and pigsties by the Trynka Canal.
+You'll need some documents and scribes who will take care of the details.</desc>
+        <complete>The water quality has drastically improved, which turned out to be good for everyone and it earned you some more supporters.</complete>
+    </construction>
+
+    <construction id="unpopular">
+        <name>UNPOPULAR DECISION</name>
+        <desc>Because of lack of water we need to introduce limitations for it and additional fees. Nobody will be allowed to take water for brewing beer without paying a well fee.
+This will help us gain some money, but not everyone will like this decision.
+A scribe with some documents should be able to take care of this issue.</desc>
+        <complete>People might not be too happy, but perhaps the new fees will turn out to be beneficial to everyone.</complete>
+    </construction>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <gui id="diff_header">
+        <string>Choose difficulty:</string>
+    </gui>
+    <gui id="diff_easy">
+        <string>Easy</string>
+    </gui>
+
+    <gui id="diff_normal">
+        <string>Normal</string>
+    </gui>
+
+    <gui id="diff_hard">
+        <string>Hard</string>
+    </gui>
+
+    <gui id="diff_hard2">
+        <string>Impossible</string>
+    </gui>
+
+    <gui id="diff_back">
+        <string>Back</string>
+    </gui>
+
+    <gui id="construction_complete">
+        <string>- construction complete!</string>
+    </gui>
+
+    <gui id="conditions_not_met">
+        <string>Not all conditions have been met!</string>
+    </gui>
+
+    <gui id="turn">
+        <string>Turn</string>
+    </gui>
+
+    <gui id="not_enough_money">
+        <string>Not enough @ coins!</string>
+    </gui>
+    <gui id="not_enough_infl">
+        <string>Not enough # influence!</string>
+    </gui>
+    <gui id="discarded">
+        <string>Discarded</string>
+    </gui>
+    <gui id="deck">
+        <string>Deck</string>
+    </gui>
+    <gui id="cards">
+        <string>cards</string>
+    </gui>
+    <gui id="refund">
+        <string>refund</string>
+    </gui>
+    <gui id="new cards">
+        <string>Unlocks cards</string>
+    </gui>   
+    <gui id="failure penalty">
+        <string>Failure penalty</string>
+    </gui>
+    <gui id="completion reward">
+        <string>Completion reward</string>
+    </gui>
+    <gui id="time limit">
+        <string> Time limit:</string>
+    </gui>
+    <gui id="turns">
+        <string>turns</string>
+    </gui>
+    <gui id="finalisation cost">
+        <string>Finalization cost</string>
+    </gui>
+    <gui id="construction_card_reqs">
+        <desc2>Requires:</desc2>
+    </gui>
+    <gui id="drawer_name_worker">
+        <header>Quarters</header>
+    </gui>
+    <gui id="drawer_name_component">
+        <header>Warehouse</header>
+    </gui>
+    <gui id="drawer_name_document">
+        <header>Archive</header>
+    </gui>
+    <gui id="options_sound">
+        <string>SOUND</string>
+    </gui>
+    <gui id="options_music">
+        <string>MUSIC</string>
+    </gui>
+    <gui id="options_fullscreen">
+        <string>FULL-SCREEN</string>
+    </gui>
+    <gui id="options_clickmode">
+        <string>MOVE CARDS BY...</string>
+    </gui>
+    <gui id="options_language">
+        <string>LANGUAGE</string>
+    </gui>
+    <gui id="options_language_pl">
+        <string>Polski</string>
+    </gui>
+    <gui id="options_language_en">
+        <string>English</string>
+    </gui>
+    <gui id="options_tutorials">
+        <string>TUTORIALS</string>
+    </gui>
+    <gui id="options_quit">
+        <string>MAIN MENU</string>
+    </gui>
+    <gui id="options_restart">
+        <string>RESTART GAME</string>
+    </gui>
+    <gui id="options_load">
+        <string>UNDO TURN</string>
+    </gui>
+    <gui id="options_continue">
+        <string>CONTINUE</string>
+    </gui>
+    <gui id="options_on">
+        <string>On</string>
+    </gui>
+    <gui id="options_off">
+        <string>Off</string>
+    </gui>
+    <gui id="options_clicking">
+        <string>Clicking</string>
+    </gui>
+    <gui id="options_dragging">
+        <string>Dragging</string>
+    </gui>
+    <gui id="options_close">
+        <string>CLOSE</string>
+    </gui>
+
+    
+    <gui id="main_new_game">
+        <string>NEW GAME</string>
+    </gui>
+    
+    <gui id="main_continue">
+        <string>CONTINUE GAME</string>
+    </gui>
+    
+    <gui id="main_options">
+        <string>OPTIONS</string>
+    </gui>    
+    
+    <gui id="main_credits">
+        <string>CREDITS</string>
+    </gui>
+    
+    
+    <gui id="game_over">
+        <string>GAME OVER
+
+You've failed your mission.
+Maybe you did your best and just got unlucky - in the end it's the results that matter, your reputation was beyond repair and people just didn't trust your skills anymore.
+You have been replaced by someone else to help Grudziądz with its water supply...
+</string>
+    </gui>
+    
+    
+    <gui id="victory">
+        <string>SUCCESS!
+
+Nowadays we take water supply for granted. We don't usually ask ourselves what it was like in the past, we don't consider the fact that immediate and easy access to water wasn't available for everyone at all times.
+Thanks to your efforts, Grudziądz had enough water supply to thrive.
+
+A modern water supply and sewage system was developed and it's all thanks to you!
+
+You're a true hero to be remembered!
+</string>
+        <string2>Turns taken:</string2>
+    </gui>
+
+    <gui id="population_increase_warning">
+    <string>WARNING
+This construction will increase
+population gain by ` +1</string>
+    </gui>
+
+
+<gui id ="achiev_hermans">
+<string>HERMAN'S DITCH
+Build the Herman's Ditch.</string>
+</gui>
+<gui id ="achiev_trynka">
+<string>TRYNKA CANAL
+Build the Trynka Canal.</string>
+</gui>
+<gui id ="achiev_s1">
+<string>A WINNER IS YOU
+Beat the game on Normal difficulty level.</string>
+</gui>
+<gui id ="achiev_s2">
+<string>WATERBENDER
+Beat the game on Hard difficulty level.</string>
+</gui>
+<gui id ="achiev_s3">
+<string>NOTHING IS IMPOSSIBLE
+Beat the game on Impossible difficulty level.</string>
+</gui>
+<gui id ="achiev_coins">
+<string>GLITTER AND GOLD
+Earn 5000 coins or more.
+Doesn't have to be completed in a single game.</string>
+</gui>
+<gui id ="achiev_fortune">
+<string>A WHEEL OF FORTUNE
+Maintain all blocks happy (supply over demand)
+for 3 consecutive turns.</string>
+</gui>
+<gui id ="achiev_requests">
+<string>I REQUEST AN ACHIEVEMENT
+Complete 20 requests in total.
+Doesn't have to be completed in a single game.</string>
+</gui>
+<gui id ="achiev_time">
+<string>NEVER A DULL MOMENT
+Complete the game in 130 turns or less.</string>
+</gui>
+<gui id ="achiev_well">
+<string>I DON'T FEEL SO WELL
+Complete the game without building any wells.
+(sumps}are}OK}and}completing}a}certain
+well-related request will not break this condition)
+</string>
+</gui>
+<gui id ="achiev_progress">
+<string>Progress</string>
+</gui>
+<gui id ="privacy_policy">
+<string>Privacy policy</string>
+</gui>
+
+    <popup id="victory">
+        <header>CONSTRUCTION COMPLETE!</header>        
+        <string>The establishing of the water-sewage system ends the era of water-work and opens a new chapter in history for all of Grudziądz!
+Congratulations!</string>
+    </popup>
+
+
+    <popup id="sell_6th">
+        <header>YOUR HAND IS FULL!</header>
+        <string>You're trying to refund a card with 5 cards already in your hand. You can do this, but the refunded card will go to the discard pile instead of your hand.
+Proceed?</string>
+    </popup>
+
+    <popup id="fire_started">
+        <header>FIRE!</header>
+        <string>A fire has broken out somewhere in the town!
+You need to assign one of your water carriers (of any kind) to put it out.
+Units assigned to firefighting will be removed from town and their cards will be added to the discard pile (not removed from the game).
+You better hurry, as raging fires will cost you a lot of
+# influence points per turn!</string>
+    </popup>
+
+    <popup id="fire_spreads">
+        <header>FIRE RAGES!</header>
+        <string>The fire is still raging in the town.
+The fire is growing stronger and if it spreads it will require more than one water carrier to put out!
+Units assigned to firefighting will be removed from town and their cards will be added to the discard pile (not removed from the game).
+You better hurry, as raging fires will costs you a lot of
+# influence points per turn!</string>
+    </popup>
+
+    <popup id="construction_already_open">
+        <header>A construction is already being worked on</header>
+        <string>You can only have one construction at a time!
+Finish or cancel the previous construction before playing the next one.</string>
+    </popup>
+    <popup id="construction_build_block">
+        <header>You don't have the required cards!</header>
+        <string>Watch out for the { symbol on the construction's list of requirements. It indicates that you don't have all the required cards - not just in your hand or storage but also in your deck and discard pile.
+
+This simply means that the missing card hasn't come into play yet and you won't be able to finish this construction until it does - by completing some other construction first.</string>
+    </popup>
+
+    <popup id="construction_cancel">
+        <header>Are you sure?</header>
+        <string>Are you sure you want to cancel this construction?
+The construction card will be returned to the discard pile. All cards played in this construction will also be returned to the discard pile. You will retrieve half of the costs of each of those cards. Construction cost is not refunded.</string>
+    </popup>
+    <popup id="consumable_card_blocked">
+        <header>Can't use this card here</header>        
+        <string>This is a one-time use card and after you play it the card will be removed from the game.
+
+Using it here wouldn't be a wise idea.</string>
+    </popup>
+
+    <popup id="request_complete">
+        <header>Request completed!</header>
+    </popup>
+
+    <popup id="request_failed">
+        <header>Request failed!</header>
+        <string>You have failed to complete the request in time.
+You must now suffer the consequences...</string>
+    </popup>
+
+    <popup id="inf_help">
+        <header>This is greatly disturbing!</header>
+        <string>Your # influence has dropped below 0.
+You can't effectively be in charge of the town's water supply if nobody is willing to listen to you.
+
+Because of how important your job is, the town's officials have agreed upon giving you one more chance.
+You are being granted #50 - but this is the last time they will help you like this.
+If your # influence hits -100, you will have to look for a new line of work...</string>
+    </popup>
+
+    <popup id="tutorial_disable">
+        <header>Disable tutorials?</header>
+        <string>Once you disable the tutorial instructions, it will only be possible to restore them in a new game. Do you want to continue?</string>
+    </popup>
+    <popup id="tutorial_enable">
+        <header>Tutorials enabled!</header>
+        <string>Tutorial instructions will show once you restart the game.</string>
+    </popup>
+
+    <popup id="tutorial_hello">
+        <header>Welcome to Grudziądz!</header>
+        <string>The city of Grudziądz was founded by the Teutonic Order in 1291 in the northern part of today's Poland on the Vistula River surrounded by wetlands. The high location on the Vistula embankment meant that the city was struggling with access to clean drinking water from the very beginning of its existence. With the growing number of inhabitants, the problem of water scarcity became an argument for the use of numerous, innovative (on a European scale) technical solutions in Grudziądz...</string>
+    </popup>
+
+    <popup id="tutorial_3">
+        <header>Construction complete!</header>        
+        <string>Cards used in the construction were moved to the discard pile - you will get them back eventually, when your deck runs out of cards.
+
+New cards have also been added to your deck.
+
+You can inspect both stacks by hovering over them.</string>
+    </popup>
+
+    <popup id="tutorial_7">
+        <header>End of turn</header>
+        <string>The first thing that happens when you finish your turn is that you get @ 5 coins. Let's watch them fly!</string>
+    </popup>
+
+    <popup id="tutorial_14">
+        <header>Selling stuff</header>        
+        <string>If you urgently need @ coins you can use this button to enter the selling mode and remove something you've paid for - like the water carrier - back to your hand (unless your hand is already full, in which case the card would go to the discard pile).
+
+You probably don't want to do that right now, but this information can be useful at a later point.</string>
+    </popup>
+
+    <popup id="tutorial_16">
+        <header>Next steps</header>
+        <string>You now know the basics.
+Keep $  levels above `  and remember to develop new technologies by completing constructions.
+
+Also, keep in mind that life can surprise you with unexpected challenges...</string>
+    </popup>
+    <popup id="tutorial_drawer">
+        <header>Storage space available!</header>
+        <string>Before you end this turn, notice that you have at least one free spot in your storage space (Quarters/Warehouse/Archive) and at least one matching card.
+
+Maybe there is something that you want to store in there for later use?
+Storing cards doesn't cost you anything and you can play or discard a stored card at any time.
+It's just a hint, the decision is up to you!</string>
+    </popup>
+    <popup id="tutorial_drawer_construction">
+        <header>Available construction in the archive</header>        
+        <string>You currently don't have an active construction and there's a construction card sitting in your archive.
+
+You didn't forget about it, did you?</string>
+    </popup>
+    <popup id="restart_game">
+        <header>Restart game?</header>
+        <string>This will restart the entire game from the beginning.
+
+YOUR ENTIRE PROGRESS WILL BE LOST!
+Are you sure?</string>
+    </popup>
+    <popup id="load_game">
+        <header>Restart this turn?</header>
+        <string>This will restart your current turn.
+Continue?</string>
+    </popup>
+    <popup id="inf_over_100">
+        <header>Influence reached 100</header>
+        <string>Your # influence can't go over 100.
+
+For every #2 over 100, you will get @1.
+</string>
+    </popup>
+    <popup id="exit_main">
+        <header>Exit game?</header>        
+        <string>The progress made since the start of the current turn will be lost. Are you sure you want to quit to Main Menu?
+</string>
+    </popup>
+
+    <popup id="tutorial_influence">
+        <header>Influence</header>
+        <string>Now you earn (or lose) # Influence points.
+# Influence shows how popular you are and how people are evaluating your management skills.
+You won't be earning or losing anything, for now. This won't last forever though, so be careful.
+</string>
+    </popup>
+
+    <popup id="tutorial_influence">
+        <header>Influence</header>
+        <string>Now you earn (or lose) # Influence points.
+# Influence shows how popular you are and how people are evaluating your management skills.
+You won't be earning or losing anything, for now. This won't last forever though, so be careful.
+</string>
+    </popup>
+
+    <popup id="population_increase">
+        <header>Population increase</header>
+        <string>The town's population will grow with time, and with that the `  demand for water increases.
+
+Now pay attention to where the population increases...
+</string>
+    </popup>
+    <popup id="no_cookies">
+        <header>Save feature unavailable</header>
+        <string>The game cannot access local storage - your browser has probably disabled cookies.
+You can still play the game, however:
+- You will not be able to continue the game where you left off if you close or refresh the page;
+- You will not be able to store your settings
+(language, volume);
+- You will not be able to save your unlocked achievements;
+
+It's highly recommended that you enable cookies before playing.</string>
+    </popup>
+
+
+
+
+
+
+
+    <tutorial id="0">
+        <string>First, lets build a basic water source. To play the Water Source construction card place it anywhere over the town map.</string>
+    </tutorial>
+
+    <tutorial id="1">    
+        <string>This is the construction screen. You need to place all of the required cards into the empty slots.</string>
+    </tutorial>
+    <tutorial id="2">
+        <string>Now, finish the construction by pressing this glowing button!</string>
+    </tutorial>
+    <tutorial id="4">
+        <string>You've got the water source but what are the actual needs of the citizens? You can find out by enabling the SUPPLY AND DEMAND view.</string>
+    </tutorial>
+    <tutorial id="5">
+        <string>$  indicates the water SUPPLY for each block.
+Zeros everywhere for now, because you're not delivering any water yet.
+`  indicates the DEMAND.
+People can tolerate a small difference between `  and $ , but if you neglect their growing needs it will lead to trouble.</string>
+    </tutorial>
+    <tutorial id="6">        
+        <string>$  indicates the water SUPPLY for each block.
+Zeros everywhere for now, because you're not delivering any water yet.
+`  indicates the DEMAND.
+People can tolerate a small difference between `  and $ , but if you neglect their growing needs it will lead to trouble.
+Click on the button once again to disable SUPPLY AND DEMAND view.</string>
+    </tutorial>
+    <tutorial id="7">
+        <string>Nothing to do now but to end the turn.
+You will earn some coins and get a new hand of cards.</string>
+    </tutorial>
+    <tutorial id="11">        
+        <string>It's time to hire your first water carrier. Place him on one of the town's blocks and observe how the $  water supply number changes.</string>
+    </tutorial>
+    <tutorial id="12">        
+        <string>Once your worker is placed in the town he will continue to walk around his designated block.
+You can move him to another block whenever you want.
+
+Try doing this now.</string>
+    </tutorial>
+    <tutorial id="18">
+        <string>You've constructed the water-work. This marks the beginning of the pipe-based water supply system. You'll have to lay pipes along the streets and water sumps wherever you want to increase the water supply. Click the pipe button to show the pipes/sump view.</string>
+    </tutorial>
+
+    <tutorial id="19">
+        <string>No pipes for now, but you can see the entry point for them here!
+Notice the colors and numbers on the ground - the further they are from the water source, the less efficient the system is.
+$ 1 $ 2 $ 3 $ 4 - as indicated, that's the current efficiency for each zone.
+Click the pipe button again to hide the pipes/sump view.</string>
+    </tutorial>
+
+
+
+
+    <tooltip id="constructions_list">
+        <string>Finished constructions:</string>
+    </tooltip>
+    <tooltip id="constructions_none">
+        <string>NONE YET</string>
+    </tooltip>
+    
+    <tooltip id="card_resource">
+        <string>Empty space for a ~ resource card.</string>
+    </tooltip>
+    <tooltip id="card_document">
+        <string>Empty space for a \ document card.</string>
+    </tooltip>
+    <tooltip id="card_worker">
+        <string>Empty space for a _ worker card.</string>
+    </tooltip>
+    <tooltip id="end_turn">
+        <string>End of turn</string>
+    </tooltip>
+    <tooltip id="finish_construction">
+        <string>Finish construction. You still need to pay the cost of finalizing the construction.</string>
+    </tooltip>
+    <tooltip id="finish_request">
+        <string>Finish this request. You still need to pay the cost of finalizing the request.</string>
+    </tooltip>
+    <tooltip id="cancel_construction_tutorial">        
+        <string>Cancel construction. You will be refunded 50% of the cost for each card already used in this construction.
+        
+You can't cancel this construction during the tutorial.</string>
+    </tooltip>
+    <tooltip id="cancel_construction">
+        <string>Cancel construction. You will be refunded 50% of the cost for each card already used in this construction.</string>
+    </tooltip>
+    <tooltip id="open_close_construction">
+        <string>Open/close construction screen.</string>
+    </tooltip>
+    <tooltip id="open_close_request">
+        <string>Open/close request screen.</string>
+    </tooltip>
+    <tooltip id="close">
+        <string>Close</string>
+    </tooltip>
+    <tooltip id="sort">
+        <string>Sort - sort cards by type</string>
+    </tooltip>
+    <tooltip id="sell">
+        <string>Sell - receive 50% of costs back and return the card to your hand or the discard pile</string>
+    </tooltip>
+    <tooltip id="show_pipes">
+        <string>Show/hide PIPES AND WATER-WORK EFFICIENCY</string>
+    </tooltip>
+    <tooltip id="show_supply">
+        <string>Show/hide SUPPLY AND DEMAND</string>
+    </tooltip>
+    <tooltip id="drawer_scroll">
+        <string>Archive 
+(\ document cards storage)</string>
+    </tooltip>
+    <tooltip id="drawer_res">
+        <string>Warehouse 
+(~ resource cards storage)</string>
+    </tooltip>
+    <tooltip id="drawer_humans">
+        <string>Quarters 
+(_ worker cards storage)</string>
+    </tooltip>
+    <tooltip id="drawer_recycle">
+        <string>Discard card</string>
+    </tooltip>
+    <tooltip id="options">
+        <string>Game options</string>
+    </tooltip>
+    <tooltip id="volume_up">
+        <string>Increase volume</string>
+    </tooltip>
+    <tooltip id="volume_down">
+        <string>Decrease volume</string>
+    </tooltip>
+    <tooltip id="music_off">
+        <string>Disable game music</string>
+    </tooltip>
+    <tooltip id="music_on">
+        <string>Enable game music</string>
+    </tooltip>
+    <tooltip id="language_en">
+        <string>English</string>
+    </tooltip>
+    <tooltip id="language_pl">
+        <string>Polski</string>
+    </tooltip>
+    <tooltip id="tutorials_off">
+        <string>Disable tutorials</string>
+    </tooltip>
+    <tooltip id="tutorials_on">
+        <string>Enable tutorials</string>
+    </tooltip>
+    <tooltip id="fullscreen_on">
+        <string>Enable full-screen mode</string>
+    </tooltip>
+    <tooltip id="fullscreen_off">
+        <string>Disable full-screen mode</string>
+    </tooltip>
+    <tooltip id="clickmode_on">
+        <string>No holding-down required. Grab cards by clicking/tapping on them once and then click/tap again to put them away.</string>
+    </tooltip>
+    <tooltip id="clickmode_off">
+        <string>Drag-and-drop mode. Grab cards by clicking/tapping on them and then release to put them away.</string>
+    </tooltip>
+    <tooltip id="btn_quit">        
+        <string>Quit to Main Menu. The progress made since the start of the current turn will be lost.</string>
+    </tooltip>
+    <tooltip id="btn_restart">
+        <string>Restart the game. Starting from scratch will overwrite your current progress.</string>
+    </tooltip>
+    <tooltip id="btn_load">        
+        <string>Restart current turn. All progress made since the beginning of this turn will be lost, but thanks to this you can undo any mistakes made!</string>
+    </tooltip>
+    <tooltip id="btn_continue">
+        <string>Continue playing!</string>
+    </tooltip>
+    <tooltip id="btn_close_options">
+        <string>Close options</string>
+    </tooltip>
+    <tooltip id="btn_new_game">
+        <string>Start a new game!</string>
+    </tooltip>
+    <tooltip id="btn_main_continue">
+        <string>Continue previous game</string>
+    </tooltip>
+    <tooltip id="btn_achievements">
+        <string>Can you get them all?</string>
+    </tooltip>
+    <tooltip id="btn_credits">
+        <string>Who made this game?</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_easy">
+        <string>Casual mode. Chill out!
+
+- Prices -20%
+- Starting influence +20
+- Slower population growth
+
+Warning: You will NOT be able to unlock achievements on this difficulty level.</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_normal">
+        <string>Normal game difficulty, the way it was meant to be played.</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_hard">
+        <string>For those seeking more of a challenge...
+
+- Prices +5%
+- Only draw 4 cards per turn
+
+Warning: tutorials will automatically be disabled.</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_hard2">
+        <string>For Waterworks! veterans only.
+
+- Prices +10%
+- Only draw 3 cards per turn
+- Town starts with 2 random blocks alredy having water demand.
+
+Warning: tutorials will automatically be disabled.</string>
+    </tooltip>
+    <tooltip id="btn_dificulty_back">
+        <string>Back to main menu</string>
+    </tooltip>
+    <tooltip id="diff_hard_locked">
+        <string>[LOCKED]
+Unlock by winning a Normal difficulty game.</string>
+    </tooltip>
+    <tooltip id="diff_hard2_locked">
+        <string>[LOCKED]
+Unlock by winning a Hard difficulty game.</string>
+    </tooltip>
+    <tooltip id="diff_level">
+        <string>Difficulty level:</string>
+    </tooltip>
+
+
+    <tooltip id="sell_what">
+        <string>Sell:</string>
+    </tooltip>
+
+    <tooltip id="sell_for">
+        <string>for @</string>
+    </tooltip>
+    <tooltip id="popul_info1">        
+        <string>The town's population will increase by a total of `</string>
+    </tooltip>
+    <tooltip id="popul_info2">
+        <string>at the start of each turn.
+Additional demand will be added to a random block(s).</string>
+    </tooltip>
+    <tooltip id="round_info1">
+        <string>It has been</string>
+    </tooltip>
+    <tooltip id="round_info2">
+        <string>turns since the start of the game.</string>
+    </tooltip>
+    <tooltip id="money_info1">
+        <string>Coins
+
+You have @</string>
+    </tooltip>
+    <tooltip id="money_info2">
+        <string>.
+
+At the start of each turn you will get @</string>
+    </tooltip>
+    <tooltip id="money_info3">
+        <string>more.</string>
+    </tooltip>
+    <tooltip id="infl_info1">
+        <string>Influence
+
+You have #</string>
+    </tooltip>
+    <tooltip id="infl_info2">
+        <string>.
+
+At the start of each turn this number will change by #</string>
+    </tooltip>
+    <tooltip id="infl_info3">
+        <string>.
+
+1/2 of all # above 100 is converted to @.        
+
+Dropping to #-100 means
+a game over!</string>
+    </tooltip>
+    <tooltip id="back_btn_main">
+        <string>Back to main menu</string>
+    </tooltip>
+    <tooltip id="no_water">
+        <string>Warning! No water supply - check pipes?</string>
+    </tooltip>
+
+
+
+
+
+
+
+<credits id="credits_1">
+<string>GAME BY
+Mateusz "scriptwelder" Sokalszczuk</string>
+</credits>
+
+<credits id="credits_2">
+<string>MUSIC BY
+Chris Carlone</string>
+</credits>
+
+<credits id="credits_3">
+<string>This}game}is}based}on}the}results}of}research}carried out by Wacław Kulczykowski at the Department of History at the University of Gdańsk</string>
+</credits>
+
+<credits id="credits_4">
+<string>GAME FINANCING
+"Modern methods of disseminating historical
+research}results:}a}computer}game"}-}task}financed under contract 521 / P-DUN / 2019 from the funds
+of the Ministry of Science and Higher Education allocated to the Dissemination of Science Activity.
+Task manager: Wacław Kulczykowski.
+</string>
+</credits>
+
+<credits id="credits_5">
+<string>FINANCING RESEARCH
+"Analyze the medieval hydraulic solutions functioning in key settlement complexes located in the Osa River Valley" - project financed by the National Science Center as part of the PRELUDIUM 12 competition (research project number 2016/23 / N / HS3 / 03168).
+Project manager: Wacław Kulczykowski.</string>
+</credits>
+
+<credits id="credits_6">
+<string>Archeologia Live &amp; Online (archeonline.pl)
+University of Gdańsk (ug.edu.pl)
+Faculty of History at the University of Gdańsk (historia.ug.edu.pl)</string>
+</credits>
+
+<credits id="credits_7">
+<string>PATRONAGE
+Mayor of the city of Grudziądz
+Museum of Fr. dr. Władysław Łęga in Grudziądz
+Miejskie Wodociągi i Oczyszczalnia sp.z o.o. in Grudziądz
+
+PROOFREADING AND TESTING
+Anton Svensson</string>
+</credits>
+
+<privacy_policy id="splash">
+<string>POLSKI
+Gra Waterworks! może zbierać dane analityczne i marketingowe.
+Przed pierwszym uruchomieniem gry musisz zaakceptować
+politykę prywatności.
+
+Kontynuując akceptujesz te warunki.
+Jeśli masz mniej niż 16 lat, zgodę musi wyrazić twój prawny opiekun.
+
+
+
+ENGLISH
+Waterworks! may collect analytical
+and marketing data.
+Before starting the game for the first time, you must accept the privacy policy.
+
+By}continuing,}you}accept}these}terms.
+If you are less than}16}years old, consent must be given by your legal guardian.</string>
+<accept>AKCEPTUJĘ
+ACCEPT</accept>
+</privacy_policy>
+    
+</strings>

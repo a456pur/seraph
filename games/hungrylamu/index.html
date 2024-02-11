@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+
+    <title>Hungry Lamu | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1280 height=720 style="width: 1280px; height: 720px; background: #5B8032"></canvas>
+    <script src="Build/WebGL.loader.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebGL.data",
+        frameworkUrl: "Build/WebGL.framework.js",
+        codeUrl: "Build/WebGL.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Kulu",
+        productName: "Hungry Lamu",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,923 @@
+{ "frames": {
+   "boats0": {
+    "frame": { "x": 873, "y": 197, "w": 66, "h": 20 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 30, "w": 66, "h": 20 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats1": {
+    "frame": { "x": 873, "y": 134, "w": 66, "h": 20 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 30, "w": 66, "h": 20 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats2": {
+    "frame": { "x": 873, "y": 155, "w": 66, "h": 20 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 30, "w": 66, "h": 20 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats3": {
+    "frame": { "x": 871, "y": 24, "w": 66, "h": 21 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 29, "w": 66, "h": 21 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats4": {
+    "frame": { "x": 871, "y": 46, "w": 66, "h": 21 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 29, "w": 66, "h": 21 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats5": {
+    "frame": { "x": 873, "y": 176, "w": 66, "h": 20 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 29, "w": 66, "h": 20 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats6": {
+    "frame": { "x": 873, "y": 279, "w": 64, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 19, "y": 31, "w": 64, "h": 19 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats7": {
+    "frame": { "x": 872, "y": 239, "w": 66, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 31, "w": 66, "h": 19 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats8": {
+    "frame": { "x": 871, "y": 259, "w": 66, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 31, "w": 66, "h": 19 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats9": {
+    "frame": { "x": 871, "y": 0, "w": 66, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 27, "w": 66, "h": 23 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats10": {
+    "frame": { "x": 97, "y": 270, "w": 66, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 31, "w": 66, "h": 19 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats11": {
+    "frame": { "x": 97, "y": 250, "w": 66, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 31, "w": 66, "h": 19 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats12": {
+    "frame": { "x": 873, "y": 90, "w": 66, "h": 21 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 29, "w": 66, "h": 21 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats13": {
+    "frame": { "x": 871, "y": 68, "w": 66, "h": 21 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 29, "w": 66, "h": 21 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats14": {
+    "frame": { "x": 873, "y": 112, "w": 64, "h": 21 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 19, "y": 29, "w": 64, "h": 21 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats15": {
+    "frame": { "x": 872, "y": 218, "w": 66, "h": 20 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 18, "y": 30, "w": 66, "h": 20 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats16": {
+    "frame": { "x": 938, "y": 0, "w": 1, "h": 1 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 1, "h": 1 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats17": {
+    "frame": { "x": 194, "y": 293, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats18": {
+    "frame": { "x": 388, "y": 293, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats19": {
+    "frame": { "x": 485, "y": 293, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats20": {
+    "frame": { "x": 582, "y": 293, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats21": {
+    "frame": { "x": 679, "y": 293, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats22": {
+    "frame": { "x": 776, "y": 293, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats23": {
+    "frame": { "x": 579, "y": 425, "w": 95, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 9, "w": 95, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats24": {
+    "frame": { "x": 0, "y": 294, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats25": {
+    "frame": { "x": 97, "y": 335, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats26": {
+    "frame": { "x": 289, "y": 249, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats27": {
+    "frame": { "x": 194, "y": 337, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats28": {
+    "frame": { "x": 291, "y": 337, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats29": {
+    "frame": { "x": 388, "y": 337, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats30": {
+    "frame": { "x": 485, "y": 337, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats31": {
+    "frame": { "x": 483, "y": 425, "w": 95, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 9, "w": 95, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats32": {
+    "frame": { "x": 192, "y": 201, "w": 96, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 8, "w": 96, "h": 44 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats33": {
+    "frame": { "x": 582, "y": 337, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats34": {
+    "frame": { "x": 679, "y": 337, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats35": {
+    "frame": { "x": 291, "y": 425, "w": 95, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 9, "w": 95, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats36": {
+    "frame": { "x": 776, "y": 337, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats37": {
+    "frame": { "x": 0, "y": 338, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats38": {
+    "frame": { "x": 97, "y": 379, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats39": {
+    "frame": { "x": 938, "y": 0, "w": 1, "h": 1 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 1, "h": 1 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats40": {
+    "frame": { "x": 774, "y": 50, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats41": {
+    "frame": { "x": 0, "y": 51, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats42": {
+    "frame": { "x": 97, "y": 51, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats43": {
+    "frame": { "x": 775, "y": 200, "w": 96, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 4, "w": 96, "h": 48 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats44": {
+    "frame": { "x": 290, "y": 200, "w": 96, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 4, "w": 96, "h": 48 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats45": {
+    "frame": { "x": 678, "y": 200, "w": 96, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 4, "w": 96, "h": 48 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats46": {
+    "frame": { "x": 96, "y": 201, "w": 95, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 4, "w": 95, "h": 48 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats47": {
+    "frame": { "x": 194, "y": 51, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats48": {
+    "frame": { "x": 388, "y": 100, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats49": {
+    "frame": { "x": 485, "y": 100, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats50": {
+    "frame": { "x": 582, "y": 100, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats51": {
+    "frame": { "x": 679, "y": 100, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats52": {
+    "frame": { "x": 776, "y": 100, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats53": {
+    "frame": { "x": 291, "y": 100, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats54": {
+    "frame": { "x": 194, "y": 0, "w": 95, "h": 50 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 2, "w": 95, "h": 50 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats55": {
+    "frame": { "x": 0, "y": 0, "w": 96, "h": 50 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 2, "w": 96, "h": 50 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats56": {
+    "frame": { "x": 97, "y": 101, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats57": {
+    "frame": { "x": 194, "y": 101, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats58": {
+    "frame": { "x": 291, "y": 51, "w": 95, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 3, "w": 95, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats59": {
+    "frame": { "x": 291, "y": 150, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats60": {
+    "frame": { "x": 388, "y": 150, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats61": {
+    "frame": { "x": 485, "y": 150, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats62": {
+    "frame": { "x": 938, "y": 0, "w": 1, "h": 1 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 1, "h": 1 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats63": {
+    "frame": { "x": 0, "y": 382, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats64": {
+    "frame": { "x": 97, "y": 423, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats65": {
+    "frame": { "x": 194, "y": 425, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats66": {
+    "frame": { "x": 386, "y": 249, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats67": {
+    "frame": { "x": 483, "y": 249, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats68": {
+    "frame": { "x": 580, "y": 249, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats69": {
+    "frame": { "x": 771, "y": 425, "w": 95, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 9, "w": 95, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats70": {
+    "frame": { "x": 774, "y": 249, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats71": {
+    "frame": { "x": 0, "y": 250, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats72": {
+    "frame": { "x": 97, "y": 291, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats73": {
+    "frame": { "x": 291, "y": 293, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats74": {
+    "frame": { "x": 194, "y": 381, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats75": {
+    "frame": { "x": 291, "y": 381, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats76": {
+    "frame": { "x": 388, "y": 381, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats77": {
+    "frame": { "x": 387, "y": 425, "w": 95, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 9, "w": 95, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats78": {
+    "frame": { "x": 192, "y": 246, "w": 96, "h": 44 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 8, "w": 96, "h": 44 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats79": {
+    "frame": { "x": 485, "y": 381, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats80": {
+    "frame": { "x": 677, "y": 249, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats81": {
+    "frame": { "x": 675, "y": 425, "w": 95, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 9, "w": 95, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats82": {
+    "frame": { "x": 582, "y": 381, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats83": {
+    "frame": { "x": 679, "y": 381, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats84": {
+    "frame": { "x": 776, "y": 381, "w": 96, "h": 43 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 9, "w": 96, "h": 43 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats85": {
+    "frame": { "x": 938, "y": 0, "w": 1, "h": 1 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 1, "h": 1 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats86": {
+    "frame": { "x": 679, "y": 150, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats87": {
+    "frame": { "x": 776, "y": 150, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats88": {
+    "frame": { "x": 0, "y": 151, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats89": {
+    "frame": { "x": 581, "y": 200, "w": 96, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 4, "w": 96, "h": 48 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats90": {
+    "frame": { "x": 484, "y": 200, "w": 96, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 4, "w": 96, "h": 48 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats91": {
+    "frame": { "x": 387, "y": 200, "w": 96, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 4, "w": 96, "h": 48 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats92": {
+    "frame": { "x": 0, "y": 201, "w": 95, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 4, "w": 95, "h": 48 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats93": {
+    "frame": { "x": 97, "y": 151, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats94": {
+    "frame": { "x": 582, "y": 150, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats95": {
+    "frame": { "x": 386, "y": 0, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats96": {
+    "frame": { "x": 483, "y": 0, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats97": {
+    "frame": { "x": 580, "y": 0, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats98": {
+    "frame": { "x": 677, "y": 0, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats99": {
+    "frame": { "x": 774, "y": 0, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats100": {
+    "frame": { "x": 290, "y": 0, "w": 95, "h": 50 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 2, "w": 95, "h": 50 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats101": {
+    "frame": { "x": 97, "y": 0, "w": 96, "h": 50 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 2, "w": 96, "h": 50 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats102": {
+    "frame": { "x": 386, "y": 50, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats103": {
+    "frame": { "x": 483, "y": 50, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats104": {
+    "frame": { "x": 194, "y": 151, "w": 95, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 3, "w": 95, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats105": {
+    "frame": { "x": 580, "y": 50, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats106": {
+    "frame": { "x": 677, "y": 50, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats107": {
+    "frame": { "x": 0, "y": 101, "w": 96, "h": 49 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 3, "w": 96, "h": 49 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats108": {
+    "frame": { "x": 938, "y": 0, "w": 1, "h": 1 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 1, "h": 1 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   },
+   "boats109": {
+    "frame": { "x": 938, "y": 0, "w": 1, "h": 1 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 1, "h": 1 },
+    "sourceSize": { "w": 96, "h": 52 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.19.2-x64",
+  "image": "boats.png",
+  "format": "RGBA8888",
+  "size": { "w": 939, "h": 468 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "boat1", "from": 0, "to": 15, "direction": "forward" },
+   { "name": "boat2", "from": 17, "to": 38, "direction": "forward" },
+   { "name": "boat3", "from": 40, "to": 61, "direction": "forward" },
+   { "name": "boat4", "from": 63, "to": 84, "direction": "forward" },
+   { "name": "boat5", "from": 86, "to": 107, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "chlupot", "opacity": 255, "blendMode": "normal" },
+   { "name": "sladwody1", "opacity": 203, "blendMode": "normal" },
+   { "name": "sladwody2", "opacity": 203, "blendMode": "normal" },
+   { "name": "sladwody4", "opacity": 203, "blendMode": "normal" },
+   { "name": "lajba", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 5", "opacity": 255, "blendMode": "normal" },
+   { "name": "lajba 2", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 4", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 6", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 3", "opacity": 255, "blendMode": "normal" },
+   { "name": "noga2", "opacity": 255, "blendMode": "normal" },
+   { "name": "noga1", "opacity": 255, "blendMode": "normal" },
+   { "name": "reka2", "opacity": 255, "blendMode": "normal" },
+   { "name": "tors", "opacity": 255, "blendMode": "normal" },
+   { "name": "reka1", "opacity": 255, "blendMode": "normal" },
+   { "name": "glowa", "opacity": 255, "blendMode": "normal" },
+   { "name": "wioslo", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 2", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" },
+   { "name": "chlupot 1", "opacity": 255, "blendMode": "normal" },
+   { "name": "chlupot 1 Copy", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

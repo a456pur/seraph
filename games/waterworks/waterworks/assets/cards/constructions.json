@@ -1,0 +1,210 @@
+{
+"frames": {
+	"archive1": {
+		"frame": {"x":314, "y":154, "w":108, "h":30},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":30},
+		"sourceSize": {"w":108,"h":30}
+	},
+	"archive2": {
+		"frame": {"x":314, "y":185, "w":108, "h":41},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":41},
+		"sourceSize": {"w":108,"h":41}
+	},
+	"archive3": {
+		"frame": {"x":405, "y":227, "w":108, "h":56},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":56},
+		"sourceSize": {"w":108,"h":56}
+	},
+	"buckets": {
+		"frame": {"x":406, "y":0, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"carrier": {
+		"frame": {"x":0, "y":102, "w":204, "h":50},
+		"spriteSourceSize": {"x":0,"y":0,"w":204,"h":50},
+		"sourceSize": {"w":204,"h":50}
+	},
+	"carts": {
+		"frame": {"x":0, "y":153, "w":204, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":204,"h":37},
+		"sourceSize": {"w":204,"h":37}
+	},
+	"chains": {
+		"frame": {"x":500, "y":114, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"craftsman": {
+		"frame": {"x":406, "y":76, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"herman": {
+		"frame": {"x":0, "y":452, "w":200, "h":87},
+		"spriteSourceSize": {"x":0,"y":0,"w":200,"h":87},
+		"sourceSize": {"w":200,"h":87}
+	},
+	"maps": {
+		"frame": {"x":423, "y":152, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"merchants": {
+		"frame": {"x":0, "y":321, "w":200, "h":53},
+		"spriteSourceSize": {"x":0,"y":0,"w":200,"h":53},
+		"sourceSize": {"w":200,"h":53}
+	},
+	"metalpipes": {
+		"frame": {"x":500, "y":0, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"overshot": {
+		"frame": {"x":500, "y":38, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"pumps": {
+		"frame": {"x":500, "y":76, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"quarters1": {
+		"frame": {"x":402, "y":523, "w":108, "h":30},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":30},
+		"sourceSize": {"w":108,"h":30}
+	},
+	"quarters2": {
+		"frame": {"x":327, "y":555, "w":108, "h":41},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":41},
+		"sourceSize": {"w":108,"h":41}
+	},
+	"quarters3": {
+		"frame": {"x":205, "y":154, "w":108, "h":56},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":56},
+		"sourceSize": {"w":108,"h":56}
+	},
+	"sewers": {
+		"frame": {"x":436, "y":554, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"source2": {
+		"frame": {"x":0, "y":51, "w":204, "h":50},
+		"spriteSourceSize": {"x":0,"y":0,"w":204,"h":50},
+		"sourceSize": {"w":204,"h":50}
+	},
+	"stable": {
+		"frame": {"x":0, "y":191, "w":204, "h":50},
+		"spriteSourceSize": {"x":0,"y":0,"w":204,"h":50},
+		"sourceSize": {"w":204,"h":50}
+	},
+	"stable2": {
+		"frame": {"x":0, "y":0, "w":204, "h":50},
+		"spriteSourceSize": {"x":0,"y":0,"w":204,"h":50},
+		"sourceSize": {"w":204,"h":50}
+	},
+	"staff": {
+		"frame": {"x":406, "y":114, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"tower": {
+		"frame": {"x":514, "y":228, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"trynka": {
+		"frame": {"x":0, "y":242, "w":203, "h":78},
+		"spriteSourceSize": {"x":0,"y":0,"w":203,"h":78},
+		"sourceSize": {"w":203,"h":78}
+	},
+	"victory": {
+		"frame": {"x":402, "y":319, "w":200, "h":102},
+		"spriteSourceSize": {"x":0,"y":0,"w":200,"h":102},
+		"sourceSize": {"w":200,"h":102}
+	},
+	"warehouse1": {
+		"frame": {"x":205, "y":211, "w":108, "h":30},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":30},
+		"sourceSize": {"w":108,"h":30}
+	},
+	"warehouse2": {
+		"frame": {"x":109, "y":555, "w":108, "h":41},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":41},
+		"sourceSize": {"w":108,"h":41}
+	},
+	"warehouse3": {
+		"frame": {"x":0, "y":540, "w":108, "h":56},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":56},
+		"sourceSize": {"w":108,"h":56}
+	},
+	"waterwheel": {
+		"frame": {"x":514, "y":190, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"waterworks1": {
+		"frame": {"x":201, "y":477, "w":200, "h":77},
+		"spriteSourceSize": {"x":0,"y":11,"w":200,"h":100},
+		"sourceSize": {"w":200,"h":100}
+	},
+	"waterworks2": {
+		"frame": {"x":201, "y":399, "w":200, "h":77},
+		"spriteSourceSize": {"x":0,"y":11,"w":200,"h":100},
+		"sourceSize": {"w":200,"h":100}
+	},
+	"waterworks3": {
+		"frame": {"x":201, "y":321, "w":200, "h":77},
+		"spriteSourceSize": {"x":0,"y":11,"w":200,"h":100},
+		"sourceSize": {"w":200,"h":100}
+	},
+	"waterworks4": {
+		"frame": {"x":402, "y":422, "w":197, "h":100},
+		"spriteSourceSize": {"x":0,"y":0,"w":200,"h":100},
+		"sourceSize": {"w":200,"h":100}
+	},
+	"waterworks_pipes": {
+		"frame": {"x":204, "y":242, "w":200, "h":76},
+		"spriteSourceSize": {"x":0,"y":5,"w":200,"h":100},
+		"sourceSize": {"w":200,"h":100}
+	},
+	"waterworks_pumps": {
+		"frame": {"x":205, "y":0, "w":200, "h":76},
+		"spriteSourceSize": {"x":0,"y":5,"w":200,"h":100},
+		"sourceSize": {"w":200,"h":100}
+	},
+	"waterworks_sumps": {
+		"frame": {"x":205, "y":77, "w":200, "h":76},
+		"spriteSourceSize": {"x":0,"y":5,"w":200,"h":100},
+		"sourceSize": {"w":200,"h":100}
+	},
+	"waterworks_tower": {
+		"frame": {"x":0, "y":375, "w":200, "h":76},
+		"spriteSourceSize": {"x":0,"y":5,"w":200,"h":100},
+		"sourceSize": {"w":200,"h":100}
+	},
+	"wells": {
+		"frame": {"x":406, "y":38, "w":93, "h":37},
+		"spriteSourceSize": {"x":0,"y":0,"w":93,"h":37},
+		"sourceSize": {"w":93,"h":37}
+	},
+	"workshop1": {
+		"frame": {"x":218, "y":555, "w":108, "h":30},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":30},
+		"sourceSize": {"w":108,"h":30}
+	},
+	"workshop2": {
+		"frame": {"x":218, "y":555, "w":108, "h":30},
+		"spriteSourceSize": {"x":0,"y":0,"w":108,"h":30},
+		"sourceSize": {"w":108,"h":30}
+	}
+
+},
+"meta": {
+	"image": "constructions.png",
+	"size": {"w": 608, "h": 608},
+	"scale": "1"
+}
+}

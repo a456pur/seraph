@@ -1,0 +1,185 @@
+{
+"frames": {
+	"bucket_wheel": {
+		"frame": {"x":91, "y":252, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"building_materials": {
+		"frame": {"x":273, "y":108, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"chain_lift": {
+		"frame": {"x":273, "y":72, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"construction": {
+		"frame": {"x":273, "y":36, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"craftsman": {
+		"frame": {"x":273, "y":0, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"digging_tools": {
+		"frame": {"x":182, "y":324, "w":90, "h":29},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":29},
+		"sourceSize": {"w":90,"h":29}
+	},
+	"donation1": {
+		"frame": {"x":182, "y":288, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"donation2": {
+		"frame": {"x":182, "y":252, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"donation3": {
+		"frame": {"x":182, "y":216, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"foreman": {
+		"frame": {"x":182, "y":180, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"funding_increase": {
+		"frame": {"x":182, "y":144, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"gift1": {
+		"frame": {"x":182, "y":108, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"gift2": {
+		"frame": {"x":182, "y":72, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"gift3": {
+		"frame": {"x":182, "y":36, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"irrigation": {
+		"frame": {"x":182, "y":0, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"maps": {
+		"frame": {"x":91, "y":323, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"metal_pipes": {
+		"frame": {"x":91, "y":288, "w":90, "h":34},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"nobles_sigil": {
+		"frame": {"x":273, "y":144, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"orders_sigil": {
+		"frame": {"x":91, "y":216, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"overshot_wheel": {
+		"frame": {"x":91, "y":180, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"permit": {
+		"frame": {"x":91, "y":144, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"pipe": {
+		"frame": {"x":91, "y":108, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"pumps": {
+		"frame": {"x":91, "y":72, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"royal_sigil": {
+		"frame": {"x":91, "y":36, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"scribe": {
+		"frame": {"x":91, "y":0, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"sewer_plans": {
+		"frame": {"x":0, "y":324, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"staff": {
+		"frame": {"x":0, "y":288, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"tower": {
+		"frame": {"x":0, "y":252, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"water_carrier": {
+		"frame": {"x":0, "y":216, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"water_cart": {
+		"frame": {"x":0, "y":180, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"water_wagon": {
+		"frame": {"x":0, "y":144, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"water_wheel": {
+		"frame": {"x":0, "y":108, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"well0": {
+		"frame": {"x":0, "y":72, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"well1": {
+		"frame": {"x":0, "y":36, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	},
+	"worker": {
+		"frame": {"x":0, "y":0, "w":90, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":90,"h":35},
+		"sourceSize": {"w":90,"h":35}
+	}
+
+},
+"meta": {
+	"image": "pictures.png",
+	"size": {"w": 364, "h": 364},
+	"scale": "1"
+}
+}

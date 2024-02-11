@@ -1,0 +1,274 @@
+{ "frames": {
+   "river0": {
+    "frame": { "x": 0, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river1": {
+    "frame": { "x": 103, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river2": {
+    "frame": { "x": 206, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river3": {
+    "frame": { "x": 309, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river4": {
+    "frame": { "x": 412, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river5": {
+    "frame": { "x": 515, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river6": {
+    "frame": { "x": 618, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river7": {
+    "frame": { "x": 721, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river8": {
+    "frame": { "x": 824, "y": 0, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river9": {
+    "frame": { "x": 0, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river10": {
+    "frame": { "x": 103, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river11": {
+    "frame": { "x": 206, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river12": {
+    "frame": { "x": 309, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river13": {
+    "frame": { "x": 412, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river14": {
+    "frame": { "x": 515, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river15": {
+    "frame": { "x": 618, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river16": {
+    "frame": { "x": 721, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river17": {
+    "frame": { "x": 824, "y": 309, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river18": {
+    "frame": { "x": 0, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river19": {
+    "frame": { "x": 103, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river20": {
+    "frame": { "x": 206, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river21": {
+    "frame": { "x": 309, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river22": {
+    "frame": { "x": 412, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river23": {
+    "frame": { "x": 515, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river24": {
+    "frame": { "x": 618, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river25": {
+    "frame": { "x": 721, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river26": {
+    "frame": { "x": 824, "y": 618, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river27": {
+    "frame": { "x": 0, "y": 927, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river28": {
+    "frame": { "x": 103, "y": 927, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river29": {
+    "frame": { "x": 206, "y": 927, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river30": {
+    "frame": { "x": 309, "y": 927, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "river31": {
+    "frame": { "x": 412, "y": 927, "w": 103, "h": 309 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 537, "y": 0, "w": 103, "h": 309 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://wwwprite.org/",
+  "version": "1.2.16.3-x64",
+  "image": "river2.png",
+  "format": "RGBA8888",
+  "size": { "w": 1024, "h": 1236 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

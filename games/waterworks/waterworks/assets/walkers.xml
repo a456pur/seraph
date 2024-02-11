@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<walkers>
+    <walker id="water_carrier">
+        <sprite spriteName="carrier" spriteBase="0.6875"/>
+        <behavior speed="10" roaming="false" draggable="true"/>
+    </walker>
+    <walker id="water_wagon">
+        <sprite spriteName="horse"  spriteBase="0.9"/>
+        <sprite2 spriteName="wagon" spriteBase="0.82"/>
+        <behavior speed="20" roaming="false" draggable="true"/>
+    </walker>    
+    <walker id="water_cart">
+        <sprite spriteName="cart" spriteBase="0.6875"/>
+        <behavior speed="10" roaming="false" draggable="true"/>
+    </walker>    
+</walkers>

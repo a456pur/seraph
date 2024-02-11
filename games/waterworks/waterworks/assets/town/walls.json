@@ -1,0 +1,200 @@
+{
+"frames": {
+	"bridge_A": {
+		"frame": {"x":167, "y":308, "w":60, "h":22},
+		"spriteSourceSize": {"x":577,"y":152,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"bridge_B": {
+		"frame": {"x":215, "y":61, "w":62, "h":68},
+		"spriteSourceSize": {"x":578,"y":130,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_3": {
+		"frame": {"x":281, "y":308, "w":105, "h":139},
+		"spriteSourceSize": {"x":84,"y":161,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_2": {
+		"frame": {"x":0, "y":250, "w":191, "h":12},
+		"spriteSourceSize": {"x":210,"y":287,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_1": {
+		"frame": {"x":0, "y":263, "w":170, "h":40},
+		"spriteSourceSize": {"x":407,"y":252,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_4": {
+		"frame": {"x":387, "y":433, "w":30, "h":72},
+		"spriteSourceSize": {"x":562,"y":172,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_5": {
+		"frame": {"x":472, "y":112, "w":30, "h":149},
+		"spriteSourceSize": {"x":562,"y":8,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_6": {
+		"frame": {"x":281, "y":448, "w":31, "h":36},
+		"spriteSourceSize": {"x":82,"y":125,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_7": {
+		"frame": {"x":326, "y":168, "w":54, "h":82},
+		"spriteSourceSize": {"x":89,"y":30,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_8": {
+		"frame": {"x":0, "y":484, "w":126, "h":9},
+		"spriteSourceSize": {"x":225,"y":22,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_A_9": {
+		"frame": {"x":0, "y":494, "w":77, "h":4},
+		"spriteSourceSize": {"x":419,"y":27,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_3": {
+		"frame": {"x":326, "y":28, "w":105, "h":139},
+		"spriteSourceSize": {"x":90,"y":161,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_2": {
+		"frame": {"x":0, "y":61, "w":214, "h":8},
+		"spriteSourceSize": {"x":206,"y":297,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_1": {
+		"frame": {"x":0, "y":304, "w":166, "h":36},
+		"spriteSourceSize": {"x":405,"y":263,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_4": {
+		"frame": {"x":278, "y":28, "w":43, "h":99},
+		"spriteSourceSize": {"x":551,"y":164,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_5": {
+		"frame": {"x":387, "y":270, "w":47, "h":162},
+		"spriteSourceSize": {"x":563,"y":2,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_6": {
+		"frame": {"x":171, "y":263, "w":26, "h":36},
+		"spriteSourceSize": {"x":86,"y":125,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_7": {
+		"frame": {"x":381, "y":168, "w":50, "h":101},
+		"spriteSourceSize": {"x":92,"y":24,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_8": {
+		"frame": {"x":0, "y":499, "w":59, "h":4},
+		"spriteSourceSize": {"x":225,"y":26,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"shadow_B_9": {
+		"frame": {"x":0, "y":0, "w":377, "h":27},
+		"spriteSourceSize": {"x":118,"y":5,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_3": {
+		"frame": {"x":156, "y":341, "w":124, "h":148},
+		"spriteSourceSize": {"x":76,"y":152,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_2": {
+		"frame": {"x":0, "y":211, "w":200, "h":38},
+		"spriteSourceSize": {"x":200,"y":261,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_1": {
+		"frame": {"x":0, "y":341, "w":155, "h":63},
+		"spriteSourceSize": {"x":400,"y":229,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_4": {
+		"frame": {"x":470, "y":378, "w":19, "h":89},
+		"spriteSourceSize": {"x":554,"y":155,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_5": {
+		"frame": {"x":490, "y":262, "w":19, "h":149},
+		"spriteSourceSize": {"x":554,"y":8,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_6": {
+		"frame": {"x":326, "y":251, "w":17, "h":48},
+		"spriteSourceSize": {"x":76,"y":104,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_7": {
+		"frame": {"x":435, "y":378, "w":34, "h":107},
+		"spriteSourceSize": {"x":88,"y":5,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_8": {
+		"frame": {"x":0, "y":70, "w":214, "h":27},
+		"spriteSourceSize": {"x":122,"y":4,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_A_9": {
+		"frame": {"x":0, "y":131, "w":204, "h":27},
+		"spriteSourceSize": {"x":351,"y":5,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_3": {
+		"frame": {"x":201, "y":159, "w":124, "h":148},
+		"spriteSourceSize": {"x":76,"y":152,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_2": {
+		"frame": {"x":0, "y":159, "w":200, "h":51},
+		"spriteSourceSize": {"x":200,"y":254,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_1": {
+		"frame": {"x":0, "y":405, "w":155, "h":78},
+		"spriteSourceSize": {"x":398,"y":221,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_4": {
+		"frame": {"x":432, "y":112, "w":38, "h":107},
+		"spriteSourceSize": {"x":551,"y":155,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_5": {
+		"frame": {"x":435, "y":220, "w":36, "h":157},
+		"spriteSourceSize": {"x":554,"y":0,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_6": {
+		"frame": {"x":313, "y":448, "w":18, "h":55},
+		"spriteSourceSize": {"x":74,"y":97,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_7": {
+		"frame": {"x":432, "y":0, "w":40, "h":111},
+		"spriteSourceSize": {"x":84,"y":0,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_8": {
+		"frame": {"x":0, "y":98, "w":212, "h":32},
+		"spriteSourceSize": {"x":122,"y":0,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	},
+	"wall_B_9": {
+		"frame": {"x":0, "y":28, "w":220, "h":32},
+		"spriteSourceSize": {"x":334,"y":0,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360}
+	}
+
+},
+"meta": {
+	"image": "walls.png",
+	"size": {"w": 510, "h": 510},
+	"scale": "1"
+}
+}

@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<cards>
+
+    <!-- WORKERS -->
+            <!-- REGULAR -->
+    <card id="water_carrier">
+        <cost money="4" infl="0"/>
+        <play type="worker" consume="false" target="block"/>
+        <gain money = "0" infl = "0" water_1 = "2" water_2 = "1"/>
+    </card>
+    <card id="water_cart">
+        <cost money="4" infl="0"/>
+        <play type="worker" consume="false" target="block"/>
+        <gain money = "0" infl = "0" water_1 = "3" water_2 = "2"/>
+    </card>
+    <card id="water_wagon">
+        <cost money="12" infl="0"/>
+        <play type="worker" consume="false" target="block"/>
+        <gain money = "0" infl = "0" water_1 = "8" water_2 = "6"/>
+    </card>
+    <card id="foreman">
+        <cost money="5" infl="0"/>
+        <play type="worker" consume="false" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="worker">
+        <cost money="3" infl="0"/>
+        <play type="worker" consume="false" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="scribe">        
+        <cost money="5" infl="0"/>
+        <play type="worker" consume="false" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="craftsman">        
+        <cost money="6" infl="0"/>
+        <play type="worker" consume="false" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+            <!-- SPECIAL -->
+    <card id="trained_personnel" picture="staff">
+        <cost money="30" infl="0"/>
+        <play type="worker" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+
+
+    <!-- COMPONENTS -->
+        <!-- REGULAR -->
+
+    <card id="pipe">        
+        <cost money="5" infl="0"/>
+        <play type="component" consume="false" target="street"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="well" picture="well0">        
+        <cost money="10" infl="0"/>
+        <play type="component" consume="false" target="node"/>
+        <gain money = "0" infl = "0" water_1 = "2" water_2 = "0"/>
+    </card>
+    <card id="sump" picture="well1">        
+        <cost money="5" infl="0"/>
+        <play type="component" consume="false" target="node"/>
+        <gain money = "0" infl = "0" water_1 = "2" water_2 = "0"/>
+    </card>   
+    <card id="building_materials">        
+        <cost money="5" infl="0"/>
+        <play type="component" consume="false" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+        <!-- SPECIAL -->
+    <card id="orders_sigil">        
+        <cost money="10" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="nobles_sigil">        
+        <cost money="15" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="royal_sigil">        
+        <cost money="20" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="bucket_wheel">        
+        <cost money="15" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="water_wheel">        
+        <cost money="15" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="digging_supplies" picture="digging_tools">
+        <cost money="15" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="water_pumps" picture="pumps">
+        <cost money="25" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="water_pumps2" picture="pumps">
+        <cost money="25" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="overshot_wheel">
+        <cost money="20" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="chain_lift">
+        <cost money="20" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="water_tower" picture="tower">
+        <cost money="25" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="metal_pipes">
+        <cost money="30" infl="0"/>
+        <play type="component" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+
+
+
+
+
+
+
+
+    <!-- DOCUMENTS -->
+        <!-- REGULAR -->
+    <card id="permit">
+        <cost money="5" infl="0"/>
+        <play type="document" consume="false" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "4" water_2 = "3"/>
+    </card>
+    <card id="small_gift" picture="gift1">        
+        <cost money="10" infl="0"/>
+        <play type="component" consume="false" target="global"/>
+        <gain money = "0" infl = "10" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="medium_gift" picture="gift2">  
+        <cost money="20" infl="0"/>
+        <play type="component" consume="false" target="global"/>
+        <gain money = "0" infl = "20" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="big_gift" picture="gift3">
+        <cost money="40" infl="0"/>
+        <play type="component" consume="false" target="global"/>
+        <gain money = "0" infl = "40" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="small_donation" picture="donation1">
+        <cost money="0" infl="10"/>
+        <play type="document" consume="false" target="global"/>
+        <gain money = "10" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="medium_donation" picture="donation2">        
+        <cost money="0" infl="20"/>
+        <play type="document" consume="false" target="global"/>
+        <gain money = "20" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="big_donation" picture="donation3">        
+        <cost money="0" infl="40"/>
+        <play type="document" consume="false" target="global"/>
+        <gain money = "40" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+        <!-- SPECIAL -->
+    <card id="maps">        
+        <cost money="15" infl="0"/>
+        <play type="document" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="irrigation_plans" picture="irrigation">        
+        <cost money="20" infl="0"/>
+        <play type="document" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="sewers_layout" picture="sewer_plans">
+        <cost money="30" infl="0"/>
+        <play type="document" consume="true" target="construction"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0"/>
+    </card>
+    <card id="funding_increase">        
+        <cost money="0" infl="25"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" money_gain = "1"/>
+    </card>
+
+
+
+    <!-- construction cards -->
+
+    <card id="water_source" picture="construction">        
+        <cost money="5" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="water_source"/>
+    </card>
+    <card id="upgraded_water_source" picture="construction">        
+        <cost money="5" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="upgraded_water_source"/>
+    </card>
+    <card id="quarters" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="quarters" />
+    </card>
+    <card id="warehouse" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="warehouse" />
+    </card>
+    <card id="archive" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="archive" />
+    </card>
+    <card id="quarters2" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="quarters2" />
+    </card>
+    <card id="warehouse2" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="warehouse2" />
+    </card>
+    <card id="archive2" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="archive2" />
+    </card>
+    <card id="quarters3" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="quarters3" />
+    </card>
+    <card id="warehouse3" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="warehouse3" />
+    </card>
+    <card id="archive3" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="archive3" />
+    </card>
+    <card id="office" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="office" />
+    </card>
+    <card id="stable" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="stable" />
+    </card>
+    <card id="stable2" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="stable2" />
+    </card>
+    <card id="carts" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="carts" />
+    </card>
+    <card id="hermans_ditch" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="hermans_ditch" />
+    </card>
+    <card id="water_crafts_guild" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="water_crafts_guild" />
+    </card>
+    <card id="wells" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="wells" />
+    </card>
+    <card id="cartography" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="cartography" />
+    </card>
+    <card id="bucket_wheel_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="bucket_wheel_plans" />
+    </card>
+    <card id="water_wheel_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="water_wheel_plans" />
+    </card>
+    <card id="waterworks" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="waterworks" />
+    </card>
+    <card id="workshop" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="workshop" />
+    </card>
+    <card id="water_pumps_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="water_pumps_plans" />
+    </card>
+    <card id="water_pumps2_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="water_pumps2_plans" />
+    </card>
+    <card id="metal_pipes_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="metal_pipes_plans" />
+    </card>
+    <card id="training_course" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="training_course" />
+    </card>
+    <card id="sewers_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="sewers_plans" />
+    </card>
+    <card id="overshot_wheel_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="overshot_wheel_plans" />
+    </card>
+    <card id="waterworks2" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="waterworks2" />
+    </card>
+    <card id="chain_lift_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="chain_lift_plans" />
+    </card>
+    <card id="waterworks3" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="waterworks3" />
+    </card>
+    <card id="trynka_channel" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="trynka_channel" />
+    </card>
+    <card id="waterworks4" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="waterworks4" />
+    </card>
+    <card id="waterworks5" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="waterworks5" />
+    </card>
+    <card id="workshop2" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="workshop2" />
+    </card>
+    <card id="adv_sumps" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="adv_sumps" />
+    </card>
+    <card id="adv_pipes" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="adv_pipes" />
+    </card>
+    <card id="water_tower_plans" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="water_tower_plans" />
+    </card>
+    <card id="heated_water_tower" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="heated_water_tower" />
+    </card>
+    <card id="wass" picture="construction">        
+        <cost money="10" infl="0"/>
+        <play type="document" consume="true" target="global"/>
+        <gain money = "0" infl = "0" water_1 = "0" water_2 = "0" construction="wass" />
+    </card>
+</cards>

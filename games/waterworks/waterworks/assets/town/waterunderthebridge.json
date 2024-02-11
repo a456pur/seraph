@@ -1,0 +1,278 @@
+{ "frames": {
+   "waterunderthebridge0": {
+    "frame": { "x": 90, "y": 0, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge1": {
+    "frame": { "x": 139, "y": 0, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge2": {
+    "frame": { "x": 174, "y": 30, "w": 47, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 584, "y": 167, "w": 47, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge3": {
+    "frame": { "x": 188, "y": 0, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge4": {
+    "frame": { "x": 90, "y": 15, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge5": {
+    "frame": { "x": 139, "y": 15, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge6": {
+    "frame": { "x": 44, "y": 0, "w": 45, "h": 15 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 584, "y": 166, "w": 45, "h": 15 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge7": {
+    "frame": { "x": 104, "y": 68, "w": 44, "h": 13 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 585, "y": 168, "w": 44, "h": 13 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge8": {
+    "frame": { "x": 188, "y": 15, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge9": {
+    "frame": { "x": 0, "y": 19, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge10": {
+    "frame": { "x": 0, "y": 34, "w": 47, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 47, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge11": {
+    "frame": { "x": 49, "y": 30, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge12": {
+    "frame": { "x": 90, "y": 15, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge13": {
+    "frame": { "x": 139, "y": 15, "w": 48, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 583, "y": 167, "w": 48, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge14": {
+    "frame": { "x": 174, "y": 45, "w": 46, "h": 14 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 584, "y": 167, "w": 46, "h": 14 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge15": {
+    "frame": { "x": 104, "y": 68, "w": 44, "h": 13 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 585, "y": 168, "w": 44, "h": 13 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge16": {
+    "frame": { "x": 98, "y": 30, "w": 37, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 37, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge17": {
+    "frame": { "x": 0, "y": 0, "w": 43, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 43, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge18": {
+    "frame": { "x": 0, "y": 49, "w": 34, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 582, "y": 171, "w": 34, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge19": {
+    "frame": { "x": 48, "y": 45, "w": 36, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 36, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge20": {
+    "frame": { "x": 85, "y": 49, "w": 34, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 34, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge21": {
+    "frame": { "x": 120, "y": 49, "w": 34, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 34, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge22": {
+    "frame": { "x": 35, "y": 64, "w": 33, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 582, "y": 171, "w": 33, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge23": {
+    "frame": { "x": 155, "y": 60, "w": 35, "h": 17 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 172, "w": 35, "h": 17 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge24": {
+    "frame": { "x": 136, "y": 30, "w": 37, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 172, "w": 37, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge25": {
+    "frame": { "x": 0, "y": 68, "w": 34, "h": 17 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 172, "w": 34, "h": 17 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge26": {
+    "frame": { "x": 69, "y": 68, "w": 34, "h": 17 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 34, "h": 17 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge27": {
+    "frame": { "x": 191, "y": 60, "w": 35, "h": 17 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 35, "h": 17 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge28": {
+    "frame": { "x": 85, "y": 49, "w": 34, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 34, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge29": {
+    "frame": { "x": 120, "y": 49, "w": 34, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 171, "w": 34, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge30": {
+    "frame": { "x": 35, "y": 64, "w": 33, "h": 18 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 582, "y": 171, "w": 33, "h": 18 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   },
+   "waterunderthebridge31": {
+    "frame": { "x": 155, "y": 60, "w": 35, "h": 17 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 581, "y": 172, "w": 35, "h": 17 },
+    "sourceSize": { "w": 640, "h": 360 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.18-x64",
+  "image": "waterunderthebridge.png",
+  "format": "RGBA8888",
+  "size": { "w": 236, "h": 85 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer 5", "opacity": 129, "blendMode": "normal" },
+   { "name": "Layer 5 Copy", "opacity": 135, "blendMode": "normal" },
+   { "name": "Layer 5 Copy Copy", "opacity": 125, "blendMode": "normal" },
+   { "name": "Layer 5 Copy Copy Copy", "opacity": 129, "blendMode": "normal" },
+   { "name": "Layer 4", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

@@ -1,0 +1,58 @@
+{
+"frames": {
+	"logo_archeo": {
+		"frame": {"x":0, "y":62, "w":148, "h":50},
+		"spriteSourceSize": {"x":268,"y":184,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360},
+		"url": {"en":"https://archeonline.ug.edu.pl/en/archaeology-live-online/", "pl":"https://archeonline.ug.edu.pl/"}
+	},
+	"logo_g": {
+		"frame": {"x":94, "y":113, "w":90, "h":105},
+		"spriteSourceSize": {"x":172,"y":181,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360},
+		"url": {"en":"https://grudziadz.pl/", "pl":"https://grudziadz.pl/"}
+	},
+	"logo_ministerstwo": {
+		"frame": {"x":0, "y":21, "w":177, "h":40},
+		"spriteSourceSize": {"x":457,"y":191,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360},
+		"url": {"en":"https://www.gov.pl/web/science", "pl":"https://www.gov.pl/web/nauka/"}
+	},
+	"logo_muzeum": {
+		"frame": {"x":0, "y":113, "w":93, "h":100},
+		"spriteSourceSize": {"x":540,"y":250,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360},
+		"url": {"en":"http://muzeum.grudziadz.pl/strona-22-about_museum.html", "pl":"http://muzeum.grudziadz.pl/"}
+	},
+	"logo_nsc": {
+		"frame": {"x":0, "y":0, "w":230, "h":20},
+		"spriteSourceSize": {"x":262,"y":320,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360},
+		"url": {"en":"https://ncn.gov.pl/?language=en", "pl":"https://ncn.gov.pl/?language=pl"}
+	},
+	"logo_ug": {
+		"frame": {"x":178, "y":21, "w":85, "h":61},
+		"spriteSourceSize": {"x":261,"y":243,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360},
+		"url": {"en":"https://en.ug.edu.pl/", "pl":"https://ug.edu.pl/"}
+	},
+	"logo_whug": {
+		"frame": {"x":0, "y":214, "w":79, "h":45},
+		"spriteSourceSize": {"x":378,"y":252,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360},
+		"url": {"en":"https://en.historia.ug.edu.pl/", "pl":"https://historia.ug.edu.pl/"}
+	},
+	"logo_wk": {
+		"frame": {"x":185, "y":83, "w":50, "h":46},
+		"spriteSourceSize": {"x":479,"y":252,"w":640,"h":360},
+		"sourceSize": {"w":640,"h":360},
+		"url": {"en":"https://www.mwio.pl/main/index.html", "pl":"https://www.mwio.pl/main/index.html"}
+	}
+
+},
+"meta": {
+	"image": "logos.png",
+	"size": {"w": 264, "h": 264},
+	"scale": "1"
+}
+}

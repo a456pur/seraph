@@ -1,0 +1,357 @@
+{ "frames": {
+   "wagon0": {
+    "frame": { "x": 109, "y": 20, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon1": {
+    "frame": { "x": 134, "y": 20, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon2": {
+    "frame": { "x": 0, "y": 22, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon3": {
+    "frame": { "x": 28, "y": 20, "w": 25, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 3, "y": 10, "w": 25, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon4": {
+    "frame": { "x": 109, "y": 0, "w": 26, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 2, "y": 10, "w": 26, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon5": {
+    "frame": { "x": 56, "y": 0, "w": 27, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 10, "w": 27, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon6": {
+    "frame": { "x": 80, "y": 22, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon7": {
+    "frame": { "x": 25, "y": 40, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon8": {
+    "frame": { "x": 50, "y": 40, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon9": {
+    "frame": { "x": 84, "y": 0, "w": 24, "h": 21 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 9, "w": 24, "h": 21 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon10": {
+    "frame": { "x": 105, "y": 40, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon11": {
+    "frame": { "x": 54, "y": 20, "w": 25, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 3, "y": 10, "w": 25, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon12": {
+    "frame": { "x": 136, "y": 0, "w": 26, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 2, "y": 10, "w": 26, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon13": {
+    "frame": { "x": 28, "y": 0, "w": 27, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 10, "w": 27, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon14": {
+    "frame": { "x": 130, "y": 40, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon15": {
+    "frame": { "x": 0, "y": 42, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon16": {
+    "frame": { "x": 109, "y": 20, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon17": {
+    "frame": { "x": 134, "y": 20, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon18": {
+    "frame": { "x": 0, "y": 22, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon19": {
+    "frame": { "x": 28, "y": 20, "w": 25, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 3, "y": 10, "w": 25, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon20": {
+    "frame": { "x": 109, "y": 0, "w": 26, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 2, "y": 10, "w": 26, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon21": {
+    "frame": { "x": 0, "y": 0, "w": 27, "h": 21 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 1, "y": 9, "w": 27, "h": 21 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon22": {
+    "frame": { "x": 75, "y": 42, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon23": {
+    "frame": { "x": 25, "y": 60, "w": 24, "h": 19 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 4, "y": 10, "w": 24, "h": 19 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon24": {
+    "frame": { "x": 117, "y": 60, "w": 15, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 10, "w": 15, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon25": {
+    "frame": { "x": 133, "y": 60, "w": 15, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 10, "w": 15, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon26": {
+    "frame": { "x": 0, "y": 62, "w": 15, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 10, "w": 15, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon27": {
+    "frame": { "x": 99, "y": 85, "w": 14, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 10, "w": 14, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon28": {
+    "frame": { "x": 50, "y": 60, "w": 16, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 10, "w": 16, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon29": {
+    "frame": { "x": 67, "y": 62, "w": 15, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 10, "w": 15, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon30": {
+    "frame": { "x": 114, "y": 85, "w": 14, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 10, "w": 14, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon31": {
+    "frame": { "x": 16, "y": 80, "w": 14, "h": 25 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 9, "w": 14, "h": 25 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon32": {
+    "frame": { "x": 46, "y": 85, "w": 15, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 0, "w": 15, "h": 23 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon33": {
+    "frame": { "x": 144, "y": 85, "w": 14, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 0, "w": 14, "h": 23 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon34": {
+    "frame": { "x": 83, "y": 62, "w": 15, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 0, "w": 15, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon35": {
+    "frame": { "x": 31, "y": 80, "w": 14, "h": 25 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 0, "w": 14, "h": 25 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon36": {
+    "frame": { "x": 100, "y": 60, "w": 16, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 0, "w": 16, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon37": {
+    "frame": { "x": 129, "y": 85, "w": 14, "h": 24 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 0, "w": 14, "h": 24 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon38": {
+    "frame": { "x": 0, "y": 87, "w": 14, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 0, "w": 14, "h": 23 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   },
+   "wagon39": {
+    "frame": { "x": 62, "y": 87, "w": 14, "h": 23 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 0, "w": 14, "h": 23 },
+    "sourceSize": { "w": 28, "h": 34 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.16.3-x64",
+  "image": "wagon.png",
+  "format": "RGBA8888",
+  "size": { "w": 162, "h": 110 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Loop2", "from": 0, "to": 23, "direction": "forward" },
+   { "name": "walk_down", "from": 24, "to": 31, "direction": "forward" },
+   { "name": "walk_up", "from": 32, "to": 39, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "cienioszek", "opacity": 255, "blendMode": "normal" },
+   { "name": "cugle2", "opacity": 255, "blendMode": "normal" },
+   { "name": "podwozie2", "opacity": 255, "blendMode": "normal" },
+   { "name": "beczka2", "opacity": 255, "blendMode": "normal" },
+   { "name": "woznica2", "opacity": 255, "blendMode": "normal" },
+   { "name": "dyszel2", "opacity": 255, "blendMode": "normal" },
+   { "name": "leg-front-near", "opacity": 255, "blendMode": "normal" },
+   { "name": "kropelki", "opacity": 255, "blendMode": "normal" },
+   { "name": "kolko1 Copy", "opacity": 255, "blendMode": "normal" },
+   { "name": "kolko2 Copy", "opacity": 255, "blendMode": "normal" },
+   { "name": "podwozie", "opacity": 255, "blendMode": "normal" },
+   { "name": "kolko1", "opacity": 255, "blendMode": "normal" },
+   { "name": "kolko2", "opacity": 255, "blendMode": "normal" },
+   { "name": "beczulka", "opacity": 255, "blendMode": "normal" },
+   { "name": "woznica", "opacity": 255, "blendMode": "normal" },
+   { "name": "dyszel1", "opacity": 255, "blendMode": "normal" },
+   { "name": "cugle1", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

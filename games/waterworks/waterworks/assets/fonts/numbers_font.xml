@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<font>
+  <info face="VCR OSD Mono" size="21" bold="0" italic="0" charset="" unicode="1" stretchH="100" smooth="0" aa="1" padding="0,0,0,0" spacing="1,1" outline="1"/>
+  <common lineHeight="20" base="18" scaleW="128" scaleH="128" pages="1" packed="0" alphaChnl="1" redChnl="0" greenChnl="0" blueChnl="0"/>
+  <pages>
+    <page id="0" file="numbers_font_0.png" />
+  </pages>
+  <chars count="14">
+    <char id="48" x="26" y="0" width="11" height="16" xoffset="0" yoffset="2" xadvance="11" page="0" chnl="15" />
+    <char id="49" x="110" y="0" width="8" height="16" xoffset="2" yoffset="2" xadvance="8" page="0" chnl="15" />
+    <char id="50" x="38" y="0" width="11" height="16" xoffset="0" yoffset="2" xadvance="11" page="0" chnl="15" />
+    <char id="51" x="50" y="0" width="11" height="16" xoffset="0" yoffset="2" xadvance="11" page="0" chnl="15" />
+    <char id="52" x="0" y="0" width="12" height="16" xoffset="0" yoffset="2" xadvance="12" page="0" chnl="15" />
+    <char id="53" x="62" y="0" width="11" height="16" xoffset="0" yoffset="2" xadvance="11" page="0" chnl="15" />
+    <char id="54" x="74" y="0" width="11" height="16" xoffset="0" yoffset="2" xadvance="11" page="0" chnl="15" />
+    <char id="55" x="13" y="0" width="12" height="16" xoffset="0" yoffset="2" xadvance="12" page="0" chnl="15" />
+    <char id="56" x="86" y="0" width="11" height="16" xoffset="0" yoffset="2" xadvance="11" page="0" chnl="15" />
+    <char id="57" x="98" y="0" width="11" height="16" xoffset="0" yoffset="2" xadvance="11" page="0" chnl="15" />
+
+    <char id="36" x="0" y="17" width="12" height="16" xoffset="0" yoffset="2" xadvance="14" page="0" chnl="15" />
+    <char id="96" x="13" y="17" width="12" height="16" xoffset="0" yoffset="2" xadvance="14" page="0" chnl="15" />
+
+    <char id="43" x="39" y="17" width="8" height="16" xoffset="0" yoffset="2" xadvance="8" page="0" chnl="15" />
+    <char id="45" x="26" y="17" width="8" height="16" xoffset="0" yoffset="2" xadvance="8" page="0" chnl="15" />
+
+
+    <char id="41" x="49" y="19" width="11" height="11" xoffset="0" yoffset="0" xadvance="11" page="0" chnl="15" />
+    <char id="124" x="61" y="19" width="11" height="11" xoffset="0" yoffset="0" xadvance="11" page="0" chnl="15" />
+    <char id="40" x="73" y="19" width="11" height="11" xoffset="0" yoffset="0" xadvance="11" page="0" chnl="15" />
+
+
+
+  </chars>
+</font>

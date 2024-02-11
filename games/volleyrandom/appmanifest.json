@@ -1,0 +1,10 @@
+{
+	"name": "Volley Random",
+	"short_name": "Volley Random",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": []
+}
