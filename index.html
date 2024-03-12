@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/images/ico.ico" type="image/x-icon">
         <link rel="stylesheet" href="storage/css/index6.css">
-        <title>Home | Seraph</title>
+        <title>Mobile | Seraph</title>
 
         <meta name="description" content="seraph; an open source unblocked games website hosting 250+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
         <meta property="og:site_name" content="seraph">
@@ -56,6 +56,18 @@
 
               
       </div>
+
+      <script type="text/javascript">
+            function isMobileDevice() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+            function redirectIfMobile() {
+                if (isMobileDevice()) {
+                    window.location.href = "mobile.html";
+                }
+            }
+            window.onload = redirectIfMobile;
+      </script>
 
       <script>
         const text = "seraph";
