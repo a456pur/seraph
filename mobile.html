@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/images/ico.ico" type="image/x-icon">
         <link rel="stylesheet" href="storage/css/games6.css">
-        <title>Home | Seraph</title>
+        <title>Mobile | Seraph</title>
 
         <meta name="description" content="seraph; an open source unblocked games website hosting 250+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
         <meta property="og:site_name" content="seraph">
@@ -22,9 +22,47 @@
         <meta property="og:description" content="seraph; an open source unblocked games website hosting 250+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
 
         <style>
-            button {
-                max-width: 300px;
+            .button {
+                background-color: var(--background-color);
+                border: 3px solid var(--border-color2);
+
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 8px;
+
+                width: calc(50% - 10px); 
+                max-width: 480px;
+
+                width: 300px;
+                max-height: 100px;
+                box-sizing: border-box;
+
+                padding-left: 10px;
+                padding-right: 10px;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                border: 3.2px solid var(--border-color2);
+                border-radius: 16px;
+
+                
+                position: relative;
             }
+
+            h1 {
+                text-shadow: 0 0 5px var(--text-color),
+                    0 0 5px var(--text-glow),
+                    0 0 5px var(--text-glow),
+                    0 0 5px var(--text-color),
+                    0 0 50px var(--text-glow),
+                    0 0 5px var(--text-color),
+                    0 0 5px var(--text-glow),
+                    0 0 80px #000000;
+            }
+
         </style>
   </head>
   <body>
@@ -33,15 +71,70 @@
       <div class="content-side">
           <h1 class="typewriter" style="font-size: 60px;">seraph</h1>
           <p class="linkp"><a style="text-decoration: none;">mobile friendly version</a></p>
-          <p class="linkp"><a href="index.html">back to main version</a></p>
           <br>
 
 
           <h2 class="allgames-header">games</h2>
                       
-          <a target="_blank" href="flappy/index.html">
+          <a target="_blank" href="games/flappy/index.html">
             <div class="button" style="background-image: url('../images/thumbnails/flappybird.jpg');">
                 <h2>flappy bird</h2>
+            </div>
+          </a>
+
+          <a target="_blank" href="games/crossy/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/crossyroad.jpg');">
+                <h2>crossy road</h2>
+            </div>
+          </a>
+
+          <a target="_blank" href="games/driftboss/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/driftboss.jpg');" data-genre="mobile">
+                <h2>drift boss</h2>
+            </div>
+          </a>
+
+        <a target="_blank" href="games/thereisnogame/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/thereisnogame.png');" data-genre="mobile">
+                <h2>there is no game</h2>
+            </div>
+        </a>
+
+        <a target="_blank" href="games/stickmanhook/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/stickmanhook.png');" data-genre="mobile">
+                <h2>stickman hook</h2>
+            </div>
+        </a>
+
+        <a target="_blank" href="games/basketbrosio/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/basketbrosio.png');" data-genre="mobile">
+                <h2>basketbros io</h2>
+            </div>
+        </a>
+
+        <a target="_blank" href="games/yohoho/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/yohoho.png');">
+                <h2>yohoho io</h2>
+            </div>
+        </a>
+
+        <h2>apps</h2>
+
+        <a target="_blank" href="apps/fluidsim/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/fluidsim.png');" data-genre="mobile">
+                <h2>webgl fluids</h2>
+            </div>
+        </a>
+
+        <a target="_blank" href="apps/thirtydollarwebsite/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/thirtydollarwebsite.png');" data-genre="mobile">
+                <h2>soundboard</h2>
+            </div>
+        </a>
+
+        <a target="_blank" href="apps/weavesilk/index.html">
+            <div class="button" style="background-image: url('../images/thumbnails/weavesilk.png');" data-genre="mobile">
+                <h2>weavesilk</h2>
             </div>
         </a>
           
@@ -51,9 +144,6 @@
 
               
       </div>
-
-      
-    
 
       <script src="storage/js/cloak.js"></script>
       <script src="storage/js/theme.js"></script>
