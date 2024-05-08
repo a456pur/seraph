@@ -1,0 +1,64 @@
+<html lang="en"><head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+        <title>HTML Code Editor | Seraph</title>
+        <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+        <script src="../../storage/js/cloak.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default,es6,es2015,es2016,es2017,es2018,es2019,es2020,es2021"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es5-shim@4.0.3/es5-shim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-shim@0.35.5/es6-shim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4.2.8/dist/es6-promise.auto.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es7-shim@6.0.0/es7-shim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jqueryui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/classlist-polyfill@1.2.0/classList.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>body{margin:0;font-family:'Courier New',Courier,monospace;display:flex;flex-direction:column;height:100vh;overflow:hidden;background-color:#333;color:#fff}#toolbar{display:flex;padding:10px;background-color:#222}#toolbar label{cursor:pointer;padding:6px 10px;background-color:#4caf50;color:#fff;border-radius:5px;margin-right:10px}#toolbar button{margin-right:10px;transition:background-color .3s ease}#toolbar button:hover{background-color:#555}#editor-container,.preview-container{flex:1;height:100%;overflow:auto;box-sizing:border-box}#editor{width:100%;height:100%;padding:10px;box-sizing:border-box;background-color:#444;color:#fff;border:none}.preview-container{background-color:#fff;color:#fff;width:100%;height:100%}#preview{width:100%;height:100%}.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}#divider{cursor:row-resize;background-color:#222;height:8px;width:100%;display:flex;justify-content:center;align-items:center}#divider:hover{background-color:#555}</style>
+    </head>
+
+    <body>
+    <div id="toolbar">
+    <label for="file-input" class="custom-file-upload" style="display:none">Choose File</label>
+    <input type="file" id="file-input" accept=".html, .txt" class="visually-hidden">
+    <button class="btn btn-light" onclick="newDocument()">New</button>
+    <button class="btn btn-light" onclick="openFile()">Open</button>
+    <button class="btn btn-light" onclick="saveFile()">Save</button>
+    <script></script>
+    </div>
+    <div id="editor-container" style="height: 50%;">
+    <textarea id="editor" placeholder="Enter your code here..."></textarea>
+    </div>
+    <div id="divider" draggable="true"></div>
+    <div class="preview-container" id="preview-container" style="height: 50%;">
+    <iframe id="preview" frameborder="0"></iframe>
+    </div>
+    <script>function newDocument(){confirm("Are you sure you want to start a new document? Any unsaved changes will be lost.")&&(editor.value="",updatePreview())}</script>
+    <script>const editorContainer=document.getElementById("editor-container"),previewContainer=document.getElementById("preview-container"),divider=document.getElementById("divider");let editorContainerHeight=50,previewContainerHeight=50;updateContainerHeights();let isDragging=!1,startY=0;function updateContainerHeights(){editorContainer.style.height=`${editorContainerHeight}%`,previewContainer.style.height=`${previewContainerHeight}%`}divider.addEventListener("mousedown",(e=>{isDragging=!0,startY=e.clientY})),window.addEventListener("mousemove",(e=>{if(isDragging){const t=e.clientY-startY;startY=e.clientY,editorContainerHeight+=t/window.innerHeight*100,previewContainerHeight-=t/window.innerHeight*100,editorContainerHeight=Math.max(10,Math.min(90,editorContainerHeight)),previewContainerHeight=100-editorContainerHeight,updateContainerHeights()}})),window.addEventListener("mouseup",(()=>{isDragging=!1}))</script>
+    <script>$(document).ready((function(){$("#toolbar button").hover((function(){$(this).addClass("hovered")}),(function(){$(this).removeClass("hovered")}))}));const editor=document.getElementById("editor"),preview=document.getElementById("preview"),fileInput=document.getElementById("file-input");let pastebinApiKey;function updatePreview(){const e=editor.value,t=preview.contentDocument||preview.contentWindow.document;t.open(),t.write(e),t.close()}function openFile(){fileInput.click()}function saveFile(){const e=editor.value,t=new Blob([e],{type:"text/plain"}),n=document.createElement("a"),i=URL.createObjectURL(t);n.href=i,n.download="code.txt",document.body.appendChild(n),n.click(),document.body.removeChild(n),URL.revokeObjectURL(i)}function saveOnline(){const e=editor.value,t=prompt("Enter the file name:");if(!t)return void alert("File name is required!");const n=prompt("Enter your Pastebin API key:");if(!n)return void alert("Pastebin API key is required!");$.ajax({type:"POST",url:"https://pastebin.com/api/api_post.php",data:{api_dev_key:n,api_paste_code:e,api_paste_private:"0",api_paste_name:t,api_paste_expire_date:"10M",api_option:"paste"},success:function(e){e.startsWith("Bad API request")?alert("Error saving code online. Please check your Pastebin API key and try again."):alert("Code saved online successfully! Pastebin URL: "+e)},error:function(){console.error("Error saving code online."),alert("Error saving code online. Please try again.")}})}editor.addEventListener("input",updatePreview),fileInput.addEventListener("change",(function(){const e=fileInput.files[0];if(e){const t=new FileReader;t.onload=function(e){editor.value=e.target.result,updatePreview()},t.readAsText(e)}}))</script>
+    <script>$(document).ready((function(){$("#toolbar button").button({classes:{"ui-button":"custom-button-hover"}})}))</script>
+    <script>$(document).ready((function(){$("#divider").resizable({handles:"s",minHeight:100,maxHeight:window.innerHeight-50,resize:function(e,i){const n=i.size.height/window.innerHeight*100;updateContainerHeights(n,100-n)}})}))</script>
+    <script>function updateContainerHeights(e,t){editorContainer.style.height=`${e}%`,previewContainer.style.height=`${t}%`}</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    </body>
+</html>
