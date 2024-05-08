@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7FN7LEVWXD');
+    </script>
+
+    <title>Totally Accurate Battle Simulator | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="robots" content="noindex">
+    
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+      }
+    </style>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Battle simulator.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 100%"></div>
+      <div class="footer">
+        <div class="webgl-logo" style="display:none"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Battle Simulator</div>
+      </div>
+    </div>
+</html>

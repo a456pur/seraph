@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7FN7LEVWXD');
+    </script>
+
+    <title>Slope Ball | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta charset="utf-8" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <link rel="stylesheet" href="files/game.css" type="text/css" />
+    <link rel="shortcut icon" href="files/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="files/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="files/favicon.png" type="image/png" />
+    <link rel="apple-touch-startup-image" href="files/favicon.png" type="image/png" />
+
+  </head>
+  <body>
+    <div id="sg-orient-screen"></div>
+    <div id="sg-loading-screen"></div>
+    <div id="sg-loading-bar-back"><div id="sg-loading-bar"></div></div>
+    <div class="gm4html5_div_class" id="gm4html5_div_id">
+      <canvas id="canvas" width="960" height="1280">
+        <p>Your browser doesn't support HTML5 canvas.</p>
+      </canvas>
+    </div>
+    <script type="text/javascript">
+      splash_w = 960;
+      splash_h = 1280;
+      bar_img_w = 400;
+      bar_img_h = 44;
+      bar_img_x = (splash_w - bar_img_w) / 2;
+      bar_img_y = 1160;
+      canvasobj = document.getElementById("canvas");
+      loadbarobj = document.getElementById("sg-loading-bar");
+      loadbarbackobj = document.getElementById("sg-loading-bar-back");
+      orientobj = document.getElementById("sg-orient-screen");
+      loadingobj = document.getElementById("sg-loading-screen");
+      document.addEventListener(
+        "touchmove",
+        function (e) {
+          e.preventDefault();
+        },
+        false
+      );
+    </script>
+    <script type="text/javascript" src="files/Slope.js?SJSAC=2098137795"></script>
+  </body>
+</html>

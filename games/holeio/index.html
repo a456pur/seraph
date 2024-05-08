@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7FN7LEVWXD');
+    </script>
+
+    <title>Hole.io | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Author" content="https://ecapsgames.com">
+
+<style>
+  #container,#logo{top:50%;overflow:hidden}#container,#footer,#logo{left:50%;position:absolute}#logo,div.button{text-align:center}*{margin:0;padding:0}body{background:#232323}#container{transform:translate(-50%,-50%);background:#000416}#logo{display:block;min-width: 100%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}#footer{width:100%;height:40px;bottom:0;transform:translate(-50%,0);background:linear-gradient(to bottom,#ccc 0,#fff 100%)}div.fullscreen,div.moregames{margin:1px 1px 0 0;height:38px;line-height:38px}div.button{background:#222c36;padding:0 8px;border-radius:3px;color:#fff;font-weight:bold;text-decoration:none;cursor:pointer}div.moregames{padding:0 5px;float:left;color:#333;text-align:left;font-size:15px;position:relative;z-index:10}div.fullscreen{position:absolute;right:5px;display:inline-flex;font-weight:bold}div.fullscreen img{padding-left:5px}#gamedistads{position:fixed;top:0;right:0;bottom:40px;left:0;z-index:999;display:none}
+    </style>
+
+
+    <script src="Build/UnityLoader.js"></script>
+    <script type="text/javascript"> 
+       function UnityProgress(gameInstance, progress) {
+      if (!gameInstance.Module) {
+       return;
+      } else if (progress === "complete") {
+       document.getElementById("logo").style.display = "none";
+       
+      return;
+      } else if (progress == 1) {
+      document.getElementById("loadinginfo").innerHTML = "PROCESSING...";
+      } else if (progress > 0) {
+      document.getElementById("loadinginfo").innerHTML = "Loading: " + Math.round(progress * 100) + "%";
+      
+
+       var prog = progress * 100;
+    if (prog == 90) {
+      document.getElementById("loadinginfo").innerHTML = "PROCESSING...";
+      }
+
+
+      }
+    }
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BuildWeb.json", {
+      onProgress: UnityProgress,
+      Module: {
+        onRuntimeInitialized: function() { UnityProgress(gameInstance, "complete") }
+      }
+    });
+      
+      function FitScreen(){
+		var w=400;
+       var h=650;
+       var availWidth=window.innerWidth;
+       var availHeight=window.innerHeight-10;
+     
+       var canvas = document.getElementById("#canvas");
+       if(availWidth/availHeight>w/h){
+         height = availHeight;
+         width = (height*w/h);
+      }else{
+         width = availWidth;
+         height = width*h/w;
+      }
+      canvas.width = width;
+      canvas.height = height;
+       document.getElementById("container").style.width=width + "px";
+       document.getElementById("container").style.height=(height + 10) + "px";
+       document.getElementById("gameContainer").style.width=width + "px";
+       document.getElementById("gameContainer").style.height=height + "px";
+    
+       if(width/height>4/3){
+           document.getElementById("logo").style.height=Math.round(height*0.6) + "px";  
+           document.getElementById("logo").style.width=Math.round(height*0.7*4/3) + "px";
+       }else{
+           document.getElementById("logo").style.width=Math.round(width*0.8) + "px";
+           document.getElementById("logo").style.height=Math.round(width*0.8*3/4) + "px";
+       }
+     
+    }
+      </script>
+	  
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+</head>
+<body onFocus="FitScreen();" onLoad="FitScreen();" onResize="FitScreen();">
+
+    <div id="container" style="width: 500px; height: 750px">
+    <div id="gameContainer" style="width: 500px; height: 750px"></div>
+        <div id="footer" style="display:none">
+                <div class="moregames" onClick='CreateLinksInGame()'>
+                    <div class="button">More Games</div>
+                </div>
+                 <div id="sitelogo" onClick='CreateLinksInGame()' style="position:absolute;bottom:5px;left:50%;transform: translate(-50%,0);display:none;cursor:pointer;">
+                
+            </div>
+                <div style="display:none" class="fullscreen" onClick='CreateLinksInGame()'>Hole IO</div>
+            </div>
+            
+            <div id="logo" onClick='CreateLinksInGame()'>
+                <script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"589a79dc93a5bb8837db25e39b8fb5e00bb61bab-1634499826-31536000"};
+//]]>
+</script>
+<script type="text/javascript" src="patch/cdn/mirage2.min.js"></script>
+
+<img data-cfsrc="feature800x470.png" width="100%" height="100%" style="display:none;visibility:hidden;"><noscript><img src="feature800x470.png" width="100%" height="100%"></noscript>
+                
+                <div id="loadinginfo" style="position:absolute;bottom:10px;left:50%;width:50%;max-height:10px;transform: translate(-50%, 0%);color:red;font-size:18px;">
+                    Loading...
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script type='text/javascript'>
+  function CreateLinksInGame(){
+    window.open("http://selenite.cc");
+    }
+</script>
+</body>
+</html>
