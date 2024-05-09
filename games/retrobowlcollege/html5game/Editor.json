@@ -1,0 +1,11 @@
+{
+	"bowls_groups": [
+		{"uid": 1, "tag": "misc", "name": "Misc"},
+		{"uid": 2, "tag": "new_year_bowls", "name": "New Year Bowls"},
+		{"uid": 3, "tag": "bowls_1", "name": "Bowls 1/3"},
+		{"uid": 4, "tag": "bowls_2", "name": "Bowls 2/3"},
+		{"uid": 5, "tag": "bowls_3", "name": "Bowls 3/3"},
+		{"uid": 6, "tag": "champ_games", "name": "Champ Games"}
+	],
+	"bowls_groups_chunks": [2, 3]
+}

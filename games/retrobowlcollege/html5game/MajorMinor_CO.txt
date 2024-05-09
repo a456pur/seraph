@@ -1,0 +1,354 @@
+uid	Subject	Unspecified	HBU	Ivy	Military	Religious	Unknown
+0	Accounting	1	1	1	1	1	1
+1	Acting	1	1	1	0	1	0
+2	Actuarial Science	1	1	1	1	1	1
+3	Advertising	1	1	1	1	1	1
+4	Aerospace Eng.	1	1	1	2	1	1
+5	African Studies	1	2	1	1	1	1
+6	African American St.	1	2	1	1	1	1
+7	Agribusiness	1	1	0	1	1	0
+8	Agriculture	1	1	0	1	1	0
+9	Aircraft Mechanics	1	1	1	2	1	1
+10	American Studies	1	1	1	1	1	1
+11	Animal Science	1	1	1	1	1	1
+12	Animation	1	1	0	1	1	0
+13	Anthropology	1	1	1	1	1	1
+14	Applied Mathematics	1	1	1	1	1	1
+15	Applied Statistics	1	1	1	1	1	1
+16	Arab Studies	1	1	1	1	0	0
+17	Arabic	1	1	1	1	0	0
+18	Archaeology	1	1	1	1	1	1
+19	Architecture	1	1	1	1	1	1
+20	Art 	1	1	1	1	1	1
+21	Art & Design 	1	1	1	1	1	1
+22	Art History	1	1	1	1	1	1
+23	Asian Studies	1	1	1	1	1	1
+24	Astronomy	1	1	1	1	0	0
+25	Astrophysics	1	1	1	1	0	0
+26	Automated M'facturing	1	1	0	1	1	0
+27	Automotive Eng.	1	1	0	1	1	0
+28	Aviation	1	1	1	2	1	1
+29	Avionics Technology	1	1	1	2	1	1
+30	Behavioral Neurosci.	1	1	1	1	1	1
+31	Biblical Studies	1	1	1	1	2	1
+32	Biochemistry	1	1	1	1	0	0
+33	Bioinformatics	1	1	1	1	0	0
+34	Biological Eng.	1	1	1	1	0	0
+35	Biology	1	1	1	1	0	0
+36	Biomedical Eng.	1	1	1	1	0	0
+37	Biomedical Ethics	1	1	1	1	0	0
+38	Biomolecular Science	1	1	1	1	0	0
+39	Biophysics	1	1	1	1	0	0
+40	Biotechnology	1	1	1	1	0	0
+41	Botany	1	1	1	1	0	0
+42	Business	1	1	2	1	1	1
+43	Business Admin	1	1	2	1	1	1
+44	Business Analytics	1	1	2	1	1	1
+45	Business Economics	1	1	2	1	1	1
+46	Business Education	1	1	2	1	1	1
+47	Business Management 	1	1	2	1	1	1
+48	Cellular Biology	1	1	1	1	0	0
+49	Ceramics 	1	1	1	1	1	1
+50	Chemical Engineering	1	1	1	1	0	0
+51	Chemistry	1	1	1	1	0	0
+52	Child Development	1	1	0	1	1	0
+53	Chinese	1	1	1	1	1	1
+54	Chinese Studies	1	1	1	1	1	1
+55	Chiropractic	1	1	0	1	1	0
+56	Christian Thought	1	1	0	0	2	0
+57	Cinema	1	1	0	1	1	0
+58	Cinematography	1	1	0	1	1	0
+59	Civic Leadership	1	2	0	1	1	0
+60	Civil Engineering	1	1	1	1	1	1
+61	Classical Archaeology	1	1	1	1	1	1
+62	Classical Languages	1	1	1	1	1	1
+63	Classical Studies	1	1	1	1	1	1
+64	Clinical Lab Science	1	1	1	1	0	0
+65	Clothing & Textiles	1	1	0	1	1	0
+66	Cognitive Science	1	1	1	1	0	0
+67	Commercial Law	1	1	2	1	1	1
+68	Communication 	1	1	1	1	1	1
+69	Comparative Lit.	1	1	1	1	1	1
+70	Composition	1	1	1	0	1	0
+71	Computer Engineering	1	1	2	1	1	1
+72	Computer Science	1	1	1	1	1	1
+73	Conflict Resolution	1	1	1	1	1	1
+74	Construction Eng.	1	1	1	1	1	1
+75	Construction M'ment	1	1	1	1	1	1
+76	Consumer Economics	1	1	1	1	1	1
+77	Contemporary Arts	1	1	1	1	1	1
+78	Cosmetology	1	1	0	0	0	0
+79	Counselling	1	1	1	1	1	1
+80	Court Reporting	1	1	1	1	1	1
+81	Creative Writing	1	1	1	1	1	1
+82	Criminal Justice	1	1	1	1	1	1
+83	Criminology	1	1	1	1	1	1
+84	Culinary Arts	1	1	0	1	1	0
+85	Cultural Studies	1	1	1	1	1	1
+86	Czech Literature	1	1	1	1	1	1
+87	Dance	1	1	1	0	1	0
+88	Data Science 	1	1	1	1	1	1
+89	Defence Studies	1	1	1	2	1	1
+90	Dentistry	1	1	1	1	1	1
+91	Design 	1	1	1	1	1	1
+92	Diesel Mechanics	1	1	0	1	1	0
+93	Dietetics 	1	1	1	1	1	1
+94	Digital Comms	1	1	1	1	1	1
+95	Drama	1	1	1	0	1	0
+96	Drawing	1	1	1	0	1	0
+97	Early Childhood Ed.	1	1	0	1	1	0
+98	Early Modern Studies	1	1	1	1	1	1
+99	Earth Science 	1	1	1	1	1	1
+100	East Asian Studies	1	1	1	1	1	1
+101	East European Studies	1	1	1	1	1	1
+102	Ecology	1	1	1	1	1	1
+103	e-Commerce	1	1	1	1	1	1
+104	Economics	1	1	1	1	1	1
+105	Education	1	1	1	1	1	1
+106	Educational Admin.	1	1	0	1	1	0
+107	Electrical Eng.	1	1	1	1	1	1
+108	Electronic Eng.	1	1	1	1	1	1
+109	Elementary Education	1	1	0	1	1	0
+110	Emergency Management	1	1	0	1	1	0
+111	Energy Studies 	1	1	1	1	1	1
+112	Engineering	1	1	1	1	1	1
+113	English Language	1	1	1	1	1	1
+114	English Literature	1	1	1	1	1	1
+115	Entrepreneurship	1	1	1	1	1	1
+116	Environmental Geology	1	1	1	1	1	1
+117	Environmental Health	1	1	1	1	1	1
+118	Environmental Science	1	1	1	1	1	1
+119	Epistemology	1	1	1	1	1	1
+120	Ethics	1	1	1	1	1	1
+121	Ethnic Studies	1	2	1	1	1	1
+122	European Studies	1	1	1	1	1	1
+123	Evolutionary Anthrop.	1	1	1	1	0	0
+124	Exercise Science 	1	1	0	1	1	0
+125	Fashion Design	1	1	0	1	1	0
+126	Film, TV & Media	1	1	0	1	1	0
+127	Finance	1	1	1	1	1	1
+128	Financial Management 	1	1	1	1	1	1
+129	Financial Planning 	1	1	1	1	1	1
+130	Fine Arts	1	1	1	0	1	0
+131	Fire Protection Tech.	1	1	1	1	1	1
+132	Fisheries	1	1	0	1	1	0
+133	Food & Nutrition	1	1	1	1	1	1
+134	Food Science	1	1	1	1	1	1
+135	Foreign Languages Ed.	1	1	1	1	1	1
+136	Forensic Science	1	1	1	1	1	1
+137	Forestry	1	1	0	1	1	0
+138	French	1	1	1	1	1	1
+139	Gender Studies	1	1	1	1	0	0
+140	General Studies	1	1	0	1	1	0
+141	Genetics	1	1	1	1	0	0
+142	Geography	1	1	1	1	1	1
+143	Geology	1	1	1	1	1	1
+144	German	1	1	1	1	1	1
+145	Gerontology	1	1	1	1	1	1
+146	Global Communication	1	1	1	1	1	1
+147	Global History	1	1	1	1	1	1
+148	Global Media Studies	1	1	1	1	1	1
+149	Graphic Design	1	1	1	1	1	1
+150	Greek (Ancient)	1	1	1	1	1	1
+151	Greek (Modern)	1	1	1	1	1	1
+152	Health Education	1	1	1	1	1	1
+153	Healthcare Admin	1	1	1	1	1	1
+154	History	1	1	1	1	1	1
+155	History of Art	1	1	1	1	1	1
+156	History of Law	1	1	1	1	1	1
+157	History of Medicine	1	1	1	1	1	1
+158	History of Philosophy	1	1	1	1	1	1
+159	Horticulture	1	1	0	1	1	0
+160	Hospitality	1	1	1	1	1	1
+161	Human Development	1	1	1	1	0	0
+162	Human Nutrition	1	1	1	1	1	1
+163	H.R. Management	1	1	1	1	1	1
+164	Human Rights	1	1	1	1	1	1
+165	Industrial Design	1	1	1	1	1	1
+166	Industrial Eng.	1	1	1	1	1	1
+167	Inequality Studies	1	2	1	1	0	0
+168	Information Science	1	1	1	1	1	1
+169	Information Systems 	1	1	1	1	1	1
+170	Interdiscipl. Studies	1	1	0	1	1	0
+171	Interior Design	1	1	0	1	1	0
+172	Intl. Business	1	1	1	1	1	1
+173	Intl. Development	1	1	1	1	1	1
+174	Intl. Relations	1	1	1	1	0	0
+175	International Studies	1	1	1	1	1	1
+176	Islamic Studies	1	1	1	1	0	0
+177	IT Management	1	1	1	1	1	1
+178	Italian	1	1	1	1	1	1
+179	Japanese 	1	1	1	1	1	1
+180	Journalism	1	1	1	1	1	1
+181	Judaic Studies	1	1	1	1	0	0
+182	Korean	1	1	1	1	1	1
+183	Labor/Ind. Relations	1	1	1	1	1	1
+184	Land Surveying	1	1	1	1	1	1
+185	Land Use Management	1	1	1	1	1	1
+186	Landscape Architec.	1	1	0	1	1	0
+187	Latin	1	1	1	1	1	1
+188	Latin American St.	1	1	1	1	1	1
+189	Law	1	1	1	1	1	1
+190	Leadership Studies	1	1	1	1	1	1
+191	Legal Studies	1	1	1	1	1	1
+192	LGBTQIA+ Studies	1	1	1	1	0	0
+193	Liberal Arts	1	1	1	0	1	0
+194	Library Science	1	1	1	1	1	1
+195	Life Science	1	1	1	1	0	0
+196	Linguistics	1	1	1	1	1	1
+197	Literature	1	1	1	1	1	1
+198	Logistics	1	1	1	2	1	1
+199	Management	1	1	1	1	1	1
+200	Marine Biology	1	1	1	1	0	0
+201	Marine Ecology	1	1	1	1	0	0
+202	Marine Science	1	1	1	1	0	0
+203	Maritime Eng.	1	1	1	2	1	1
+204	Marketing	1	1	1	1	1	1
+205	Massage Therapy	1	1	0	0	1	0
+206	Materials Science	1	1	1	1	0	0
+207	Mathematics	1	1	2	1	1	1
+208	MBA	1	1	2	1	1	1
+209	Mechanical Eng.	1	1	1	1	1	1
+210	Mechatronics	1	1	1	1	1	1
+211	Medical Anthropology	1	1	1	1	0	0
+212	Medical Imaging	1	1	1	1	0	0
+213	Medicine	1	1	1	1	0	0
+214	Medieval Studies 	1	1	1	1	1	1
+215	Mental Health Couns.	1	1	0	1	1	0
+216	Merchandising	1	1	0	1	1	0
+217	Metalsmithing 	1	1	0	1	1	0
+218	Meteorology	1	1	1	1	1	1
+219	Microbiology	1	1	1	1	0	0
+220	Middle Eastern Langs	1	1	1	1	1	1
+221	Middle Eastern St.	1	1	1	1	1	1
+222	Middle Level Ed.	1	1	0	1	1	0
+223	Military Technologies	1	1	0	2	0	0
+224	Ministry	0	0	0	0	2	0
+225	Mod. European Studies	1	1	1	1	1	1
+226	Mod. M. East. Studies	1	1	1	1	1	1
+227	Molecular Biology	1	1	1	1	0	0
+228	Moral Philosophy	1	1	1	1	1	1
+229	Mortuary Science	1	1	0	1	1	0
+230	Multicultural Studies	1	1	1	1	1	1
+231	Museum Studies	1	1	1	1	1	1
+232	Music	1	1	1	1	1	1
+233	Music Composition	1	1	1	0	1	0
+234	Music Education	1	1	1	0	1	0
+235	Music Performance	1	1	1	1	1	1
+236	Music Studies	1	1	1	0	1	0
+237	Music Theory	1	1	1	0	1	0
+238	Nanoscience	1	1	1	1	0	0
+239	Native American St.	1	1	1	1	1	1
+240	Natural Resources	1	1	1	1	1	1
+241	Naval Engineering	1	1	0	2	1	0
+242	Neuroscience	1	1	1	1	1	1
+243	North African Studies	1	1	1	1	1	1
+244	Nuclear Engineering	1	1	1	1	0	0
+245	Nuclear Science	1	1	1	1	0	0
+246	Nursing 	1	1	0	1	1	0
+247	Nutrition	1	1	1	1	1	1
+248	Occupational Therapy	1	1	0	1	1	0
+249	Ocean Sciences	1	1	1	1	1	1
+250	Oceanography	1	1	1	1	1	1
+251	Office Management	1	1	1	1	1	1
+252	Operations Management	1	1	0	1	1	0
+253	Optometry	1	1	1	1	1	1
+254	Oral Health	1	1	0	1	1	0
+255	Organizational St.	1	1	0	1	1	0
+256	Osteopathic Medicine	1	1	1	1	1	1
+257	Pacific Island St.	1	1	1	1	1	1
+258	Painting	1	1	1	1	1	1
+259	Paleontology	1	1	1	1	0	0
+260	Parks & Recreation	1	1	0	1	1	0
+261	Pastoral Studies	1	1	1	1	1	1
+262	Performing Arts	1	1	1	0	1	0
+263	Pharmacology	1	1	1	1	0	0
+264	Pharmacy	1	1	1	1	0	0
+265	Philosophy	1	1	1	1	1	1
+266	Photography	1	1	1	1	1	1
+267	Physical Education	1	1	0	1	1	0
+268	Physical Sciences	1	1	1	1	1	1
+269	Physics	1	1	1	1	1	1
+270	Physiology	1	1	1	1	1	1
+271	Physiotherapy	1	1	1	1	1	1
+272	Planning 	1	1	1	1	1	1
+273	Plant Biology	1	1	1	1	0	0
+274	Playwriting	1	1	1	0	1	0
+275	Podiatry	1	1	1	1	1	1
+276	Polish	1	1	1	1	1	1
+277	Political Science	1	1	2	1	1	1
+278	Political Studies	1	1	2	1	1	1
+279	Polymer Eng.	1	1	1	1	1	1
+280	Population Studies	1	1	0	1	1	0
+281	Portuguese	1	1	1	1	1	1
+282	Printmaking 	1	1	1	1	1	1
+283	Procurement M'ment	1	1	0	1	1	0
+284	Psychology	1	1	1	1	1	1
+285	Public Administration	1	1	1	1	1	1
+286	Public Health	1	1	1	1	1	1
+287	Public Policy	1	1	1	1	1	1
+288	Public Relations	1	1	0	1	1	0
+289	Public Speaking	1	1	0	1	1	0
+290	Pure Mathematics	1	1	2	1	1	1
+291	Radiation Therapy	1	1	1	1	1	1
+292	Radio & TV	1	1	1	1	1	1
+293	Radiologic Technology	1	1	1	1	1	1
+294	Real Estate	1	1	0	1	1	0
+295	Rehab. Therapy	1	1	0	1	1	0
+296	Religion	1	1	1	0	2	0
+297	Religious Education	1	1	1	0	2	0
+298	Religious Studies	1	1	1	0	2	0
+299	Renaissance Studies	1	1	1	1	1	1
+300	Respiratory Therapy	1	1	1	1	1	1
+301	Restaurant Management	1	1	0	1	1	0
+302	Risk Management	1	1	0	1	1	0
+303	Romance Languages	1	1	1	1	1	1
+304	Russian	1	1	1	1	1	1
+305	Russian Studies	1	1	1	1	1	1
+306	Sales Management 	1	1	0	1	1	0
+307	Scandinavian Studies	1	1	1	1	1	1
+308	Science Education	1	1	1	1	0	0
+309	Screenwriting	1	1	1	0	1	0
+310	Sculpture 	1	1	1	0	1	0
+311	Secretarial Studies	1	1	0	1	1	0
+312	Small Business M'ment	1	1	0	1	1	0
+313	Social Justice	1	2	1	1	0	0
+314	Social Policy	1	1	1	1	1	1
+315	Social Science	1	1	1	1	1	1
+316	Social Work	1	1	0	1	1	0
+317	Sociology	1	1	1	1	1	1
+318	Space Sciences	1	1	1	2	1	1
+319	Spanish	1	1	1	1	1	1
+320	Special Education	1	1	0	1	1	0
+321	Speech/Lang. Therapy	1	1	1	1	1	1
+322	Sport Analytics 	1	1	1	1	1	1
+323	Sport Business 	1	1	1	1	1	1
+324	Sport Coaching	1	1	1	1	1	1
+325	Sport Management	1	1	1	1	1	1
+326	Sport Science	1	1	1	1	1	1
+327	Stage Management	1	1	1	0	1	0
+328	Statistics	1	1	1	1	1	1
+329	Structural Biology	1	1	1	1	0	0
+330	Surgical Technology	1	1	1	1	1	1
+331	Surveying	1	1	0	1	1	0
+332	Sustainability	1	1	0	1	1	0
+333	Taxation	1	1	1	1	1	1
+334	Teacher Education	1	1	0	1	1	0
+335	Textiles	1	1	0	1	1	0
+336	Theater Studies	1	1	1	0	1	0
+337	Theology	1	1	1	0	2	0
+338	Tourism	1	1	0	1	1	0
+339	Toxicology	1	1	1	1	1	1
+340	Translation Studies	1	1	1	1	1	1
+341	Transport & Materials	1	1	1	1	1	1
+342	Urban Planning	1	1	1	1	1	1
+343	Urban Studies	1	1	0	1	1	0
+344	Veterinary Science	1	1	1	1	1	1
+345	Visual Arts	1	1	0	1	1	0
+346	Webpage Design	1	1	0	1	1	0
+347	Welding Technology	1	1	0	1	1	0
+348	Wildlife Management	1	1	0	1	1	0
+349	Women’s Studies	1	1	1	1	0	0
+350	Writing 	1	1	1	1	1	1
+351	Yiddish Studies	1	0	1	1	0	0
+352	Zoology	1	1	1	1	0	0

@@ -1,0 +1,262 @@
+uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	coltertiary	defense	offense	wins	losses	ties	roof	rainfall	snowfall	helmet	rival	academics	type	state	reputation
+32	Boston C.	B.C	14	0	1	0	$ffd700	$cc0000	$ffd700	$ffffff	3	1	0	0	0	0	40	89	0	33	1	0	MA	y:1:0000
+33	Clemson	CLM	14	0	1	0	$ffa800	$ffa800	$ffffff	$ffffff	7	7	0	0	0	0	44	2	0	148	0	0	SC	y:1:1110
+34	Durham	DUR	14	0	1	0	$6666ff	$6666ff	$6666ff	$ffffff	6	7	0	0	0	0	44	2	0	40	2	0	NC	y:1:0000
+35	Florida S.	FLS	14	0	1	0	$ffd700	$990000	$ffd700	$ceb888	7	8	0	0	0	0	50	0	0	38	0	0	FL	y:1:0000
+36	Georgia T.	GAT	14	0	1	0	$ffd700	$ffd700	$ffffff	$000000	4	1	0	0	0	0	51	1	0	142	1	0	GA	y:1:0000
+37	Louisville	LOU	14	0	1	0	$ffffff	$999900	$ffffff	$ffffff	8	4	0	0	0	0	0	0	0	143	0	0	KY	y:1:0000
+38	Miami F.	MIF	14	0	1	0	$ffffff	$ffa800	$ffffff	$005030	5	3	0	0	0	0	59	0	0	35	0	0	FL	y:1:0000
+39	N.C. S.	NCS	14	0	1	0	$ffffff	$660000	$ffffff	$000000	8	3	0	0	0	0	44	2	0	40	0	0	NC	y:1:0000
+40	N. Carolina	N.C	14	0	1	0	$0099cc	$0099cc	$0099cc	$ffffff	3	7	0	0	0	0	44	2	0	34	0	0	NC	y:1:0000
+41	Pittsburgh	PIT	14	0	1	0	$ffff00	$990099	$ffff00	$003594	7	6	0	0	0	0	38	27	0	77	1	0	PA	y:1:0000
+42	Syracuse	SYR	14	0	1	0	$ff0000	$000099	$ff0000	$000000	6	5	0	0	0	2	40	65	0	-1	0	0	NY	y:1:0000
+43	Virginia	VA.	14	0	1	0	$ffffff	$000099	$ffffff	$f84c1e	6	1	0	0	0	0	43	1	0	44	1	0	VA	y:1:0000
+44	Virginia T.	VAT	14	0	1	0	$cc0000	$cc0000	$ffffff	$cf4420	5	2	0	0	0	0	38	1	0	43	0	0	VA	y:1:0000
+45	Winston S.	W.S	14	0	1	0	$ffd700	$000000	$ffd700	$ffffff	4	8	0	0	0	0	44	1	0	40	1	0	NC	y:1:0000
+46	Cincinnati	CIN	4	0	1	0	$000000	$000000	$000000	$ffffff	7	5	0	0	0	0	42	14	0	109	0	0	OH	y:1:0001
+47	E. Carolina	E.C	3	0	1	0	$000099	$000099	$ffff00	$fdc82f	4	7	0	0	0	0	50	0	0	-1	0	0	NC	y:1:0000
+48	Houston	HOU	4	0	1	0	$ffffff	$800000	$ffffff	$ffffff	3	8	0	0	0	0	51	0	0	89	0	0	TX	y:1:0000
+49	Memphis	MEM	3	0	1	0	$0000d0	$0000d0	$0000d0	$ffffff	5	8	0	0	0	0	46	1	0	-1	0	0	TN	y:1:0000
+50	Annapolis	ANN	3	0	1	0	$ffd799	$0000cc	$ffd799	$ffffff	6	2	0	0	0	0	43	13	0	96	2	Military	MD	y:1:0000
+51	Southern M.	SOM	3	0	1	0	$ffffff	$800000	$ffffff	$0033a0	2	8	0	0	0	0	31	1	0	63	0	Religious	TX	y:1:0000
+52	S. Florida	SFL	3	0	1	0	$ffff00	$009900	$009900	$ffffff	1	5	0	0	0	0	50	0	0	56	0	0	FL	y:1:0000
+53	Philadelphia	PHI	3	0	1	0	$ffffff	$cc0000	$ffffff	$ffffff	4	2	0	0	0	0	47	15	0	-1	1	0	PA	y:1:0000
+54	New Orleans	N.O	3	0	1	0	$00ccff	$00cc00	$00ccff	$418fde	6	8	0	0	0	0	50	0	0	144	2	0	LA	y:1:0000
+55	Tulsa	TUL	3	0	1	0	$ffff00	$0000ff	$0000ff	$c8102e	2	6	0	0	0	0	35	1	0	-1	0	Religious	OK	y:1:0000
+56	C. Florida	CFL	4	0	1	0	$ffffff	$303030	$ffffff	$ffffff	6	7	0	0	0	0	50	0	0	52	0	0	FL	y:1:0000
+57	Waco	WAC	4	0	1	0	$00c000	$00c000	$00c000	$fecb00	6	7	0	0	0	0	43	0	0	63	0	Religious	TX	y:1:0001
+58	Iowa S.	IAS	4	0	1	0	$ffa800	$ffa800	$ffa800	$f1be48	7	2	0	0	0	0	36	29	0	69	0	0	IA	y:1:0010
+59	Kansas	KS.	4	0	1	0	$000066	$000066	$000066	$e8000d	1	8	0	0	0	0	36	15	0	60	0	0	KS	y:1:0000
+60	Kansas S.	KSS	4	0	1	0	$ffffff	$0000cc	$ffffff	$ffffff	6	6	0	0	0	0	36	15	0	59	0	0	KS	y:1:0000
+61	Oklahoma	OK.	4	0	1	0	$cc0000	$cc0000	$ffffff	$ffffff	4	7	0	0	0	0	33	4	0	64	0	0	OK	y:1:1110
+62	Oklahoma S.	OKS	4	0	1	0	$ffd700	$ffd700	$ffffff	$000000	4	6	0	0	0	0	34	4	0	61	0	0	OK	y:1:0001
+63	Ft. Worth	FTW	4	0	1	0	$0066cc	$0066cc	$0066cc	$ffffff	6	10	0	0	0	0	31	1	0	57	0	Religious	TX	y:1:0000
+64	Texas	TX.	4	0	1	0	$ffffff	$ffa800	$ffffff	$bf5700	7	8	0	0	0	0	30	0	0	61	0	0	TX	y:1:1000
+65	Texas T.	TXT	4	0	1	0	$000000	$800000	$000000	$000000	4	7	0	0	0	0	24	1	0	64	0	0	TX	y:1:0000
+66	W. Virginia	W.V	4	0	1	0	$0000cc	$FFd700	$FFd700	$eaaa00	2	6	0	0	0	0	45	15	0	-1	0	0	WV	y:1:0000
+67	Illinois	IL.	5	0	1	0	$ffa800	$660066	$ffa800	$ffffff	10	3	0	0	0	0	38	31	0	75	0	0	IL	y:1:0000
+68	Indiana	IN.	5	1	1	0	$cc6600	$cc6600	$ffffff	$ffffff	2	3	0	0	0	0	38	31	0	78	0	0	IN	y:1:0000
+69	Iowa	IA.	5	0	1	0	$666666	$666666	$f47a1a	$ffcd00	10	1	0	0	0	0	36	29	0	58	0	0	IA	y:1:0000
+70	Maryland	MD.	5	1	1	0	$000000	$800000	$ffffff	$000000	6	5	0	0	0	0	47	17	0	-1	0	0	MD	y:1:0000
+71	Michigan	MI.	5	1	1	0	$006699	$006699	$ffff00	$ffd51d	9	10	0	0	0	0	40	50	0	76	1	0	MI	y:1:0001
+72	Michigan S.	MIS	5	1	1	0	$00cc00	$00cc00	$cccccc	$ffffff	5	4	0	0	0	0	40	50	0	71	0	0	MI	y:1:0001
+73	Minnesota	MN.	5	0	1	0	$cc0000	$cc0000	$ffa800	$ffcc33	8	5	0	0	0	0	50	50	0	80	1	0	MN	y:1:0000
+74	Nebraska	NE.	5	0	1	0	$ffffff	$800000	$ffffff	$e41c38	5	4	0	0	0	0	32	30	0	-1	0	0	NE	y:1:0000
+75	Evanston	EVA	5	0	1	0	$0066cc	$0066cc	$0066cc	$ffffff	4	1	0	0	0	0	38	35	0	67	3	0	IL	y:1:0000
+76	Ohio S.	OHS	5	1	1	0	$666666	$ff0033	$666666	$bb0000	7	10	0	0	0	0	40	20	0	71	0	0	OH	y:1:1111
+77	Pennsylv. S.	PAS	5	1	1	0	$ffffff	$0000cc	$ffffff	$041e42	8	8	0	0	0	0	45	45	2	41	1	0	PA	y:1:0100
+78	Indiana P.	INP	5	0	1	0	$ffa800	$333333	$ffa800	$ffcc99	4	4	0	0	0	0	38	31	0	68	0	0	IN	y:1:0000
+79	New Jersey	N.J	5	1	1	0	$800000	$800000	$800000	$ffffff	4	1	0	0	0	0	47	25	0	-1	0	0	NJ	y:1:0000
+80	Wisconsin	WI.	5	0	1	0	$ffffff	$800000	$ffffff	$c5050c	7	4	0	0	0	0	33	48	0	73	1	0	WI	y:1:0000
+81	Charlotte	CHA	3	0	1	0	$ffffff	$00c000	$00c000	$000000	1	3	0	0	0	0	44	2	0	-1	0	0	NC	y:1:0000
+82	Florida I.	FLI	6	0	1	0	$0099cc	$0099cc	$0099cc	$b6862c	1	2	0	0	0	0	50	0	0	83	0	0	FL	y:1:0000
+83	Florida A.	FLA	3	0	1	0	$6600cc	$6600cc	$6600cc	$cc0000	5	5	0	0	0	0	50	0	0	82	0	0	FL	y:1:0000
+84	Louisiana T.	LAT	6	0	1	0	$ffffff	$800080	$ffffff	$e31b23	1	5	0	0	0	0	60	0	0	157	0	0	LA	y:1:0000
+85	Huntington	HUN	12	0	1	0	$ffffff	$003300	$003300	$000000	9	3	0	0	0	0	40	13	0	-1	0	0	WV	y:1:0000
+86	M. Tennessee	MTN	6	0	1	0	$cccccc	$000066	$cccccc	$0066cc	4	5	0	0	0	0	45	2	0	94	0	0	TN	y:1:0000
+87	N. Texas	NTX	3	0	1	0	$ffffff	$99cc99	$ffffff	$000000	3	7	0	0	0	0	32	1	0	-1	0	0	TX	y:1:0000
+88	Norfolk	NFK	12	0	1	0	$cccccc	$0000cc	$ffffff	$ffffff	5	2	0	0	0	0	39	1	0	-1	0	0	VA	y:1:0000
+89	Houston R.	H.R	3	0	1	0	$2f54a5	$2f54a5	$ffffff	$c1c6c8	2	4	0	0	0	0	51	0	0	48	2	0	TX	y:1:0000
+90	S. Miss.	SMS	12	1	1	0	$000000	$808080	$ffa800	$ffab00	6	4	0	0	0	0	55	0	0	-1	0	0	MS	y:1:0000
+91	Alabama B.	ALB	3	0	1	0	$ffd700	$009900	$009900	$000000	6	6	0	0	0	0	40	0	0	-1	0	0	AL	y:1:0000
+92	El Paso	ELP	6	0	1	0	$cc0000	$0000cc	$0000cc	$ffffff	5	3	0	0	0	0	10	1	0	98	0	0	TX	y:1:0000
+93	San Antonio	S.A	3	0	1	0	$6666cc	$c00000	$6666cc	$f15a22	5	8	0	0	0	2	20	0	0	160	0	0	TX	y:1:0000
+94	W. Kentucky	WKY	6	0	1	0	$1e1e1e	$c603c0	$ffffff	$a2a4a3	6	8	0	0	0	0	35	2	0	86	0	0	KY	y:1:0000
+95	Lynchburg	LYN	6	0	1	0	$0000cc	$0000cc	$0000cc	$002d62	5	5	0	0	0	0	35	2	0	-1	0	Religious	VA	y:1:0000
+96	W. Point	W.P	7	0	1	0	$ffd700	$666666	$ffd700	$d4bf91	6	5	0	0	0	0	40	25	0	50	2	Military	NY	y:1:0000
+97	Provo	PRV	4	0	1	0	$ffffff	$800080	$ffffff	$002e5d	4	6	0	0	0	0	30	35	0	135	2	Religious	UT	y:1:0000
+98	N.M. S.	NMS	6	0	1	0	$993366	$993366	$993366	$ffffff	6	4	0	0	0	0	10	1	0	120	0	0	NM	y:1:0000
+99	South Bend	S.B	7	0	1	0	$ffd799	$000099	$ffd799	$ae9142	7	7	0	0	0	0	38	35	0	-1	2	Religious	IN	y:1:1010
+100	Connecticut	CT.	7	0	1	0	$ffffff	$2f54a5	$2f54a5	$ffffff	5	2	0	0	0	0	40	30	0	-1	0	0	CT	y:1:0000
+101	Mass.	MA.	7	0	1	0	$ff0000	$ff0000	$ff0000	$ffffff	3	1	0	0	0	0	40	30	0	-1	0	0	MA	y:1:0000
+102	Akron	AKR	8	0	1	0	$0000d0	$0000d0	$0000d0	$a89968	2	2	0	0	0	0	40	45	0	108	0	0	OH	y:1:0000
+103	Muncie S.	MUN	8	1	1	0	$000000	$000000	$800000	$ffffff	5	3	0	0	0	0	42	21	0	110	0	0	IN	y:1:0000
+104	Bowling G.	B.G	8	0	1	0	$ff0000	$ff0000	$ffffff	$fe5000	2	4	0	0	0	0	38	29	0	112	0	0	OH	y:1:0000
+105	Buffalo	BUF	8	0	1	0	$ffffff	$000066	$000000	$ffffff	5	5	0	0	0	0	40	89	0	-1	0	0	NY	y:1:0000
+106	C. Michigan	CMI	8	1	1	0	$c00000	$c00000	$c00000	$ffc82e	4	3	0	0	0	0	40	35	0	113	0	0	MI	y:1:0000
+107	E. Michigan	EMI	8	1	1	0	$999999	$00cc00	$00cc00	$ffffff	4	5	0	0	0	0	39	32	0	106	0	0	MI	y:1:0000
+108	Kent	KNT	8	0	1	0	$2f54a5	$2f54a5	$ffd700	$eaab00	4	5	0	0	0	0	38	19	0	102	0	0	OH	y:1:0000
+109	Miami O.	MIO	8	0	1	0	$ffffff	$ffa800	$ffffff	$ffffff	6	2	0	0	0	0	40	15	0	111	0	0	OH	y:1:0000
+110	N. Illinois	NIL	8	1	1	0	$000000	$660000	$ffffff	$ba0c2f	2	4	0	0	0	0	38	35	0	103	0	0	IL	y:1:0000
+111	Ohio	OH.	8	0	1	0	$66cc66	$66cc66	$ffffff	$00694e	4	6	0	0	0	0	40	16	0	109	0	0	OH	y:1:0000
+112	Toledo	TOL	8	1	1	0	$800080	$800080	$800080	$15397f	5	6	0	0	0	0	38	29	0	104	0	0	OH	y:1:0000
+113	W. Michigan	WMI	8	1	1	0	$ffd799	$c00000	$c00000	$b5a167	6	2	0	0	0	0	41	35	0	106	0	0	MI	y:1:0000
+114	Co. Springs	CSP	13	0	1	0	$660066	$660066	$660066	$003087	9	5	0	0	0	0	14	67	0	116	0	Military	CO	y:1:0000
+115	Boise	BOI	13	0	1	0	$0099cc	$0099cc	$0099cc	$d64309	7	5	0	0	0	0	40	35	0	-1	0	0	ID	y:1:0000
+116	Colorado S.	COS	13	0	1	0	$009900	$009900	$ffd799	$c8c372	5	1	0	0	0	0	15	67	0	114	0	0	CO	y:1:0000
+117	Fresno	FRE	13	0	1	0	$ffffff	$800000	$ffffff	$ffffff	7	6	0	0	0	0	15	0	0	122	0	0	CA	y:1:0000
+118	Hawaii	HI.	13	0	1	0	$33cc33	$33cc33	$33cc33	$b1b1b1	2	2	0	0	0	0	39	0	0	-1	0	0	HI	y:1:0000
+119	Nevada	NV.	13	0	1	0	$0000cc	$0000cc	$0000cc	$ffffff	3	1	0	0	0	0	15	10	0	123	0	0	NV	y:1:0000
+120	New Mexico	N.M	13	0	1	0	$666666	$cc9900	$ffffff	$ba0c2f	5	1	0	0	0	0	13	10	0	98	0	0	NM	y:1:0000
+121	San Diego S.	SAN	13	0	1	0	$660000	$000000	$000000	$000000	7	2	0	0	0	0	16	0	0	-1	0	0	CA	y:1:0000
+122	San Jose	S.J	13	0	1	0	$99ccff	$99ccff	$99ccff	$e5a823	6	4	0	0	0	0	24	0	0	117	0	0	CA	y:1:0000
+123	Las Vegas	L.V	13	0	1	0	$660000	$660000	$ffffff	$cac8c8	4	4	0	0	0	0	5	0	0	119	0	0	NV	y:1:0000
+124	Utah S.	UTS	13	0	1	0	$2f54a5	$2f54a5	$2f54a5	$9d968d	3	3	0	0	0	0	35	30	0	135	0	0	UT	y:1:0000
+125	Wyoming	WY.	13	0	1	0	$ffffff	$cc0000	$ffff00	$492f24	6	2	0	0	0	0	17	71	0	116	0	0	WY	y:1:0000
+126	Arizona	AZ.	10	0	1	0	$d00000	$d00000	$0099cc	$0c234b	1	6	0	0	0	0	4	0	0	127	1	0	AZ	y:1:0000
+127	Arizona S.	AZS	10	0	1	0	$ffff00	$000000	$ffff00	$000000	3	4	0	0	0	0	4	0	0	126	0	0	AZ	y:1:0000
+128	California	CAL	10	0	1	0	$2f54a5	$2f54a5	$2f54a5	$ffc72c	4	3	0	0	0	0	20	0	0	132	2	0	CA	y:1:0000
+129	Colorado	CO.	10	0	1	0	$ffff00	$000000	$000000	$ffffff	3	3	0	0	0	0	25	65	0	116	1	0	CO	y:1:0000
+130	Oregon	OR.	10	0	1	0	$00cc00	$00cc00	$00cc00	$ffffff	4	10	0	0	0	0	50	5	0	131	0	0	OR	y:1:0100
+131	Oregon S.	ORS	10	0	1	0	$000000	$000000	$000000	$c34500	7	7	0	0	0	0	50	5	0	130	0	0	OR	y:1:0000
+132	Palo Alto	P.A	10	0	1	0	$ffffff	$d00000	$ffffff	$9a0000	3	2	0	0	0	0	20	0	0	128	3	0	CA	y:1:0000
+133	Los Angeles	L.A	10	0	1	0	$ffd799	$000033	$ffd799	$ffffff	4	9	0	0	0	0	16	0	0	134	1	0	CA	y:1:0000
+134	Cal. So.	CSO	10	0	1	0	$d00000	$d00000	$ffff00	$ffc72c	4	10	0	0	0	0	16	0	0	133	0	0	CA	y:1:0000
+135	Utah	UT.	10	0	1	0	$000000	$000000	$000000	$ffffff	7	9	0	0	0	0	26	40	0	97	0	0	UT	y:1:0000
+136	Washington	WA.	10	0	1	0	$ecdca8	$3f366a	$ecdca8	$ffffff	5	10	0	0	0	0	67	1	0	137	1	0	WA	y:1:0000
+137	Wash. S.	WAS	10	0	1	0	$cccccc	$999900	$cccccc	$ffffff	6	4	0	0	0	0	20	40	0	136	0	0	WA	y:1:0000
+138	Alabama	AL.	11	1	1	0	$660000	$660000	$ffffff	$ffffff	9	10	0	0	0	0	45	3	0	140	0	0	AL	y:1:1011
+139	Arkansas	AR.	11	1	1	0	$660066	$660066	$ffffff	$ffffff	3	7	0	0	0	0	36	10	0	144	0	0	AR	y:1:0000
+140	Auburn	AUB	11	1	1	0	$ffffff	$0000cc	$ffffff	$e87722	5	5	0	0	0	0	41	1	0	138	0	0	AL	y:1:0000
+141	Florida	FL.	11	0	1	0	$ffff00	$000033	$ffffff	$0021a5	4	5	0	0	0	0	47	0	0	142	0	0	FL	y:1:1100
+142	Georgia	GA.	11	0	1	0	$800000	$800000	$ffffff	$000000	10	10	0	0	0	0	45	2	0	141	0	0	GA	y:1:0111
+143	Kentucky	KY.	11	0	1	0	$003366	$003366	$ffffff	$ffffff	8	2	0	0	0	0	34	14	0	37	0	0	KY	y:1:0000
+144	Louisiana S.	LAS	11	1	1	0	$ffd799	$ffffff	$ffd799	$ffc066	8	8	0	0	0	0	60	0	0	138	0	0	LA	y:1:1100
+145	Miss. S.	MSS	11	1	1	0	$c00000	$c00000	$ffffff	$ffffff	7	7	0	0	0	0	30	0	0	147	0	0	MS	y:1:0000
+146	Missouri	MO.	11	0	1	0	$999999	$999999	$999999	$f1b82d	5	3	0	0	0	0	34	8	0	139	0	0	MO	y:1:0000
+147	Mississippi	MS.	11	1	1	0	$0000cc	$0000cc	$ffffff	$ce1126	6	7	0	0	0	0	30	0	0	145	0	0	MS	y:1:0000
+148	S. Carolina	S.C	11	0	1	0	$ffffff	$e00000	$ffffff	$000000	6	6	0	0	0	0	28	5	0	33	0	0	SC	y:1:0000
+149	Tennessee	TN.	11	0	1	0	$ffffff	$ff0000	$ffffff	$ff8200	6	10	0	0	0	0	43	3	0	151	0	0	TN	y:1:0000
+150	Texas A.	TXA	11	1	1	0	$c00000	$c00000	$ffffff	$ffffff	7	3	0	0	0	0	41	0	0	64	0	0	TX	y:1:0010
+151	Nashville	NSH	11	0	1	0	$ffd700	$000000	$ffd700	$000000	1	3	0	0	0	0	45	2	0	149	2	0	TN	y:1:0000
+152	Appalachian	APP	12	0	1	0	$000000	$000000	$000000	$ffcc00	5	7	0	0	0	0	40	25	0	155	0	0	NC	y:1:0000
+153	Arkansas S.	ARS	12	1	1	0	$600000	$600000	$600000	$cc092f	3	4	0	0	0	0	40	10	0	-1	0	0	AR	y:1:0000
+154	C. Carolina	CCO	12	0	1	0	$000000	$00cc99	$00cc99	$006f41	3	5	0	0	0	0	27	1	0	-1	0	0	SC	y:1:0000
+155	Georgia So.	GSO	12	0	1	0	$0000cc	$0000cc	$999999	$ffffff	3	7	0	0	0	0	48	1	0	152	0	0	GA	y:1:0000
+156	Georgia S.	GAS	12	0	1	0	$000033	$000033	$000033	$ffffff	3	6	0	0	0	0	51	1	0	-1	0	0	GA	y:1:0000
+157	Louisiana	LA.	12	1	1	0	$800000	$800000	$800000	$ffffff	6	4	0	0	0	0	54	0	0	158	0	0	LA	y:1:0000
+158	Louisiana M.	LAM	12	1	1	0	$ffffff	$600050	$ffffff	$800029	2	3	0	0	0	0	44	0	0	157	0	0	LA	y:1:0000
+159	S. Alabama	SAL	12	1	1	0	$666699	$666699	$666699	$bf0d3e	7	6	0	0	0	0	54	0	0	161	0	0	AL	y:1:0000
+160	Texas S.	TXS	12	1	1	0	$ffd799	$e00000	$ffd799	$8d734a	5	2	0	0	0	0	39	1	0	93	0	0	TX	y:1:0000
+161	Troy	TRO	12	1	1	0	$606060	$f00000	$f00000	$8a2432	8	4	0	0	0	0	39	1	0	159	0	0	AL	y:1:0000
+162	Harrisonb'g	HBG	12	0	1	0	$0000d0	$000000	$0000d0	$f6ead0	6	7	0	0	0	0	21	1	0	-1	0	0	VA	y:1:0000
+163	Clarksville	CVL	37	0	1	0	$666666	$ffa800	$ffffff	$999999	7	7	0	0	0	0	23	0	0	-1	0	0	TN	y:1:0000
+164	C. Arkansas	CAR	37	0	1	0	$CCCCCC	$0000e0	$0000e0	$663399	4	7	0	0	0	0	26	0	0	-1	0	0	AR	y:1:0000
+165	E. Kentucky	EKY	37	0	1	0	$e00000	$e00000	$ffffff	$ffffff	3	9	0	0	0	0	27	0	0	-1	0	0	KY	y:1:0000
+166	J'ville S.	JVS	6	0	1	0	$ffa800	$ffa800	$ffffff	$000000	7	9	0	0	0	0	24	0	0	-1	0	0	AL	y:1:0000
+167	Kennesaw	KSW	38	0	1	0	$ffd799	$996666	$996666	$000000	3	6	0	0	0	0	24	0	0	-1	0	0	GA	y:1:0000
+168	N. Alabama	NAL	37	0	1	0	$000066	$000066	$ffff00	$ffffff	1	5	0	0	0	0	26	0	0	-1	0	0	AL	y:1:0000
+169	S.L. Obispo	SLO	21	0	1	0	$333333	$333333	$ffff00	$ffffff	1	4	0	0	0	0	8	0	0	179	1	0	CA	y:1:0000
+170	E. Wash.	EWA	21	0	1	0	$ffa800	$ffa800	$ffffff	$000000	1	5	0	0	0	0	28	3	0	177	0	0	WA	y:1:0000
+171	Idaho	ID.	21	0	1	0	$ffff00	$000000	$cccccc	$000000	6	8	0	0	0	2	28	5	0	172	0	0	ID	y:1:0000
+172	Idaho S.	IDS	21	0	1	0	$ffff00	$333333	$ffff00	$333333	2	1	0	0	0	2	28	5	0	171	0	0	ID	y:1:0000
+173	Montana	MT.	21	0	1	0	$f00000	$f00000	$ffffff	$ffffff	7	9	0	0	0	0	30	0	0	174	0	0	MT	y:1:0000
+174	Montana S.	MTS	21	0	1	0	$ffff00	$600060	$ffff00	$ffffff	6	10	0	0	0	0	30	0	0	173	0	0	MT	y:1:0000
+175	N. Arizona	NAZ	21	0	1	0	$0000cc	$0000cc	$0000cc	$ffff00	5	4	0	0	0	2	13	0	0	-1	0	0	AZ	y:1:0000
+176	N. Colorado	NCO	21	0	1	0	$ffff00	$996699	$ffff00	$999999	2	3	0	0	0	0	17	0	0	-1	0	0	CO	y:1:0000
+177	Portland S.	P.S	21	0	1	0	$00cc00	$00cc00	$999999	$ffffff	1	4	0	0	0	0	50	0	0	170	0	0	OR	y:1:0000
+178	Sacramento	SAC	21	0	1	0	$009900	$009900	$ffffff	$ffffff	6	10	0	0	0	0	10	0	0	179	0	0	CA	y:1:0000
+179	Cal. D.	C.D	21	0	1	0	$ffff99	$800080	$800080	$ffffff	7	8	0	0	0	0	10	0	0	178	1	0	CA	y:1:0000
+180	Ogden	OGD	21	0	1	0	$0000ff	$cccccc	$0000ff	$cccccc	7	8	0	0	0	0	23	0	0	-1	0	0	UT	y:1:0000
+181	Rhode I. B.	RIB	36	0	1	0	$ffff00	$333333	$ffff00	$ffcc99	4	7	0	0	0	0	39	0	0	-1	0	0	RI	y:1:0000
+182	N.C. Baptist	NCB	35	0	1	0	$ffffff	$ffff00	$ffff00	$000000	5	7	0	0	0	0	26	0	0	-1	0	0	NC	y:1:0000
+183	Charleston S.	CHS	36	0	1	0	$660066	$660066	$660066	$333399	4	3	0	0	0	0	26	0	0	-1	0	0	SC	y:1:0000
+184	N.C.G.W.	NGW	36	0	1	0	$666666	$ffa800	$ffffff	$ff0000	5	7	0	0	0	0	26	0	0	-1	0	0	NC	y:1:0000
+185	N.C. A.	NCA	35	0	1	0	$00cccc	$00cccc	$00cccc	$ffff00	5	6	0	0	0	0	26	0	0	211	0	HBU	NC	y:1:0000
+186	Pitts. R.M.	PRM	36	0	1	0	$666666	$666666	$666666	$c00000	3	1	0	0	0	0	38	27	0	-1	0	0	PA	y:1:0000
+187	Albany	ABY	35	0	1	0	$ffa800	$000033	$ffa800	$ffffff	3	6	0	0	0	0	35	0	0	195	0	0	NY	y:1:0000
+188	Delaware	DE.	35	0	1	0	$009999	$009999	$009999	$ffff00	10	6	0	0	0	0	29	0	0	197	1	0	DE	y:1:0000
+189	N.C. E.	NCE	35	0	1	0	$ffff00	$e00000	$ffff00	$993333	7	5	0	0	0	0	27	0	0	-1	0	0	NC	y:1:0000
+190	Hampton	HAM	35	0	1	0	$ffffff	$000066	$000066	$ffffff	5	2	0	0	0	0	29	1	0	208	0	HBU	VA	y:1:0000
+191	Maine	ME.	35	0	1	0	$99ccff	$99ccff	$99ccff	$99ccff	4	4	0	0	0	0	42	0	0	192	0	0	ME	y:1:0000
+192	N. Hampshire	NH.	35	0	1	0	$ffd799	$000099	$ffffff	$ffffff	5	6	0	0	0	0	39	0	0	191	0	0	NH	y:1:0000
+193	Rhode I.	RI.	35	0	1	0	$99ccff	$99ccff	$99ccff	$333366	6	7	0	0	0	0	33	0	0	199	0	0	RI	y:1:0000
+194	Richmond	RIC	35	0	1	0	$009999	$e00000	$009999	$e03333	8	7	0	0	0	0	31	4	0	198	1	0	VA	y:1:0000
+195	Stony B.	STB	35	0	1	0	$800000	$800000	$ffffff	$a0a0a0	4	2	0	0	0	0	31	0	0	187	0	0	NY	y:1:0000
+196	Towson	TOW	35	0	1	0	$333333	$333333	$333333	$ffd700	5	3	0	0	0	0	29	0	0	209	0	0	MD	y:1:0000
+197	Phil. Cath.	PHC	35	0	1	0	$2f54a5	$2f54a5	$66ccff	$ffffff	5	5	0	0	0	0	30	0	0	188	1	0	PA	y:1:0000
+198	W'msburg	W.M	35	0	1	0	$ffff00	$009900	$ffff00	$ffffff	7	8	0	0	0	0	29	1	0	194	2	0	VA	y:1:0000
+199	Providence	PRO	24	0	1	0	$c0c0c0	$660000	$c0c0c0	$4c3333	3	4	0	0	0	0	39	0	0	193	3	Ivy	RI	y:1:0000
+200	Manhattan	MAN	24	0	1	0	$ffffff	$99ccff	$ffffff	$99ccff	8	5	0	0	0	0	31	0	0	-1	3	Ivy	NY	y:1:0000
+201	Ithaca	ITH	24	0	1	0	$ff0000	$ff0000	$ffffff	$ffffff	5	4	0	0	0	0	44	0	0	202	3	Ivy	NY	y:1:0000
+202	Hanover	HAN	24	0	1	0	$ffffff	$009900	$ffffff	$336633	8	3	0	0	0	0	38	0	0	201	3	Ivy	NH	y:1:0000
+203	Cambridge	CAM	24	0	1	0	$ff0000	$ff0000	$c0c099	$000000	7	5	0	0	0	0	36	0	0	206	3	Ivy	MA	y:1:0000
+204	Pennsylvania	PA.	24	0	1	0	$000099	$000099	$ffffff	$c00000	9	5	0	0	0	0	28	0	0	205	3	Ivy	PA	y:1:0000
+205	N. Jersey P.	NJP	24	0	1	0	$ffff00	$000000	$000000	$ffd800	10	6	0	0	0	0	29	0	0	204	3	Ivy	NJ	y:1:0000
+206	New Haven	NHV	24	0	1	0	$ffffff	$000066	$ffffff	$000066	9	7	0	0	0	0	32	0	0	203	3	Ivy	CT	y:1:0000
+207	Delaware S.	DES	25	0	1	0	$ffffff	$ff3366	$ffffff	$ffffff	6	2	0	0	0	0	29	0	0	188	0	HBU	DE	y:1:0000
+208	Wash. D.C.	WDC	25	0	1	0	$c0c0c0	$666699	$666699	$666699	5	6	0	0	0	0	26	0	0	190	1	HBU	DC	y:1:0000
+209	Balti. M.S.	BMS	25	0	1	0	$000099	$ffa800	$ffffff	$ffa800	5	3	0	0	0	0	27	0	0	196	0	HBU	MD	y:1:0000
+210	Norfolk S.	NFS	25	0	1	0	$336633	$336633	$336633	$ffff00	1	2	0	0	0	0	29	1	0	190	0	HBU	VA	y:1:0000
+211	N.C. C.	NCC	25	0	1	0	$c00000	$c00000	$ffffff	$ffffff	6	9	0	0	0	0	26	0	0	185	0	HBU	NC	y:1:0000
+212	S.C. S.	SCS	25	0	1	0	$ffffff	$ff0000	$ff0000	$000099	3	3	0	0	0	0	27	0	0	-1	0	HBU	SC	y:1:0000
+213	Illinois S.	ILS	26	0	1	0	$ffffff	$990000	$990000	$ff0000	8	2	0	0	0	0	34	0	0	232	0	0	IL	y:1:0000
+214	Indiana S.	INS	26	0	1	0	$ffffff	$000066	$000066	$ffffff	4	2	0	0	0	0	27	0	0	-1	0	0	IN	y:1:0000
+215	Missouri S.	MOS	26	0	1	0	$c00000	$c00000	$c00000	$0000ff	5	6	0	0	0	0	27	0	0	-1	0	0	MO	y:1:0000
+216	N. Dakota	ND.	26	0	1	0	$00cc00	$00cc00	$ffffff	$ffffff	4	7	0	0	0	2	24	0	0	217	0	0	ND	y:1:0000
+217	N. Dakota S.	NDS	26	0	1	0	$ffd799	$00cc00	$ffd799	$006600	8	8	0	0	0	2	24	0	0	216	0	0	ND	y:1:0000
+218	N. Iowa	NIA	26	0	1	0	$0000c0	$0000c0	$ffffff	$ffd700	6	8	0	0	0	2	25	0	0	-1	0	0	IA	y:1:0000
+219	S. Dakota	SD.	26	0	1	0	$990000	$990000	$ffffff	$ffffff	5	2	0	0	0	2	24	0	0	220	0	0	SD	y:1:0000
+220	S. Dakota S.	SDS	26	0	1	0	$000099	$000099	$ffffff	$ffff00	10	8	0	0	0	0	24	0	0	219	0	0	SD	y:1:0000
+221	S. Illinois	SIL	26	0	1	0	$660000	$660000	$660000	$ffd700	6	6	0	0	0	0	27	0	0	-1	0	0	IL	y:1:0000
+222	W. Illinois	WIL	26	0	1	0	$ffffff	$000099	$ffffff	$663399	2	1	0	0	0	0	27	0	0	-1	0	0	IL	y:1:0000
+223	Youngstown	YOU	26	0	1	0	$990000	$990000	$ffffff	$000000	6	6	0	0	0	0	38	0	0	-1	0	0	OH	y:1:0000
+224	C. Conn.	CCT	27	0	1	0	$ffffff	$0000ff	$0000ff	$c0c0c0	5	2	0	0	0	0	32	0	0	-1	0	0	CT	y:1:0000
+225	Pitt. D.	PID	27	0	1	0	$ffffff	$990000	$990000	$333366	5	4	0	0	0	0	38	27	0	-1	0	0	PA	y:1:0000
+226	Long Island	L.I	27	0	1	0	$ffff00	$0000ff	$0000ff	$ffd700	2	4	0	0	0	0	30	0	0	-1	0	0	NY	y:1:0000
+227	N. Andover	AND	27	0	1	0	$0000cc	$ffff00	$0000cc	$999999	7	5	0	0	0	0	32	0	0	-1	0	0	MA	y:1:0000
+228	Fairfield	FAI	27	0	1	0	$ffffff	$ff0000	$ff0000	$0000ff	6	5	0	0	0	0	32	0	0	-1	0	Religious	CT	y:1:0000
+229	Johnstown	JOH	27	0	1	0	$333333	$ff0000	$000000	$0000ff	7	8	0	0	0	0	35	0	0	-1	0	Religious	PA	y:1:0000
+230	Brockton	BRO	27	0	1	0	$333399	$333399	$ffffff	$ffffff	6	4	0	0	0	0	34	0	0	-1	0	0	MA	y:1:0000
+231	Staten I.	S.I	27	0	1	0	$33664C	$33664C	$ffffff	$ffffff	1	1	0	0	0	0	29	0	0	-1	0	0	NY	y:1:0000
+232	E. Illinois	EIL	36	0	1	0	$666666	$0000ff	$666666	$ffffff	4	4	0	0	0	0	28	0	0	213	0	0	IL	y:1:0000
+233	S. Charles	SCH	36	0	1	0	$666666	$ffcc99	$666666	$ffcc99	2	8	0	0	0	0	29	0	0	-1	0	0	MO	y:1:0000
+234	Murray	MUR	26	0	1	0	$ffffff	$000099	$000099	$ffd700	2	2	0	0	0	0	30	0	0	-1	0	0	KY	y:1:0000
+235	Missouri S.E.	MSE	36	0	1	0	$666666	$ff0000	$ff0000	$0000ff	7	8	0	0	0	0	29	0	0	-1	0	0	MO	y:1:0000
+236	Tennessee S.	TNS	36	0	1	0	$ffffff	$0000ff	$999999	$0000ff	6	2	0	0	0	0	25	0	0	-1	0	HBU	TN	y:1:0000
+237	Tennessee T.	TNT	36	0	1	0	$ffffff	$000099	$ffffff	$ffff00	4	4	0	0	0	0	25	0	0	-1	0	0	TN	y:1:0000
+238	Tennessee M.	TNM	36	0	1	0	$ffffff	$ff0000	$ff0000	$ffa800	5	8	0	0	0	0	25	0	0	-1	0	0	TN	y:1:0000
+239	Lewisburg	LEW	29	0	1	0	$000099	$000099	$000099	$ffa800	5	1	0	0	0	0	30	0	0	-1	1	0	PA	y:1:0000
+240	Hamilton	HML	29	0	1	0	$cccccc	$800000	$800000	$c0c0c0	5	4	0	0	0	0	37	0	0	201	1	0	NY	y:1:0000
+241	Bronx	BNX	29	0	1	0	$ff0000	$ff0000	$ff0000	$c0c0c0	2	10	0	0	0	0	31	0	0	-1	1	0	NY	y:1:0000
+242	D.C. Cath.	DCC	29	0	1	0	$999999	$0000c0	$0000c0	$000066	2	4	0	0	0	0	26	0	0	-1	2	Religious	DC	y:1:0000
+243	Worcester	WOR	29	0	1	0	$663399	$663399	$ffffff	$ffffff	7	9	0	0	0	0	33	0	0	-1	1	Religious	MA	y:1:0000
+244	Easton	EAS	29	0	1	0	$ffffff	$993333	$ffffff	$993333	7	1	0	0	0	0	32	0	0	245	1	0	PA	y:1:0000
+245	Bethlehem	BET	29	0	1	0	$ffcc99	$663300	$ffffff	$663300	5	2	0	0	0	0	32	0	0	244	1	0	PA	y:1:0000
+246	Indianapolis	IND	30	0	1	0	$ffffff	$000099	$ffffff	$000099	7	5	0	0	0	0	28	0	0	256	0	0	IN	y:1:0000
+247	N.C. D.	NCD	30	0	1	0	$ff0000	$ff0000	$ffffff	$ffffff	6	6	0	0	0	0	26	0	0	-1	2	0	NC	y:1:0000
+248	Dayton	DAY	30	0	1	0	$ff0000	$ff0000	$ffffff	$000099	6	5	0	0	0	0	30	0	0	-1	0	0	OH	y:1:0000
+249	Des Moines	D.M	30	0	1	0	$336699	$336699	$ffffff	$ffffff	5	2	0	0	0	0	26	0	0	-1	0	0	IA	y:1:0000
+250	P'keepsie	POU	30	0	1	0	$ffffff	$ffa800	$ffa800	$ff0000	5	4	0	0	0	0	33	0	0	-1	0	Religious	NY	y:1:0000
+251	Morehead	MHD	30	0	1	0	$ffffff	$660066	$660066	$ffff00	2	3	0	0	0	0	29	0	0	-1	0	0	KY	y:1:0000
+252	Clinton	CLI	30	0	1	0	$ffffff	$0000ff	$ffffff	$0000ff	1	2	0	0	0	0	26	0	0	-1	0	Religious	SC	y:1:0000
+253	St. Paul	STP	30	0	1	0	$c0c0c0	$000099	$000099	$663399	9	7	0	0	0	0	31	0	0	-1	0	Religious	MN	y:1:0000
+254	San Diego	S.D	30	0	1	0	$0000c0	$0000c0	$0000c0	$ffffff	7	5	0	0	0	0	6	0	0	-1	0	0	CA	y:1:0000
+255	DeLand	DEL	30	0	1	0	$ffffff	$006633	$000000	$006633	4	5	0	0	0	0	22	0	0	-1	0	0	AL	y:1:0000
+256	Indiana V.	I.V	30	0	1	0	$ffffff	$660000	$ffcc99	$660000	4	4	0	0	0	0	29	0	0	246	0	Religious	IN	y:1:0000
+257	Chattanooga	CGA	31	0	1	0	$ffffff	$003366	$003366	$ff9900	8	6	0	0	0	0	27	0	0	-1	0	0	TN	y:1:0000
+258	Charlst'n C.	C.C	31	0	1	0	$ffffff	$000099	$000099	$ffffff	5	1	0	0	0	0	25	0	0	260	0	Military	SC	y:1:0000
+259	E. Tennessee	ETN	31	0	1	0	$000099	$ffd700	$ffd700	$000099	4	6	0	0	0	0	25	0	0	-1	0	0	TN	y:1:0000
+260	Greenville	GRN	31	0	1	0	$ffffff	$000099	$ffffff	$663399	7	7	0	0	0	0	25	0	0	258	0	0	SC	y:1:0000
+261	Macon	MAC	31	0	1	0	$333333	$333333	$333333	$ffa800	7	9	0	0	0	0	25	0	0	-1	0	0	GA	y:1:0000
+262	B'ham S.	BHS	31	0	1	0	$ffffff	$000099	$ffffff	$990000	6	7	0	0	0	0	22	0	0	-1	0	0	AL	y:1:0000
+263	W. Carolina	W.C	31	0	1	0	$000099	$000099	$ffffff	$cc9966	4	7	0	0	0	0	27	0	0	-1	0	0	NC	y:1:0000
+264	Spartanburg	SPA	31	0	1	0	$ffd700	$333333	$ffd700	$ffcc99	4	3	0	0	0	0	26	0	0	-1	0	0	SC	y:1:0000
+265	Virginia M.	VAM	31	0	1	0	$ffd700	$ff0000	$ffd700	$ff0000	2	2	0	0	0	0	27	0	0	258	0	Military	VA	y:1:0000
+266	Houston B.	HOB	32	0	1	0	$ffffff	$0000ff	$0000ff	$ffa800	2	2	0	0	0	0	23	0	0	-1	0	0	TX	y:1:0000
+267	S.A. Catholic	SCA	32	0	1	0	$ff0000	$ff0000	$ffffff	$333333	6	10	0	0	0	0	19	0	0	-1	0	0	TX	y:1:0000
+268	Beaumont	BEA	32	0	1	0	$ffffff	$ff0000	$ff0000	$ff0000	2	3	0	0	0	0	24	0	0	-1	0	0	TX	y:1:0000
+269	L. Charles	L.C	32	0	1	0	$ffd700	$006699	$ffd700	$006699	4	4	0	0	0	0	25	0	0	271	0	0	LA	y:1:0000
+270	Thibodaux	THX	32	0	1	0	$c0c0c0	$ff0000	$c0c0c0	$ff0000	3	2	0	0	0	0	24	0	0	272	0	0	LA	y:1:0000
+271	Nachitoches	NAC	32	0	1	0	$ffffff	$000099	$000099	$ffa800	2	4	0	0	0	0	25	0	0	269	0	0	LA	y:1:0000
+272	LA. S.E.	LSE	32	0	1	0	$ffffff	$ffd700	$ffffff	$339933	6	8	0	0	0	0	24	0	0	270	0	0	LA	y:1:0000
+273	Texas A.C.	TXC	32	0	1	0	$ffd700	$000099	$ffd700	$000099	7	3	0	0	0	0	20	0	0	-1	0	0	TX	y:1:0000
+274	Alabama A.	ALA	33	0	1	0	$ffffff	$800000	$ffffff	$800000	4	3	0	0	0	0	23	0	0	275	0	HBU	AL	y:1:0000
+275	Alabama S.	ALS	33	0	1	0	$ffcc99	$333333	$333333	$333333	7	2	0	0	0	0	23	0	0	274	0	HBU	AL	y:1:0000
+276	Daytona B.	D.B	33	0	1	0	$ffff00	$800000	$800000	$ffd700	2	4	0	0	0	0	27	0	0	277	0	HBU	FL	y:1:0000
+277	Fla. A.M.	FAM	33	0	1	0	$ffa800	$339966	$339966	$339966	7	5	0	0	0	0	27	0	0	276	0	HBU	FL	y:1:0000
+278	Jackson	JAC	33	0	1	0	$000066	$000066	$000066	$ffffff	10	9	0	0	0	0	24	0	0	280	0	HBU	MS	y:1:0000
+279	Miss. V.S.	MVS	33	0	1	0	$006633	$006633	$006633	$ffffff	5	1	0	0	0	0	23	0	0	-1	0	HBU	MS	y:1:0000
+280	Lorman	LOR	33	1	1	0	$330066	$330066	$330066	$ffcc99	6	3	0	0	0	0	23	0	0	278	0	HBU	MS	y:1:0000
+281	Arkansas P.	ARP	33	1	1	0	$333333	$333333	$333333	$ffff00	2	2	0	0	0	0	24	0	0	-1	0	HBU	AR	y:1:0000
+282	Grambling	GRA	33	1	1	0	$999999	$999999	$ffd700	$ffd700	4	4	0	0	0	0	23	0	0	284	0	HBU	LA	y:1:0000
+283	Prairie V.	P.V	33	1	1	0	$333399	$ffcc33	$333399	$ffcc33	6	6	0	0	0	0	23	0	0	-1	0	HBU	TX	y:1:0000
+284	Baton Rouge	B.R	33	1	1	0	$ffffff	$66ccff	$66ccff	$ffffff	6	4	0	0	0	0	23	0	0	282	0	HBU	LA	y:1:0000
+285	Texas So.	TSO	33	1	1	0	$660000	$660000	$ffffff	$ffffff	5	5	0	0	0	0	23	0	0	-1	0	HBU	TX	y:1:0000
+286	Abilene	ABI	37	0	1	0	$ffffff	$0000ff	$ffffff	$333333	7	6	0	0	0	0	23	0	0	-1	0	Religious	TX	y:1:0000
+287	Huntsville	HVL	6	0	1	0	$ff0000	$ff0000	$ffffff	$ffffff	8	2	0	0	0	0	24	0	0	-1	0	0	TX	y:1:0000
+288	S. Utah	SUT	37	0	1	0	$ffffff	$ffa800	$ffa800	$ffffff	4	6	0	0	0	0	7	0	0	291	0	0	UT	y:1:0000
+289	Nacogdoches	NCG	37	0	1	0	$663399	$663399	$663399	$ffffff	3	6	0	0	0	0	23	0	0	-1	0	0	TX	y:1:0000
+290	Stephenville	STE	37	0	1	0	$663399	$0000ff	$0000ff	$ffffff	4	7	0	0	0	0	18	0	0	-1	0	0	TX	y:1:0000
+291	Utah T.	UTT	37	0	1	0	$ff0000	$000099	$000099	$ffffff	2	5	0	0	0	0	7	0	0	288	0	0	UT	y:1:0000
+292	N. Jersey M.	NJM	35	0	1	0	$999999	$000099	$000099	$ffffff	3	9	0	0	0	0	33	0	0	-1	0	0	NJ	y:1:0000

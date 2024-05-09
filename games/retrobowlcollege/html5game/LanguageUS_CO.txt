@@ -1,0 +1,1036 @@
+ui_Version_Mode	College
+
+
+
+msg_co_draft_pick	$playername ($position) entered the draft as a Round $round pick and was signed by $team!##You receive $$reccred,000 for the Scholarship Fund!
+msg_co_draft_notpick	$playername ($position) did not get drafted.##You receive $$reccred,000 for the Scholarship Fund.##
+msg_co_draft_nottrydraft_y3	$playername ($position) (Ju) is not declaring for the draft and will return to $teamname for his Senior Year.
+msg_co_draft_early_y3	$playername ($position) (Ju) feels like he is ready to declare for the draft early! Do you want to encourage him to declare?##You can receive double the donations to the Scholarship Fund for players who declare early.##If you don't encourage him he will return to the team to play for the next season.
+
+ui_DraftCollege	Pro#Draft
+msg_TimeForProDraft	The College football season is over and your Senior and Junior star players are preparing to declare for the Pro Draft.
+
+ui_ExceedRecruitmentCredits	There is not enough left in the Scholarship Fund to recruit $playername.##You have $$num,000 remaining.
+
+ui_co_Draft_NotPicked	Not Picked
+ui_co_Draft_R1	R1
+ui_co_Draft_R2	R2
+ui_co_Draft_R3	R3
+ui_co_Draft_Graduate	GRADUATE
+ui_co_Draft_SrYear	SR. YEAR
+
+ui_Year_Short	Yr
+
+msg_CollegeProDraftRC_NoSpace	The Scholarship Fund is now filled - you have received $$num,000 out of the $$maxNum,000 donated by players leaving your team, and the rest has been diverted to other College programs.##You can use Coaching Credits to increase the upper limit of the Football Scholarship Fund by visiting the Athletics Office.
+
+msg_NewSeasonCollege	A new season begins!##On top of any donations from your graduating players you have received a further $$num,000 from the annual alumni endowments to help you recruit new star players with this year's freshman class.
+msg_NewSeasonCollege_NoSpace	A new season begins!##On top of any donations from your graduating players you have received a further $$num,000 from the annual alumni endowments to help you recruit new star players with this year's freshman class.
+msg_NewSeasonCollege_Zero	A new season begins!
+
+msg_MeetingGPANotNeeded	The academic tutor believes that $playername is already attaining the highest possible GPA he can achieve.
+
+ui_Major	MAJOR
+ui_Minor	MINOR
+ui_OrientationWeek	CAMPUS SOCIETY
+ui_Hometown	HOMETOWN
+
+ui_Undeclared	Undeclared
+ui_AdmissionsDraftConfirm	If you finish the Admissions process, you will not be able to choose new players for the team until the season is complete and the next year's Admissions begin.##If you have recruited all the freshman players that you need, then you can continue. 
+
+ui_FraternityRush	Fraternity Rush
+ui_Admissions_Warn_Once	Remember that other colleges will be making admissions offers to the same candidates!##Each time you recruit a new athlete the number of remaining prospects will be reduced.
+
+msg_Suspended	$playername ($position) has been suspended because of his low grades.
+
+ui_CurriculumVitae	Curriculum Vitae
+ui_Awards	C.Vitae
+ui_Epilogue	Epilogue
+ui_No_Epilogue	No Epilogue Yet
+ui_ClassOf	CLASS OF 
+ui_No_Awards	No Awards Yet
+
+msg_BoostSalaryWalletTooSmall	You have received $$num,000 and the Scholarship Fund is now filled.
+
+// Non-player Dilemmas - Bye-week dilemmas to rewrite/expand.
+dilemma_ByeWeek1	It's your bye week. Do you want to spend some extra time focusing on the team or arrange some interviews with the media?-choice_FocusTeam-choice_FocusMedia
+dilemma_ByeWeek2	It's your bye week. Do you want to work on the finances with the athletic director or focus on getting the team ready for the next game?-choice_FocusOwner-choice_FocusTeam
+dilemma_ByeWeek3	It's your bye week. Do you want to arrange some interviews with the media or do some work with your coaching staff?-choice_FocusMedia-choice_FocusCoaches
+dilemma_ByeWeek4	It's your bye week. Do you want to work on the finances with the athletic director or develop some strategies with your coaching staff?-choice_FocusOwner-choice_FocusCoaches
+dilemma_ByeWeek5	It's your bye week. Do you want to spend some extra time training the team or working with your coaches?-choice_FocusTeam-choice_FocusCoaches
+dilemma_ByeWeek6	It's your bye week. Do you want to work on the finances with the athletic director or arrange some interviews with the media?-choice_FocusOwner-choice_FocusMedia
+dilemma_ByeWeek7	It's your bye week. Do you want to arrange some additional academic tutoring or do you want to focus on getting the team ready for the next game?-choice_FocusGPA-choice_FocusTeam
+dilemma_ByeWeek8	It's your bye week. Do you want to arrange some additional academic tutoring for the team or do you want to arrange a round of media interviews for them?-choice_FocusGPA-choice_FocusMedia
+dilemma_ByeWeek9	It's your bye week. Do you want to give your team time to study or do you want to them to put on a showcase to impress the athletic director?-choice_FocusGPA-choice_FocusOwner
+dilemma_ByeWeek10	It's your bye week. Do you want to arrange some additional academic tutoring for the team or some additional professional training for your coaches?-choice_FocusGPA-choice_FocusCoaches
+dilemma_ByeWeek11	It's your bye week. Do you want to attend a fundraiser for next year's scholarships or do you to focus on getting the team ready for the next game?-choice_FocusRC-choice_FocusTeam
+dilemma_ByeWeek12	It's your bye week. Do you want to attend a fundraiser for next year's scholarships or arrange some interviews with the media?-choice_FocusRC-choice_FocusMedia
+dilemma_ByeWeek13	It's your bye week. Do you want to attend a fundraiser for next year's scholarships or to work on this year's finances with the athletic director?-choice_FocusRC-choice_FocusOwner
+dilemma_ByeWeek14	It's your bye week. Do you want to attend a fundraiser for next year's scholarships or do some work with your coaching staff?-choice_FocusRC-choice_FocusCoaches
+dilemma_ByeWeek15	It's your bye week. Do you want the team to talk to alumni about raising funds for next year's scholarships, or to focus on their academic study?-choice_FocusRC-choice_FocusGPA
+
+choice_FocusRC_bonus	2
+
+choice_FocusGPA	Study#Time
+choice_FocusRC	Raise#Funds
+
+
+// Non-player Dilemmas - Meet owner, needs rewrite
+
+dilemma_Owner1	The athletic director wants you to attend a Faculty planning meeting. It clashes with a planned media interview.-choice_MeetOwner-choice_MeetMedia
+dilemma_Owner2	The athletic director wants you to give a presentation to the Faculty. You had scheduled a meeting with the team.-choice_MeetOwner-choice_MeetTeam
+dilemma_Owner3	The athletic director needs you to submit a new budget to the Faculty. You were intending to hold a meeting with your coaching staff.-choice_MeetOwner-choice_MeetCoaches
+
+// Player Dilemmas - Generic, no rewrite needed
+
+dilemma_Coach_BustUp	Your $coachposition has had a major argument with $playername.-choice_SideWithCoach-choice_SideWithPlayer
+dilemma_RestPlayer	Hey coach, I'm feeling totally exhausted. Can I rest for the next game?-choice_RestYes-choice_RestNo
+
+// Player Dilemmas - Main groups. All still used. Rewrites required.
+
+dilemma_toxic1	$playername was arrested by campus security last night for spray-painting the Dean's car.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic2	$playername is having to explain himself in front of a committee after filling the Dean's office with paper cups full of water.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic3	$playername is being questioned about an incident where the campus security office was covered in toilet paper while officers were out on patrol.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic4	Other players are no longer speaking to $playername after several, now-deleted, posts on social media where he claimed to be the only player on the team with any talent.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic5	$playername did not turn up for training at all today. It emerged that he had gone back to $ONLYHOMETOWN without telling anyone.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic6	$playername has been ostracised by the other students on his $MAJOR course for conducting loud conversations on his cellphone in the library.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic7	$playername has been asked to move off-campus because he has repeatedly left the dorm's shared kitchen in a disgusting state.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic8	Players on the team claim to have caught $playername rifling through other people's kit bags when he thought he was alone in the locker room.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic9	Some Freshman students have accused $playername of stealing their money after promising to buy alcohol for them and then never coming back.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic10	Multiple complaints have been lodged against $playername for playing loud, bass-heavy music in his dorm room at 3am.-choice_DefendPlayer-choice_CriticisePlayer
+dilemma_toxic11	$playername made a hit on a defenseless player in training today.-choice_IgnoreFine-choice_FinePlayer
+dilemma_toxic12	$playername made a very late hit on a player in training today.-choice_IgnoreFine-choice_FinePlayer
+dilemma_toxic13	$playername was verbally abusive towards the coaching staff today.-choice_IgnoreFine-choice_FinePlayer
+
+dilemma_random1	$playername caused an incident on campus when he left his rental car in the Dean's parking spot.-choice_IgnoreFine-choice_FinePlayer
+dilemma_random2	The Faculty have demanded that you take action after $playername was found to have cheated during a recent academic assignment.-choice_IgnoreFine-choice_FinePlayer
+dilemma_random3	The team broke a pre-game curfew after $playername decided to throw a party in his dorm room.-choice_FinePlayer-choice_CriticiseTeam
+dilemma_random4	You caught $playername playing Retro Bowl during a team meeting.-choice_FinePlayer-choice_PraisePlayer
+
+dilemma_late1	$playername was late for training today.-choice_IgnoreFine-choice_FinePlayer
+dilemma_late2	$playername turned up late for a team meeting today.-choice_IgnoreFine-choice_FinePlayer
+dilemma_late3	$playername didn't turn up for a meeting with the coaching staff today.-choice_IgnoreFine-choice_FinePlayer
+
+dilemma_rookie1	Freshman $position $playername was stopped by campus security while trying to sneak a keg into a dorm room party.-choice_IgnoreFine-choice_FinePlayer
+dilemma_rookie2	Freshman $position $playername did not turn up for today's training session. Apparently he had no clean clothes and was waiting around for someone to show him how to use the machines in the dorm's laundry room.-choice_IgnoreFine-choice_FinePlayer
+dilemma_rookie3	Freshman $position $playername was picked up by law enforcement for underage drinking in an off-campus bar.-choice_IgnoreFine-choice_FinePlayer
+dilemma_rookie4	Freshman $position $playername caused his entire dorm to be evacuated when he set the kitchen area on fire while trying to make mac and cheese.-choice_IgnoreFine-choice_FinePlayer
+dilemma_rookie5	Training was disrupted when Freshman $position $playername's highschool sweetheart turned up unexpectedly, demanding to know why a girl called $randomfname_female had answered his cellphone on Friday night.-choice_IgnoreFine-choice_FinePlayer
+dilemma_rookie6	Freshman $position $playername was caught using a fake ID to buy a six-pack of hard seltzer at a local mini-mart.-choice_DefendPlayer-choice_CriticisePlayer
+
+news_CharityWork1	The crowd at the last game were boosted by a noisy contingent of $playername's friends from the $HOBBY society.
+news_CharityWork2	A campaign instigated on the $HOBBY messageboards resulted in $playername winning the 'One to Watch' poll on a major College Football website. It's been a huge boost to the team's profile!
+news_CharityWork3	The team's online video channel has received thousands of new subscribers, most of them coming from the "$HOBBY for Insiders" videos which $playername had been posting in his spare time.
+news_CharityWork4	The team's profile was boosted after $playername was a guest on the latest episode of the number one $HOBBY podcast.
+news_CharityWork5	$playername raised thousands of dollars for victims of hurricane $randomfname_female after gathering pledges from his teammates, his highschool friends, and fellow members of the $HOBBY society for his sponsored run.
+news_CharityWork6	$playername helped to secure funding to repair the older bleachers in the stadium after talking to some rich alumni at an event for legacy members of the $HOBBY society.
+
+// Player Dilemmas - New groups for College - Hobby negative choice
+
+dilemma_hobby1	$playername did not turn up to training last weekend. He had gone out of state to the $HOBBY convention instead.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hobby2	$playername got into a fistfight on campus when a dispute with a rival branch of the $HOBBY society turned nasty.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hobby3	$playername stayed on the bench during the last training session after receiving a minor finger injury at a meeting of the $HOBBY society.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hobby4	$playername turned up to Football practice looking very ill. Apparently there was a mixer to welcome the new members of the $HOBBY society last night.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hobby5	The rest of the team is furious with $playername after he made everyone listen to the latest $HOBBY podcast before the game, instead of the usual pump-up music mix.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hobby6	$playername is one of the students under investigation after "$HOBBY4Life" was spray-painted on a sculpture in the middle of the campus grounds.-choice_IgnoreFine-choice_FinePlayer
+
+// Player Dilemmas - New groups for College - Study dilemma for low GPA
+
+dilemma_study1	$playername needs extra time away from training to resubmit his $MINOR paper after his first submission was flagged by anti-plagiarism software.##He is currently posting a $gpa GPA.-choice_GPAUp-choice_GPADrop
+dilemma_study2	$playername has asked to miss the next training session to study for his $MAJOR test.##He is currently posting a $gpa GPA.-choice_GPAUp-choice_GPADrop
+dilemma_study3	$playername wants to join his class on the $MINOR field trip so needs to miss the next training session.##He is currently posting a $gpa GPA.-choice_GPAUp-choice_GPADrop
+dilemma_study4	$playername wants to attend a guest lecture by some of the most prestigious academics in the field of $MAJOR. The timetable clashes with Football training.##He is currently posting a $gpa GPA.-choice_GPAUp-choice_GPADrop
+dilemma_study5	$playername has asked to skip training so that he can spend extra time working on his $MINOR essay.##He is currently posting a $gpa GPA.-choice_GPAUp-choice_GPADrop
+dilemma_study6	The $MAJOR professor has demanded that $playername re-sits his last test. The exam clashes with Football training.##He is currently posting a $gpa GPA.-choice_GPAUp-choice_GPADrop
+
+// Player Dilemmas - New groups for College - Player threatens to leave because they are in the SUSPENDED GPA state
+
+dilemma_leaverescue_gpa1	$playername has not been consistently achieving the GPA required by his scholarship conditions and may be forced to leave $teamname. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_gpa2	The $MAJOR professor does not think that $playername will ever achieve good enough results to pass her class and is suggesting that his scholarship should be revoked. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_gpa3	The Dean is under pressure because of the impact that underperforming atheletes are having on the institution's academic reputation, and he is suggesting that $playername should be indefinitely suspended from $teamname. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dlr_gpa_cost	-2
+news_playerleaves_gpa_norescue	$playername has been forced to quit Football due to his poor academic record. He will no longer play for $teamname.
+
+news_playerleaves_gpa	$playername has been forced to quit Football due to his poor academic record. He will no longer play for $teamname.
+
+// Player Dilemmas - New groups for College - Player threatens to leave due to repeated TOXIC dilemmas
+
+dilemma_leaverescue_toxic1	$playername is among a group of students who have been accused of selling stolen exam papers. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_toxic2	The rest of the team have said that they cannot deal with $playername's destructive attitude any more. They have demanded that you cut him immediately so that they can be a harmonious team. Do you want to convince them that he should be given another chance?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_toxic3	Multiple other players have been seriously injured due to $playername being overly aggressive during training sessions, and they want you to cut him from the team. Do you want to convince them that he should be given another chance?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_toxic4	$playername's Football scholarship is at risk of being revoked after he was verbally abusive to the Dean when he was summoned to explain his most recent prank. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_toxic5	Several students are demanding that $playername is thrown out of college after he enticed them into a pyramid scheme where they lost thousands of dollars. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_toxic6	Representatives of $randomteamname are demanding serious sanctions after their missing animal mascot was found by police in $playername's dorm room. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dlr_toxic_cost_2nd	-5
+dlr_toxic_cost_3rd	-12
+dlr_toxic_cost	-20
+
+news_playerleaves_toxic_norescue	$headcoachname has decided that $playername was a disruptive influence and that it was better for everyone to cut him from the team.
+
+news_playerleaves_toxic1	It is clear from his disruptive behavior that $playername has become more and more dissatisfied with College. He has decided to drop out and pursue the passions he discovered as part of the $HOBBY society. He will no longer play for $teamname.
+news_playerleaves_toxic2	It is clear from his disruptive behavior that $playername has become more and more dissatisfied with College Football. He has decided to quit Football and concentrate on his $MAJOR studies in the hope that it will lead to a better college experience. He will no longer play Football for $teamname.
+news_playerleaves_toxic3	After multiple incidents, the Faculty disciplinary board have decided that there is no way that $playername can remain as part of the student body, and he has been suspended indefinitely. He will no longer play for $teamname.
+news_playerleaves_toxic4	It is clear from his disruptive behavior that $playername has become more and more dissatisfied with College life. He has decided to drop out and work for his uncle's business in $HOMETOWN. He will no longer play for $teamname.
+news_playerleaves_toxic5	It is clear from his disruptive behavior that $playername has become more and more dissatisfied with $teamname. He has decided to transfer to $randomteamname where he hopes he will be a better fit. He will no longer play for $teamname.
+news_playerleaves_toxic6	It is clear from his disruptive behavior that $playername has become more and more dissatisfied with College life. He has decided to drop out and go travelling in the hope of "finding himself".
+
+// Player Dilemmas - New groups for College - Party dilemmas and Party-variant of Late dilemmas.
+
+dilemma_hangover_party1	$playername did not show up for training yesterday. After going out for a quiet drink, his friends lost sight of him, and locations on his social media posts suggest he may be in Tijuana.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hangover_party2	$playername was forced to spectate during today's training after he woke up handcuffed to the goal on the Football field with no memory of where the key might be.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hangover_party3	$playername overslept and was late for training today: His alarm did not go off after he tried to prove his cellphone was waterproof using a glass of beer.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hangover_party4	$playername did not show up for training today - his friends say they last saw him drunkenly hailing a taxi to $ONLYHOMETOWN after he saw pictures of his ex-girlfriend with a new partner.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hangover_party5	$playername turned up late for training today, failed to run in a straight line, then vomited into the drinks cooler.-choice_IgnoreFine-choice_FinePlayer
+dilemma_hangover_party6	$playername did not show up for training today. When you attempted to call him, someone named $randomfname_female briefly answered then hung up without explanation.-choice_IgnoreFine-choice_FinePlayer
+
+dilemma_party1	Complaints have been lodged against $playername after he invited his friends from $ONLYHOMETOWN High to party with him in college, and they trashed one of the dorm rooms.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party2	Future meetings of the $HOBBY society have been suspended on campus after $playername turned their annual cheese and wine mixer into a wild party which lasted 48 hours.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party3	$playername has been instructed to write a letter of apology after organising a 'naked mile' run on the same day that prospective students were touring the college with their families.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party4	The fire department were called out to a local bar after $playername dropped a tray of flaming sambuca shots.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party5	One of the coordinators caught $playername stashing a crate of beer in the locker room.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party6	A study trip for students on the $MAJOR course got out of hand when $playername started buying drinks for everyone at a nearby bar.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party7	Teammates are doubting $playername's commitment after he arranged to hit the clubs with some $randomteamname players "because those guys really know how to have fun".-choice_IgnoreFine-choice_FinePlayer
+dilemma_party8	Local news crews interviewed shaken neighbours in the aftermath of an out-of-control party at a $teamname fraternity house after $playername shared an open invitation on social media.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party9	Dozens of inebriated students descended on the $teamname campus wearing $playername jerseys after he decided to organize a huge party in his own honor.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party10	$MINOR students assigned to complete a group project with $playername have complained that he left them to finish it while he took a weekend break to fly overseas for a "Full Moon Party".-choice_IgnoreFine-choice_FinePlayer
+dilemma_party11	Other $teamname students have asserted that they never got paid after $playername hired them to work as the wait staff for a Black Tie ball which he threw for his circle of friends.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party12	$playername has been called before a disciplinary board to explain some photographs taken at a so-called "bad taste" costume party which have leaked out onto social media.-choice_IgnoreFine-choice_FinePlayer
+dilemma_party13	$playername was taken in by security after being caught using the campus fountain like a public restroom during a heavy night of partying.-choice_IgnoreFine-choice_FinePlayer
+
+// Player Dilemmas - New groups for College - Player threatens to leave due to repeated PARTY dilemmas
+
+dilemma_leaverescue_party1	The Dean has asked you to remove $playername from the team after three other players ended up in the E.R. when he invited them for a drinking session. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_party2	One of your faculty colleagues is pushing for $playername's Football scholarship to be revoked after he repeatedly disrupted her lectures with drunken heckling. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_party3	The cheerleading coach is insisting that $playername is removed from the Football team after it emerged that he was conducting relationships with three different cheerleaders without them being aware of each other. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_party4	After $playername left an unpaid bar tab for thousands of dollars at a local nightclub, the Dean is considering revoking his Football scholarship for damaging the College's relationship with the community. Do you want to intervene on his behalf to keep him on the team?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_party5	The chief of the local P.D. has called you in because $playername is intoxicated in the lockup for the third time this month. He is considering charging him with a felony instead of a misdemeanor this time. Do you want to take responsibility for him?-choice_CutPlayer-choice_DefendPlayer
+dilemma_leaverescue_party6	The rest of the team have had enough of covering up for all the times that $playername has turned up to training while still drunk from partying the night before. They have demanded that you cut him immediately because he is out of control. Do you want to convince them that he should be given another chance?-choice_CutPlayer-choice_DefendPlayer
+dlr_party_cost_2nd	-1
+dlr_party_cost_3rd	-3
+dlr_party_cost	-5
+
+news_playerleaves_party_norescue	$headcoachname has decided to cut $playername from the $teamname lineup. His constant partying was becoming a distraction from the team's achievements on the field.
+
+news_playerleaves_party1	$playername's hard-partying lifestyle has become unsustainable. He has checked into a rehab facility in the hope of getting his life back on track. He will no longer play for $teamname.
+news_playerleaves_party2	$playername's party lifestyle has resulted in his Football career being cut short after he drunkenly fell from a second storey window. In the long term he is expected to recover but he will no longer play for $teamname.
+news_playerleaves_party3	$playername's constant partying has likely contributed to him failing his most recent medical assessment. His drastically reduced lung capacity means that it is no longer safe for him to continue with College Football. He will no longer play for $teamname.
+news_playerleaves_party4	After multiple citations for public intoxication, indecency, and criminal damage, scouts have made it clear that no Pro Team would ever take a chance on recruiting $playername. With no path to going Pro, he has decided to quit College Football immediately rather than later and will no longer play for $teamname.
+news_playerleaves_party5	After an event called "The Party to End All Parties" resulted in incalculable damage to campus property, the ringleaders have all been immediately expelled from the institution. This includes $playername, who will now no longer play for $teamname.
+news_playerleaves_party6	$playername has informed you that he is dropping out of College. It seems that his constant partying has blown through his scholarship money and put him in debt so that he cannot afford to stay at the institution. He will no longer play for $teamname.
+
+// Player Dilemmas - New groups for College - Dilemma choice lables
+
+choice_GPAUp	Allow Study
+choice_GPADrop	Don't Allow
+choice_CutPlayer	Cut Player
+
+choice_GPAUpResultMsg	Remember! The rest of the team will be annoyed if one player is given special treatment and extra study time.
+
+msg_RosterLimitAllFreshman	You have reached the roster limit and you are not allowed to revoke Admissions offers which you have already made to this year's Freshman class. You cannot cut or sign any more players. Please start the new season.
+
+ui_WalkOnStudent	Walk-On Athlete
+ui_WalkOnStudentOffer	Coach $coachname has identified a walk-on player who could be useful to your team.##$playername may have what it takes to be an effective $position. Do you want to meet with him?
+
+// Moved from main file 
+
+ui_Freshman_Short	Fr
+ui_Sophomore_Short	So
+ui_Junior_Short	Jr
+ui_Senior_Short	Sr
+ui_Freshman	Freshman
+ui_Sophomore	Sophomore
+ui_Junior	Junior
+ui_Senior	Senior
+ui_GPA	GPA
+ui_Suspended	Suspended
+ui_PlayerSuspended	Player Suspended
+ui_Unsuspend	Lift suspension
+msg_suspended	$playername has been placed on Academic Suspension.##Suspended players will be unavailable for games while they are studying to improve their GPA.
+
+ui_Recruitment_Credits	RECRUITMENT CREDITS
+ui_ScolarshipFund	S'SHIP FUND
+ui_ScolarshipFund_Full	SCHOLARSHIP FUND
+sla_Thousand	k
+ui_NewDonations	NEW DONATIONS
+ui_increase	Raise Limit
+ui_wallet	Wallet
+ui_next	Next
+ui_Info	Info
+ui_Received	Received
+ui_Spent	Spent
+
+ui_NoOffers	No Offers
+ui_OneOffer	1 Offer
+ui_Offers	Offers
+
+ui_beat	beat
+
+// General College rewrite - finished lines, in file order. 
+
+ui_TradePlayer	Cut Player
+ui_Draft	Freshman#Admiss'ns
+ui_DraftRound	College Admissions
+ui_SignPlayer	Recruit Player
+msg_SignPlayer	Do you want to recruit $position $playername?
+msg_SignRookie	Do you want to recruit Freshman $playername as a $position?
+msg_CannotSign1	You already have a $position.##You will need to cut the $position from your roster if you want to recruit $playername.
+msg_CannotSign2	You already have $num players for the $position position.##You will need to cut someone from your roster if you want to recruit $playername.
+ui_Sign	Recruit
+info_StarPlayers	These are your key players - the student athletes that make a real difference on game day. You can have up to 10 key players. (You can increase the limit to 12 players in the options if you prefer, and increase the upper limit of the Scholarship Fund at the same time.)##The rest of your squad do not have star ratings and are hidden. Their contribution towards the overall offense and defense ratings is dependent on the coordinator ratings.
+info_StarPlayers12	These are your key players - the student athletes that make a real difference on game day. You can have up to 12 key players.##The rest of your squad do not have star ratings and are hidden. Their contribution towards the overall offense and defense ratings is dependent on the coordinator ratings.
+info_Draft	It's time for College Admissions! You can spend the institution's Football SCHOLARSHIP FUND to recruit new Freshmen athletes to replace any key players who left at the end of the previous year.##Choose wisely! You will need to scout players in order to reveal more details about them, and each time you recruit a new athlete the number of remaining prospects will be reduced.##Once recruiting is over you will not be able to choose any more new players until the start of next year's season!
+info_Draft2	New Admissions Rules!##You now need to scout Freshman players if you wish to reveal their potential. You do this via their profile page. The number of players you can scout per admissions process is limited.
+ui_FreeAgents	Walk-On Athlete
+news_PlayerRetiringNoTag	$position $playername will graduate at the end of the season. He is not tagged for the Yearbook.
+news_PlayerRetiringTag	$position $playername will graduate at the end of the season. You have already tagged him for the Yearbook.
+msg_ClearFreeAgent	This potential Walk-On will not take up College Football and will permanently go back to his studies. Are you sure you want to proceed?
+info_Facility_Stadium	Increase the upper limit of the College's Football SCHOLARSHIP FUND so that you can keep more donations when your players get drafted.##Improve your institution's stadium to make fans more positive after a win and less negative after a loss.##Higher quality training facilities help players gain XP faster.##Better rehab helps players maintain good condition and recover from injury quicker.
+ui_FrontOffice	Athletics Office
+btn_FrontOffice	Athletics#Office
+postmatch_toxic1	$position $playername has received a warning for a uniform violation ($uniform).-choice_DefendPlayer-choice_CriticisePlayer
+postmatch_toxic2	$position $playername has received a warning for unnecessary roughness.-choice_CriticisePlayer-choice_CriticiseOfficials
+postmatch_toxic3	$position $playername has received a warning for unsportsmanlike conduct.-choice_CriticisePlayer-choice_CriticiseCoaches
+postmatch_toxic4	$position $playername was apparently overheard saying "come get me" towards the opposition sideline during the game today.-choice_DefendPlayer-choice_CriticisePlayer
+postmatch_toxic5	$position $playername has received a warning for making a hand gesture during the game today.-choice_DefendPlayer-choice_CriticisePlayer
+postmatch_toxic6	$position $playername has received a warning for fighting with an opponent during the game today.-choice_DefendPlayer-choice_CriticisePlayer
+postmatch_toxic7	$position $playername has received a warning for making physical contact with an official today.-choice_DefendPlayer-choice_CriticisePlayer
+postmatch_toxic8	$position $playername has received a warning for taunting today.-choice_DefendPlayer-choice_CriticisePlayer
+postmatch_win3	This institution has taken some criticism in the past. It must feel good to win.-choice_PraiseFans-choice_PraiseOwner
+postmatch_question_player_1	A freshman journalist for the College Paper asks:##In which position does $playername play?-choice_qpos_correct-choice_qpos_wrong
+postmatch_question_player_2	A freshman journalist for the College Paper asks:##In which position does $playername play?-choice_qpos_wrong-choice_qpos_correct
+postmatch_question_staff_1	A freshman journalist for the College Paper asks:##Which coordinator is $playername?-choice_qpos_wrong-choice_qpos_correct
+postmatch_question_staff_2	A freshman journalist for the College Paper asks:##Which coordinator is $playername?-choice_qpos_correct-choice_qpos_wrong
+choice_PraiseOwner	Praise#Faculty
+choice_FocusOwner	Athletic#Director
+news_DraftEnded	The Freshman players have arrived at college and the season can begin!
+news_SignFreeAgent	$playername has joined the $teamname football team as a walk-on.
+ui_FavoriteTeam	Favorite College
+news_NewCareer	With just $num $weeks left in the season $teamname have appointed $coachname as their new head coach.##No one knows what to expect from this untested new arrival!
+msg_Intro_1	Welcome to $teamname!##This is your home screen. You can tap on the division table to view divisions and the schedule.##When you are ready tap the ATHLETICS OFFICE button.
+msg_Intro_1_gp	Welcome to $teamname!##This is your home screen. You can use ² or the - Button to view divisions and the schedule.##When you are ready highlight the ATHLETICS OFFICE button and press ¹.
+msg_Intro_1_gp_xb	Welcome to $teamname!##This is your home screen. You can use ² to view divisions and the schedule.##When you are ready highlight the ATHLETICS OFFICE button and press º.
+msg_Intro_2	From the Athletics Office you can upgrade facilities and staff.##Tapping an 'i' icon will bring up useful information.
+msg_Intro_2_gp	From the Athletics Office you can upgrade facilities and staff.##Highlighting an 'i' icon and pressing ¹ will bring up useful information.
+msg_Intro_2_gp_xb	From the Athletics Office you can upgrade facilities and staff.##Highlighting an 'i' icon and pressing º will bring up useful information.
+msg_Intro_4	These are your key players. You don't need to manage the entire roster, just take care of these guys and everyone else will fall into line.##But remember - if you cut a player, or if a player is forced out of the team due to personal issues, you won't be able to recruit a replacement key player until the start of the next season!##Tap on a player to open his profile.
+msg_Intro_4_gp	These are your key players. You don't need to manage the entire roster, just take care of these guys and everyone else will fall into line.##But remember - if you cut a player, or if a player is forced out of the team due to personal issues, you won't be able to recruit a replacement key player until the start of the next season!##Highlight a player and press ¹ to open his profile.
+msg_Intro_4_gp_xb	These are your key players. You don't need to manage the entire roster, just take care of these guys and everyone else will fall into line.##But remember - if you cut a player, or if a player is forced out of the team due to personal issues, you won't be able to recruit a replacement key player until the start of the next season!##Highlight a player and press º to open his profile.
+msg_Intro_5	Here you can view player details and attributes. Keep an eye on condition, morale, and GPA.##Low condition can lead to injury or worse - fumbles!##Poor morale can lead to game penalties and problems off the field. Players with TOXIC morale are dangerous and their actions can damage the team's morale!##You can use your Coaching Credits to fix morale problems in the MEETING area. In extreme circumstances it might be better to CUT a Toxic player but you will miss out on their skills on the field and on Scholarship donations when the player graduates.
+msg_RosterLimit	You have reached the roster limit. You will need to cut players before you can recruit new ones.
+news_firstmatchWin	$yourname's first game in charge of $teamname1 ended with a win against $teamname2 - it looks like this new appointment is working out.##The $teamname1 fans will be looking forward to next season now with renewed hope.
+news_firstmatchLoss	$yourname's first game in charge of $teamname1 ended in defeat against $teamname2 and questions still linger over this surprising appointment.##$yourlastname will be left in no doubt about how much work there is to do to turn this team's fortunes around.
+msg_JobOffers_1	Your raw talent as a head coach is making waves in College Football. A few institutions are interested in hiring you.
+msg_JobOffers_2	Your reputation is growing! The following institutions are interested in taking you on as head coach.
+msg_JobOffers_3	Your reputation is widely acknowledged within College Football and there are a number of institutions interested in taking you on as head coach.
+msg_JobOffers_4	Your wealth of experience and knowledge of the game make you the most highly sought after coach in College Football. Institutions are queuing up to take you on as head coach.
+
+msg_Intro_2_b	From the Athletics Office you can upgrade facilities and staff.##Let's meet the coordinators who will help you to look after your athletes.
+msg_Intro_2_c	These are your Coordinators! Getting your coordinators to adjust the Training Regime will change how quickly your key players develop.##HARD training means that players gain more XP each game week at the expense of consuming more energy and a faster reduction of their GPA. When a player's XP increases enough they can increase one of their skills.##LIGHT training conserves energy and leaves time to study, but XP growth will be slower and players will be distracted by other on-campus activities.
+msg_Intro_2_d	You can also tap on the Head Coach card to check your own statistics.
+msg_Intro_2_e	The Head Coach menu shows your record as a coach!##It also gives you information about the academic performance which your players will need to maintain.##Tapping an 'i' icon will bring up useful information - try it now.
+msg_Intro_5_b	Players who have a low GPA can be suspended and will be excluded from games while they study to get their GPA back up. If you BENCH a player then they will have more study time.##If a player has a consistently low GPA or if they get in too much trouble then they may be forced to leave the team! ##Check in regularly with your players via the MEETING menu to prevent this from happening!
+info_Draft_b	Remember that the SCHOLARSHIP FUND does not work like a Pro Football Salary Cap. You can only spend what you have already earned and once it's gone it's gone!##You can fill up the Scholarship Fund via new donations when your Senior players declare for the Pro Draft, and via various other College events.##The fund has an upper limit but you can raise the limit in the Athletics Office using your Coaching Credits.
+info_Draft_c	If you need to cut existing players from the team you can do so via the Roster screen by selecting a player and choosing "REVOKE SCHOLARSHIP".##Cutting a player now, during the admissions process, will put some money back into the Scholarship Fund, but cutting a player at any other time in the season will not!##You will always earn more money for the Scholarship Fund by keeping a player in the roster until he graduates as a Senior, compared to revoking his scholarship early.
+
+news_NewJob3	$oldteamname fans may be in shock today as $yourname walks out on them to become the new head coach of $newteamname. Assessing the student athletes and recruiting new co-ordinators will be a priority upon arrival.
+choice_MeetOwner	Meet#Faculty
+choice_IgnoreFine	Ignore#Incident
+choice_FinePlayer	Discipline#Player
+btn_HallOfFame	Yearbook
+ui_HallOfFame	Yearbook
+ui_FavouriteTeam	Favorite College
+msg_StoreReview	Would you like to rate and review Retro Bowl College on the store?
+tip_17	Coaching Credit isn't cash, it's kudos - it represents how much respect you have from the faculty, team and fans
+tip_27	If you keep ignoring players' needs put themselves in situations which would end their College Football career!
+tip_29	You can get extra donations to the Scholarship Fund if players declare for the Pro Draft in their Junior year
+tip_30	You can check player GPA on the profile page. If it is low you can arrange for extra tuition in the MEETING area
+ui_Alternate	Alt1
+ui_PlayerHallOfFame	Yearbook
+ui_PlayerHallOfFameEmpty	To put players in the Yearbook you need to tag them in the top-left corner of their profile page.
+msg_TradeAwayRookie	Warning! Cutting a recently recruited player has a negative impact on team morale and your fan relationship!
+btn_PlayerHallOfFame	Player   #Y'book  
+info_TrainingRegime	Setting the training regime to HARD will help players to gain more XP per game and will help them to concentrate on sports. However they will consume more energy, be less happy, their GPA may suffer and their risk of injury is increased.##LIGHT training conserves energy, increases morale, leaves more time for study and reduces injury risk, but XP will be gained at a slower rate than normal and players may be distracted by other things on campus!
+msg_SeasonRatings	A College Football website rated the performance of your team for the season...
+favorite_DoingWell	With a current record of $record, the $teamname head coach position is in jeopardy. While sources have given no hint regarding the preferred choice many fans have been quick to name $yourname as the ideal candidate.
+favorite_DoingWellReturn	Fans of $favteamname, currently $record, have been calling for the return of $bossname as head coach. Sources at $favteamname have nevertheless heard no rumors of a shake-up.
+favorite_DoingPoorly	It's no secret that $favteamname will be looking for a new head coach at the end of the season but it seems unlikely that $yourname will be amongst the candidates.
+msg_SalaryCheckRoster	You need to reduce your roster to 10 players before you can reduce the recruitment credits cap.
+msg_BoostMoraleEvent0	The team had a night out at the movies.
+msg_BoostMoraleEvent1	You took the team mountain hiking for the day.
+msg_BoostMoraleEvent2	You arranged a visit from a Pro Football player who used to play for the college.
+msg_BoostMoraleEvent3	You organized a paintball day.
+msg_BoostMoraleEvent4	The cheerleaders and the band hyped up everyone at a pep rally, including the team!
+msg_BoostMoraleEvent5	You took the entire team out for a meal.
+msg_BoostMoraleEvent6	You took the team to watch a Pro Football game from the V.I.P. area.
+msg_BoostMoraleEvent7	You ordered pizzas for everyone to reward them after a tough training session.
+msg_BoostMoraleEvent8	You threw a pig roast for the team, and you invited their families too.
+msg_BoostMoraleEvent9	You booked a karaoke lounge for the evening so the team could relax.
+msg_BoostConditionEvent1	You arranged personalized dietary plans for all the players on the team.
+msg_BoostConditionEvent2	You gave the team an extra rest day.
+msg_BoostConditionEvent3	You called in a favor from a Pro Football co-ordinator who made improvements to the team's training schedule.
+msg_BoostConditionEvent4	You asked the Physiotherapy professor to get her students to assess the team's minor ailments and recommend some treatment.
+msg_BoostConditionEvent5	You told the team about your secret family recipe for curing a hangover.
+msg_BoostSalaryCap	Do you want to persuade the Faculty to permanently increase the upper limit of the Scholarship Fund to $$num,000? It will cost you $cost Coaching Credits.
+msg_BoostSalaryNoCredit	You need $cost Coaching Credits to increase the upper limit of the Scholarship Fund to $$num,000.
+ui_ExtendContract	Academic Coaching
+ui_DelayRetirement	Academic Coaching
+msg_MeetingExtendContract	Arranging for $playername to see the academic tutor will cost $num Coaching Credits.##Do you want to proceed?
+msg_boost_morale2	You arrange for the RA to spend extra time with $playername.
+msg_boost_condition2	The campus health center gives $playername some relaxation pills.
+msg_boost_condition3	$playername took time off to travel back home and rest with family.
+ui_Rush	Alt2
+ui_PressStart	Any button to start
+msg_ReinstatePlayer	Do you want to reinstate $playername until the end of the season?
+msg_TagMessageHOF	This tag allows you to select a player for the Yearbook. His stats will be recorded even after he leaves the team or graduates.
+info_StartWithFave	Retro Bowl College is a game all about building a legacy. If you choose to start with your favorite team that's fine but the story of your career will be a simple one.##Why not start out at a low ranked team and prove yourself before receiving that dream offer from your favorite team?
+ui_DetailsNotFave	Note: You will not start at your favorite institution.
+
+// General College rewrite - debugging warnings
+
+msg_SuperBowlWinner	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "001C".
+msg_CannotTradeWeek	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "002C".
+msg_CannotTradeInjured	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "003C".
+msg_CannotTradeToxic	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "004C".
+msg_CannotSignMoraleLow	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "005C".
+msg_CannotTradeRookie	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "006C".
+msg_TradePlayerThis	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "007C".
+msg_TradePlayerNext	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "008C".
+msg_SignPlayerStore	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "009C".
+msg_SignPlayerStoreNoCredit	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "010C".
+msg_SkipDraft	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "011C".
+msg_SkipDraft1	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "012C".
+info_FreeAgents	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "013C".
+ui_ExceedSalaryCap	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "014C".
+msg_FreeAgentOffer	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "015C".
+msg_FreeAgentOffer_Rookie	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "016C".
+msg_TradeOffer	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "017C".
+msg_TradeOfferSign	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "018C".
+msg_TradeRequest	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "019C".
+msg_ContractExpired	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "020C".
+news_PlayerRetired	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "021C".
+msg_OutOfContractPlayer	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "022C".
+msg_OutOfContractPlayers	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "023C".
+msg_ClearFreeAgents	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "024C".
+msg_ClearTradeOffer	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "025C".
+msg_SalaryCapIncrease	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "026C".
+info_DraftPicks	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "027C".
+news_ResignedPlayer	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "028C".
+news_SignTrade	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "029C".
+news_SignTrade2	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "030C".
+news_firstmatchTie	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "031C".
+info_freeagents	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "032C".
+msg_FreeAgentReset	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "033C".
+news_mvp	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "034C".
+news_roty	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "035C".
+news_opoy	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "036C".
+news_dpoy	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "037C".
+msg_TradeDeadline	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "038C".
+msg_MeetingDelayRetirement	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "039C".
+msg_MeetingTooOld	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "040C".
+btn_ExhibitionGame	[!]DEBUG[!]#Exhibition
+ui_SimGame	DEBUG SIM
+
+msg_NotEnoughCCStore	You do not have enough Coaching Credits to make this choice - would you like to get more from the store?
+msg_NotEnoughCC	You do not have enough Coaching Credits to make this choice!
+
+btn_BoostGPA	Boost#GPA
+msg_BoostGPAAlreadyDone	You have already helped the Team to study this week.
+msg_BoostGPANoCredit	You need $num Coaching Credits to boost the team's GPA.
+msg_BoostGPA	Do you want to give the team a GPA boost for $num Coaching Credits?
+msg_BoostGPAEvent0	You arranged for some grad students to conduct study sessions with your players.
+msg_BoostGPAEvent1	You struck a deal with a local store to provide new study laptops for your players.
+msg_BoostGPAEvent2	You added a compulsory study break into the team's training schedule. 
+msg_BoostGPAEvent3	You accompanied the team to some guest lectures on a fascinating range of subjects.
+msg_BoostGPAEvent4	You pressured some of your faculty colleagues into helping your student athletes after class.
+msg_BoostGPAEvent5	You introduced your players to some memorization techniques to help prepare for their upcoming academic tests.
+
+epi_cut	$playername was the $position for the $teamname Football Team until his $academicyear year.
+epi_draftR1Senior	$playername entered the Pro Football Draft as a Round 1 pick and was signed as the $position for $draftedteamname.
+epi_draftR1Junior	$playername declared early for the Pro Football Draft and was signed as a Round 1 pick as the new $position for $draftedteamname.
+epi_draftR2Senior	$playername entered the Pro Football Draft as a Round 2 pick and was signed as the $position for $draftedteamname.
+epi_draftR2Junior	$playername declared early for the Pro Football Draft and was signed as a Round 2 pick as the new $position for $draftedteamname.
+epi_draftR3Senior	$playername entered the Pro Football Draft as a Round 3 pick and was signed as the $position for $draftedteamname.
+epi_draftR3Junior	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "041C(C)".
+epi_graduated1	After graduation, $playername fulfilled his lifelong dream of moving to $epilogue_city.
+epi_graduated2	On the day he graduated, $playername eloped with his girlfriend $epilogue_femalename. They are still together today, and have 7 kids.
+epi_graduated3	After graduation, $playername never felt the need to get a job due to his husband $epilogue_malename having such a high-paying job.
+epi_graduated4	$playername enjoyed his time at $teamname so much that he got a job as the college groundskeeper. He can be seen mowing the field before every Football game.
+epi_graduated5	$playername embraced his passion after college, and has dedicated his life to bringing the joys of $HOBBY to underprivileged children around the world.
+epi_graduated6	After graduation, $playername decided to start a band with his best friend $epilogue_malename. They can be booked for bar mitzvahs and quinceañeras for a reasonable fee. 
+epi_graduated7	$playername went on to study for a doctorate in $MINOR, and his team have been nominated for a prestigious prize after a major breakthrough in the field.
+epi_graduated8	$playername retured to $HOMETOWN to marry his childhood sweetheart.
+epi_graduated9	$playername decided to continue his $MAJOR studies at $epilogue_college.
+epi_graduated10	$playername took his College Football experience and landed himself a backroom job in the big leagues working for $epilogue_proteam.
+epi_graduated11	After college, $playername became possibly the most famous $epilogue_job in America.
+epi_graduated12	$playername emigrated to $epilogue_country after a holiday fling with a local girl.
+epi_graduated13	$playername decided to spend a year living out of a van while he followed $epilogue_band on their North American tour.
+epi_graduated14	$playername was convicted on two counts of $epilogue_crime but is expected to get a shortened sentence due to good behavior.
+epi_graduated15	$playername decided to continue studying, but switched from $MAJOR to $epilogue_subject.
+epi_graduated16	After college, $playername dedicated himself to raising awareness of $epilogue_charity.
+epi_graduated17	$playername became an advocate for mental health, using his platform as an ex-College player to help others.
+epi_graduated18	$playername opened a restaurant in $epilogue_city, specializing in farm-to-table cuisine.
+epi_graduated19	After graduation, $playername joined the military, primarily serving in serving in $epilogue_country.
+epi_graduated20	$playername started working at a tech company in $epilogue_city, quickly rising through the ranks.
+epi_graduated21	$playername wrote a memoir about his College Football years, which became a bestseller.
+epi_graduated22	$playername wrote a memoir about his College Football years, which became a bestseller in $epilogue_country.
+epi_graduated23	$playername discovered that his College Football career had made him famous in $epilogue_country, and he was able to make a good living as a spokesperson for a brand of shampoo.
+epi_graduated24	$playername dedicated his life after College to spiritual growth, and joined a $epilogue_placeofworship.
+epi_graduated25	$playername took up farming and now runs a local organic farm in $HOMETOWN.
+epi_graduated26	$playername entered politics and is currently serving as a council member in $epilogue_city.
+epi_graduated27	$playername entered politics but his time as a city council member was cut short when he was implicated in covering up a case of $epilogue_crime.
+epi_graduated28	$playername returned to $HOMETOWN to became a high school Football coach, leading the team to win multiple local championships.
+epi_graduated29	$playername used his College Football fame to become a local TV host in $HOMETOWN.
+epi_graduated30	$playername returned to $HOMETOWN to take over the family business, expanding it into a thriving enterprise.
+epi_graduated31	$playername returned to $HOMETOWN to take over the family business, but managed to destroy the legacy of three generations after making some disastrous decisions.
+epi_graduated32	$playername started a podcast about college sports, which gained a large following.
+epi_graduated33	$playername started a non-profit organization, focusing on community development in $epilogue_city.
+epi_graduated34	$playername joined the circus as a $epilogue_circusjob, touring with them across the country.
+epi_graduated35	$playername stayed near to the $teamname campus where he runs 'ghost tours' around the institution's older buildings.
+epi_graduated36	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated37	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated38	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated39	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated40	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated41	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated42	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated43	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated44	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated45	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated46	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated47	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated48	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated49	After graduation, $playername opened a $epilogue_smallbusiness.
+epi_graduated50	After graduation, $playername became a professional $epilogue_job.
+epi_graduated51	After graduation, $playername became a professional $epilogue_job.
+epi_graduated52	After graduation, $playername became a professional $epilogue_job.
+epi_graduated53	After graduation, $playername became a professional $epilogue_job.
+epi_graduated54	After graduation, $playername became a professional $epilogue_job.
+epi_graduated55	After graduation, $playername became a professional $epilogue_job.
+epi_graduated56	After graduation, $playername became a professional $epilogue_job.
+epi_graduated57	After graduation, $playername became a professional $epilogue_job.
+epi_graduated58	After graduation, $playername became a professional $epilogue_job.
+epi_graduated59	After graduation, $playername became a professional $epilogue_job.
+epi_graduated60	After graduation, $playername became a professional $epilogue_job.
+epi_graduated61	After graduation, $playername became a professional $epilogue_job.
+epi_graduated62	After graduation, $playername became a professional $epilogue_job.
+epi_graduated63	After graduation, $playername became a professional $epilogue_job.
+epi_graduated64	After graduation, $playername became a professional $epilogue_job.
+epi_graduated65	After graduation, $playername became a professional $epilogue_job.
+epi_graduated66	After graduation, $playername became a professional $epilogue_job.
+epi_graduated67	After graduation, $playername became a professional $epilogue_job.
+epi_graduated68	After graduation, $playername became a professional $epilogue_job.
+epi_graduated69	After graduation, $playername became a professional $epilogue_job.
+epi_graduated70	After graduation, $playername became a professional $epilogue_job.
+epi_graduated71	After graduation, $playername became a professional $epilogue_job.
+epi_graduated72	After graduation, $playername became a professional $epilogue_job.
+epi_graduated73	After graduation, $playername became a professional $epilogue_job.
+epi_graduated74	After graduation, $playername became a professional $epilogue_job.
+epi_graduated75	After graduation, $playername became a professional $epilogue_job.
+epi_graduated76	After graduation, $playername became a professional $epilogue_job.
+epi_graduated77	After graduation, $playername became a professional $epilogue_job.
+epi_graduated78	After graduation, $playername became a professional $epilogue_job.
+epi_graduated79	After graduation, $playername became a professional $epilogue_job.
+epi_graduated80	After graduation, $playername became a professional $epilogue_job.
+epi_graduated81	After graduation, $playername became a professional $epilogue_job.
+epi_graduated82	After graduation, $playername became a professional $epilogue_job.
+epi_graduated83	After graduation, $playername became a professional $epilogue_job.
+epi_graduated84	After graduation, $playername became a professional $epilogue_job.
+epi_graduated85	After graduation, $playername became a professional $epilogue_job.
+epi_graduated86	After graduation, $playername became a professional $epilogue_job.
+epi_graduated87	After graduation, $playername became a professional $epilogue_job.
+epi_graduated88	After graduation, $playername became a professional $epilogue_job.
+epi_graduated89	After graduation, $playername became a professional $epilogue_job.
+epi_graduated90	After graduation, $playername became a professional $epilogue_job.
+epi_graduated91	After graduation, $playername became a professional $epilogue_job.
+epi_graduated92	After graduation, $playername became a professional $epilogue_job.
+epi_graduated93	After graduation, $playername became a professional $epilogue_job.
+epi_graduated94	After graduation, $playername became a professional $epilogue_job.
+epi_graduated95	After graduation, $playername became a professional $epilogue_job.
+epi_graduated96	After graduation, $playername became a professional $epilogue_job.
+epi_graduated97	After graduation, $playername became a professional $epilogue_job.
+epi_graduated98	After graduation, $playername became a professional $epilogue_job.
+epi_graduated99	After graduation, $playername became a professional $epilogue_job.
+epi_graduated100	After graduation, $playername became a professional $epilogue_job.
+epi_graduated101	After graduation, $playername became a professional $epilogue_job.
+epi_graduated102	After graduation, $playername became a professional $epilogue_job.
+epi_graduated103	After graduation, $playername became a professional $epilogue_job.
+epi_graduated104	After graduation, $playername became a professional $epilogue_job.
+epi_graduated105	After graduation, $playername became a professional $epilogue_job.
+epi_graduated106	After graduation, $playername became a professional $epilogue_job.
+epi_graduated107	After graduation, $playername became a professional $epilogue_job.
+epi_graduated108	After graduation, $playername became a professional $epilogue_job.
+epi_graduated109	After graduation, $playername became a professional $epilogue_job.
+epi_graduated110	After graduation, $playername became a professional $epilogue_job.
+epi_graduated111	After graduation, $playername became a professional $epilogue_job.
+epi_graduated112	After graduation, $playername became a professional $epilogue_job.
+epi_graduated113	After graduation, $playername became a professional $epilogue_job.
+epi_graduated114	After graduation, $playername became a professional $epilogue_job.
+epi_graduated115	After graduation, $playername became a professional $epilogue_job.
+epi_graduated116	After graduation, $playername became a professional $epilogue_job.
+epi_graduated117	After graduation, $playername became a professional $epilogue_job.
+epi_graduated118	After graduation, $playername became a professional $epilogue_job.
+epi_graduated119	After graduation, $playername became a professional $epilogue_job.
+epi_graduated120	After graduation, $playername became a professional $epilogue_job.
+epi_dil_lowGPANoRescue	$playername was was forced to quit as the $position for the $teamname Football Team during his $academicyear year for academic reasons.
+epi_dil_toxicNoRescue	$playername was the $position for the $teamname Football Team, but personal issues resulted in him being pushed out of the team during his $academicyear year.
+epi_dil_maxToxic	$playername was the $position for the $teamname Football Team, but personal issues resulted in him being pushed out of the team during his $academicyear year.
+epi_dil_partyNoRescue	$playername was unable to continue as the $position for the $teamname Football Team after his hard-partying lifestyle got out of hand during his $academicyear year.
+epi_dil_maxParty	$playername was unable to continue as the $position for the $teamname Football Team after his hard-partying lifestyle got out of hand during his $academicyear year. His status as a campus party animal remains legendary.
+epi_newteam	$playername was $headcoachname's pick for the $position of the $teamname Football Team while $headcoachlastname was the Head Coach.
+
+epiMilitary_cut	$playername was the $position for the $teamname Football Team but was dropped from the team as a $academicotheryear.
+epiMilitary_draftR1Senior1	$playername entered the Pro Football Draft as a Round 1 pick and was signed as the $position for $draftedteamname. His service was deferred until he finished his Pro career.
+epiMilitary_draftR1Senior2	$position $playername entered the Pro Football Draft as a Round 1 pick. $draftedteamname kept the position open for him and he joined the team after finishing his term of service.
+epiMilitary_draftR1Junior1	$playername declared early for the Pro Football Draft and was signed as a Round 1 pick as the new $position for $draftedteamname. His service was deferred until he finished his Pro career.
+epiMilitary_draftR1Junior2	$playername declared early for the Pro Football Draft and was signed as a Round 1 pick. $draftedteamname kept the $position slot open for him while he finished his term of service.
+epiMilitary_draftR2Senior1	$playername entered the Pro Football Draft as a Round 2 pick and was signed as the $position for $draftedteamname. His service was deferred until he finished his Pro career.
+epiMilitary_draftR2Senior2	$position $playername entered the Pro Football Draft as a Round 2 pick. $draftedteamname kept the position open for him and he joined the team after finishing his term of service.
+epiMilitary_draftR2Junior1	$playername declared early for the Pro Football Draft and was signed as a Round 2 pick as the new $position for $draftedteamname. His service was deferred until he finished his Pro career.
+epiMilitary_draftR2Junior2	$playername declared early for the Pro Football Draft and was signed as a Round 2 pick. $draftedteamname kept the $position slot open for him while he finished his term of service.
+epiMilitary_draftR3Senior1	$playername entered the Pro Football Draft as a Round 3 pick and was signed as the $position for $draftedteamname. His service was deferred until he finished his Pro career.
+epiMilitary_draftR3Senior2	$position $playername entered the Pro Football Draft as a Round 3 pick. $draftedteamname kept the position open for him and he joined the team after finishing his term of service.
+epiMilitary_draftR3Junior	[!] Retro Bowl College has encountered an unexpected error. Please report this error to "support@newstargames.com". Message Code "042C(M)".
+epiMilitary_graduated1	After graduation, $playername took up a long term post as an officer stationed in $epilogue_city.
+epiMilitary_graduated2	On the day he should have graduated from the academy, $playername eloped with his girlfriend $epilogue_femalename. He has been on the run from the military ever since.
+epiMilitary_graduated3	After graduation from the academy, $playername resigned his commission at the earliest opportunity because his husband $epilogue_malename had such a high-paying job.
+epiMilitary_graduated4	$playername enjoyed his time at $teamname so much that he continued to serve at the academy while volunteering to help and support the Football program in any way he could.
+epiMilitary_graduated5	$playername embraced his passion after completing his term of service, and dedicated the rest of his life to bringing the joys of $HOBBY to underprivileged children around the world.
+epiMilitary_graduated6	After being dishonorably discharged from the military a few years after graduating, $playername decided to start a band with his best friend $epilogue_malename. They can be booked for bar mitzvahs and quinceañeras for a reasonable fee. 
+epiMilitary_graduated7	While serving our his commission, $playername continued to study for a doctorate in $MINOR via a correspondence course.
+epiMilitary_graduated8	$playername was lucky that he was posted to his old hometown of $HOMETOWN where he married his childhood sweetheart.
+epiMilitary_graduated9	After serving his commission, $playername decided to return to education to continue his $MAJOR studies at $epilogue_college.
+epiMilitary_graduated10	After serving his time in the military, $playername took his College Football experience and landed himself a backroom job in the big leagues working for $epilogue_proteam.
+epiMilitary_graduated11	After serving his comission, $playername became possibly the most famous $epilogue_job in America.
+epiMilitary_graduated12	$playername was posted overseas to $epilogue_country and was so enthralled by the local culture he decided to stay.
+epiMilitary_graduated13	After becoming diisillusioned with the military life, $playername decided to spend a year living out of a van while he followed $epilogue_band on their North American tour.
+epiMilitary_graduated14	$playername was convicted on two counts of $epilogue_crime and was court martialled for his transgressions.
+epiMilitary_graduated15	$playername decided to return to studying after his time in the military, and enrolled as a student of $epilogue_subject.
+epiMilitary_graduated16	After some eye-opening experiences during his time in the military, $playername dedicated himself to raising awareness of $epilogue_charity.
+epiMilitary_dil_lowGPANoRescue	$playername was was forced to quit as the $position for the $teamname Football Team when he was a $academicotheryear for academic reasons.
+epiMilitary_dil_toxicNoRescue	$playername was the $position for the $teamname Football Team, but personal issues resulted in him being removed from the team when he was a $academicotheryear.
+epiMilitary_dil_maxToxic	$playername was the $position for the $teamname Football Team, but personal issues resulted in him being pushed out of the team when he was a Cadet $academicyear.
+epiMilitary_dil_partyNoRescue	$playername was unable to continue as the $position for the $teamname Football Team after his hard-partying lifestyle got out of hand when he was a $academicotheryear.
+epiMilitary_dil_maxParty	$playername was unable to continue as the $position for the $teamname Football Team after his hard-partying lifestyle got out of hand when he was a $academicotheryear. Stories of this party animal are still used as cautionary tales by the academy instructors.
+epiMilitary_newteam	$playername was $headcoachname's pick for the $position of the $teamname Football Team while $headcoachlastname was the Head Coach.
+epiMilitary_admisscut	$playername was the $position for the $teamname Football Team, but $headcoachname cut him from the roster shortly before he was about to be promoted to a $academicotheryear.
+
+
+
+matchmsg_kickorattack	How do you want to begin?
+match_co_kick	Field Goal
+match_co_attack	1st Down
+
+ui_AdmissCutForRC	Revoke#S'ship
+msg_CutPlayerForRC	Do you want to cut $position $playername from your roster? He will be permanently removed but $$num,000 will be added back to the Scholarship fund which you can use in this Admissions process.##Cutting a non-toxic player will harm team morale.
+
+msg_CutPlayerForRCWalletFilling	Do you want to cut $position $playername from your roster? If you spend some of the existing Scholarship Fund before cutting this player then you will receive up to $$num,000 back, or if you cut him now you will only receive as much as the Fund can currently hold.##Cutting a non-toxic player will harm team morale.
+
+msg_CutPlayerForRCWalletFull	Do you want to cut $position $playername from your roster? If you spend some of the existing Scholarship Fund before cutting this player then you will receive up to $$num,000 back, or if you cut him now you will not receive anything because the Fund is full.##Cutting a non-toxic player will harm team morale.
+
+epi_admisscut	$playername was the $position for the $teamname Football Team, but $headcoachname cut him from the roster shortly before he was about to return for his $academicyear year.
+
+cv_GradHighSchool	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool1	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool2	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool3	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool4	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool5	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool6	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool7	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool8	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool9	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool10	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool11	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool12	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool13	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool14	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cv_GradHighSchool15	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool16	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool17	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool18	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool19	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool20	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool21	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool22	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool23	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool24	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool25	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool26	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool27	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool28	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool29	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cv_GradHighSchool30	H.S. Graduate, $ONLYHOMETOWN Central High School, $ONLYSTATE
+cv_GradHighSchool31	H.S. Graduate, $ONLYHOMETOWN Central High School, $ONLYSTATE
+cv_GradHighSchool32	Graduated from $ONLYHOMETOWN Central High School, $ONLYSTATE
+cv_GradHighSchool33	Graduated from $ONLYHOMETOWN Central High School, $ONLYSTATE
+cv_GradHighSchool34	H.S. Diploma; $ONLYHOMETOWN Central High School, $ONLYSTATE
+cv_GradHighSchool35	H.S. Diploma; $ONLYHOMETOWN Central High School, $ONLYSTATE
+cv_GradHighSchool36	H.S. Graduate, $ONLYHOMETOWN Union High School, $ONLYSTATE
+cv_GradHighSchool37	H.S. Graduate, $ONLYHOMETOWN Union High School, $ONLYSTATE
+cv_GradHighSchool38	Graduated from $ONLYHOMETOWN Union High School, $ONLYSTATE
+cv_GradHighSchool39	Graduated from $ONLYHOMETOWN Union High School, $ONLYSTATE
+cv_GradHighSchool40	H.S. Diploma; $ONLYHOMETOWN Union High School, $ONLYSTATE
+cv_GradHighSchool41	H.S. Diploma; $ONLYHOMETOWN Union High School, $ONLYSTATE
+cv_GradHighSchool42	H.S. Graduate, $ONLYHOMETOWN School, $ONLYSTATE
+cv_GradHighSchool43	H.S. Graduate, $ONLYHOMETOWN School, $ONLYSTATE
+cv_GradHighSchool44	Graduated from $ONLYHOMETOWN School, $ONLYSTATE
+cv_GradHighSchool45	Graduated from $ONLYHOMETOWN School, $ONLYSTATE
+cv_GradHighSchool46	H.S. Diploma; $ONLYHOMETOWN School, $ONLYSTATE
+cv_GradHighSchool47	H.S. Diploma; $ONLYHOMETOWN School, $ONLYSTATE
+cv_GradHighSchool48	H.S. Graduate, $ONLYHOMETOWN Academy, $ONLYSTATE
+cv_GradHighSchool49	H.S. Graduate, $ONLYHOMETOWN Academy, $ONLYSTATE
+cv_GradHighSchool50	Graduated from $ONLYHOMETOWN Academy, $ONLYSTATE
+cv_GradHighSchool51	Graduated from $ONLYHOMETOWN Academy, $ONLYSTATE
+cv_GradHighSchool52	H.S. Diploma; $ONLYHOMETOWN Academy, $ONLYSTATE
+cv_GradHighSchool53	H.S. Diploma; $ONLYHOMETOWN Academy, $ONLYSTATE
+cv_GradHighSchool54	Graduated from $ONLYHOMETOWN Notre Dame High School, $ONLYSTATE
+cv_GradHighSchool55	H.S. Diploma; $ONLYHOMETOWN Notre Dame High School, $ONLYSTATE
+cv_GradHighSchool56	Graduated from $ONLYHOMETOWN Catholic School, $ONLYSTATE
+cv_GradHighSchool57	H.S. Diploma; $ONLYHOMETOWN Catholic School, $ONLYSTATE
+cv_GradHighSchool58	Graduated from $ONLYHOMETOWN Christian School, $ONLYSTATE
+cv_GradHighSchool59	H.S. Diploma; $ONLYHOMETOWN Christian School, $ONLYSTATE
+cv_GradHighSchool60	Graduated from $ONLYHOMETOWN Christian Academy, $ONLYSTATE
+cv_GradHighSchool61	H.S. Diploma; $ONLYHOMETOWN Christian Academy, $ONLYSTATE
+cv_GradHighSchool62	Graduated from $ONLYHOMETOWN Jewish High School, $ONLYSTATE
+cv_GradHighSchool63	H.S. Diploma; $ONLYHOMETOWN Jewish High School, $ONLYSTATE
+cv_GradHighSchool64	Graduated from $ONLYHOMETOWN Jewish Academy, $ONLYSTATE
+cv_GradHighSchool65	H.S. Diploma; $ONLYHOMETOWN Jewish Academy, $ONLYSTATE
+cv_GradHighSchool66	Graduated from $ONLYHOMETOWN Community High School, $ONLYSTATE
+cv_GradHighSchool67	H.S. Diploma; $ONLYHOMETOWN Community High School, $ONLYSTATE
+cv_GradHighSchool68	Graduated from $ONLYHOMETOWN Community Academy, $ONLYSTATE
+cv_GradHighSchool69	H.S. Diploma; $ONLYHOMETOWN Community Academy, $ONLYSTATE
+cv_GradHighSchool70	Graduated from $ONLYHOMETOWN Preparatory High School, $ONLYSTATE
+cv_GradHighSchool71	H.S. Diploma; $ONLYHOMETOWN Preparatory High School, $ONLYSTATE
+cv_GradHighSchool72	Graduated from $ONLYHOMETOWN Preparatory Academy , $ONLYSTATE
+cv_GradHighSchool73	H.S. Diploma; $ONLYHOMETOWN Preparatory Academy , $ONLYSTATE
+cv_GradHighSchool74	Graduated from $ONLYHOMETOWN Military High School, $ONLYSTATE
+cv_GradHighSchool75	H.S. Diploma; $ONLYHOMETOWN Military Academy, $ONLYSTATE
+cv_GradHighSchool76	Graduated from $ONLYHOMETOWN Lutheran School, $ONLYSTATE
+cv_GradHighSchool77	Graduated from $ONLYHOMETOWN Institute, $ONLYSTATE
+cv_GradHighSchool78	Graduated from $ONLYHOMETOWN Scholastic Institute, $ONLYSTATE
+cv_GradHighSchool79	Graduated from $ONLYHOMETOWN Math & Science Academy, $ONLYSTATE
+cv_GradHighSchool80	H.S. Diploma; The Latin School of $ONLYHOMETOWN , $ONLYSTATE
+cv_GradHighSchool81	Graduated from $ONLYHOMETOWN Boys' High School, $ONLYSTATE
+cv_GradHighSchool82	Graduated from $ONLYHOMETOWN Charter High School, $ONLYSTATE
+cv_GradHighSchool83	Graduated from $ONLYHOMETOWN Free Academy, $ONLYSTATE
+cv_JoinTeam	Accepted onto the $teamname Football Scholarship Program as a $position
+cv_JoinTeam1	Received a Football Scholarship to $teamname (Position $position)
+cv_JoinTeam2	Football Scholar, $teamname ($position)
+cv_JoinTeam3	Admitted to $teamname (Full Football Scholarship; $position)
+cv_JoinTeam4	$teamname - Freshman Scholarship - Football - $position
+cv_JoinTeam5	Football Scholarship Recipient, $teamname ($position)
+cv_WalkOnJoinTeamA	Joined the $teamname Football Team as a Walk-On $position
+cv_WalkOnJoinTeamB	Admitted onto the $teamname undergraduate program
+cv_WalkOnJoinTeamB1	Freshman at $teamname
+cv_WalkOnJoinTeamB2	First year student, $teamname
+cv_Graduated	Graduated from $teamname
+cv_Graduated1	Graduated from $teamname
+cv_Graduated2	Graduated from $teamname
+cv_Graduated3	Graduated from $teamname
+cv_Graduated4	Graduated from $teamname
+cv_Graduated5	Graduated from $teamname
+cv_Graduated6	Graduated from $teamname
+cv_Graduated7	Graduated from $teamname
+cv_Graduated8	Graduated from $teamname, majoring in $MAJOR
+cv_Graduated9	Graduated from $teamname, majoring in $MAJOR
+cv_Graduated10	Graduated from $teamname, majoring in $MAJOR
+cv_Graduated11	Graduated from $teamname, majoring in $MAJOR
+cv_Graduated12	Graduated from $teamname, majoring in $MAJOR
+cv_Graduated13	Graduated from $teamname (Dean's List)
+cv_Graduated14	Graduated with Honors from $teamname
+cv_Graduated15	Graduated Cum Laude from $teamname
+cv_Graduated16	Graduated Magna Cum Laude from $teamname
+cv_Graduated17	Graduated Summa Cum Laude from $teamname
+cv_Drafted	Drafted by $draftedteamname as a $position as a Round $draftroundpick pick.
+cv_OutstandingPOTY	Winner of the Outstanding College Player of the Year Award
+cv_ExtraordinaryAcademicPOTY	Winner of the College Football Award for Extraordinary Academic Achievement
+cv_OffensivePOTY	Winner of the College Football Offensive Player of the Year Award
+cv_DefensivePOTY	Winner of the College Football Defensive Player of the Year Award
+cv_QuarterbackPOTY	Winner of the College Quarterback of the Year Award
+cv_RunningBackPOTY	Winner of the College Running Back of the Year Award
+cv_TightEndPOTY	Winner of the College Tight End of the Year Award
+cv_WideReceiverPOTY	Winner of the College Wide Receiver of the Year Award
+cv_OffensiveLinemanPOTY	Winner of the College Offensive Lineman of the Year Award
+cv_DefensiveLinemanPOTY	Winner of the College Defensive Lineman of the Year Award
+cv_DefensiveBackPOTY	Winner of the College Defensive Back of the Year Award
+cv_LinebackerPOTY	Winner of the College Linebacker of the Year Award
+cv_KickerPOTY	Winner of the College Kicker of the Year Award
+cv_CommunityServicePOTY	Winner of the College Football Community Award (for services to $HOBBY)
+cv_WalkOnPOTY	Winner of the College Football Walk-On Player of the Year Award
+cv_FreshmanPOTY	Winner of the Freshman Player of the Year Award
+cv_OutstandingPOTY_news	$position $playername won the Association award for Outstanding College Player of the Year!
+cv_ExtraordinaryAcademicPOTY_news	$position $playername won the Association award for Extraordinary Academic Achievement as a College Football Player!
+cv_OffensivePOTY_news	$position $playername won the Association award for College Football Offensive Player of the Year!
+cv_DefensivePOTY_news	$playername won the Association award for College Football Defensive Player of the Year!
+cv_QuarterbackPOTY_news	$playername won the Association award for College Quarterback of the Year!
+cv_RunningBackPOTY_news	$playername won the Association award for College Running Back of the Year!
+cv_TightEndPOTY_news	$playername won the Association award for College Tight End of the Year!
+cv_WideReceiverPOTY_news	$playername won the Association award for College Wide Receiver of the Year!
+cv_OffensiveLinemanPOTY_news	$playername won the Association award for College Offensive Lineman of the Year!
+cv_DefensiveLinemanPOTY_news	$playername won the Association award for College Defensive Lineman of the Year!
+cv_DefensiveBackPOTY_news	$playername won the Association award for College Defensive Back of the Year!
+cv_LinebackerPOTY_news	$playername won the Association award for College Linebacker of the Year!
+cv_KickerPOTY_news	$playername won the Association award for College Kicker of the Year!
+cv_CommunityServicePOTY_news	$position $playername won the Association award for Community Service as a College Football Player!
+cv_WalkOnPOTY_news	$position $playername won the Association award for College Football Walk-On Player of the Year!
+cv_FreshmanPOTY_news	$position $playername won the Association award for Freshman Player of the Year!
+cv_AcademicPrize	Recipient of the $teamname $MAJOR prize
+cv_AcademicPrize1	Recipient of the $teamname $MAJOR prize
+cv_AcademicPrize2	Recipient of the $teamname $MINOR prize
+cv_WinComp	$compname     $position for the winning team
+cv_RunnerUpComp	$compname     $position for the runner-up team
+cv_ReachedCompRound5	Qualified for the first round of the $compname
+cv_ReachedCompRound4	Reached round 2 of the $compname
+cv_ReachedCompRound3	Reached the Quarter Finals of the $compname
+cv_ReachedCompRound2	Reached the Semi Finals of the $compname
+cv_ReachedCompRound1	Participant in the Championship Final of the $compname
+
+cvMilitary_GradHighSchool	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool1	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool2	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool3	H.S. Graduate, $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool4	H.S. Graduate, $ONLYHOMETOWN Military School, $ONLYSTATE
+cvMilitary_GradHighSchool5	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool6	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool7	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool8	Graduated from $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool9	Graduated from $ONLYHOMETOWN Military School, $ONLYSTATE
+cvMilitary_GradHighSchool10	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool11	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool12	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool13	H.S. Diploma; $ONLYHOMETOWN High School, $ONLYSTATE
+cvMilitary_GradHighSchool14	H.S. Diploma; $ONLYHOMETOWN Military School, $ONLYSTATE
+cvMilitary_GradHighSchool15	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool16	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool17	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool18	H.S. Graduate, $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool19	H.S. Graduate, $ONLYHOMETOWN Military High School, $ONLYSTATE
+cvMilitary_GradHighSchool20	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool21	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool22	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool23	Graduated from $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool24	Graduated from $ONLYHOMETOWN Military High School, $ONLYSTATE
+cvMilitary_GradHighSchool25	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool26	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool27	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool28	H.S. Diploma; $ONLYHOMETOWN Senior High School, $ONLYSTATE
+cvMilitary_GradHighSchool29	H.S. Diploma; $ONLYHOMETOWN Military High School, $ONLYSTATE
+cvMilitary_GradHighSchool30	H.S. Graduate, $ONLYHOMETOWN Central High School, $ONLYSTATE
+cvMilitary_GradHighSchool31	H.S. Graduate, $ONLYHOMETOWN Central High School, $ONLYSTATE
+cvMilitary_GradHighSchool32	Graduated from $ONLYHOMETOWN Central High School, $ONLYSTATE
+cvMilitary_GradHighSchool33	Graduated from $ONLYHOMETOWN Central High School, $ONLYSTATE
+cvMilitary_GradHighSchool34	H.S. Diploma; $ONLYHOMETOWN Central High School, $ONLYSTATE
+cvMilitary_GradHighSchool35	H.S. Diploma; $ONLYHOMETOWN Central High School, $ONLYSTATE
+cvMilitary_GradHighSchool36	H.S. Graduate, $ONLYHOMETOWN Union High School, $ONLYSTATE
+cvMilitary_GradHighSchool37	H.S. Graduate, $ONLYHOMETOWN Union High School, $ONLYSTATE
+cvMilitary_GradHighSchool38	Graduated from $ONLYHOMETOWN Union High School, $ONLYSTATE
+cvMilitary_GradHighSchool39	Graduated from $ONLYHOMETOWN Union High School, $ONLYSTATE
+cvMilitary_GradHighSchool40	H.S. Diploma; $ONLYHOMETOWN Union High School, $ONLYSTATE
+cvMilitary_GradHighSchool41	H.S. Diploma; $ONLYHOMETOWN Union High School, $ONLYSTATE
+cvMilitary_GradHighSchool42	H.S. Graduate, $ONLYHOMETOWN School, $ONLYSTATE
+cvMilitary_GradHighSchool43	H.S. Graduate, $ONLYHOMETOWN School, $ONLYSTATE
+cvMilitary_GradHighSchool44	Graduated from $ONLYHOMETOWN School, $ONLYSTATE
+cvMilitary_GradHighSchool45	Graduated from $ONLYHOMETOWN School, $ONLYSTATE
+cvMilitary_GradHighSchool46	H.S. Diploma; $ONLYHOMETOWN School, $ONLYSTATE
+cvMilitary_GradHighSchool47	H.S. Diploma; $ONLYHOMETOWN School, $ONLYSTATE
+cvMilitary_GradHighSchool48	H.S. Graduate, $ONLYHOMETOWN Academy, $ONLYSTATE
+cvMilitary_GradHighSchool49	H.S. Graduate, $ONLYHOMETOWN Academy, $ONLYSTATE
+cvMilitary_GradHighSchool50	Graduated from $ONLYHOMETOWN Academy, $ONLYSTATE
+cvMilitary_GradHighSchool51	Graduated from $ONLYHOMETOWN Academy, $ONLYSTATE
+cvMilitary_GradHighSchool52	H.S. Diploma; $ONLYHOMETOWN Academy, $ONLYSTATE
+cvMilitary_GradHighSchool53	H.S. Diploma; $ONLYHOMETOWN Academy, $ONLYSTATE
+cvMilitary_GradHighSchool54	Graduated from $ONLYHOMETOWN Notre Dame High School, $ONLYSTATE
+cvMilitary_GradHighSchool55	H.S. Diploma; $ONLYHOMETOWN Notre Dame High School, $ONLYSTATE
+cvMilitary_GradHighSchool56	Graduated from $ONLYHOMETOWN Catholic School, $ONLYSTATE
+cvMilitary_GradHighSchool57	H.S. Diploma; $ONLYHOMETOWN Catholic School, $ONLYSTATE
+cvMilitary_GradHighSchool58	Graduated from $ONLYHOMETOWN Christian School, $ONLYSTATE
+cvMilitary_GradHighSchool59	H.S. Diploma; $ONLYHOMETOWN Christian School, $ONLYSTATE
+cvMilitary_GradHighSchool60	Graduated from $ONLYHOMETOWN Christian Academy, $ONLYSTATE
+cvMilitary_GradHighSchool61	H.S. Diploma; $ONLYHOMETOWN Christian Academy, $ONLYSTATE
+cvMilitary_GradHighSchool62	Graduated from $ONLYHOMETOWN Jewish High School, $ONLYSTATE
+cvMilitary_GradHighSchool63	H.S. Diploma; $ONLYHOMETOWN Jewish High School, $ONLYSTATE
+cvMilitary_GradHighSchool64	Graduated from $ONLYHOMETOWN Jewish Academy, $ONLYSTATE
+cvMilitary_GradHighSchool65	H.S. Diploma; $ONLYHOMETOWN Jewish Academy, $ONLYSTATE
+cvMilitary_GradHighSchool66	Graduated from $ONLYHOMETOWN Community High School, $ONLYSTATE
+cvMilitary_GradHighSchool67	H.S. Diploma; $ONLYHOMETOWN Community High School, $ONLYSTATE
+cvMilitary_GradHighSchool68	Graduated from $ONLYHOMETOWN Community Academy, $ONLYSTATE
+cvMilitary_GradHighSchool69	H.S. Diploma; $ONLYHOMETOWN Community Academy, $ONLYSTATE
+cvMilitary_GradHighSchool70	Graduated from $ONLYHOMETOWN Preparatory High School, $ONLYSTATE
+cvMilitary_GradHighSchool71	H.S. Diploma; $ONLYHOMETOWN Preparatory High School, $ONLYSTATE
+cvMilitary_GradHighSchool72	Graduated from $ONLYHOMETOWN Preparatory Academy , $ONLYSTATE
+cvMilitary_GradHighSchool73	H.S. Diploma; $ONLYHOMETOWN Preparatory Academy , $ONLYSTATE
+cvMilitary_GradHighSchool74	H.S. Diploma; Defense Dependents' Overseas School, Germany
+cvMilitary_GradHighSchool75	H.S. Diploma; Defense Dependents' Overseas School, Japan
+cvMilitary_GradHighSchool76	Graduated from $ONLYHOMETOWN Lutheran School, $ONLYSTATE
+cvMilitary_GradHighSchool77	Graduated from $ONLYHOMETOWN Institute, $ONLYSTATE
+cvMilitary_GradHighSchool78	H.S. Diploma; Defense Dependents' Overseas School, Bahrain
+cvMilitary_GradHighSchool79	Graduated from $ONLYHOMETOWN Math & Science Academy, $ONLYSTATE
+cvMilitary_GradHighSchool80	H.S. Diploma; The Latin School of $ONLYHOMETOWN , $ONLYSTATE
+cvMilitary_GradHighSchool81	Graduated from $ONLYHOMETOWN Boys' High School, $ONLYSTATE
+cvMilitary_GradHighSchool82	Graduated from $ONLYHOMETOWN Charter High School, $ONLYSTATE
+cvMilitary_GradHighSchool83	H.S. Diploma; Defense Dependents' Overseas School, S. Korea
+cvMilitary_JoinTeam	Enlisted in the $teamname (with full Football Scholarship; $position)
+cvMilitary_JoinTeam1	Enlisted at the $teamname Military Academy. Football Scholarship ($position)
+cvMilitary_JoinTeam2	Cadet Fourth Class in the $teamname. Football Scholar; $position
+cvMilitary_JoinTeam3	Joined the $teamname; recipient of $position's Football Scholarship
+cvMilitary_JoinTeam4	$teamname Military Academy Cadet (Football Scholarship) ($position)
+cvMilitary_JoinTeam5	Entered the $teamname Academy as Cadet 4th Class / Football Scholar ($position)
+cvMilitary_WalkOnJoinTeamA	Joined the $teamname Football Team as a Walk-On $position
+cvMilitary_WalkOnJoinTeamB	Enlisted at the $teamname Military Academy
+cvMilitary_WalkOnJoinTeamB1	Enlisted in the $teamname
+cvMilitary_WalkOnJoinTeamB2	Joined the $teamname
+cvMilitary_Graduated	Graduated from the Academy as a commissioned $teamname Officer
+cvMilitary_Drafted	Drafted by $draftedteamname as a $position as a Round $draftroundpick pick.
+cvMilitary_OutstandingPOTY	Winner of the Outstanding College Player of the Year Award
+cvMilitary_ExtraordinaryAcademicPOTY	Winner of the College Football Award for Extraordinary Academic Achievement
+cvMilitary_OffensivePOTY	Winner of the College Football Offensive Player of the Year Award
+cvMilitary_DefensivePOTY	Winner of the College Football Defensive Player of the Year Award
+cvMilitary_QuarterbackPOTY	Winner of the College Quarterback of the Year Award
+cvMilitary_RunningBackPOTY	Winner of the College Running Back of the Year Award
+cvMilitary_TightEndPOTY	Winner of the College Tight End of the Year Award
+cvMilitary_WideReceiverPOTY	Winner of the College Wide Receiver of the Year Award
+cvMilitary_OffensiveLinemanPOTY	Winner of the College Offensive Lineman of the Year Award
+cvMilitary_DefensiveLinemanPOTY	Winner of the College Defensive Lineman of the Year Award
+cvMilitary_DefensiveBackPOTY	Winner of the College Defensive Back of the Year Award
+cvMilitary_LinebackerPOTY	Winner of the College Linebacker of the Year Award
+cvMilitary_KickerPOTY	Winner of the College Kicker of the Year Award
+cvMilitary_CommunityServicePOTY	Winner of the College Football Community Award (for services to $HOBBY)
+cvMilitary_WalkOnPOTY	Winner of the College Football Walk-On Player of the Year Award
+cvMilitary_FreshmanPOTY	Winner of the Freshman Player of the Year Award
+cvMilitary_OutstandingPOTY_news	$position $playername won the Association award for Outstanding College Player of the Year!
+cvMilitary_ExtraordinaryAcademicPOTY_news	$position $playername won the Association award for Extraordinary Academic Achievement as a College Football Player!
+cvMilitary_OffensivePOTY_news	$position $playername won the Association award for College Football Offensive Player of the Year!
+cvMilitary_DefensivePOTY_news	$playername won the Association award for College Football Defensive Player of the Year!
+cvMilitary_QuarterbackPOTY_news	$playername won the Association award for College Quarterback of the Year!
+cvMilitary_RunningBackPOTY_news	$playername won the Association award for College Running Back of the Year!
+cvMilitary_TightEndPOTY_news	$playername won the Association award for College Tight End of the Year!
+cvMilitary_WideReceiverPOTY_news	$playername won the Association award for College Wide Receiver of the Year!
+cvMilitary_OffensiveLinemanPOTY_news	$playername won the Association award for College Offensive Lineman of the Year!
+cvMilitary_DefensiveLinemanPOTY_news	$playername won the Association award for College Defensive Lineman of the Year!
+cvMilitary_DefensiveBackPOTY_news	$playername won the Association award for College Defensive Back of the Year!
+cvMilitary_LinebackerPOTY_news	$playername won the Association award for College Linebacker of the Year!
+cvMilitary_KickerPOTY_news	$playername won the Association award for College Kicker of the Year!
+cvMilitary_CommunityServicePOTY_news	$position $playername won the Association award for Community Service as a College Football Player!
+cvMilitary_WalkOnPOTY_news	$position $playername won the Association award for College Football Walk-On Player of the Year!
+cvMilitary_FreshmanPOTY_news	Cadet 4th Class $playername ($position) won the Association award for Freshman Player of the Year!
+cvMilitary_AcademicPrize	Recipient of the $MAJOR study prize from the $teamname Academy
+cvMilitary_AcademicPrize1	Recipient of the $MAJOR study prize from the $teamname Academy
+cvMilitary_AcademicPrize2	Recipient of the $MINOR study prize from the $teamname Academy
+cvMilitary_WinComp	$compname     $position for the winning team
+cvMilitary_RunnerUpComp	$compname     $position for the runner-up team
+cvMilitary_ReachedCompRound5	Qualified for the first round of the $compname
+cvMilitary_ReachedCompRound4	Reached round 2 of the $compname
+cvMilitary_ReachedCompRound3	Reached the Quarter Finals of the $compname
+cvMilitary_ReachedCompRound2	Reached the Semi Finals of the $compname
+cvMilitary_ReachedCompRound1	Participant in the Championship Final of the $compname
+
+cv_InterestsTitle	INTERESTS
+cv_LameInterest	Current Affairs
+cv_LameInterest1	Charity Work
+cv_LameInterest2	Watching Films
+
+ui_Ranking	Ranking
+ui_Rankings	Rankings
+ui_Postseason	Postseason
+ui_SeasonEnd	Season End
+
+ui_PageUp	Page Up
+ui_PageDown	Page Down
+
+tla_Conference	Cnf
+tla_Overall	Ovr
+
+ui_Round1	Round 1
+ui_Round2	Round 2
+ui_QuarterFinal	Quarter final
+ui_SemiFinal	Semi-Final
+ui_Final	Final
+
+ui_ReachRoundShort5	Round 1
+ui_ReachRoundShort4	Round 2
+ui_ReachRoundShort3	Quarter final
+ui_ReachRoundShort2	Semi-Final
+ui_ReachRoundShort1	Final
+
+ui_TheQuarterFinals	The Quarter finals
+ui_TheSemiFinals	The Semifinals
+ui_TheFinal	The Final
+
+ui_Quarter	Quarter
+ui_Semi	Semi
+
+ui_RecordPO	Postseason Games
+ui_WinPctPO	Postseason Win Pct
+ui_SeasonsNoSim	Seasons
+ui_RecordPlayersDrafted	Pro Players Drafted
+ui_RecordConfGames	Conference Games
+ui_RecordConfPCT	Conference Win Pct
+ui_RecordConfChampWins	Conf Champ Wins
+ui_RecordBowlWins	Bowl Wins
+ui_RecordChampWins	Champ Game Wins
+ui_RecordHighestMajor	Highest Rank ($FBS)
+ui_RecordHighestMinor	Highest Rank ($FCS)
+ui_DonationsReceived	Donations received
+ui_ScolarshipsGranted	S'ships Granted
+
+msg_TeamsAdvance	The following teams advance to $LEVEL of the $COMPETITION:
+
+ui_Bowls	Bowls
+
+ui_PositionShort	PO
+ui_ChampRunnerUp	Champ Runners Up
+ui_Champions_short	Champs
+
+news_CompWinCC	You have received $num Coaching Credits for winning the $compname!
+news_CompWinRC	$$num,000 has been donated to the Scholarship Fund for winning the $compname!
+news_CompWinRC_NoSpace	$$actualNum,000 has been donated to the Scholarship Fund for winning the $compname!##(If you increase the upper limit of the Scholarship Fund in the Athletics Office then you can receive up to $$num,000 for a victory like this.)
+
+
+ui_CopyCompsSlot1	Copy Comps From Save 1
+ui_CopyCompsSlot2	Copy Comps From Save 2
+ui_CopyCompsSlot3	Copy Comps From Save 3
+ui_CopyCompsSlot4	Copy Comps From Save 4
+ui_CopyCompsSlot5	Copy Comps From Save 5
+
+ui_RetroBowlRecord	GPA REQUIREMENTS
+info_GPAExplanation	Players' academic performance is measured as GPA, where the lowest is 1.0 (or 0.0!) and the highest is 4.0 - although very few players will be able to reach a 4.0! Players' GPA drops during the season while they concentrate on Football training - but you can increase it by BENCHING a player, by using Coaching Credits in the MEETING area of the player profile, or through random events between games.##Different institutions require players to maintain different GPA levels to avoid suspensions. Every institution becomes more strict as players get closer to graduation - Juniors and Seniors will need to maintain a higher GPA than Sophomores or Freshmen.
+
+ui_Subdivision	Subdivision
+ui_Divisions	Divisions
+ui_Location	Location
+ui_Championship	Championship
+ui_BowlName	Bowl Name
+ui_GameName	Game Name
+
+msg_LeagueScreenComingSoon	The League/Restarts screen will be made available in future versions of "Retro Bowl College" as soon as we are sure that the game balancing is fair and enjoyable. Please let us know how you are finding the game by leaving a review, by sending an email to "support@newstargames.com", or via discussions in the Retro Bowl fan groups on Reddit or Discord.
+
+ui_Freshman_other	Cadet 4th Class
+ui_Sophomore_other	Cadet 3rd Class
+ui_Junior_other	Cadet 2nd Class
+ui_Senior_other	Cadet 1st Class
+
+msg_NewSeasonScheduleAvailable	A new season schedule is available!##You are currently using an older season schedule. You can update to a new schedule with updated teams, divisions and competitions for the start of the new season.##Do you want to do this now?
+
+ui_Favorite	Favorite
+ui_Starting	Starting
+
+msg_SalaryCheckAmount	You need to spend the Scholarship Fund on recruiting new players until there is $$num,000 or less in the Fund before you can reduce the upper limit.
+
+msg_Bench	Do you want to bench $pos $playername until further notice?##Benched players will rest until you reinstate them, recovering condition and increasing GPA. If you have a back-up player in this position he will play while the starter is benched.
+
+msg_PreSeasonRankings	Awaiting Pre-Season Poll Results
+
+ui_Credits	Design & Code by Simon Read      ***      Art by @pixelnfl      ***      Music by Heatley Bros      ***      College edition by Five Aces Publishing (Mark Baldwin, Jaime Barrachina Verdia, Andy Clitheroe, John Dennis, Mark Dimond, Jason Gee, Paul Kilburn, Mario Savoia, Chris Welsh), John Holden      ***      Also a huge thank you to Will Thompson and all the league organizers and players!
+
+msg_RemoveFromHallOfFame	Do you want to remove this player from the Yearbook? This cannot be undone.
+ui_Ranked	Rnk
+
+ui_ConferenceGame	Conference Game
+ui_NonConferenceGame	Non-Conference Game
+
+msg_WillCompete	...and will compete in the#$COMPETITION!
+ui_NeutralSite	Neutral Site
+
+ui_JuniorSenior	Junior/Senior
+msg_AcademicSeasonEnd	Your college plays in a conference whose teams do not participate in any games during the Postseason.##If you want to compete in Postseason games then you need to take a coaching job in a different Conference.##Job offers to coach other teams may appear before the next season begins.  
+
+info_coachtrait_9	Scout 3 extra players during College Admissions.
