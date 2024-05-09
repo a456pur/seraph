@@ -20,6 +20,20 @@ function pureFadeIn(elem, display){
   })();
 };
 
+function pureFadeOut(elem) {
+  var el = document.getElementById(elem);
+  el.style.opacity = 1;
+
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+    if (val > 0) {
+      el.style.opacity = val - .05;
+      requestAnimationFrame(fade);
+    } else {
+      el.style.display = "none"; 
+    }
+  })();
+}
 
 function setCookie(name,value,days) {
     var expires = "";
