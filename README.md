@@ -15,7 +15,7 @@
   </p>
 
 ## features
-- 350+ games! no embedding from other sites, no hacky workarounds needed to get in, all locally hosted on the website
+- 350+ games! no embedding from other sites, no hacky workarounds needed to get in, all locally hosted on the website!
 - an apps catalogue hosting useful tools and utilities, as well as fun little showcases
 - cloaking tab functionality allowing you to disguise your tab in plain sight, syncing with all pages on the site
 - multiple themes changing the colour and overall appearance of the site to make it yours
