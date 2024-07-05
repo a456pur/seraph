@@ -40,7 +40,7 @@
 
 
 :root {
-    --background-image: url('../../images/backgrounds/seraph/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/seraph/cookiesbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #fff;
     --background-color: black;
@@ -51,7 +51,7 @@
 }
 
 :root.theme-azurite {
-    --background-image: url('../../images/backgrounds/azure/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/azure/cookiesbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #c8d9e9; 
     --border-color1: #2d6cc4;
@@ -62,7 +62,7 @@
 }
 
 :root.theme-retro {
-    --background-image: url('../../images/backgrounds/retro/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/retro/cookiesbg.jpg');
     --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #2fce56;
@@ -73,7 +73,7 @@
 }
 
 :root.theme-cosmic {
-    --background-image: url('../../images/backgrounds/cosmic/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/cosmic/cookiesbg.jpg');
     --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #1e1d1f;
@@ -84,7 +84,7 @@
 }
 
 :root.theme-molten {
-    --background-image: url('../../images/backgrounds/molten/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/molten/cookiesbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #f58484; 
     --border-color1: #e70e0e;
@@ -95,7 +95,7 @@
 }
 
 :root.theme-amethyst {
-    --background-image: url('../../images/backgrounds/amethyst/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/amethyst/cookiesbg.jpg');
     --font-family: 'Raleway', sans-serif;
     --text-color: #c284f5; 
     --border-color1: #6c0ee7;
@@ -106,7 +106,7 @@
 }
 
 :root.theme-ethereal {
-    --background-image: url('../../images/backgrounds/ethereal/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/ethereal/cookiesbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #84f5ac; 
     --border-color1: #00fb82;
@@ -128,7 +128,7 @@
 }
 
 :root.theme-subzero {
-    --background-image: url('../../images/backgrounds/subzero/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/subzero/cookiesbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: rgb(255,255,255); 
     --border-color1: rgb(13, 12, 80);
@@ -139,7 +139,7 @@
 }
 
 :root.theme-metro {
-    --background-image: url('../../images/backgrounds/metro/cookiesbg.png');
+    --background-image: url('../../images/backgrounds/metro/cookiesbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: rgb(228, 215, 171); 
     --border-color1: rgb(183, 133, 91);

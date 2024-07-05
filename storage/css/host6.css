@@ -39,7 +39,7 @@
 }
 
 :root {
-    --background-image: url('../../images/backgrounds/seraph/hostbg.png');
+    --background-image: url('../../images/backgrounds/seraph/hostbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #fff;
     --background-color: black;
@@ -50,7 +50,7 @@
 }
 
 :root.theme-azurite {
-    --background-image: url('../../images/backgrounds/azure/hostbg.png');
+    --background-image: url('../../images/backgrounds/azure/hostbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #c8d9e9; 
     --border-color1: #2d6cc4;
@@ -61,7 +61,7 @@
 }
 
 :root.theme-retro {
-    --background-image: url('../../images/backgrounds/retro/hostbg.png');
+    --background-image: url('../../images/backgrounds/retro/hostbg.jpg');
     --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #2fce56;
@@ -72,7 +72,7 @@
 }
 
 :root.theme-cosmic {
-    --background-image: url('../../images/backgrounds/cosmic/hostbg.png');
+    --background-image: url('../../images/backgrounds/cosmic/hostbg.jpg');
     --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
     --text-color: #ffffff; 
     --border-color1: #1e1d1f;
@@ -83,7 +83,7 @@
 }
 
 :root.theme-molten {
-    --background-image: url('../../images/backgrounds/molten/hostbg.png');
+    --background-image: url('../../images/backgrounds/molten/hostbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #f58484; 
     --border-color1: #e70e0e;
@@ -94,7 +94,7 @@
 }
 
 :root.theme-amethyst {
-    --background-image: url('../../images/backgrounds/amethyst/hostbg.png');
+    --background-image: url('../../images/backgrounds/amethyst/hostbg.jpg');
     --font-family: 'Raleway', sans-serif;
     --text-color: #c284f5; 
     --border-color1: #6c0ee7;
@@ -105,7 +105,7 @@
 }
 
 :root.theme-ethereal {
-    --background-image: url('../../images/backgrounds/ethereal/hostbg.png');
+    --background-image: url('../../images/backgrounds/ethereal/hostbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: #84f5ac; 
     --border-color1: #00fb82;
@@ -127,7 +127,7 @@
 }
 
 :root.theme-subzero {
-    --background-image: url('../../images/backgrounds/subzero/hostbg.png');
+    --background-image: url('../../images/backgrounds/subzero/hostbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: rgb(255,255,255); 
     --border-color1: rgb(13, 12, 80);
@@ -138,7 +138,7 @@
 }
 
 :root.theme-metro {
-    --background-image: url('../../images/backgrounds/metro/hostbg.png');
+    --background-image: url('../../images/backgrounds/metro/hostbg.jpg');
     --font-family: 'Ubuntu', sans-serif;
     --text-color: rgb(228, 215, 171); 
     --border-color1: rgb(183, 133, 91);
