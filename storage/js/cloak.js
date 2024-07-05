@@ -40,35 +40,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const presets = {
         google: {
-            favicon: "../../images/icons/google.ico",
+            favicon: "/images/icons/google.ico",
             title: "Google"
         },
         bing: {
-            favicon: "../../images/icons/bing.ico",
+            favicon: "/images/icons/bing.ico",
             title: "Bing"
         },
         gmail: {
-            favicon: "../../images/icons/gmail.ico",
+            favicon: "/images/icons/gmail.ico",
             title: "Gmail"
         },
         desmos: {
-            favicon: "../../images/icons/desmos.ico",
+            favicon: "/images/icons/desmos.ico",
             title: "Desmos | Graphing Calculator"
         },
         googleclassroom: {
-            favicon: "../../images/icons/googleclassroom.ico",
+            favicon: "/images/icons/googleclassroom.ico",
             title: "Home"
         },
         wikipedia: {
-            favicon: "../../images/icons/wikipedia.ico",
+            favicon: "/images/icons/wikipedia.ico",
             title: "Wikipedia"
         },
         chrometab: {
-            favicon: "../../images/icons/chromenewtab.ico",
+            favicon: "/images/icons/chromenewtab.ico",
             title: "New Tab"
         },
         googledrive: {
-            favicon: "../../images/icons/googledrive.ico",
+            favicon: "/images/icons/googledrive.ico",
             title: "My Drive"
         }
     };
