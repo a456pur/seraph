@@ -23,7 +23,21 @@
   </head>
   <body>
     
-  
+     <div id="blackout"></div>
+     <div id="updPopup">
+        <div id="updPopup-content">
+            <img src="./images/other/devbuilda.jpg" style="width: 90%;">
+            <br><br>
+            <h2 style="font-size: 28px; text-decoration: underline;">version 10 - dev build a</h2>
+            <li>added an update popup on visit of the site whenever new updates are made to seraph</li>
+            <li>compressed images on site, leading to 70-90% decrease in file sizes</li>
+            <li>improved favicon, making it curved and have an outline</li>
+        </div>
+
+        <div id="updPopup-footer">
+            <button id="updConfirm">okay</button>
+        </div>
+      </div>
       <div class="content-side">
           <h1 class="typewriter"><span id="cursor"></span></h1>
           <h2>version 10 / experimental build</h2>
@@ -56,18 +70,19 @@
               
       </div>
 
-      <script type="text/javascript">
-            function isMobileDevice() {
-                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent);
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!localStorage.getItem('v10-devbuild2')) {
+                document.getElementById('blackout').style.display = 'block';
+                document.getElementById('updPopup').style.display = 'block';
+                localStorage.setItem('v10-devbuild2', 'true');
             }
-            function redirectIfMobile() {
-                if (isMobileDevice()) {
-                    window.location.href = "mobile.html";
-                }
-            }
-            window.onload = redirectIfMobile;
+            document.getElementById('updConfirm').addEventListener('click', function () {
+                document.getElementById('blackout').style.display = 'none';
+                document.getElementById('updPopup').style.display = 'none';
+            });
+        });
       </script>
-
       <script>
         const text = "seraph";
         const typingDelay = 500; 

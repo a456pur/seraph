@@ -295,6 +295,67 @@ a {
     opacity: 0.8;
     z-index: 10000;
 }
+
+#blackout {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+}
+
+#updPopup {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    max-width: 60%;
+    max-height: 80%;
+    padding: 30px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 3px solid var(--border-color2);
+    border-radius: 16px;
+    z-index: 1001;
+    text-align: center;
+    flex-direction: column;
+}
+
+#updPopup h2 {
+    margin-top: 0;
+}
+
+#updPopup-content {
+    overflow-y: auto; 
+    flex-grow: 1;
+}
+
+#updPopup-footer {
+    flex-shrink: 0; 
+    padding-top: 20px;
+}
+
+#updConfirm {
+    margin-top: 20px;
+    padding: 15px 24px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 3px solid var(--border-color2);
+    border-radius: 16px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#updConfirm:hover {
+    background-color: var(--hover-color); 
+    transition: background-color 0.3s ease-in-out; 
+}
   
 @keyframes mainHeaderAnimation {
     0% {
