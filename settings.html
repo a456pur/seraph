@@ -75,7 +75,7 @@
     <button id="apply-theme">apply theme</button>
 
     <div id="custom-theme-settings" style="display: none;">
-        <h2>custom theme settings</h2>
+        <h2 style="text-decoration: underline;">theme settings</h2>
         <div class="theme-property">
             <label for="background-image">background image url:</label>
             <input type="text" id="background-image" value="https://raw.githubusercontent.com/a456pur/seraph/main/images/backgrounds/seraph/homebg.png">
@@ -116,11 +116,10 @@
             <input type="color" id="text-glow">
         </div>
 
-        <p style="font-size: 16px;">refresh the page after applying to see changes</p>
         <button id="apply-custom-theme" style="font-size: 18px;">apply custom theme</button>
 
         <script src="storage/js/cloak.js"></script>
-
+    </div>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 applyStoredTheme();
@@ -168,24 +167,24 @@
                 const customTheme = JSON.parse(localStorage.getItem('customTheme')) || {};
                 const root = document.documentElement;
 
-                const customStyleTag = document.getElementById('custom-theme-style');
+                let customStyleTag = document.getElementById('custom-theme-style');
                 if (!customStyleTag) {
-                    const styleTag = document.createElement('style');
-                    styleTag.id = 'custom-theme-style';
-                    styleTag.textContent = `
-                        :root {
-                            --background-image: url('${customTheme['background-image'] || ''}');
-                            --font-family: '${customTheme['font-family'] || ''}', sans-serif;
-                            --text-color: ${customTheme['text-color'] || '#fff'};
-                            --background-color: ${customTheme['background-color'] || 'black'};
-                            --border-color1: ${customTheme['border-color1'] || '#aaaaaa'};
-                            --border-color2: ${customTheme['border-color2'] || '#ffffff'};
-                            --hover-color: ${customTheme['hover-color'] || '#1a1818'};
-                            --text-glow: ${customTheme['text-glow'] || '#000000'};
-                        }
-                    `;
-                    document.head.appendChild(styleTag);
+                    customStyleTag = document.createElement('style');
+                    customStyleTag.id = 'custom-theme-style';
+                    document.head.appendChild(customStyleTag);
                 }
+                customStyleTag.textContent = `
+                    :root {
+                        --background-image: url('${customTheme['background-image'] || ''}');
+                        --font-family: '${customTheme['font-family'] || ''}', sans-serif;
+                        --text-color: ${customTheme['text-color'] || '#fff'};
+                        --background-color: ${customTheme['background-color'] || 'black'};
+                        --border-color1: ${customTheme['border-color1'] || '#aaaaaa'};
+                        --border-color2: ${customTheme['border-color2'] || '#ffffff'};
+                        --hover-color: ${customTheme['hover-color'] || '#1a1818'};
+                        --text-glow: ${customTheme['text-glow'] || '#000000'};
+                    }
+                `;
             }
 
             function removeCustomThemeStyles() {
