@@ -29,8 +29,10 @@
             <img src="./images/other/devbuilda.jpg" style="width: 90%;">
             <br><br>
             <h2 style="font-size: 28px; text-decoration: underline;">version 10 - dev build a</h2>
-            <li>added an update popup on visit of the site whenever new updates are made to seraph</li>
+            <li>added import/export function on settings</li>
+            <li>added an update popup on visit of the site for whenever new updates are made to seraph</li>
             <li>compressed images on site, leading to 70-90% decrease in file sizes</li>
+            <li>improved custom themes with no refreshing required per update</li>
             <li>improved favicon, making it curved and have an outline</li>
         </div>
 
@@ -72,10 +74,10 @@
 
       <script>
         document.addEventListener('DOMContentLoaded', function () {
-            if (!localStorage.getItem('v10-devbuild2')) {
+            if (!localStorage.getItem('v10-devbuilda')) {
                 document.getElementById('blackout').style.display = 'block';
                 document.getElementById('updPopup').style.display = 'block';
-                localStorage.setItem('v10-devbuild2', 'true');
+                localStorage.setItem('v10-devbuilda', 'true');
             }
             document.getElementById('updConfirm').addEventListener('click', function () {
                 document.getElementById('blackout').style.display = 'none';
