@@ -56,6 +56,12 @@
     <p id="success" style="display: none;">success message here</p>
 
     <br>
+    <h2 style="margin: 0;">data settings</h2>
+    <p> import and export all of your seraph data! </p>
+    <button onclick="exportData()">export data</button>
+    <button onclick="importData()">import data</button>
+
+    <br>
     <h2 style="margin: 0;">theme selection</h2>
     <p> change the overall appearance of the website here! </p>
     <br>
@@ -119,6 +125,7 @@
         <button id="apply-custom-theme" style="font-size: 18px;">apply custom theme</button>
 
         <script src="storage/js/cloak.js"></script>
+        <script src="storage/js/data.js"></script>
     </div>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
