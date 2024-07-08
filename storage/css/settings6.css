@@ -148,25 +148,30 @@
     --text-glow: rgb(110, 84, 13);
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+#content-side {
+    width: 100%;
+    flex-grow: 1; 
+    background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
+    animation: mainHeaderAnimation 1s ease-in-out forwards;
     background-image: var(--background-image);
-    
-
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-
-    animation: mainHeaderAnimation 3s forwards;
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 
@@ -290,10 +295,12 @@ a {
 @keyframes mainHeaderAnimation {
     0% {
         opacity: 0;
+        transform: translateY(-25%);
     }
 
     100% {
         opacity: 1;
+        transform: translateY(0%);
     }
 }
 

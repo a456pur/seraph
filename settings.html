@@ -29,104 +29,106 @@
         
   </head>
   <body>
-
-    <h1>settings</h1>
-    <a href="index.html" style="font-size: 18px;">go to homepage</a>
+        <div id="content-side">
+            <h1>settings</h1>
+            <a href="index.html" style="font-size: 18px;">go to homepage</a>
+            
+            <br>
+            <h2 style="margin: 0;">tab cloak</h2>
+            <p> disguise seraph in plain sight with a tab cloak! </p>
+            <br>
+            <select id="presetSelect">
+                <option value="google">google</option>
+                <option value="googleclassroom">google classroom</option>
+                <option value="googledrive">google drive</option>
+                <option value="chrometab">chrome new tab</option>
+                <option value="gmail">gmail</option>
+        
+                <option value="bing">bing</option>
+                <option value="desmos">desmos calculator</option>
+                <option value="wikipedia">wikipedia</option>
+        
+        
+            </select>
+        
+            <button id="saveButton">select preset cloak</button>
+            <button id="resetButton">reset cloak</button>
+            <p id="success" style="display: none;">success message here</p>
+        
+            <br>
+            <h2 style="margin: 0;">data settings</h2>
+            <p> import and export all of your seraph data! </p>
+            <button onclick="exportData()">export data</button>
+            <button onclick="importData()">import data</button>
+        
+            <br>
+            <h2 style="margin: 0;">theme selection</h2>
+            <p> change the overall appearance of the website here! </p>
+            <br>
+            <select id="theme-select">
+                <option value="seraph">seraph</option>
+                <option value="azurite">azurite</option>
+                <option value="retro">retro</option>
+                <option value="cosmic">cosmic</option>
+                <option value="molten">molten</option>
+                <option value="amethyst">amethyst</option>
+                <option value="ethereal">ethereal</option>
+                <option value="subzero">subzero</option>
+                <option value="metro">metro</option>
+                <option value="custom">custom</option>
+            </select>
+        
+            <button id="apply-theme">apply theme</button>
+        
+            <div id="custom-theme-settings" style="display: none;">
+                <h2 style="text-decoration: underline;">theme settings</h2>
+                <div class="theme-property">
+                    <label for="background-image">background image url:</label>
+                    <input type="text" id="background-image" value="https://raw.githubusercontent.com/a456pur/seraph/main/images/backgrounds/seraph/homebg.png">
+                </div>
+        
+                <div class="theme-property">
+                    <label for="font-family">font family:</label>
+                    <input type="text" id="font-family" value="Ubuntu">
+                </div>
+        
+                <div class="theme-property">
+                    <label for="text-color">text colour:</label>
+                    <input type="color" id="text-color" value="#000000">
+                </div>
+        
+                <div class="theme-property">
+                    <label for="background-color">background colour:</label>
+                    <input type="color" id="background-color">
+                </div>
+        
+                <div class="theme-property">
+                    <label for="border-color1">border colour:</label>
+                    <input type="color" id="border-color1">
+                </div>
+        
+                <div class="theme-property">
+                    <label for="border-color2">secondary border colour:</label>
+                    <input type="color" id="border-color2">
+                </div>
+        
+                <div class="theme-property">
+                    <label for="hover-color">hover colour:</label>
+                    <input type="color" id="hover-color">
+                </div>
+        
+                <div class="theme-property">
+                    <label for="text-glow">text glow colour:</label>
+                    <input type="color" id="text-glow">
+                </div>
+        
+                <button id="apply-custom-theme" style="font-size: 18px;">apply custom theme</button>
+        </div>
     
-    <br>
-    <h2 style="margin: 0;">tab cloak</h2>
-    <p> disguise seraph in plain sight with a tab cloak! </p>
-    <br>
-    <select id="presetSelect">
-        <option value="google">google</option>
-        <option value="googleclassroom">google classroom</option>
-        <option value="googledrive">google drive</option>
-        <option value="chrometab">chrome new tab</option>
-        <option value="gmail">gmail</option>
-
-        <option value="bing">bing</option>
-        <option value="desmos">desmos calculator</option>
-        <option value="wikipedia">wikipedia</option>
-
-
-    </select>
-
-    <button id="saveButton">select preset cloak</button>
-    <button id="resetButton">reset cloak</button>
-    <p id="success" style="display: none;">success message here</p>
-
-    <br>
-    <h2 style="margin: 0;">data settings</h2>
-    <p> import and export all of your seraph data! </p>
-    <button onclick="exportData()">export data</button>
-    <button onclick="importData()">import data</button>
-
-    <br>
-    <h2 style="margin: 0;">theme selection</h2>
-    <p> change the overall appearance of the website here! </p>
-    <br>
-    <select id="theme-select">
-        <option value="seraph">seraph</option>
-        <option value="azurite">azurite</option>
-        <option value="retro">retro</option>
-        <option value="cosmic">cosmic</option>
-        <option value="molten">molten</option>
-        <option value="amethyst">amethyst</option>
-        <option value="ethereal">ethereal</option>
-        <option value="subzero">subzero</option>
-        <option value="metro">metro</option>
-        <option value="custom">custom</option>
-    </select>
-
-    <button id="apply-theme">apply theme</button>
-
-    <div id="custom-theme-settings" style="display: none;">
-        <h2 style="text-decoration: underline;">theme settings</h2>
-        <div class="theme-property">
-            <label for="background-image">background image url:</label>
-            <input type="text" id="background-image" value="https://raw.githubusercontent.com/a456pur/seraph/main/images/backgrounds/seraph/homebg.png">
-        </div>
-
-        <div class="theme-property">
-            <label for="font-family">font family:</label>
-            <input type="text" id="font-family" value="Ubuntu">
-        </div>
-
-        <div class="theme-property">
-            <label for="text-color">text colour:</label>
-            <input type="color" id="text-color" value="#000000">
-        </div>
-
-        <div class="theme-property">
-            <label for="background-color">background colour:</label>
-            <input type="color" id="background-color">
-        </div>
-
-        <div class="theme-property">
-            <label for="border-color1">border colour:</label>
-            <input type="color" id="border-color1">
-        </div>
-
-        <div class="theme-property">
-            <label for="border-color2">secondary border colour:</label>
-            <input type="color" id="border-color2">
-        </div>
-
-        <div class="theme-property">
-            <label for="hover-color">hover colour:</label>
-            <input type="color" id="hover-color">
-        </div>
-
-        <div class="theme-property">
-            <label for="text-glow">text glow colour:</label>
-            <input type="color" id="text-glow">
-        </div>
-
-        <button id="apply-custom-theme" style="font-size: 18px;">apply custom theme</button>
 
         <script src="storage/js/cloak.js"></script>
         <script src="storage/js/data.js"></script>
-    </div>
+
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 applyStoredTheme();
