@@ -1,0 +1,115 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/ico.ico" type="image/x-icon">
+        <title>Offline | Seraph</title>
+
+        <style>
+            @font-face {
+                font-family: 'Ubuntu';
+                src: url('/storage/fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Ubuntu', sans-serif;
+                display: flex;
+                background-color: black; 
+                animation: mainHeaderAnimation 2s forwards;
+            }
+            
+            .content-side {
+                width: 100%;
+                background-color: black;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                animation: mainHeaderAnimation 1s ease-in-out forwards;
+                background-image: url('images/backgrounds/seraph/homebg.jpg');
+                background-size: cover;
+            }
+            
+            h1 {
+                font-size: 96px;
+                font-weight: 500;
+                font-family: 'Ubuntu', sans-serif;
+                text-shadow: 0 0 10px white,
+                            0 0 10px black,
+                            0 0 30px white,
+                            0 0 40px black,
+                            0 0 50px white,
+                            0 0 60px black,
+                            0 0 70px white,
+                            0 0 80px #000000;
+                margin-bottom: 0px;
+            }
+            
+            h2 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+            
+            p {
+                font-size: 18px;
+                margin-bottom: 2px;
+                padding-left: 10%;
+                padding-right: 10%;
+                text-align: center;
+                text-shadow: 5px 5px 5px var(--text-glow);
+            }
+            
+            .linkp a {
+                font-size: 20px;
+                text-align: center;
+                border: 3px solid transparent;
+                transition: 0.15s ease-in-out;
+                text-shadow: 5px 5px 5px var(--text-glow);
+            }
+            
+            .linkp a:hover {
+                color: rgb(199, 192, 192);
+            }
+            
+            a {
+                font-size: 18px;
+                text-decoration: underline;
+                color: var(--text-color);
+                
+                text-shadow: 5px 5px 5px var(--text-glow);
+            }
+            
+            @keyframes mainHeaderAnimation {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-25%);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+            }
+  
+        </style>
+  </head>
+  <body>
+      <div class="content-side">
+          <h1 class="typewriter"><span id="cursor">seraph</span></h1>
+          <h2>version 10 / experimental build (offline mode)</h2>
+          <br>
+          <p>it worked! yay!</p>
+          <p style="margin-left: 20%; margin-right: 20%;">theres not really much here yet as i'm still heavily working on a lot of behind the scenes stuff, but try playing slope down below!</p>
+          <a href="games/slope/index.html">play slope</a>
+          <br>
+
+          <p class="linkp"><a href="https://github.com/a456pur/seraph" target="_blank">source code</a> </p>
+          
+          <br>
+          <a href="https://github.com/a456pur" target="_blank" style="text-decoration: none;">˗ˏˋ❀ website created & developed by @a456pur ❀ ´ˎ˗</a>
+              
+      </div>
+  </body>
+</html>
