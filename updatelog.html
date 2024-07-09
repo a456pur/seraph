@@ -23,10 +23,42 @@
   </head>
   <body>
   
-      <div class="content-side">
+      <div id="content-side">
+        <br>
+        <br>
         <h1 class="typewriter"><span id="cursor"></span></h1>
-        <h3 style="text-align: center;"><a href="index.html" style="color: var(--text-color); text-decoration: underline;">go to homepage</a> • <a href="https://github.com/a456pur/seraph" target="_blank" style="text-decoration: underline; color: var(--text-color)">view github</a></h3>
+        <h3 style="text-align: center;"><a href="index.html" style="color: var(--text-color); text-decoration: underline;">homepage</a> • <a href="https://github.com/a456pur/seraph" target="_blank" style="text-decoration: underline; color: var(--text-color)">github</a></h3>
         
+        <select id="version-select">
+          <option value="v10">version 10</option>
+          <option value="v9">version 9</option>
+          <option value="v8.2">version 8.2</option>
+          <option value="v8.1">version 8.1</option>
+          <option value="v8">version 8</option>
+          <option value="v7.4">version 7.4</option>
+          <option value="v7.3">version 7.3</option>
+          <option value="v7.2">version 7.2</option>
+          <option value="v7.1">version 7.1</option>
+          <option value="v7">version 7</option>
+          <option value="v6.2">version 6.2</option>
+          <option value="v6.1">version 6.1</option>
+          <option value="v6">version 6</option>
+          <option value="v5.1">version 5.1</option>
+          <option value="v5">version 5</option>
+          <option value="v4">version 4</option>
+          <option value="v3">version 3</option>
+          <option value="v2">version 2</option>
+          <option value="v1">version 1</option>
+      </select>
+
+      <div id="v10" class="version-content default">
+        <h2>version 10</h2>
+        <ul>
+          <li>test</li>
+        </ul>
+      </div>
+
+      <div id="v9" class="version-content">
         <h2>version 9</h2>
         <ul>
           <li>
@@ -53,8 +85,9 @@
           <li>Fixed crucial bug leading games to a 404 error (e.g., Subway Surfers)</li>
           <li>Fixed numerous backend bugs / various undocumented changes</li>
         </ul>
-        
+      </div>
 
+      <div id="v8.2" class="version-content">
         <h2>version 8.2</h2>
         <ul>
           <li>
@@ -69,7 +102,9 @@
           <li>Added open blank tab links to game page, home page, and apps page; opening your current window in a new tab</li>
           <li>Removed custom cursor due to complaints / incompatible with users not enabling JavaScript</li>
         </ul>
+      </div>
         
+      <div id="v8.1" class="version-content">
         <h2>version 8.1</h2>
         <ul>
           <li>
@@ -85,8 +120,9 @@
           </li>
           <li>Added subzero theme; a theme featuring pixelated blue scenery, exploring an abandoned flooding Subzero station.</li>
         </ul>
+      </div>
         
-
+      <div id="v8" class="version-content">
         <h2>version 8</h2>
         <ul>
           <li>
@@ -127,8 +163,9 @@
           <li>Readded previous version update onto update log</li>
           <li>Updated README slightly to fix some errors</li>
         </ul>
-        
+      </div>
 
+      <div id="v7.4" class="version-content">
         <h2>version 7.4</h2>
         <ul>
           <li>Added misinformation theme; featuring unreadable colors and animated backgrounds designed to ruin the aesthetic of seraph, unlockable by typing a secret code into the settings page</li>
@@ -139,7 +176,9 @@
           <li>Moved copyright statement to the bottom of the apps page</li>
           <li>Restocked some links</li>
         </ul>
-        
+      </div>
+
+      <div id="v7.3" class="version-content">
         <h2>version 7.3</h2>
         <ul>
           <li>
@@ -164,7 +203,9 @@
           <li>Fixed normal cursor appearing over custom cursor in host and data page</li>
           <li>Updated README file for GitHub to make it more clear</li>
         </ul>
-        
+      </div>
+
+      <div id="v7.2" class="version-content">
         <h2>version 7.2</h2>
         <ul>
           <li>
@@ -193,8 +234,9 @@
           <li>Renamed cookies page to data page</li>
           <li>Added anonymous analytic tracking</li>
         </ul>
-
-        
+      </div>
+  
+      <div id="v7.1" class="version-content">
         <h2>version 7.1</h2>
         <ul>
           <li>
@@ -233,8 +275,9 @@
           <li>Fixed some mobile sizing issues</li>
           <li>Adjusted some spacing briefly</li>
         </ul>
-        
+      </div>
 
+      <div id="v7" class="version-content">
         <h2>version 7</h2>
         <ul>
           <li>
@@ -287,8 +330,9 @@
           <li>Fixed cloaking on Windows 11 app</li>
           <li>Attempted to fix 404 page styling on some 404 instances</li>
         </ul>
+      </div>
         
-
+      <div id="v6.2" class="version-content">
         <h2>version 6.2</h2>
         <ul>
           <li>
@@ -326,8 +370,9 @@
           <li>Redid hosting tutorial to add more clarification + showcase how to update the site</li>
           <li>Added ten more links</li>
         </ul>
-        
-        
+      </div>
+
+      <div id="v6.1" class="version-content">
         <h2>version 6.1</h2>
         <ul>
           <li>
@@ -362,7 +407,9 @@
           <li>Polished README file in the GitHub to be more clear</li>
           <li>Removed more incorrect branding</li>
         </ul>
-        
+      </div>
+      
+      <div id="v6" class="version-content">
         <h2>version 6</h2>
         <ul>
           <li>
@@ -398,7 +445,9 @@
           <li>Added more brief mobile support to pages around the site</li>
           <li>Wording rephrasing has been made to better clarify information</li>
         </ul>
+      </div>
 
+      <div id="v5.1" class="version-content">
         <h2>version 5.1</h2>
         <ul>
           <li>Added twenty-one brand new games</li>
@@ -411,7 +460,9 @@
           <li>Added new placeholder image for games which do not have a thumbnail</li>
           <li>Fixed cursor bug making horizontal scrollbars appear</li>
         </ul>
+      </div>
 
+      <div id="v5" class="version-content">
         <h2>version 5</h2>
         <ul>
           <li>Added fifteen brand new games</li>
@@ -438,6 +489,9 @@
           <li>Increased font size for update log + added padding</li>
           <li>Added a neon glow to the homepage header</li>
         </ul>
+      </div>
+
+      <div id="v4" class="version-content">
         <h2>version 4</h2>
         <ul>
           <li>
@@ -462,7 +516,9 @@
           <li>Game page buttons can now display three on one row if the screen size is capable</li>
           <li>Added Google meta tags</li>
         </ul>
+      </div>
         
+      <div id="v3" class="version-content">
         <h2>version 3</h2>
         <ul>
           <li>
@@ -496,7 +552,9 @@
           <li>Attempted to fix tanking Happy Wheels performance</li>
           <li>Major GitHub README overhaul</li>
         </ul>
-        
+      </div>
+
+      <div id="v2" class="version-content">
         <h2>version 2</h2>
         <ul>
           <li>Added twenty-one brand new games</li>
@@ -517,28 +575,46 @@
           </ul>
           <br>
 
-          <li>Completely revamped the games page</li>
-          <ul>
-              <li>Buttons no longer have descriptions</li>
-              <li>Instead of clicking play, you can now click the whole button</li>
-              <li>Brand new hover effect</li>
-              <li>Buttons all have thumbnails</li>
-              <li>Buttons are smaller in width by 20px</li>
-          </ul>
-          <br>
-
+          <li>Completely revamped the homepage</li>
           <li>Added an update log page for full changelogs of what has been modified in updates</li>
           <li>Reorganised folder layout for website</li>
           <li>Miscellaneous optimisations / head tag optimisations</li>
           <li>GitHub clean up</li>
         </ul>
+      </div>
+
+      <div id="v1" class="version-content">
+        <h2>version 1</h2>
+        <ul>
+          <li>Finished the first iteration of the site, now ready for public release!</li>
+          <li>Ten games have been added for a total of twenty</li>
+          <li>Hosting page with tutorial</li>
+          <li>Seraph is now open source!</li>
+          <br>
+        </ul>
+      </div>
+
 
         <br>
       </div>
 
+      <script>
+        document.getElementById('version-select').addEventListener('change', function() {
+            const selectedValue = this.value;
+            const versionContents = document.querySelectorAll('.version-content');
+
+            versionContents.forEach(function(content) {
+                if (content.id === selectedValue) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
       <script>
-        const text = "update log";
+        const text = "updates";
         const typingDelay = 400; 
         const initialDelay = 30; 
         const cursor = document.getElementById("cursor");

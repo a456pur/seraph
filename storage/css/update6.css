@@ -148,32 +148,39 @@
     --text-glow: rgb(110, 84, 13);
 }
 
-body {
-    background-color: var(--background-color);
-    background-image: var(--background-image);
-    text-align: left;
-    font-family: var(--font-family);
-    animation: mainHeaderAnimation 1s ease-in-out;
-    color: var(--text-color);
-    
-    height: 100vh;
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
 
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    background-color: var(--background-color);
+
+    background-image: var(--background-image);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    animation: fadein 1s ease-in-out forwards;
 }
 
-body::-webkit-scrollbar {
-    width: 0;
+#content-side {
+    width: 100%;
+    flex-grow: 1; 
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: mainHeaderAnimation 1s ease-in-out forwards;
 }
 
 
 h1 {
     font-size: 96px;
-    margin-bottom: 10px;  
     text-align: center;
 
     text-shadow: 0 0 10px var(--text-color),
@@ -235,6 +242,31 @@ li {
     color:var(--text-color);
 }
 
+select {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 50%;
+    max-width: 400px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    border: 3px solid var(--border-color2);
+    margin: 2px;
+    border-radius: 32px;
+    padding-left: 10px;
+    
+    padding-right: 10px;
+    font-family: var(--font-family);
+    animation: searchTween 1.5s ease-in-out forwards;
+}
+
+.version-content {
+    display: none;
+}
+.version-content.default {
+    display: block;
+}
+
 .typewriter {
     overflow: hidden; 
     white-space: nowrap; 
@@ -253,12 +285,22 @@ li {
 @keyframes mainHeaderAnimation {
     0% {
         opacity: 0;
-        transform: translateX(-10%);
+        transform: translateX(-5%);
     }
 
     100% {
         opacity: 1;
         transform: translateX(0%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
