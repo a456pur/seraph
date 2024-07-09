@@ -26,7 +26,7 @@
       <div id="content-side">
         <br>
         <br>
-        <h1 class="typewriter"><span id="cursor"></span></h1>
+        <h1>updates</h1>
         <h3 style="text-align: center;"><a href="index.html" style="color: var(--text-color); text-decoration: underline;">homepage</a> • <a href="https://github.com/a456pur/seraph" target="_blank" style="text-decoration: underline; color: var(--text-color)">github</a></h3>
         
         <select id="version-select">
@@ -53,8 +53,15 @@
 
       <div id="v10" class="version-content default">
         <h2>version 10</h2>
+        <p>(this patch log is unfinished, update isn't out yet! dev build a patch logs are below:)</p>
         <ul>
-          <li>test</li>
+          <li>update log page is now a dropdown instead of a long page</li>
+          <li>added import/export function on settings</li>
+          <li>added an update popup on visit of the site for whenever new updates are made to seraph</li>
+          <li>compressed images on site, leading to 70-90% decrease in file sizes</li>
+          <li>improved custom themes with no refreshing required per update</li>
+          <li>cleaned up some animations around the site</li>
+          <li>improved favicon, making it curved and have an outline</li>
         </ul>
       </div>
 
@@ -613,28 +620,6 @@
         });
     </script>
 
-      <script>
-        const text = "updates";
-        const typingDelay = 400; 
-        const initialDelay = 30; 
-        const cursor = document.getElementById("cursor");
-        const h1 = document.querySelector(".typewriter");
-
-        function type() {
-        setTimeout(() => {
-            for (let i = 0; i < text.length; i++) {
-            setTimeout(() => {
-                h1.textContent += text[i];
-                if (i === text.length - 1) {
-                cursor.style.display = "none"; 
-                }
-            }, i * typingDelay);
-            }
-        }, initialDelay);
-        }
-
-        type();
-      </script>
 
 <script src="storage/js/cloak.js"></script>
 <script src="storage/js/theme.js"></script>
