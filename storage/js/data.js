@@ -56,3 +56,14 @@ function importData() {
 
     input.click();
 }
+
+function clearData() {
+    if (confirm('Are you sure you want to clear all data? This action cannot be undone.')) {
+        localStorage.clear();
+        document.cookie.split(";").forEach(cookie => {
+            const [name] = cookie.split("=");
+            document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        });
+        window.location.reload();
+    }
+}
