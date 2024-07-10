@@ -234,11 +234,11 @@ p {
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
-    animation: searchTween 2s ease-in-out forwards;
+    animation: searchTween 0.5s ease-in-out forwards;
 }
 
 h2 {
-    animation: searchTween 1.75s ease-in-out forwards;
+    animation: searchTween 0.5s ease-in-out forwards;
 }
 
 button {
@@ -259,10 +259,10 @@ button {
 
     border: 2px solid var(--border-color2);
     border-radius: 32px;
-    animation: searchTween 1.5s ease-in-out forwards;
+    animation: searchTween 0.5s ease-in-out forwards;
 }
 
-select {
+select, #panicKey, #panicURL {
     background-color: var(--background-color);
     color: var(--text-color);
     width: 50%;
@@ -277,7 +277,7 @@ select {
     
     padding-right: 10px;
     font-family: var(--font-family);
-    animation: searchTween 1.5s ease-in-out forwards;
+    animation: searchTween 0.5s ease-in-out forwards;
 }
 
 button:hover {

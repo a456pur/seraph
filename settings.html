@@ -34,7 +34,7 @@
             <a href="index.html" style="font-size: 18px;">go to homepage</a>
             
             <br>
-            <h2 style="margin: 0;">tab cloak</h2>
+            <h2 style="margin: 0;">tab cloaking</h2>
             <br>
             <select id="presetSelect">
                 <option value="google">google</option>
@@ -42,26 +42,17 @@
                 <option value="googledrive">google drive</option>
                 <option value="chrometab">chrome new tab</option>
                 <option value="gmail">gmail</option>
-        
                 <option value="bing">bing</option>
                 <option value="desmos">desmos calculator</option>
                 <option value="wikipedia">wikipedia</option>
-        
-        
             </select>
         
-            <button id="saveButton">select preset cloak</button>
+            <button id="saveButton">select cloak</button>
             <button id="resetButton">reset cloak</button>
             <p id="success" style="display: none;">success message here</p>
-        
+            
             <br>
-            <h2 style="margin-bottom: 20px;">data management</h2>
-            <button onclick="importData()">import data</button>
-            <button onclick="exportData()">export data</button>
-            <button onclick="clearData()">clear data</button>
-        
-            <br>
-            <h2 style="margin: 0;">theme selection</h2>
+            <h2 style="margin: 0;">themes</h2>
             <br>
             <select id="theme-select">
                 <option value="seraph">seraph</option>
@@ -121,9 +112,25 @@
                 </div>
         
                 <button id="apply-custom-theme" style="font-size: 18px;">apply custom theme</button>
-        </div>
-    
+            </div>
 
+            <br>
+            <h2 style="margin-bottom: 20px;">panic mode</h2>
+            <input type="text" id="panicKey" placeholder="choose a key combination" readonly>
+            <input type="url" id="panicUrl" placeholder="https://www.desmos.com/scientific">
+            <button onclick="saveSettings()">set panic key</button>
+            <p id="success-panic" style="display: none;">success message here</p>
+            
+
+            <br>
+            <h2 style="margin-bottom: 20px;">data management</h2>
+            <button onclick="importData()">import data</button>
+            <button onclick="exportData()">export data</button>
+            <button onclick="clearData()">clear data</button>
+
+            <br>
+            <br>
+        
         <script src="storage/js/cloak.js"></script>
         <script src="storage/js/data.js"></script>
 
@@ -316,29 +323,64 @@
 
                 saveButton.addEventListener("click", function() {
                     const selectedValue = presetSelect.value;
-                    successMessage.textContent = "preset chosen! refresh the page to see changes";
+                    successMessage.textContent = "cloak saved, refreshing page...";
                     setCookie("tabCloakPreset", selectedValue, { expires: 365 });
 
                     successMessage.style.display = "block";
                     setTimeout(function() {
-                        successMessage.style.display = "none";
-                    }, 3000);
+                        window.location.reload();
+                    }, 1000);
                 });
 
                 resetButton.addEventListener("click", function() {
                     deleteCookie("tabCloakPreset");
                     presetSelect.selectedIndex = 0;
-                    successMessage.textContent = "cloaking reset, refresh the page to see changes";
+                    successMessage.textContent = "cloak removed, refreshing page...";
                     successMessage.style.display = "block";
                     setTimeout(function() {
-                        successMessage.style.display = "none";
-                    }, 3000);
+                        window.location.reload()
+                    }, 1000);
                 });
 
                 function deleteCookie(name) {
                     document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
                 }
             });
+        </script>
+
+        <script>
+            let keyCombo = [];
+            const panicSuccessMessage = document.getElementById("success-panic");
+        
+            document.getElementById('panicKey').addEventListener('focus', function() {
+                keyCombo = [];
+                this.value = '';
+            });
+
+            document.addEventListener('keydown', function(event) {
+                const panicKeyInput = document.getElementById('panicKey');
+                if (document.activeElement === panicKeyInput) {
+                    event.preventDefault();
+                    if (!keyCombo.includes(event.key)) {
+                        keyCombo.push(event.key);
+                        panicKeyInput.value = keyCombo.join('+');
+                    }
+                }
+            });
+
+            function saveSettings() {
+                const panicKey = document.getElementById('panicKey').value || 'Ctrl+Shift+P';
+                const panicUrl = document.getElementById('panicUrl').value || 'https://www.desmos.com/scientific';
+                
+                localStorage.setItem('panicKey', panicKey);
+                localStorage.setItem('panicUrl', panicUrl);
+                
+                panicSuccessMessage.textContent = "panic mode settings saved, refreshing page";
+                panicSuccessMessage.style.display = "block";
+                setTimeout(function() {
+                    window.location.reload();
+                }, 1000);
+            }
         </script>
   </body>
 </html>
