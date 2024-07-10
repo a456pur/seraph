@@ -349,11 +349,11 @@
         </script>
 
         <script>
-            let keyCombo = [];
             const panicSuccessMessage = document.getElementById("success-panic");
-        
+            let keyCombo = new Set();
+
             document.getElementById('panicKey').addEventListener('focus', function() {
-                keyCombo = [];
+                keyCombo.clear();
                 this.value = '';
             });
 
@@ -361,10 +361,15 @@
                 const panicKeyInput = document.getElementById('panicKey');
                 if (document.activeElement === panicKeyInput) {
                     event.preventDefault();
-                    if (!keyCombo.includes(event.key)) {
-                        keyCombo.push(event.key);
-                        panicKeyInput.value = keyCombo.join('+');
-                    }
+                    keyCombo.add(event.key);
+                    panicKeyInput.value = Array.from(keyCombo).join('+');
+                }
+            });
+
+            document.addEventListener('keyup', function(event) {
+                const panicKeyInput = document.getElementById('panicKey');
+                if (document.activeElement === panicKeyInput) {
+                    keyCombo.delete(event.key);
                 }
             });
 
