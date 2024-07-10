@@ -1,7 +1,7 @@
 const CACHE_NAME = 'seraph-cache';
 const OFFLINE_URLS = [
     '/offline.html',
-    '/images/backgrounds/seraph/homebg.jpg',
+    '/images/backgrounds/seraph/offlinebg.jpg',
     '/images/ico.ico',
     '/storage/fonts/ubuntu/Ubuntu.woff2',
 
