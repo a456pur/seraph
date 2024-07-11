@@ -100,7 +100,7 @@
             if (!localStorage.getItem('v10-devbuildaupdate')) {
                 document.getElementById('blackout').style.display = 'block';
                 document.getElementById('updPopup').style.display = 'block';
-                //localStorage.setItem('v10-devbuildaupdate', 'true');
+                localStorage.setItem('v10-devbuildaupdate', 'true');
             }
             document.getElementById('updConfirm').addEventListener('click', function () {
                 document.getElementById('blackout').style.display = 'none';
