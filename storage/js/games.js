@@ -1,3 +1,4 @@
+// open in new tab setting
 document.addEventListener('DOMContentLoaded', () => {
     function cookie(name, value = null, days = null) {
         if (value !== null) {
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
+// search bar
 function filterGames() {
     const searchInput = document.getElementById('search').value.toLowerCase();
     const buttons = document.querySelectorAll('.button h2');
@@ -54,6 +55,7 @@ function filterGames() {
 
 document.getElementById('search').addEventListener('input', filterGames);
 
+// genre filtering
 const genreDropdown = document.getElementById('genreDropdown');
 
 genreDropdown.addEventListener('change', () => {
@@ -73,6 +75,7 @@ genreDropdown.addEventListener('change', () => {
 
 genreDropdown.value = 'all';
 
+// cool typing
 const text = "games";
 const typingDelay = 500; 
 const initialDelay = 100; 
@@ -94,6 +97,7 @@ setTimeout(() => {
 
 type();
 
+// open in blank tab
 document.addEventListener('DOMContentLoaded', function() {
     var openBlankLink = document.getElementById('openBlankLink');
 
@@ -131,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 }); 
 
+// favouritng games
 document.addEventListener("DOMContentLoaded", function () {
     const pinButtons = document.querySelectorAll(".pin-button");
     const pinnedContainer = document.querySelector(".pinned-container");
