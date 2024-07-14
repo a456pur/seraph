@@ -248,3 +248,52 @@ function saveSettings() {
         window.location.reload();
     }, 1000);
 }
+
+// open blank
+document.addEventListener('DOMContentLoaded', () => {
+    function cookie(name, value = null, days = null) {
+        if (value !== null) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        } else {
+            let cookieArr = document.cookie.split(';');
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookiePair = cookieArr[i].split('=');
+                if (name === cookiePair[0].trim()) {
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        }
+    }
+
+    let openBlankSetting = cookie('open-blank');
+    if (!openBlankSetting) {
+        openBlankSetting = 'true';
+        cookie('open-blank', openBlankSetting, 365);
+    }
+    document.querySelector(`input[name="openBlankSetting"][value="${openBlankSetting}"]`).checked = true;
+
+    document.querySelectorAll('input[name="openBlankSetting"]').forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            let selectedValue = event.target.value;
+            cookie('open-blank', selectedValue, 365);
+
+            let anchorTags = document.querySelectorAll('a');
+            if (selectedValue === 'false') {
+                anchorTags.forEach(anchor => {
+                    anchor.removeAttribute('target');
+                });
+            } else {
+                anchorTags.forEach(anchor => {
+                    anchor.setAttribute('target', '_blank');
+                });
+            }
+        });
+    });
+});
