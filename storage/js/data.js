@@ -61,10 +61,11 @@ function clearData() {
     const promptDiv = document.createElement('div');
     promptDiv.id = 'clear-data-prompt';
     promptDiv.innerHTML = `
-<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
                     background-color: var(--background-color); border: 3px solid var(--border-color2); border-radius: 16px; color: var(--text-color); z-index: 1000; text-align: center; width: 60%; max-width: 550px; animation: none; margin-bottom: 40px;">
             <h2 style="margin-top: 20.08px;">confirmation</h2>
-            <p>are you sure you would like to clear all your data? this cannot be undone unless you have exported your data previously.</p>
+            <p>are you sure you would like to clear all your data? continuing will wipe saved settings, pinned games and downloaded content.</p> 
+            <p>this cannot be undone unless you have exported your data previously.</p>
             <button id="confirm-clear">yes</button>
             <button id="cancel-clear">no</button>
             <br>
@@ -75,16 +76,21 @@ function clearData() {
     `;
     document.body.appendChild(promptDiv);
 
-    document.getElementById('confirm-clear').addEventListener('click', () => {
+    document.getElementById('confirm-clear').addEventListener('click', async () => {
         localStorage.clear();
 
         document.cookie.split(";").forEach(cookie => {
             const [name] = cookie.split("=");
             document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
         });
+
+        const cacheNames = await caches.keys();
+        cacheNames.forEach(async (cacheName) => {
+            await caches.delete(cacheName);
+        });
+
         document.body.removeChild(promptDiv);
         window.location.reload();
-
     });
 
     document.getElementById('cancel-clear').addEventListener('click', () => {
