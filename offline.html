@@ -128,6 +128,14 @@
                 font-size: 30px;
                 text-align: center;
             }
+
+            .delete-button {
+                position: absolute;
+                top: 5px;
+                right: 5px; 
+                
+                z-index: 2; 
+            }
             
             @keyframes mainHeaderAnimation {
                 0% {
@@ -163,19 +171,51 @@
       <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const games = JSON.parse(localStorage.getItem('downloadedGames')) || [];
-                const container = document.querySelector('.button-container');
+                const container = document.querySelector('.button-container'); 
                 games.forEach(game => {
                     const gameButton = document.createElement('a');
                     gameButton.setAttribute('href', '/games/' + game.directory);
                     gameButton.innerHTML = `
                         <div class="button" style="background-image: url('${game.thumbnail}');" data-genre="platformer">
                             <h2>${game.name}</h2>
+                            <span class="delete-button" data-game="${game.directory}">✖</button>
                         </div>
                     `;
                     container.appendChild(gameButton);
                 });
+
+                document.querySelectorAll('.delete-button').forEach(button => {
+                    button.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        const gameDirectory = event.target.getAttribute('data-game');
+                        deleteGame(gameDirectory);
+                    });
+                });
             });
 
+            async function deleteGame(gameDirectory) {
+                const games = JSON.parse(localStorage.getItem('downloadedGames')) || [];
+                const updatedGames = games.filter(game => game.directory !== gameDirectory);
+                localStorage.setItem('downloadedGames', JSON.stringify(updatedGames));
+
+                const cache = await caches.open('game-cache');
+                const response = await fetch('/storage/js/directorylist.json'); 
+                if (!response.ok) {
+                    throw new Error('Failed to fetch directory list');
+                }
+
+                const directoryList = await response.json();
+                const gameData = directoryList[gameDirectory];
+
+                if (gameData && gameData.files) {
+                    for (const file of gameData.files) {
+                        await cache.delete(file);
+                    }
+                    await cache.delete(gameData.thumbnail);
+                }
+
+                window.location.reload();
+            }
       </script>
   </body>
 </html>

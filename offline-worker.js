@@ -4,16 +4,7 @@ const OFFLINE_URLS = [
     '/images/backgrounds/seraph/offlinebg.jpg',
     '/images/ico.ico',
     '/storage/fonts/ubuntu/Ubuntu.woff2',
-
-    // slope
-    '/games/slope/index.html',
-    '/games/slope/script.js',
-    '/games/slope/slope_new.json',
-    '/games/slope/slope_newdata.unityweb',
-    '/games/slope/slope_newwasmcode.unityweb',
-    '/games/slope/slope_newwasmframework.unityweb',
-    '/games/slope/UnityLoader.js',
-    '/games/slope/UnityProgress.js'
+    '/storage/js/directorylist.json'
 ];
 
 self.addEventListener('install', function(event) {

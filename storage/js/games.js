@@ -258,18 +258,17 @@ function showConfirmationPrompt(gameName, gameDirectory) {
         document.body.removeChild(promptDiv);
     });
 }
-
 async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv) {
     try {
-        const response = await fetch('/storage/js/directorylist.json'); 
+        const response = await fetch('/storage/js/directorylist.json'); // Adjust the path as needed
         if (!response.ok) {
-            throw new Error("couldn't find directory json");
+            throw new Error('failed to fetch list');
         }
 
         const directoryList = await response.json();
         const gameData = directoryList[gameDirectory];
         if (!gameData || !gameData.files) {
-            throw new Error('no files found');
+            throw new Error('no files found for');
         }
 
         const files = gameData.files;
@@ -280,13 +279,17 @@ async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv
             await cache.put(file, fileResponse.clone());
         }
 
+        const thumbnailUrl = gameData.thumbnail;
+        const thumbnailResponse = await fetch(thumbnailUrl);
+        await cache.put(thumbnailUrl, thumbnailResponse.clone());
+
         saveGameToLocal({
             name: gameName,
             directory: gameDirectory,
-            thumbnail: gameData.thumbnail
+            thumbnail: thumbnailUrl
         });
 
-        promptDiv.querySelector('p').textContent = `downloaded ${gameName}! you can access this game offline by loading this page without an internet connection.`;
+        promptDiv.querySelector('p').textContent = `${gameName} has finished downloading! you can now access this game locally by opening the site without an internet connection.`;
         const closeButton = document.createElement('button');
         closeButton.textContent = 'okay';
         closeButton.addEventListener('click', () => {
@@ -295,10 +298,10 @@ async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv
         });
         promptDiv.appendChild(closeButton);
     } catch (error) {
-        console.error('error downloading game files:', error);
-        promptDiv.querySelector('p').textContent = `there was an error downloading ${gameName}. try again later, or report an issue on github/discord`;
+        console.error('Error downloading game files:', error);
+        promptDiv.querySelector('p').textContent = `there was an error trying to download ${gameName}. try again later, or report the issue to github/discord.`;
         const closeButton = document.createElement('button');
-        closeButton.textContent = 'okay';
+        closeButton.textContent = 'close';
         closeButton.addEventListener('click', () => {
             document.body.removeChild(blackoutDiv);
             document.body.removeChild(promptDiv);
