@@ -212,3 +212,103 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     updatePinnedUI();
 });
+
+// downloading handler
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.download-button').forEach(button => {
+        button.addEventListener('click', handleDownloadClick);
+    });
+});
+
+function handleDownloadClick(event) {
+    event.preventDefault(); 
+    const gameButton = event.target.closest('.button');
+    const gameName = gameButton.querySelector('h2').textContent;
+    const gameDirectory = gameButton.closest('a').getAttribute('href');
+    showConfirmationPrompt(gameName, gameDirectory, gameButton.style.backgroundImage);
+}
+
+function showConfirmationPrompt(gameName, gameDirectory) {
+    const blackoutDiv = document.createElement('div');
+    blackoutDiv.classList.add('blackout');
+    
+    const promptDiv = document.createElement('div');
+    promptDiv.classList.add('confirmation-prompt');
+    promptDiv.innerHTML = `
+        <div class="prompt-content">
+            <h2>download game</h2>
+            <p>would you like to download ${gameName}? you'll be able to load this game when you don't have an internet connection.</p>
+            <button id="confirm-yes">yes</button>
+            <button id="confirm-no">no</button>
+        </div>
+    `;
+
+    document.body.appendChild(blackoutDiv);
+    document.body.appendChild(promptDiv);
+
+    document.getElementById('confirm-yes').addEventListener('click', () => {
+        promptDiv.querySelector('p').textContent = `downloading ${gameName}. speeds vary depending on the game size and your internet connection.`;
+        promptDiv.querySelector('#confirm-yes').remove();
+        promptDiv.querySelector('#confirm-no').remove();
+        downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv);
+    });
+
+    document.getElementById('confirm-no').addEventListener('click', () => {
+        document.body.removeChild(blackoutDiv);
+        document.body.removeChild(promptDiv);
+    });
+}
+
+async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv) {
+    try {
+        const response = await fetch('/storage/js/directorylist.json'); 
+        if (!response.ok) {
+            throw new Error("couldn't find directory json");
+        }
+
+        const directoryList = await response.json();
+        const gameData = directoryList[gameDirectory];
+        if (!gameData || !gameData.files) {
+            throw new Error('no files found');
+        }
+
+        const files = gameData.files;
+        const cache = await caches.open('game-cache');
+
+        for (const file of files) {
+            const fileResponse = await fetch(file);
+            await cache.put(file, fileResponse.clone());
+        }
+
+        saveGameToLocal({
+            name: gameName,
+            directory: gameDirectory,
+            thumbnail: gameData.thumbnail
+        });
+
+        promptDiv.querySelector('p').textContent = `downloaded ${gameName}! you can access this game offline by loading this page without an internet connection.`;
+        const closeButton = document.createElement('button');
+        closeButton.textContent = 'okay';
+        closeButton.addEventListener('click', () => {
+            document.body.removeChild(blackoutDiv);
+            document.body.removeChild(promptDiv);
+        });
+        promptDiv.appendChild(closeButton);
+    } catch (error) {
+        console.error('error downloading game files:', error);
+        promptDiv.querySelector('p').textContent = `there was an error downloading ${gameName}. try again later, or report an issue on github/discord`;
+        const closeButton = document.createElement('button');
+        closeButton.textContent = 'okay';
+        closeButton.addEventListener('click', () => {
+            document.body.removeChild(blackoutDiv);
+            document.body.removeChild(promptDiv);
+        });
+        promptDiv.appendChild(closeButton);
+    }
+}
+
+function saveGameToLocal(gameData) {
+    const games = JSON.parse(localStorage.getItem('downloadedGames')) || [];
+    games.push(gameData);
+    localStorage.setItem('downloadedGames', JSON.stringify(games));
+}

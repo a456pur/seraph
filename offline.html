@@ -81,6 +81,53 @@
                 
                 text-shadow: 5px 5px 5px var(--text-glow);
             }
+
+            .button-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .button {
+                background-color: black;
+                border: 3px solid white;
+
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 8px;
+
+                width: calc(50% - 10px); 
+                max-width: 480px;
+
+                width: 400px;
+                max-height: 100px;
+                box-sizing: border-box;
+
+                padding-left: 10px;
+                padding-right: 10px;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                border: 3.2px solid white;
+                border-radius: 16px;
+
+                transition: border 0.1s ease-in-out;
+                
+                position: relative;
+            }
+
+            .button:hover {
+                background-color: black;
+                border: 3.2px solid rgb(200, 189, 189);
+            }
+
+            .button h2 {
+                font-size: 30px;
+                text-align: center;
+            }
             
             @keyframes mainHeaderAnimation {
                 0% {
@@ -99,17 +146,36 @@
       <div class="content-side">
           <h1 class="typewriter"><span id="cursor">seraph</span></h1>
           <h2>version 10 / experimental build (offline mode)</h2>
+          <p>everything on this page is subject to change ( ´ ∀ `)ノ～ ♡ ~</p>
           <br>
-          <p>it worked! yay!</p>
-          <p style="margin-left: 20%; margin-right: 20%;">theres not really much here yet as i'm still heavily working on a lot of behind the scenes stuff, but try playing slope down below!</p>
-          <a href="games/slope/index.html">play slope</a>
           <br>
+          <h2 style="font-size: 30px;">downloaded games</h2>
+          <div class="button-container">
 
-          <p class="linkp"><a href="https://github.com/a456pur/seraph" target="_blank">source code</a> </p>
+          </div>
+          <p class="linkp"><a>example link</a> </p>
           
           <br>
           <a href="https://github.com/a456pur" target="_blank" style="text-decoration: none;">˗ˏˋ❀ website created & developed by @a456pur ❀ ´ˎ˗</a>
               
       </div>
+
+      <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const games = JSON.parse(localStorage.getItem('downloadedGames')) || [];
+                const container = document.querySelector('.button-container');
+                games.forEach(game => {
+                    const gameButton = document.createElement('a');
+                    gameButton.setAttribute('href', '/games/' + game.directory);
+                    gameButton.innerHTML = `
+                        <div class="button" style="background-image: url('${game.thumbnail}');" data-genre="platformer">
+                            <h2>${game.name}</h2>
+                        </div>
+                    `;
+                    container.appendChild(gameButton);
+                });
+            });
+
+      </script>
   </body>
 </html>

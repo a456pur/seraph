@@ -243,6 +243,14 @@ h1 {
     z-index: 2; 
 }
 
+.download-button {
+    position: absolute;
+    top: 5px;
+    left: 5px; 
+    text-decoration: underline;
+    z-index: 3; 
+}
+
 select {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -281,8 +289,6 @@ input {
     opacity: 0;
     animation: searchTween 2.5s ease-in-out forwards;
     animation-delay: 0s;
-
-    
 }
 
 input::placeholder {
@@ -299,6 +305,62 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.blackout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999; 
+}
+
+.confirmation-prompt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--background-color);
+    color: var(--text-color);
+    border: 3px solid var(--border-color2);
+    border-radius: 16px;
+    z-index: 1000; 
+    text-align: center;
+
+    padding-bottom: 10px;
+    width: 80%;
+    max-width: 488px;
+}
+
+.prompt-content {
+    text-align: center;
+}
+
+.prompt-content p {
+    margin-bottom: 20px;
+}
+
+.prompt-content button, button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 50%;
+    max-width: 200px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: var(--font-family);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px;
+    
+    transition: background-color 0.15s ease-in-out;
+
+    border: 2px solid var(--border-color2);
+    cursor: pointer;
+    border-radius: 32px;
 }
 
 @keyframes fadein {

@@ -1,0 +1,33 @@
+{
+    "slope/index.html": {
+        "files": [
+            "/games/slope/index.html",
+            "/games/slope/script.js",
+            "/games/slope/slope_new.json",
+            "/games/slope/slope_newdata.unityweb",
+            "/games/slope/slope_newwasmcode.unityweb",
+            "/games/slope/slope_newwasmframework.unityweb",
+            "/games/slope/UnityLoader.js",
+            "/games/slope/UnityProgress.js"
+        ],
+        "thumbnail": "/images/thumbnails/slope.jpg"
+    },
+    "subwaysurfers/index.html": {
+        "files": [
+            "/games/subwaysurfers/index.html",
+            "/games/subwaysurfers/Build/SanFrancisco/SanFrancisco.data.unityweb",
+            "/games/subwaysurfers/Build/SanFrancisco/SanFrancisco.json",
+            "/games/subwaysurfers/Build/SanFrancisco/SanFrancisco.wasm.code.unityweb",
+            "/games/subwaysurfers/Build/SanFrancisco/SanFrancisco.wasm.framework.unityweb",
+            "/games/subwaysurfers/5b01171c-3894-4a3d-adf4-6191f32b73bd",
+            "/games/subwaysurfers/4399.z.js",
+            "/games/subwaysurfers/062497be",
+            "/games/subwaysurfers/master-loader.js",
+            "/games/subwaysurfers/poki-sdk-core-v2.234.2.js",
+            "/games/subwaysurfers/poki-sdk.js",
+            "/games/subwaysurfers/unity.js",
+            "/games/subwaysurfers/UnityLoader.2019.2.js"
+        ],
+        "thumbnail": "/images/thumbnails/subwaysurfers.jpeg"
+    }
+}
