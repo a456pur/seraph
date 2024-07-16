@@ -228,6 +228,7 @@ function handleDownloadClick(event) {
     showConfirmationPrompt(gameName, gameDirectory, gameButton.style.backgroundImage);
 }
 
+
 function showConfirmationPrompt(gameName, gameDirectory) {
     const blackoutDiv = document.createElement('div');
     blackoutDiv.classList.add('blackout');
@@ -257,7 +258,21 @@ function showConfirmationPrompt(gameName, gameDirectory) {
         document.body.removeChild(blackoutDiv);
         document.body.removeChild(promptDiv);
     });
+
+    centerDivOnScroll();
+    window.addEventListener('scroll', centerDivOnScroll);
+    window.addEventListener('resize', centerDivOnScroll);
 }
+
+function centerDivOnScroll() {
+    const centerDiv = document.querySelector('.confirmation-prompt');
+    const scrollY = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+
+    const newTopPosition = scrollY + (windowHeight / 2);
+    centerDiv.style.top = `${newTopPosition}px`;
+}
+  
 async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv) {
     try {
         const response = await fetch('/storage/js/directories.json'); 

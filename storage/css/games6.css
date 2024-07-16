@@ -318,7 +318,7 @@ input::placeholder {
 }
 
 .confirmation-prompt {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -346,7 +346,7 @@ input::placeholder {
     background-color: var(--background-color);
     color: var(--text-color);
     width: 50%;
-    max-width: 200px;
+    max-width: 150px;
     padding-top: 2px;
     padding-bottom: 2px;
     font-family: var(--font-family);
