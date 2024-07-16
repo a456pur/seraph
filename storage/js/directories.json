@@ -122,7 +122,7 @@
             "/games/solitaire/index.html",
             "/games/solitaire/solitaire.swf"
         ],
-        "thumbnail": "/images/thumbnails/solitare.png"
+        "thumbnail": "/images/thumbnails/solitaire.jpg"
     },
     "papasdonuteria/index.html": {
         "files": [
@@ -222,7 +222,7 @@
             "/games/ducklife4/index.html",
             "/games/ducklife4/ruffle.js"
         ],
-        "thumbnail": "/images/thumbnails/ducklife4.png"
+        "thumbnail": "/images/thumbnails/ducklife4.jpg"
     },
     "grandtheftgrotto/index.html": {
         "files": [
@@ -250,7 +250,7 @@
             "/games/fancypantsadventure/fancypantsadventure.swf",
             "/games/fancypantsadventure/index.html"
         ],
-        "thumbnail": "/images/thumbnails/fancypantsadventure.png"
+        "thumbnail": "/images/thumbnails/fancypantsadventure.jpg"
     },
     "papaspastaria/index.html": {
         "files": [
@@ -421,7 +421,7 @@
             "/games/run3/Run3.swf",
             "/games/run3/index.html"
         ],
-        "thumbnail": "/images/thumbnails/run3.png"
+        "thumbnail": "/images/thumbnails/run3.jpg"
     },
     "shift3/index.html": {
         "files": [
@@ -477,7 +477,7 @@
             "/games/papaspancakeria/index.html",
             "/games/papaspancakeria/papaspancakeria.swf"
         ],
-        "thumbnail": "/images/thumbnails/papaspancakeria.png"
+        "thumbnail": "/images/thumbnails/papaspancakeria.jpg"
     },
     "tron/index.html": {
         "files": [
@@ -582,7 +582,7 @@
             "/games/theimpossiblequiz/index.html",
             "/games/theimpossiblequiz/the-impossible-quiz.swf"
         ],
-        "thumbnail": "/images/thumbnails/theimpossiblequiz.png"
+        "thumbnail": "/images/thumbnails/theimpossiblequiz.jpg"
     },
     "linerider/index.html": {
         "files": [
@@ -673,7 +673,7 @@
             "/games/redball1/index.html",
             "/games/redball1/redball1.swf"
         ],
-        "thumbnail": "/images/thumbnails/redball"
+        "thumbnail": "/images/thumbnails/redball.png"
     },
     "redballv3/index.html": {
         "files": [
@@ -687,14 +687,14 @@
             "/games/fleeingthecomplex/5.swf",
             "/games/fleeingthecomplex/index.html"
         ],
-        "thumbnail": "/images/thumbnails/fleeingthecomplex.png"
+        "thumbnail": "/images/thumbnails/fleeingthecomplex.jpg"
     },
     "thebindingofisaac/index.html": {
         "files": [
             "/games/thebindingofisaac/index.html",
             "/games/thebindingofisaac/the_binding_of_isaac.swf"
         ],
-        "thumbnail": "/images/thumbnails/thebindingofisaac.png"
+        "thumbnail": "/images/thumbnails/thebindingofisaac.jpg"
     },
     "papaspizzaria/index.html": {
         "files": [
@@ -704,7 +704,7 @@
             "/games/papaspizzaria/papaspizzaria.swf",
             "/games/papaspizzaria/ruffle.js"
         ],
-        "thumbnail": "/images/thumbnails/papaspizzaria.jpg"
+        "thumbnail": "/images/thumbnails/papaspizzeria.jpg"
     },
     "pool/index.html": {
         "files": [
@@ -754,14 +754,14 @@
             "/games/themehotel/index.html",
             "/games/themehotel/themehotel.swf"
         ],
-        "thumbnail": "/images/thumbnails/themehotel.png"
+        "thumbnail": "/images/thumbnails/themehotel.jpg"
     },
     "escapingtheprison/index.html": {
         "files": [
             "/games/escapingtheprison/escapingtheprison.swf",
             "/games/escapingtheprison/index.html"
         ],
-        "thumbnail": "/images/thumbnails/escapingtheprison.png"
+        "thumbnail": "/images/thumbnails/escapingtheprison.jpg"
     },
     "worldshardestgame2/index.html": {
         "files": [
@@ -789,7 +789,24 @@
             "/games/infiltratingtheairship/index.html",
             "/games/infiltratingtheairship/infiltratingtheairship.swf"
         ],
-        "thumbnail": "/images/thumbnails/infiltratingtheairship.png"
+        "thumbnail": "/images/thumbnails/infiltratingtheairship.jpg"
+    },
+    "papashotdoggeria/index.html": {
+        "files": [
+            "/games/papashotdoggeria/assets/builtins/avmplus.abc",
+            "/games/papashotdoggeria/assets/builtins/builtin.abc",
+            "/games/papashotdoggeria/assets/builtins/playerglobal.abcs",
+            "/games/papashotdoggeria/assets/builtins/playerglobal.json",
+            "/games/papashotdoggeria/assets/fonts.swf",
+            "/games/papashotdoggeria/assets/papa_hotdoggeria_sdk.swf",
+            "/games/papashotdoggeria/assets/papa_hotdoggeria_splashscreen.jpg",
+            "/games/papashotdoggeria/index.html",
+            "/games/papashotdoggeria/js/PapaSeries.js",
+            "/games/papashotdoggeria/js/loader.js",
+            "/games/papashotdoggeria/poki-sdk-core-v2.234.2.js",
+            "/games/papashotdoggeria/poki-sdk.js"
+        ],
+        "thumbnail": "/images/thumbnails/papashotdoggeria.jpg"
     },
     "sm64/index.html": {
         "files": [
@@ -807,5 +824,31 @@
             "/games/mc/index.html"
         ],
         "thumbnail": "/images/thumbnails/mc.jpg"
+    },
+    "driftmania/index.html": {
+        "files": [
+            "/games/driftmania/driftmania.js",
+            "/games/driftmania/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/driftmania.png"
+    },
+    "burritobison/index.html": {
+        "files": [
+            "/games/burritobison/Build/UnityLoader.js",
+            "/games/burritobison/Build/Web.asm.code.unityweb",
+            "/games/burritobison/Build/Web.asm.framework.unityweb",
+            "/games/burritobison/Build/Web.asm.framework.unityweb.js",
+            "/games/burritobison/Build/Web.asm.memory.unityweb",
+            "/games/burritobison/Build/Web.data.unityweb",
+            "/games/burritobison/Build/Web.json",
+            "/games/burritobison/Build/kongregate_api.js",
+            "/games/burritobison/Build/logo.png",
+            "/games/burritobison/index.html",
+            "/games/burritobison/js/analytics_ubg_v1_4.js",
+            "/games/burritobison/js/null.js",
+            "/games/burritobison/js/unity-mod.js",
+            "/games/burritobison/json/null.json"
+        ],
+        "thumbnail": "/images/thumbnails/burritobison.png"
     }
 }

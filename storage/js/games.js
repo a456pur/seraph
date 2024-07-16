@@ -310,6 +310,8 @@ async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv
         closeButton.addEventListener('click', () => {
             document.body.removeChild(blackoutDiv);
             document.body.removeChild(promptDiv);
+            window.removeEventListener('scroll', centerDivOnScroll);
+            window.removeEventListener('resize', centerDivOnScroll);
         });
         promptDiv.appendChild(closeButton);
     } catch (error) {
@@ -320,6 +322,8 @@ async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv
         closeButton.addEventListener('click', () => {
             document.body.removeChild(blackoutDiv);
             document.body.removeChild(promptDiv);
+            window.removeEventListener('scroll', centerDivOnScroll);
+            window.removeEventListener('resize', centerDivOnScroll);
         });
         promptDiv.appendChild(closeButton);
     }
