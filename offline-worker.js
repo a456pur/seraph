@@ -4,7 +4,7 @@ const OFFLINE_URLS = [
     '/images/backgrounds/seraph/offlinebg.jpg',
     '/images/ico.ico',
     '/storage/fonts/ubuntu/Ubuntu.woff2',
-    '/storage/js/directorylist.json',
+    '/storage/js/directories.json',
 
     '/storage/ruffle/a29c1b01570ffecf6fae.wasm',
     '/storage/ruffle/core.ruffle.1caf8a7231ccf85abb1d.js',

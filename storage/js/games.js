@@ -260,7 +260,7 @@ function showConfirmationPrompt(gameName, gameDirectory) {
 }
 async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv) {
     try {
-        const response = await fetch('/storage/js/directorylist.json'); // Adjust the path as needed
+        const response = await fetch('/storage/js/directories.json'); 
         if (!response.ok) {
             throw new Error('failed to fetch list');
         }

@@ -1537,35 +1537,80 @@
         ],
         "thumbnail": ""
     },
-    "btd/index.html": {
+    "btd/btd/index.html": {
         "files": [
             "/games/btd/btd/btd.swf",
-            "/games/btd/btd/index.html",
+            "/games/btd/btd/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "btd/btd2/index.html": {
+        "files": [
             "/games/btd/btd2/btd2.swf",
-            "/games/btd/btd2/index.html",
+            "/games/btd/btd2/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "btd/btd3/index.html": {
+        "files": [
             "/games/btd/btd3/btd3.swf",
-            "/games/btd/btd3/index.html",
+            "/games/btd/btd3/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "btd/btd4/index.html": {
+        "files": [
             "/games/btd/btd4/btd4.swf",
             "/games/btd/btd4/index.html"
         ],
         "thumbnail": ""
     },
-    "riddleschool/index.html": {
+    "riddleschool/riddleschool1/index.html": {
         "files": [
-            "/games/riddleschool/riddleschool1/index.html",
             "/games/riddleschool/riddleschool1/riddle-school.swf",
-            "/games/riddleschool/riddleschool2/index.html",
+            "/games/riddleschool/riddleschool1/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "riddleschool/riddleschool2/index.html": {
+        "files": [
             "/games/riddleschool/riddleschool2/riddle-school-2.swf",
-            "/games/riddleschool/riddleschool3/index.html",
+            "/games/riddleschool/riddleschool2/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "riddleschool/riddleschool3/index.html": {
+        "files": [
             "/games/riddleschool/riddleschool3/riddle-school-3.swf",
-            "/games/riddleschool/riddleschool4/index.html",
+            "/games/riddleschool/riddleschool3/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "riddleschool/riddleschool4/index.html": {
+        "files": [
             "/games/riddleschool/riddleschool4/riddle-school-4.swf",
-            "/games/riddleschool/riddleschool5/index.html",
+            "/games/riddleschool/riddleschool4/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "riddleschool/riddleschool5/index.html": {
+        "files": [
             "/games/riddleschool/riddleschool5/riddle-school-5.swf",
-            "/games/riddleschool/riddletransfer/index.html",
+            "/games/riddleschool/riddleschool5/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "riddleschool/riddletransfer/index.html": {
+        "files": [
             "/games/riddleschool/riddletransfer/riddle-transfer.swf",
-            "/games/riddleschool/riddletransfer2/index.html",
-            "/games/riddleschool/riddletransfer2/riddle-transfer-2.swf"
+            "/games/riddleschool/riddletransfer/index.html"
+        ],
+        "thumbnail": ""
+    },
+    "riddleschool/riddletransfer2/index.html": {
+        "files": [
+            "/games/riddleschool/riddletransfer2/riddle-transfer-2.swf",
+            "/games/riddleschool/riddletransfer2/index.html"
         ],
         "thumbnail": ""
     },

@@ -1,0 +1,811 @@
+{
+    "slope/index.html": {
+        "files": [
+            "/games/slope/UnityLoader.js",
+            "/games/slope/UnityProgress.js",
+            "/games/slope/index.html",
+            "/games/slope/script.js",
+            "/games/slope/slope_new.json",
+            "/games/slope/slope_newdata.unityweb",
+            "/games/slope/slope_newwasmcode.unityweb",
+            "/games/slope/slope_newwasmframework.unityweb"
+        ],
+        "thumbnail": "/images/thumbnails/slope.jpg"
+    },
+    "bloxors/index.html": {
+        "files": [
+            "/games/bloxors/bloxors.swf",
+            "/games/bloxors/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/bloxors.png"
+    },
+    "portal2/index.html": {
+        "files": [
+            "/games/portal2/index.html",
+            "/games/portal2/portal-2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/portal2.png"
+    },
+    "btd/btd/index.html": {
+        "files": [
+            "/games/btd/btd/btd.swf",
+            "/games/btd/btd/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/btd.png"
+    },
+    "btd/btd2/index.html": {
+        "files": [
+            "/games/btd/btd2/btd2.swf",
+            "/games/btd/btd2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/btd2.png"
+    },
+    "btd/btd3/index.html": {
+        "files": [
+            "/games/btd/btd3/btd3.swf",
+            "/games/btd/btd3/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/btd3.png"
+    },
+    "btd/btd4/index.html": {
+        "files": [
+            "/games/btd/btd4/btd4.swf",
+            "/games/btd/btd4/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/btd4.png"
+    },
+    "riddleschool/riddleschool1/index.html": {
+        "files": [
+            "/games/riddleschool/riddleschool1/riddle-school.swf",
+            "/games/riddleschool/riddleschool1/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/riddleschool.jpg"
+    },
+    "riddleschool/riddleschool2/index.html": {
+        "files": [
+            "/games/riddleschool/riddleschool2/riddle-school-2.swf",
+            "/games/riddleschool/riddleschool2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/riddleschool2.jpg"
+    },
+    "riddleschool/riddleschool3/index.html": {
+        "files": [
+            "/games/riddleschool/riddleschool3/riddle-school-3.swf",
+            "/games/riddleschool/riddleschool3/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/riddleschool3.jpg"
+    },
+    "riddleschool/riddleschool4/index.html": {
+        "files": [
+            "/games/riddleschool/riddleschool4/riddle-school-4.swf",
+            "/games/riddleschool/riddleschool4/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/riddleschool4.jpg"
+    },
+    "riddleschool/riddleschool5/index.html": {
+        "files": [
+            "/games/riddleschool/riddleschool5/riddle-school-5.swf",
+            "/games/riddleschool/riddleschool5/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/riddleschool5.jpg"
+    },
+    "riddleschool/riddletransfer/index.html": {
+        "files": [
+            "/games/riddleschool/riddletransfer/riddle-transfer.swf",
+            "/games/riddleschool/riddletransfer/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/riddletransfer.jpg"
+    },
+    "riddleschool/riddletransfer2/index.html": {
+        "files": [
+            "/games/riddleschool/riddletransfer2/riddle-transfer-2.swf",
+            "/games/riddleschool/riddletransfer2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/riddletransfer2.jpg"
+    },
+    "doodledefender/index.html": {
+        "files": [
+            "/games/doodledefender/doodledefender.swf",
+            "/games/doodledefender/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/doodledefender.png"
+    },
+    "papassushiria/index.html": {
+        "files": [
+            "/games/papassushiria/index.html",
+            "/games/papassushiria/papassushiria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papassushiria.png"
+    },
+    "solitaire/index.html": {
+        "files": [
+            "/games/solitaire/index.html",
+            "/games/solitaire/solitaire.swf"
+        ],
+        "thumbnail": "/images/thumbnails/solitare.png"
+    },
+    "papasdonuteria/index.html": {
+        "files": [
+            "/games/papasdonuteria/index.html",
+            "/games/papasdonuteria/papasdonuteria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papasdonuteria.png"
+    },
+    "electricbox/index.html": {
+        "files": [
+            "/games/electricbox/electric-box.swf",
+            "/games/electricbox/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/electricbox.png"
+    },
+    "electricman2/index.html": {
+        "files": [
+            "/games/electricman2/electric-man-2.swf",
+            "/games/electricman2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/electricman2.png"
+    },
+    "portal/index.html": {
+        "files": [
+            "/games/portal/index.html",
+            "/games/portal/portal.swf"
+        ],
+        "thumbnail": "/images/thumbnails/portal.png"
+    },
+    "connect4/index.html": {
+        "files": [
+            "/games/connect4/connect-4.swf",
+            "/games/connect4/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/connect4.png"
+    },
+    "ducklife5/index.html": {
+        "files": [
+            "/games/ducklife5/ducklife5.swf",
+            "/games/ducklife5/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/ducklife5.png"
+    },
+    "worldshardestgame/index.html": {
+        "files": [
+            "/games/worldshardestgame/index.html",
+            "/games/worldshardestgame/whg.swf"
+        ],
+        "thumbnail": "/images/thumbnails/worldshardestgame.png"
+    },
+    "ducklife2/index.html": {
+        "files": [
+            "/games/ducklife2/duck-life-2.swf",
+            "/games/ducklife2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/ducklife2.png"
+    },
+    "papasbakeria/index.html": {
+        "files": [
+            "/games/papasbakeria/index.html",
+            "/games/papasbakeria/papasbakeria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papasbakeria.png"
+    },
+    "stealingthediamond/index.html": {
+        "files": [
+            "/games/stealingthediamond/index.html",
+            "/games/stealingthediamond/stealingthediamond.swf"
+        ],
+        "thumbnail": "/images/thumbnails/stealingthediamond.jpg"
+    },
+    "ducklife/index.html": {
+        "files": [
+            "/games/ducklife/duck-life.swf",
+            "/games/ducklife/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/ducklife.png"
+    },
+    "ducklife3/index.html": {
+        "files": [
+            "/games/ducklife3/duck-life-3.swf",
+            "/games/ducklife3/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/ducklife3.png"
+    },
+    "monsterbrawl/index.html": {
+        "files": [
+            "/games/monsterbrawl/index.html",
+            "/games/monsterbrawl/monster-brawl.swf"
+        ],
+        "thumbnail": "/images/thumbnails/monsterbrawl.png"
+    },
+    "ducklife4/index.html": {
+        "files": [
+            "/games/ducklife4/c5c02c4e65c1c4423a97.wasm",
+            "/games/ducklife4/ducklife4.swf",
+            "/games/ducklife4/index.html",
+            "/games/ducklife4/ruffle.js"
+        ],
+        "thumbnail": "/images/thumbnails/ducklife4.png"
+    },
+    "grandtheftgrotto/index.html": {
+        "files": [
+            "/games/grandtheftgrotto/419174_grandTheftGrotto.swf",
+            "/games/grandtheftgrotto/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/grandtheftgrotto.png"
+    },
+    "supermeatboy/index.html": {
+        "files": [
+            "/games/supermeatboy/index.html",
+            "/games/supermeatboy/supermeatboy.swf"
+        ],
+        "thumbnail": "/images/thumbnails/supermeatboy.png"
+    },
+    "1on1soccer/index.html": {
+        "files": [
+            "/games/1on1soccer/1on1-soccer.swf",
+            "/games/1on1soccer/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/1on1soccer.png"
+    },
+    "fancypantsadventure/index.html": {
+        "files": [
+            "/games/fancypantsadventure/fancypantsadventure.swf",
+            "/games/fancypantsadventure/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/fancypantsadventure.png"
+    },
+    "papaspastaria/index.html": {
+        "files": [
+            "/games/papaspastaria/index.html",
+            "/games/papaspastaria/papaspastaria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papaspastaria.png"
+    },
+    "chooseyourweapon/index.html": {
+        "files": [
+            "/games/chooseyourweapon/choose-your-weapon.swf",
+            "/games/chooseyourweapon/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/chooseyourweapon.png"
+    },
+    "spaceinvaders/index.html": {
+        "files": [
+            "/games/spaceinvaders/index.html",
+            "/games/spaceinvaders/space-invaders.swf"
+        ],
+        "thumbnail": "/images/thumbnails/spaceinvaders.png"
+    },
+    "redball3/index.html": {
+        "files": [
+            "/games/redball3/index.html",
+            "/games/redball3/redball3.swf"
+        ],
+        "thumbnail": "/images/thumbnails/redball3.png"
+    },
+    "unfairmario/index.html": {
+        "files": [
+            "/games/unfairmario/index.html",
+            "/games/unfairmario/unfairmario.swf"
+        ],
+        "thumbnail": "/images/thumbnails/unfairmario.png"
+    },
+    "redball4/index.html": {
+        "files": [
+            "/games/redball4/index.html",
+            "/games/redball4/redball4.swf"
+        ],
+        "thumbnail": "/images/thumbnails/redball4.png"
+    },
+    "papascheeseria/index.html": {
+        "files": [
+            "/games/papascheeseria/index.html",
+            "/games/papascheeseria/papascheeseria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papascheeseria.png"
+    },
+    "papasfreezeria/index.html": {
+        "files": [
+            "/games/papasfreezeria/index.html",
+            "/games/papasfreezeria/papasfreezeria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papasfreezeria.png"
+    },
+    "shift/index.html": {
+        "files": [
+            "/games/shift/index.html",
+            "/games/shift/shift.swf"
+        ],
+        "thumbnail": "/images/thumbnails/shift.png"
+    },
+    "chooseyourweapon3/index.html": {
+        "files": [
+            "/games/chooseyourweapon3/choose-your-weapon-3.swf",
+            "/games/chooseyourweapon3/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/chooseyourweapon3.png"
+    },
+    "battleships/index.html": {
+        "files": [
+            "/games/battleships/battleships.swf",
+            "/games/battleships/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/battleships.png"
+    },
+    "factoryballs/index.html": {
+        "files": [
+            "/games/factoryballs/factory-balls.swf",
+            "/games/factoryballs/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/factoryballs.png"
+    },
+    "shift2/index.html": {
+        "files": [
+            "/games/shift2/index.html",
+            "/games/shift2/shift-2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/shift2.png"
+    },
+    "run2/index.html": {
+        "files": [
+            "/games/run2/Run2.swf",
+            "/games/run2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/run2.png"
+    },
+    "bubbletanks2/index.html": {
+        "files": [
+            "/games/bubbletanks2/bubble-tanks-2.swf",
+            "/games/bubbletanks2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/bubbletanks2.png"
+    },
+    "learntofly3/index.html": {
+        "files": [
+            "/games/learntofly3/index.html",
+            "/games/learntofly3/learn-to-fly-3.swf"
+        ],
+        "thumbnail": "/images/thumbnails/learntofly3.png"
+    },
+    "mctowerdefence2/index.html": {
+        "files": [
+            "/games/mctowerdefence2/index.html",
+            "/games/mctowerdefence2/minecraft-tower-defence-2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/mctowerdefence2.png"
+    },
+    "papastacomia/index.html": {
+        "files": [
+            "/games/papastacomia/assets/builtins/avmplus.abc",
+            "/games/papastacomia/assets/builtins/builtin.abc",
+            "/games/papastacomia/assets/builtins/playerglobal.abcs",
+            "/games/papastacomia/assets/builtins/playerglobal.json",
+            "/games/papastacomia/assets/fonts.swf",
+            "/games/papastacomia/assets/papa_taco_mia_sdk.swf",
+            "/games/papastacomia/assets/papa_taco_mia_splashscreen.jpg",
+            "/games/papastacomia/index.html",
+            "/games/papastacomia/js/PapaSeries.js",
+            "/games/papastacomia/js/loader.js",
+            "/games/papastacomia/poki-sdk-core-v2.234.2.js",
+            "/games/papastacomia/poki-sdk.js"
+        ],
+        "thumbnail": "/images/thumbnails/papastacomia.png"
+    },
+    "shopempire/index.html": {
+        "files": [
+            "/games/shopempire/index.html",
+            "/games/shopempire/shop_empire.swf"
+        ],
+        "thumbnail": "/images/thumbnails/shopempire.png"
+    },
+    "chooseyourweapon2/index.html": {
+        "files": [
+            "/games/chooseyourweapon2/choose-your-weapon-2.swf",
+            "/games/chooseyourweapon2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/chooseyourweapon.png"
+    },
+    "learntofly2/index.html": {
+        "files": [
+            "/games/learntofly2/index.html",
+            "/games/learntofly2/learn-to-fly-2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/learntofly2.png"
+    },
+    "shift4/index.html": {
+        "files": [
+            "/games/shift4/index.html",
+            "/games/shift4/shift-4.swf"
+        ],
+        "thumbnail": "/images/thumbnails/shift4.png"
+    },
+    "run3/index.html": {
+        "files": [
+            "/games/run3/Run3.swf",
+            "/games/run3/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/run3.png"
+    },
+    "shift3/index.html": {
+        "files": [
+            "/games/shift3/index.html",
+            "/games/shift3/shift-3.swf"
+        ],
+        "thumbnail": "/images/thumbnails/shift3.png"
+    },
+    "raftwars/index.html": {
+        "files": [
+            "/games/raftwars/index.html",
+            "/games/raftwars/raftwars.swf"
+        ],
+        "thumbnail": "/images/thumbnails/raftwars.png"
+    },
+    "thisistheonlylevel/index.html": {
+        "files": [
+            "/games/thisistheonlylevel/index.html",
+            "/games/thisistheonlylevel/thisistheonlylevel.swf"
+        ],
+        "thumbnail": "/images/thumbnails/thisistheonlylevel.png"
+    },
+    "gunmayhem2/index.html": {
+        "files": [
+            "/games/gunmayhem2/gunmayhem2.swf",
+            "/games/gunmayhem2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/gunmayhem2.png"
+    },
+    "skywire2/index.html": {
+        "files": [
+            "/games/skywire2/index.html",
+            "/games/skywire2/skywire-2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/skywire2.png"
+    },
+    "vex2/index.html": {
+        "files": [
+            "/games/vex2/index.html",
+            "/games/vex2/vex2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/vex2.png"
+    },
+    "vex/index.html": {
+        "files": [
+            "/games/vex/index.html",
+            "/games/vex/vex.swf"
+        ],
+        "thumbnail": "/images/thumbnails/vex.png"
+    },
+    "papaspancakeria/index.html": {
+        "files": [
+            "/games/papaspancakeria/index.html",
+            "/games/papaspancakeria/papaspancakeria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papaspancakeria.png"
+    },
+    "tron/index.html": {
+        "files": [
+            "/games/tron/index.html",
+            "/games/tron/tron.swf"
+        ],
+        "thumbnail": "/images/thumbnails/tron.png"
+    },
+    "supersmashflash/index.html": {
+        "files": [
+            "/games/supersmashflash/SuperSmash.swf",
+            "/games/supersmashflash/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/supersmashflash.png"
+    },
+    "swordsandsandals/index.html": {
+        "files": [
+            "/games/swordsandsandals/index.html",
+            "/games/swordsandsandals/swords-and-sandals.swf"
+        ],
+        "thumbnail": "/images/thumbnails/swordsandsandals.png"
+    },
+    "learntofly/index.html": {
+        "files": [
+            "/games/learntofly/icon.png",
+            "/games/learntofly/index.html",
+            "/games/learntofly/ltf.swf"
+        ],
+        "thumbnail": "/images/thumbnails/learntofly.png"
+    },
+    "mariocombat/index.html": {
+        "files": [
+            "/games/mariocombat/index.html",
+            "/games/mariocombat/mario-combat.swf"
+        ],
+        "thumbnail": "/images/thumbnails/mariocombat.png"
+    },
+    "supermarioflash2/index.html": {
+        "files": [
+            "/games/supermarioflash2/index.html",
+            "/games/supermarioflash2/super-mario-flash-2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/supermarioflash2.png"
+    },
+    "happywheels/index.html": {
+        "files": [
+            "/games/happywheels/HappyWheels.swf",
+            "/games/happywheels/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/happywheels.jpg"
+    },
+    "papasburgeria/index.html": {
+        "files": [
+            "/games/papasburgeria/assets/builtins/avmplus.abc",
+            "/games/papasburgeria/assets/builtins/builtin.abc",
+            "/games/papasburgeria/assets/builtins/n",
+            "/games/papasburgeria/assets/builtins/playerglobal.abcs",
+            "/games/papasburgeria/assets/builtins/playerglobal.json",
+            "/games/papasburgeria/assets/fonts.swf",
+            "/games/papasburgeria/assets/n",
+            "/games/papasburgeria/assets/papa_burgeria_sdk.swf",
+            "/games/papasburgeria/assets/todo.gif",
+            "/games/papasburgeria/index.html",
+            "/games/papasburgeria/js/PapaSeries.js",
+            "/games/papasburgeria/js/PapasBurgeria.js",
+            "/games/papasburgeria/js/loader.js",
+            "/games/papasburgeria/poki-sdk-core.js",
+            "/games/papasburgeria/splash.jpg"
+        ],
+        "thumbnail": "/images/thumbnails/papasburgeria.jpg"
+    },
+    "swordsandsandals2/index.html": {
+        "files": [
+            "/games/swordsandsandals2/index.html",
+            "/games/swordsandsandals2/swords-and-sandals-2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/swordsandsandals2.png"
+    },
+    "supermarioflash/index.html": {
+        "files": [
+            "/games/supermarioflash/index.html",
+            "/games/supermarioflash/super-mario-flash.swf"
+        ],
+        "thumbnail": "/images/thumbnails/supermarioflash.png"
+    },
+    "papascupcakeria/index.html": {
+        "files": [
+            "/games/papascupcakeria/index.html",
+            "/games/papascupcakeria/papascupcakeria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papascupcakeria.png"
+    },
+    "redballv2/index.html": {
+        "files": [
+            "/games/redballv2/index.html",
+            "/games/redballv2/redball4v2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/redball4vol2.png"
+    },
+    "theimpossiblequiz/index.html": {
+        "files": [
+            "/games/theimpossiblequiz/index.html",
+            "/games/theimpossiblequiz/the-impossible-quiz.swf"
+        ],
+        "thumbnail": "/images/thumbnails/theimpossiblequiz.png"
+    },
+    "linerider/index.html": {
+        "files": [
+            "/games/linerider/index.html",
+            "/games/linerider/line-rider.swf"
+        ],
+        "thumbnail": "/images/thumbnails/linerider.png"
+    },
+    "achievementunlocked3/index.html": {
+        "files": [
+            "/games/achievementunlocked3/achievement-unlocked-3.swf",
+            "/games/achievementunlocked3/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/achievementunlocked3.png"
+    },
+    "multitask/index.html": {
+        "files": [
+            "/games/multitask/index.html",
+            "/games/multitask/multitask.swf"
+        ],
+        "thumbnail": "/images/thumbnails/multitask.png"
+    },
+    "bigredbutton/index.html": {
+        "files": [
+            "/games/bigredbutton/big_red_button.swf",
+            "/games/bigredbutton/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/bigredbutton.png"
+    },
+    "sprinter/index.html": {
+        "files": [
+            "/games/sprinter/index.html",
+            "/games/sprinter/sprinter.swf"
+        ],
+        "thumbnail": "/images/thumbnails/sprinter.png"
+    },
+    "badpiggies/index.html": {
+        "files": [
+            "/games/badpiggies/badpiggies.swf",
+            "/games/badpiggies/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/badpiggies.png"
+    },
+    "skywire/index.html": {
+        "files": [
+            "/games/skywire/index.html",
+            "/games/skywire/skywire.swf"
+        ],
+        "thumbnail": "/images/thumbnails/skywire.png"
+    },
+    "raftwars2/index.html": {
+        "files": [
+            "/games/raftwars2/index.html",
+            "/games/raftwars2/raft-wars-2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/raftwars2.png"
+    },
+    "breakingthebank/index.html": {
+        "files": [
+            "/games/breakingthebank/breaking-the-bank.swf",
+            "/games/breakingthebank/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/breakingthebank.png"
+    },
+    "run/index.html": {
+        "files": [
+            "/games/run/Run.swf",
+            "/games/run/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/run.png"
+    },
+    "gunmayhemredux/index.html": {
+        "files": [
+            "/games/gunmayhemredux/gunmayhemredux.swf",
+            "/games/gunmayhemredux/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/gunmayhemredux.png"
+    },
+    "achievementunlocked2/index.html": {
+        "files": [
+            "/games/achievementunlocked2/achievement-unlocked-2.swf",
+            "/games/achievementunlocked2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/achievementunlocked2.png"
+    },
+    "redball1/index.html": {
+        "files": [
+            "/games/redball1/index.html",
+            "/games/redball1/redball1.swf"
+        ],
+        "thumbnail": "/images/thumbnails/redball"
+    },
+    "redballv3/index.html": {
+        "files": [
+            "/games/redballv3/index.html",
+            "/games/redballv3/redball4v3.swf"
+        ],
+        "thumbnail": "/images/thumbnails/redball4vol3.png"
+    },
+    "fleeingthecomplex/index.html": {
+        "files": [
+            "/games/fleeingthecomplex/5.swf",
+            "/games/fleeingthecomplex/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/fleeingthecomplex.png"
+    },
+    "thebindingofisaac/index.html": {
+        "files": [
+            "/games/thebindingofisaac/index.html",
+            "/games/thebindingofisaac/the_binding_of_isaac.swf"
+        ],
+        "thumbnail": "/images/thumbnails/thebindingofisaac.png"
+    },
+    "papaspizzaria/index.html": {
+        "files": [
+            "/games/papaspizzaria/c5c02c4e65c1c4423a97.wasm",
+            "/games/papaspizzaria/index.html",
+            "/games/papaspizzaria/papaspizzaria.jpg",
+            "/games/papaspizzaria/papaspizzaria.swf",
+            "/games/papaspizzaria/ruffle.js"
+        ],
+        "thumbnail": "/images/thumbnails/papaspizzaria.jpg"
+    },
+    "pool/index.html": {
+        "files": [
+            "/games/pool/index.html",
+            "/games/pool/pool.swf"
+        ],
+        "thumbnail": "/images/thumbnails/pool.png"
+    },
+    "chibiknight/index.html": {
+        "files": [
+            "/games/chibiknight/chibiknight.swf",
+            "/games/chibiknight/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/chibiknight.png"
+    },
+    "achievementunlocked/index.html": {
+        "files": [
+            "/games/achievementunlocked/achievement-unlocked.swf",
+            "/games/achievementunlocked/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/achievementunlocked.png"
+    },
+    "gunmayhem/index.html": {
+        "files": [
+            "/games/gunmayhem/gunmayhem.swf",
+            "/games/gunmayhem/icon.png",
+            "/games/gunmayhem/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/gunmayhem.png"
+    },
+    "papaswingeria/index.html": {
+        "files": [
+            "/games/papaswingeria/index.html",
+            "/games/papaswingeria/papaswingeria.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papaswingeria.png"
+    },
+    "theimpossiblequiz2/index.html": {
+        "files": [
+            "/games/theimpossiblequiz2/impossiblequiz2.swf",
+            "/games/theimpossiblequiz2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/theimpossiblequiz2.png"
+    },
+    "themehotel/index.html": {
+        "files": [
+            "/games/themehotel/index.html",
+            "/games/themehotel/themehotel.swf"
+        ],
+        "thumbnail": "/images/thumbnails/themehotel.png"
+    },
+    "escapingtheprison/index.html": {
+        "files": [
+            "/games/escapingtheprison/escapingtheprison.swf",
+            "/games/escapingtheprison/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/escapingtheprison.png"
+    },
+    "worldshardestgame2/index.html": {
+        "files": [
+            "/games/worldshardestgame2/index.html",
+            "/games/worldshardestgame2/whg2.swf"
+        ],
+        "thumbnail": "/images/thumbnails/worldshardestgame2.png"
+    },
+    "fancypantsadventure2/index.html": {
+        "files": [
+            "/games/fancypantsadventure2/fancy-pants-adventure2.swf",
+            "/games/fancypantsadventure2/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/fancypantsadventure2"
+    },
+    "papasscooperia/index.html": {
+        "files": [
+            "/games/papasscooperia/index.html",
+            "/games/papasscooperia/papasscooperia.swf"
+        ],
+        "thumbnail": "/images/thumbnails/papasscooperia.png"
+    },
+    "infiltratingtheairship/index.html": {
+        "files": [
+            "/games/infiltratingtheairship/index.html",
+            "/games/infiltratingtheairship/infiltratingtheairship.swf"
+        ],
+        "thumbnail": "/images/thumbnails/infiltratingtheairship.png"
+    },
+    "sm64/index.html": {
+        "files": [
+            "/games/sm64/index.html",
+            "/games/sm64/logo.png",
+            "/games/sm64/sm64.us.f3dex2e.html.zip",
+            "/games/sm64/sm64.us.f3dex2e.js",
+            "/games/sm64/sm64.us.f3dex2e.wasm",
+            "/games/sm64/sm64.us.f3dex2e.wasm.map"
+        ],
+        "thumbnail": "/images/thumbnails/sm64.jpg"
+    },
+    "mc/index.html": {
+        "files": [
+            "/games/mc/index.html"
+        ],
+        "thumbnail": "/images/thumbnails/mc.jpg"
+    }
+}

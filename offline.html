@@ -199,7 +199,7 @@
                 localStorage.setItem('downloadedGames', JSON.stringify(updatedGames));
 
                 const cache = await caches.open('game-cache');
-                const response = await fetch('/storage/js/directorylist.json'); 
+                const response = await fetch('/storage/js/directories.json'); 
                 if (!response.ok) {
                     throw new Error('Failed to fetch directory list');
                 }
