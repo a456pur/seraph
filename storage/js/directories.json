@@ -850,5 +850,27 @@
             "/games/burritobison/json/null.json"
         ],
         "thumbnail": "/images/thumbnails/burritobison.png"
+    },
+    "amazingropepolice/index.html": {
+        "files": [
+            "/games/amazingropepolice/UnityLoader.js",
+            "/games/amazingropepolice/amazing-strange-rope-police-vice-spider-vegas.jpg",
+            "/games/amazingropepolice/amazing-strange-rope-police-vice-spider-vegasb.mp4",
+            "/games/amazingropepolice/crazygames-gameframe-v1.bundle.css",
+            "/games/amazingropepolice/crazygames-gameframe-v1.bundle.js",
+            "/games/amazingropepolice/index.html",
+            "/games/amazingropepolice/sdk.js",
+            "/games/amazingropepolice/spider.asm.code.unityweb",
+            "/games/amazingropepolice/spider.asm.framework.unityweb",
+            "/games/amazingropepolice/spider.asm.memory.unityweb",
+            "/games/amazingropepolice/spider.data.unityweb",
+            "/games/amazingropepolice/spider.json",
+            "/games/amazingropepolice/spiderUnityLoader.js",
+            "/games/amazingropepolice/spired.html",
+            "/games/amazingropepolice/spired1.html",
+            "/games/amazingropepolice/splash.jpeg",
+            "/games/amazingropepolice/vaxoo.html"
+        ],
+        "thumbnail": "/images/thumbnails/amazingropepolice.png"
     }
 }
