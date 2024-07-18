@@ -54,7 +54,7 @@ function applyCustomThemeStyles() {
     customStyleTag.textContent = `
         :root {
             --background-image: url('${customTheme['background-image'] || ''}');
-            --font-family: '${customTheme['font-family'] || ''}', sans-serif;
+            --font-family: '${customTheme['font-family'] || ''}', 'Ubuntu', sans-serif;
             --text-color: ${customTheme['text-color'] || '#fff'};
             --background-color: ${customTheme['background-color'] || 'black'};
             --border-color1: ${customTheme['border-color1'] || '#aaaaaa'};
@@ -296,4 +296,100 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+});
+
+// export/import custom themes
+document.getElementById('export-theme').addEventListener('click', function() {
+    const blackout = document.createElement('div');
+    blackout.id = 'blackout';
+    const themePrompt = document.createElement('div');
+    themePrompt.id = 'theme-prompt';
+    themePrompt.innerHTML = `
+        <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                    background-color: var(--background-color); border: 3px solid var(--border-color2); border-radius: 16px; color: var(--text-color); z-index: 9999; text-align: center; width: 60%; max-width: 550px; animation: none; margin-bottom: 40px;">
+            <h2 style="margin-top: 20.08px;">choose a name</h2>
+            <p>type a name for your custom theme! you'll then receive a .theme file which you can then import back into the site when you need</p> 
+            <br>
+            <input type="text" style="background-color: var(--background-color); color: var(--text-color);padding: 2px; border: 2px solid var(--border-color2);border-radius: 16px; width: 50%; max-width: 450px;font-size: 20px; font-family: var(--font-family); text-align: center; padding-top: 5px; padding-bottom: 5px;" id="theme-name" placeholder="enter a name here">
+            <br>
+            <button id="save-theme">export</button>
+            <button id="cancel-export-theme">cancel</button>
+            <br>
+            <br>
+        </div>
+    `;
+    document.body.appendChild(blackout);
+    document.body.appendChild(themePrompt);
+
+    document.getElementById('blackout').style.display = 'block';
+    document.getElementById('theme-prompt').style.display = 'block';
+
+    document.getElementById('save-theme').addEventListener('click', function() {
+        let themeName = document.getElementById('theme-name').value;
+        if (!themeName) {
+            themeName = 'customtheme'
+        }
+
+        const theme = {
+            backgroundImage: document.getElementById('background-image').value,
+            fontFamily: document.getElementById('font-family').value,
+            textColor: document.getElementById('text-color').value,
+            backgroundColor: document.getElementById('background-color').value,
+            borderColor1: document.getElementById('border-color1').value,
+            borderColor2: document.getElementById('border-color2').value,
+            hoverColor: document.getElementById('hover-color').value,
+            textGlow: document.getElementById('text-glow').value
+        };
+
+        const themeJson = JSON.stringify(theme, null, 2);
+        const blob = new Blob([themeJson], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `seraph-${themeName}.theme`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        document.getElementById('blackout').style.display = 'none';
+        document.getElementById('theme-prompt').style.display = 'none';
+        document.body.removeChild(blackout);
+        document.body.removeChild(themePrompt);
+    });
+
+
+});
+
+document.getElementById('import-theme').addEventListener('click', function() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.theme';
+    input.style.display = 'none';
+    document.body.appendChild(input);
+
+    input.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (!file) {
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const theme = JSON.parse(e.target.result);
+            document.getElementById('background-image').value = theme.backgroundImage || '';
+            document.getElementById('font-family').value = theme.fontFamily || '';
+            document.getElementById('text-color').value = theme.textColor || '';
+            document.getElementById('background-color').value = theme.backgroundColor || '';
+            document.getElementById('border-color1').value = theme.borderColor1 || '';
+            document.getElementById('border-color2').value = theme.borderColor2 || '';
+            document.getElementById('hover-color').value = theme.hoverColor || '';
+            document.getElementById('text-glow').value = theme.textGlow || '';
+
+            document.getElementById('apply-custom-theme').click();
+            document.body.removeChild(input);
+        };
+        reader.readAsText(file);
+    });
+
+    input.click();
 });
