@@ -214,6 +214,50 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // downloading handler
+
+const OFFLINE_MODE = [
+    // offline mode page files
+    '/offline.html',
+    '/images/backgrounds/seraph/offlinebg.jpg',
+    '/images/ico.ico',
+    '/storage/fonts/ubuntu/Ubuntu.woff2',
+    '/storage/js/directories.json',
+
+    // download ruffle
+    '/storage/ruffle/a29c1b01570ffecf6fae.wasm',
+    '/storage/ruffle/core.ruffle.1caf8a7231ccf85abb1d.js',
+    '/storage/ruffle/core.ruffle.1caf8a7231ccf85abb1d.js.map',
+    '/storage/ruffle/core.ruffle.78cc902cbabd4bc44008.js',
+    '/storage/ruffle/core.ruffle.78cc902cbabd4bc44008.js.map',
+    '/storage/ruffle/d6c752be1c7e690bf226.wasm',
+    '/storage/ruffle/package.json',
+    '/storage/ruffle/ruffle.js',
+    '/storage/ruffle/ruffle.js.map'
+];
+
+async function areEssentialFilesCached() {
+    const cache = await caches.open('offlinemode-cache');
+    const promises = OFFLINE_MODE.map(async (file) => {
+        const response = await cache.match(file);
+        return !!response;
+    });
+    const results = await Promise.all(promises);
+    return results.every(result => result);
+}
+
+async function cacheEssentialFiles() {
+    const cache = await caches.open('game-cache');
+    await cache.addAll(OFFLINE_MODE);
+}
+
+async function ensureEssentialFiles(promptDiv) {
+    const essentialFilesCached = await areEssentialFilesCached();
+    if (!essentialFilesCached) {
+        promptDiv.querySelector('p').textContent = `downloading offline mode files. speed of this may depend on your internet connection. `;
+        await cacheEssentialFiles();
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.download-button').forEach(button => {
         button.addEventListener('click', handleDownloadClick);
@@ -248,9 +292,13 @@ function showConfirmationPrompt(gameName, gameDirectory) {
     document.body.appendChild(promptDiv);
 
     document.getElementById('confirm-yes').addEventListener('click', () => {
-        promptDiv.querySelector('p').textContent = `downloading ${gameName}. speeds vary depending on the game size and your internet connection.`;
+        promptDiv.querySelector('p').textContent = `preparing to download ${gameName}. please wait..`;
         promptDiv.querySelector('#confirm-yes').remove();
         promptDiv.querySelector('#confirm-no').remove();
+        ensureEssentialFiles(promptDiv);
+
+        promptDiv.querySelector('p').textContent = `downloading ${gameName}. speeds vary depending on the game size and your internet connection.`;
+
         downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv);
     });
 
@@ -283,9 +331,10 @@ async function downloadGameFiles(gameName, gameDirectory, promptDiv, blackoutDiv
         const directoryList = await response.json();
         const gameData = directoryList[gameDirectory];
         if (!gameData || !gameData.files) {
-            throw new Error('no files found for');
+            throw new Error('no files found for game.');
         }
 
+        promptDiv.querySelector('p').textContent = `downloading ${gameName}. speeds vary depending on the game size and your internet connection.`;
         const files = gameData.files;
         const cache = await caches.open('game-cache');
 

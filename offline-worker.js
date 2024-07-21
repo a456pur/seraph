@@ -1,20 +1,6 @@
 const CACHE_NAME = 'seraph-cache';
 const OFFLINE_URLS = [
     '/offline.html',
-    '/images/backgrounds/seraph/offlinebg.jpg',
-    '/images/ico.ico',
-    '/storage/fonts/ubuntu/Ubuntu.woff2',
-    '/storage/js/directories.json',
-
-    '/storage/ruffle/a29c1b01570ffecf6fae.wasm',
-    '/storage/ruffle/core.ruffle.1caf8a7231ccf85abb1d.js',
-    '/storage/ruffle/core.ruffle.1caf8a7231ccf85abb1d.js.map',
-    '/storage/ruffle/core.ruffle.78cc902cbabd4bc44008.js',
-    '/storage/ruffle/core.ruffle.78cc902cbabd4bc44008.js.map',
-    '/storage/ruffle/d6c752be1c7e690bf226.wasm',
-    '/storage/ruffle/package.json',
-    '/storage/ruffle/ruffle.js',
-    '/storage/ruffle/ruffle.js.map'
 ];
 
 self.addEventListener('install', function(event) {
