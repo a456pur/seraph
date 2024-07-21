@@ -12,7 +12,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../images/ico.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../storage/css/apps6.css">
+        <link rel="stylesheet" href="/storage/css/apps6.css">
         <title>Apps | Seraph</title>
 
         <meta name="description" content="seraph; an open source unblocked games website hosting 300+ games with rehosting support, custom themes, cloaking, apps + more!">
@@ -43,7 +43,7 @@
     <body>
         <h1>apps</h1>
         <input type="text" id="search" placeholder="⌕ search" autocomplete="off">
-        <p class="linkp"><a href="../index.html">homepage</a> •  <a href="https://github.com/a456pur/seraph" target="_blank">github</a> •  <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a> •  <a id="openBlankLink">open blank</a></p>
+        <p class="linkp"><a href="/index.html">homepage</a> •  <a href="https://github.com/a456pur/seraph" target="_blank">github</a> •  <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a> •  <a id="openBlankLink">open blank</a></p>
 
         <div class="button-container">
             <a target="_blank" href="ruffle/index.html">
@@ -133,117 +133,11 @@
 
         <p> // all apps hosted on this website are complete copyright & property of their respective owners \\</p>
 
-        <script>
-            function filterGames() {
-                const searchInput = document.getElementById('search').value.toLowerCase();
-                const buttons = document.querySelectorAll('.button h2');
-
-                buttons.forEach(button => {
-                    const gameName = button.textContent.toLowerCase();
-                    const buttonContainer = button.parentElement.parentElement;
-
-                    if (gameName.includes(searchInput)) {
-                        buttonContainer.style.display = 'block'; 
-                    } else {
-                        buttonContainer.style.display = 'none';
-                    }
-                });
-            }
-
-            document.getElementById('search').addEventListener('input', filterGames);
-        </script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var openBlankLink = document.getElementById('openBlankLink');
-            
-                openBlankLink.addEventListener('click', function(event) {
-                    event.preventDefault();
-            
-                    var newTab = window.open('about:blank', '_blank');
-            
-                    if (newTab) {
-                        var newTabBody = newTab.document.body;
-                        newTabBody.style.padding = '0';
-                        newTabBody.style.margin = '0';
-                        newTabBody.style.border = 'hidden';
-            
-                        var iframe = document.createElement('iframe');
-                        iframe.src = window.location.href;
-                        iframe.style.width = '100%';
-                        iframe.style.height = '100%';
-                        iframe.style.border = 'hidden';
-
-                        iframe.onload = function() {
-                            var links = iframe.contentDocument.querySelectorAll('a[target="_blank"]');
-                            links.forEach(function(link) {
-                                link.addEventListener('click', function(event) {
-                                    event.preventDefault();
-                                    iframe.contentWindow.location.href = link.href;
-                                });
-                            });
-                        };
-            
-                        newTab.document.body.appendChild(iframe);
-                    } else {
-                        alert("couldn't manage to open a new tab :(");
-                    }
-                });
-            });
-            </script>    
-
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                function cookie(name, value = null, days = null) {
-                    if (value !== null) {
-                        let expires = "";
-                        if (days) {
-                            let date = new Date();
-                            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                            expires = "; expires=" + date.toUTCString();
-                        }
-                        document.cookie = name + "=" + (value || "") + expires + "; path=/";
-                    } else {
-                        let cookieArr = document.cookie.split(';');
-                        for (let i = 0; i < cookieArr.length; i++) {
-                            let cookiePair = cookieArr[i].split('=');
-                            if (name === cookiePair[0].trim()) {
-                                return decodeURIComponent(cookiePair[1]);
-                            }
-                        }
-                        return null;
-                    }
-                }
-
-                let openBlankSetting = cookie('open-blank');
-                if (!openBlankSetting) {
-                    openBlankSetting = 'true';
-                    cookie('open-blank', openBlankSetting, 365);
-                }
-                document.querySelector(`input[name="openBlankSetting"][value="${openBlankSetting}"]`).checked = true;
-
-                document.querySelectorAll('input[name="openBlankSetting"]').forEach(radio => {
-                    radio.addEventListener('change', (event) => {
-                        let selectedValue = event.target.value;
-                        cookie('open-blank', selectedValue, 365);
-
-                        let anchorTags = document.querySelectorAll('a');
-                        if (selectedValue === 'false') {
-                            anchorTags.forEach(anchor => {
-                                anchor.removeAttribute('target');
-                            });
-                        } else {
-                            anchorTags.forEach(anchor => {
-                                anchor.setAttribute('target', '_blank');
-                            });
-                        }
-                    });
-                });
-            });
-        </script>
         
-        <script src="../storage/js/cloak.js"></script>
-        <script src="../storage/js/theme.js"></script>
-        <script src="../storage/js/cookie.js"></script>
+        
+        <script src="/storage/js/cloak.js"></script>
+        <script src="/storage/js/theme.js"></script>
+        <script src="/storage/js/cookie.js"></script>
+        <script src="/storage/js/apps.js"></script>
     </body>
 </html>
