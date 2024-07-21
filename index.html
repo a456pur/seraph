@@ -29,15 +29,12 @@
             <img src="/images/other/devbuildb.jpg" style="width: 90%;">
             <br><br>
             <h2 style="font-size: 28px; text-decoration: underline;">version 10 - dev build b update</h2>
-            <li>offline mode! wait about ten seconds on the homepage, then load the site without internet</li>
-            <li>added data management to settings - import, export and clear data</li>
-            <li>added panic mode to settings - customise panic key shortcut and url</li>
-            <li>fixed tab cloaking globally on all pages</li>
-            <li>added an update popup on visit of the site for whenever new updates are made to seraph</li>
-            <li>update log page is now a dropdown instead of a long page</li>
-            <li>fixed 404 page's broken styling, fonts, images and links</li>
-            <li>compressed images on site, leading to 70-90% decrease in file sizes</li>
-            <li>improved custom themes with no refreshing required per update</li>
+            <li>offline mode is 90% finished! go to the games page and try downloading some games :o</li>
+            <li>added the ability to import/export custom themes</li>
+            <li>added an open games/apps in blank tab setting</li>
+            <li>consolidated lots of stuff into seperate scripts for better management</li>
+            <li>fixed 404 yet again</li>
+            <li>numerous bug fixes + undocumented changes</li>
         </div>
 
         <div id="updPopup-footer">
@@ -46,7 +43,7 @@
       </div>
       <div class="content-side">
           <h1 class="typewriter"><span id="cursor"></span></h1>
-          <h2>version 10 / experimental build</h2>
+          <h2>version 10 / development build</h2>
           <br>
 
           <div class="button-container">
@@ -97,10 +94,10 @@
 
       <script>
         document.addEventListener('DOMContentLoaded', function () {
-            if (!localStorage.getItem('v10-devbuildaupdate')) {
+            if (!localStorage.getItem('v10-devbuildbupdate')) {
                 document.getElementById('blackout').style.display = 'block';
                 document.getElementById('updPopup').style.display = 'block';
-                localStorage.setItem('v10-devbuildaupdate', 'true');
+                localStorage.setItem('v10-devbuildbupdate', 'true');
             }
             document.getElementById('updConfirm').addEventListener('click', function () {
                 document.getElementById('blackout').style.display = 'none';
