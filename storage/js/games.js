@@ -167,7 +167,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const pinButton = document.createElement("span");
                 pinButton.classList.add("pin-button");
-                pinButton.innerText = "✖";
+
+                const img = document.createElement("img");
+                img.src = "/images/other/cross.png";
+                img.width = 25;
+                img.height = 25;
+
+                pinButton.appendChild(img);
+
                 pinButton.addEventListener("click", (event) => {
                     event.preventDefault();
                     unpinGame(game.name);

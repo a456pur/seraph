@@ -238,7 +238,7 @@ h1 {
 .pin-button {
     position: absolute;
     top: 5px;
-    right: 5px; 
+    right: 2px; 
     
     z-index: 2; 
 }
@@ -246,7 +246,7 @@ h1 {
 .download-button {
     position: absolute;
     top: 5px;
-    left: 5px; 
+    left: 2px; 
     text-decoration: underline;
     z-index: 3; 
 }
