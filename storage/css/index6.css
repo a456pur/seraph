@@ -159,6 +159,8 @@ body {
     
     scrollbar-width: none;
     -ms-overflow-style: none;
+
+    height: 100%;
 }
   
 body::-webkit-scrollbar {
@@ -219,6 +221,7 @@ p {
 }
   
 a {
+    margin-top: 15px;
     font-size: 18px;
     text-decoration: underline;
     color: var(--text-color);
