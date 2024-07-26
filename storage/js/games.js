@@ -239,7 +239,18 @@ const OFFLINE_MODE = [
     '/storage/ruffle/d6c752be1c7e690bf226.wasm',
     '/storage/ruffle/package.json',
     '/storage/ruffle/ruffle.js',
-    '/storage/ruffle/ruffle.js.map'
+    '/storage/ruffle/ruffle.js.map',
+
+    // download cloaking
+    '/storage/js/cloak.js',
+    '/images/icons/google.ico',
+    '/images/icons/bing.ico',
+    '/images/icons/gmail.ico',
+    '/images/icons/desmos.ico',
+    '/images/icons/googleclassroom.ico',
+    '/images/icons/wikipedia.ico',
+    '/images/icons/chromenewtab.ico',
+    '/images/icons/googledrive.ico'
 ];
 
 async function areEssentialFilesCached() {
