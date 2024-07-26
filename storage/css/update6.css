@@ -31,6 +31,9 @@
 :root.theme-metro {
     --background-image: url('/images/backgrounds/metro/updatebg.jpg');
 }
+:root.theme-ghostly {
+    --background-image: url('/images/backgrounds/ghostly/update.jpg');
+}
 
 html, body {
     margin: 0;

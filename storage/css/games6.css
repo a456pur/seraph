@@ -2,7 +2,7 @@
 
 :root {
     --background-image: url('/images/backgrounds/seraph/gamebg.jpg');
-    --hover-color: #a19b9b;
+    --border-color1: #a19b9b;
 }
 :root.theme-azurite {
     --background-image: url('/images/backgrounds/azure/gamesbg.jpg');
@@ -30,6 +30,10 @@
 }
 :root.theme-metro {
     --background-image: url('/images/backgrounds/metro/gamesbg.jpg');
+}
+:root.theme-ghostly {
+    --background-image: url('/images/backgrounds/ghostly/gamesbg.jpg');
+    --border-color1: #d2c4c4;
 }
 
 html {

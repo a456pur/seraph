@@ -30,6 +30,9 @@
 :root.theme-metro {
     --background-image: url('/images/backgrounds/metro/hostbg.jpg');
 }
+:root.theme-ghostly {
+    --background-image: url('/images/backgrounds/ghostly/hostbg.jpg');
+}
 
 body {
     margin: 0;

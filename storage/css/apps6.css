@@ -31,6 +31,10 @@
 :root.theme-metro {
     --background-image: url('/images/backgrounds/metro/appsbg.jpg');
 }
+:root.theme-ghostly {
+    --background-image: url('/images/backgrounds/ghostly/appsbg.jpg');
+    --hover-color: #d2c4c4;
+}
 
 html {
     scroll-behavior: smooth;

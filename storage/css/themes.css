@@ -38,6 +38,14 @@
         url('/storage/fonts/impact/impact.otf') format('otf');
 }
 
+@font-face {
+    font-family: 'Palatino';
+    src: url('/storage/fonts/palatino/palatino.woff2') format('woff2'),
+        url('/storage/fonts/palatino/palatino.woff') format('woff'),
+        url('/storage/fonts/palatino/palatino.ttf') format('truetype'),
+        url('/storage/fonts/palatino/palatino.otf') format('otf');
+}
+
 
 :root {
     --background-image: url('/images/backgrounds/seraph/homebg.jpg');
@@ -147,4 +155,15 @@
     --background-color: rgb(134, 71, 19);
     --hover-color: rgb(159, 85, 24);
     --text-glow: rgb(110, 84, 13);
+}
+
+:root.theme-ghostly {
+    --background-image: url('/images/backgrounds/ghostly/homebg.jpg');
+    --font-family: 'Palatino', sans-serif;
+    --text-color: rgb(237, 234, 223); 
+    --border-color1: rgb(3, 3, 3);
+    --border-color2: rgb(49, 48, 48);
+    --background-color: rgb(29, 29, 29);
+    --hover-color: rgb(40, 37, 37);
+    --text-glow: rgb(167, 165, 165);
 }
