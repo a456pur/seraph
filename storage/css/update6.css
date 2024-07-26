@@ -1,153 +1,36 @@
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
-         url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
-         url('../fonts/ubuntu/Ubuntu.ttf') format('truetype'),
-         url('../fonts/ubuntu/Ubuntu.otf') format('otf');
-}
-
-@font-face {
-    font-family: 'PixelifySans';
-    src: url('../fonts/pixelifysans/pixelifysans.woff2') format('woff2'),
-         url('../fonts/pixelifysans/pixelifysans.woff') format('woff'),
-         url('../fonts/pixelifysans/pixelifysans.ttf') format('truetype'),
-         url('../fonts/pixelifysans/pixelifysans.otf') format('otf');
-}
-
-@font-face {
-    font-family: 'Inconsolata';
-    src: url('../fonts/inconsolata/Inconsolata.woff2') format('woff2'),
-         url('../fonts/inconsolata/Inconsolata.woff') format('woff'),
-         url('../fonts/inconsolata/Inconsolata.ttf') format('truetype'),
-         url('../fonts/inconsolata/Inconsolata.otf') format('otf');
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/raleway/raleway.woff2') format('woff2'),
-        url('../fonts/raleway/raleway.woff') format('woff'),
-        url('../fonts/raleway/raleway.ttf') format('truetype'),
-        url('../fonts/raleway/raleway.otf') format('otf');
-}
-
-@font-face {
-    font-family: 'Impact';
-    src: url('../fonts/impact/impact.woff2') format('woff2'),
-        url('../fonts/impact/impact.woff') format('woff'),
-        url('../fonts/impact/impact.ttf') format('truetype'),
-        url('../fonts/impact/impact.otf') format('otf');
-}
+@import url('/storage/css/themes.css');
 
 :root {
-    --background-image: url('../../images/backgrounds/seraph/updatelogbg.jpg');
-    --font-family: 'Ubuntu', sans-serif;
-    --text-color: #fff;
-    --background-color: black;
-    --border-color1: #ffffff;
-    --border-color2: #c1bcbc;
-    --hover-color: #1a1818;
-    --text-glow: #000000
+    --background-image: url('/images/backgrounds/seraph/updatelogbg.jpg');
+    --hover-color: #a19b9b;
 }
-
 :root.theme-azurite {
-    --background-image: url('../../images/backgrounds/azure/updatebg.jpg');
-    --font-family: 'Ubuntu', sans-serif;
-    --text-color: #c8d9e9; 
-    --border-color1: #2d6cc4;
-    --border-color2: #111633;
-    --background-color: #495092;
-    --hover-color: #373e7d;
-    --text-glow: #4e5bd0;
+    --background-image: url('/images/backgrounds/azure/updatebg.jpg');
 }
-
 :root.theme-retro {
-    --background-image: url('../../images/backgrounds/retro/updatebg.jpg');
-    --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
-    --text-color: #ffffff; 
-    --border-color1: #2fce56;
-    --border-color2: #375945;
-    --background-color: #2f8154;
-    --hover-color: #258a79;
-    --text-glow: #4ed089;
+    --background-image: url('/images/backgrounds/retro/updatebg.jpg');
 }
-
 :root.theme-cosmic {
-    --background-image: url('../../images/backgrounds/cosmic/updatebg.jpg');
-    --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
-    --text-color: #ffffff; 
-    --border-color1: #d9d9d9;
-    --border-color2: #3e3d3d;
-    --background-color: #121212;
-    --hover-color: #181a1a;
-    --text-glow: #d6c9c9;
+    --background-image: url('/images/backgrounds/cosmic/updatebg.jpg');
 }
-
 :root.theme-molten {
-    --background-image: url('../../images/backgrounds/molten/updatebg.jpg');
-    --font-family: 'Ubuntu', sans-serif;
-    --text-color: #f58484; 
-    --border-color1: #e70e0e;
-    --border-color2: #742e2e;
-    --background-color: #892525;
-    --hover-color: #9b2121;
-    --text-glow: #dc1010;
+    --background-image: url('/images/backgrounds/molten/updatebg.jpg');
 }
-
 :root.theme-amethyst {
-    --background-image: url('../../images/backgrounds/amethyst/updatebg.jpg');
-    --font-family: 'Raleway', sans-serif;
-    --text-color: #c284f5; 
-    --border-color1: #6c0ee7;
-    --border-color2: #4c1587;
-    --background-color: #502589;
-    --hover-color: #5f24ae;
-    --text-glow: #662589;
+    --background-image: url('/images/backgrounds/amethyst/updatebg.jpg');
 }
-
 :root.theme-ethereal {
-    --background-image: url('../../images/backgrounds/ethereal/updatebg.jpg');
-    --font-family: 'Ubuntu', sans-serif;
-    --text-color: #84f5ac; 
-    --border-color1: #00fb82;
-    --border-color2: #bbe9c3;
-    --background-color: #258969;
-    --hover-color: #219b48;
-    --text-glow: #6c957b;
+    --background-image: url('/images/backgrounds/ethereal/updatebg.jpg');
 }
-
 :root.theme-misinformation {
-    --background-image: url('../../images/backgrounds/misinformation/updatebg.gif');
-    --font-family: 'Impact', sans-serif;
-    --text-color: #d94cd0;
-    --background-color: rgb(87, 40, 169);
-    --border-color1: #ff0000;
-    --border-color2: #00ff0d;
-    --hover-color: rgb(220, 78, 78);
-    --text-glow: #000000
+    --background-image: url('/images/backgrounds/misinformation/updatebg.gif');
 }
-
 :root.theme-subzero {
-    --background-image: url('../../images/backgrounds/subzero/updatebg.jpg');
-    --font-family: 'Ubuntu', sans-serif;
-    --text-color: rgb(255,255,255); 
-    --border-color1: rgb(13, 12, 80);
-    --border-color2: rgb(0, 0, 153);
-    --background-color: rgb(0, 4, 78);
-    --hover-color: rgb(10, 15, 112);
-    --text-glow: rgb(34, 13, 110);
+    --background-image: url('/images/backgrounds/subzero/updatebg.jpg');
 }
-
 :root.theme-metro {
-    --background-image: url('../../images/backgrounds/metro/updatebg.jpg');
-    --font-family: 'Ubuntu', sans-serif;
-    --text-color: rgb(228, 215, 171); 
-    --border-color1: rgb(183, 133, 91);
-    --border-color2: rgb(169, 98, 39);
-    --background-color: rgb(134, 71, 19);
-    --hover-color: rgb(159, 85, 24);
-    --text-glow: rgb(110, 84, 13);
+    --background-image: url('/images/backgrounds/metro/updatebg.jpg');
 }
-
 
 html, body {
     margin: 0;
