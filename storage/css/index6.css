@@ -184,16 +184,6 @@ a {
     margin-top: 0;
 }
 
-#updPopup-content {
-    overflow-y: auto; 
-    flex-grow: 1;
-}
-
-#updPopup-footer {
-    flex-shrink: 0; 
-    padding-top: 20px;
-}
-
 #updConfirm {
     margin-top: 20px;
     padding: 15px 24px;
@@ -208,7 +198,31 @@ a {
 
 #updConfirm:hover {
     background-color: var(--hover-color); 
-    transition: background-color 0.3s ease-in-out; 
+    transition: background-color 0.1s ease-in-out; 
+}
+
+#updContent {
+    background-color: var(--hover-color);
+    border: 2px solid var(--border-color2);
+    border-radius: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+
+    overflow: auto;
+    overflow-y: scroll;
+
+    max-height: 200px;
+}
+
+#updContent ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+#updConfirmFrame {
+    z-index: 1002;
+    width: 100%;
 }
   
 @keyframes mainHeaderAnimation {

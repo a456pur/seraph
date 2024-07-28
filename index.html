@@ -25,22 +25,61 @@
     
      <div id="blackout"></div>
      <div id="updPopup">
-        <div id="updPopup-content">
-            <img src="/images/other/devbuildb.jpg" style="width: 90%;">
-            <br><br>
-            <h2 style="font-size: 28px; text-decoration: underline;">version 10 - dev build b update</h2>
-            <li>offline mode is 90% finished! go to the games page and try downloading some games :o</li>
-            <li>added the ability to import/export custom themes</li>
-            <li>added an open games/apps in blank tab setting</li>
-            <li>consolidated lots of stuff into seperate scripts for better management</li>
-            <li>fixed 404 yet again</li>
-            <li>numerous bug fixes + undocumented changes</li>
-        </div>
+        <img src="/images/other/devbuildb.jpg" style="width: 90%;">
+        <br><br>
+        <h2 style="font-size: 28px; text-decoration: underline;">version 10 / patch notes</h2>
 
-        <div id="updPopup-footer">
-            <button id="updConfirm">okay</button>
+        <div id="updContent">
+            <ul>
+                <li>added offline mode
+                  <ul>
+                    <li>download over 110+ games from the site by clicking the download button to the left of them</li>
+                    <li>after one game is downloaded, loading the site without an internet connection will send you to an offline version on the site where you can access downloaded games</li>
+                    <li>supports ruffle/flash + works seamlessly with compatible games</li>
+                  </ul>
+                </li>
+                <li>major settings overhaul made
+                  <ul>
+                        <li>import/export data into save files, allowing for transfer over multiple sites</li>
+                        <li>clear all data off the site with the clear data button</li>
+                    <br>
+                        <li>customise a panic key (defaults to ctrl+shift+p)</li>
+                        <li>customise a panic url (defaults to https://www.desmos.com/scientific)</li>
+                        <li>perform the shortcut on any page to instantly delete all contents of the site and redirect to the panic url</li>
+                      <br>
+                        <li>added ability to export and import custom themes directly into the site, allowing for ease of access switching + sharability</li>
+                        <li>custom themes now do not require a refresh of the page every time</li>
+                        <br>
+                    <li>added open games in same tab setting</li>
+                    <li>fixed tab cloaking not working on lots of pages, now works globally</li>
+                    <li>tab cloak and resetting auto applies now with page refresh</li>
+                    <li>removed tooltips to condense space</li>
+                    <li>significantly improved animation</li>
+                  </ul>
+                </li>
+                <li>changed updates page
+                  <ul>
+                    <li>update log page is now a dropdown menu instead of a long page - scales down from version 10 all the way to version 1</li>
+                    <li>improved animation on page load</li>
+                    <li>fixed header glowing bug on page, making a weird background effect</li>
+                  </ul>
+                </li>
+                <br>
+                    <li>added update popup for whenever there is a new update - shown on the homepage</li>
+                    <li>404 page now has a previous page button</li>
+                    <li>fixed errors with 404 page styling, images and fonts</li>
+                    <li>fixed errors with 404 linkbar links redirecting to wrong parts of the site</li>
+                    <li>mobile users are now not automatically redirected to the mobile friendly version of the site on the homepage</li>
+                    <li>background image bandwidth has been significantly downgraded by 50-90% (thanks sky)</li>
+                    <li>favicon is now improved to give a more rounded design</li>
+                  </ul>
+                </li>
+              </ul>
         </div>
+        <div id="updConfirmFrame"><button id="updConfirm">okay</button></div>
       </div>
+
+      
       <div class="content-side">
           <h1 class="typewriter"><span id="cursor"></span></h1>
           <h2>version 10 / development build</h2>
@@ -97,7 +136,7 @@
             if (!localStorage.getItem('v10-devbuildbupdate')) {
                 document.getElementById('blackout').style.display = 'block';
                 document.getElementById('updPopup').style.display = 'block';
-                localStorage.setItem('v10-devbuildbupdate', 'true');
+                //localStorage.setItem('v10-devbuildbupdate', 'true');
             }
             document.getElementById('updConfirm').addEventListener('click', function () {
                 document.getElementById('blackout').style.display = 'none';
