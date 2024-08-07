@@ -1,0 +1,219 @@
+<html lang="en">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7FN7LEVWXD');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/icons/seraphim.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Seraphim</title>
+
+        <meta name="description" content="a minified version of seraph for mobile devices featuring 20+ games/apps, theme customisation and a clean user interface">
+        <meta property="og:site_name" content="seraphim">
+        <meta property="og:title" content="seraphim">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="a minified version of seraph for mobile devices featuring 20+ games/apps, theme customisation and a clean user interface">
+
+        <link rel="manifest" href="/manifest.json">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="images/icons/seraphim-192.png">
+
+  </head>
+  <body>
+    
+  
+      <div class="content-side">
+          <h1 class="typewriter" style="font-size: 70px; margin-bottom: 0px;">seraphim</h1>
+          <br>
+
+          <div id="timebar"></div>
+          <h2 class="allapps-header">games</h2>
+        
+          <div id="button-container">
+            <a href="/games/2048/index.html">
+                <div class="button" style="background-image: url('images/thumb/2048.png');"></div>
+            </a>
+            
+            <a href="/games/basketbrosio/index.html">
+                <div class="button" style="background-image: url('images/thumb/basketbros.png');"></div>
+            </a>
+            
+            <a href="/games/bobtherobber2/index.html">
+                <div class="button" style="background-image: url('images/thumb/bobtherobber2.png');"></div>
+            </a>
+            
+            <a href="/games/crossy/index.html">
+                <div class="button" style="background-image: url('images/thumb/crossyroad.png');"></div>
+            </a>
+            
+            <a href="/games/dinogame/index.html">
+                <div class="button" style="background-image: url('images/thumb/chromedino.png');"></div>
+            </a>
+            
+            <a href="/games/driftboss/index.html">
+                <div class="button" style="background-image: url('images/thumb/driftboss.png');"></div>
+            </a>
+            
+            <a href="/games/flappy/index.html">
+                <div class="button" style="background-image: url('images/thumb/flappybird.png');"></div>
+            </a>
+            
+            <a href="/games/fruitninja/index.html">
+                <div class="button" style="background-image: url('images/thumb/fruitninja.png');"></div>
+            </a>
+            
+            <a href="/games/holeio/index.html">
+                <div class="button" style="background-image: url('images/thumb/holeio.png');"></div>
+            </a>
+            
+            <a href="/games/risehigher/index.html">
+                <div class="button" style="background-image: url('images/thumb/risehigher.png');"></div>
+            </a>
+            
+            <a href="/games/skibiditoiletattack/index.html">
+                <div class="button" style="background-image: url('images/thumb/skibiditoiletattack.png');"></div>
+            </a>
+            
+            <a href="/games/slopeball/index.html">
+                <div class="button" style="background-image: url('images/thumb/slopeball.png');"></div>
+            </a>
+            
+            <a href="/games/stack/index.html">
+                <div class="button" style="background-image: url('images/thumb/stack.png');"></div>
+            </a>
+            
+            <a href="/games/stickmanhook/index.html">
+                <div class="button" style="background-image: url('images/thumb/stickmanhook.png');"></div>
+            </a>
+            
+            <a href="/games/surf/index.html">
+                <div class="button" style="background-image: url('images/thumb/surf.png');"></div>
+            </a>
+            
+            <a href="/games/thereisnogame/index.html">
+                <div class="button" style="background-image: url('images/thumb/thereisnogame.png');"></div>
+            </a>
+            
+            <a href="/games/tunnelrush/index.html">
+                <div class="button" style="background-image: url('images/thumb/tunnelrush.png');"></div>
+            </a>            
+        </div>
+
+        <h2>apps</h2>
+
+        <a  href="/apps/fluidsim/index.html">
+            <div class="button" style="background-image: url('images/thumb/fluidsim.png');" ></div>
+        </a>
+
+        <a  href="/apps/thirtydollarwebsite/index.html">
+            <div class="button" style="background-image: url('images/thumb/thirtydollarwebsite.png');" ></div>
+        </a>
+          
+        <h2>settings</h2>
+        <h3>themes</h3>
+        <select id="theme-select" style="width: 80%;">
+            <option value="seraph">seraph</option>
+            <option value="azurite">azurite</option>
+            <option value="retro">retro</option>
+            <option value="cosmic">cosmic</option>
+            <option value="molten">molten</option>
+            <option value="amethyst">amethyst</option>
+            <option value="ethereal">ethereal</option>
+            <option value="subzero">subzero</option>
+            <option value="metro">metro</option>
+            <option value="ghostly">ghostly</option>
+            <option value="custom">custom</option>
+        </select>
+        <br>
+        <button id="apply-theme">apply</button>
+
+        <div id="custom-theme-center">
+        <div id="custom-theme-settings" style="display: none;">
+            <h2 style="text-decoration: underline;">theme customisation</h2>
+            <div class="theme-property">
+                <label for="background-image">background image url:</label>
+                <input type="text" id="background-image" value="https://raw.githubusercontent.com/a456pur/seraph/main/images/backgrounds/seraph/homebg.png">
+            </div>
+    
+            <div class="theme-property">
+                <label for="font-family">font family:</label>
+                <input type="text" id="font-family" value="Ubuntu">
+            </div>
+    
+            <div class="theme-property">
+                <label for="text-color">text colour:</label>
+                <input type="color" id="text-color" value="#000000">
+            </div>
+    
+            <div class="theme-property">
+                <label for="background-color">background colour:</label>
+                <input type="color" id="background-color">
+            </div>
+    
+            <div class="theme-property">
+                <label for="border-color1">border colour:</label>
+                <input type="color" id="border-color1">
+            </div>
+    
+            <div class="theme-property">
+                <label for="border-color2">secondary border colour:</label>
+                <input type="color" id="border-color2">
+            </div>
+    
+            <div class="theme-property">
+                <label for="hover-color">hover colour:</label>
+                <input type="color" id="hover-color">
+            </div>
+    
+            <div class="theme-property">
+                <label for="text-glow">text glow colour:</label>
+                <input type="color" id="text-glow">
+            </div>
+    
+            <button id="apply-custom-theme" style="font-size: 18px;">apply settings</button>
+            <br>
+            <button id="import-theme" style="font-size: 18px; width: 120px;">import</button>
+            <button id="export-theme" style="font-size: 18px; width: 120px;">export</button>
+        </div>
+        </div>
+
+        <h3>cloak</h3>
+        <select id="presetSelect" style="width: 80%;">
+            <option value="google">google</option>
+            <option value="googleclassroom">google classroom</option>
+            <option value="googledrive">google drive</option>
+            <option value="chrometab">chrome new tab</option>
+            <option value="gmail">gmail</option>
+            <option value="bing">bing</option>
+            <option value="desmos">desmos calculator</option>
+            <option value="wikipedia">wikipedia</option>
+        </select><br>
+    
+        <button id="saveButton">select</button>
+        <button id="resetButton">reset</button>
+        <br>
+        <p id="success" style="display: none;">success message here</p>
+
+
+
+          <br>
+          <p class="linkp"><a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a> • <a href="https://github.com/a456pur/seraphim" target="_blank">source code</a></p>
+          <a href="https://github.com/a456pur" target="_blank" style="text-decoration: none;">˗ˏˋ❀ website developed by @a456pur ❀ ´ˎ˗</a>
+          <br>
+          <br>
+              
+      </div>
+
+      <script src="assets/js/seraphim.js"></script>
+      <script src="assets/js/cloak.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../assets/fonts/Ubuntu.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('../../assets/fonts/pixelifysans.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../../assets/fonts/Inconsolata.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../assets/fonts/raleway.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url('../../assets/fonts/palatino.woff2') format('woff2')
+}
+
+
+:root {
+    --background-image: url('../../images/bg/seraph.jpg');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #fff;
+    --background-color: black;
+    --border-color1: #000000;
+    --border-color2: #ffffff;
+    --hover-color: #1a1818;
+    --text-glow: #000000
+}
+
+:root.theme-azurite {
+    --background-image: url('../../images/bg/azure.jpg');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #c8d9e9; 
+    --border-color1: #2d6cc4;
+    --border-color2: #111633;
+    --background-color: #495092;
+    --hover-color: #373e7d;
+    --text-glow: #4e5bd0;
+}
+
+:root.theme-retro {
+    --background-image: url('../../images/bg/retro.jpg');
+    --font-family: 'PixelifySans', 'Ubuntu', sans-serif;
+    --text-color: #ffffff; 
+    --border-color1: #2fce56;
+    --border-color2: #375945;
+    --background-color: #2f8154;
+    --hover-color: #258a79;
+    --text-glow: #4ed089;
+}
+
+:root.theme-cosmic {
+    --background-image: url('../../images/bg/cosmic.jpg');
+    --font-family: 'Inconsolata', 'Ubuntu', sans-serif;
+    --text-color: #ffffff; 
+    --border-color1: #1e1d1f;
+    --border-color2: #322c2c;
+    --background-color: #121212;
+    --hover-color: #181a1a;
+    --text-glow: #d6c9c9;
+}
+
+:root.theme-molten {
+    --background-image: url('../../images/bg/molten.jpg');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #f58484; 
+    --border-color1: #e70e0e;
+    --border-color2: #742e2e;
+    --background-color: #892525;
+    --hover-color: #9b2121;
+    --text-glow: #dc1010;
+}
+
+:root.theme-amethyst {
+    --background-image: url('../../images/bg/amethyst.jpg');
+    --font-family: 'Raleway', sans-serif;
+    --text-color: #c284f5; 
+    --border-color1: #6c0ee7;
+    --border-color2: #4c1587;
+    --background-color: #502589;
+    --hover-color: #5f24ae;
+    --text-glow: #662589;
+}
+
+:root.theme-ethereal {
+    --background-image: url('../../images/bg/ethereal.jpg');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #84f5ac; 
+    --border-color1: #00fb82;
+    --border-color2: #bbe9c3;
+    --background-color: #258969;
+    --hover-color: #219b48;
+    --text-glow: #6c957b;
+}
+
+:root.theme-subzero {
+    --background-image: url('../../images/bg/subzero.jpg');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: rgb(255,255,255); 
+    --border-color1: rgb(13, 12, 80);
+    --border-color2: rgb(0, 0, 153);
+    --background-color: rgb(0, 4, 78);
+    --hover-color: rgb(10, 15, 112);
+    --text-glow: rgb(34, 13, 110);
+}
+
+:root.theme-metro {
+    --background-image: url('../../images/bg/metro.jpg');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: rgb(228, 215, 171); 
+    --border-color1: rgb(183, 133, 91);
+    --border-color2: rgb(169, 98, 39);
+    --background-color: rgb(134, 71, 19);
+    --hover-color: rgb(159, 85, 24);
+    --text-glow: rgb(110, 84, 13);
+}
+
+:root.theme-ghostly {
+    --background-image: url('../../images/bg/ghostly.jpg');
+    --font-family: 'Palatino', sans-serif;
+    --text-color: rgb(237, 234, 223); 
+    --border-color1: rgb(3, 3, 3);
+    --border-color2: rgb(49, 48, 48);
+    --background-color: rgb(29, 29, 29);
+    --hover-color: rgb(40, 37, 37);
+    --text-glow: rgb(167, 165, 165);
+}
