@@ -91,18 +91,14 @@ a {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    height: 90px;
+    height: 85px;
     margin: 0 10px;
     padding-left: 20px;
     padding-right: 20px;
     
     transition: background-color 0.15s ease-in-out;
-    border: 3px solid transparent;
-    border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255));
-    border-image-slice: 1;
-    border-radius: 4px;
-    animation: borderAnimation 1s infinite alternate;
-    animation-delay: calc(var(--delay) * 1ms);
+    border: 3px solid var(--border-color2);
+    border-radius: 16px;
     position: relative;
 }
   
@@ -121,7 +117,7 @@ a {
 
 .gamesbutton:hover {
     background-color: var(--hover-color); 
-    transition: background-color 0.3s ease-in-out; 
+    transition: background-color 0.1s ease-in-out; 
 }
   
 .button-text {
@@ -245,12 +241,4 @@ a {
     }
 }
   
-@keyframes borderAnimation {
-    0% {
-        border-image-source: linear-gradient(45deg, var(--border-color1), var(--border-color2));
-    }
-    100% {
-        border-image-source: linear-gradient(45deg, var(--border-color2), var(--border-color1));
-    }
-}
   
