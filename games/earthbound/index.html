@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7FN7LEVWXD');
+        </script>
+
+        <title>Earthbound | Seraph</title>
+        <link rel="shortcut icon" href="../../images/ico.ico">
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:100%;height:100%;max-width:100%">
+            <div id="game"></div>
+        </div>
+        <script>
+            EJS_player = "#game";
+            EJS_core = "snes";
+            EJS_color = "#000000";
+            EJS_startOnLoaded = true;
+            EJS_pathtodata = "../../storage/emulatorjs/data/";
+            EJS_gameUrl = "EarthBound (USA).sfc";
+        </script>
+        <script src="../../storage/emulatorjs/data/loader.js"></script>
+        <script src="../../storage/js/cloak.js"></script>
+    </body>
+</html>
