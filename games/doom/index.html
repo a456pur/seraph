@@ -1,0 +1,96 @@
+<!doctype html>
+
+<!-- copied from https://raw.githubusercontent.com/mdn/webassembly-examples/master/understanding-text-format/logger2.html (CC0) -->
+
+<html>
+
+
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+<title>DOOM | Seraph</title>
+<script src="../../storage/js/cloak.js"></script>
+<link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
+
+
+    <meta charset="utf-8">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+      #output {
+        border: 3px groove aquamarine;
+        background-color: bisque;
+        width: 550px;
+        height: 400px;
+        font-family: monospace, serif;
+        font-size: 10px;
+        overflow-y: scroll;
+      }
+      #output span.log {
+        color:darkslateblue;
+      }
+      #output span.stdout {
+        color: black;
+      }
+      #output span.stderr {
+        font-weight: bold;
+        color:brown;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+        font-family: 'Ubuntu';
+        text-align: center;
+      }
+
+      a {
+        color: rgb(95, 95, 227);
+        text-decoration: underline;
+      }
+
+      canvas {
+        width: 60%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>DOOM</h1>
+    <p>A WASM32 port of 1997 linuxdoom-1.10 with minimal modifications to <a href="https://github.com/id-Software/DOOM">sources</a>. Find all the details in the README of the <a href="https://github.com/diekmann/wasm-fizzbuzz">WebAssembly from Scratch Article</a>.</p>
+    <p id="focushint"></p>
+
+    <p>Use <button id="enterButton">&#x23CE;</button> to start the game, 
+      arrow keys <button id="leftButton">&#x2190;</button> <button id="upButton">&#x2191;</button> <button id="downButton">&#x2193;</button> <button id="rightButton">&#x2192;</button> to move, 
+      <button id="ctrlButton">ctrl</button> to shoot, 
+      spacebar <button id="spaceButton">&nbsp;&nbsp;&nbsp;&nbsp;</button> to open gates, 
+      <button id="altButton">alt</button> and arrow keys to strafe (if your browser does not handle these keys otherwise). 
+      On mobile (and mobile only) touch the buttons above.</p>
+
+    <div class="container">
+      <canvas id="screen" width="640" height="400" tabindex="0">This is where the DooM screen should render.</canvas>
+      <span>&nbsp;</span>
+      <div id="output" style="display: none;"></div>
+    </div>
+    <div class="hidden-text" style="display: none;">gettmilliseconds calls per second: <span id="getmsps_stats">0</span> Total getmilliseconds calls: <span id="getms_stats">0</span><br>
+    DooM FPS: <span id="fps_stats">0</span> (target: 35FPS) Total Frames drawn: <span id="drawframes_stats">0</span><br>
+    Browser Animation FPS: <span id="animationfps_stats">0</span> (target: around 60FPS, depending on browser)<br></div>
+
+    <script src="main.js" defer></script>
+  </body>
+
+</html>

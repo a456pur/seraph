@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-7FN7LEVWXD');
+	</script>
+	<title>Gun Fest | Seraph</title>
+	<script src="../../storage/js/cloak.js"></script>
+	<link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="TemplateData/css/style.css">
+</head>
+<body>
+  
+		<div class="keepRatio">
+		<div id="gameContainer" class="unity-desktop webgl-content">
+			<canvas id="gameCanvas"></canvas>
+			<div id="loadingBlock">
+				<img class="logo" src="TemplateData/img/Logo.png"></img>
+				<span class="subtitle"><br>
+				</span>
+			
+				<div id="progressBar">
+					<div>loading ...</div>
+					<div class="centered">
+						<div id="emptyBar"></div>
+						<div id="fullBar"></div>
+					</div>
+				</div>
+				
+				<div id="warningBrowserBlock" style="display:none;">
+					<div class="warningBrowserText">
+					</div>
+					<div class="browserIcons">
+					</div>
+				</div>
+				<div id="warningMobileBlock" style="display:none;">
+					<div class="warningBrowserText">
+						Please note that Unity WebGL is not currently supported on mobiles.
+					</div>
+				</div>
+			</div>
+		
+			<div id="errorBrowserBlock" style="display:none;">
+				<img class="logo" src="TemplateData/img/Logo.png"></img>
+				<span class="subtitle">  <br>
+				</span>
+				
+				<div id="errorContent" style="display:none;">
+					<div class="errorBrowserText">
+					</div>
+					<div class="browserIcons">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

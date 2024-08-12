@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body,
+html {
+  margin: 0;
+    font-family: "Noto Color Emoji", sans-serif;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#game-container {
+  display: flex;
+  height: 100vh;
+}
+
+#canvas {
+  width: 80%;
+  background-color: rgb(230, 230, 230);
+}
+
+#sidebar {
+  width: 20%;
+  background-color: #f0f0f0;
+  border-left: 1px rgb(205, 205, 205) solid;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+#game-icon {
+  font-family: "IBM Plex Sans", sans-serif;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.element {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 15.4px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.element:hover {
+  background-color: rgb(240, 240, 255);
+}
+
+#clean-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: none;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+#clean-button:hover {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+#search-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#search-bar:focus {
+  outline: none;
+}
+
+#search-bar {
+  font-family: "IBM Plex Sans", sans-serif;
+  border: none;
+  margin-top: auto;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+}
+
+.dragging {
+  position: absolute;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.unsupported-container {
+  display: none;
+}
+
+.unsupported-text {
+  display: none;
+}
+
+@media (max-width: 512px) {
+  body {
+    overflow: hidden;
+  }
+
+  .unsupported-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: grayscale(80%);
+  }
+
+  .unsupported-text {
+    font-family: "Roboto", sans-serif;
+    display: block;
+    color: rgb(210, 210, 210);
+    font-size: 18px;
+    text-align: center;
+    max-width: 512px;
+    padding: 20px;
+  }
+
+  #search-container {
+    display: none;
+  }
+}

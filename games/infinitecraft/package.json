@@ -1,0 +1,902 @@
+{
+  "water": {
+    "earth": "🌱 Plant",
+    "wind": "🌊 Wave",
+    "beach": "🌊​ Ocean",
+    "plant": "💧 Swamp",
+    "flower": "🌸 Lily",
+    "water": "💧 Water 2"
+  },
+  "water2": {
+    "water": "💧 Splash",
+    "water2": "💧 Water 3",
+    "air": "🌊🌊 Tsunami",
+    "fire": "💧 Extinguished Flame",
+    "human": "🤢​ Sickness",
+    "water8": "💧 Water 10",
+    "water100": "💧 Water 122"
+  },
+  "water3": {
+    "water": "💧 Bigger Splash",
+    "water3": "💧 Water 4",
+    "water7": "💧 Water 10"
+  },
+  "water4": {
+    "water4": "💧 Water 5",
+    "water6": "💧 Water 10",
+    "water10": "💧 Water 16",
+    "water16": "💧 Water 22"
+  },
+  "water5": {
+    "water": "🌊 Flood",
+    "water5": "💧 Water 6",
+    "water100": "💧 Water 519"
+  },
+  "water6": {
+    "water6": "💧 Water 7",
+    "water4": "💧 Water 10",
+    "water100": "💧 Water 601",
+    "water300": "💧 Water 808"
+  },
+  "water7": {
+    "water7": "💧 Water 8",
+    "water3": "💧 Water 10",
+    "water70": "💧 Water 88",
+    "water100": "💧 Water 711"
+  },
+  "water8": {
+    "water8": "💧 Water 9",
+    "water10": "💧 Water 90",
+    "water70": "💧 Water 89",
+    "water100": "💧 Water 881"
+  },
+  "water9": {
+    "water9": "💧 Water 10",
+    "water100": "💧 Water 109",
+    "water200": "💧 Water 299",
+    "water10": "💧 Water 109"
+  },
+  "water10": {
+    "water10": "💧 Water 20",
+    "water5": "💧 Water 25",
+    "water100": "💧 Water 115",
+    "water200": "💧 Water 356"
+  },
+  "water20": {
+    "water20": "💧 Water 30",
+    "water": "💧 Water 120",
+    "water100": "💧 Water 200"
+  },
+  "water30": {
+    "water10": "💧 Water 41",
+    "water20": "💧 Water 53",
+    "water30": "💧 Water 50",
+    "water50": "💧 Water 80",
+    "water70": "💧 Water 101",
+    "water100": "💧 Water 177"
+  },
+  "water50": {
+    "water50": "💧 Water 70",
+    "water70": "💧 Water 130",
+    "water100": "💧 Water 156"
+  },
+  "water70": {
+    "water70": "💧 Water 100",
+    "water50": "💧 Water 110",
+    "water20": "💧 Water 90",
+    "water10": "💧 Water 88",
+    "water100": "💧 Water 230"
+  },
+  "water80": {
+    "water70": "💧 Water 190",
+    "water50": "💧 Water 130",
+    "water20": "💧 Water 102",
+    "water10": "💧 Water 888",
+    "water100": "💧 Water 800"
+  },
+  "water100": {
+    "water10": "💧 Water 1000",
+    "water20": "💧 Water 122",
+    "water30": "💧 Water 123",
+    "water100": "💧 Water 300",
+    "water200": "💧 Water 400",
+    "water300": "💧 Water 500",
+    "water1100": "💧 Water 1111"
+  },
+  "water130": {
+    "water10": "💧 Water 350",
+    "water100": "💧 Water 133",
+    "water110": "💧 Water 131",
+    "water130": "💧 Water 230"
+  },
+  "water200": {
+    "water10": "💧 Water 230",
+    "water100": "💧 Water 400",
+    "water200": "💧 Water 350",
+    "water2": "💧 Water 222"
+  },
+  "water300": {
+    "water10": "💧 Water 330",
+    "water100": "💧 Water 500",
+    "water300": "💧 Water 700",
+    "water20": "💧 Water 320"
+  },
+  "water400": {
+    "water10": "💧 Water 4010",
+    "water100": "💧 Water 555",
+    "water300": "💧 Water 867",
+    "water400": "💧 Water 901",
+    "water20": "💧 Water 520"
+  },
+  "water700": {
+    "water10": "💧 Water 720",
+    "water100": "💧 Water 900",
+    "water200": "💧 Water 970",
+    "water300": "💧 Water 1100",
+    "water700": "💧 Water 1700"
+  },
+  "water800": {
+    "water10": "💧 Water 820",
+    "water100": "💧 Water 990",
+    "water200": "💧 Water 1028",
+    "water300": "💧 Water 2900",
+    "water700": "💧 Water 1696",
+    "water800": "💧 Water 1888"
+  },
+  "water1700": {
+    "water10": "💧 Water 1820",
+    "water100": "💧 Water 1890",
+    "water300": "💧 Water 2100",
+    "water700": "💧 Water 2500",
+    "water1700": "💧 Water 3500"
+  },
+  "water3500": {
+    "water10": "💧 Water 4500",
+    "water3500": "💧 Water 7650"
+  },
+  "water7650": {
+    "water10": "💧 Water 7800",
+    "water7650": "💧 Water 14255"
+  },
+  "water14255": {
+    "water10": "💧 Water 15600",
+    "water14255": "💧 Water 29699"
+  },
+  "water29699": {
+    "water10": "💧 Water 30000",
+    "water29699": "💧 Water 69696"
+  },
+  "water69696": {
+    "water69696": "💧 Water 125433"
+  },
+  "water125433": {
+    "water125433": "💧 Water 345066"
+  },
+  "water345066": {
+    "water345066": "💧 Water 788888"
+  },
+  "water788888": {
+    "water788888": "💧 Water 1678190"
+  },
+  "water1678190": {
+    "water1678190": "💧 Water 3356404"
+  },
+  "water3356404": {
+    "water3356404": "💧 Water 6712808"
+  },
+  "water6712808": {
+    "water6712808": "💧 Water 13425616"
+  },
+  "water13425616": {
+    "water13425616": "💧 Water 26851232"
+  },
+  "water26851232": {
+    "water26851232": "💧 Water 53702464"
+  },
+  "water53702464": {
+    "water53702464": "💧 Water 107404928"
+  },
+  "splash": {
+    "earth": "💩 Mud"
+  },
+  "wave": {
+    "wave": "🌊🌊 Tsunami",
+    "earth": "🏖️ Beach",
+    "plant": "🌊🌱 Seaweed"
+  },
+  "seaweed": {
+    "seaweed": "🐠 Coral",
+    "fire": "🔥🌿 Grilled Seaweed"
+  },
+  "beach": {
+    "earth": "💩 Sand",
+    "sand": "🏖️ Sandcastle"
+  },
+  "ocean": {
+    "ocean": "🌊 Sea",
+    "jungle": "🌴 Tiki"
+  },
+  "tiki": {
+    "wind": "🥥​ Coconuts"
+  },
+  "sand": {
+    "fire": "🧊​ Glass"
+  },
+  "glass": {
+    "water": "🥛 Water Glass",
+    "glass": "🪟 Window",
+    "fire": "🔍 Lens",
+    "sand": "⌛ Time"
+  },
+  "window": {
+    "window": "🪟 Big Window"
+  },
+  "time": {
+    "sun": "🌑​ Moon"
+  },
+  "lens": {
+    "scientist": "🔬​ Microscope",
+    "fire": "♨️ Inferno"
+  },
+  "swamp": {
+    "earth": "💩 Mud"
+  },
+  "mud": {
+    "water": "🧱 Hard Mud",
+    "fire": "🧱 Clay",
+    "flower": "💩 Dirt",
+    "tractor": "💩 Farmland"
+  },
+  "farmland": {
+    "tractor": "​​🥔 Potato",
+    "plant": "🥕 Vegetables"
+  },
+  "potato": {
+    "tax": "🥔💸 Potato Tax"
+  },
+  "clay": {
+    "fire": "🧱 Brick"
+  },
+  "brick": {
+    "earth": "🧱🏠 Brick House",
+    "brick": "🧱🏛️ Wall"
+  },
+  "wall": {
+    "explosion": "🧱 Damaged Wall"
+  },
+  "fire": {
+    "water": "💨 Steam",
+    "volcano": "🔥 Lava",
+    "wind": "💨 Smoke",
+    "smoke": "🌫️ Fog",
+    "fire": "🔥 Flame"
+  },
+  "flame": {
+    "water": "💧 Extinguished Flame",
+    "flame": "🔥 Burning Flame"
+  },
+  "volcano": {
+    "fire": "🔥 Lava",
+    "steam": "🌋​ Erruption",
+    "human": "💀 Burned Soul"
+  },
+  "lava": {
+    "water": "🗿 Obsidian"
+  },
+  "steam": {
+    "water": "💧💨 Hydrogen",
+    "electricity": "🎮 Steam",
+    "fire": "🏎️​ Engine",
+    "plant": "🍵 Tea"
+  },
+  "engine": {
+    "mud": "🚜 Tractor",
+    "metal": "🚗​ Car"
+  },
+  "car": {
+    "engine": "🏎️​ Kart"
+  },
+  "hydrogen": {
+    "fire": "☁️ Cloud"
+  },
+  "cloud": {
+    "water": "🌧️ Rain",
+    "fire": "🔥☁️ Burning Cloud",
+    "electricity": "🌩️ Thunderstorm",
+    "cloud": "☁️☁️ Clouds"
+  },
+  "clouds": {
+    "earth": "🌤️ Sky",
+    "fire": "🔥☁️☁️ Burning Clouds"
+  },
+  "burningcloud": {
+    "thunderstorm": "🔥☁️🌩️ Intense Thunderstorm Cloud"
+  },
+  "rain": {
+    "plant": "🌸 Flower",
+    "water": "🌧️ Harder Rain",
+    "fire": "🌈 Rainbow",
+    "amazon": "📦🌲🌧️ Amazon Rain Forest"
+  },
+  "rainbow": {
+    "light": "☀️​ Sun",
+    "plant": "🍀​ Luck",
+    "park": "🧚‍♀️ Fairy"
+  },
+  "sun": {
+    "sun": "♨️ Heat",
+    "flower": "🌻 Sunflower"
+  },
+  "heat": {
+    "heat": "♨️♨️ Heater",
+    "human": "💦​ Sweat"
+  },
+  "fog": {
+    "earth": "🌍🌫️ Foggy Earth"
+  },
+  "foggyearth": {
+    "fog": "🌍🌫️🌫️ Unclear Earth",
+    "water": "🌍🌫️ Steam Earth"
+  },
+  "air": {
+    "fire": "💨 Smoke",
+    "air": "💨 Wind",
+    "water": "🌊 Wave",
+    "earth": "💨 Dust",
+    "wind": "🌪️ Tornado",
+    "cloud": "🌧️ Rain",
+    "uranium": "☢️ Radioactivity"
+  },
+  "tornado": {
+    "fish": "🐟🌪️ Fishnado",
+    "human": "🧑‍🤝‍🧑🌪️ Humanado",
+    "wizard": "🧙🏼‍♂️🌪️ Wizardo"
+  },
+  "wind": {
+    "wind": "💨 Harder Wind",
+    "torch": "🪵 Wood"
+  },
+  "harderwind": {
+    "harderrain": "🌩️ Thunderstorm",
+    "harderwind": "💨💨 Windstorm"
+  },
+  "thunderstorm": {
+    "water": "⚡ Electricity"
+  },
+  "electricity": {
+    "fire": "💥 Explosion",
+    "electricity": "💡​ Light"
+  },
+  "explosion": {
+    "earth": "☢️ Nuke",
+    "hardmud": "🧱 Half a Mud Brick",
+    "explosion": "💥💥 Bigger Explosion",
+    "glass": "🪟 Glass Shards"
+  },
+  "nuke": {
+    "nuke": "☢️ Oppenheimer Nuke"
+  },
+  "oppenheimernuke": {
+    "explosion": "🌍☢️ Radioactive Earth",
+    "oppenheimernuke": "☢️☢️ The Nuke"
+  },
+  "thenuke": {
+    "explosion": "🌌☢️ Radioactive Universe",
+    "thenuke": "☢️ Reset Nuke"
+  },
+  "radioactiveuniverse": {
+    "resetnuke": "💥🌌 The Big Bang",
+    "planet": "☢️🪐 Radioactive Planet"
+  },
+  "radioactiveearth": {
+    "explosion": "☢️ Radioactive Nothing",
+    "cave": "🧪 Uranium",
+    "nuke": "☢️🌍 Nuked Earth"
+  },
+  "earth": {
+    "fire": "🌋​ Volcano",
+    "water": "🌱 Plant",
+    "wind": "💨 Dust",
+    "earth": "🏔️​ Mountain",
+    "sand": "🏝️​ Island",
+    "ocean": "🏝️​ Island",
+    "dust": "🪐 Planet",
+    "tea": "🍵 Teapod"
+  },
+  "planet": {
+    "planet": "🪐🪐 Solar System"
+  },
+  "solarsystem": {
+    "solarsystem": "🌌 Space",
+    "planet": "⭐️ Star"
+  },
+  "star": {
+    "star": "🌌 Galaxy",
+    "girl": "♀ Venus",
+    "woman": "♀ Venus"
+  },
+  "space": {
+    "space": "🌌 Universe"
+  },
+  "island": {
+    "rich": "🏝️🌸 Hawaii",
+    "island": "🌍 Continent",
+    "continent": "🌍 New Continent"
+  },
+  "hawaii": {
+    "water": "🏄‍♂️ Surf"
+  },
+  "continent": {
+    "ocean": "🇺🇸​ America",
+    "earth": "🌄 Land",
+    "mountain": "🌍 Asia",
+    "austria": "🌍 Europe",
+    "euro": "🌍 Europe",
+    "captainiglo": "🇬🇧 United Kingdom",
+    "tea": "🇬🇧 United Kingdom"
+  },
+  "land": {
+    "city": "🌍 Country"
+  },
+  "country": {
+    "america": "🇺🇸 United States",
+    "mountain": "🇦🇹 Austria",
+    "tea": "🇬🇧 England",
+    "history": "🇬🇷​ Greece"
+  },
+  "asia": {
+    "sushi": "🗾 Japan"
+  },
+  "america": {
+    "mud": "​🤵​ Trump",
+    "island": "🏝️🌸 Hawaii",
+    "continent": "🌍 North America",
+    "swamp": "🐸 Shrek"
+  },
+  "trump": {
+    "wall": "🧱🏛️ Mexican Wall",
+    "house": "🏛️ The White House",
+    "tree": "🌳🤡 Infamous Treehouse"
+  },
+  "thewhite house": {
+    "explosion": "😈⛓️ Dictatorship",
+    "money": "💸 Tax"
+  },
+  "tax": {
+    "tax": "💸 Tax Tax",
+    "america": "💵🇺🇸 IRS",
+    "taxtax": "💵💵💵 Financial Suffering"
+  },
+  "plant": {
+    "plant": "🌳 Tree",
+    "leaf": "🌳 Bush"
+  },
+  "bush": {
+    "bush": "🌳 Hedge"
+  },
+  "mountain": {
+    "explosion": "🏔️ Crater",
+    "harderrain": "🏔️💧 Wet Mountain",
+    "mountain": "🏔️🏔️ Mount Everest",
+    "human": "🥾 Hiking",
+    "water": "🏞️ Waterfall"
+  },
+  "crater": {
+    "explosion": "🕳️ Hole"
+  },
+  "hole": {
+    "explosion": "🕳️ Bigger Hole",
+    "hole": "🕳️ The Hole",
+    "torch": "🕳️ Cave"
+  },
+  "cave": {
+    "wood": "⛏️ Pickaxe",
+    "pickaxe": "🪨 Stone",
+    "explosion": "💛 Valueables"
+  },
+  "stone": {
+    "water": "💧🪨 Wet Stone",
+    "stone": "🪨🪨 Boulder",
+    "pickaxe": "🪨 Rock",
+    "valueables": "🤍 Metal"
+  },
+  "metal": {
+    "heat": "🤍 Iron"
+  },
+  "iron": {
+    "water": "🚰 Rust"
+  },
+  "pickaxe": {
+    "mountain": "​💛 Gold"
+  },
+  "gold": {
+    "gold": "​💛​💛 Gold Bar",
+    "money": "💰​ Rich",
+    "boat": "🛳️ Ship"
+  },
+  "rich": {
+    "rich": "💰​ Richer"
+  },
+  "richer": {
+    "richer": "💰​ Richest"
+  },
+  "richest": {
+    "richest": "🤵🏻​​ Richard"
+  },
+  "richard": {
+    "wisdom": "🧙🏼‍♂️​ Wizard"
+  },
+  "wizard": {
+    "love": "💓🤵🏻​ Rizzard",
+    "tornado": "🧙🏼‍♂️​ Wizard Of Oz"
+  },
+  "rizzard": {
+    "tornado": "💓🧙🏼‍♂️​ Rizzard Of Oz"
+  },
+  "goldbar": {
+    "gold": "​💵​ Money",
+    "goldbar": "👑​ Midas"
+  },
+  "money": {
+    "gold": "​💵​ Moneier",
+    "europe": "💵 Euro"
+  },
+  "tree": {
+    "wind": "🍃 Leaf",
+    "tree": "🌲 Forest",
+    "fire": "🏴 Dead Tree",
+    "tractor": "🌳🍎 Fruit Tree"
+  },
+  "fruittree": {
+    "wind": "🍎 Fruits",
+    "fire": "🏴 Dead Fruit Tree",
+    "rain": "🌳🍎✨​ Fine Fruit Tree"
+  },
+  "forest": {
+    "animals": "🐾 Wildlife",
+    "forest": "🌴​ Jungle",
+    "rich": "📦 Amazon",
+    "fire": "🔥🏴 Burned Forest",
+    "heater": "🌲🔥🏴 Dry Forest",
+    "tree": "🌲🌲 Woodland"
+  },
+  "leaf": {
+    "leaf": "🍃 Pile of Leaf",
+    "water": "💧🍃 Wet Leaf",
+    "fire": "🔥🍃 Burned Leaf"
+  },
+  "pileof leaf": {
+    "fire": "🔥🍃 Campfire"
+  },
+  "campfire": {
+    "water": "🪵 Wood"
+  },
+  "wood": {
+    "human": "🏠 House",
+    "fire": "🔥 Torch",
+    "wood": "🪵🪵 Planks",
+    "glassshards": "🔱 Spear",
+    "water": "📃 Paper"
+  },
+  "paper": {
+    "paper": "​📔 Book"
+  },
+  "book": {
+    "book": "📚 Library",
+    "electricity": "🌐📔 E-Book"
+  },
+  "library": {
+    "electricity": "📚​🌐​​ Wikipedia"
+  },
+  "spear": {
+    "human": "💀 Murder",
+    "fish": "🐟 Fish Food"
+  },
+  "fish": {
+    "fire": "🍣​ Sushi",
+    "gold": "🐠​ Goldfish"
+  },
+  "fishfood": {
+    "fire": "🐟 Cooked Fish"
+  },
+  "sushi": {
+    "island": "🗾 Japan"
+  },
+  "planks": {
+    "ocean": "⛵ Boat",
+    "fire": "🔥🪵 Fried Planks"
+  },
+  "house": {
+    "house": "🏠 Appartement",
+    "fire": "🔥🏠 Arson",
+    "light": "💡 Lightbulb",
+    "science": "🥼 Lab",
+    "sky": "🏢​ Skyscrapper"
+  },
+  "flower": {
+    "flower": "🌸 Garden",
+    "fire": "🏴 Burned Flower",
+    "love": "🌹 Rose",
+    "moon": "🪻 Moonflower"
+  },
+  "garden": {
+    "garden": "🏞️ Park"
+  },
+  "dirt": {
+    "flower": "❤️ Life",
+    "dirt": "💩 Pile of Dirt",
+    "leaf": "🌿​ Grass"
+  },
+  "life": {
+    "water": "🧑‍🤝‍🧑 Human",
+    "fire": "💀 Corpse",
+    "radioactivity": "👽 Radioactive Life",
+    "forest": "🐾 Animals",
+    "life": "❤️ Living Life",
+    "ocean": "🐟 Fish"
+  },
+  "radioactivelife": {
+    "fire": "☢️💀 Radioactive Corpse"
+  },
+  "radioactivecorpse": {
+    "time": "☢️🧑‍🤝‍🧑 Human Abormination"
+  },
+  "animals": {
+    "spear": "🥩​ Meat",
+    "house": "🏠🐾 Pet"
+  },
+  "livinglife": {
+    "livinglife": "❤️ The Life"
+  },
+  "thelife": {
+    "fire": "💔​ The Dead Life"
+  },
+  "human": {
+    "human": "🧑‍🤝‍🧑🧑‍🤝‍🧑 Zivilisation",
+    "fire": "💀 Corpse",
+    "explosion": "💀 Gore",
+    "cave": "🐻🗿🔥 Caveman",
+    "flower": "👧 Girl",
+    "house": "👪 Family",
+    "water": "🧑‍🤝‍🧑💧 Wet Human",
+    "nuke": "😈 Dictator",
+    "boat": "👨‍✈️ Captain",
+    "dictator": "⛓️ Slave",
+    "goldbar": "🧑‍🤝‍🧑💛 Millionare",
+    "tractor": "🚜 Farmer",
+    "sickness": "🤢🧑‍🤝‍🧑​ Sick Human",
+    "mountain": "🥾 Hiking",
+    "meat": "👦​ Boy",
+    "book": "💡 Knowledge",
+    "wisdom": "👴 Professor"
+  },
+  "captain": {
+    "wizardo": "👨‍✈️🧙🏼‍♂️🌪️ Captain Wizardo",
+    "captain": "👨‍✈️ Captain Captain",
+    "professor": "👨‍✈️👴 Captain Professor",
+    "gaming": "👨‍✈️🎮 Captain Gaming",
+    "wikipedia": "👨‍✈️📚​🌐 Wikipedia Administrator",
+    "the9-11": "💥 Bin Laden",
+    "gay": "👨‍✈️🏳️‍🌈 Captain Gay",
+    "gayfish": "👨‍✈️🏳️‍🌈 Captain Gay Fish",
+    "fish": "👨‍✈️🐟 Captain Iglo",
+    "caveman": "👨‍✈️🐻🗿🔥 Captain Caveman",
+    "midas": "👨‍✈️👑 Captain Midas",
+    "water50": "👨‍✈️💧 Captain Water50",
+    "thelife": "👨‍✈️❤️ Captain The Life",
+    "wikipediaeditor": "👮🏻‍♀️📚​🌐 Content Moderator",
+    "samsunggalaxy": "👨‍✈️📱 Captain Samsung Galaxy",
+    "dickpedia": "👨‍✈️🍆📚​🌐 Captain Dickmedia"
+  },
+  "kart": {
+    "captainkart50": "🏎️ Captain Water50 Kart",
+    "gayfish": "🏎️​ Gay Fish Kart",
+    "wikipedia": "📚​🌐🏎️​ The Wikipedia Kart Article",
+    "dickpedia": "📚​🌐🏎️​ The Dickpedia Kart",
+    "thelife": "​🚄​ Need For Speed",
+    "needfor speed": "🚄🏎️ Need for Speed Kart"
+  },
+  "wikipediaeditor": {
+    "wikipediaadministrator": "📚​🌐🏛️ Wikimedia Foundation"
+  },
+  "wikipedia": {
+    "gayfish": "​🤣​ South Park Episode",
+    "dick": "🍆📚​🌐 Dickpedia"
+  },
+  "wikimediafoundation": {
+    "dickpedia": "🍆📚​🌐🏛️ Dickmedia Foundation"
+  },
+  "dickpedia": {
+    "innovation": "👨​👨​ Smosh"
+  },
+  "professor": {
+    "life": "🧬​​ Biology",
+    "computerscience": "💻 Computer Scientist",
+    "wikipedia": "👴📚​🌐 Wikipedia Editor",
+    "science": "👴 Scientist",
+    "history": "👴📚 Historian"
+  },
+  "biology": {
+    "wisdom": "⚗️ Science"
+  },
+  "science": {
+    "computer": "💻⚗️ Computer Science"
+  },
+  "scientist": {
+    "electricity": "📱​ Technology"
+  },
+  "technology": {
+    "technology": "💻 Computer",
+    "galaxy": "📱 Samsung Galaxy",
+    "window": "💻🪟 Windows"
+  },
+  "computer": {
+    "steam": "🎮​ Gaming",
+    "light": "💻💡 Screen",
+    "water": "💧💨 Liquid Cooling"
+  },
+  "screen": {
+    "explosion": "💥💻💡 Broken Screen"
+  },
+  "farmer": {
+    "farmer": "🏡 Village"
+  },
+  "village": {
+    "village": "🏘️ Town"
+  },
+  "town": {
+    "town": "🏙️ City",
+    "thewhite house": "🏙️🏛️ Washington DC"
+  },
+  "city": {
+    "city": "🌆 Metropolis"
+  },
+  "metropolis": {
+    "america": "🌆 New York",
+    "wall": "🧱🏛️ Toll"
+  },
+  "newyork": {
+    "explosion": "🏙️💥🚑 The 9-11",
+    "newyork": "🌆 New New York"
+  },
+  "the9-11": {
+    "the9-11": "❓​ Number 922",
+    "book": "📚 History",
+    "number933": "❓​ Number 966",
+    "wikipedia": "📚​🌐 The 9-11 Wikipedia Article",
+    "time": "🏙️💥⏳ Historical Event"
+  },
+  "number922": {
+    "number922": "❓​ Number 933"
+  },
+  "number933": {
+    "number933": "❓​ Number 944"
+  },
+  "number944": {
+    "number944": "❓​ Number 955"
+  },
+  "number955": {
+    "number955": "❓​ Number 966"
+  },
+  "number966": {
+    "number966": "❓​ Number 977"
+  },
+  "number977": {
+    "number977": "❓​ Number 999"
+  },
+  "number999": {
+    "number999": "❓​ Number 1000"
+  },
+  "number1000": {
+    "number1000": "❓​ Number 3000"
+  },
+  "number3000": {
+    "number3000": "❓​ Number 6000"
+  },
+  "number6000": {
+    "number6000": "❓​ Number 10000"
+  },
+  "number10000": {
+    "number10000": "❓​ Number 21000"
+  },
+  "girl": {
+    "girl": "👧👧 Girls",
+    "life": "❤️ Reproduction",
+    "family": "👧 Sister",
+    "boy": "❤️​ Love",
+    "pride": "👧👧 Lesbian",
+    "rose": "👧 Girlfriend",
+    "time": "👧 Woman",
+    "dick": "💋​ Slut",
+    "penis": "💋​ Slut"
+  },
+  "sister": {
+    "brother": "💑​ Siblings"
+  },
+  "boy": {
+    "family": "👦​​ Brother",
+    "boy": "👦👦 Boys",
+    "girl": "❤️​ Love",
+    "pride": "🏳️‍🌈​ Gay",
+    "time": "👦 Man"
+  },
+  "man": {
+    "meat": "🍆 Dick"
+  },
+  "woman": {
+    "dick": "💋​ Slut",
+    "penis": "💋​ Slut",
+    "pride": "👧👧 Lesbian",
+    "life": "❤️ Reproduction",
+    "man": "❤️​ Love",
+    "rose": "👧 Girlfriend"
+  },
+  "dick": {
+    "dick": "🍆 Penis"
+  },
+  "brother": {
+    "sister": "💑​ Siblings"
+  },
+  "siblings": {
+    "love": "👩‍❤️‍💋‍👨 Siblings Love"
+  },
+  "siblingslove": {
+    "love": "🤗❤️ Family Bond"
+  },
+  "familybond": {
+    "love": "👩‍❤️‍💋‍👨 Incest"
+  },
+  "caveman": {
+    "animals": "🥩​ Meat",
+    "spear": "🧔🏽​🔪 Hunter"
+  },
+  "meat": {
+    "fire": "🥩 Steak",
+    "meat": "🥩 Buffet",
+    "water": "💧🥩 Wet Meat"
+  },
+  "corpse": {
+    "fire": "🌫️​ Ash",
+    "stone": "🦴 Fossil"
+  },
+  "zivilisation": {
+    "explosion": "💀 Gore",
+    "zivilisation": "🧑‍🤝‍🧑🧑‍🤝‍🧑🧑‍🤝‍🧑 Society"
+  },
+  "society": {
+    "explosion": "💀 Gore",
+    "society": "🧑‍🤝‍🧑🧑‍🤝‍🧑🧑‍🤝‍🧑🧑‍🤝‍🧑 Humanity"
+  },
+  "humanity": {
+    "explosion": "💀 Gore",
+    "humanity": "🧑‍🤝‍🧑 Generation"
+  },
+  "generation": {
+    "computer": "🧑‍🤝‍🧑📱 GenZ",
+    "samsunggalaxy": "🧑‍🤝‍🧑📱 GenZ"
+  },
+  "knowledge": {
+    "knowledge": "🧠 Wisdom",
+    "fire": "📈🔥 Innovation"
+  },
+  "love": {
+    "money": "🏴​ Bad Influence",
+    "love": "💓​ Loving Love",
+    "rainbow": "🏳️‍🌈​ Pride",
+    "fire": "❤️‍🔥 Burning Love",
+    "space": "💔 Divorse"
+  },
+  "lovinglove": {
+    "love": "💗​ Romance"
+  },
+  "gay": {
+    "gay": "🏳️‍🌈​ Double Gay",
+    "fish": "🐟🏳️‍🌈 Gay Fish",
+    "girl": "👧👧 Lesbian",
+    "captaingay": "👨‍✈️🏳️‍🌈 Captain Gay Gay",
+    "captaingay gay": "👨‍✈️🏳️‍🌈 Captain Gay Gay Gay",
+    "captaingay gay gay": "👨‍✈️🏳️‍🌈 Captain Gay Gay Gay Gay",
+    "captaingay gay gay gay": "👨‍✈️🏳️‍🌈 Captain Gay Gay Gay Gay Gay",
+    "gayfish": "🤵🏿 Kanye West"
+  }
+}

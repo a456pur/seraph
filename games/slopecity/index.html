@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+    <title>Slope City | Seraph</title>
+    <script src="../../storage/js/cloak.js"></script>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <link rel="stylesheet" href="unity/style.css">
+    <script>
+        window.open = function (url, windowName, windowFeatures) {
+            //window.open caught!
+            console.log("--fx--window.open--", url, windowName, windowFeatures);
+            return false;
+        };
+    </script>
+    <script src="unity/dummy.js"></script>
+    <script src="unity/unity-mod.js"></script>
+    <script src="unity/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate(
+        "gameContainer",
+        "Build/SlopeCity.json",
+        {
+            onProgress: UnityProgress,Module:{
+                onRuntimeInitialized: function() {
+                    UnityProgress(gameInstance, "complete")
+                }
+            }
+        });
+    </script>
+</head>
+<body style="overflow:hidden; margin:0; padding:0;">
+    <div id="gameView" class="webgl-content" style="position: absolute; width: 100%; height: 100%; margin: 0px; padding:0px;">
+        <div id="gameContainer" style="width: 100%; height: 100%; margin: 0px; padding:0px;"></div>
+    </div>
+</body>
+</html>

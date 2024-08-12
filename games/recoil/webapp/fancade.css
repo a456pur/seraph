@@ -1,0 +1,399 @@
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("baloo2.woff") format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.fullscreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.centered {
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;
+  text-align: center;
+}
+
+#play_overlay {
+  display: none;
+  z-index: 10;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.middle_vertical {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.edge {
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 164px;
+  height: 180px;
+  background-color: #cfdaed;
+  box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.25);
+  transform: rotate(-5deg);
+}
+
+.box {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  position: relative;
+}
+
+.black {
+  width: 132px;
+  height: 156px;
+  background-color: black;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  margin: 0 auto;
+}
+
+.cover {
+  width: 128px;
+  height: 128px;
+  margin: 2px;
+}
+
+.title {
+  font-size: 14px;
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
+}
+
+.author {
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
+  border-spacing: 0;
+  font-size: 14px;
+  color: #ccc;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  width: 150px;
+  top: 4px;
+  right: 142px;
+  transform-origin: right top;
+  transform: rotate(-90deg);
+}
+
+.loading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.2em;
+  width: 240px;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid #00a2ff;
+  border-radius: 7px;
+  width: 133px;
+  height: 43px;
+  font-size: 16px;
+  line-height: 43px;
+  margin: 0 auto;
+}
+
+.overlay_button {
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 12px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  margin: 11px;
+}
+
+#play_button {
+  color: #333;
+  background-color: #eee;
+}
+
+.emscripten_border {
+  position: relative;
+}
+
+#gradient {
+  background-image: linear-gradient(135deg, #70e1fd, #00a2ff);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 768px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p, ul, ol, dl {
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+img {
+  vertical-align: top;
+}
+
+
+html, body {
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
+  font-size: 18px;
+  color: #bbb;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  line-height: 1.8;
+  overflow: hidden; /*  Disable scrollbars */
+  display: block;  /* No floating content on sides */
+}
+
+canvas { 
+  padding-right: 0; 
+  margin-left: auto; margin-right: auto; display: block; 
+  margin-top: auto; margin-bottom: auto;
+  position: relative;
+  width: 1024px;
+  height: 768px;
+}
+
+div.emscripten { text-align: center; }      
+
+/* the canvas *must not* have any border or padding, or mouse coords will be wrong */
+canvas.emscripten { 
+  border: 0px none;
+  background-color: black;
+  /* background-color: #00a2ff; */
+}
+
+#status {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  color: rgb(120, 120, 120);
+  text-align: center;
+}
+
+#modal_parent {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* padding-top: 100px; Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal_inner {
+  display: none;
+}
+
+#play_content {
+  color: white;
+  z-index: 10;
+}
+
+#modal_content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  box-sizing: border-box;
+}
+
+.error_message {
+  color: red;
+}
+
+.error_text {
+  color: red;
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
+#modal_close_button {
+  color: #aaaaaa;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  /* float: right; */
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#modal_close_button:hover,
+#modal_close_button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:link {
+  color: #00B9FE;
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:visited {
+  color: #00B9FE;
+}
+a:hover, a:active {
+  opacity: 0.5;
+}
+
+.link_image_button {
+  margin-right: 10px;
+}
+
+.playstore075 {
+  width: 153px;
+  height: 45px;
+}
+
+.appstore075 {
+  width: 135px;
+  height: 45px;
+}
+
+#progress_or_play {
+  margin-top: 10px;
+}
+
+#terms_p {
+  font-family: sans-serif;
+  color: rgb(20, 20, 20);
+  font-size: 0.7em;
+  margin-bottom: 0px;
+}
+#terms_p a {
+  color: rgb(240, 240, 240);
+}
+
+.deeplink_message {
+  font-size: 1em;
+  color: rgb(240, 240, 240);
+  line-height: 1.1em;
+  font-size: 20px;
+}
+
+.menu {
+  color: rgb(240, 240, 240);
+}
+
+.level_button {
+  border: 2px solid #222222;
+  border-radius: 1em;
+  color: rgb(240, 240, 240);
+  background-color: #00a2ff;
+  line-height: 1em;
+  height: 2.5em;
+  width: 5em;
+  justify-self: center;
+  position: relative;
+  padding-top: 0.6em;
+}
+
+.grid_element_center {
+  justify-self: center;
+}
+
+.level_button_name {
+  font-size: 0.6em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.level_button_number {
+  font-size: 1.2em;
+}
+
+.level_button:hover  {
+  background-color: #00c2ff;
+}
+
+.level_checkmark {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+.level_button a {
+  color: rgb(240, 240, 240);
+  opacity: 1;
+}
+
+.menu_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu_header {
+  font-size: 3em;
+  margin-top: 40px;
+}
+
+#webview_content {
+  display: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 768px;
+}
+
+.webview {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  margin: 0px;
+  border: 0;
+  overflow: hidden;
+}
+
