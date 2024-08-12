@@ -144,6 +144,23 @@
                 
                 z-index: 2; 
             }
+
+            #online-notice {
+                display: none; 
+                background-color: #050505;
+                border: 3px solid white;
+                border-radius: 16px;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                font-family: 'Ubuntu', sans-serif;
+                z-index: 1000;
+
+                font-size: 16px;
+                width: 100%;
+                max-width: 500px;
+
+            }
             
             @keyframes mainHeaderAnimation {
                 0% {
@@ -159,9 +176,12 @@
         </style>
   </head>
   <body>
+
       <div class="content-side">
+        
           <h1 class="typewriter"><span id="cursor">seraph</span></h1>
           <h2>version 10 / development build (offline mode)</h2>
+          <div id="online-notice" >you appear to have an internet connection now! go back to main seraph by refreshing the page.</div>
           <p>everything on this page is subject to change ( ´ ∀ `)ノ～ ♡ ~</p>
           <br>
           <br>
@@ -350,6 +370,22 @@
                 document.addEventListener('keydown', keyHandler);
                 document.addEventListener('keyup', keyUpHandler);
             })();
+      </script>
+
+      <script>
+        function checkInternetConnection() {
+            const onlineNotice = document.getElementById('online-notice');
+
+            if (navigator.onLine) {
+                onlineNotice.style.display = 'block';
+            } else {
+                onlineNotice.style.display = 'none';
+            }
+        }
+
+        window.onload = checkInternetConnection;
+        window.addEventListener('online', checkInternetConnection);
+        window.addEventListener('offline', checkInternetConnection);
       </script>
   </body>
 </html>
