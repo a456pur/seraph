@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7FN7LEVWXD');
+    </script>
+    <title>Etch a Sketch | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">etch a sketch</h1>
+    </header>
+    <main class="main">
+      <div class="settings">
+        <input id="colorPicker" type="color" value="#FFFFFF" />
+        <button id="colorBtn">color</button>
+        <button id="rainbowBtn">rainbow</button>
+        <button id="eraserBtn">eraser</button>
+        <button id="clearBtn">clear</button>
+        <div id="sizeValue" class="size-value">16 x 16</div>
+        <input id="sizeSlider" type="range" value="16" min="1" max="64" />
+      </div>
+      <div id="grid" class="grid"></div>
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com/michalosman" target="_blank" style="text-decoration: none; color: white;">originally created by @michalosman on github</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

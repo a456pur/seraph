@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7FN7LEVWXD');
+    </script>
+    <title>ZIP Opener | Seraph</title>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+    <script src="../../storage/js/cloak.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>zip opener</h1>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="fileInput"></label>
+                <input type="file" class="form-control-file" id="fileInput" accept=".zip" required>
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary" id="unzipBtn">unzip</button>
+        </form>
+        <br>
+        <div id="output"></div>
+        <div id="downloadLinks" style="display: none;">
+            <h3>files:</h3>
+            <ul id="fileList"></ul>
+        </div>
+    </div>
+
+
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="jszip.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('#unzipBtn').click(function() {
+                var fileInput = $('#fileInput')[0].files[0];
+                if (fileInput) {
+                    var zip = new JSZip();
+                    zip.loadAsync(fileInput)
+                    .then(function(contents) {
+                        $('#output').html('<p>unzipped successfully!</p>');
+                        displayDownloadLinks(contents);
+                    })
+                    .catch(function(error) {
+                        $('#output').html('<p>error: ' + error.message + '</p>');
+                    });
+                } else {
+                    $('#output').html('<p>please select a file to upload.</p>');
+                }
+            });
+
+            function displayDownloadLinks(contents) {
+                var fileList = $('#fileList');
+                fileList.empty(); // Clear previous links if any
+
+                contents.forEach(function(relativePath, file) {
+                    file.async('blob').then(function(blob) {
+                        var url = URL.createObjectURL(blob);
+                        var link = $('<a>').attr({
+                            href: url,
+                            download: file.name
+                        }).text(file.name);
+                        var listItem = $('<li>').append(link);
+                        fileList.append(listItem);
+                    });
+                });
+
+                $('#downloadLinks').show();
+            }
+        });
+    </script>
+</body>
+</html>

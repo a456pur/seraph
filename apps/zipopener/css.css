@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/storage/fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+         url('/storage/fonts/ubuntu/Ubuntu.woff') format('woff'),
+         url('/storage/fonts/ubuntu/Ubuntu.ttf') format('truetype'),
+         url('/storage/fonts/ubuntu/Ubuntu.otf') format('otf');
+  }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: white;
+
+    background-image: url('zip.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 16px;
+    text-align: center;
+
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 16px;
+    padding: 10px 10px;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+}
+
+input#file-upload-button {
+    font-family: 'Ubuntu';
+    color: white;
+}
+input[type="file"] {
+    font-family: 'Ubuntu';
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
