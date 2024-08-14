@@ -1,0 +1,16 @@
+{
+"companyName": "New Eich Games",
+"productName": "House of Hazards",
+"productVersion": "0.1",
+"dataUrl": "HouseOfHazardsPoki.data.unityweb",
+"wasmCodeUrl": "HouseOfHazardsPoki.wasm.code.unityweb",
+"wasmFrameworkUrl": "HouseOfHazardsPoki.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#5FDEE7",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.10f1"
+}

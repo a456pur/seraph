@@ -1,0 +1,5 @@
+{"frames":[
+{"filename":"fire_01","frame":{"x":0,"y":0,"w":208,"h":208},"rotated": false,"sourceSize":{"w":208,"h":208}},
+{"filename":"fire_02","frame":{"x":208,"y":0,"w":208,"h":208},"rotated": false,"sourceSize":{"w":208,"h":208}},
+{"filename":"fire_03","frame":{"x":0,"y":208,"w":208,"h":208},"rotated": false,"sourceSize":{"w":208,"h":208}},
+{"filename":"fire_04","frame":{"x":208,"y":208,"w":208,"h":208},"rotated": false,"sourceSize":{"w":208,"h":208}}],"meta":{"format":"RGBA8888"}}

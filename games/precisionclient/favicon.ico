@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-261780635-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-261780635-1');
+</script>
+
+  <title>Play Minecraft Online! | Online mc</title>
+
+  <link rel="icon" href="/icon.png">
+  <meta name="description" content="Play Minecraft Online For Free!" />
+  <meta name="keywords" content="free minecraft online, eaglercraft, minecraft, onlinemc, Onlinemc, ayuncraft, Ayuncraft, mc, eaglercraftx, eaglercraft shaders, eaglercraft download,eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8, eaglercraft, eaglercraft minecraft, eaglercraft 3kh0, eaglercraft github, eaglercraft singleplayer, eaglercraft hacks, eaglercraft 1.8, eaglercraft server, eaglecraft game, eaglercraft alternative, eaglercraft alt links, eaglercraft asspixel, eaglercraft anarchy server, eaglercraft aeon, eaglercraft asspixel server ip, eaglercraft all links, eaglercraft aeon server, eaglercraft beta, eaglecraft boats, eaglecraft boats for sale, eaglecraft boats for sale bc, eaglecraft bedwars server, eaglecraft boats inc, eaglercraft beta servers, eaglercraft blocked, eaglercraft client, eaglecraft custom boats, eaglecraft campbell river, eaglercraft creative, eaglercraft commands, eaglercraft code, eaglercraft controls, eaglercraft com, eaglercraft download, eaglercraft discord, eaglercraft dupe glitch, eaglercraft download file, eaglercraft download google drive, eaglercraft dmca, eaglercraft deleted, eaglercraft down, eaglercraft embed, eaglercraft epk file download, eaglercraft end of stream, eaglecraft apk download, eaglecraft eagtek, eaglercraft exploit, eaglecraft eggs, eaglercraft epk world file download, eaglercraft file, eaglercraft file download, eaglercraft free, eaglercraft forums, eaglercraft fork, eaglercraft faq, eaglercraft fps, eaglecraft free download, eaglercraft github servers, eaglercraft google drive, eaglercraft github lax1dude, eaglercraft github download, eaglercraft github.io, eaglercraft google sites, minecraft, applet, singleplayer, replit, html5, chromebook, lax1dude, games, eaglercraft singleplayer, eagler, minecraft for free, free minecraft">
+  <meta property="og:title" content="Online mc" />
+  <meta property="og:image" content="/icon.png" />
+  <meta property="og:description" content="Online Minecraft" />
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link href="/style.css" rel="stylesheet" />
+    <link href="/darkmode.css" rel="stylesheet" />
+</head>
+
+
+<body class="diff-bg">
+<div id="loading"></div>
+  <div class="container container-table">
+    <div class="row vertical-center-row">
+      <div class="col-12">
+        </a>
+        <div class="d-flex justify-content-center">
+        </div>
+
+        <div class="col-12">
+          <div class="button-area d-block">
+			<h1 class="dark-text">404 Not Found!</h1>
+			<div class="splash-404">...</div>
+			  <h3>&nbsp;</h3>
+			  <a href="/">click here to go back to the main page!</a>
+		  <img class="creeper ms-auto d-block" src="creeper.webp" alt=""/> 
+		</div>
+          <div class="mc-footer d-flex justify-content-between">
+            <div class="footer-copyright text-end text-white">This website is not affiliated with Mojang.</div>
+            <div class="mc-dd">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.onload = function () {
+        //display loader on page load 
+        $('#loading').fadeOut();
+      }
+
+      setTimeout(function () {
+        //display loader on page load 
+        $('#loading').fadeOut();
+      }, 12 * 1000);
+    </script>
+	<script src="/darkmode.js"></script>
+	<script src="/splash-404.js"></script>
+</body>
+
+</html>

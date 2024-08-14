@@ -1,0 +1,13 @@
+{
+"companyName": "Crazy Tunnel 3D",
+"productName": "Crazy Tunnel 3D",
+"dataUrl": "CrazyTunnel3D-g-1.data.unityweb",
+"wasmCodeUrl": "CrazyTunnel3D-g-1.wasm.code.unityweb",
+"wasmFrameworkUrl": "CrazyTunnel3D-g-1.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}

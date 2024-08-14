@@ -1,0 +1,54 @@
+§fPrecision Client is a custom eaglercraft client with QOL §ffeatures, custom texture packs, and more.§r
+
+§9This was created by LAX1DUDE and forked by EtcherFX§r
+
+§4Ingame voice chat service created by ayunami2000§r
+
+§2Click the Github or Discord button on the main menu for §2more information§r
+
+§fScroll down for the detailed license statements
+
+§fAll graphical assets in this project were ripped from §fMojang's official Minecraft.jar for Minecraft version §f1.5.2 §fand they are Mojang's intellectual property. Assets ommitted §finclude the Minecraft soundtrack and music disks and all §fsoftware references to the Mojang/Minecraft api.
+
+§f========================================
+
+§fCopyright (c) 2022 Calder Young.
+
+§fThis work is licensed under a Creative Commons
+§fAttribution-NonCommercial 4.0 International License
+§f§nhttp://creativecommons.org/licenses/by-nc/4.0/§r
+
+§f========================================
+
+§fTeaVM Copyright 2016 Alexey Andreev.
+
+§fLicensed under the Apache License, Version 2.0 (the §f"License"); you may not use this file except in compliance §fwith the License. You may obtain a copy of the License at
+
+§f§nhttp://www.apache.org/licenses/LICENSE-2.0§r
+
+§fUnless required by applicable law or agreed to in writing, §fsoftware distributed under the License is distributed on an §f"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY §fKIND, either express or implied. See the License for the §fspecific language governing permissions and limitations §funder the License.
+
+§f========================================
+
+§fNVIDIA FXAA 3.11 by TIMOTHY LOTTES
+
+§fCopyright (c) 2010, 2011 NVIDIA CORPORATION. ALL RIGHTS §fRESERVED.
+
+§fTO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, §fTHIS SOFTWARE IS PROVIDED *AS IS* AND NVIDIA AND ITS §fSUPPLIERS DISCLAIM ALL WARRANTIES, EITHER EXPRESS OR §fIMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES §fOF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. §fIN NO EVENT SHALL NVIDIA OR ITS SUPPLIERS BE LIABLE FOR §fANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL §fDAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, §fDAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS §fINTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER §fPECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO §fUSE THIS SOFTWARE, EVEN IF NVIDIA HAS BEEN ADVISED OF THE §fPOSSIBILITY OF SUCH DAMAGES.
+
+§f========================================
+
+§fJZlib Copyright (c) 2000-2011 ymnk, JCraft,Inc. All rights §freserved.
+
+§fRedistribution and use in source and binary forms, with or §fwithout modification, are permitted provided that the following §fconditions are met:
+
+§f1. Redistributions of source code must retain the above §fcopyright notice, this list of conditions and the following §fdisclaimer.
+
+§f2. Redistributions in binary form must reproduce the §fabove copyright notice, this list of conditions and the §ffollowing disclaimer in the documentation and/or other §fmaterials provided with the distribution.
+
+§f3. The names of the authors may not be used to endorse §for promote products derived from this software without §fspecific prior written permission.
+
+§fTHIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR §fIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE §fIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A §fPARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL §fJCRAFT, INC. OR ANY CONTRIBUTORS TO THIS SOFTWARE BE §fLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, §fEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT §fLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; §fLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) §fHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER §fIN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING §fNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE §fUSE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY §fOF SUCH DAMAGE.
+
+§f========================================
+

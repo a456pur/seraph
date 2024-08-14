@@ -1,0 +1,1088 @@
+<html lang="en"><head>
+    <meta name="robots" content="noindex,nofollow" />
+    <script src="/js/all.min.js"></script>
+
+	<script>!function(i){var c="addEventListener",a="removeEventListener";"function"!=typeof Date.now&&(Date.now=function(){return+new Date});var r,f,u,p,e,t=window.performance;if(void 0===t&&(window.performance=t={}),"function"!=typeof t.now){var n=Date.now();t.timing&&t.timing.navigationStart&&(n=t.timing.navigationStart),t.now=function(){return Date.now()-n}}"function"!=typeof Function.prototype.bind&&(Function.prototype.bind=function(n){var o=this,t=arguments.length-1,r=[];if(0<t)for(r.length=t;t--;)r[t]=arguments[t+1];if("function"!=typeof o)throw new TypeError;function i(){for(var t=arguments.length,e=new Array(t);t--;)e[t]=arguments[t];return e=r.concat(e),o.apply(this instanceof i?this:n,e)}return i.prototype=function t(e){if(e&&(t.prototype=e),!(this instanceof t))return new t}(o.prototype),i}),"function"!=typeof Object.create&&(Object.create=function(t,e){if("object"!=typeof t&&"function"!=typeof t)throw new TypeError("Object prototype may only be an Object: "+t);if(null===t)throw new Error("This browser's implementation of Object.create is a shim and doesn't support \"null\" as the first argument.");if(void 0!==e)throw new Error("This browser's implementation of Object.create is a shim and doesn't support a second argument.");function n(){}return n.prototype=t,new n}),"function"!=typeof Object.assign&&Object.defineProperty(Object,"assign",{value:function(t,e){if(null===t)throw new TypeError("Cannot convert undefined or null to object");for(var n=Object(t),o=1;o<arguments.length;o++){var r=arguments[o];if(null!==r)for(var i in r)Object.prototype.hasOwnProperty.call(r,i)&&(n[i]=r[i])}return n},writable:!0,configurable:!0}),"function"!=typeof Object.keys&&(r=Object.prototype.hasOwnProperty,f=!{toString:null}.propertyIsEnumerable("toString"),p=(u=["toString","toLocaleString","valueOf","hasOwnProperty","isPrototypeOf","propertyIsEnumerable","constructor"]).length,Object.keys=function(t){if("function"!=typeof t&&("object"!=typeof t||null===t))throw new TypeError("Object.keys called on non-object");var e,n,o=[];for(e in t)r.call(t,e)&&o.push(e);if(f)for(n=0;n<p;n++)r.call(t,u[n])&&o.push(u[n]);return o}),function(){var t=("undefined"==typeof EventTarget?Node:EventTarget).prototype,o=t[c],r=t[a],e=!1;try{var n=Object.defineProperty({},"passive",{get:function(){e=!0}});i[c]("test",null,n),i[a]("test",null,n)}catch(t){console.error("Polyfill error:",t)}e||(t[c]=function(t,e,n){return"object"==typeof n&&(n=n.capture),o.call(this,t,e,n)},t[a]=function(t,e,n){return"object"==typeof n&&(n=n.capture),r.call(this,t,e,n)})}(),"function"!=typeof i.encodeURI&&(e=i.escape,i.encodeURI=i.escape=function(t){return e(t)}),"function"!=typeof Math.seed&&(Math.seed=function(t){var e=t,n=426381559378,o=4294967295;return function(){var t=((n=18e3*(65535&n)+(n>>16)&o)<<16)+(e=36969*(65535&e)+(e>>16)&o)&o;return.5+(t/=4294967296)}})}(this);
+</script>
+
+	<script>
+		window.__FRVR = window.__FRVR || {};
+		window.__FRVR.startTime = Date.now();
+		window.LEGACY_COORD_SYSTEM = true;
+
+	</script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+	<!--
+		/**
+		* @author Chris Benjaminsen http://chrisbenjaminsen.com/ @benjaminsen
+		 */
+		/** @license
+			Gold Digger FRVR 1.2.4
+			More info at http://frvr.com
+
+			Copyright (c) 2013+ FRVR Limited
+
+			All Rights Reserved!
+			FRVR is a registered trademark of FRVR Limited
+		*/
+		/**
+			Well hello there!
+
+			I see you are interested in the details of how this game was made!
+			It's written using a custom HTML5 engine built around PixiJS.
+
+			While I can't tell you more on the how, there is much more on the why to be find at 
+			http://blog.chrisbenjaminsen.com where I write frequent status updates on the games I build
+			under the FRVR brand - - including a 100% honest track record of money earned and spend.
+
+			Hack on!
+			Chris Benjaminsen
+			chrisbenjaminsen.com
+
+			- - - - - - - - - - - - - -
+
+			Gold Digger FRVR would not be possible without the following open source projects:
+
+			pixi.js - v2.2.3
+			Copyright (c) 2012-2014, Mat Groves
+			http://goodboydigital.com/
+			pixi.js is licensed under the MIT License.
+			http://www.opensource.org/licenses/mit-license.php
+			Mat Groves http://matgroves.com/ @Doormat23
+		*/
+	-->
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Gold Digger FRVR">
+	<meta name="theme-color" content="#202020">
+	<meta name="HandheldFriendly" content="true">	
+	<meta name="format-detection" content="telephone=no">
+  	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="google" content="notranslate">   
+
+	<link rel="canonical" href="https://golddigger.frvr.com/">
+
+	<link rel="apple-touch-icon" sizes="60x60" href="./v/1576154523809/i/web/icon60x60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./v/1576154523809/i/web/icon76x76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./v/1576154523809/i/web/icon120x120.png">
+	<link rel="apple-touch-icon" sizes="196x196" href="./v/1576154523809/i/web/icon196x196.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="./v/1576154523809/i/web/icon256x256.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="./v/1576154523809/i/web/icon1024x1024.png">
+
+		<link rel="icon" type="image/png" href="./v/1576154523809/i/web/favicon.png">
+
+	<link rel="me" href="https://twitter.com/FRVRGames">
+
+	<meta name="facebook_label" content="Gold Digger FRVR - Deep Mining - Dig and Match Exploration">
+
+	<meta property="og:title" content="Gold Digger FRVR - Deep Mining">
+	<meta property="og:description" content="Start mining and get tons of gold in the best free digging game ever! Can you become the speleology tycoon?">
+	<meta property="og:site_name" content="Gold Digger FRVR">
+	<meta property="og:url" content="https://golddigger.frvr.com/">
+	<meta property="og:type" content="game">
+	<meta property="og:locale" content="en">
+	<meta property="og:image" content="https://golddigger.frvr.com/v/1576154523809/i/web/facebook01.png">
+	<meta property="fb:app_id" content="2521873641173108">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@FRVRGames">
+	<meta name="twitter:creator" content="@Benjaminsen">
+	<meta name="twitter:title" content="Gold Digger FRVR - Deep Mining - Dig and Match Exploration">
+	<meta name="twitter:image" content="https://golddigger.frvr.com/v/1576154523809/i/web/twitter01.png">
+	<meta name="twitter:description" content="Start mining and get tons of gold in the best free digging game ever! Can you become the speleology tycoon?">	
+
+	<meta name="twitter:app:name:iphone" content="Gold Digger FRVR">
+	<meta name="twitter:app:id:iphone" content="">
+	<meta name="twitter:app:name:ipad" content="Gold Digger FRVR">
+	<meta name="twitter:app:id:ipad" content="">
+
+	<meta name="twitter:app:name:googleplay" content="Gold Digger FRVR">
+	<meta name="twitter:app:id:googleplay" content="com.frvr.golddigger">
+
+	<meta name="description" content="Start mining and get tons of gold in the best free digging game ever! Can you become the speleology tycoon?">
+	<meta name="keywords" content="pickaxe,rush,explore,cave,dirt,golden,miner,maze,drill,map,rocks,match,treasure,archeology,simulator">
+
+	<title>Gold Digger FRVR - Deep Mining - Dig and Match Exploration</title>
+	<style>
+
+		body {
+			background:#c8c8c8;
+			overflow:hidden;
+			position:fixed;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			border:0px;padding:0px;margin:0px;
+			width:100%;
+			height:100%;
+			padding-top: constant(safe-area-inset-top);
+		}
+
+		preloader{
+			display:block;
+			width:100%;
+			height:100%;
+			background: #EEEEEE;
+			background:radial-gradient(ellipse at center, #ffffff 1%,#c8c8c8 150%);
+			position:fixed;
+			z-index:5;
+		}
+
+		preloader canvas, preloader img{
+			position: fixed;
+		}
+
+		preloader loadbar{
+			display:none;
+			position:fixed;
+			border:1px solid #afafaf;
+		}
+
+		preloader loadbar div{
+			display:block;
+			width:0%; 
+			height:100%;
+			background-color:#007bb2;
+		}
+
+		#gameCanvas{
+			position: fixed;
+			top:0px;
+			left:0px;
+			width:0px;
+			height:0px;
+			background-color:#000000
+		}
+
+		#overlay{
+			position:absolute;
+			z-index:3;
+			left:50%;
+			margin-left:-70px;
+			visibility:hidden;
+			bottom:3px;
+			overflow:hidden;
+			text-align: center;
+		}
+
+		#overlay div{
+			float:left;
+		}
+
+		#overlay.cn {
+				margin-left: -190px;
+		}
+
+		/* Google+ share button */
+		#overlay.cn div#___plusone_0 {
+			width: 68px !important;
+		}
+
+		#overlay.cn div#___plusone_0 iframe {
+			position: relative !important;
+			top: -4px !important;
+		}
+
+		/* Sina Weibo share button */
+		#overlay wb\:share-button iframe {
+			width: 105px !important;
+		}
+
+		/* QZone share button */
+		#overlay iframe[version="1.0"] {
+			position: relative !important;
+			top: -2px;
+		}
+
+		@-ms-viewport{width:100%}
+
+		content{
+			background-color:#ffffff;
+			display: block;
+			padding:20px;
+			height:100%;
+			overflow:scroll;
+		}
+
+		content metadata{
+			float:right;
+			margin-left:10px;
+			text-align:center;
+		}
+
+		h1{
+			margin:0px;
+			font-weight:100;
+			font-size:50px;
+		}
+		a{
+			line-height:2em;
+		}
+		h3{
+			margin-bottom:0px;
+		}
+
+		@keyframes w{0%{transform:rotate(0deg);}20%{transform:rotate(-3deg) scale(1.4) translate(0px,-5px);}50%{transform:rotate(3deg) scale(1.4) translate(0px,-5px);}80%{transform:rotate(-3deg) scale(1.4) translate(0px,-5px);}100%{transform:rotate(0deg);}}
+		.w {animation:w 1.5s 1;}
+
+	</style>
+
+		<script src="poki-sdk.js"></script><style>
+.pokiSdkContainer {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pokiSdkContainer.pokiSdkFixed {
+	position: fixed;
+}
+
+.pokiSdkContainer.pokiSdkVisible {
+	display: block;
+}
+
+.pokiSdkContainer.pokiSdkHidden,
+.pokiSdkSpinnerContainer.pokiSdkHidden {
+	display: none;
+}
+
+.pokiSdkContainer.pokiSdkHidden,
+.pokiSdkSpinnerContainer {
+	pointer-events: none;
+}
+
+.pokiSdkSpinnerContainer {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('https://a.poki.com/images/thumb_anim_2x.gif') 50% 50% no-repeat;
+	user-select: none;
+}
+
+.pokiSdkInsideContainer {
+	background: #000;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.pokiSdkContainer.pokiSdkVisible .pokiSdkInsideContainer {
+	opacity: 1;
+}
+
+.pokiSDKAdContainer, .pokiSdkVideoContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.pokiSdkStartAdButton {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+
+	padding-top: 10%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #FFF;
+
+	font: 700 15pt 'Arial', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: 0.1s ease-in-out;
+	line-height: 1em;
+}
+
+.pokiSdkPauseButton {
+	cursor:pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.pokiSdkPauseButton:before {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	display: block;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	user-select: none;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: background-color 0.5s ease;
+	animation: 1s linear infinite pokiPulse;
+}
+
+.pokiSdkPauseButton:after {
+	content: '';
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	border-color: transparent transparent transparent #fff;
+	border-style: solid;
+	border-width: 26px 0 26px 40px;
+	pointer-events: none;
+	animation: 1s linear infinite pokiPulse;
+	left: 6px;
+}
+.pokiSdkPauseButtonBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background: rgba(0, 43, 80, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.pokiSdkPauseButtonBG:hover{
+	background: rgba(0, 43, 80, 0.7);
+}
+
+@keyframes pokiPulse {
+	0% {
+		transform: translate(-50%, -50%) scale(0.95);
+	}
+	70% {
+		transform: translate(-50%, -50%) scale(1.1);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(0.95);
+	}
+}
+
+.pokiSdkProgressContainer {
+	background: #B8C7DD;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	z-index: 9999;
+}
+
+.pokiSdkProgressBar {
+	position:relative;
+	bottom:0px;
+	background: #FFDC00;
+	height: 100%;
+	width: 0%;
+	transition: width 0.5s;
+	transition-timing-function: linear;
+}
+
+.pokiSdkProgressBar.pokiSdkVisible, .pokiSdkPauseButton.pokiSdkVisible, .pokiSdkStartAdButton.pokiSdkVisible {
+	display: block;
+	pointer-events: auto;
+}
+
+.pokiSdkProgressBar.pokiSdkHidden, .pokiSdkPauseButton.pokiSdkHidden, .pokiSdkStartAdButton.pokiSdkHidden {
+	display: none;
+	pointer-events: none;
+}
+</style></head>
+
+	<body>
+
+	<!-- TODO debugcode, move me to provider -->
+	<div id="debug" style="position:absolute; color:red; left:40px; z-index: 9999999"></div>
+
+    <script>
+			window.__antialias = false
+    </script>
+
+		<script>
+		var version = "1.2.4"
+
+		var gaPath = '/golddigger/' + version + '/';
+
+		var initTime = 1*new Date();
+
+			window.vpath = "./v/1576154523809/";
+
+			window.spath = "./v/1576154523809/external.js";
+
+			window.extsize = 1811152;
+
+		//In seperate code block to load first & not trigger when JS is disabled
+		var preloader = document.createElement('preloader');document.body.appendChild(preloader);
+
+		</script>
+		<script>
+			//ie9 polyfill
+			if(!(window.console && console.log)) {
+				var fn = function(){};
+				console={log:fn,debug:fn,info:fn,warn:fn,error:fn};
+			}
+			Host = {
+    			Localize:{
+
+        		languages:
+    				[]
+
+    			},dataUrlsSupported:(function(){
+					var c = document.createElement("canvas");
+					return c.toDataURL&&(c.toDataURL("image/png").indexOf("data:image/png") == 0);
+				})()
+			};
+
+			(function(scope){
+				(function(w,d,a,m){var g='GameAnalytics';w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)}})(window,document);
+
+				var relasedCanvasElements = []
+				var completed = 0;
+				var preview = 0;
+				var facebookAPIInited = false;
+				var gameIsLoaded = false;
+
+				scope._jsonData={};
+				;
+scope._jsonData['ab_tests'] = {"ab_ftue":{"cohorts":["disabled","enabled"]},"ab_blastpreview":{"cohorts":["disabled","enabled"]}};
+scope._jsonData['track-ga'] = {"gaIds":{"all":"UA-54081731-1"},"state":"{appId=app_id,appName=app_name,appVersion=app_version,metric1=play_session_count,dimension2=cohort,dimension4=play_session_id,dimension3=device_id,metric2=days_elapsed,metric3=days_played,dimension5=channel,dimension6=entry_point,dimension7=utm_string,dimension8=screen,dimension9=facebook_context,metric4=currency_amount,metric5=missions_completed,metric6=progression,metric7=games_played}","events":{"default":"name,,value,_params","options_change":"name,option_name:option_value","game_end":"name,level_id,game_duration","game_play_start,game_continue_used":"name,level_id","keepalive,new_user,mission_success":"name","coin_spent,tutorial_step_completed,session_start":"name,,value","game_loaded":"name,,loading_time","social_engage,engage":"'engage',engage_id:button_placement,1","play_with_friend":"name,,1","share,invite":"name,button_placement,1","cross_promotion_show":"name,button_placement,1","cross_promotion_click,cross_promotion_success,cross_promotion_failure":"name,target_game,1","ad_mandatory_request":"name,,value,{_merge=_params,dimension13=provider}","ad_mandatory_response":"name,ad_response,value,{_merge=_params,dimension13=provider}","ad_mandatory_show":"name,,value,{_merge=_params,dimension13=provider}","ad_mandatory_finish":"name,ad_result,value,{_merge=_params,dimension13=provider}","ad_mandatory_blocked":"name,,value,{_merge=_params,dimension13=provider}","ad_mandatory_pass":"name,,value,{_merge=_params,dimension13=provider}","ad_mandatory_throttled":"name,throttle_type,value,{_merge=_params,dimension13=provider}","ad_rewarded_request":"name,,value,{_merge=_params,dimension13=provider}","ad_rewarded_response":"name,ad_response,value,{_merge=_params,dimension13=provider}","ad_rewarded_show":"name,,value,{_merge=_params,dimension13=provider}","ad_rewarded_finish":"name,ad_result,value,{_merge=_params,dimension13=provider}","ad_rewarded_blocked":"name,,value,{_merge=_params,dimension13=provider}","ad_rewarded_pass":"name,,value,{_merge=_params,dimension13=provider}","ad_rewarded_throttled":"name,throttle_type,value,{_merge=_params,dimension13=provider}","chatbot_noshow,chatbot_show,chatbot_success,chatbot_issubscribed,chatbot_useraborted":"name,,","chatbot_error":"name,reason,"}};
+scope._jsonData['track-gma'] = {"url":"https://cdn.frvr.com/utils/gameanalytics310.js","currencies":"coin","itemtypes":"unknown","channelMapping":{"web_edge,web_firefox,web_opera,web_safari,web_chrome,":"web","web_safari_ios,web_chrome_ios":"web_ios","vkru,okru,twitch,hago":"other"},"customDimensions01":"web,web_ios,web_samsung,web_samsung_m4s,web_silk,chromeos,android,ios,rcs,samsung,facebook_instant,facebook_canvasweb,facebook_canvas,bixby,imessage,spil,kongregate,kik,twitter,other","events":{"new_user":"'addDesignEvent',name","game_loaded":"'addProgressionEvent','Complete',name,,,loading_time","keepalive":"'addDesignEvent',name","game_play_start":"'addProgressionEvent','Start',level_id","game_continue_used":"'addProgressionEvent','Start',level_id","game_end":"'addProgressionEvent','Complete',level_id,,,value","game_end-lose":"'addProgressionEvent','Fail',level_id,,,value","mission_success":"'addDesignEvent',name","ad_rewarded_request":"'addDesignEvent',name:screen","ad_rewarded_response":"'addDesignEvent',name:screen:ad_response","ad_rewarded_show":"'addDesignEvent',name:screen","ad_rewarded_finish":"'addDesignEvent',name:screen:ad_result,value","ad_mandatory_request":"'addDesignEvent',name:screen","ad_mandatory_response":"'addDesignEvent',name:screen:ad_response","ad_mandatory_show":"'addDesignEvent',name:screen","ad_mandatory_finish":"'addDesignEvent',name:screen:ad_result,value","coin_spent":"'addResourceEvent','Sink','coin',value,'unknown','consumed'","play_with_friend":"'addDesignEvent',name:screen,1","share,invite":"'addDesignEvent',name:button_placement,1","crosspromotion":"'addDesignEvent',name:screen","cross_promotion_show":"'addDesignEvent',name:button_placement,1","cross_promotion_success":"'addDesignEvent',name:target_game,1","engage":"'addDesignEvent',name:engage_id","iap_interaction":"'addDesignEvent',name:iap_id,value","iap_completed":"'addDesignEvent',name:iap_id,value","iap_failed":"'addDesignEvent',name:iap_id,value","tutorial_step_completed":"'addDesignEvent',name:value","options_change":"'addDesignEvent',option_name:option_value","social_engage":"'addDesignEvent','engage':engage_id:button_placement,1"}};
+
+				scope.getNewCanvasObject = function(){
+					var cachedElement = relasedCanvasElements.pop();
+					if(cachedElement) return cachedElement;
+					return document.createElement('canvas')
+				}
+				scope.releaseCanvas = function(canvas){
+					canvas.getContext('2d').setTransform(1, 0, 0, 1, 0, 0);
+					canvas.width = canvas.height = 1
+					relasedCanvasElements.push(canvas)
+				}
+
+				var isFBInstant = !!window.FBInstant;
+
+				if(isFBInstant){
+					gaPath += 'app/facebook_instant/';
+
+					FBInstant.logEvent&&FBInstant.logEvent(
+						"NLPPreloadStart"
+					)
+				}
+
+				var isTwitch = !!window.Twitch;
+
+				if(isTwitch){
+					gaPath += 'app/twitch/';
+				}
+
+				var loadQueue = [];
+				var loadQueueTimer = null;
+				function triggerQueue() {
+					var t = new Date().getTime();
+					while(loadQueue.length && (new Date().getTime() - t < 10)) {
+						loadQueue.shift()();
+					}
+					if(loadQueue.length) {
+						popQueue();
+					}
+				}
+				function popQueue() {
+					clearTimeout(loadQueueTimer);
+					if(loadQueueTimer === null) triggerQueue();
+					loadQueueTimer = setTimeout(function() {
+						triggerQueue();
+					}, 1);
+				}
+
+				function buildCharIndex(chars) {
+					var index = {};
+					for(var i = 0; i < chars.length; i++) index[chars[i]] = i;
+					return index;
+				}
+
+				var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/!#$&*-,.:;@()<=>?[]^`{|}";
+				var charIndex = buildCharIndex(chars);
+				var intChars = "()<=>?[]^`{|}";
+				var intCharIndex = buildCharIndex(intChars);
+
+				scope.getJSGImageWrapper = function getJSGImageWrapper(path, actions, cords, drawCallback) {
+
+					function getCord() {
+						var first = cords[cordOffset++];
+						var res, intChar;
+						switch(first) {
+							case '_': res = 0; break;
+							case '~': res = 1; break;
+							case '%': res = 149932; break;
+							case '\'': res = -149932; break;
+							case '@':
+								res = 
+									  charIndex[cords[cordOffset++]]
+									+ charIndex[cords[cordOffset++]] * 74
+									+ charIndex[cords[cordOffset++]] * 5476 // (74 * 74)
+									+ charIndex[cords[cordOffset++]] * 405224; // (74 * 74 * 74)
+								res = (res / 100) - 149932;
+								break;
+							default:
+								intChar = intCharIndex[first];
+								if(intChar !== undefined) {
+									res = intChar * 88 + charIndex[cords[cordOffset++]];
+								} else {
+									res =
+										  charIndex[first]
+										+ charIndex[cords[cordOffset++]] * 74
+										+ charIndex[cords[cordOffset++]] * 5476; // (74 * 74)
+									res = (res / 100) - 2026;
+								}
+						}
+						return res;
+					}
+					function getColor() {
+						return getCord()
+							? 'rgb(' + getCord() + ',' + getCord() + ',' + getCord() + ')'
+							: 'rgba(' + getCord() + ',' + getCord() + ',' + getCord() + ',' + getCord() + ')';
+					}
+					function toCanvas(canvas, scale) {
+						canvas.width = Math.ceil(assetWidth * scale);
+						canvas.height = Math.ceil(assetHeight * scale);
+						var ctx = canvas.getContext('2d');
+						ctx.scale(scale, scale);
+						var canvasStack = [canvas];
+						var fillObject;
+						try {
+							for(var a = 0; a < actions.length; a++) {
+								switch(actions[a]) {
+									case '4': 
+										var newCanvas = getNewCanvasObject();
+										newCanvas.width = getCord();
+										newCanvas.height = getCord();
+										ctx = newCanvas.getContext('2d');
+										canvasStack.push(newCanvas);
+										break;
+									case 'b':
+										var pattern = ctx.createPattern(ctx.canvas, 'no-repeat');
+										var removed = canvasStack.pop();
+										releaseCanvas(removed);
+										ctx = canvasStack[canvasStack.length - 1].getContext('2d');
+										ctx.fillStyle = pattern;
+										break;
+									case 't': fillObject = ctx.createLinearGradient(getCord(), getCord(), getCord(), getCord()); break;
+									case 'D': fillObject = ctx.createRadialGradient(getCord(), getCord(), getCord(), getCord(), getCord(), getCord()); break;
+									case '8': fillObject.addColorStop(getCord(), getColor()); break;
+									case 'F': ctx.fillStyle = fillObject; break;
+									case 'f': ctx.save(); break;
+									case '/': ctx.bezierCurveTo(getCord(), getCord(), getCord(), getCord(), getCord(), getCord()); break;
+									case 'p': ctx.strokeStyle = getColor(); break;
+									case 'w': ctx.lineCap = 'butt'; break;
+									case 'y': ctx.lineJoin = 'miter'; break;
+									case '9': ctx.miterLimit = getCord(); break;
+									case '6': ctx.fillStyle = getColor(); break;
+									case 'n': ctx.beginPath(); break;
+									case 'q': ctx.closePath(); break;
+									case 'o': ctx.fill(); break;
+									case 'P': ctx.stroke(); break;
+									case 'r': ctx.restore(); break;
+									case '2': ctx.arc(getCord(), getCord(), getCord(), getCord(), getCord(), getCord() === 1); break;
+									case 'm': ctx.moveTo(getCord(),getCord()); break;
+									case 'l': ctx.lineTo(getCord(),getCord()); break;
+									case '5': ctx.quadraticCurveTo(getCord(), getCord(), getCord(), getCord()); break;
+									case 'C': ctx.clip(); break;
+									case 'E': ctx.lineWidth = getCord(); break;
+									case 'A': ctx.transform(getCord(), getCord(), getCord(), getCord(), getCord(), getCord()); break;
+									case 'u': ctx.translate(getCord(), getCord()); break;
+									case 'V': ctx.scale(getCord(), getCord()); break;
+									case '0': ctx.rotate(getCord()); break;
+									case 'K': ctx.globalAlpha = getCord(); break;
+									case 'G': ctx.strokeStyle = fillObject; break;
+									default: console.error('unhandled', actions[a]);
+								}
+							}
+						} catch(err) {
+							window.onerror && window.onerror('Draw failure in > ' + path + ' ' + err.message, err.sourceURL, err.line);
+						}
+						// Reset JSG drawing
+						cordOffset = 0;
+						getCord();
+						getCord();
+						return canvas;
+					}
+
+					function handleDraw(config) {
+						config = config || {};
+						var scale = config.scale || 1;
+						var forceCanvas = config.forceCanvas || false;
+						//var instantDraw = config.instantDraw || false; // Check if we need this
+						var jsgImage;
+						function handleCallback() {
+							jsgImage.onload = null;
+							jsgImage.onerror = null;
+							drawCallback && drawCallback()
+							drawCallback = null;
+						}
+						function loadNext() {
+							var jsgCanvas = toCanvas(getNewCanvasObject(), scale);
+							if(typeof drawCallback === 'function') {
+								jsgImage.onload = handleCallback;
+								jsgImage.onerror = handleCallback;
+							}
+							jsgImage.src = jsgCanvas.toDataURL(); // TODO: Investigate performance impact here
+							releaseCanvas(jsgCanvas);
+						}
+						if(Host.dataUrlsSupported && !forceCanvas) {
+							jsgImage = new Image();
+							loadNext();
+							return jsgImage;
+						} else {
+							var jsgCanvas = toCanvas(getNewCanvasObject(), scale);
+							jsgCanvas.isCanvas = true;
+							drawCallback && drawCallback()
+							drawCallback = null
+							return jsgCanvas;
+						}
+					}
+
+					var cordOffset = 0;
+					var assetWidth = getCord();
+					var assetHeight = getCord();
+					var jsgWrapper = {
+						isJSG: true,
+						path: path,
+						width: assetWidth,
+						height: assetHeight,
+						actions: actions,
+						cords: cords,
+						draw: handleDraw
+					};
+
+					return jsgWrapper;
+				};
+
+				var canvas, loadbar, progressbar, logoOptions = {forceCanvas: true};
+				if(!isFBInstant) {
+					canvas = getJSGImageWrapper('logo','6nmllmllo6nmllmllo6nmllllllmlllmlllmllllo6nmllmlllmllo6nmllmlllmlllmllllo6nmlllmlllmllllmllllo6nmlllmlllo6nmlllllllllllllmlllllll//lllllml//lllmllllllllllmlllllll//lllllml//lllm////m////lm////lll//llllm/////llo6nmlllmllmlllmllllo6nmllo6nmlllo6KnmllmllllllllmlllllllloK','Iq7|s~<+(2)N>4>o=K?j>m?r{[<=}b>G}^<W~</(3(`=M?i=E]U>m?q):)]=;=O)#<(~<h<g<n|U(]>4>n>{>P?9=w[D=W`N(0|H_(T>(_==(.=})t?}?9=w>{>P=;=O>Y).:G7>K,D6?7`-[9`i[H{,[H~)y)y)y|U(]k*5)F}^<W(X=[(>)0):)](.=},D6?7|,[@`-[+~_)1<h{W=J}^<W|U(]<I?k)x?E)t?}=E]U[D=W?9=w>Y).?d<n`i[H]r>;]V>}`H]W`-[+~)u)!)!>4>n|U(]{W=J>m?q=E]U(.[3(T>()t?}Ov6<(Iq7<^:G7>K{,[H||>}]$>6`|?<{,[H`i[H]r>;~)J)})7):)])x?E)t?}(.=}>^>Q=y=L=;=O>{>P~(K)z<c)`|s<h|H<h{W=P{W=i{E=i`+<h`+<h^;=h^;=,^k=,^Z)]^Z)/^s)/|s>Y|s>9|H>9{a>|{a?*|s[V|s[h|V?5{SY8uqK1DTvMs0[i`YDTvMNz6!u^Z?B^Z>V^Z>D^r>D|r>Y|s>Y|s>9^:?F^:?0^:yLuSiz?+`YyLu`3;+t`*?G`*>9`*>9^:>9^:^M|s^h|d`m^Z`L^Z^5^3]{{&]Y^3[,^Z[p^Z]u|d]&|s{C|s{n|H{n{a{!{a|u|s|}|s}L|V|i{SSE4qK18k4Ms0}M`Y8k4MNzqI4^Z{&^Z{A^Z`-^r`-|r{C|s{C|s{n^:{.^:QQ3,LzOd3+hz|n`YOd34h0kG3iz0{.`*{m`*{n^:{n^:}P^f}PYEyGq448x}u]|cy548x6y5QBy}<^f6y5s2ycy50:y}u^+Gq4+:y}Pg0y}P^f}.^foq5O;xam5Y*x}u^E}ZY*xIx4E;x}V^f}Vu4y*24K#y}u^4}*U#yyq5q5y}.^f}.^f}g^Oe.4+Hy0E5gHy}x^OOa5gHyMd54Ly}9^WMd5Aeyia52iy}0^juS5qlyIU5Eny}3^m}+^u}3^u}x^nmK5EnyWJ5gly}t^jJF5kkyFB5aky}m^j}m^v}g^v}g^O}g^O}m^eAC5sdysG5sdy}u^evS5sdycU5wcy}2^XcU5:RyqT5aQy}1^UYQ5sOyuN5iOy}v^T2G5iOyHD5sOy}m^T}m^e}m^e~)C)R)O=E]U?F[g{W=J>m?q=M?i<I?k=E]U>Y).<r)+):)]=;=O||>}Ov6<(Gn6)+O.5(.}^<W~_)u)>[q?o`H]W]V>}~_<E<q|B]e`H]W`-[+|,[@~_(x(*mAl}^<W|U=N{[<=]r>;]V>}[q?o[]?*]x?h^E?R^@?X]$>7]r>;?{=P?x=h?x=h>?>K>{>P?9=w?9=w[E=W?{=P~').draw(logoOptions);
+					loadbar = document.createElement('loadbar');
+					progressbar = document.createElement('div');
+					preloader.appendChild(loadbar);
+					loadbar.appendChild(progressbar);
+					preloader.appendChild(canvas);
+				}
+
+				var ow = 0
+				var oh = 0
+				function handleResize(){
+					if(!isFBInstant){
+						var w = document.documentElement.clientWidth;
+						var h = Math.min(window.innerHeight,document.documentElement.clientHeight);
+						if(ow!=w||oh!=h){
+							ow = w;oh = h;
+							var s = Math.min(w,h)*.8>>0
+							var nh = s*0.8187702265>>0
+							var t = ((h-nh*1.15)/2>>0)
+
+							loadbar.style.width = canvas.style.width = s+"px"
+							canvas.style.height = nh +"px"
+							loadbar.style.left = canvas.style.left = ((w-s)/2>>0)+"px"
+							canvas.style.top = t+"px"
+							loadbar.style.height = Math.max(Math.min((s/40>>0),10),4) + "px"
+							loadbar.style.top = (t + nh*1.05)+"px"
+						}
+					}
+				}
+				handleResize()
+
+				scope.htmlprogress = function(total, left){
+					completed = Math.max((left / total), completed)
+				}
+
+				var timer = setInterval(function(){
+					if(completed < .5){
+						completed += (.5-completed)/100
+					}
+					preview += (completed-preview)/10
+
+					if(isFBInstant && facebookAPIInited){
+						FBInstant.setLoadingProgress(preview*100>>0)
+					} else {						
+						progressbar&&(progressbar.style.width = (preview*100>>0) + "%")
+					}
+					handleResize();
+				},50)
+
+				setTimeout(function(){
+					loadbar&&(loadbar.style.display = "block")
+				},500)
+
+				function handleFacebookLoaded() {
+					if(isFBInstant && facebookAPIInited && gameIsLoaded) {
+						FBInstant.logEvent('NLPhandleFacebookLoaded');
+						FBInstant.setLoadingProgress(100);
+						function handleSuccess() {
+							FBInstant.logEvent&&FBInstant.logEvent('NLPstartGameAsync');
+							var locale = false;
+
+							// If it's one of the supported languages then load it
+							if(locale && locale != 'en-US' && Host.Localize.languages.indexOf(locale) > -1) {
+								Host.Localize.Load(locale, function(language, success) {
+									console.log('Localization loaded: ', language, success);
+									Host.emit('FBInstantPreloadComplete');
+								});
+							} else {
+								// Do english
+								Host.emit('FBInstantPreloadComplete');
+							}
+						}
+						function handleError(err) {
+							//<debug>
+							console.error('Instant Error:', err);
+							//</debug>
+							window.onerror && window.onerror('handleFacebookLoaded > startGameAsync (' + FBInstant.getSDKVersion() + ') > ' + (err.message || err.toString()), err);
+							FBInstant.logEvent('startGameAsyncError', 1, err);
+							Host.emit('FBInstantPreloadComplete');
+						}
+
+						FBInstant.startGameAsync()
+							.then(handleSuccess)
+							.catch(handleError);
+					}
+				}
+
+				scope.htmlclean = function() {
+					if(isFBInstant) {
+						FBInstant.logEvent('NLPhtmlclean');
+					}
+					gameIsLoaded = true;
+
+					// Stop the progress bar timer
+					clearInterval(timer)
+
+					// Remove the preloader
+					if(preloader){
+						preloader.parentNode&&preloader.parentNode.removeChild(preloader)
+					}
+
+					// Dealloc the canvas
+					if(canvas){
+						canvas.width = canvas.height = 1
+					}
+
+					// Garbage collection
+					loadbar = progressbar = canvas = preloader = null;
+
+					handleFacebookLoaded()
+				}
+
+				// Embed general data - this is used by builder.rb's embed_data_content
+				//   files: Array of filenames
+				//   data : Array of data that mapes to filenames
+				scope.embeddedFiles = {};
+				scope.embedFiles = function(files,data) { 
+					for( var a=0;a<files.length;a++){
+						var d = data[a]
+						scope.embeddedFiles[files[a]] = d;
+					}
+				}
+
+				// Embed image data
+				scope.embeddedAssets = {};
+
+				scope.embedLoad = function(path,file){
+					scope.embeddedAssets[path] = file;
+				}
+
+				scope.loadAssets = function(files, svgCommands, data){
+					for( var a=0;a<files.length;a++){
+						var path = files[a]
+						var svg = svgCommands[a];
+						if(svg){
+							scope.embedLoad(path,[svg,data[a]])
+						}else{
+							scope.embedLoad(path, data[a])
+						}
+					}
+				}
+
+				var req = new XMLHttpRequest();
+				req.addEventListener('load', function(event){
+					var s = document.createElement("script");
+					//s.text rather than innerHTML for ie9
+					s.text = event.target.responseText;
+					document.documentElement.appendChild(s);
+				})
+
+				req.addEventListener("progress", function(event) {
+				    if (event.lengthComputable) {
+				    	htmlprogress(event.total, event.loaded*.7)
+				    } else {
+				    	htmlprogress(scope.extsize||500000, event.loaded)
+				    }
+				}, false);
+
+				if(scope.spath !== undefined){
+					req.open("GET", spath);
+					req.send()
+				}
+
+				if(isFBInstant){
+					FBInstant.logEvent&&FBInstant.logEvent( "FRVRAppVersion", 26, { build: "26", version: version })
+					FBInstant.logEvent&&FBInstant.logEvent(
+						"NLPBeforeinitializeAsync"
+					)
+
+					FBInstant.initializeAsync()
+					.then(function() {
+						FBInstant.logEvent&&FBInstant.logEvent(
+							"NLPInitializeAsync"
+						)
+						facebookAPIInited = true
+						handleFacebookLoaded()
+						gax('set', 'userId', FBInstant.player.getID());
+					})
+					.catch(function(err) {
+						window.onerror && window.onerror('Failure in promise initializeAsync > ' + err.message, err);
+						//We fire this no matter what, we always whant to show the game regardless of the users crashy devices.
+						facebookAPIInited = true
+						handleFacebookLoaded()
+					});
+				}
+
+			})(this)
+		</script>
+
+		<canvas id="gameCanvas" width="640" height="360" style="height: 360px; width: 640px;"></canvas>
+		<script>
+			var cs = document.getElementById('gameCanvas').style;
+			cs.width = cs.height = "100%"
+		</script>
+
+		<div id="overlay"></div>
+
+		<content itemscope="" itemtype="https://schema.org/VideoGame">
+			<h1 itemprop="name">Gold Digger FRVR</h1>
+			<meta itemprop="url" content="https://golddigger.frvr.com/">
+			<div itemprop="author" itemscope="" itemtype="http://schema.org/Organization">
+		    <p style="margin-top:0px"><span itemprop="name"><a itemprop="url" href="http://frvr.com/">By FRVR</a></span></p>
+		    </div>
+
+			<metadata>
+				<!--<img itemprop="image" src="" data-original="./v/1576154523809/i/web/icon196x196.png"/>-->
+				<meta itemprop="playMode" content="SinglePlayer">
+    		<p>Genre: <span itemprop="genre"></span></p>
+				<div itemscope="" itemtype="http://schema.org/AggregateRating" itemprop="aggregateRating">
+					<div>Average Rating: <b itemprop="ratingValue">4.8</b>/<b itemprop="bestRating">5</b></div>
+					<meta itemprop="reviewCount" content="9427">
+				</div>
+				<link itemprop="applicationCategory" content="Game">
+				<link itemprop="applicationSubCategory" content="Board, Puzzle">
+				<span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+					<meta itemprop="price" content="$0">
+					<meta itemprop="priceCurrency" content="USD">
+					<link itemprop="availability" href="http://schema.org/InStock">
+				</span>
+				<meta itemprop="contentRating" content="Everyone">
+				<meta itemprop="playMode" content="SinglePlayer">
+			</metadata>
+
+			<p>Gold Digger FRVR is the best digging game, for both gold rush veterans and mining fans. Take your pickaxe and your helmet and start drilling!</p>
+<p>Let’s dig day and night, let’s find tons of gold and some treasures, let’s put them on the ground and make some money! But aware of the giant rocks, make smart use of your pickaxe and dig wisely, otherwise they will fall on you and you'll lose all the gold! Instead of that, try to connect three or more rocks to blast them and get even more gold!</p>
+<p>Explore every corner of the cave and do not leave a stone unexcavated. Who knows what could you find in the depths of a gold mine? Dig up ancient dinosaurs bones, valuable gold nuggets of even shiny diamonds. No rock can stop you from your mining mission! Be careful of underground explosions and use the checkpoint base to save your progress.</p>
+Start mining and fill your bag with gold and diamonds in the best free digging game ever! Can you become the speleology tycoon?
+			<p><a href=".">Please enable JavaScript to play now!</a></p>
+
+			<h2>More information</h2>
+			<ul>
+				<li><a href="//frvr.com/">FRVR Website</a></li>
+				<li><a href="http://news.frvr.com">FRVR News</a></li>
+				<li><a href="//twitter.com/frvrgames">FRVR on Twitter</a></li>
+				<li><a href="//www.facebook.com/frvrgames">FRVR on Facebook</a></li>
+				<li><a href="//plus.google.com/+Frvrgames">FRVR on Google+</a></li>
+			</ul>
+			<h2>More great games</h2>
+			<ul>
+
+			</ul>
+			<h2>More platforms</h2>
+			<ul>
+
+			</ul>
+
+			<p><a href="//frvr.com/">Always get the greatest new games on frvr.com</a></p>
+		</content>
+
+		<script>
+
+			function parseStack(err) {
+				var stack = [];
+				var lines = (err && err.stack || '').split('\n'); // split stack trace into lines
+				lines.shift(); // remove first line, the error message
+				for(var i = 0; i < lines.length; i++) {
+					// simplyfy and shorten details
+					stack.push(lines[i]
+						.replace(/^\s*at\s+/g, '')
+						.replace(/(https?:\/\/[^\/]+)?/g, '')
+						.replace(/https?:\/\/[^\/]+/g, '')
+						.replace(/\/?game\/[^\/]+\/[^\/]+/g, '')
+						.replace(/:?<anonymous>:?/g, '')
+						.replace(/^([^ ]+)\s+\(/g, '$1(')
+						.replace(/^([0-9]+:[0-9]+$)/g, '($1)')
+					);
+				}
+				return stack;
+			}
+			function createErrorHandler(errorType) {
+				return function(errorMsg, sourceURL, line, column, err) {
+					if(sourceURL instanceof Error) { // Enable optional parameters
+						err = sourceURL;
+						sourceURL = undefined;
+					}
+					err = err || new Error(errorMsg);
+					var parts = ((err.stack || '').split('\n')[1] || '').split(':');
+					var colFromStack = parts.pop() || undefined;
+					var lineFromStack = parts.pop() || undefined;
+					line = line || err.lineNumber || err.lineno || err.line || lineFromStack || '';
+					column = column || err.columnNumber || err.colno || err.column || colFromStack || '';
+					sourceURL = sourceURL || err.sourceURL || '';
+					errorMsg = errorMsg || err.message || (err.toString && err.toString()) || '';
+					var parsedStack = parseStack(err) || [];
+					var errSrc = sourceURL + ': ' + line + ': ' + column;
+					window.Host && Host.Log && Host.Log(errorType + ' Error: ' + errorMsg + ': ' + errSrc + '\nStack: ' + parsedStack.join('\n'));
+					console.error(errorType + ' Error', errorMsg + ': ' + errSrc, err);
+					errSrc += ': ' + parsedStack.join('|').substr(0, 150);
+					var eventCategory = 'golddigger 1.2.4 26 ' + errorType + ' Error';
+					var errTime = Date.now() - ((window && window.__FRVR && window.__FRVR.startTime) || 0);
+					if(window.gax) {
+						gax('send', 'event', eventCategory, errorMsg, errSrc, errTime);
+						gax('send', 'exception', {exDescription: eventCategory + ': ' + errorMsg + ': ' + errSrc});
+					}
+					if(typeof FBInstant !== 'undefined' && typeof FBInstant.logEvent === 'function') {
+						FBInstant.logEvent('onerror', errTime, {
+							appName: 'golddigger',
+							appVersion: '1.2.4',
+							appBuild: '26',
+							category: eventCategory,
+							message: errorMsg,
+							stack: errSrc
+						});
+					}
+				};
+			}
+			window.onerror = createErrorHandler('JavaScript');
+			var promiseErrorHandler = createErrorHandler('Promise');
+			window.onunhandledrejection = function(rejection) {
+				var err = (rejection && rejection.reason) || {};
+				promiseErrorHandler(undefined, undefined, undefined, undefined, err);
+			};
+
+			window.gaAppInfo = {
+				appId: 'com.frvr.golddigger',
+				appName: 'golddigger',
+				appVersion: '1.2.4',
+			};
+			window.initGoogle = function(){
+				// ga('set', window.gaAppInfo);
+				// ga('create', 'UA-54081731-1', 'auto', window.gaAppInfo);
+
+				// ga('create', 'UA-54081731-48', 'auto', 'game', window.gaAppInfo);
+
+				// gax('require', 'displayfeatures');
+				// gax('send', 'pageview', gaPath + location.search);
+				// // Record native-ish "Promise" support
+				// var eventCategory = 'golddigger 1.2.4 26 Promise Support';
+				// gax('send', 'event', eventCategory, (typeof Promise === 'function') ? 'supported' : 'unsupported');
+			}
+		</script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();;a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga(function() {
+				setTimeout(function(){
+					window.location.hash = ""
+					if (window.history && window.history.replaceState instanceof Function) {
+			  			window.history.replaceState({}, document.title,'./');
+					}
+				},5000)
+			});
+
+		window.gax=function() { 
+			// ga.apply(this,arguments)
+
+			// a = arguments; a[0] = "game."+a[0]  
+			// ga.apply(this,a);
+
+		}
+		</script>
+		<script>
+ 			window.initGoogle();
+		</script>
+
+		<script>
+			(function() {
+				function Scitylana(tracker, config) {
+					var sciUAs = [], uasInited = false;
+					var reAmp = /^&|&$/ig, reTid = /&tid=([^&]+)&/;
+					var orgSendHitTask = tracker.get('sendHitTask');
+
+					function sciData(tracker) {
+						var time = (new Date).getTime();
+						var _sl_order = window._sl_order;
+						if(_sl_order >= time) _sl_order++;
+						else _sl_order = time;
+						window._sl_order = _sl_order;
+						var hasReferrer = !document.referrer ? 0 : 1;
+						var userId = tracker.get('userId') || tracker.get('clientId');
+						return 'sl=1&u=' + userId + '&t=' + _sl_order + '&r=' + hasReferrer;
+					}
+
+					function initUAs() {
+						for(var xsIs in config){
+							var sciUa = config[xsIs];
+							if((xsIs === 'any' || ((typeof XS !== 'undefined') && XS.is[xsIs])) && sciUAs.indexOf(sciUa) === -1) sciUAs.push(sciUa);
+						}
+						if((typeof XS !== 'undefined') && XS.is) uasInited = true;
+					}
+
+					function sendHitTask(model) {
+						orgSendHitTask(model);
+						if(!uasInited) initUAs();
+						var hitPayload = model.get('hitPayload') + '&cd1=' + encodeURIComponent(sciData(tracker));
+						for(var i = 0; i < sciUAs.length; i++) {
+							model.set('hitPayload', ('&' + hitPayload + '&').replace(reTid, '&tid=' + sciUAs[i] + '&').replace(reAmp, ''), true);
+							orgSendHitTask(model);
+						}
+					}
+
+					tracker.set('sendHitTask', sendHitTask);
+				}
+				var _jsonData = window._jsonData || {};
+				if(_jsonData.scitylana) {
+					// ga('provide', 'scitylana', Scitylana);
+					// ga('require', 'scitylana', _jsonData.scitylana);
+				}
+			})();
+		</script>
+
+	</body>
+	</html>

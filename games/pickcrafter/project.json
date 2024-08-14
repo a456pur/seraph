@@ -1,0 +1,24 @@
+{
+    "project_type": "javascript",
+    "debugMode": 0,
+    "showFPS": false,
+    "frameRate": 30,
+    "id": "gameCanvas",
+    "renderMode": 1,
+    "jsList": [
+        "src/webfont.js",
+        "src/loader.js",
+        "src/resources.js",
+        "src/play-scene.js",
+        "src/soil.js",
+        "src/pick.js",
+        "src/player.js",
+        "src/random-data-generator.js",
+        "src/shop.js",
+        "src/listview.js",
+        "src/reshub.js",
+        "src/sponsor-stuff.js",
+        "src/achiev.js",
+        "src/tutorial.js"
+    ]
+}

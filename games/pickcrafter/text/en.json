@@ -1,0 +1,49 @@
+﻿{
+    "pps": "pps:",    
+    "p": "P:",
+    "damage": "damage:",
+    "crit": "critical\nchance +3%",
+
+    "achiev_cap": [
+        "Found the skeleton\nof an extinct beast!",
+        "Found the skeleton\nof prehistoric man!",
+        "Found the skeleton\nof a dinosaur!",
+        "Found the skeleton\nof an ancient deity!",
+        "You were the first one\nwho built a house out\nof the grass!",
+        "Your neighbor has\nconfused you with\na swamp monster\nand hit with a shovel!",
+        "You know resemble\nearthworm\na little bit!",
+        "You've built\na statue of yourself\nfrom a tree!",
+        "You got a job\nin the quarry!",
+        "Now you know how to\nmanage the sand and\ncause a storm!",
+        "You've learned how to\nswim in ice and\npretend you're\nan iceberg!",
+        "You've acquired\nmagnetic properties\nand are now\nextremely magnetic!",
+        "You've become an\narchmage, because you\nnow know the essence\nof crystals!",
+        "Together with your\nhelpers you've started\nyour own clan!",
+        "Now you have\na small town!",
+        "It seems that your\nhelpers will be enough\nto settle a small\ncountry!"
+    ],
+
+    "achiev_list": [
+        "Get 1000 picks",
+        "Get 10,000 picks",
+        "Get 50,000 picks",
+        "Get 100,000 picks",
+        "Get 1000 grass",
+        "Get 1000 mud",
+        "Get 1000 land",
+        "Get 1000 wood",
+        "Get 1000 stone",
+        "Get 1000 sand",
+        "Get 1000 ice",
+        "Get 1000 metal",
+        "Get 1000 crystals",
+        "Hire 25 helpers",
+        "Hire 50 helpers",
+        "Hire 100 helpers"
+    ],
+
+    "tutorial": [ "Tap the soil to dig.", "Click the soil to dig.", "Dig, dig, DIG", "Buy new gear\nand helpers\nto speed up\nyour progress!" ],
+
+    "box_soils": "Box of\nrandom\nsoils",
+    "box_gems": "Box of\nrandom\ngems"
+}

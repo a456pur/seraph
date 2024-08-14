@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7FN7LEVWXD');
+  </script>
+<title>Pick Crafter | Seraph</title>
+<script src="../../storage/js/cloak.js"></script>
+<link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
+
+
+    <meta charset="utf8">
+  
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    
+    <script type="text/javascript" src="src/cocos2d-js-v3.1-lite.js"></script>
+    <script type="text/javascript" src="src/main.js"></script>
+
+         <style>
+        body,html{margin:0 auto;padding:0 auto;width:100%;height:100%;overflow:hidden}#adsbox{position:fixed;top:0;right:0;bottom:0;left:0;z-index:999;display:none;}
+    </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" integrity="sha512-CwHUCK55pONjDxvPZQeuwKpxos8mPyEv9gGuWC8Vr0357J2uXg1PycGDPND9EgdokSFTG6kgSApoDj9OM22ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="/sdk.js"></script>
+</head>
+
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="loading">
+        <p>LOADING</p>
+    </div>
+    <div id="incorrect-orientation"></div>
+
+           <div id="adsbox" style="display: block;"></div>
+      <script type="text/javascript">
+         $("#adsbox").click(function () {
+             ShowYaBanner();
+             $('#adsbox').hide();
+         });
+         setTimeout(function(){  $('#adsbox').show(); }, 1000);
+         
+         window.setInterval(function(){
+             $('#adsbox').show();
+         }, 60000);
+      </script>
+
+      <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-81855592-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'UA-81855592-1');  
+         
+         if (YaGames) 
+         {
+           YaGames.init(
+           {
+             screen: 
+             { 
+                 fullscreen: false
+             },
+             yandexApp: {
+                   enabled: true
+               },
+             adv: 
+             {
+                   onAdvClose: wasShown => 
+                   {
+                       //cr_setSuspended(false);
+                   }
+               }
+           }).then(function (ysdk) 
+           {
+             window.ysdk = ysdk;
+           });
+         }
+         
+         function ShowYaBanner() {
+         try 
+           {
+             ysdk.adv.showFullscreenAdv(
+             {
+              
+             });
+           }
+           catch(err) { } 
+         }
+      </script>
+</body>
+
+</html>

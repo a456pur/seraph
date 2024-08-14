@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+    <title>Crazy Tunnel 3D | Seraph</title>
+    <script src="../../storage/js/cloak.js"></script>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
+
+
+    <meta charset="utf-8">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/CrazyTunnel3D-g-1.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+    </script>
+</head>
+<body style="overflow:hidden;">
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 900px; height: 600px; margin: auto"></div>
+    </div>
+  
+</body>
+</html>

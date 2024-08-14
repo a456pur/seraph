@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7FN7LEVWXD');
+        </script>
+		<title>Eaglercraft 1.8 | Seraph</title>
+		<script src="../../storage/js/cloak.js"></script>
+		<link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
+
+	
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="text/javascript" src="classes.js"></script>
+		<script type="text/javascript">
+			"use strict";
+			window.addEventListener("load", () => {
+				if(document.location.href.startsWith("file:")) {
+					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
+				}else {
+					
+					// %%%%%%%%% launch options %%%%%%%%%%%%
+					const relayId = Math.floor(Math.random() * 3);
+					window.eaglercraftXOpts = {
+						demoMode: false,
+						container: "game_frame",
+						assetsURI: "assets.epk",
+						localesURI: "lang/",
+						worldsDB: "worlds",
+						servers: [
+							{ addr: "wss://ethereal.mov", name: "§b§lethereal§r§8§o",hideAddress:true},
+							{ addr: "wss://mc.arch.lol", name: "§a§larch.lol§r§8§o", hideAddress: true},
+							{ addr: "wss://vanillamc.me", name: "§5§lvanilla mc§r§8§o", hideAddress: true}
+						],
+						relays: [
+							{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId == 0 },
+							{ addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId == 1 },
+							{ addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId == 2 }
+						]
+					};
+					
+					// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+					
+					var q = window.location.search;
+					if(typeof q === "string" && q.startsWith("?")) {
+						q = new URLSearchParams(q);
+						var s = q.get("server");
+						if(s) window.eaglercraftXOpts.joinServer = s;
+					}
+					
+					main();
+					
+				}
+			});
+		</script>
+	</head>
+	<body style="margin:0px;width:100vw;height:100vh;overflow:hidden;" id="game_frame">
+	</body>
+</html>

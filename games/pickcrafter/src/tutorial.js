@@ -1,0 +1,1 @@
+var Tutorial=function(i){this.label=i,this.idx=cc.sys.isMobile?0:1,this.strings=cc.loader.getRes(res.strings).tutorial,this.label.setString(this.strings[this.idx]),this.label.setVisible(!0)};Tutorial.prototype={next:function(){return 0==this.idx?this.idx=2:this.idx+=1,this.idx==this.strings.length?(this.label.setVisible(!1),!0):(this.label.setString(this.strings[this.idx]),!1)}};

@@ -1,0 +1,1 @@
+var playerData={picks:0,collect_picks:0,pps:0,currentPick:0,soilsAllowed:3,res:[0,0,0,0,0,0,0,0,0],collect_res:[0,0,0,0,0,0,0,0,0],rubies:[0,0,0,0,0],helpers:[0,0,0,0,0,0,0,0,0,0],achiev:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],chestCount:[0,0],isTutorial:!0};

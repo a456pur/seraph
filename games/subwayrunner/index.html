@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
+    </script>
+    <title>Subway Runner | Seraph</title>
+    <script src="../../storage/js/cloak.js"></script>
+    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+    <link href="shared/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="TemplateData56/style.css">
+    <script src="TemplateData56/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        window.origBlob = window.Blob;
+        window.Blob = function(array, options) {
+            if (array[1]instanceof Uint8Array) {
+                array[1] = new TextDecoder("utf-8").decode(array[1]).replace(/window\.top\.location\.href|window\.location\.href|document\.referrer|document\.URL/g, '"https://storage.y8.com/"');
+            }
+            return new window.origBlob(array,options);
+        }
+        ;
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/subway_runner_v3.json", {
+            onProgress: UnityProgress,
+            Module: {
+                onRuntimeInitialized: function() {
+                    UnityProgress(gameInstance, "complete")
+                }
+            }
+        });
+    </script>
+    <script src="shared/lib.js" type="text/javascript"></script>
+    <script src="shared/gamebreak/gamebreak.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 100vw; height: 100vh"></div>
+    </div>
+</body>
+</html>
