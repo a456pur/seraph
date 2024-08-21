@@ -1,31 +1,183 @@
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-          gtag('config', 'G-7FN7LEVWXD');
-        </script>
+	  gtag('config', 'G-7FN7LEVWXD');
+	</script>
+	<title>Friday Night Funkin | Seraph</title>
+	<script src="../../storage/js/cloak.js"></script>
+	<link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
 
-  <title>Friday Night Funkin | Seraph</title>
-  <link rel="shortcut icon" href="../../images/ico.ico">
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-          <script src="../../storage/js/cloak.js"></script>
+
+
+	
+	<meta charset="utf-8">
+	
+
+	
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	
+	
+	
+	<script type="text/javascript" src="./Funkin.js"></script>
+	
+	<script>
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
+		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
+			var meta = document.getElementById ("viewport");
+			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
+		}
+	</script>
+	
+	<style>
+		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+		#openfl-content { background: #000000; width: 100%; height: 100%; }
+		@font-face {
+			font-family: '5by7';
+			src: url('assets/fonts/5by7.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: '5by7 Bold';
+			src: url('assets/fonts/5by7_b.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'DS-Digital';
+			src: url('assets/fonts/DS-DIGI.TTF') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'DS-Digital Bold';
+			src: url('assets/fonts/DS-DIGIB.TTF') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'DS-Digital Italic';
+			src: url('assets/fonts/DS-DIGII.TTF') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'DS-Digital Bold Italic';
+			src: url('assets/fonts/DS-DIGIT.TTF') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Inconsolata Black';
+			src: url('assets/fonts/Inconsolata-Black.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Inconsolata Bold';
+			src: url('assets/fonts/Inconsolata-Bold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Inconsolata ExtraBold';
+			src: url('assets/fonts/Inconsolata-ExtraBold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Inconsolata ExtraLight';
+			src: url('assets/fonts/Inconsolata-ExtraLight.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Inconsolata Medium';
+			src: url('assets/fonts/Inconsolata-Medium.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Inconsolata Regular';
+			src: url('assets/fonts/Inconsolata-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Inconsolata SemiBold';
+			src: url('assets/fonts/Inconsolata-SemiBold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Pixel Arial 11 Bold';
+			src: url('assets/fonts/pixel.otf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Quantico-Bold';
+			src: url('assets/fonts/Quantico-Bold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Quantico-BoldItalic';
+			src: url('assets/fonts/Quantico-BoldItalic.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Quantico-Italic';
+			src: url('assets/fonts/Quantico-Italic.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Quantico';
+			src: url('assets/fonts/Quantico-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'VCR OSD Mono';
+			src: url('assets/fonts/vcr.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Nokia Cellphone FC Small';
+			src: url('flixel/fonts/nokiafc22.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monsterrat';
+			src: url('flixel/fonts/monsterrat.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+	</style>
+	
 </head>
-
 <body>
-      <iframe src="./project/index.html" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+	
+	<noscript>This webpage makes extensive use of JavaScript. Please enable JavaScript in your web browser to view this page.</noscript>
+	
+	<div id="openfl-content"></div>
+	
+	<script type="text/javascript">
+		lime.embed ("Funkin", "openfl-content", 1280, 720, { parameters: {} });
+	</script>
+	
 </body>
-
 </html>

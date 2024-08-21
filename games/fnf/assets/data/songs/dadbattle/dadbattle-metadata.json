@@ -1,0 +1,20 @@
+{
+  "version": "2.2.2",
+  "songName": "DadBattle",
+  "artist": "Kawai Sprite",
+  "charter": "ninjamuffin99 + MtH",
+  "timeFormat": "ms",
+  "timeChanges": [{ "t": 0, "bpm": 180, "n": 4, "d": 4, "bt": [4, 4, 4, 4] }],
+  "playData": {
+    "album": "volume1",
+    "previewStart": 0,
+    "previewEnd": 15000,
+    "ratings": { "easy": 1, "normal": 1, "hard": 2 },
+    "songVariations": ["erect"],
+    "difficulties": ["easy", "normal", "hard"],
+    "characters": { "player": "bf", "girlfriend": "gf", "opponent": "dad" },
+    "stage": "mainStage",
+    "noteStyle": "funkin"
+  },
+  "generatedBy": "EliteMasterEric (by hand)"
+}

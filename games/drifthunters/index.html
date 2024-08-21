@@ -1,31 +1,135 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-7FN7LEVWXD');
-        </script>
-
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Drift Hunters | Seraph</title>
-    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ItchIO.json", {onProgress: UnityProgress});
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7FN7LEVWXD');
     </script>
-            <script src="../../storage/js/cloak.js"></script>
+<title>Drift Hunters | Seraph</title>
+<script src="../../storage/js/cloak.js"></script>
+<link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+
+
+
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <meta name="robots" content="noindex,nofollow" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .webgl-content * {
+        border: 0;
+        margin: 0;
+        padding: 0;
+      }
+      .webgl-content {
+        position: absolute;
+      }
+      .webgl-content,
+      #gameContainer,
+      #unityContainer,
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      .webgl-content .logo,
+      .progress {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .webgl-content .logo {
+        background: url("progressLogo.Light.png") no-repeat center/contain;
+        width: 354px;
+        height: 130px;
+      }
+      .webgl-content .progress {
+        height: 18px;
+        width: 141px;
+        margin-top: 90px;
+      }
+      .webgl-content .progress .empty {
+        background: url("progressEmpty.Light.png") no-repeat right/cover;
+        float: right;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+      .webgl-content .progress .full {
+        background: url("progressFull.Light.png") no-repeat left/cover;
+        float: left;
+        width: 0%;
+        height: 100%;
+        display: inline-block;
+      }
+      .webgl-content .logo.Dark {
+        background-image: url(progressLogo.Dark.png);
+      }
+      .webgl-content .progress.Dark .empty {
+        background-image: url(progressEmpty.Dark.png);
+      }
+      .webgl-content .progress.Dark .full {
+        background-image: url(progressFull.Dark.png);
+      }
+      .webgl-content .footer {
+        margin-top: 5px;
+        height: 38px;
+        line-height: 38px;
+        font-family: Helvetica, Verdana, Arial, sans-serif;
+        font-size: 18px;
+      }
+      .webgl-content .footer .webgl-logo,
+      .title,
+      .fullscreen {
+        height: 100%;
+        display: inline-block;
+        background: transparent center no-repeat;
+      }
+      .webgl-content .footer .webgl-logo {
+        background-image: url(webgl-logo.png);
+        width: 204px;
+        float: left;
+      }
+      .webgl-content .footer .title {
+        margin-right: 10px;
+        float: right;
+      }
+      .webgl-content .footer .fullscreen {
+        background-image: url(fullscreen.png);
+        width: 38px;
+        float: right;
+      }
+    </style>
   </head>
-  <body>
+  <body style="margin: 0 auto; overflow: hidden">
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: relative;"></div>
-      
+      <div
+        id="gameContainer"
+        style="width: 100%; height: 100%; margin: 0"
+      ></div>
     </div>
   </body>
-</html
+  <script src="UnityLoader2019.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "dh.json");
+
+    function UnityProgress(gameInstance, progress) {
+      if (!gameInstance.Module) {
+        return;
+      }
+    }
+  </script>
+</html>

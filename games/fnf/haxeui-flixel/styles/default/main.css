@@ -1,0 +1,9 @@
+.label {
+    font-name: "flixel/fonts/nokiafc22.ttf";
+    font-size: 8px;
+}
+
+.textfield, .textarea {
+    font-name: "flixel/fonts/nokiafc22.ttf";
+    font-size: 8px;
+}

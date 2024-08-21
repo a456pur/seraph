@@ -1,0 +1,13 @@
+{
+    "TOTAL_MEMORY": 1073741824,
+    "dataUrl": "dh.data.unityweb",
+    "asmCodeUrl": "dh.asm.code.unityweb",
+    "asmMemoryUrl": "dh.asm.memory.unityweb",
+    "asmFrameworkUrl": "dh.asm.framework.unityweb",
+    "backgroundUrl": "",
+    "splashScreenStyle": "Dark",
+    "backgroundColor": "#111111",
+    "totalFile": 6,
+    "size": 134902255,
+    "split_size": 22483710
+}

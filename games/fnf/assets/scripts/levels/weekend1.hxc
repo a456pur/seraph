@@ -1,0 +1,27 @@
+import funkin.ui.story.Level;
+import funkin.save.Save;
+
+class Weekend1Level extends Level
+{
+	function new()
+	{
+		super('weekend1');
+	}
+
+  override function isUnlocked():Bool {
+    return true;
+  }
+
+  function hasBeatenLevel():Bool {
+    return Save.instance.hasBeatenLevel('weekend1');
+  }
+
+  override function getSongDisplayNames(difficultyId:String):Array<String> {
+    if (hasBeatenLevel()) {
+      // Blazin' is a secret song ;)
+      return ["Darnell", "Lit Up", "2hot", "Blazin'"];
+    } else {
+      return ["Darnell", "Lit Up", "2hot"];
+    }
+  }
+}

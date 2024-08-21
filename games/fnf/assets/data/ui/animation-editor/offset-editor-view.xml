@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<collapsible-dialog id="toolboxCharacters" title="Characters" width="300" height="475">
+    <vbox>
+        <section-header text="Modes" />
+        <vbox>
+            <dropdown id="swapper" width="250" allowFocus="false">
+                <data>
+                    <item curView="SPRITESHEET" text="SPRITESHEET" />
+                    <item curView="ANIMATIONS" text="ANIMATIONS" />
+                </data>
+            </dropdown>
+        </vbox>
+        <section-header text="Character" />
+        <dropdown id="characterDropdown" width="250" allowFocus="false">
+            <data />
+        </dropdown>
+        <section-header text="Shortcuts" />
+        <label text="F4: Exit to Main Menu" />
+        <label text="H: Show/Hide UI" />
+        <spacer />
+        <label text="1: Spritesheet Mode" />
+        <label text="Middle Click: Pan" />
+        <label text="Scroll Wheel: Zoom" />
+        <spacer />
+        <label text="2: Animation Mode" />
+        <label text="Q/[: Previous Animation" />
+        <label text="E/]: Next Animation" />
+        <label text="ENTER: Replay Animation" />
+        <label text="SPACE: Play idle Animation" />
+        <label text="WASD: Play sing Animation" />
+        <label text="F: Toggle Onion Skin" />
+        <label text="ARROWS: Nudge Offsets by 5" />
+        <label text="SHIFT+ARROWS: Nudge Offsets by 10" />
+        <label text="CTRL+ARROWS: Nudge Offsets by 1" />
+        <label text="ESC: Save Character Data to File" />
+        <label text="CTRL+ESC: Save Offsets to File" />
+    </vbox>
+</collapsible-dialog>

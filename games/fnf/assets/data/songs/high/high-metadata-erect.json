@@ -1,0 +1,33 @@
+{
+  "version": "2.2.2",
+  "songName": "High Erect",
+  "artist": "Kohta Takahashi (feat. Kawai Sprite)",
+  "charter": "PhantomArcade + fabs + Spazkid",
+  "playData": {
+    "album": "volume3",
+    "difficulties": ["erect", "nightmare"],
+    "characters": {
+      "player": "bf-car",
+      "girlfriend": "gf-car",
+      "opponent": "mom-car",
+      "instrumental": "erect"
+    },
+    "stage": "limoRide",
+    "noteStyle": "funkin",
+    "ratings": { "erect": 7, "nightmare": 8 },
+    "previewStart": 0,
+    "previewEnd": 0
+  },
+  "generatedBy": "Friday Night Funkin' - v0.3.0 (rewrite/master : 9c19d95) PROTOTYPE",
+  "timeFormat": "ms",
+  "timeChanges": [
+    {
+      "t": 0,
+      "b": 0,
+      "bpm": 125,
+      "n": 4,
+      "d": 4,
+      "bt": [4, 4, 4, 4]
+    }
+  ]
+}
