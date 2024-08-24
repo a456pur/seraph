@@ -198,7 +198,6 @@ a {
 }
 
 #updContent {
-    background-color: var(--hover-color);
     border: 2px solid var(--border-color2);
     border-radius: 16px;
     padding-left: 10px;
@@ -213,7 +212,7 @@ a {
 
 #updContent ul {
     list-style-position: inside;
-    text-align: center;
+    text-align: left;
 }
 
 #updConfirmFrame {
