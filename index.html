@@ -30,26 +30,62 @@
         <h2 style="font-size: 28px; text-decoration: underline;">version 10 / patch notes</h2>
 
         <div id="updContent">
-            <ul>
-                <li>added offline mode
+            <ul style="text-align: left;">
+                <li>offline mode
                   <ul>
-                    <li>download over 110+ games from the site by clicking the download button to the left of them</li>
+                    <li>download 200+ games from the site by clicking the download button to the left of them</li>
                     <li>after one game is downloaded, loading the site without an internet connection will send you to an offline version on the site where you can access downloaded games</li>
                     <li>supports ruffle/flash + works seamlessly with compatible games</li>
                   </ul>
                 </li>
-                <li>major settings overhaul made
+                <li>added 132 games
+                            <li>sega genesis: comix zone, ecco the dolphin, gunstar heroes, phantasy star iv, ranger x, ristar, shining force, shinobi iii, sonic the hedgehog, sonic the hedgehog 2, streets of rage 2, vectorman, vectorman 2</li>
+                            <li>game boy: kirby’s dreamland 2, link’s awakening dx, metroid ii, super mario land 2, warioland ii, castlevania: aria of sorrow, final fantasy tactics advance, drill dozer, pokemon yellow</li>
+                            <li>nes: battle toads, castlevania iii, contra, duck tales, kid icarus, mega man 2, ninja gaiden, mike tyson’s punch out</li>
+                            <li>snes: chrono trigger, contra iii, donkey kong country 3, earthbound, final fantasy iv, f-zero, super metroid, illusion of gaia</li>
+                            <li>n64: banjo tooie, harvest moon 64, jet force gemini, mystical ninja, turok dinosaur hunter, yoshi’s story</li>
+                            <li>nintendo ds: advance wars: days of ruin, castlevania: dawn of sorrow, castlevania: order of ecclesia, mario and luigi: partners in time</li>
+                        </li>
+                        <li>flash games: abuda the alien, battle beavers, controlcraft 2, age of war, age of war 2, amorphous, bubble spinner, crush the castle, crush the castle 2, epic battle fantasy, epic battle fantasy 2, epic battle fantasy 3, fancy pants adventure 3, flood runner 2, flood runner 3, dragon boy 2, neon rider, pandemic 2, stick war, stick war 2, ultimate flash sonic, zombocalpyse, zombotron, zombotron 2, three line, bike champ, bike champ 2, corporation inc, shop empire fable, wubzzy’s amazing adventure</li>
+                        <li>nitrome games: canopy, cave chaos, changetype(), cheese dreams, chisel, chisel 2, ditto, feed me, final ninja, frost bite, frost bite 2, ice breaker, mutiny, nitrome must die, oodlegobs, super treadmill, swindler, test subject arena, test subject complete, twin shot, twin shot 2</li>
+                        <li>flipline games: cactus mccoy, cactus mccoy 2, papa louie, papa louie 2, papa louie 3, steak and jake, steak and jake: midnight march</li>
+                        <li>other games: backrooms 2d, basket random, csgo clicker, doom, funny shooter 2, gun fest, infinite craft, lows adventures 2, pako highway, recoil, run 3 plus, slope city, state io, sudoku, superhero drop, balloon run, crazy tunnel 3d, eaglercraft 1.8, geometry dash sky, gold digger frvr, hexgl, house of hazards, pick crafter, precision client, subway runner, xx142-b2.exe</li>
+                      </ul>
+                    </li>
+                    <li>added 4 apps:</li>
+                      <ul>
+                        <li>calculator: a simple calculator, allowing you to perform simple addition, subtraction, multiplication and division</li>
+                        <li>etch a sketch: create digital pixel drawings - mimicking the experience of an etch-a-sketch with quality of life features</li>
+                        <li>zip opener: directly upload and view/download individual files inside a zip archive</li>
+                        <li>godoblocks: a mimick of the 2005 roblox beta era - recreated entirely in godot</li>
+                      </ul>
+                    </li>
+                    <li>fixed friday night funkin & drift hunters</li>
+                  </ul>
+                </li>
+                <br>
+                <li>settings overhaul
                   <ul>
+                    <li>new data management section
+                      <ul>
                         <li>import/export data into save files, allowing for transfer over multiple sites</li>
                         <li>clear all data off the site with the clear data button</li>
-                    <br>
+                      </ul>
+                    </li>
+                    <li>new panic mode
+                      <ul>
                         <li>customise a panic key (defaults to ctrl+shift+p)</li>
                         <li>customise a panic url (defaults to https://www.desmos.com/scientific)</li>
                         <li>perform the shortcut on any page to instantly delete all contents of the site and redirect to the panic url</li>
-                      <br>
+                      </ul>
+                    </li>
+                    <li>custom theme updates
+                      <ul>
                         <li>added ability to export and import custom themes directly into the site, allowing for ease of access switching + sharability</li>
                         <li>custom themes now do not require a refresh of the page every time</li>
-                        <br>
+                      </ul>
+                    </li>
+                    <li>new theme: ghostly - an abandoned town, said to be haunted by spirits lurking within</li>
                     <li>added open games in same tab setting</li>
                     <li>fixed tab cloaking not working on lots of pages, now works globally</li>
                     <li>tab cloak and resetting auto applies now with page refresh</li>
@@ -57,24 +93,49 @@
                     <li>significantly improved animation</li>
                   </ul>
                 </li>
-                <li>changed updates page
+                <li>seraphim - mobile update
+                  <ul>
+                    <li>mobile version is now detachable from seraph and can be hosted separately</li>
+                    <li>converted games and apps from buttons to app icons for a more unique interface</li>
+                    <li>blurred all theme backgrounds to help contrast content more on smaller screens</li>
+                    <li>now integratable with ios! open seraphim in safari > more > add to home page</li>
+                    <li>setting bars now stack instead of appearing next to each other</li>
+                    <li>games are now sorted in alphabetical order</li>
+                    <li>custom themes are now compatible with mobile mode</li>
+                    <li>mobile now uses new and consolidated stylesheet</li>
+                    <li>scripts on page now execute in one instead of being fragmented</li>
+                    <li>removed games/apps opening in a blank tab</li>
+                    <li>adjusted meta tags to fit the site</li>
+                  </ul>
+                </li>
+                <li>updates page
                   <ul>
                     <li>update log page is now a dropdown menu instead of a long page - scales down from version 10 all the way to version 1</li>
                     <li>improved animation on page load</li>
                     <li>fixed header glowing bug on page, making a weird background effect</li>
                   </ul>
                 </li>
-                <br>
+                <li>other changes
+                  <ul>
+                    <li>homepage now has dedicated big settings button</li>
+                    <li>shrunk down app size slightly</li>
                     <li>added update popup for whenever there is a new update - shown on the homepage</li>
                     <li>404 page now has a previous page button</li>
                     <li>fixed errors with 404 page styling, images and fonts</li>
                     <li>fixed errors with 404 linkbar links redirecting to wrong parts of the site</li>
                     <li>mobile users are now not automatically redirected to the mobile friendly version of the site on the homepage</li>
-                    <li>background image bandwidth has been significantly downgraded by 50-90% (thanks sky)</li>
+                    <li>background image bandwidth has been significantly downgraded by 50-90%</li>
+                    <li>game thumbnails total bandwidth reduced significantly (19.2mb > 2.2mb)</li>
                     <li>favicon is now improved to give a more rounded design</li>
+                    <li>fixed homepage size on mozilla browsers</li>
+                    <li>star/cross icon is now an image icon instead of using unicode characters</li>
+                    <li>themes.css now is used in place of having all stylesheets have different schemes</li>
+                    <li>polished readme file, adding more content to it and removing unnecessary information</li>
+                    <li>changed placeholder image (displays when there is no current thumbnail for a game)</li>
+                    <li>css stylesheets have been renamed to make it easier to sort through</li>
                   </ul>
                 </li>
-              </ul>
+              </ul>        
         </div>
         <div id="updConfirmFrame"><button id="updConfirm">okay</button></div>
       </div>

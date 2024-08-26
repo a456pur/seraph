@@ -357,7 +357,12 @@ document.getElementById('export-theme').addEventListener('click', function() {
         document.body.removeChild(themePrompt);
     });
 
-
+    document.getElementById('cancel-export-theme').addEventListener('click', function() {
+        document.getElementById('blackout').style.display = 'none';
+        document.getElementById('theme-prompt').style.display = 'none';
+        document.body.removeChild(blackout);
+        document.body.removeChild(themePrompt);
+    });
 });
 
 document.getElementById('import-theme').addEventListener('click', function() {
